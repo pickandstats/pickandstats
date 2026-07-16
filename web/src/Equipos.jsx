@@ -15,7 +15,7 @@ const COLUMNAS = [
   { clave: 'ftRate',  titulo: 'FTr',    tip: 'TL intentados por 100 tiros de campo' },
 ];
 
-export default function Equipos({ equipos, grupos }) {
+export default function Equipos({ equipos, grupos, onVerEquipo }) {
   const [grupo, setGrupo] = useState('E-A');
   const [orden, setOrden] = useState({ clave: 'netrtg', desc: true });
 
@@ -65,7 +65,7 @@ export default function Equipos({ equipos, grupos }) {
                       c.izq ? 'izq' : '',
                       c.clave === 'netrtg' ? (e.netrtg > 0 ? 'net-pos' : 'net-neg') : ''
                     ].join(' ').trim()}>
-                    {e[c.clave]}
+                    {c.clave === 'nombre' ? <span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span> : e[c.clave]}
                   </td>
                 ))}
               </tr>

@@ -23,7 +23,7 @@ const PER36 = [
   { clave: 'va', titulo: 'VAL/36' },
 ];
 
-export default function Jugadores({ jugadores, grupos }) {
+export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
   const [grupo, setGrupo] = useState('todos');
   const [busqueda, setBusqueda] = useState('');
   const [minPj, setMinPj] = useState(10);
@@ -98,7 +98,7 @@ export default function Jugadores({ jugadores, grupos }) {
               <tr key={`${j.equipoId}|${j.nombre}`}>
                 <td>{i + 1}</td>
                 {columnas.map(c => (
-                  <td key={c.clave} className={c.izq ? 'izq' : ''}>{celda(j, c.clave)}</td>
+                  <td key={c.clave} className={c.izq ? 'izq' : ''}>{c.clave === 'equipo' ? <span className="enlace" onClick={() => { const eq = equipos.find(x => x.id === j.equipoId); if (eq) onVerEquipo(eq); }}>{j.equipo}</span> : celda(j, c.clave)}</td>
                 ))}
               </tr>
             ))}

@@ -143,3 +143,46 @@ tbody tr:last-child td { border-bottom: none; }
   .marca { font-size: 32px; }
   body { font-size: 14px; }
 }
+
+/* ---- ficha de equipo ---- */
+.enlace { cursor: pointer; color: var(--tinta); text-decoration: underline; text-decoration-color: var(--linea); text-underline-offset: 3px; }
+.enlace:hover { color: var(--acento); text-decoration-color: var(--acento); }
+
+.ficha-cabecera {
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 18px 20px;
+  margin: 16px 0 24px;
+}
+.ficha-nombre {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+}
+.datos { display: flex; flex-wrap: wrap; gap: 22px; margin-top: 14px; }
+.dato-valor {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.dato-etiqueta { font-size: 12px; color: var(--tinta-suave); text-transform: uppercase; letter-spacing: .5px; }
+
+.seccion {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin: 24px 0 10px;
+}
+
+.panel-grafico {
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 16px 12px 8px;
+  margin-bottom: 8px;
+}
