@@ -1,0 +1,815 @@
+{
+ "id": "2484678",
+ "temporada": "2025",
+ "grupo": "E-A",
+ "jornada": "Jornada 22(15/03/2026)",
+ "equipoLocal": {
+  "id": "981348",
+  "nombre": "TOPSURFACE NB PATERNA"
+ },
+ "equipoVisitante": {
+  "id": "982154",
+  "nombre": "CB MORVEDRE"
+ },
+ "resultado": "92-63",
+ "filaTexto": "TOPSURFACE NB PATERNA - CB MORVEDRE 92-63 15/03/2026 18:00",
+ "descargado": "2026-07-16T14:19:36.994Z",
+ "boxscore": {
+  "local": [
+   {
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "RODRIGUEZ CAMPIÑA, LUIS ENRIQUE",
+    "seg": 1666,
+    "pt": 15,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 6,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 7,
+    "rt": 9,
+    "as": 2,
+    "br": 7,
+    "bp": 6,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 22,
+    "pm": 31
+   },
+   {
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "FABREGAT LORES, HECTOR",
+    "seg": 1168,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 3,
+    "rd": 5,
+    "rt": 8,
+    "as": 3,
+    "br": 1,
+    "bp": 1,
+    "tf": 2,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": 13,
+    "pm": 24
+   },
+   {
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "MARCO LOPEZ, HECTOR",
+    "seg": 1559,
+    "pt": 17,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 7,
+     "i": 12
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 2,
+    "mt": 1,
+    "fc": 1,
+    "fr": 2,
+    "va": 18,
+    "pm": 26
+   },
+   {
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "BAEZA CABRERA, HUGO",
+    "seg": 529,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 1,
+    "pm": -5
+   },
+   {
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "CHOFRE TARREGA, ENRIC",
+    "seg": 1070,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 4,
+    "pm": 2
+   },
+   {
+    "titular": true,
+    "dorsal": "18",
+    "nombre": "BORISOV, DEIVID BOYANOV",
+    "seg": 953,
+    "pt": 15,
+    "t2": {
+     "a": 5,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 6,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 6,
+    "rt": 6,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 14,
+    "pm": 23
+   },
+   {
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "CAMPOS MONTEIRO, ENZO",
+    "seg": 403,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -2,
+    "pm": 3
+   },
+   {
+    "titular": false,
+    "dorsal": "30",
+    "nombre": "ROMERA GALINDO, JAUME",
+    "seg": 189,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -2,
+    "pm": 0
+   },
+   {
+    "titular": false,
+    "dorsal": "32",
+    "nombre": "ROIG MESA, JAVIER",
+    "seg": 1081,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 4,
+    "pm": 6
+   },
+   {
+    "titular": true,
+    "dorsal": "57",
+    "nombre": "DENIA VIVANCOS, ESTEBAN",
+    "seg": 1254,
+    "pt": 10,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 4,
+     "i": 7
+    },
+    "ro": 3,
+    "rd": 5,
+    "rt": 8,
+    "as": 5,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 5,
+    "va": 18,
+    "pm": 19
+   },
+   {
+    "titular": false,
+    "dorsal": "73",
+    "nombre": "MELGAR GARCIA, ALBERTO",
+    "seg": 982,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 6,
+    "pm": 6
+   },
+   {
+    "titular": false,
+    "dorsal": "95",
+    "nombre": "HOYAS PEREZ, DARIO",
+    "seg": 1146,
+    "pt": 15,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 6,
+     "i": 13
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 7,
+    "va": 15,
+    "pm": 10
+   }
+  ],
+  "visitante": [
+   {
+    "titular": false,
+    "dorsal": "0",
+    "nombre": "GONZALEZ SOLER, ALEJANDRO",
+    "seg": 1202,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 3,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 3,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 6,
+    "va": 6,
+    "pm": -2
+   },
+   {
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "ARNAIZ VEGA, SERGIO",
+    "seg": 1184,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 8,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": -4,
+    "pm": -24
+   },
+   {
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "FOS CERVERA, BORJA",
+    "seg": 1782,
+    "pt": 15,
+    "t2": {
+     "a": 4,
+     "i": 9
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 5,
+     "i": 12
+    },
+    "tl": {
+     "a": 4,
+     "i": 8
+    },
+    "ro": 3,
+    "rd": 7,
+    "rt": 10,
+    "as": 1,
+    "br": 3,
+    "bp": 3,
+    "tf": 2,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 5,
+    "va": 20,
+    "pm": -26
+   },
+   {
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "ARNAIZ VEGA, JAIME",
+    "seg": 1306,
+    "pt": 12,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 10
+    },
+    "tc": {
+     "a": 4,
+     "i": 11
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 10,
+    "pm": -7
+   },
+   {
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "COMPANY LOPEZ, AARON",
+    "seg": 1321,
+    "pt": 11,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 3,
+     "i": 7
+    },
+    "tc": {
+     "a": 4,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 2,
+    "pm": 0
+   },
+   {
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "BUSTAMANTE CONTRERAS, PEDRO",
+    "seg": 890,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -7,
+    "pm": -17
+   },
+   {
+    "titular": true,
+    "dorsal": "18",
+    "nombre": "MARTINEZ TIBURCIO, IVAN",
+    "seg": 930,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 1,
+    "pm": -20
+   },
+   {
+    "titular": false,
+    "dorsal": "31",
+    "nombre": "MARTÍNEZ TEJERO, JOSÉ ANTONIO",
+    "seg": 988,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 1,
+    "pm": -11
+   },
+   {
+    "titular": false,
+    "dorsal": "47",
+    "nombre": "ANTONI RODRIGUEZ, MIGUEL",
+    "seg": 1396,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 5
+    },
+    "ro": 6,
+    "rd": 3,
+    "rt": 9,
+    "as": 3,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 11,
+    "pm": -11
+   },
+   {
+    "titular": true,
+    "dorsal": "52",
+    "nombre": "CORNEJO GONZALEZ, MARCOS",
+    "seg": 1001,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": -1,
+    "pm": -27
+   }
+  ]
+ }
+}

@@ -1,0 +1,743 @@
+{
+ "id": "2487470",
+ "temporada": "2025",
+ "grupo": "A-B",
+ "jornada": "Jornada 11(14/12/2025)",
+ "equipoLocal": {
+  "id": "982143",
+  "nombre": "ESTUDIANTES LUGO RIO DE GALICIA"
+ },
+ "equipoVisitante": {
+  "id": "981494",
+  "nombre": "CAJA RURAL RDL"
+ },
+ "resultado": "92-96",
+ "disputado": true,
+ "descargado": "2026-07-16T14:45:36.972Z",
+ "boxscore": {
+  "local": [
+   {
+    "titular": true,
+    "dorsal": "2",
+    "nombre": "FERNANDEZ ZAS, MARCOS",
+    "seg": 824,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 4,
+    "pm": 1
+   },
+   {
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "RAMOS DA CONCEIÇAO, SAÚL",
+    "seg": 742,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 3,
+    "fr": 2,
+    "va": 4,
+    "pm": -8
+   },
+   {
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "SAMA PEREZ, IKER",
+    "seg": 2452,
+    "pt": 26,
+    "t2": {
+     "a": 4,
+     "i": 5
+    },
+    "t3": {
+     "a": 4,
+     "i": 10
+    },
+    "tc": {
+     "a": 8,
+     "i": 15
+    },
+    "tl": {
+     "a": 6,
+     "i": 9
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 5,
+    "va": 23,
+    "pm": -7
+   },
+   {
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "HERMIDA PEREZ, ALEJANDRO",
+    "seg": 2109,
+    "pt": 22,
+    "t2": {
+     "a": 7,
+     "i": 14
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 8,
+     "i": 17
+    },
+    "tl": {
+     "a": 5,
+     "i": 10
+    },
+    "ro": 1,
+    "rd": 8,
+    "rt": 9,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 20,
+    "pm": 2
+   },
+   {
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "SYTAR, ANDRII",
+    "seg": 2077,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 12
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 8,
+    "rt": 11,
+    "as": 4,
+    "br": 0,
+    "bp": 1,
+    "tf": 2,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 2,
+    "va": 14,
+    "pm": 2
+   },
+   {
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "VILLADONIGA AMADO, DIEGO",
+    "seg": 1162,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 5,
+    "rd": 2,
+    "rt": 7,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 5,
+    "pm": 7
+   },
+   {
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "RUANO MARTINEZ, MANUEL",
+    "seg": 439,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 1,
+    "pm": -4
+   },
+   {
+    "titular": false,
+    "dorsal": "24",
+    "nombre": "FERNANDEZ GONZALEZ, PEDRO YAHILE",
+    "seg": 2069,
+    "pt": 12,
+    "t2": {
+     "a": 3,
+     "i": 10
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 15
+    },
+    "tl": {
+     "a": 3,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 5,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 7,
+    "pm": 3
+   },
+   {
+    "titular": false,
+    "dorsal": "33",
+    "nombre": "PALOMARES BARRADO, HUGO",
+    "seg": 650,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 4,
+    "pm": -8
+   },
+   {
+    "titular": true,
+    "dorsal": "39",
+    "nombre": "DARRIBA VAZQUEZ, CRISTIAN",
+    "seg": 976,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 3,
+    "pm": -8
+   }
+  ],
+  "visitante": [
+   {
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "NONGO N'SALA, ARMEL",
+    "seg": 311,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": -1,
+    "pm": -2
+   },
+   {
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "PEREZ MARTIN, RODRIGO",
+    "seg": 1441,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 8
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": -1,
+    "pm": 2
+   },
+   {
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "DOMINGUEZ ITURZA, MIGUEL",
+    "seg": 2429,
+    "pt": 28,
+    "t2": {
+     "a": 1,
+     "i": 6
+    },
+    "t3": {
+     "a": 4,
+     "i": 8
+    },
+    "tc": {
+     "a": 5,
+     "i": 14
+    },
+    "tl": {
+     "a": 14,
+     "i": 15
+    },
+    "ro": 4,
+    "rd": 13,
+    "rt": 17,
+    "as": 4,
+    "br": 0,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 9,
+    "va": 40,
+    "pm": 9
+   },
+   {
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "GONZALEZ BLAS, MIGUEL",
+    "seg": 1519,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 5,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 12,
+    "pm": 5
+   },
+   {
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "IGLESIAS MENDEZ, YAGO JOSE",
+    "seg": 1502,
+    "pt": 20,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 4,
+     "i": 5
+    },
+    "tc": {
+     "a": 8,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": 13,
+    "pm": 5
+   },
+   {
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "JUAN SEVILLANO, MARCOS DE",
+    "seg": 2114,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 12
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 3,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 1,
+    "fc": 4,
+    "fr": 2,
+    "va": 6,
+    "pm": 0
+   },
+   {
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "CACHON VILLAMEDIANA, RODRIGO",
+    "seg": 1049,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 4,
+    "pm": 8
+   },
+   {
+    "titular": false,
+    "dorsal": "29",
+    "nombre": "SALVADORES ALVAREZ, FERNANDO",
+    "seg": 1031,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 2,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 4,
+    "pm": 2
+   },
+   {
+    "titular": false,
+    "dorsal": "38",
+    "nombre": "SAN MILLAN GONZALEZ-QUEVEDO, MARTIN",
+    "seg": 275,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": 6
+   },
+   {
+    "titular": true,
+    "dorsal": "81",
+    "nombre": "GONZALEZ CORDERO, ALVARO",
+    "seg": 1829,
+    "pt": 14,
+    "t2": {
+     "a": 4,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 4,
+     "i": 10
+    },
+    "tl": {
+     "a": 6,
+     "i": 9
+    },
+    "ro": 2,
+    "rd": 11,
+    "rt": 13,
+    "as": 1,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 7,
+    "va": 24,
+    "pm": -15
+   }
+  ]
+ }
+}

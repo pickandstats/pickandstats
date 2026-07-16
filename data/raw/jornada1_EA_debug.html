@@ -1,0 +1,1017 @@
+
+<!DOCTYPE html>
+
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
+	Competiciones FEB
+</title><meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <script src="https://baloncestoenvivo.feb.es/scripts/jquery-1.11.0.js"></script>
+    <script src="https://baloncestoenvivo.feb.es/scripts/basics.js?v=23092020"></script>
+
+<!-- Start cookieyes banner --> <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/a35cb4c6be15abd5570b413e1d031eb5/script.js"></script> <!-- End cookieyes banner -->
+    
+    <!--<link href="https://baloncestoenvivo.feb.es/styles/theme.css?v=02102020" rel="stylesheet" />-->
+	<link href="https://baloncestoenvivo.feb.es/styles/theme.css?v=30122024" rel="stylesheet" />
+
+
+    <link href="https://www.feb.es/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+	<script src="https://baloncestoenvivo.feb.es/scripts/handlebars.js"></script>
+	<script src="https://baloncestoenvivo.feb.es/scripts/widget.handlebars.helpers.js?v=20251020"></script>
+    <script src="https://baloncestoenvivo.feb.es/scripts/widget.launcher.js?v=20251022"></script>
+    <script src="https://baloncestoenvivo.feb.es/scripts/moment.js"></script>
+    <script src="https://baloncestoenvivo.feb.es/scripts/plug.carrusel.js"></script>
+
+
+    <script>
+        $(function ($) {
+            $('#site-btn-menu').on('click', function () {
+                var container = $('#containermenu');
+
+                if (container.find('.wrapper-menu').hasClass('d_on')) {
+                    $('#site-btn-menu').removeClass('d_on');
+                    $('#site-btn-menu[class=""]').removeAttr('class');//if is empty
+
+                    container.find('.wrapper-menu').removeClass('d_on');
+                    container.find('.wrapper-menu[class=""]').removeAttr('class');//if is empty
+                    container.find('.wrapper-menu').removeAttr('style');//clean
+                    container.find('.site-menu').removeAttr('style');//clean
+                } else {
+                    $('#site-btn-menu').addClass('d_on');
+                    container.find('.wrapper-menu').addClass('d_on');
+                    var alto = $('body').outerHeight(true) - $('#site-head').outerHeight(true);
+                    container.find('.wrapper-menu').attr('style', 'min-height:' + alto + 'px;');
+                    container.find('.site-menu').attr('style', 'min-height:' + alto + 'px;');
+                }
+
+            });
+        });
+    </script>
+</head>
+<body>
+    <form name="aspnetForm" method="post" action="/resultados.aspx?g=3&amp;t=2025" id="aspnetForm">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJMzkzOTEyMDU1DxYCHgllc1ByaW1lcmECARYCZg9kFgICAw8WAh4GYWN0aW9uBRsvcmVzdWx0YWRvcy5hc3B4P2c9MyZ0PTIwMjUWBAIBD2QWAmYPFgIeC18hSXRlbUNvdW50AhgWMGYPZBYEAgEPDxYCHghJbWFnZVVybAUuaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz00JnQ9MjAyNmRkAgIPFQUJTEYgRU5ERVNBUGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz00JmFtcDt0PTIwMjYmYW1wO25tPWxmZW5kZXNhTmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9NCZhbXA7dD0yMDI2JmFtcDtubT1sZmVuZGVzYU5odHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTQmYW1wO3Q9MjAyNiZhbXA7bm09bGZlbmRlc2FMaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NCZhbXA7dD0yMDI2JmFtcDtubT1sZmVuZGVzYWQCAQ9kFgQCAQ8PFgIfAwUuaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz0xJnQ9MjAyNWRkAgIPFQULUFJJTUVSQSBGRUJSaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTEmYW1wO3Q9MjAyNSZhbXA7bm09cHJpbWVyYWZlYlBodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTEmYW1wO3Q9MjAyNSZhbXA7bm09cHJpbWVyYWZlYlBodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTEmYW1wO3Q9MjAyNSZhbXA7bm09cHJpbWVyYWZlYk5odHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0xJmFtcDt0PTIwMjUmYW1wO25tPXByaW1lcmFmZWJkAgIPZBYEAgEPDxYCHwMFL2h0dHBzOi8vaW1hZ2VuZXMuZmViLmVzL0ltYWdlbi5hc3B4P2c9NjcmdD0yMDI2ZGQCAg8VBQxMRiBDSEFMTEVOR0VUaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTY3JmFtcDt0PTIwMjYmYW1wO25tPWxmY2hhbGxlbmdlUmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9NjcmYW1wO3Q9MjAyNiZhbXA7bm09bGZjaGFsbGVuZ2VSaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz02NyZhbXA7dD0yMDI2JmFtcDtubT1sZmNoYWxsZW5nZVBodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz02NyZhbXA7dD0yMDI2JmFtcDtubT1sZmNoYWxsZW5nZWQCAw9kFgQCAQ8PFgIfAwUuaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz0yJnQ9MjAyNWRkAgIPFQULU0VHVU5EQSBGRUJSaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTImYW1wO3Q9MjAyNSZhbXA7bm09c2VndW5kYWZlYlBodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTImYW1wO3Q9MjAyNSZhbXA7bm09c2VndW5kYWZlYlBodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTImYW1wO3Q9MjAyNSZhbXA7bm09c2VndW5kYWZlYk5odHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0yJmFtcDt0PTIwMjUmYW1wO25tPXNlZ3VuZGFmZWJkAgQPZBYEAgEPDxYCHwMFLmh0dHBzOi8vaW1hZ2VuZXMuZmViLmVzL0ltYWdlbi5hc3B4P2c9OSZ0PTIwMjZkZAICDxUFBkwuRi4tMktodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9OSZhbXA7dD0yMDI2JmFtcDtubT1sZjJJaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz05JmFtcDt0PTIwMjYmYW1wO25tPWxmMklodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTkmYW1wO3Q9MjAyNiZhbXA7bm09bGYyR2h0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTkmYW1wO3Q9MjAyNiZhbXA7bm09bGYyZAIFD2QWBAIBDw8WAh8DBS5odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTMmdD0yMDI1ZGQCAg8VBQtURVJDRVJBIEZFQlJodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9MyZhbXA7dD0yMDI1JmFtcDtubT10ZXJjZXJhZmViUGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9MyZhbXA7dD0yMDI1JmFtcDtubT10ZXJjZXJhZmViUGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MyZhbXA7dD0yMDI1JmFtcDtubT10ZXJjZXJhZmViTmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTMmYW1wO3Q9MjAyNSZhbXA7bm09dGVyY2VyYWZlYmQCBg9kFgQCAQ8PFgIfAwUvaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz03NCZ0PTIwMjVkZAICDxUFBkxJR0EgVU5odHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9NzQmYW1wO3Q9MjAyNSZhbXA7bm09bGlnYXVMaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz03NCZhbXA7dD0yMDI1JmFtcDtubT1saWdhdUxodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTc0JmFtcDt0PTIwMjUmYW1wO25tPWxpZ2F1Smh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTc0JmFtcDt0PTIwMjUmYW1wO25tPWxpZ2F1ZAIHD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTczJnQ9MjAyNWRkAgIPFQUMQ09QQSBFU1BBw5FBUmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz03MyZhbXA7dD0yMDI1JmFtcDtubT1jb3BhZXNwYWFQaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz03MyZhbXA7dD0yMDI1JmFtcDtubT1jb3BhZXNwYWFQaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz03MyZhbXA7dD0yMDI1JmFtcDtubT1jb3BhZXNwYWFOaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NzMmYW1wO3Q9MjAyNSZhbXA7bm09Y29wYWVzcGFhZAIID2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTE5JnQ9MjAyNWRkAgIPFQURQ0UgU1NBQSBNaW5pIE1hcy5WaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTE5JmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYW1pbmltYXNUaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0xOSZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFtaW5pbWFzVGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MTkmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhbWluaW1hc1JodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0xOSZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFtaW5pbWFzZAIJD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTIwJnQ9MjAyNWRkAgIPFQURQ0UgU1NBQSBNaW5pIEZlbS5WaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTIwJmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYW1pbmlmZW1UaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0yMCZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFtaW5pZmVtVGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MjAmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhbWluaWZlbVJodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0yMCZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFtaW5pZmVtZAIKD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTQwJnQ9MjAyNWRkAgIPFQUTQ0UgU1NBQSBDYWRldGUgTWFzLlhodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9NDAmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhY2FkZXRlbWFzVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9NDAmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhY2FkZXRlbWFzVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9NDAmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhY2FkZXRlbWFzVGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTQwJmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWNhZGV0ZW1hc2QCCw9kFgQCAQ8PFgIfAwUvaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz00MSZ0PTIwMjVkZAICDxUFE0NFIFNTQUEgQ2FkZXRlIEZlbS5YaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTQxJmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWNhZGV0ZWZlbVZodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTQxJmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWNhZGV0ZWZlbVZodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTQxJmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWNhZGV0ZWZlbVRodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz00MSZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFjYWRldGVmZW1kAgwPZBYEAgEPDxYCHwMFL2h0dHBzOi8vaW1hZ2VuZXMuZmViLmVzL0ltYWdlbi5hc3B4P2c9MjUmdD0yMDI1ZGQCAg8VBRVDRSBTU0FBIEluZmFudGlsIE1hcy5aaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTI1JmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWluZmFudGlsbWFzWGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9MjUmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhaW5mYW50aWxtYXNYaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz0yNSZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFpbmZhbnRpbG1hc1ZodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0yNSZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFpbmZhbnRpbG1hc2QCDQ9kFgQCAQ8PFgIfAwUvaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz0yNiZ0PTIwMjVkZAICDxUFFUNFIFNTQUEgSW5mYW50aWwgRmVtLlpodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9MjYmYW1wO3Q9MjAyNSZhbXA7bm09Y2Vzc2FhaW5mYW50aWxmZW1YaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0yNiZhbXA7dD0yMDI1JmFtcDtubT1jZXNzYWFpbmZhbnRpbGZlbVhodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTI2JmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWluZmFudGlsZmVtVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTI2JmFtcDt0PTIwMjUmYW1wO25tPWNlc3NhYWluZmFudGlsZmVtZAIOD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTU1JnQ9MjAyNWRkAgIPFQUSTUlOSUNPUEEgTEYgRU5ERVNBWWh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz01NSZhbXA7dD0yMDI1JmFtcDtubT1taW5pY29wYWxmZW5kZXNhV2h0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9NTUmYW1wO3Q9MjAyNSZhbXA7bm09bWluaWNvcGFsZmVuZGVzYVdodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTU1JmFtcDt0PTIwMjUmYW1wO25tPW1pbmljb3BhbGZlbmRlc2FVaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NTUmYW1wO3Q9MjAyNSZhbXA7bm09bWluaWNvcGFsZmVuZGVzYWQCDw9kFgQCAQ8PFgIfAwUvaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz00NCZ0PTIwMjVkZAICDxUFIEZhc2UgRmluYWwgMcKqIERpdmlzacOzbiBGZW1lbmluYWh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz00NCZhbXA7dD0yMDI1JmFtcDtubT1mYXNlZmluYWwxZGl2aXNpbmZlbWVuaW5faHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz00NCZhbXA7dD0yMDI1JmFtcDtubT1mYXNlZmluYWwxZGl2aXNpbmZlbWVuaW5faHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz00NCZhbXA7dD0yMDI1JmFtcDtubT1mYXNlZmluYWwxZGl2aXNpbmZlbWVuaW5daHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NDQmYW1wO3Q9MjAyNSZhbXA7bm09ZmFzZWZpbmFsMWRpdmlzaW5mZW1lbmluZAIQD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTIxJnQ9MjAyNWRkAgIPFQUUQyBFU1AgQ0xVQkVTIEpSIE1BU0NZaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTIxJmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNqcm1hc2NXaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0yMSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzanJtYXNjV2h0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MjEmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2pybWFzY1VodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0yMSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzanJtYXNjZAIRD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTIyJnQ9MjAyNWRkAgIPFQUTQyBFU1AgQ0xVQkVTIEpSIEZFTVhodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9MjImYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2pyZmVtVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmVzdWx0YWRvcy5hc3B4P2c9MjImYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2pyZmVtVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MjImYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2pyZmVtVGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTIyJmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNqcmZlbWQCEg9kFgQCAQ8PFgIfAwUvaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz0zNSZ0PTIwMjVkZAICDxUFFUMgRVNQIENMVUJFUyBDQUQgTUFTQ1podHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9MzUmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2NhZG1hc2NYaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0zNSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzY2FkbWFzY1hodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2NhbGVuZGFyaW8uYXNweD9nPTM1JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNjYWRtYXNjVmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTM1JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNjYWRtYXNjZAITD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTM2JnQ9MjAyNWRkAgIPFQUUQyBFU1AgQ0xVQkVTIENBRCBGRU1ZaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9lc3RhZGlzdGljYXMuYXNweD9nPTM2JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNjYWRmZW1XaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz0zNiZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzY2FkZmVtV2h0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MzYmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2NhZGZlbVVodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3JhbmtpbmdzLmFzcHg/Zz0zNiZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzY2FkZmVtZAIUD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTM3JnQ9MjAyNWRkAgIPFQUVQyBFU1AgQ0xVQkVTIElORiBNQVNDWmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz0zNyZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzaW5mbWFzY1hodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTM3JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNpbmZtYXNjWGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9MzcmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2luZm1hc2NWaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9MzcmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2luZm1hc2NkAhUPZBYEAgEPDxYCHwMFL2h0dHBzOi8vaW1hZ2VuZXMuZmViLmVzL0ltYWdlbi5hc3B4P2c9MzgmdD0yMDI1ZGQCAg8VBRRDIEVTUCBDTFVCRVMgSU5GIEZFTVlodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL2VzdGFkaXN0aWNhcy5hc3B4P2c9MzgmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc2luZmZlbVdodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTM4JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNpbmZmZW1XaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz0zOCZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzaW5mZmVtVWh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvcmFua2luZ3MuYXNweD9nPTM4JmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNpbmZmZW1kAhYPZBYEAgEPDxYCHwMFL2h0dHBzOi8vaW1hZ2VuZXMuZmViLmVzL0ltYWdlbi5hc3B4P2c9NzEmdD0yMDI1ZGQCAg8VBRZDIEVTUCBDTFVCRVMgTUlOSSBNQVNDW2h0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz03MSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzbWluaW1hc2NZaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yZXN1bHRhZG9zLmFzcHg/Zz03MSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzbWluaW1hc2NZaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9jYWxlbmRhcmlvLmFzcHg/Zz03MSZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzbWluaW1hc2NXaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NzEmYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc21pbmltYXNjZAIXD2QWBAIBDw8WAh8DBS9odHRwczovL2ltYWdlbmVzLmZlYi5lcy9JbWFnZW4uYXNweD9nPTcyJnQ9MjAyNWRkAgIPFQUVQyBFU1AgQ0xVQkVTIE1JTkkgRkVNWmh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvZXN0YWRpc3RpY2FzLmFzcHg/Zz03MiZhbXA7dD0yMDI1JmFtcDtubT1jZXNwY2x1YmVzbWluaWZlbVhodHRwczovL2JhbG9uY2VzdG9lbnZpdm8uZmViLmVzL3Jlc3VsdGFkb3MuYXNweD9nPTcyJmFtcDt0PTIwMjUmYW1wO25tPWNlc3BjbHViZXNtaW5pZmVtWGh0dHBzOi8vYmFsb25jZXN0b2Vudml2by5mZWIuZXMvY2FsZW5kYXJpby5hc3B4P2c9NzImYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc21pbmlmZW1WaHR0cHM6Ly9iYWxvbmNlc3RvZW52aXZvLmZlYi5lcy9yYW5raW5ncy5hc3B4P2c9NzImYW1wO3Q9MjAyNSZhbXA7bm09Y2VzcGNsdWJlc21pbmlmZW1kAgIPZBYUAgEPZBYIAgEPZBYCZg8PFgIfAwUuaHR0cHM6Ly9pbWFnZW5lcy5mZWIuZXMvSW1hZ2VuLmFzcHg/Zz0zJnQ9MjAyNWRkAgMPFgIeBFRleHQFHFJlc3VsdGFkb3MgeSBDbGFzaWZpY2FjaW9uZXNkAgUPFgIfBAULVEVSQ0VSQSBGRUJkAgcPFgIfBAUJMjAyNS8yMDI2ZAIFDxAPFgYeDkRhdGFWYWx1ZUZpZWxkBQJJZB4NRGF0YVRleHRGaWVsZAUFVGV4dG8eC18hRGF0YUJvdW5kZ2QQFRsJMjAyNS8yMDI2CTIwMjQvMjAyNQkyMDIzLzIwMjQJMjAyMi8yMDIzCTIwMjEvMjAyMgkyMDIwLzIwMjEJMjAxOS8yMDIwCTIwMTgvMjAxOQkyMDE3LzIwMTgJMjAxNi8yMDE3CTIwMTUvMjAxNgkyMDE0LzIwMTUJMjAxMy8y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" />
+
+<script type="text/javascript">
+<!--
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+// -->
+</script>
+
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E89D4ECB" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAFoprvxoG0CJUasUwvUm9jdDaTu7IOxh06lSkxFAxwGhESYdX7J5vtq5njqV+t/0Lvdi60zVFfWQDAylQv1TIjEzWX48f4+hWyTStBD6SPF7MHzls9zszvJTZEaaNf5wkwqfAMGUYkrNI1XtpQLjDI/GnZ80xCKagfO3u5VmUoOg+cutBYQylOjLNWpnNPnsrNFcI4emRnbOXIwEuSX0PGmelJutSHvrd9hfBKwL48/qy4k1fmjr/icnNRB2qoeX/15T6QnzE2F+V+lyd3q+YcdHKi5pXYSSbSL12pIqrrUDcbm6dURV6P/jKsYYrewKBEZ4YnR3S50n92FFLdVKshW0fAdzyO8RL1PAbfz+87IQuRDLSe3gSG9Ze+amiFm36YyCZ5HP0WdhPd5K1lrQKOeKNVoAlsJZdpwmPqaEaNFqIc4Tqad+jl0X1nRWIwLlXqTB+APcGsperjKq+SZGqVs1E2NHWwFLnl1WPmHmoQQ8Jf8njDbJYFPn3R2m7dQFau9WxRaA254vH+XyVFsrxk1aU57IWg6K3oIN9IvkNaSClGtqg6nVt6+9GMQgZ1VAD9OzeGDaruX+7b1Z6UKmkvz503hBqYwuqdh26DlfIWJlSyl8ABCjku6rgSvprGZ+dTcagVjzdBsApRVgwtZ3cxjr+Tkkw9XZ3HG4FJjKfd4LSgyLuGJWr3Ufh3b9l8GwwwVKN060q/sAIOiA8PiJskbNcE1+nFPgLpe9Lb4RL6jKz1QeB7QgauBt/Yplj4dtp2N/oG5z+9BExm6MJ9Zg89Fi3c7at/Qpx5ZXPsbW2qUlrXNtNM271CMyqeG7ARQHVZtAAnqtf0jEaWz6KYSIf3zmhv072JtWC8QNg7Fmj2A0T2vKiDVWV8X/LBmc9qtyL9lEgTie8J3X3OpiDWBp1je7yCkk6vb6VY81dHRkgSrTlvrBgBgdLwZAgosUJc2NsJGas5I97ojs95vcWjJIexN5xSFplJHbzgZQxW8yOhqVriwLehdD7HM+RGpFm1Hgt3YWD0eAwNawnu/TSuuNOc9apvMUZ+Jowj7X2O8AhMOiJZxbFE+yh0D6AV3i3nyQUhA2x7P+lKJLjGsFh/IFoczX064ZG56FHwu2v8YGh3KBf80guN2m7gTq6rDfGaQqxY6cUf2jRGIZv8ee1AoYJGZNI8L6MjxUbzEiiRc4Wd90WWGnk0unhPfzFJ62bYB8pIVv7B3ZzRiyocvOJsKNVcvm4u48qUEBty4rALtZYas7FOsMhOCxjy5B399rbDe7M5DewXw4z4I1Eq0ihvkIgyK9ElFMaci+UDC5sKgom4dnrIlk6D8CAqOJP9nW/I3q8pd59E+qpBe3eNfVaE++B98E6RhFalqB8hMF0MlGuaz+N71/K8nMnG7jiEFmjSpfFXSrF3GSo8RTV7yiBy+lguRunuscBgPrnpxAxzyq/La+3bIZfCVHUITU4K2LlVPkWTXcuAbea6WuNYCfe0JQ08DVTPh672Ha+o6hmtsaHfsvWf5lDfbBO4UzBb+qKSK4C9xvd1UcoCd3dHrZDvYHSZBTByx4pI8q1q1U572W3eFKlM0ihA8oquo+u8e0Jc6AJirkqMRb6hXAkmOifJDRTyWOBcNSB6j8RDE/IOcKU6wXGZJPb4SsqQMF+1fEE5a+JELtcp6Q/rsRctpxR0zDRYIO2fu9Kp6giKcbnbLJUc6S7DH7Bueg21UDw3u8mOmbYmvqsRKdBi3VWZn9igRor/Nk+lkUjDyGqLDHAMSOILqBhrc/P2O4bZpsyTWUgk/M8N/yAq2Ik4R+ibYa9N7bWUOBiUwcUkZaaAC4a9rS84bnpu9HBvOMsO18g2iDZ1a+h0kmn4QKEcHvlf4o1Tfryg6Xm/sNAXnjzp/xA6oN7Wl8cdC4OfPqqRpw3+Od6GB6AJE2j4LSMznkDrufUhcB9U2NB68ou0TR0ZmeMum+GgilFQ==" />
+        <div id="contentToken">
+            <input type="hidden" name="_ctl0:token" id="_ctl0_token" value="eyJhbGciOiJSUzI1NiIsImtpZCI6ImQzOWE5MzlhZTQyZmFlMTM5NWJjODNmYjcwZjc1ZDc3IiwidHlwIjoiSldUIn0.eyJuYmYiOjE3ODQyMDExNDAsImV4cCI6MTc4NDI4NzU0MCwiaXNzIjoiaHR0cHM6Ly9pbnRyYWZlYi5mZWIuZXMvaWRlbnRpdHkuYXBpIiwiYXVkIjpbImh0dHBzOi8vaW50cmFmZWIuZmViLmVzL2lkZW50aXR5LmFwaS9yZXNvdXJjZXMiLCJsaXZlc3RhdHMuYXBpIl0sImNsaWVudF9pZCI6ImJhbG9uY2VzdG9lbnZpdm9hcHAiLCJpZGFtYml0byI6IjEiLCJyb2xlIjpbIk92ZXJWaWV3IiwiVGVhbVN0YXRzIiwiU2hvdENoYXJ0IiwiUmFua2luZyIsIktleUZhY3RzIiwiQm94U2NvcmUiXSwic2NvcGUiOlsibGl2ZXN0YXRzLmFwaSJdfQ.JaLPRbdVokmEwFe4-OYwtuJemwfZRWOlTbDhU8r5dAkoqoyTC_E3KpeIw304hrSrQEC-V3YGe2KN2Ma_953uMia_6pUkVQUU65ENnFMhb7OD-jrAv9TOK_ja9vqFDoeidus_wGNVun9tVsowYzlAPE4hDpsxY9VyTqOjLZ_VLrXTOUG7JZVmKmXrS8SRl0LVkJ6YBSGQLgq4CFooxZ5Kowl_-a1RFqUdP6i94B0OrPP8cZeQ_jFD_-pSs_A5K_7N6rymLop5AFbaKpHbEq1Lu68LiCHYwu2aIMCvY-0jBswpWlr1sDwX2QPshYj6-9_GENkYe4__8qFu--qqZel9Qw" />
+        </div>
+        <div id="site-head">
+            <span id="site-btn-menu"><span class="icon"></span></span>
+            <a id="site-logo" href="https://baloncestoenvivo.feb.es/home.aspx">
+                <img src="https://baloncestoenvivo.feb.es/Imagenes/Estructura/feblivescore_logo negativo.png?v=01012019">
+            </a>
+        </div>
+        <div id="containermenu">
+            
+
+ <div class="wrapper-menu">
+    <div class="site-menu">
+        <div id="site-menu-caption"><img src="https://baloncestoenvivo.feb.es/Imagenes/Estructura/FEB-LOGO-HORIZONTAL-WEB-NEGATIVO.png"></div>
+          
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=4&amp;t=2026" border="0" /></div>
+                    <span class="menu-item-liga">LF ENDESA</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=4&amp;t=2026&amp;nm=lfendesa" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=4&amp;t=2026&amp;nm=lfendesa" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=4&amp;t=2026&amp;nm=lfendesa" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=4&amp;t=2026&amp;nm=lfendesa" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=1&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">PRIMERA FEB</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=1&amp;t=2025&amp;nm=primerafeb" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=1&amp;t=2025&amp;nm=primerafeb" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=1&amp;t=2025&amp;nm=primerafeb" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=1&amp;t=2025&amp;nm=primerafeb" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=67&amp;t=2026" border="0" /></div>
+                    <span class="menu-item-liga">LF CHALLENGE</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=67&amp;t=2026&amp;nm=lfchallenge" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=67&amp;t=2026&amp;nm=lfchallenge" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=67&amp;t=2026&amp;nm=lfchallenge" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=67&amp;t=2026&amp;nm=lfchallenge" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=2&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">SEGUNDA FEB</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=2&amp;t=2025&amp;nm=segundafeb" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=2&amp;t=2025&amp;nm=segundafeb" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=2&amp;t=2025&amp;nm=segundafeb" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=2&amp;t=2025&amp;nm=segundafeb" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=9&amp;t=2026" border="0" /></div>
+                    <span class="menu-item-liga">L.F.-2</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=9&amp;t=2026&amp;nm=lf2" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=9&amp;t=2026&amp;nm=lf2" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=9&amp;t=2026&amp;nm=lf2" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=9&amp;t=2026&amp;nm=lf2" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=3&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">TERCERA FEB</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=3&amp;t=2025&amp;nm=tercerafeb" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=3&amp;t=2025&amp;nm=tercerafeb" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=3&amp;t=2025&amp;nm=tercerafeb" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=3&amp;t=2025&amp;nm=tercerafeb" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=74&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">LIGA U</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=74&amp;t=2025&amp;nm=ligau" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=74&amp;t=2025&amp;nm=ligau" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=74&amp;t=2025&amp;nm=ligau" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=74&amp;t=2025&amp;nm=ligau" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=73&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">COPA ESPAÑA</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=73&amp;t=2025&amp;nm=copaespaa" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=73&amp;t=2025&amp;nm=copaespaa" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=73&amp;t=2025&amp;nm=copaespaa" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=73&amp;t=2025&amp;nm=copaespaa" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=19&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Mini Mas.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=19&amp;t=2025&amp;nm=cessaaminimas" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=19&amp;t=2025&amp;nm=cessaaminimas" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=19&amp;t=2025&amp;nm=cessaaminimas" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=19&amp;t=2025&amp;nm=cessaaminimas" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=20&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Mini Fem.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=20&amp;t=2025&amp;nm=cessaaminifem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=20&amp;t=2025&amp;nm=cessaaminifem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=20&amp;t=2025&amp;nm=cessaaminifem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=20&amp;t=2025&amp;nm=cessaaminifem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=40&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Cadete Mas.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=40&amp;t=2025&amp;nm=cessaacadetemas" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=40&amp;t=2025&amp;nm=cessaacadetemas" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=40&amp;t=2025&amp;nm=cessaacadetemas" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=40&amp;t=2025&amp;nm=cessaacadetemas" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=41&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Cadete Fem.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=41&amp;t=2025&amp;nm=cessaacadetefem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=41&amp;t=2025&amp;nm=cessaacadetefem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=41&amp;t=2025&amp;nm=cessaacadetefem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=41&amp;t=2025&amp;nm=cessaacadetefem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=25&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Infantil Mas.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=25&amp;t=2025&amp;nm=cessaainfantilmas" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=25&amp;t=2025&amp;nm=cessaainfantilmas" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=25&amp;t=2025&amp;nm=cessaainfantilmas" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=25&amp;t=2025&amp;nm=cessaainfantilmas" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=26&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">CE SSAA Infantil Fem.</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=26&amp;t=2025&amp;nm=cessaainfantilfem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=26&amp;t=2025&amp;nm=cessaainfantilfem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=26&amp;t=2025&amp;nm=cessaainfantilfem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=26&amp;t=2025&amp;nm=cessaainfantilfem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=55&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">MINICOPA LF ENDESA</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=55&amp;t=2025&amp;nm=minicopalfendesa" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=55&amp;t=2025&amp;nm=minicopalfendesa" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=55&amp;t=2025&amp;nm=minicopalfendesa" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=55&amp;t=2025&amp;nm=minicopalfendesa" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=44&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">Fase Final 1ª División Femenin</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=44&amp;t=2025&amp;nm=fasefinal1divisinfemenin" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=44&amp;t=2025&amp;nm=fasefinal1divisinfemenin" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=44&amp;t=2025&amp;nm=fasefinal1divisinfemenin" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=44&amp;t=2025&amp;nm=fasefinal1divisinfemenin" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=21&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES JR MASC</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=21&amp;t=2025&amp;nm=cespclubesjrmasc" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=21&amp;t=2025&amp;nm=cespclubesjrmasc" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=21&amp;t=2025&amp;nm=cespclubesjrmasc" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=21&amp;t=2025&amp;nm=cespclubesjrmasc" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=22&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES JR FEM</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=22&amp;t=2025&amp;nm=cespclubesjrfem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=22&amp;t=2025&amp;nm=cespclubesjrfem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=22&amp;t=2025&amp;nm=cespclubesjrfem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=22&amp;t=2025&amp;nm=cespclubesjrfem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=35&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES CAD MASC</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=35&amp;t=2025&amp;nm=cespclubescadmasc" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=35&amp;t=2025&amp;nm=cespclubescadmasc" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=35&amp;t=2025&amp;nm=cespclubescadmasc" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=35&amp;t=2025&amp;nm=cespclubescadmasc" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=36&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES CAD FEM</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=36&amp;t=2025&amp;nm=cespclubescadfem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=36&amp;t=2025&amp;nm=cespclubescadfem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=36&amp;t=2025&amp;nm=cespclubescadfem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=36&amp;t=2025&amp;nm=cespclubescadfem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=37&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES INF MASC</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=37&amp;t=2025&amp;nm=cespclubesinfmasc" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=37&amp;t=2025&amp;nm=cespclubesinfmasc" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=37&amp;t=2025&amp;nm=cespclubesinfmasc" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=37&amp;t=2025&amp;nm=cespclubesinfmasc" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=38&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES INF FEM</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=38&amp;t=2025&amp;nm=cespclubesinffem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=38&amp;t=2025&amp;nm=cespclubesinffem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=38&amp;t=2025&amp;nm=cespclubesinffem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=38&amp;t=2025&amp;nm=cespclubesinffem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=71&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES MINI MASC</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=71&amp;t=2025&amp;nm=cespclubesminimasc" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=71&amp;t=2025&amp;nm=cespclubesminimasc" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=71&amp;t=2025&amp;nm=cespclubesminimasc" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=71&amp;t=2025&amp;nm=cespclubesminimasc" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+                <div class="menu-item">
+                    <div class="menu-item-logo"><img src="https://imagenes.feb.es/Imagen.aspx?g=72&amp;t=2025" border="0" /></div>
+                    <span class="menu-item-liga">C ESP CLUBES MINI FEM</span>
+
+
+                    
+
+                    <div class="menu-item-links">
+                        <a href="https://baloncestoenvivo.feb.es/estadisticas.aspx?g=72&amp;t=2025&amp;nm=cespclubesminifem" class="link">Estadisticas</a>
+                        <a href="https://baloncestoenvivo.feb.es/resultados.aspx?g=72&amp;t=2025&amp;nm=cespclubesminifem" class="link">Resultados</a>
+                        <a href="https://baloncestoenvivo.feb.es/calendario.aspx?g=72&amp;t=2025&amp;nm=cespclubesminifem" class="link">Calendario</a>
+                        <a href="https://baloncestoenvivo.feb.es/rankings.aspx?g=72&amp;t=2025&amp;nm=cespclubesminifem" class="link">Rankings</a>
+                    </div>
+                </div>
+              
+    </div>
+</div> 
+
+
+
+
+
+        </div>
+        <div id="wrapper-seccion">
+            
+            
+
+	
+
+<div class="wrapper-tituloSeccion">
+    <div class="tituloSeccion">
+        <div id="_ctl0_MainContentPlaceHolderMaster_ControlTituloSeccion_logoCategoriaPanel" class="wrapper-logo">
+	<img id="logoCategoriaImage" src="https://imagenes.feb.es/Imagen.aspx?g=3&amp;t=2025" border="0" />
+</div>
+        <div class="wrapper-text">
+            <span class="titulo">Resultados y Clasificaciones</span>
+            <span class="liga">TERCERA FEB </span>
+            <span class="temporada">2025/2026</span>
+        </div>
+    </div>
+</div>
+
+
+    <div class="wrapper-seccion-contents" id="page-resultados">
+
+
+        <div id="loader-data"></div>
+        <input type="hidden" name="_ctl0:MainContentPlaceHolderMaster:CodCategoriaHiddenField" id="CodCategoriaHiddenField" value="111" />
+        <script>
+            $(function () {
+
+                $('#loader-data').widgetlauncher({ initLoad: "home" });
+          
+            });
+        </script>
+		
+		<div class="context-navigation">
+			<select name="_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;_ctl0$MainContentPlaceHolderMaster$temporadasDropDownList\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="_ctl0_MainContentPlaceHolderMaster_temporadasDropDownList">
+	<option selected="selected" value="2025">2025/2026</option>
+	<option value="2024">2024/2025</option>
+	<option value="2023">2023/2024</option>
+	<option value="2022">2022/2023</option>
+	<option value="2021">2021/2022</option>
+	<option value="2020">2020/2021</option>
+	<option value="2019">2019/2020</option>
+	<option value="2018">2018/2019</option>
+	<option value="2017">2017/2018</option>
+	<option value="2016">2016/2017</option>
+	<option value="2015">2015/2016</option>
+	<option value="2014">2014/2015</option>
+	<option value="2013">2013/2014</option>
+	<option value="2012">2012/2013</option>
+	<option value="2011">2011/2012</option>
+	<option value="2010">2010/2011</option>
+	<option value="2009">2009/2010</option>
+	<option value="2008">2008/2009</option>
+	<option value="2007">2007/2008</option>
+	<option value="2006">2006/2007</option>
+	<option value="2005">2005/2006</option>
+	<option value="2004">2004/2005</option>
+	<option value="2003">2003/2004</option>
+	<option value="2002">2002/2003</option>
+	<option value="2001">2001/2002</option>
+	<option value="2000">2000/2001</option>
+	<option value="1999">1999/2000</option>
+
+</select>
+			<select name="_ctl0:MainContentPlaceHolderMaster:gruposDropDownList" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;_ctl0$MainContentPlaceHolderMaster$gruposDropDownList\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="_ctl0_MainContentPlaceHolderMaster_gruposDropDownList">
+	<option value="89851">FASE FINAL-A FFA1</option>
+	<option value="89852">FASE FINAL-A FFA2</option>
+	<option value="89853">FASE FINAL-B FFB3</option>
+	<option value="89854">FASE FINAL-B FFB4</option>
+	<option value="89691">ELIMIN. GR &quot;A&quot; 1/2 Final</option>
+	<option value="89855">FF 2&#186;A1-2&#186;A2 2&#186;A1-2&#186;A2</option>
+	<option value="89856">FF 2&#186;B3-2&#186;B4 2&#186;B3-2&#186;B4</option>
+	<option value="89692">ELIMIN. GR &quot;B&quot; 1/2 Final</option>
+	<option value="89693">ELIMIN. GR &quot;C&quot; 1/2 Final</option>
+	<option value="89694">ELIMIN. GR &quot;D&quot; 1/2 Final</option>
+	<option value="89695">ELIMIN. GR &quot;E&quot; 1/2 Final</option>
+	<option value="89512">1&#186;AA-1&#186;AB Final</option>
+	<option value="89517">1&#186;BA-1&#186;BB Final</option>
+	<option value="89514">1&#186;CA-1&#186;CB Final</option>
+	<option value="89515">1&#186;DA-1&#186;DB Final</option>
+	<option value="89516">1&#186;EA-1&#186;EB Final</option>
+	<option value="89518">ELIMIN. GR &quot;A&quot; 1/4 Final</option>
+	<option value="89519">ELIMIN. GR &quot;B&quot; 1/4 Final</option>
+	<option value="89520">ELIMIN. GR &quot;C&quot; 1/4 Final</option>
+	<option value="89521">ELIMIN. GR &quot;D&quot; 1/4 Final</option>
+	<option value="89522">ELIMIN. GR &quot;E&quot; 1/4 Final</option>
+	<option value="88887">Liga Regular &quot;C-B&quot;</option>
+	<option value="88882">Liga Regular &quot;A-A&quot;</option>
+	<option value="88883">Liga Regular &quot;A-B&quot;</option>
+	<option value="88884">Liga Regular &quot;B-A&quot;</option>
+	<option value="88885">Liga Regular &quot;B-B&quot;</option>
+	<option value="88886">Liga Regular &quot;C-A&quot;</option>
+	<option value="88888">Liga Regular &quot;D-A&quot;</option>
+	<option value="88890">Liga Regular &quot;D-B&quot;</option>
+	<option selected="selected" value="88891">Liga Regular &quot;E-A&quot;</option>
+	<option value="88892">Liga Regular &quot;E-B&quot;</option>
+
+</select>
+			<select name="_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;_ctl0$MainContentPlaceHolderMaster$jornadasDropDownList\&#39;,\&#39;\&#39;)&#39;, 0)" language="javascript" id="_ctl0_MainContentPlaceHolderMaster_jornadasDropDownList">
+	<option selected="selected" value="662231">Jornada 1(05/10/2025)</option>
+	<option value="662232">Jornada 2(12/10/2025)</option>
+	<option value="662233">Jornada 3(19/10/2025)</option>
+	<option value="662234">Jornada 4(26/10/2025)</option>
+	<option value="662235">Jornada 5(02/11/2025)</option>
+	<option value="662236">Jornada 6(09/11/2025)</option>
+	<option value="662237">Jornada 7(16/11/2025)</option>
+	<option value="662238">Jornada 8(23/11/2025)</option>
+	<option value="662239">Jornada 9(30/11/2025)</option>
+	<option value="662240">Jornada 10(07/12/2025)</option>
+	<option value="662241">Jornada 11(14/12/2025)</option>
+	<option value="662242">Jornada 12(21/12/2025)</option>
+	<option value="662243">Jornada 13(11/01/2026)</option>
+	<option value="662244">Jornada 14(18/01/2026)</option>
+	<option value="662245">Jornada 15(25/01/2026)</option>
+	<option value="662246">Jornada 16(01/02/2026)</option>
+	<option value="662247">Jornada 17(08/02/2026)</option>
+	<option value="662248">Jornada 18(15/02/2026)</option>
+	<option value="662249">Jornada 19(22/02/2026)</option>
+	<option value="662250">Jornada 20(01/03/2026)</option>
+	<option value="662251">Jornada 21(08/03/2026)</option>
+	<option value="662252">Jornada 22(15/03/2026)</option>
+	<option value="662253">Jornada 23(22/03/2026)</option>
+	<option value="662254">Jornada 24(29/03/2026)</option>
+	<option value="662255">Jornada 25(12/04/2026)</option>
+	<option value="662256">Jornada 26(18/04/2026)</option>
+
+</select>				
+			<a id="_ctl0_MainContentPlaceHolderMaster_resultadosCruzadosHyperlink" class="hyperlink" href="https://baloncestoenvivo.feb.es/ResultadosCruzados.aspx?gr=88891" target="_self">Resultados Cruzados de la Liga Regular</a>
+		</div>
+		
+
+<h1 class="titulo-modulo">
+    Resultados Jornada 1(05/10/2025)
+</h1>
+		<div class="responsive-scroll">
+			<table cellpadding="0" border="0" id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid">
+	<tr>
+		<th scope="col">Equipos</th><th scope="col">Resultado</th><th scope="col">Fecha</th><th scope="col">Hora</th>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl2_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981161">C.B. PUERTO SAGUNTO</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl2_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981348">TOPSURFACE NB PATERNA</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl2_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484527">84-61</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							18:30
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl3_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982151">HALAL FOOD QUALITY UIXÓ BÀSQUET</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl3_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982150">PICKEN CLARET</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl3_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484528">93-84</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							19:00
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl4_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981349">BC PEÑÍSCOLA</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl4_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=979995">AMICS CASTELLÓ B</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl4_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484531">74-83</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							19:00
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl5_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=979992">CB JOVENS ALMÀSSERA</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl5_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982154">CB MORVEDRE</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl5_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484530">78-63</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							19:15
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl6_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981148">SOCAGE JOVENS L’ELIANA</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl6_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981323">THE FITZGERALD EL PILAR</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl6_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484526">77-78</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							19:30
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl7_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982155">CB TABERNES BLANQUES - FERNANDO GIL</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl7_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981164">CEMALU ALDAIA</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl7_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484529">56-87</a>
+						</td><td>
+							04/10/2025
+						</td><td>
+							20:15
+						</td>
+	</tr><tr>
+		<td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl8_equipoLocalHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981159">BAUHAUS GODELLA</a> -
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl8_equipoVisitHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981324">FUNDACIÓ CAIXA RURAL VILA-REAL</a>
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid__ctl8_resultadoHyperLink" href="https://baloncestoenvivo.feb.es/Partido.aspx?p=2484532">69-76</a>
+						</td><td>
+							05/10/2025
+						</td><td>
+							19:45
+						</td>
+	</tr>
+</table>
+		</div>
+				
+
+		
+
+<h1 class="titulo-modulo">
+    Clasificación
+</h1>
+		<div class="responsive-scroll">
+			<table cellpadding="0" border="0" id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid">
+	<tr>
+		<th scope="col">Po</th><th scope="col">Equipo</th><th scope="col">PJ</th><th scope="col">PG</th><th scope="col">PP</th><th scope="col">PF</th><th scope="col">PC</th><th scope="col">PT</th><th scope="col">R</th>
+	</tr><tr>
+		<td>
+							1								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl2_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981164">CEMALU ALDAIA</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							87
+						</td><td>
+							56
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl2_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							2								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl3_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981161">C.B. PUERTO SAGUNTO</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							84
+						</td><td>
+							61
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl3_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							3								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl4_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=979992">CB JOVENS ALMÀSSERA</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							78
+						</td><td>
+							63
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl4_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							4								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl5_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=979995">AMICS CASTELLÓ B</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							83
+						</td><td>
+							74
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl5_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							5								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl6_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982151">HALAL FOOD QUALITY UIXÓ BÀSQUET</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							93
+						</td><td>
+							84
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl6_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							6								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl7_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981324">FUNDACIÓ CAIXA RURAL VILA-REAL</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							76
+						</td><td>
+							69
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl7_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							7								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl8_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981323">THE FITZGERALD EL PILAR</a>								
+						</td><td>
+							1
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							78
+						</td><td>
+							77
+						</td><td>
+							2
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl8_rachaLabel" style="color:Blue;">+1</span>
+						</td>
+	</tr><tr>
+		<td>
+							8								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl9_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981148">SOCAGE JOVENS L’ELIANA</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							77
+						</td><td>
+							78
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl9_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							9								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl10_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981159">BAUHAUS GODELLA</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							69
+						</td><td>
+							76
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl10_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							10								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl11_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982150">PICKEN CLARET</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							84
+						</td><td>
+							93
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl11_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							11								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl12_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981349">BC PEÑÍSCOLA</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							74
+						</td><td>
+							83
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl12_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							12								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl13_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982154">CB MORVEDRE</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							63
+						</td><td>
+							78
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl13_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							13								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl14_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=981348">TOPSURFACE NB PATERNA</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							61
+						</td><td>
+							84
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl14_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr><tr>
+		<td>
+							14								
+						</td><td>
+							<a id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl15_equipoHyperLink" href="https://baloncestoenvivo.feb.es/Equipo.aspx?i=982155">CB TABERNES BLANQUES - FERNANDO GIL</a>								
+						</td><td>
+							1
+						</td><td>
+							0
+						</td><td>
+							1
+						</td><td>
+							56
+						</td><td>
+							87
+						</td><td>
+							1
+						</td><td>
+							<span id="_ctl0_MainContentPlaceHolderMaster_clasificacionDataGrid__ctl15_rachaLabel" style="color:Red;">-1</span>
+						</td>
+	</tr>
+</table>
+		</div>
+		
+		
+
+		
+				
+		
+			
+    </div>
+
+
+        </div>
+        <div id="wrap-footer">
+            <div id="page-footer">
+                <div class="textoPie">
+			&copy; <span id="year"></span>&nbsp;Federación Española de Baloncesto · <a href="contacto.html" target="_blank">Contacto</a> · <a href="politicaPrivacidad.html" target="_blank">Política de privacidad</a> · <a href="politicaCookies.html" target="_blank">Política de cookies</a> · <a href="avisoLegal.html" target="_blank">Aviso Legal</a>
+    		</div>
+            </div>
+                        
+        </div>
+        <div class="wrap-rrss">
+            <a href="http://www.youtube.com/feb" class="link-rrss youtube" target="_blank" title="Youtube FEB"><span class="content">Youtube</span>
+            </a><a href="http://www.facebook.com/BaloncestoFEB" class="link-rrss facebook" target="_blank" title="Facebook FEB"><span class="content">Facebook</span>
+            </a><a href="http://www.flickr.com/photos/febgaleriaphotos/" class="link-rrss flickr" target="_blank" title="flickr FEB"><span class="content">flickr</span>
+            </a><a href="https://www.instagram.com/baloncestoesp/" class="link-rrss instagram" target="_blank" title="Instagram FEB"><span class="content">Instagram</span>
+            </a><a href="https://twitter.com/BaloncestoESP" class="link-rrss twitter" target="_blank" title="Twitter baloncestoFEB"><span class="content">Twitter</span>
+            </a>
+        </div>
+    </form>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0CZQG3TNR"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N0CZQG3TNR');
+	</script>
+
+</body>
+</html>
+
