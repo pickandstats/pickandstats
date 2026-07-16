@@ -1,3 +1,4 @@
+import Comparador from './Comparador';
 import { useEffect, useState } from 'react';
 import Equipos from './Equipos';
 import Jugadores from './Jugadores';
@@ -60,7 +61,9 @@ export default function App() {
           onClick={() => { setVista('equipos'); setEquipoSel(null); }}>Equipos</button>
         <button className={`pestana ${vista === 'jugadores' && !equipoSel ? 'activa' : ''}`}
           onClick={() => { setVista('jugadores'); setEquipoSel(null); }}>Jugadores</button>
-      </div>
+      	<button className={`pestana ${vista === 'comparador' && !equipoSel ? 'activa' : ''}`}
+          onClick={() => { setVista('comparador'); setEquipoSel(null); }}>Comparador</button>
+	</div>
 
       {cargando ? (
         <p className="cargando">Cargando datos…</p>
@@ -69,8 +72,10 @@ export default function App() {
           equipos={equipos} onVolver={() => setEquipoSel(null)} onVerEquipo={verEquipo} />
       ) : vista === 'equipos' ? (
         <Equipos equipos={equipos} grupos={GRUPOS} onVerEquipo={verEquipo} />
-      ) : (
+      ) : vista === 'jugadores' ? (
         <Jugadores jugadores={jugadores} grupos={GRUPOS} equipos={equipos} onVerEquipo={verEquipo} />
+      ) : (
+        <Comparador equipos={equipos} grupos={GRUPOS} />
       )}
 
       <p className="pie">

@@ -186,3 +186,21 @@ tbody tr:last-child td { border-bottom: none; }
   padding: 16px 12px 8px;
   margin-bottom: 8px;
 }
+
+/* ---- comparador ---- */
+.vs {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--acento);
+}
+td.metrica {
+  text-align: center;
+  color: var(--tinta-suave);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+.domina-a { color: var(--acento); font-weight: 700; }
+.domina-b { color: var(--tinta); font-weight: 700; }
+th.col-a { color: #ffd9c4; }
