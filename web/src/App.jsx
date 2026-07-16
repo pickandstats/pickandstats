@@ -14,7 +14,7 @@ export default function App() {
   const [cargando, setCargando] = useState(false);
 
   useEffect(() => {
-    fetch('/data/temporadas.json')
+    fetch('data/temporadas.json')
       .then(r => r.json())
       .then(ts => { setTemporadas(ts); setTemporada(ts[0]); })
       .catch(err => console.error('Error cargando temporadas:', err));
@@ -24,8 +24,8 @@ export default function App() {
     if (!temporada) return;
     setCargando(true);
     Promise.all([
-      fetch(`/data/${temporada}/equipos.json`).then(r => r.json()),
-      fetch(`/data/${temporada}/jugadores.json`).then(r => r.json())
+      fetch(`data/${temporada}/equipos.json`).then(r => r.json()),
+      fetch(`data/${temporada}/jugadores.json`).then(r => r.json())
     ])
       .then(([eq, jug]) => { setEquipos(eq); setJugadores(jug); setCargando(false); })
       .catch(err => { console.error('Error cargando datos:', err); setCargando(false); });
