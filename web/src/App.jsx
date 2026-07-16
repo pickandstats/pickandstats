@@ -1,3 +1,4 @@
+import Leyenda from './Leyenda';
 import Comparador from './Comparador';
 import { useEffect, useState } from 'react';
 import Equipos from './Equipos';
@@ -63,6 +64,8 @@ export default function App() {
           onClick={() => { setVista('jugadores'); setEquipoSel(null); }}>Jugadores</button>
       	<button className={`pestana ${vista === 'comparador' && !equipoSel ? 'activa' : ''}`}
           onClick={() => { setVista('comparador'); setEquipoSel(null); }}>Comparador</button>
+	<button className={`pestana ${vista === 'leyenda' && !equipoSel ? 'activa' : ''}`}
+          onClick={() => { setVista('leyenda'); setEquipoSel(null); }}>Leyenda</button>
 	</div>
 
       {cargando ? (
@@ -74,8 +77,10 @@ export default function App() {
         <Equipos equipos={equipos} grupos={GRUPOS} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (
         <Jugadores jugadores={jugadores} grupos={GRUPOS} equipos={equipos} onVerEquipo={verEquipo} />
-      ) : (
+      ) : vista === 'comparador' ? (
         <Comparador equipos={equipos} grupos={GRUPOS} />
+      ) : (
+        <Leyenda />
       )}
 
       <p className="pie">

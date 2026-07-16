@@ -1,12 +1,12 @@
 import { useMemo } from 'react';
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, Legend,
-  CartesianGrid, ResponsiveContainer, ReferenceLine
+  CartesianGrid, ResponsiveContainer
 } from 'recharts';
 
 const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
-const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac', positivo: '#0a7d33', negativo: '#c0392b' };
+const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 
 export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, equipos }) {
   const plantilla = useMemo(() =>
@@ -19,7 +19,6 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       .sort((a, b) => numJornada(a.jornada) - numJornada(b.jornada)),
     [partidos, equipo]);
 
-  // Datos para el gráfico de evolución: puntos a favor y en contra por jornada
   const evolucion = useMemo(() => calendario.map(p => {
     const [gl, gv] = p.resultado.split('-').map(Number);
     const esLocal = p.local.id === equipo.id;
@@ -29,10 +28,9 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       encajados: esLocal ? gv : gl,
       rival: (esLocal ? p.visitante : p.local).nombre
     };
-  }).filter(d => d.anotados > 5 || d.encajados > 5), // fuera marcadores administrativos
+  }).filter(d => d.anotados > 5 || d.encajados > 5),
   [calendario, equipo]);
 
-  // Four Factors del equipo vs media de su grupo
   const fourFactors = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
     const media = clave => delGrupo.reduce((a, e) => a + e[clave], 0) / delGrupo.length;
@@ -71,15 +69,57 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             {' '}Casa {equipo.casa.pg}-{equipo.casa.pj - equipo.casa.pg} ·
             {' '}Fuera {equipo.fuera.pg}-{equipo.fuera.pj - equipo.fuera.pg}</p>
         </div>
-        <div className="datos">
-          {dato('ORtg', equipo.ortg)}
-          {dato('DRtg', equipo.drtg)}
-          {dato('Net', equipo.netrtg, equipo.netrtg > 0 ? 'net-pos' : 'net-neg')}
-          {dato('Pace', equipo.pace)}
-          {dato('eFG%', equipo.efg)}
-          {dato('TOV%', equipo.tovPct)}
-          {dato('ORB%', equipo.orbPct)}
-          {dato('FTr', equipo.ftRate)}
+        <div className="datos-bloque">
+          <div className="datos-titulo">Básica · Anotación y tiro</div>
+          <div className="datos">
+            {dato('PF/part.', equipo.pfPartido)}
+            {dato('PC/part.', equipo.pcPartido)}
+            {dato('Dif.', (equipo.difPartido > 0 ? '+' : '') + equipo.difPartido,
+              equipo.difPartido > 0 ? 'net-pos' : 'net-neg')}
+            {dato('T2%', equipo.t2PctEq)}
+            {dato('T3%', equipo.t3PctEq)}
+            {dato('TL%', equipo.tlPctEq)}
+          </div>
+          <div className="datos-titulo">Básica · Juego</div>
+          <div className="datos">
+            {dato('RO', equipo.roPartido)}
+            {dato('RD', equipo.rdPartido)}
+            {dato('REB', equipo.rebPartido)}
+            {dato('AST', equipo.asPartido)}
+            {dato('ROB', equipo.brPartido)}
+            {dato('BP', equipo.bpPartido)}
+            {dato('FC', equipo.fcPartido)}
+            {dato('FR', equipo.frPartido)}
+            {dato('TAP', equipo.tapFavor)}
+            {dato('TR', equipo.tapContra)}
+          </div>
+          <div className="datos-titulo">Global</div>
+          <div className="datos">
+            {dato('Net', equipo.netrtg, equipo.netrtg > 0 ? 'net-pos' : 'net-neg')}
+            {dato('SRS', equipo.srs)}
+            {dato('Pace', equipo.pace)}
+            {dato('Últ. 5', equipo.forma5)}
+            {dato('Suerte', (equipo.suerte > 0 ? '+' : '') + equipo.suerte)}
+          </div>
+          <div className="datos-titulo">Ataque</div>
+          <div className="datos">
+            {dato('ORtg', equipo.ortg)}
+            {dato('eFG%', equipo.efg)}
+            {dato('TS%', equipo.ts)}
+            {dato('TOV%', equipo.tovPct)}
+            {dato('ORB%', equipo.orbPct)}
+            {dato('FTr', equipo.ftRate)}
+            {dato('3PAr', equipo.t3ar)}
+            {dato('AST%', equipo.astPct)}
+          </div>
+          <div className="datos-titulo">Defensa</div>
+          <div className="datos">
+            {dato('DRtg', equipo.drtg)}
+            {dato('eFG% rival', equipo.efgRival)}
+            {dato('TOV forz.', equipo.tovForzadas)}
+            {dato('DRB%', equipo.drbPct)}
+            {dato('FTr rival', equipo.ftrRival)}
+          </div>
         </div>
       </div>
 
@@ -128,7 +168,9 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           <thead>
             <tr>
               <th className="izq">Jugador</th><th>PJ</th><th>MIN</th><th>PTS</th>
-              <th>VAL</th><th>TS%</th><th>eFG%</th><th>T3%</th><th>TL%</th><th>USG%</th>
+              <th>REB</th><th>AST</th><th>ROB</th><th>BP</th><th>TAP</th>
+              <th>T2%</th><th>T3%</th><th>TL%</th>
+              <th>VAL</th><th>TS%</th><th>USG%</th>
             </tr>
           </thead>
           <tbody>
@@ -136,8 +178,10 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
               <tr key={j.nombre}>
                 <td className="izq">{j.nombre}</td>
                 <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
-                <td>{j.vaPorPartido}</td><td>{j.ts}</td><td>{j.efg}</td>
-                <td>{j.t3Pct}</td><td>{j.tlPct}</td><td>{j.usg}</td>
+                <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td>
+                <td>{j.brPorPartido}</td><td>{j.bpPorPartido}</td><td>{j.tpPorPartido}</td>
+                <td>{j.t2Pct}</td><td>{j.t3Pct}</td><td>{j.tlPct}</td>
+                <td>{j.vaPorPartido}</td><td>{j.ts}</td><td>{j.usg}</td>
               </tr>
             ))}
           </tbody>

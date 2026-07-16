@@ -1,35 +1,67 @@
 import { useMemo, useState } from 'react';
 
-const COLUMNAS = [
-  { clave: 'nombre',        titulo: 'Jugador', izq: true },
-  { clave: 'equipo',        titulo: 'Equipo',  izq: true },
-  { clave: 'grupo',         titulo: 'Grupo',   izq: true },
-  { clave: 'pj',            titulo: 'PJ' },
-  { clave: 'minPorPartido', titulo: 'MIN',  tip: 'Minutos por partido' },
-  { clave: 'ptPorPartido',  titulo: 'PTS',  tip: 'Puntos por partido' },
-  { clave: 'vaPorPartido',  titulo: 'VAL',  tip: 'Valoración por partido' },
-  { clave: 'ts',            titulo: 'TS%',  tip: 'True Shooting' },
-  { clave: 'efg',           titulo: 'eFG%', tip: 'Tiro de campo efectivo' },
-  { clave: 't3Pct',         titulo: 'T3%' },
-  { clave: 'tlPct',         titulo: 'TL%' },
-  { clave: 'usg',           titulo: 'USG%', tip: 'Posesiones usadas' },
+const COMUNES = [
+  { clave: 'nombre', titulo: 'Jugador', izq: true },
+  { clave: 'equipo', titulo: 'Equipo',  izq: true },
+  { clave: 'grupo',  titulo: 'Grupo',   izq: true },
+  { clave: 'pj',     titulo: 'PJ' },
+  { clave: 'minPorPartido', titulo: 'MIN', tip: 'Minutos por partido' },
 ];
 
-const PER36 = [
-  { clave: 'pt', titulo: 'PTS/36' },
-  { clave: 'rt', titulo: 'REB/36' },
-  { clave: 'as', titulo: 'AST/36' },
-  { clave: 'br', titulo: 'ROB/36' },
-  { clave: 'va', titulo: 'VAL/36' },
-];
+const MODOS = {
+  basica: [
+    ...COMUNES,
+    { clave: 'ptPorPartido', titulo: 'PTS' },
+    { clave: 'roPorPartido', titulo: 'RO',  tip: 'Rebotes ofensivos' },
+    { clave: 'rdPorPartido', titulo: 'RD',  tip: 'Rebotes defensivos' },
+    { clave: 'rtPorPartido', titulo: 'REB', tip: 'Rebotes totales' },
+    { clave: 'asPorPartido', titulo: 'AST' },
+    { clave: 'brPorPartido', titulo: 'ROB' },
+    { clave: 'bpPorPartido', titulo: 'BP',  tip: 'Pérdidas' },
+    { clave: 'tpPorPartido', titulo: 'TAP', tip: 'Tapones a favor' },
+    { clave: 'tcoPorPartido',titulo: 'TR',  tip: 'Tapones recibidos' },
+    { clave: 'fcPorPartido', titulo: 'FC',  tip: 'Faltas cometidas' },
+    { clave: 'frPorPartido', titulo: 'FR',  tip: 'Faltas recibidas' },
+    { clave: 't2Pct',        titulo: 'T2%' },
+    { clave: 't3Pct',        titulo: 'T3%' },
+    { clave: 'tlPct',        titulo: 'TL%' },
+    { clave: 'vaPorPartido', titulo: 'VAL' },
+  ],
+  avanzada: [
+    ...COMUNES,
+    { clave: 'ptPorPartido', titulo: 'PTS' },
+    { clave: 'vaPorPartido', titulo: 'VAL' },
+    { clave: 'ts',  titulo: 'TS%',  tip: 'True Shooting' },
+    { clave: 'efg', titulo: 'eFG%', tip: 'Tiro de campo efectivo' },
+    { clave: 'usg', titulo: 'USG%', tip: 'Posesiones usadas' },
+    { clave: 'pm',  titulo: '+/-',  tip: 'Acumulado en pista' },
+  ],
+  per36: [
+    ...COMUNES,
+    { clave: 'per36.pt', titulo: 'PTS/36' },
+    { clave: 'per36.rt', titulo: 'REB/36' },
+    { clave: 'per36.as', titulo: 'AST/36' },
+    { clave: 'per36.br', titulo: 'ROB/36' },
+    { clave: 'per36.va', titulo: 'VAL/36' },
+    { clave: 'ts',  titulo: 'TS%' },
+    { clave: 'usg', titulo: 'USG%' },
+  ],
+};
+
+const ORDEN_DEFECTO = { basica: 'ptPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
 
 export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
   const [grupo, setGrupo] = useState('todos');
   const [busqueda, setBusqueda] = useState('');
   const [minPj, setMinPj] = useState(10);
-  const [modo36, setModo36] = useState(false);
-  const [orden, setOrden] = useState({ clave: 'vaPorPartido', desc: true });
+  const [modo, setModo] = useState('basica');
+  const [orden, setOrden] = useState({ clave: 'ptPorPartido', desc: true });
   const [limite, setLimite] = useState(50);
+
+  const columnas = MODOS[modo];
+  const valor = (j, clave) => clave.startsWith('per36.') ? j.per36[clave.split('.')[1]] : j[clave];
+
+  const cambiarModo = m => { setModo(m); setOrden({ clave: ORDEN_DEFECTO[m], desc: true }); };
 
   const filas = useMemo(() => {
     let f = jugadores.filter(j => j.pj >= minPj);
@@ -39,9 +71,8 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
       f = f.filter(j => j.nombre.toLowerCase().includes(q) || j.equipo.toLowerCase().includes(q));
     }
     const { clave, desc } = orden;
-    const valor = j => clave.startsWith('per36.') ? j.per36[clave.split('.')[1]] : j[clave];
     f.sort((a, b) => {
-      const va = valor(a), vb = valor(b);
+      const va = valor(a, clave), vb = valor(b, clave);
       if (typeof va === 'string') return desc ? vb.localeCompare(va) : va.localeCompare(vb);
       return desc ? vb - va : va - vb;
     });
@@ -50,12 +81,6 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
 
   const clicOrden = clave =>
     setOrden(o => o.clave === clave ? { clave, desc: !o.desc } : { clave, desc: true });
-
-  const columnas = modo36
-    ? [...COLUMNAS.slice(0, 5), ...PER36.map(c => ({ ...c, clave: `per36.${c.clave}` })), COLUMNAS[7], COLUMNAS[11]]
-    : COLUMNAS;
-
-  const celda = (j, clave) => clave.startsWith('per36.') ? j.per36[clave.split('.')[1]] : j[clave];
 
   return (
     <>
@@ -74,10 +99,13 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
           <input type="number" min="1" max="26" value={minPj}
             onChange={e => setMinPj(+e.target.value || 1)} style={{ width: 60 }} />
         </label>
-        <label>
-          <input type="checkbox" checked={modo36} onChange={e => setModo36(e.target.checked)} />
-          {' '}Ver per-36
-        </label>
+        <span className="separador" />
+        <button className={`boton-grupo ${modo === 'basica' ? 'activo' : ''}`}
+          onClick={() => cambiarModo('basica')}>Básica</button>
+        <button className={`boton-grupo ${modo === 'avanzada' ? 'activo' : ''}`}
+          onClick={() => cambiarModo('avanzada')}>Avanzada</button>
+        <button className={`boton-grupo ${modo === 'per36' ? 'activo' : ''}`}
+          onClick={() => cambiarModo('per36')}>Per-36</button>
       </div>
 
       <div className="tabla-scroll">
@@ -98,7 +126,14 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo }) {
               <tr key={`${j.equipoId}|${j.nombre}`}>
                 <td>{i + 1}</td>
                 {columnas.map(c => (
-                  <td key={c.clave} className={c.izq ? 'izq' : ''}>{c.clave === 'equipo' ? <span className="enlace" onClick={() => { const eq = equipos.find(x => x.id === j.equipoId); if (eq) onVerEquipo(eq); }}>{j.equipo}</span> : celda(j, c.clave)}</td>
+                  <td key={c.clave} className={c.izq ? 'izq' : ''}>
+                    {c.clave === 'equipo'
+                      ? <span className="enlace" onClick={() => {
+                          const eq = equipos.find(x => x.id === j.equipoId);
+                          if (eq) onVerEquipo(eq);
+                        }}>{j.equipo}</span>
+                      : valor(j, c.clave)}
+                  </td>
                 ))}
               </tr>
             ))}

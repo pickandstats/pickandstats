@@ -204,3 +204,28 @@ td.metrica {
 .domina-a { color: var(--acento); font-weight: 700; }
 .domina-b { color: var(--tinta); font-weight: 700; }
 th.col-a { color: #ffd9c4; }
+
+/* ---- bloques de datos y leyenda ---- */
+.datos-titulo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: var(--tinta-suave);
+  margin-top: 14px;
+}
+.datos-bloque .datos { margin-top: 6px; }
+
+.leyenda-bloque {
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 6px 16px;
+}
+.leyenda-item { padding: 10px 0; border-bottom: 1px solid var(--linea); }
+.leyenda-item:last-child { border-bottom: none; }
+.leyenda-nombre { font-weight: 600; margin-bottom: 2px; }
+.leyenda-texto { color: var(--tinta-suave); font-size: 14px; }
+
+.separador { width: 1px; align-self: stretch; background: var(--linea); margin: 0 6px; }
