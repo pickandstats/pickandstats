@@ -1,0 +1,874 @@
+{
+ "id": "2413624",
+ "temporada": "2024",
+ "grupo": "B-A",
+ "jornada": "Jornada 4(03/11/2024)",
+ "equipoLocal": {
+  "id": "952152",
+  "nombre": "CESUR DISTRITO OLIMPICO"
+ },
+ "equipoVisitante": {
+  "id": "950953",
+  "nombre": "CB LA MATANZA"
+ },
+ "resultado": "70-96",
+ "disputado": true,
+ "descargado": "2026-07-17T08:29:16.742Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2028116",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "MARTINEZ PARDO, IGNACIO",
+    "seg": 681,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -3,
+    "pm": -17
+   },
+   {
+    "idJugador": "1751781",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "FERNANDEZ MORAN, VICTOR",
+    "seg": 1128,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 4,
+    "br": 1,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 6,
+    "pm": -3
+   },
+   {
+    "idJugador": "2161119",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "ALONSO MENOR, MATEO",
+    "seg": 1023,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 3,
+    "pm": -7
+   },
+   {
+    "idJugador": "2225100",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "PEREZ RINCON, MARIO",
+    "seg": 963,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 15,
+    "pm": -12
+   },
+   {
+    "idJugador": "2097735",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "ALONSO MENOR, LUIS",
+    "seg": 1151,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 3,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 5,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 6,
+    "va": 13,
+    "pm": -12
+   },
+   {
+    "idJugador": "2030405",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "GUIJARRO GONZALEZ, DIEGO",
+    "seg": 1889,
+    "pt": 12,
+    "t2": {
+     "a": 3,
+     "i": 9
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 5,
+     "i": 14
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 2,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 2,
+    "fc": 1,
+    "fr": 1,
+    "va": 7,
+    "pm": -22
+   },
+   {
+    "idJugador": "1872715",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "CORREA BOULATOVA, IVAN",
+    "seg": 1437,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 9
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 9,
+    "pm": -14
+   },
+   {
+    "idJugador": "2098636",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "FERNÁNDEZ FERNÁNDEZ, AITOR",
+    "seg": 285,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -4,
+    "pm": -2
+   },
+   {
+    "idJugador": "1382466",
+    "titular": false,
+    "dorsal": "26",
+    "nombre": "GONZÁLEZ GÓMEZ, IGNACIO",
+    "seg": 1272,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 4,
+    "br": 0,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 10,
+    "pm": -23
+   },
+   {
+    "idJugador": "2161580",
+    "titular": true,
+    "dorsal": "44",
+    "nombre": "APARICIO IZQUIERDO, ANGEL",
+    "seg": 898,
+    "pt": 9,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": 6,
+    "pm": -4
+   },
+   {
+    "idJugador": "2500811",
+    "titular": false,
+    "dorsal": "50",
+    "nombre": "KIRALY SIMON, ROBERT ERIC",
+    "seg": 315,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 2,
+    "pm": -4
+   },
+   {
+    "idJugador": "1756972",
+    "titular": false,
+    "dorsal": "91",
+    "nombre": "VALVERDE SASTRE, JAVIER",
+    "seg": 958,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": -2,
+    "pm": -10
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2006819",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "DEL CASTILLO LEON, JORGE",
+    "seg": 1042,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 5,
+    "br": 2,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 9,
+    "pm": -3
+   },
+   {
+    "idJugador": "1947974",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "NAVAS CERVERA, ALEX",
+    "seg": 1294,
+    "pt": 17,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 3,
+     "i": 6
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 6,
+     "i": 7
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 3,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 21,
+    "pm": 16
+   },
+   {
+    "idJugador": "2006825",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "PEREZ GALVAN, ADRIAN",
+    "seg": 874,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 6,
+    "pm": 16
+   },
+   {
+    "idJugador": "1687119",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "HERNÁNDEZ DÍAZ, ALBERTO",
+    "seg": 1255,
+    "pt": 13,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 8,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 22,
+    "pm": 31
+   },
+   {
+    "idJugador": "1613545",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "PESTANO DÍAZ, RUBÉN",
+    "seg": 1435,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 2,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 10,
+    "pm": 14
+   },
+   {
+    "idJugador": "1764294",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "GOMEZ PEÑA, ALVARO",
+    "seg": 1174,
+    "pt": 13,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 15,
+    "pm": 16
+   },
+   {
+    "idJugador": "1373253",
+    "titular": true,
+    "dorsal": "12",
+    "nombre": "HERNÁNDEZ CHÁVEZ, ROMÉN",
+    "seg": 1308,
+    "pt": 12,
+    "t2": {
+     "a": 5,
+     "i": 11
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 2,
+     "i": 6
+    },
+    "ro": 3,
+    "rd": 3,
+    "rt": 6,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 3,
+    "fr": 4,
+    "va": 11,
+    "pm": 15
+   },
+   {
+    "idJugador": "1539276",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "PERDOMO MARTÍNEZ, PABLO",
+    "seg": 1127,
+    "pt": 10,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 4,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 7,
+    "va": 11,
+    "pm": 11
+   },
+   {
+    "idJugador": "1131430",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "GONZALEZ-MONJE PEREZ, MIGUEL",
+    "seg": 587,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -2,
+    "pm": 10
+   },
+   {
+    "idJugador": "2642760",
+    "titular": true,
+    "dorsal": "21",
+    "nombre": "PIRELA PEREZ, FRANGER JESUS",
+    "seg": 1561,
+    "pt": 22,
+    "t2": {
+     "a": 10,
+     "i": 14
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 10,
+     "i": 16
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 4,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 1,
+    "fc": 2,
+    "fr": 2,
+    "va": 22,
+    "pm": 2
+   },
+   {
+    "idJugador": "2007302",
+    "titular": false,
+    "dorsal": "77",
+    "nombre": "RAMOS DA CONCEIÇAO, SAÚL",
+    "seg": 343,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 4,
+    "pm": 2
+   }
+  ]
+ }
+}

@@ -1,0 +1,837 @@
+{
+ "id": "2415116",
+ "temporada": "2024",
+ "grupo": "E-A",
+ "jornada": "Jornada 18(23/02/2025)",
+ "equipoLocal": {
+  "id": "952560",
+  "nombre": "CB MORVEDRE"
+ },
+ "equipoVisitante": {
+  "id": "951844",
+  "nombre": "JOVENS L’ELIANA"
+ },
+ "resultado": "81-88",
+ "disputado": true,
+ "descargado": "2026-07-17T09:18:10.050Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2335903",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "ARNAIZ VEGA, JAIME",
+    "seg": 1196,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 3,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 1,
+    "pm": 15
+   },
+   {
+    "idJugador": "1862021",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "REOS CAMPOS, MARCOS",
+    "seg": 1467,
+    "pt": 6,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 9
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 4,
+    "pm": -22
+   },
+   {
+    "idJugador": "2737513",
+    "titular": true,
+    "dorsal": "3",
+    "nombre": "PLAVENIEKS, LAURIS",
+    "seg": 1581,
+    "pt": 14,
+    "t2": {
+     "a": 5,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 6,
+     "i": 12
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 9,
+    "pm": -2
+   },
+   {
+    "idJugador": "2335904",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "ARNAIZ VEGA, SERGIO",
+    "seg": 643,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 2,
+    "pm": -14
+   },
+   {
+    "idJugador": "2026972",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "FERRER I SEGURA, FERRAN",
+    "seg": 1048,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 2,
+    "pm": -2
+   },
+   {
+    "idJugador": "1467213",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "ARANDA RUBIO, JUAN CARLOS",
+    "seg": 1629,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 7,
+    "rt": 7,
+    "as": 3,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 11,
+    "pm": -11
+   },
+   {
+    "idJugador": "1685233",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "GONZALEZ SOLER, ALEJANDRO",
+    "seg": 1374,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 2,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 5,
+    "va": 12,
+    "pm": 9
+   },
+   {
+    "idJugador": "2087641",
+    "titular": false,
+    "dorsal": "18",
+    "nombre": "GONZALEZ FERRER, DIEGO",
+    "seg": 437,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -1,
+    "pm": -6
+   },
+   {
+    "idJugador": "2026976",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "SEGARRA SARIO, JOSEP",
+    "seg": 727,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 3,
+    "pm": 0
+   },
+   {
+    "idJugador": "2028325",
+    "titular": true,
+    "dorsal": "20",
+    "nombre": "KRISCIUNAS, NEDAS",
+    "seg": 2269,
+    "pt": 18,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 3,
+     "i": 7
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 5,
+     "i": 7
+    },
+    "ro": 2,
+    "rd": 7,
+    "rt": 9,
+    "as": 0,
+    "br": 3,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 8,
+    "va": 27,
+    "pm": -3
+   },
+   {
+    "idJugador": "2164737",
+    "titular": true,
+    "dorsal": "86",
+    "nombre": "DOMINGUEZ ALEIXANDRE, SERGIO",
+    "seg": 1129,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": 3,
+    "pm": 1
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1086078",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "SABATER PORTOLES, LUIS",
+    "seg": 1028,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 3,
+    "rd": 0,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 5,
+    "pm": 1
+   },
+   {
+    "idJugador": "1618530",
+    "titular": true,
+    "dorsal": "4",
+    "nombre": "GREUS MARTINEZ DEL REY, ROBERT",
+    "seg": 1294,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 6,
+    "rt": 7,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 2,
+    "pm": -1
+   },
+   {
+    "idJugador": "2740913",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "CAPOUE, ETIENNE RENE",
+    "seg": 1248,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 9,
+    "pm": 3
+   },
+   {
+    "idJugador": "2161988",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "MONTAÑO LINARES, KELVYN ALEXANDER",
+    "seg": 1703,
+    "pt": 26,
+    "t2": {
+     "a": 8,
+     "i": 11
+    },
+    "t3": {
+     "a": 2,
+     "i": 8
+    },
+    "tc": {
+     "a": 10,
+     "i": 19
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 10,
+    "rt": 13,
+    "as": 1,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 7,
+    "va": 33,
+    "pm": 7
+   },
+   {
+    "idJugador": "1995171",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "ROCATI ALEGRE, PAU",
+    "seg": 1197,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 3,
+    "pm": 0
+   },
+   {
+    "idJugador": "1993149",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "MORAL SANMARTIN, ANTONIO",
+    "seg": 1816,
+    "pt": 15,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 7
+    },
+    "tc": {
+     "a": 4,
+     "i": 11
+    },
+    "tl": {
+     "a": 6,
+     "i": 8
+    },
+    "ro": 2,
+    "rd": 4,
+    "rt": 6,
+    "as": 4,
+    "br": 3,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 17,
+    "pm": 12
+   },
+   {
+    "idJugador": "1361531",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "TOKAEV TOKAEV, DENIS",
+    "seg": 1471,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 4,
+    "rt": 6,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 16,
+    "pm": 10
+   },
+   {
+    "idJugador": "1760049",
+    "titular": true,
+    "dorsal": "24",
+    "nombre": "MONDRAGON VIDAL, BERNAT",
+    "seg": 1503,
+    "pt": 7,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 4,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 6,
+    "pm": 7
+   },
+   {
+    "idJugador": "1851037",
+    "titular": false,
+    "dorsal": "30",
+    "nombre": "PAÑOS HUERTAS, MARIO",
+    "seg": 884,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -1,
+    "pm": -5
+   },
+   {
+    "idJugador": "2141637",
+    "titular": false,
+    "dorsal": "34",
+    "nombre": "PASCUAL PRIETO, SAMUEL",
+    "seg": 388,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 0,
+    "pm": 3
+   },
+   {
+    "idJugador": "1637827",
+    "titular": false,
+    "dorsal": "41",
+    "nombre": "DIAZ SERRA, CARLOS",
+    "seg": 968,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -2,
+    "pm": -2
+   }
+  ]
+ }
+}

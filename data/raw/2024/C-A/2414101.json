@@ -1,0 +1,837 @@
+{
+ "id": "2414101",
+ "temporada": "2024",
+ "grupo": "C-A",
+ "jornada": "Jornada 20(09/03/2025)",
+ "equipoLocal": {
+  "id": "952327",
+  "nombre": "C.B. ESPARREGUERA"
+ },
+ "equipoVisitante": {
+  "id": "951320",
+  "nombre": "JAC SANTS BARCELONA"
+ },
+ "resultado": "90-79",
+ "disputado": true,
+ "descargado": "2026-07-17T08:48:25.814Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1942028",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "MARTIN TRENADO, JEREMY",
+    "seg": 1733,
+    "pt": 20,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 4,
+     "i": 9
+    },
+    "tc": {
+     "a": 7,
+     "i": 16
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 3,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 16,
+    "pm": -2
+   },
+   {
+    "idJugador": "1477161",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "SELLARÈS GIRALT, MARTI",
+    "seg": 224,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 0,
+    "pm": -5
+   },
+   {
+    "idJugador": "2641439",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "MELGAREJO PINTO, RAFAEL JOSE",
+    "seg": 1515,
+    "pt": 9,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 3,
+     "i": 9
+    },
+    "tc": {
+     "a": 3,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 4,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 5,
+    "pm": 24
+   },
+   {
+    "idJugador": "2074271",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "ALMIRALL CANALS, XAVIER",
+    "seg": 713,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 1,
+    "fc": 2,
+    "fr": 0,
+    "va": 7,
+    "pm": 16
+   },
+   {
+    "idJugador": "1972484",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "ROY CARNICER, DANIEL",
+    "seg": 1146,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 3,
+    "br": 3,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 13,
+    "pm": -1
+   },
+   {
+    "idJugador": "1075720",
+    "titular": false,
+    "dorsal": "17",
+    "nombre": "RAVENTOS FERRES, MARC",
+    "seg": 1262,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 3,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 10,
+    "pm": 17
+   },
+   {
+    "idJugador": "1968039",
+    "titular": true,
+    "dorsal": "20",
+    "nombre": "SOLE PIE, JOSEP",
+    "seg": 1592,
+    "pt": 11,
+    "t2": {
+     "a": 5,
+     "i": 12
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 13
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 2,
+    "rt": 5,
+    "as": 0,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 2,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 6,
+    "pm": 0
+   },
+   {
+    "idJugador": "1488647",
+    "titular": true,
+    "dorsal": "22",
+    "nombre": "CAMPAÑA SOLER, PAU",
+    "seg": 1295,
+    "pt": 12,
+    "t2": {
+     "a": 4,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 4
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 14,
+    "pm": 7
+   },
+   {
+    "idJugador": "2190620",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "ROSÀS MARCO, XAVIER",
+    "seg": 1371,
+    "pt": 11,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 5,
+     "i": 12
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 3,
+    "rd": 2,
+    "rt": 5,
+    "as": 3,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 11,
+    "pm": 9
+   },
+   {
+    "idJugador": "2050874",
+    "titular": true,
+    "dorsal": "24",
+    "nombre": "TOURE JABBY, OMARU",
+    "seg": 1009,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 5,
+    "rd": 6,
+    "rt": 11,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 9,
+    "pm": -6
+   },
+   {
+    "idJugador": "1912550",
+    "titular": false,
+    "dorsal": "25",
+    "nombre": "BARDÉS BADIA, QUIM",
+    "seg": 85,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": -2
+   },
+   {
+    "idJugador": "2050777",
+    "titular": false,
+    "dorsal": "26",
+    "nombre": "ROMEO FO, SERGI",
+    "seg": 55,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": -2
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1956708",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "RIBÓ VILALLONGA, CARLES",
+    "seg": 475,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 2,
+    "pm": -4
+   },
+   {
+    "idJugador": "1944675",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "MESTRES ROSET, MARC",
+    "seg": 1495,
+    "pt": 11,
+    "t2": {
+     "a": 2,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 10
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 8,
+    "rt": 8,
+    "as": 2,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 7,
+    "va": 16,
+    "pm": -17
+   },
+   {
+    "idJugador": "1899084",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "PALAU GASCÓN, MARC",
+    "seg": 1744,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 2,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 3,
+    "fr": 1,
+    "va": 7,
+    "pm": -5
+   },
+   {
+    "idJugador": "1554724",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "NINOT PEDROSA, MARCEL",
+    "seg": 1291,
+    "pt": 15,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 4,
+     "i": 5
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 10,
+    "pm": -3
+   },
+   {
+    "idJugador": "1727662",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "PERAPOCH SANCHEZ, MARC",
+    "seg": 1335,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 0,
+    "pm": -17
+   },
+   {
+    "idJugador": "1285869",
+    "titular": true,
+    "dorsal": "12",
+    "nombre": "PAGES SAUQUE, MARC",
+    "seg": 1055,
+    "pt": 13,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 3,
+     "i": 9
+    },
+    "tc": {
+     "a": 3,
+     "i": 9
+    },
+    "tl": {
+     "a": 4,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 10,
+    "pm": -8
+   },
+   {
+    "idJugador": "2397403",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "VIVES SAURÍ, ISARN",
+    "seg": 1230,
+    "pt": 8,
+    "t2": {
+     "a": 4,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 11,
+    "pm": 10
+   },
+   {
+    "idJugador": "1915713",
+    "titular": true,
+    "dorsal": "21",
+    "nombre": "BUETAS CAMINAL, ORIOL",
+    "seg": 1697,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 4,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 12,
+    "pm": -12
+   },
+   {
+    "idJugador": "2049100",
+    "titular": false,
+    "dorsal": "22",
+    "nombre": "RODRÍGUEZ ESPÉS, JOEL",
+    "seg": 957,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 8,
+    "pm": 9
+   },
+   {
+    "idJugador": "2217819",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "DÍAZ VIDAL, GERARD",
+    "seg": 721,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 0,
+    "pm": -8
+   }
+  ]
+ }
+}

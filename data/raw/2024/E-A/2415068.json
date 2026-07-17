@@ -1,0 +1,874 @@
+{
+ "id": "2415068",
+ "temporada": "2024",
+ "grupo": "E-A",
+ "jornada": "Jornada 11(22/12/2024)",
+ "equipoLocal": {
+  "id": "952035",
+  "nombre": "VALENCIA B.C."
+ },
+ "equipoVisitante": {
+  "id": "950859",
+  "nombre": "C.B. PUERTO SAGUNTO"
+ },
+ "resultado": "83-65",
+ "disputado": true,
+ "descargado": "2026-07-17T09:15:56.447Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2218479",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "BELLVER VALIENTE, PEDRO",
+    "seg": 83,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 2,
+    "pm": 4
+   },
+   {
+    "idJugador": "2038194",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "TORRENS RIERA, PAU",
+    "seg": 941,
+    "pt": 16,
+    "t2": {
+     "a": 5,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 5,
+     "i": 10
+    },
+    "tl": {
+     "a": 6,
+     "i": 7
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 2,
+    "br": 2,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 4,
+    "va": 13,
+    "pm": 17
+   },
+   {
+    "idJugador": "2221548",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "VALERO MORANT, JAIME",
+    "seg": 66,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": 0
+   },
+   {
+    "idJugador": "2024478",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "BLANCO CARDONA, ALEX",
+    "seg": 1182,
+    "pt": 14,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 5,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 14,
+    "pm": 10
+   },
+   {
+    "idJugador": "2237206",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "VIGUER GARCÍA DE LA VEGA, JAVIER",
+    "seg": 1337,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 3,
+    "rd": 4,
+    "rt": 7,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 2,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 8,
+    "pm": 11
+   },
+   {
+    "idJugador": "2209647",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "CEBOLLA PORCAR, DIDAC",
+    "seg": 1572,
+    "pt": 12,
+    "t2": {
+     "a": 4,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 2,
+    "rt": 5,
+    "as": 5,
+    "br": 2,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 5,
+    "va": 19,
+    "pm": 6
+   },
+   {
+    "idJugador": "2087872",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "IGLESIAS MARTINEZ, VICTOR",
+    "seg": 1240,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -1,
+    "pm": -2
+   },
+   {
+    "idJugador": "2180937",
+    "titular": true,
+    "dorsal": "22",
+    "nombre": "TALCIS GRIKIETIS, TOMAS",
+    "seg": 1102,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 6,
+    "rt": 7,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 8,
+    "pm": 0
+   },
+   {
+    "idJugador": "2171580",
+    "titular": false,
+    "dorsal": "32",
+    "nombre": "GRAU MAESO, MARC",
+    "seg": 1100,
+    "pt": 10,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 11,
+    "pm": 14
+   },
+   {
+    "idJugador": "2558496",
+    "titular": false,
+    "dorsal": "33",
+    "nombre": "OSAYI JAMES, DANIEL",
+    "seg": 1336,
+    "pt": 11,
+    "t2": {
+     "a": 4,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 0,
+    "br": 2,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 4,
+    "fc": 0,
+    "fr": 2,
+    "va": 18,
+    "pm": 17
+   },
+   {
+    "idJugador": "2153148",
+    "titular": false,
+    "dorsal": "35",
+    "nombre": "SALVADOR ESCUDER, DANIEL",
+    "seg": 977,
+    "pt": 7,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 2,
+     "i": 9
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 1,
+    "pm": 12
+   },
+   {
+    "idJugador": "2037929",
+    "titular": true,
+    "dorsal": "55",
+    "nombre": "GOMEZ MERODIO, NICOLAS",
+    "seg": 1064,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 3,
+    "rd": 6,
+    "rt": 9,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 5,
+    "pm": 1
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1617928",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "MONRABAL ROMEU, ANDREU",
+    "seg": 1643,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 5,
+    "br": 3,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 10,
+    "pm": -7
+   },
+   {
+    "idJugador": "2087017",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "MONTESDEOCA SANTANA, PEDRO DARÍO",
+    "seg": 944,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 0,
+    "pm": -19
+   },
+   {
+    "idJugador": "2527147",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "MONTILLA GONZALEZ, JOSE ANTONIO",
+    "seg": 1243,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 5,
+    "rd": 5,
+    "rt": 10,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 2,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 7,
+    "pm": 3
+   },
+   {
+    "idJugador": "2451667",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "TORTAROLO, MARCO ALESANDRO",
+    "seg": 1504,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 9
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 2,
+    "pm": -26
+   },
+   {
+    "idJugador": "2743302",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "SESAREGO ESPIÑA, MARTIN EDUARDO",
+    "seg": 640,
+    "pt": 12,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 4,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 11,
+    "pm": -5
+   },
+   {
+    "idJugador": "2096980",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "DE LA CAL DOMINGUEZ, ALVARO",
+    "seg": 1519,
+    "pt": 7,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 10
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 3,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 1,
+    "fc": 1,
+    "fr": 2,
+    "va": 7,
+    "pm": -12
+   },
+   {
+    "idJugador": "1883035",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "GOMEZ GARCIA, HUGO",
+    "seg": 714,
+    "pt": 7,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 1,
+    "pm": -3
+   },
+   {
+    "idJugador": "2096997",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "VILLAGRASA TORTAJADA, PABLO",
+    "seg": 732,
+    "pt": 6,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 5,
+    "pm": 10
+   },
+   {
+    "idJugador": "1839763",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "BUSTAMANTE CONTRERAS, PEDRO",
+    "seg": 1059,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 3,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 9,
+    "pm": -14
+   },
+   {
+    "idJugador": "2165883",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "SOBRINO ESCOBAR, ALEJANDRO",
+    "seg": 1319,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 1,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 0,
+    "pm": -4
+   },
+   {
+    "idJugador": "1640536",
+    "titular": false,
+    "dorsal": "32",
+    "nombre": "GONZALEZ SANCHEZ, ALEJO",
+    "seg": 683,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 3,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 1,
+    "pm": -13
+   }
+  ]
+ }
+}

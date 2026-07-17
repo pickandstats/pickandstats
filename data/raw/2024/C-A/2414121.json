@@ -1,0 +1,800 @@
+{
+ "id": "2414121",
+ "temporada": "2024",
+ "grupo": "C-A",
+ "jornada": "Jornada 23(30/03/2025)",
+ "equipoLocal": {
+  "id": "951057",
+  "nombre": "SESE A"
+ },
+ "equipoVisitante": {
+  "id": "950764",
+  "nombre": "GOLF DE ANDRATX"
+ },
+ "resultado": "98-63",
+ "disputado": true,
+ "descargado": "2026-07-17T08:49:14.033Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2319120",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "MARTÍN BENÍTEZ, ROBERTO",
+    "seg": 433,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -1,
+    "pm": 6
+   },
+   {
+    "idJugador": "1908267",
+    "titular": true,
+    "dorsal": "3",
+    "nombre": "AGUADO CADENAS, ALEX",
+    "seg": 1217,
+    "pt": 13,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 11
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 9,
+    "pm": 6
+   },
+   {
+    "idJugador": "1919238",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "CASTELLON MARTIN, VICTOR",
+    "seg": 738,
+    "pt": 14,
+    "t2": {
+     "a": 4,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 6
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 11,
+    "pm": 13
+   },
+   {
+    "idJugador": "1934555",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "HERETER MARCHANTE, GABRIEL",
+    "seg": 968,
+    "pt": 8,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 7
+    },
+    "ro": 3,
+    "rd": 4,
+    "rt": 7,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 4,
+    "va": 10,
+    "pm": 19
+   },
+   {
+    "idJugador": "1934295",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "GUTIÉRREZ MONREAL, GERARD",
+    "seg": 1209,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 3,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 8,
+    "pm": 13
+   },
+   {
+    "idJugador": "1921541",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "CORBERA BUSQUETA, MARTI",
+    "seg": 1331,
+    "pt": 13,
+    "t2": {
+     "a": 6,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 6,
+     "i": 11
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 4,
+    "rd": 4,
+    "rt": 8,
+    "as": 8,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 23,
+    "pm": 23
+   },
+   {
+    "idJugador": "1664639",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "JAIME BATLLE, ARNAU",
+    "seg": 973,
+    "pt": 12,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 4,
+     "i": 6
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 14,
+    "pm": 24
+   },
+   {
+    "idJugador": "1074113",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "GALVE NAVARRO, JOAQUIM",
+    "seg": 960,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 9,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 8,
+    "pm": 14
+   },
+   {
+    "idJugador": "1908032",
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "ABELLO GIRVÉS, ARNAU",
+    "seg": 1118,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 3,
+    "pm": 8
+   },
+   {
+    "idJugador": "2150941",
+    "titular": true,
+    "dorsal": "21",
+    "nombre": "VILAR FERNANDEZ, FERNAND",
+    "seg": 992,
+    "pt": 8,
+    "t2": {
+     "a": 2,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 3,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 11,
+    "pm": 8
+   },
+   {
+    "idJugador": "1935826",
+    "titular": false,
+    "dorsal": "37",
+    "nombre": "ISERN CASES, IGNASI",
+    "seg": 779,
+    "pt": 8,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 6,
+    "pm": 14
+   },
+   {
+    "idJugador": "2460176",
+    "titular": true,
+    "dorsal": "45",
+    "nombre": "RECIO PIÑOL, ALBERT",
+    "seg": 1282,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 2,
+    "rd": 4,
+    "rt": 6,
+    "as": 2,
+    "br": 5,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 22,
+    "pm": 27
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1083484",
+    "titular": true,
+    "dorsal": "0",
+    "nombre": "SERRA CASTILLO, JOAN ANTONI",
+    "seg": 1510,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 3,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 1,
+    "pm": -22
+   },
+   {
+    "idJugador": "2006485",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "ALZAMORA MULET, DIDAC",
+    "seg": 1445,
+    "pt": 12,
+    "t2": {
+     "a": 4,
+     "i": 11
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 13
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 3,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 8,
+    "pm": -21
+   },
+   {
+    "idJugador": "1825268",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "SASTRE IZQUIERDO, JAUME",
+    "seg": 1212,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 5,
+    "va": -4,
+    "pm": -19
+   },
+   {
+    "idJugador": "1990236",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "BENNASAR ROJO, ANTONIO",
+    "seg": 1438,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 9,
+    "rt": 11,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 18,
+    "pm": -18
+   },
+   {
+    "idJugador": "204712",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "COMAS GAYA, PAU LLORENÇ",
+    "seg": 1485,
+    "pt": 6,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 5,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 6,
+    "pm": -31
+   },
+   {
+    "idJugador": "2037943",
+    "titular": false,
+    "dorsal": "18",
+    "nombre": "TERRASA MARIN, CARLOS",
+    "seg": 972,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 1,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 2,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 12,
+    "pm": -4
+   },
+   {
+    "idJugador": "2013087",
+    "titular": true,
+    "dorsal": "25",
+    "nombre": "SERRA JURICEK, NICOLAS",
+    "seg": 1769,
+    "pt": 14,
+    "t2": {
+     "a": 6,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 6,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 11,
+    "pm": -22
+   },
+   {
+    "idJugador": "2226821",
+    "titular": true,
+    "dorsal": "30",
+    "nombre": "FLUXA PAYERAS, PAU",
+    "seg": 854,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -1,
+    "pm": -14
+   },
+   {
+    "idJugador": "2111972",
+    "titular": false,
+    "dorsal": "40",
+    "nombre": "BILBAO BORRAJO, ALEJANDRO",
+    "seg": 1315,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": -3,
+    "pm": -24
+   }
+  ]
+ }
+}

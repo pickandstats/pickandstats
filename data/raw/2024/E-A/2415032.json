@@ -1,0 +1,874 @@
+{
+ "id": "2415032",
+ "temporada": "2024",
+ "grupo": "E-A",
+ "jornada": "Jornada 6(17/11/2024)",
+ "equipoLocal": {
+  "id": "952560",
+  "nombre": "CB MORVEDRE"
+ },
+ "equipoVisitante": {
+  "id": "952558",
+  "nombre": "EL PILAR- UPV"
+ },
+ "resultado": "74-99",
+ "disputado": true,
+ "descargado": "2026-07-17T09:14:24.835Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2335903",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "ARNAIZ VEGA, JAIME",
+    "seg": 992,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 7,
+    "pm": -12
+   },
+   {
+    "idJugador": "2737513",
+    "titular": true,
+    "dorsal": "3",
+    "nombre": "PLAVENIEKS, LAURIS",
+    "seg": 1609,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 10
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 0,
+    "pm": -19
+   },
+   {
+    "idJugador": "2335904",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "ARNAIZ VEGA, SERGIO",
+    "seg": 348,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -2,
+    "pm": -7
+   },
+   {
+    "idJugador": "2026972",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "FERRER I SEGURA, FERRAN",
+    "seg": 1153,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 5,
+    "pm": -6
+   },
+   {
+    "idJugador": "1467213",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "ARANDA RUBIO, JUAN CARLOS",
+    "seg": 971,
+    "pt": 15,
+    "t2": {
+     "a": 4,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 4,
+     "i": 9
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 6,
+    "va": 14,
+    "pm": -7
+   },
+   {
+    "idJugador": "1685233",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "GONZALEZ SOLER, ALEJANDRO",
+    "seg": 797,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": -1,
+    "pm": -13
+   },
+   {
+    "idJugador": "2087641",
+    "titular": false,
+    "dorsal": "18",
+    "nombre": "GONZALEZ FERRER, DIEGO",
+    "seg": 630,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 1,
+    "pm": -7
+   },
+   {
+    "idJugador": "2026976",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "SEGARRA SARIO, JOSEP",
+    "seg": 467,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 2,
+    "pm": -9
+   },
+   {
+    "idJugador": "2028325",
+    "titular": true,
+    "dorsal": "20",
+    "nombre": "KRISCIUNAS, NEDAS",
+    "seg": 1581,
+    "pt": 14,
+    "t2": {
+     "a": 7,
+     "i": 11
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 7,
+     "i": 16
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 2,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 8,
+    "pm": -27
+   },
+   {
+    "idJugador": "2645221",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "KEITH CAMARA, DAVID-EMILE",
+    "seg": 1645,
+    "pt": 13,
+    "t2": {
+     "a": 2,
+     "i": 8
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 5,
+     "i": 13
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 1,
+    "tco": 2,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 10,
+    "pm": -7
+   },
+   {
+    "idJugador": "2745380",
+    "titular": true,
+    "dorsal": "32",
+    "nombre": "PIERRE-GABRIEL ANDREA GASTON, GOUFFRAN",
+    "seg": 1458,
+    "pt": 14,
+    "t2": {
+     "a": 4,
+     "i": 10
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 6,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 3,
+    "rd": 4,
+    "rt": 7,
+    "as": 0,
+    "br": 0,
+    "bp": 5,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 10,
+    "pm": -8
+   },
+   {
+    "idJugador": "2164737",
+    "titular": false,
+    "dorsal": "86",
+    "nombre": "DOMINGUEZ ALEIXANDRE, SERGIO",
+    "seg": 349,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": -1,
+    "pm": -3
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1913775",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "BERENGUER CASCO, MARCOS",
+    "seg": 1553,
+    "pt": 18,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 6,
+     "i": 10
+    },
+    "tl": {
+     "a": 5,
+     "i": 5
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 3,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 23,
+    "pm": 23
+   },
+   {
+    "idJugador": "1812600",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "MORIN PEDROSA, PABLO",
+    "seg": 1119,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 3,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 11,
+    "pm": 7
+   },
+   {
+    "idJugador": "1892161",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "LOPEZ ABAD, GABRIEL",
+    "seg": 1268,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 11,
+    "rt": 12,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 3,
+    "va": 11,
+    "pm": 10
+   },
+   {
+    "idJugador": "1637023",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "BERMEJO DORRONSORO, JUAN MANUEL",
+    "seg": 1068,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 7,
+    "rd": 0,
+    "rt": 7,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 8,
+    "pm": 8
+   },
+   {
+    "idJugador": "1361658",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "MATEO LAZARO, JAVIER",
+    "seg": 1096,
+    "pt": 12,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 5,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 2,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 15,
+    "pm": 17
+   },
+   {
+    "idJugador": "1882199",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "SORIANO ZORIO, JAVIER",
+    "seg": 921,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 7,
+    "pm": 14
+   },
+   {
+    "idJugador": "1890378",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "RUIZ FRAGUEIRO, ALEJANDRO",
+    "seg": 1673,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 6
+    },
+    "tc": {
+     "a": 4,
+     "i": 12
+    },
+    "tl": {
+     "a": 2,
+     "i": 9
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 3,
+    "br": 4,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 9,
+    "va": 12,
+    "pm": 17
+   },
+   {
+    "idJugador": "1606553",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "RUIPEREZ SANCHEZ, IGNACIO",
+    "seg": 1469,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 5,
+    "pm": 11
+   },
+   {
+    "idJugador": "1687265",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "PADILLA MARTINEZ, SERGIO",
+    "seg": 1286,
+    "pt": 16,
+    "t2": {
+     "a": 5,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 6,
+     "i": 10
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 0,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 11,
+    "pm": 20
+   },
+   {
+    "idJugador": "2180378",
+    "titular": false,
+    "dorsal": "30",
+    "nombre": "DE FELIPE JARQUE, ALVARO",
+    "seg": 127,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2211828",
+    "titular": false,
+    "dorsal": "31",
+    "nombre": "BENEDICTO MONTANER, PAU",
+    "seg": 420,
+    "pt": 7,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 2
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 8,
+    "pm": -5
+   }
+  ]
+ }
+}
