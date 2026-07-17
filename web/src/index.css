@@ -2,12 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap');
 
 :root {
-  --tinta: #16233a;        /* azul pizarra: texto y cabeceras */
+  --tinta: #16233a;
   --tinta-suave: #5a6478;
   --fondo: #f6f7f9;
   --panel: #ffffff;
   --linea: #e3e6eb;
-  --acento: #e8622c;       /* naranja balón: solo estados activos */
+  --acento: #e8622c;
   --positivo: #0a7d33;
   --negativo: #c0392b;
   --radio: 8px;
@@ -85,6 +85,7 @@ select:focus, input:focus, button:focus-visible { outline: 2px solid var(--acent
   cursor: pointer;
 }
 .boton-grupo.activo { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+.separador { width: 1px; align-self: stretch; background: var(--linea); margin: 0 6px; }
 
 .boton-mas {
   font: inherit;
@@ -122,7 +123,7 @@ tbody td {
   padding: 7px 8px;
   border-bottom: 1px solid var(--linea);
   text-align: right;
-  font-variant-numeric: tabular-nums;  /* columnas de números alineadas */
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 tbody td.izq { text-align: left; }
@@ -136,18 +137,38 @@ tbody tr:last-child td { border-bottom: none; }
 .pie { color: #9aa1ac; font-size: 12px; margin-top: 16px; }
 .cargando { color: var(--tinta-suave); margin-top: 24px; }
 
+/* ---- tablas con fila de totales (boxscore de partido) ---- */
+.tabla-scroll table:has(tfoot) { table-layout: fixed; min-width: 760px; }
+.tabla-scroll table:has(tfoot) th:first-child,
+.tabla-scroll table:has(tfoot) td:first-child { width: 190px; text-align: left; }
+.tabla-scroll table:has(tfoot) th,
+.tabla-scroll table:has(tfoot) td { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+tfoot .fila-total td {
+  padding: 8px;
+  border-top: 1px solid var(--tinta);
+  border-bottom: none;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+tfoot .fila-total td:first-child { text-align: left; color: var(--tinta-suave); letter-spacing: .5px; }
+
 @media (prefers-reduced-motion: no-preference) {
   .boton-grupo, .pestana { transition: background .15s, color .15s, border-color .15s; }
 }
 @media (max-width: 640px) {
   .marca { font-size: 32px; }
   body { font-size: 14px; }
+  .tabla-scroll table:has(tfoot) { min-width: 680px; }
+  .tabla-scroll table:has(tfoot) th:first-child,
+  .tabla-scroll table:has(tfoot) td:first-child { width: 130px; }
 }
 
-/* ---- ficha de equipo ---- */
+/* ---- enlaces ---- */
 .enlace { cursor: pointer; color: var(--tinta); text-decoration: underline; text-decoration-color: var(--linea); text-underline-offset: 3px; }
 .enlace:hover { color: var(--acento); text-decoration-color: var(--acento); }
 
+/* ---- ficha (equipo y jugador) ---- */
 .ficha-cabecera {
   background: var(--panel);
   border: 1px solid var(--linea);
@@ -170,6 +191,16 @@ tbody tr:last-child td { border-bottom: none; }
   font-variant-numeric: tabular-nums;
 }
 .dato-etiqueta { font-size: 12px; color: var(--tinta-suave); text-transform: uppercase; letter-spacing: .5px; }
+.datos-titulo {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+  color: var(--tinta-suave);
+  margin-top: 14px;
+}
+.datos-bloque .datos { margin-top: 6px; }
 
 .seccion {
   font-family: 'Barlow Condensed', sans-serif;
@@ -179,6 +210,7 @@ tbody tr:last-child td { border-bottom: none; }
   margin: 24px 0 10px;
 }
 
+/* ---- gráficos ---- */
 .panel-grafico {
   background: var(--panel);
   border: 1px solid var(--linea);
@@ -205,18 +237,7 @@ td.metrica {
 .domina-b { color: var(--tinta); font-weight: 700; }
 th.col-a { color: #ffd9c4; }
 
-/* ---- bloques de datos y leyenda ---- */
-.datos-titulo {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .8px;
-  color: var(--tinta-suave);
-  margin-top: 14px;
-}
-.datos-bloque .datos { margin-top: 6px; }
-
+/* ---- leyenda ---- */
 .leyenda-bloque {
   background: var(--panel);
   border: 1px solid var(--linea);
@@ -228,10 +249,11 @@ th.col-a { color: #ffd9c4; }
 .leyenda-nombre { font-weight: 600; margin-bottom: 2px; }
 .leyenda-texto { color: var(--tinta-suave); font-size: 14px; }
 
-.separador { width: 1px; align-self: stretch; background: var(--linea); margin: 0 6px; }
-
 /* ---- portada ---- */
 .inicio-intro { color: var(--tinta-suave); margin: 12px 0 4px; max-width: 640px; }
+.filtro-grupos { margin: 12px 0 4px; }
+.filtro-grupos-botones { display: flex; flex-wrap: wrap; gap: 6px; }
+.card-vacio { color: var(--tinta-suave); font-size: 14px; margin: 10px 0; }
 
 .cards-lideres {
   display: grid;
@@ -284,12 +306,15 @@ th.col-a { color: #ffd9c4; }
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 10px;
 }
+.resultados-jornada { display: flex; flex-direction: column; gap: 8px; }
 .resultado-card {
   background: var(--panel);
   border: 1px solid var(--linea);
   border-radius: var(--radio);
   padding: 10px 12px;
 }
+.enlace-card { cursor: pointer; transition: border-color .15s; }
+.enlace-card:hover { border-color: var(--acento); }
 .resultado-grupo {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 12px; font-weight: 600; letter-spacing: .5px;
@@ -301,10 +326,6 @@ th.col-a { color: #ffd9c4; }
 }
 .resultado-linea.gana { color: var(--tinta); font-weight: 600; }
 .resultado-marca { font-variant-numeric: tabular-nums; }
-
-.filtro-grupos { margin: 12px 0 4px; }
-.filtro-grupos-botones { display: flex; flex-wrap: wrap; gap: 6px; }
-.card-vacio { color: var(--tinta-suave); font-size: 14px; margin: 10px 0; }
 
 /* ---- página de partido ---- */
 .partido-marcador {
@@ -333,13 +354,3 @@ th.col-a { color: #ffd9c4; }
   font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums;
 }
 .partido-equipo.gana .partido-tanteo { color: var(--acento); }
-
-.enlace-card { cursor: pointer; transition: border-color .15s; }
-.enlace-card:hover { border-color: var(--acento); }
-
-tfoot .fila-total td {
-  border-top: 2px solid var(--tinta);
-  font-weight: 600;
-  font-variant-numeric: tabular-nums;
-  background: #f4f4f8;
-}

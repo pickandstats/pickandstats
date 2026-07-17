@@ -24,9 +24,7 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
       : eq.nombre;
   };
 
-  // Suma de una columna del boxscore
   const total = (box, fn) => box.reduce((a, j) => a + fn(j), 0);
-  const seg2min = s => Math.round(s / 60);
 
   const tablaBox = (box, nombre) => {
     const t = {
@@ -61,7 +59,7 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
                       ? <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                       : j.nombre}
                   </td>
-                  <td>{seg2min(j.seg)}</td>
+                  <td>{Math.round(j.seg / 60)}</td>
                   <td>{j.pt}</td>
                   <td>{j.t2.a}/{j.t2.i}</td>
                   <td>{j.t3.a}/{j.t3.i}</td>

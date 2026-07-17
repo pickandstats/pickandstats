@@ -73,7 +73,7 @@ export default function Resultados({ partidos, equipos, grupos, onVerEquipo, onV
       <div className="inicio-dos-col">
         <div>
           <h3 className="seccion">Resultados · jornada {jornadaActiva}</h3>
-          <div className="resultados-recientes">
+          <div className="resultados-jornada">
             {jornadaData && jornadaData[1].lista.map(p => {
               const [gl, gv] = p.resultado.split('-').map(Number);
               const jugado = !isNaN(gl) && !isNaN(gv);
