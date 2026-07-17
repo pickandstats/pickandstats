@@ -8,9 +8,28 @@ const numJornada = j => parseInt((String(j).match(/\d+/) || [0])[0], 10);
 const etiquetaTemp = t => `${t}/${(+t + 1).toString().slice(2)}`;
 const COLOR = { tinta: '#16233a', acento: '#e8622c' };
 
+// color de la barra de percentil: rojo apagado (bajo) -> gris (medio) -> verde (alto)
+const colorPercentil = p => {
+  if (p == null) return '#c9ced8';
+  if (p >= 80) return '#0a7d33';
+  if (p >= 60) return '#5fa763';
+  if (p >= 40) return '#c7a83e';
+  if (p >= 20) return '#d98a3d';
+  return '#c0392b';
+};
+
+const METRICAS_PCT = [
+  { clave: 'ptPorPartido', titulo: 'Puntos' },
+  { clave: 'rtPorPartido', titulo: 'Rebotes' },
+  { clave: 'asPorPartido', titulo: 'Asistencias' },
+  { clave: 'vaPorPartido', titulo: 'Valoración' },
+  { clave: 'ts', titulo: 'TS%' },
+];
+
 export default function Jugador({ carrera, historico, equipos, onVolver, onVerEquipo }) {
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
+  const pct = carrera.percentiles || null;
 
   const evolucion = useMemo(() => {
     if (soloHistorico || !carrera.etapas) return [];
@@ -43,7 +62,13 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
       : etapa.equipo;
   };
 
-  // Cabecera: para jugador activo, sus etapas; para histórico, su última temporada registrada
+  const barra = (p) => (
+    <div className="pct-barra-fondo">
+      <div className="pct-barra" style={{ width: `${p == null ? 0 : p}%`, background: colorPercentil(p) }} />
+      <span className="pct-num">{p == null ? '—' : p}</span>
+    </div>
+  );
+
   const subtitulo = soloHistorico
     ? `Última temporada registrada: ${etiquetaTemp(carrera.ultimaTemporada)} · no juega en la temporada seleccionada`
     : null;
@@ -103,7 +128,36 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
         </div>
       </div>
 
-      {/* Estadística completa de la temporada actual — justo bajo la cabecera */}
+      {/* Percentiles */}
+      {pct && (
+        <>
+          <h3 className="seccion">Percentiles {soloHistorico ? `· ${etiquetaTemp(carrera.ultimaTemporada)}` : '· temporada actual'}</h3>
+          <div className="pct-panel">
+            <div className="pct-cabecera">
+              <span></span>
+              <span className="pct-col-tit">Nacional</span>
+              <span className="pct-col-tit">Su grupo</span>
+            </div>
+            {METRICAS_PCT.map(m => {
+              const d = pct[m.clave];
+              if (!d) return null;
+              return (
+                <div className="pct-fila" key={m.clave}>
+                  <span className="pct-etiqueta">{m.titulo}</span>
+                  {barra(d.nac)}
+                  {barra(d.grp)}
+                </div>
+              );
+            })}
+            <p className="pie" style={{ marginTop: 8 }}>
+              Percentil respecto a jugadores con 12+ partidos. 100 = mejor de la categoría.
+              Nacional compara con toda la Tercera FEB; grupo, solo con su grupo.
+            </p>
+          </div>
+        </>
+      )}
+
+      {/* Estadística completa de la temporada actual */}
       {!soloHistorico && (
         <>
           <h3 className="seccion">{multiEtapa ? 'Etapas · temporada actual' : 'Estadística completa · temporada actual'}</h3>
@@ -221,7 +275,7 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
         </>
       )}
 
-      {/* Evolución por jornada — solo para jugador de la temporada activa */}
+      {/* Evolución por jornada */}
       {!soloHistorico && (
         <>
           <h3 className="seccion">Evolución por jornada · temporada actual</h3>

@@ -233,6 +233,49 @@ function filaJugador(J) {
 const salidaJugadores = Object.values(jugadores).map(filaJugador)
   .sort((a, b) => b.vaPorPartido - a.vaPorPartido);
 
+// ---------- percentiles (nacional y por grupo) ----------
+const MIN_PJ_PCT = 12;
+const METRICAS_PCT = ['ptPorPartido','rtPorPartido','asPorPartido','brPorPartido','vaPorPartido','ts','efg','t3Pct'];
+
+// percentil de un valor dentro de un array ordenado ascendente: % de valores <= v
+function percentilEn(valoresOrdenados, v) {
+  if (!valoresOrdenados.length) return null;
+  let n = 0;
+  for (const x of valoresOrdenados) { if (x <= v) n++; else break; }
+  return Math.round(100 * n / valoresOrdenados.length);
+}
+
+// conjuntos elegibles: nacional y por grupo (solo >= MIN_PJ_PCT)
+const elegiblesPct = salidaJugadores.filter(j => j.pj >= MIN_PJ_PCT);
+const ordNacional = {};
+const ordGrupo = {};   // grupo -> metrica -> array ordenado
+for (const m of METRICAS_PCT) {
+  ordNacional[m] = elegiblesPct.map(j => j[m]).sort((a, b) => a - b);
+}
+for (const j of elegiblesPct) {
+  if (!ordGrupo[j.grupo]) ordGrupo[j.grupo] = {};
+}
+for (const g of Object.keys(ordGrupo)) {
+  const delGrupo = elegiblesPct.filter(j => j.grupo === g);
+  for (const m of METRICAS_PCT) {
+    ordGrupo[g][m] = delGrupo.map(j => j[m]).sort((a, b) => a - b);
+  }
+}
+
+// adjuntar a cada jugador elegible sus percentiles
+for (const j of salidaJugadores) {
+  if (j.pj < MIN_PJ_PCT) { j.percentiles = null; continue; }
+  const pct = {};
+  for (const m of METRICAS_PCT) {
+    pct[m] = {
+      nac: percentilEn(ordNacional[m], j[m]),
+      grp: percentilEn(ordGrupo[j.grupo][m], j[m])
+    };
+  }
+  j.percentiles = pct;
+}
+
+
 // ---------- carreras: una entrada por licencia, con básica completa ----------
 const porLicencia = {};
 for (const fila of salidaJugadores) {
@@ -249,11 +292,13 @@ const carreras = Object.values(porLicencia).map(c => {
   const pt = tot('pt');
   const tciC = t2i + t3i, tcaC = t2a + t3a;
   const pp = k => r2(tot(k) / pj);
+  const etapaPrincipal = c.etapas.reduce((a, b) => (b.pj > a.pj ? b : a), c.etapas[0]);
   return {
     idJugador: c.idJugador,
     nombre: c.nombre,
     equipos: c.etapas.map(e => `${e.equipo} (${e.grupo})`),
     nEtapas: c.etapas.length,
+    percentiles: etapaPrincipal.percentiles || null,
     pj,
     minPorPartido: r2(min / pj),
     ptPorPartido: pp('pt'),

@@ -468,3 +468,42 @@ th.col-a { color: #ffd9c4; }
 }
 
 .filtros-modo { margin-top: -4px; }
+
+/* ---- percentiles ---- */
+.pct-panel {
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  padding: 14px 18px;
+}
+.pct-cabecera, .pct-fila {
+  display: grid;
+  grid-template-columns: 120px 1fr 1fr;
+  gap: 14px;
+  align-items: center;
+}
+.pct-cabecera { margin-bottom: 6px; }
+.pct-col-tit {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 13px; font-weight: 600; letter-spacing: .5px;
+  text-transform: uppercase; color: var(--tinta-suave); text-align: center;
+}
+.pct-fila { padding: 5px 0; }
+.pct-etiqueta { font-weight: 600; font-size: 14px; }
+.pct-barra-fondo {
+  position: relative;
+  height: 22px;
+  background: #eef0f4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.pct-barra { height: 100%; border-radius: 4px; transition: width .3s; }
+.pct-num {
+  position: absolute;
+  right: 8px; top: 50%; transform: translateY(-50%);
+  font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums;
+  color: var(--tinta);
+}
+@media (max-width: 560px) {
+  .pct-cabecera, .pct-fila { grid-template-columns: 80px 1fr 1fr; gap: 8px; }
+}
