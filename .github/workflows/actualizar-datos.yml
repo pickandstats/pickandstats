@@ -19,10 +19,12 @@ jobs:
           node-version: 20
       - name: Instalar dependencias
         run: npm ci
-      - name: Scrapear partidos nuevos
+      - name: Scrapear partidos nuevos (temporada actual)
         run: node scraper/scrape.js
-      - name: Recalcular estadísticas
+      - name: Recalcular estadísticas (temporada actual)
         run: node scraper/calcular.js
+      - name: Regenerar índice histórico (todas las temporadas)
+        run: node scraper/historico.js
       - name: Commit y push si hay cambios
         run: |
           git config user.name "pickandstats-bot"
