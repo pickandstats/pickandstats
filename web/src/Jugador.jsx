@@ -1,25 +1,32 @@
 import { useMemo } from 'react';
 import {
-  LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer
+  LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
+  BarChart, Bar
 } from 'recharts';
 
 const numJornada = j => parseInt((String(j).match(/\d+/) || [0])[0], 10);
+const etiquetaTemp = t => `${t}/${(+t + 1).toString().slice(2)}`;
 const COLOR = { tinta: '#16233a', acento: '#e8622c' };
 
-export default function Jugador({ carrera, equipos, onVolver, onVerEquipo }) {
+export default function Jugador({ carrera, historico, equipos, onVolver, onVerEquipo }) {
   const multiEtapa = carrera.nEtapas > 1;
 
   const evolucion = useMemo(() =>
     carrera.etapas
       .flatMap(e => e.evolucion.map(p => ({
         jornada: numJornada(p.jornada),
-        pt: p.pt,
-        va: p.va,
-        min: Math.round(p.seg / 60),
-        equipo: e.equipo
+        pt: p.pt, va: p.va, min: Math.round(p.seg / 60), equipo: e.equipo
       })))
       .sort((a, b) => a.jornada - b.jornada),
     [carrera]);
+
+  // Trayectoria histórica: array de años ordenado
+  const trayectoria = useMemo(() => {
+    if (!historico || !historico.temporadas) return [];
+    return Object.entries(historico.temporadas)
+      .map(([temp, d]) => ({ temp, ...d }))
+      .sort((a, b) => a.temp.localeCompare(b.temp));
+  }, [historico]);
 
   const dato = (etiqueta, valor) => (
     <div className="dato">
@@ -53,7 +60,7 @@ export default function Jugador({ carrera, equipos, onVolver, onVerEquipo }) {
           </p>
         </div>
         <div className="datos-bloque">
-          <div className="datos-titulo">Temporada 2025/26 · Producción</div>
+          <div className="datos-titulo">Temporada actual · Producción</div>
           <div className="datos">
             {dato('PJ', carrera.pj)}
             {dato('MIN', carrera.minPorPartido)}
@@ -82,7 +89,63 @@ export default function Jugador({ carrera, equipos, onVolver, onVerEquipo }) {
         </div>
       </div>
 
-      <h3 className="seccion">Evolución por jornada</h3>
+      {trayectoria.length > 1 && (
+        <>
+          <h3 className="seccion">Trayectoria por temporada</h3>
+          <div className="tabla-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th className="izq">Temporada</th><th className="izq">Equipo(s)</th>
+                  <th>PJ</th><th>MIN</th><th>PTS</th>
+                  <th>RO</th><th>RD</th><th>REB</th><th>AST</th>
+                  <th>ROB</th><th>BP</th><th>TAP</th><th>TR</th><th>FC</th><th>FR</th>
+                  <th>T2%</th><th>T3%</th><th>TL%</th>
+                  <th>VAL</th><th>TS%</th>
+                </tr>
+              </thead>
+              <tbody>
+                {trayectoria.map(t => (
+                  <tr key={t.temp}>
+                    <td className="izq">{etiquetaTemp(t.temp)}</td>
+                    <td className="izq">{t.equipos.join(', ')}</td>
+                    <td>{t.pj}</td><td>{t.minPorPartido}</td><td>{t.ptPorPartido}</td>
+                    <td>{t.roPorPartido}</td><td>{t.rdPorPartido}</td><td>{t.rtPorPartido}</td>
+                    <td>{t.asPorPartido}</td><td>{t.brPorPartido}</td><td>{t.bpPorPartido}</td>
+                    <td>{t.tpPorPartido}</td><td>{t.tcoPorPartido}</td>
+                    <td>{t.fcPorPartido}</td><td>{t.frPorPartido}</td>
+                    <td>{t.t2Pct}</td><td>{t.t3Pct}</td><td>{t.tlPct}</td>
+                    <td>{t.vaPorPartido}</td><td>{t.ts}</td>
+                  </tr>
+                ))}
+              </tbody>
+            
+            </table>
+          </div>
+
+          <div className="panel-grafico">
+            <ResponsiveContainer width="100%" height={240}>
+              <BarChart data={trayectoria.map(t => ({
+                temporada: etiquetaTemp(t.temp),
+                Puntos: t.ptPorPartido, Valoración: t.vaPorPartido
+              }))} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
+                <XAxis dataKey="temporada" tick={{ fontSize: 13 }} />
+                <YAxis tick={{ fontSize: 12 }} />
+                <Tooltip />
+                <Legend />
+                <Bar dataKey="Puntos" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
+                <Bar dataKey="Valoración" fill={COLOR.tinta} radius={[3, 3, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="pie" style={{ marginTop: 4 }}>
+              Promedios por partido en cada temporada disputada en categorías FEB registradas.
+            </p>
+          </div>
+        </>
+      )}
+
+      <h3 className="seccion">Evolución por jornada · temporada actual</h3>
       <div className="panel-grafico">
         <ResponsiveContainer width="100%" height={280}>
           <LineChart data={evolucion} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
@@ -103,7 +166,7 @@ export default function Jugador({ carrera, equipos, onVolver, onVerEquipo }) {
         </ResponsiveContainer>
       </div>
 
-      <h3 className="seccion">{multiEtapa ? 'Etapas' : 'Estadística completa'}</h3>
+      <h3 className="seccion">{multiEtapa ? 'Etapas · temporada actual' : 'Estadística completa'}</h3>
       <div className="tabla-scroll">
         <table>
           <thead>

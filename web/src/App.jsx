@@ -19,6 +19,7 @@ export default function App() {
   const [jugadores, setJugadores] = useState([]);
   const [carreras, setCarreras] = useState([]);
   const [partidos, setPartidos] = useState([]);
+  const [historico, setHistorico] = useState([]);
   const [vista, setVista] = useState('inicio');
   const [equipoSel, setEquipoSel] = useState(null);
   const [jugadorSel, setJugadorSel] = useState(null);
@@ -30,6 +31,11 @@ export default function App() {
       .then(r => r.json())
       .then(ts => { setTemporadas(ts); setTemporada(ts[0]); })
       .catch(err => console.error('Error cargando temporadas:', err));
+    // el histórico es transversal: se carga una vez
+    fetch('data/historico.json')
+      .then(r => r.json())
+      .then(setHistorico)
+      .catch(err => console.error('Error cargando histórico:', err));
   }, []);
 
   useEffect(() => {
@@ -68,6 +74,10 @@ export default function App() {
       onClick={() => irPestana(id)}>{texto}</button>
   );
 
+  const histJugadorSel = jugadorSel
+    ? historico.find(h => h.idJugador === jugadorSel.idJugador)
+    : null;
+
   return (
     <div className="contenedor">
       <div className="cabecera">
@@ -98,7 +108,7 @@ export default function App() {
         <Partido partido={partidoSel} equipos={equipos}
           onVolver={() => setPartidoSel(null)} onVerEquipo={verEquipo} onVerJugador={verJugador} />
       ) : jugadorSel ? (
-        <Jugador carrera={jugadorSel} equipos={equipos}
+        <Jugador carrera={jugadorSel} historico={histJugadorSel} equipos={equipos}
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
       ) : equipoSel ? (
         <Equipo equipo={equipoSel} jugadores={jugadores} partidos={partidos}
