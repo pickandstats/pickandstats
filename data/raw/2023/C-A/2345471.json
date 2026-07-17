@@ -1,0 +1,785 @@
+{
+ "id": "2345471",
+ "temporada": "2023",
+ "grupo": "C-A",
+ "jornada": "Jornada 11(10/12/2023)",
+ "equipoLocal": {
+  "id": "921663",
+  "nombre": "MONBUS - C.B. IGUALADA"
+ },
+ "equipoVisitante": {
+  "id": "921662",
+  "nombre": "DM GROUP MOLLET"
+ },
+ "resultado": "66-72",
+ "disputado": true,
+ "descargado": "2026-07-17T15:01:07.312Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2093289",
+    "titular": true,
+    "dorsal": "4",
+    "nombre": "BERNADÍ VALLS, MARC",
+    "seg": 1750,
+    "pt": 16,
+    "t2": {
+     "a": 8,
+     "i": 15
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 8,
+     "i": 15
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 7,
+    "rd": 7,
+    "rt": 14,
+    "as": 1,
+    "br": 1,
+    "bp": 4,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 21,
+    "pm": -4
+   },
+   {
+    "idJugador": "1924657",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "ENRICH TASIAS, BERNAT",
+    "seg": 732,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 2,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 3,
+    "pm": -9
+   },
+   {
+    "idJugador": "1614222",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "BURGES FERNANDEZ, EDUARD",
+    "seg": 981,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 2,
+    "pm": -1
+   },
+   {
+    "idJugador": "2051280",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "SALA MAS, LLUC",
+    "seg": 892,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 4,
+    "pm": -12
+   },
+   {
+    "idJugador": "1572066",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "BENITO MULLERAT, MIQUEL",
+    "seg": 1977,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 6,
+    "br": 4,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 4,
+    "pm": -4
+   },
+   {
+    "idJugador": "1277575",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "FONS TEIXIDO, CARLES",
+    "seg": 1593,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 8
+    },
+    "tc": {
+     "a": 4,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2076803",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "BALTÀ CASTELLTORT, ARNAU",
+    "seg": 620,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 3,
+    "pm": -6
+   },
+   {
+    "idJugador": "2051253",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "MATENCIO UTIEL, ALEX",
+    "seg": 532,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": -1,
+    "pm": -8
+   },
+   {
+    "idJugador": "1081241",
+    "titular": true,
+    "dorsal": "18",
+    "nombre": "TEJERO CASASAYAS, EDUARD",
+    "seg": 1807,
+    "pt": 13,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 3,
+    "br": 0,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 7,
+    "va": 12,
+    "pm": -8
+   },
+   {
+    "idJugador": "1487941",
+    "titular": false,
+    "dorsal": "33",
+    "nombre": "ALIAGA CHECA, MIQUEL",
+    "seg": 1116,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 4,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 3,
+    "br": 2,
+    "bp": 1,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": 11,
+    "pm": 19
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1393320",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "BELVER EDO, IGNASI",
+    "seg": 1053,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 3,
+    "rd": 4,
+    "rt": 7,
+    "as": 2,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 15,
+    "pm": 5
+   },
+   {
+    "idJugador": "2034509",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "MARIN MENDICUTI, NACHO",
+    "seg": 993,
+    "pt": 8,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 3,
+    "pm": 8
+   },
+   {
+    "idJugador": "2049036",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "VIÑALLONGA BLANCO, GERARD",
+    "seg": 1320,
+    "pt": 9,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 2,
+    "rd": 11,
+    "rt": 13,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 19,
+    "pm": 6
+   },
+   {
+    "idJugador": "1469117",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "SOTO CAPARROS, ANGEL",
+    "seg": 1202,
+    "pt": 8,
+    "t2": {
+     "a": 4,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 13,
+    "pm": 4
+   },
+   {
+    "idJugador": "1392790",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "FIGUEROLA CALVO, ANTONI",
+    "seg": 1407,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 3,
+     "i": 7
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 0,
+    "pm": -2
+   },
+   {
+    "idJugador": "997403",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "VALLE VIVES, ALBERT",
+    "seg": 1718,
+    "pt": 13,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 9
+    },
+    "tl": {
+     "a": 3,
+     "i": 3
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 4,
+    "va": 19,
+    "pm": 3
+   },
+   {
+    "idJugador": "2077620",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "TALAMINO COLLADO, MARTÍ",
+    "seg": 79,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -2,
+    "pm": 0
+   },
+   {
+    "idJugador": "1074329",
+    "titular": false,
+    "dorsal": "30",
+    "nombre": "MARZO CHECA, CARLES",
+    "seg": 1343,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 5,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 6,
+    "pm": -4
+   },
+   {
+    "idJugador": "2815283",
+    "titular": true,
+    "dorsal": "33",
+    "nombre": "MCDONALD, WILLIAM SHANE",
+    "seg": 1660,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 6
+    },
+    "tc": {
+     "a": 0,
+     "i": 9
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 2,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": -4,
+    "pm": 13
+   },
+   {
+    "idJugador": "837565",
+    "titular": false,
+    "dorsal": "35",
+    "nombre": "RODRIGUEZ MARIN, JAVIER",
+    "seg": 1225,
+    "pt": 18,
+    "t2": {
+     "a": 6,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 13
+    },
+    "tl": {
+     "a": 6,
+     "i": 11
+    },
+    "ro": 5,
+    "rd": 3,
+    "rt": 8,
+    "as": 1,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 2,
+    "fc": 2,
+    "fr": 5,
+    "va": 16,
+    "pm": -3
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 17,
+    "visitante": 9
+   },
+   {
+    "periodo": "2º C",
+    "local": 18,
+    "visitante": 26
+   },
+   {
+    "periodo": "3º C",
+    "local": 13,
+    "visitante": 19
+   },
+   {
+    "periodo": "4º C",
+    "local": 18,
+    "visitante": 18
+   }
+  ]
+ }
+}

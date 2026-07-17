@@ -1,0 +1,859 @@
+{
+ "id": "2346350",
+ "temporada": "2023",
+ "grupo": "E-A",
+ "jornada": "Jornada 1(01/10/2023)",
+ "equipoLocal": {
+  "id": "923499",
+  "nombre": "CB ALDAIA"
+ },
+ "equipoVisitante": {
+  "id": "922853",
+  "nombre": "NB TORRENT"
+ },
+ "resultado": "71-86",
+ "disputado": true,
+ "descargado": "2026-07-17T15:23:50.488Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2032916",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "CISNEROS RUIZ, MARIO",
+    "seg": 180,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -2,
+    "pm": -8
+   },
+   {
+    "idJugador": "1685529",
+    "titular": true,
+    "dorsal": "3",
+    "nombre": "PUERTA CABALLERO, JAVIER",
+    "seg": 1992,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 6
+    },
+    "tc": {
+     "a": 0,
+     "i": 10
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 5,
+    "br": 3,
+    "bp": 2,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 6,
+    "pm": 0
+   },
+   {
+    "idJugador": "1852293",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "BAEZA CABRERA, RUBEN",
+    "seg": 582,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 6,
+    "pm": -15
+   },
+   {
+    "idJugador": "1839763",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "BUSTAMANTE CONTRERAS, PEDRO",
+    "seg": 1735,
+    "pt": 21,
+    "t2": {
+     "a": 5,
+     "i": 6
+    },
+    "t3": {
+     "a": 3,
+     "i": 6
+    },
+    "tc": {
+     "a": 8,
+     "i": 12
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 18,
+    "pm": -13
+   },
+   {
+    "idJugador": "2343041",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "MEDINA LERMA, RAFEL",
+    "seg": 380,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 1,
+    "pm": -9
+   },
+   {
+    "idJugador": "1626093",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "CARRION BALLESTER, SERGIO",
+    "seg": 741,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 4,
+    "pm": -5
+   },
+   {
+    "idJugador": "1585974",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "CARRION BALLESTER, RICARDO",
+    "seg": 1217,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 4,
+    "va": 3,
+    "pm": -8
+   },
+   {
+    "idJugador": "2031182",
+    "titular": true,
+    "dorsal": "22",
+    "nombre": "PEREZ MARTINEZ, DANIEL",
+    "seg": 972,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 4,
+    "rt": 6,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 2,
+    "pm": -3
+   },
+   {
+    "idJugador": "2143598",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "MAS VIDAL, VICTOR",
+    "seg": 482,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 5,
+    "pm": 1
+   },
+   {
+    "idJugador": "1212441",
+    "titular": false,
+    "dorsal": "24",
+    "nombre": "CORONA NAVARRO, ROBERTO JOSE",
+    "seg": 1725,
+    "pt": 21,
+    "t2": {
+     "a": 6,
+     "i": 8
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 8,
+     "i": 13
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 2,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 3,
+    "va": 22,
+    "pm": -18
+   },
+   {
+    "idJugador": "1618255",
+    "titular": false,
+    "dorsal": "32",
+    "nombre": "CABRERA GONZALEZ, SERGIO",
+    "seg": 464,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -2,
+    "pm": 4
+   },
+   {
+    "idJugador": "1835166",
+    "titular": true,
+    "dorsal": "35",
+    "nombre": "CARRION BALLESTER, ALVARO",
+    "seg": 1530,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 11
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 2,
+    "pm": -1
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2101570",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "COBO BENITO, HUGO",
+    "seg": 180,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 0,
+    "pm": -6
+   },
+   {
+    "idJugador": "2069009",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "ALBEROLA GUILLOT, LLUÍS",
+    "seg": 891,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 8,
+    "pm": -2
+   },
+   {
+    "idJugador": "2024385",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "BAEZA CABRERA, HUGO",
+    "seg": 867,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 2,
+    "fr": 2,
+    "va": 7,
+    "pm": 6
+   },
+   {
+    "idJugador": "1851037",
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "PAÑOS HUERTAS, MARIO",
+    "seg": 748,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 4,
+    "pm": 10
+   },
+   {
+    "idJugador": "1996322",
+    "titular": true,
+    "dorsal": "16",
+    "nombre": "CAMPILLOS ALONSO, CARLOS",
+    "seg": 1705,
+    "pt": 14,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 4,
+     "i": 10
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 6,
+    "rt": 7,
+    "as": 5,
+    "br": 2,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 23,
+    "pm": 12
+   },
+   {
+    "idJugador": "2165978",
+    "titular": false,
+    "dorsal": "22",
+    "nombre": "BEDIA FERRER, JOSE ANTONIO",
+    "seg": 834,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -3,
+    "pm": 9
+   },
+   {
+    "idJugador": "1994360",
+    "titular": true,
+    "dorsal": "24",
+    "nombre": "ZAMORA MAÑA, UNAI",
+    "seg": 2221,
+    "pt": 11,
+    "t2": {
+     "a": 4,
+     "i": 9
+    },
+    "t3": {
+     "a": 1,
+     "i": 6
+    },
+    "tc": {
+     "a": 5,
+     "i": 15
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 5,
+    "rd": 6,
+    "rt": 11,
+    "as": 4,
+    "br": 4,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 16,
+    "pm": 25
+   },
+   {
+    "idJugador": "2101918",
+    "titular": true,
+    "dorsal": "25",
+    "nombre": "SILLA TEBAR, PABLO",
+    "seg": 1672,
+    "pt": 15,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 5,
+     "i": 11
+    },
+    "tc": {
+     "a": 5,
+     "i": 13
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 5,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 11,
+    "pm": 7
+   },
+   {
+    "idJugador": "1619904",
+    "titular": true,
+    "dorsal": "55",
+    "nombre": "BLASCO NAVARRO, LUCAS",
+    "seg": 1566,
+    "pt": 15,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 8
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 3,
+    "rd": 5,
+    "rt": 8,
+    "as": 1,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 24,
+    "pm": 6
+   },
+   {
+    "idJugador": "1645436",
+    "titular": true,
+    "dorsal": "95",
+    "nombre": "CALERO BAUTISTA, DAVID",
+    "seg": 1316,
+    "pt": 12,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 11
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 6,
+    "va": 9,
+    "pm": 8
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 12,
+    "visitante": 25
+   },
+   {
+    "periodo": "2º C",
+    "local": 21,
+    "visitante": 21
+   },
+   {
+    "periodo": "3º C",
+    "local": 18,
+    "visitante": 24
+   },
+   {
+    "periodo": "4º C",
+    "local": 20,
+    "visitante": 16
+   }
+  ]
+ }
+}

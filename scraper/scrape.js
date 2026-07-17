@@ -111,7 +111,6 @@ async function scrapePartido(idPartido) {
   const res = await axios.get(`${CFG.BASE}/Partido.aspx?p=${idPartido}`, { headers: CFG.HEADERS });
   const $ = cheerio.load(res.data);
   const tablas = $('table').toArray();
-  const tablas = $('table').toArray();
   return {
     local: parsearBoxscore($, tablas[0]),
     visitante: parsearBoxscore($, tablas[1]),

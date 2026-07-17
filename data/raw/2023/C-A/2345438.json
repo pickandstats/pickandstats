@@ -1,0 +1,864 @@
+{
+ "id": "2345438",
+ "temporada": "2023",
+ "grupo": "C-A",
+ "jornada": "Jornada 6(05/11/2023)",
+ "equipoLocal": {
+  "id": "922696",
+  "nombre": "TECNOCASA  C.B. SALT"
+ },
+ "equipoVisitante": {
+  "id": "922004",
+  "nombre": "SESE A"
+ },
+ "resultado": "83-79",
+ "disputado": true,
+ "descargado": "2026-07-17T14:59:57.264Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1964254",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "SALA VALLMAJO, PAU",
+    "seg": 1414,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 1,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 3,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 1,
+    "pm": -4
+   },
+   {
+    "idJugador": "1938336",
+    "titular": true,
+    "dorsal": "4",
+    "nombre": "LLINAS TERRADAS, JOAN",
+    "seg": 1953,
+    "pt": 15,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 6,
+     "i": 11
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 6,
+    "va": 13,
+    "pm": 5
+   },
+   {
+    "idJugador": "2058829",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "SANCHEZ DIAZ, ULISES",
+    "seg": 1767,
+    "pt": 17,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 3,
+     "i": 8
+    },
+    "tc": {
+     "a": 6,
+     "i": 12
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 12,
+    "pm": -1
+   },
+   {
+    "idJugador": "1081623",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "NADAL TRIOLA, CARLES",
+    "seg": 53,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": -1
+   },
+   {
+    "idJugador": "1941639",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "MARTÍN ADELANTADO, ALEX",
+    "seg": 1673,
+    "pt": 15,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 3,
+     "i": 6
+    },
+    "tc": {
+     "a": 6,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 2,
+    "br": 2,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 11,
+    "pm": 11
+   },
+   {
+    "idJugador": "2146670",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "CAMPENY LLOVERAS, POL",
+    "seg": 1816,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 10
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 3,
+    "rt": 6,
+    "as": 0,
+    "br": 2,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 8,
+    "pm": 6
+   },
+   {
+    "idJugador": "1928511",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "FUENTES PELUFO, OCTAVI",
+    "seg": 1361,
+    "pt": 13,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 7
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 1,
+    "br": 3,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 18,
+    "pm": 9
+   },
+   {
+    "idJugador": "2060201",
+    "titular": false,
+    "dorsal": "22",
+    "nombre": "CAMPENY LLOVERAS, JAN",
+    "seg": 760,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 2,
+    "pm": 1
+   },
+   {
+    "idJugador": "1667537",
+    "titular": false,
+    "dorsal": "24",
+    "nombre": "VIEYTES VERDU, MARC",
+    "seg": 1456,
+    "pt": 9,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 6,
+    "va": 6,
+    "pm": 0
+   },
+   {
+    "idJugador": "2058623",
+    "titular": true,
+    "dorsal": "34",
+    "nombre": "SALAVEDRA VILARNAU, JOFRE",
+    "seg": 877,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 3,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 5,
+    "pm": 2
+   },
+   {
+    "idJugador": "2276692",
+    "titular": false,
+    "dorsal": "73",
+    "nombre": "VANCEA, MARC VICTOR",
+    "seg": 370,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -3,
+    "pm": -8
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1908267",
+    "titular": true,
+    "dorsal": "3",
+    "nombre": "AGUADO CADENAS, ALEX",
+    "seg": 1445,
+    "pt": 20,
+    "t2": {
+     "a": 8,
+     "i": 10
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 9,
+     "i": 12
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 16,
+    "pm": -5
+   },
+   {
+    "idJugador": "2524497",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "FERNANDEZ, IGNACIO MARTIN",
+    "seg": 1082,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 4,
+    "pm": -8
+   },
+   {
+    "idJugador": "1934555",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "HERETER MARCHANTE, GABRIEL",
+    "seg": 877,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 4,
+    "pm": -4
+   },
+   {
+    "idJugador": "2319120",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "MARTÍN BENÍTEZ, ROBERTO",
+    "seg": 367,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2057547",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "SANCHEZ MOLINA, VICTOR",
+    "seg": 1785,
+    "pt": 16,
+    "t2": {
+     "a": 6,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 6,
+     "i": 10
+    },
+    "tl": {
+     "a": 4,
+     "i": 7
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 2,
+    "br": 1,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 8,
+    "va": 16,
+    "pm": -2
+   },
+   {
+    "idJugador": "1074113",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "GALVE NAVARRO, JOAQUIM",
+    "seg": 691,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -2,
+    "pm": -1
+   },
+   {
+    "idJugador": "1280551",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "REYES JIMENEZ, ALBERTO",
+    "seg": 2127,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 7
+    },
+    "tc": {
+     "a": 1,
+     "i": 9
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 8,
+    "rt": 11,
+    "as": 4,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 4,
+    "pm": -1
+   },
+   {
+    "idJugador": "1908032",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "ABELLO GIRVÉS, ARNAU",
+    "seg": 2004,
+    "pt": 13,
+    "t2": {
+     "a": 5,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 6,
+    "rt": 7,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 17,
+    "pm": -1
+   },
+   {
+    "idJugador": "1922408",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "CRUZ URBANEJA, MARC",
+    "seg": 1855,
+    "pt": 15,
+    "t2": {
+     "a": 4,
+     "i": 8
+    },
+    "t3": {
+     "a": 2,
+     "i": 8
+    },
+    "tc": {
+     "a": 6,
+     "i": 16
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 3,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 8,
+    "pm": 0
+   },
+   {
+    "idJugador": "2451592",
+    "titular": false,
+    "dorsal": "20",
+    "nombre": "CATALANO, JUAN IGNACIO",
+    "seg": 1030,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 4,
+    "pm": 2
+   },
+   {
+    "idJugador": "1922407",
+    "titular": false,
+    "dorsal": "29",
+    "nombre": "CRUZ URBANEJA, ALEX",
+    "seg": 237,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -1,
+    "pm": -3
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 19,
+    "visitante": 25
+   },
+   {
+    "periodo": "2º C",
+    "local": 17,
+    "visitante": 16
+   },
+   {
+    "periodo": "3º C",
+    "local": 17,
+    "visitante": 11
+   },
+   {
+    "periodo": "4º C",
+    "local": 16,
+    "visitante": 17
+   },
+   {
+    "periodo": "Pro. 1",
+    "local": 14,
+    "visitante": 10
+   }
+  ]
+ }
+}

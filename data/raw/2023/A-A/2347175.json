@@ -1,0 +1,822 @@
+{
+ "id": "2347175",
+ "temporada": "2023",
+ "grupo": "A-A",
+ "jornada": "Jornada 15(21/01/2024)",
+ "equipoLocal": {
+  "id": "921477",
+  "nombre": "REDLINE MEKANIKA TAKE"
+ },
+ "equipoVisitante": {
+  "id": "921572",
+  "nombre": "GRUPO DE SANTIAGO"
+ },
+ "resultado": "99-64",
+ "disputado": true,
+ "descargado": "2026-07-17T14:37:27.045Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2334768",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "CONDE LAKUNTZA, UNAI",
+    "seg": 986,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": -4,
+    "pm": 10
+   },
+   {
+    "idJugador": "2020444",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "ELSO GONZALEZ, PAU",
+    "seg": 1559,
+    "pt": 22,
+    "t2": {
+     "a": 5,
+     "i": 5
+    },
+    "t3": {
+     "a": 4,
+     "i": 8
+    },
+    "tc": {
+     "a": 9,
+     "i": 13
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 3,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 23,
+    "pm": 15
+   },
+   {
+    "idJugador": "1682779",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "AZALDEGI LAKUNTZA, BEÑAT",
+    "seg": 1030,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 4,
+    "pm": 10
+   },
+   {
+    "idJugador": "2373581",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "BALERDI AGIRRE, ARITZ",
+    "seg": 514,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2335169",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "PEREZ SANZ, URKO",
+    "seg": 1444,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 3,
+    "br": 3,
+    "bp": 3,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 15,
+    "pm": 28
+   },
+   {
+    "idJugador": "2095207",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "LASA ARRUABARRENA, LANDER",
+    "seg": 1006,
+    "pt": 10,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 3,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 13,
+    "pm": 22
+   },
+   {
+    "idJugador": "2257749",
+    "titular": true,
+    "dorsal": "12",
+    "nombre": "GORDILLO BELTRAN, ANDER",
+    "seg": 1546,
+    "pt": 18,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 7,
+     "i": 12
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 1,
+    "br": 3,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 26,
+    "pm": 24
+   },
+   {
+    "idJugador": "2188479",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "ETXEBERRIA AGUIRREZABALA, BEÑAT",
+    "seg": 1515,
+    "pt": 17,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 3,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 16,
+    "pm": 28
+   },
+   {
+    "idJugador": "2378757",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "ALDA IRAOLA, AITOR",
+    "seg": 790,
+    "pt": 10,
+    "t2": {
+     "a": 4,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 14,
+    "pm": 24
+   },
+   {
+    "idJugador": "1588319",
+    "titular": false,
+    "dorsal": "22",
+    "nombre": "VICUÑA ROYO, IGNACIO",
+    "seg": 1610,
+    "pt": 6,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 3,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 9,
+    "pm": 11
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2535384",
+    "titular": true,
+    "dorsal": "2",
+    "nombre": "BELLA CABAÑAS, MARCOS",
+    "seg": 985,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": -1,
+    "pm": -16
+   },
+   {
+    "idJugador": "1543937",
+    "titular": true,
+    "dorsal": "4",
+    "nombre": "SALINAS INFANTE, JAVIER",
+    "seg": 2038,
+    "pt": 15,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 2,
+     "i": 10
+    },
+    "tc": {
+     "a": 3,
+     "i": 15
+    },
+    "tl": {
+     "a": 7,
+     "i": 10
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 2,
+    "br": 4,
+    "bp": 7,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 5,
+    "pm": -33
+   },
+   {
+    "idJugador": "2661261",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "RODRIGUEZ, RAMIRO",
+    "seg": 51,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -1,
+    "pm": -3
+   },
+   {
+    "idJugador": "2220551",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "GARCIA VARONA, MANUEL",
+    "seg": 710,
+    "pt": 14,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 3,
+    "va": 14,
+    "pm": -2
+   },
+   {
+    "idJugador": "2656559",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "HEINONEN, JOONA DANIEL",
+    "seg": 1771,
+    "pt": 10,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 7
+    },
+    "tc": {
+     "a": 4,
+     "i": 13
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": 0,
+    "pm": -30
+   },
+   {
+    "idJugador": "2019554",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "PINILLA NUÑEZ, JAVIER",
+    "seg": 753,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": -1,
+    "pm": -14
+   },
+   {
+    "idJugador": "2404857",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "BASTO LEHMANN, JESUS EMILIANO",
+    "seg": 370,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -1,
+    "pm": -5
+   },
+   {
+    "idJugador": "1845029",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "CARCEDO ROYUELA, FERNANDO",
+    "seg": 1146,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 6,
+    "pm": -20
+   },
+   {
+    "idJugador": "2656562",
+    "titular": true,
+    "dorsal": "16",
+    "nombre": "SEKOU MOUSSA, TRAORE",
+    "seg": 1170,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 0,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 7,
+    "pm": -13
+   },
+   {
+    "idJugador": "2690845",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "NUÑEZ, FARLY",
+    "seg": 1510,
+    "pt": 8,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 11
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 3,
+    "pm": -17
+   },
+   {
+    "idJugador": "2816661",
+    "titular": false,
+    "dorsal": "26",
+    "nombre": "MUKENDI MUKENDI, MIKE",
+    "seg": 1496,
+    "pt": 12,
+    "t2": {
+     "a": 5,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 2,
+    "tco": 0,
+    "mt": 1,
+    "fc": 4,
+    "fr": 4,
+    "va": 14,
+    "pm": -22
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 35,
+    "visitante": 9
+   },
+   {
+    "periodo": "2º C",
+    "local": 20,
+    "visitante": 12
+   },
+   {
+    "periodo": "3º C",
+    "local": 16,
+    "visitante": 19
+   },
+   {
+    "periodo": "4º C",
+    "local": 28,
+    "visitante": 24
+   }
+  ]
+ }
+}

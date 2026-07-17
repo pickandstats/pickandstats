@@ -1,0 +1,896 @@
+{
+ "id": "2345488",
+ "temporada": "2023",
+ "grupo": "C-A",
+ "jornada": "Jornada 13(07/01/2024)",
+ "equipoLocal": {
+  "id": "922690",
+  "nombre": "PAVIMENTOS UTEBO - RODENI C.B. OCTAVUS"
+ },
+ "equipoVisitante": {
+  "id": "922997",
+  "nombre": "GOLF DE ANDRATX-EDBASER CB ANDRATX"
+ },
+ "resultado": "79-90",
+ "disputado": true,
+ "descargado": "2026-07-17T15:01:29.465Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1451241",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "MIGUEL HERNANDO, PABLO",
+    "seg": 583,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -4,
+    "pm": 3
+   },
+   {
+    "idJugador": "1692444",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "LAZARO TORTAJADA, JORGE PABLO",
+    "seg": 465,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 0,
+    "va": -3,
+    "pm": -13
+   },
+   {
+    "idJugador": "1897141",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "RAMOS SAINZ, PEDRO",
+    "seg": 399,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 1,
+    "pm": -12
+   },
+   {
+    "idJugador": "2433692",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "NDIAYE SOW, MOUHAMADOU SAKHIR",
+    "seg": 1527,
+    "pt": 8,
+    "t2": {
+     "a": 0,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 5
+    },
+    "tl": {
+     "a": 8,
+     "i": 10
+    },
+    "ro": 2,
+    "rd": 6,
+    "rt": 8,
+    "as": 1,
+    "br": 3,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 7,
+    "va": 16,
+    "pm": -9
+   },
+   {
+    "idJugador": "1462697",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "PEDROS BLASCO, ALBERTO",
+    "seg": 2058,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 5,
+     "i": 12
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 8,
+    "pm": 2
+   },
+   {
+    "idJugador": "1451287",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "COBOS GRACIA, FRANCISCO",
+    "seg": 1403,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 7,
+    "rt": 8,
+    "as": 1,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 10,
+    "pm": 5
+   },
+   {
+    "idJugador": "2116793",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "EZQUERRA LOU, ANDRES",
+    "seg": 1202,
+    "pt": 7,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 7,
+     "i": 10
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 5,
+    "va": 9,
+    "pm": -7
+   },
+   {
+    "idJugador": "1830535",
+    "titular": true,
+    "dorsal": "16",
+    "nombre": "FACORRO CORAO, SERGIO",
+    "seg": 1387,
+    "pt": 14,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 6,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 14,
+    "pm": -7
+   },
+   {
+    "idJugador": "2189202",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "GELLA ESCARTIN, PABLO",
+    "seg": 1389,
+    "pt": 13,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 4,
+    "va": 9,
+    "pm": -9
+   },
+   {
+    "idJugador": "2219689",
+    "titular": true,
+    "dorsal": "25",
+    "nombre": "SMITH, MARQUIE TWUAN",
+    "seg": 918,
+    "pt": 11,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 6,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 4,
+    "pm": -1
+   },
+   {
+    "idJugador": "1695132",
+    "titular": false,
+    "dorsal": "99",
+    "nombre": "MELERO ALLUE, DANIEL",
+    "seg": 669,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 3,
+    "pm": -7
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1083484",
+    "titular": true,
+    "dorsal": "0",
+    "nombre": "SERRA CASTILLO, JOAN ANTONI",
+    "seg": 1540,
+    "pt": 10,
+    "t2": {
+     "a": 4,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 6
+    },
+    "ro": 3,
+    "rd": 7,
+    "rt": 10,
+    "as": 3,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 16,
+    "pm": 5
+   },
+   {
+    "idJugador": "976736",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "TORRES CAMPS, GABRIEL",
+    "seg": 1393,
+    "pt": 17,
+    "t2": {
+     "a": 6,
+     "i": 13
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 6,
+     "i": 13
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 7,
+    "rt": 7,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 15,
+    "pm": 6
+   },
+   {
+    "idJugador": "1083281",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "PARETS BARRIOS, SEBASTIA",
+    "seg": 1504,
+    "pt": 9,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 7,
+    "pm": 8
+   },
+   {
+    "idJugador": "204712",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "COMAS GAYA, PAU LLORENÇ",
+    "seg": 942,
+    "pt": 16,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 3,
+     "i": 4
+    },
+    "tc": {
+     "a": 6,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 5,
+    "br": 4,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 24,
+    "pm": 11
+   },
+   {
+    "idJugador": "1485185",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "CASTRO ENSEÑAT, ALEJANDRO",
+    "seg": 1392,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -1,
+    "pm": 11
+   },
+   {
+    "idJugador": "1246691",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "MORRO BALERA, HAIRO BENJAMIN",
+    "seg": 893,
+    "pt": 7,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 4,
+     "i": 8
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 6,
+    "va": 0,
+    "pm": -1
+   },
+   {
+    "idJugador": "2558540",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "GINES MACIAS, DAVID",
+    "seg": 320,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 1,
+    "pm": -8
+   },
+   {
+    "idJugador": "1403783",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "MONTALBÁN PÉREZ, ANTONIO",
+    "seg": 1150,
+    "pt": 9,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 3,
+     "i": 7
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 3,
+    "va": 5,
+    "pm": -5
+   },
+   {
+    "idJugador": "1404288",
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "COLOM ROCHA, CARLES",
+    "seg": 846,
+    "pt": 6,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 10,
+    "pm": 9
+   },
+   {
+    "idJugador": "1246630",
+    "titular": false,
+    "dorsal": "16",
+    "nombre": "ARENAS DOMINGUEZ, GONZALO",
+    "seg": 261,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 2,
+    "pm": -3
+   },
+   {
+    "idJugador": "1990236",
+    "titular": true,
+    "dorsal": "24",
+    "nombre": "BENNASAR ROJO, ANTONIO",
+    "seg": 949,
+    "pt": 8,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 9,
+    "pm": 5
+   },
+   {
+    "idJugador": "1891986",
+    "titular": false,
+    "dorsal": "25",
+    "nombre": "POU BLINNIKOV, ALEXIS",
+    "seg": 810,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 9,
+    "pm": 17
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 20,
+    "visitante": 16
+   },
+   {
+    "periodo": "2º C",
+    "local": 15,
+    "visitante": 21
+   },
+   {
+    "periodo": "3º C",
+    "local": 17,
+    "visitante": 25
+   },
+   {
+    "periodo": "4º C",
+    "local": 27,
+    "visitante": 28
+   }
+  ]
+ }
+}

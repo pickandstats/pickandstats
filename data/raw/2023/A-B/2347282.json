@@ -1,0 +1,785 @@
+{
+ "id": "2347282",
+ "temporada": "2023",
+ "grupo": "A-B",
+ "jornada": "Jornada 4(22/10/2023)",
+ "equipoLocal": {
+  "id": "921673",
+  "nombre": "ESTUDIANTES LUGO RIO DE GALICIA"
+ },
+ "equipoVisitante": {
+  "id": "922894",
+  "nombre": "HOTEL 4POSTES - ÁVILA AUTÉNTICA - EL BULEVAR"
+ },
+ "resultado": "77-66",
+ "disputado": true,
+ "descargado": "2026-07-17T14:41:23.322Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1834863",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "FERNANDEZ GONZALEZ, PEDRO YAHILE",
+    "seg": 919,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 4,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 10,
+    "pm": 3
+   },
+   {
+    "idJugador": "1140245",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "CORRAL BOUZA, ANDRES",
+    "seg": 1863,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 0,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 3,
+    "br": 1,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": -1,
+    "pm": 13
+   },
+   {
+    "idJugador": "1710836",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "HERMIDA PEREZ, ALEJANDRO",
+    "seg": 2088,
+    "pt": 15,
+    "t2": {
+     "a": 2,
+     "i": 6
+    },
+    "t3": {
+     "a": 3,
+     "i": 4
+    },
+    "tc": {
+     "a": 5,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 6,
+    "rt": 6,
+    "as": 2,
+    "br": 2,
+    "bp": 5,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 15,
+    "pm": 3
+   },
+   {
+    "idJugador": "514499",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "LOPEZ GONZALEZ, ADRIAN",
+    "seg": 1418,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 4,
+    "rt": 6,
+    "as": 3,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 3,
+    "pm": 9
+   },
+   {
+    "idJugador": "1889899",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "VILLADONIGA AMADO, DIEGO",
+    "seg": 792,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2650781",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "NEVES MORAIS, GONÇALO",
+    "seg": 1879,
+    "pt": 20,
+    "t2": {
+     "a": 4,
+     "i": 8
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 11
+    },
+    "tl": {
+     "a": 6,
+     "i": 6
+    },
+    "ro": 3,
+    "rd": 7,
+    "rt": 10,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 6,
+    "va": 26,
+    "pm": 12
+   },
+   {
+    "idJugador": "2103143",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "RODRÍGUEZ LEIRO, ALEJANDRO",
+    "seg": 2145,
+    "pt": 20,
+    "t2": {
+     "a": 8,
+     "i": 12
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 8,
+     "i": 12
+    },
+    "tl": {
+     "a": 4,
+     "i": 12
+    },
+    "ro": 2,
+    "rd": 6,
+    "rt": 8,
+    "as": 2,
+    "br": 4,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 6,
+    "va": 25,
+    "pm": 8
+   },
+   {
+    "idJugador": "1523199",
+    "titular": false,
+    "dorsal": "33",
+    "nombre": "LOPEZ BERNARDEZ, LUIS",
+    "seg": 276,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -3,
+    "pm": 1
+   },
+   {
+    "idJugador": "2040236",
+    "titular": false,
+    "dorsal": "39",
+    "nombre": "DARRIBA VAZQUEZ, CRISTIAN",
+    "seg": 477,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -3,
+    "pm": 0
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1880220",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "GARCIA TEJON, ALEJANDRO",
+    "seg": 195,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -1,
+    "pm": -7
+   },
+   {
+    "idJugador": "2377240",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "VALDIVIA SANTILLANA, FABIO ANDRÉS",
+    "seg": 620,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 0,
+    "pm": 5
+   },
+   {
+    "idJugador": "2557839",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "CALLENBACH, JONAH SEBASTIAN",
+    "seg": 1389,
+    "pt": 8,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 3,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 5,
+    "pm": 1
+   },
+   {
+    "idJugador": "2446582",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "DAGOTTO, YAROSLAV",
+    "seg": 655,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -1,
+    "pm": -11
+   },
+   {
+    "idJugador": "2167755",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "LÓPEZ YUSTE, JUAN",
+    "seg": 548,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": -1,
+    "pm": 4
+   },
+   {
+    "idJugador": "2060590",
+    "titular": true,
+    "dorsal": "9",
+    "nombre": "SERRATO BALLETBO, SERGI",
+    "seg": 1768,
+    "pt": 14,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 4,
+     "i": 8
+    },
+    "tc": {
+     "a": 5,
+     "i": 10
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 3,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 15,
+    "pm": -5
+   },
+   {
+    "idJugador": "1660205",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "PILAN PERET, ALFONS",
+    "seg": 1636,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 2,
+     "i": 7
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 10,
+    "va": 7,
+    "pm": -15
+   },
+   {
+    "idJugador": "2643528",
+    "titular": false,
+    "dorsal": "22",
+    "nombre": "GUZMAN SALINAS, AARON",
+    "seg": 1829,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 7,
+    "rt": 7,
+    "as": 0,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 13,
+    "pm": -7
+   },
+   {
+    "idJugador": "1845142",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "ARIJA DE LA PEÑA, DAVID",
+    "seg": 1541,
+    "pt": 11,
+    "t2": {
+     "a": 4,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 4,
+     "i": 13
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 5,
+    "rt": 7,
+    "as": 1,
+    "br": 4,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 13,
+    "pm": -9
+   },
+   {
+    "idJugador": "1847221",
+    "titular": true,
+    "dorsal": "30",
+    "nombre": "VIVERO RODRIGUEZ, IAN MANUEL",
+    "seg": 716,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 4,
+    "pm": -9
+   },
+   {
+    "idJugador": "1873558",
+    "titular": true,
+    "dorsal": "34",
+    "nombre": "QUERALT-LORTZING VILLANUEVA, JAIME",
+    "seg": 1103,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 1,
+    "br": 0,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": -4,
+    "pm": -2
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 23,
+    "visitante": 13
+   },
+   {
+    "periodo": "2º C",
+    "local": 20,
+    "visitante": 14
+   },
+   {
+    "periodo": "3º C",
+    "local": 22,
+    "visitante": 16
+   },
+   {
+    "periodo": "4º C",
+    "local": 12,
+    "visitante": 23
+   }
+  ]
+ }
+}

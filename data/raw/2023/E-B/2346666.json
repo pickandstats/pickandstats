@@ -1,0 +1,785 @@
+{
+ "id": "2346666",
+ "temporada": "2023",
+ "grupo": "E-B",
+ "jornada": "Jornada 20(25/02/2024)",
+ "equipoLocal": {
+  "id": "921549",
+  "nombre": "KLINIK · PM CAROLINAS"
+ },
+ "equipoVisitante": {
+  "id": "922200",
+  "nombre": "FAMILY CASH NBXATIVA"
+ },
+ "resultado": "80-65",
+ "disputado": true,
+ "descargado": "2026-07-17T15:33:06.258Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2103934",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "ESCUDERO MOROCHO, FRANCISCO DAVID",
+    "seg": 182,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -1,
+    "pm": 2
+   },
+   {
+    "idJugador": "2118686",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "NAVARRO MORALES, JAVIER",
+    "seg": 89,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": -3
+   },
+   {
+    "idJugador": "2642144",
+    "titular": true,
+    "dorsal": "8",
+    "nombre": "QUINCY JONES, ALEXY TYRONE AUGUSTIN",
+    "seg": 912,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": 1,
+    "pm": 0
+   },
+   {
+    "idJugador": "1991574",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "MARISCAL GOMEZ, MARIO",
+    "seg": 2173,
+    "pt": 23,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 5,
+     "i": 12
+    },
+    "tl": {
+     "a": 12,
+     "i": 18
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 3,
+    "br": 0,
+    "bp": 3,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 16,
+    "va": 28,
+    "pm": 18
+   },
+   {
+    "idJugador": "1889530",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "LOPEZ ZOROA, FRANCISCO",
+    "seg": 785,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 3,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -1,
+    "pm": 1
+   },
+   {
+    "idJugador": "1773633",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "GUARDIOLA CERDAN, SAMUEL",
+    "seg": 1340,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 4,
+    "br": 4,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 10,
+    "pm": 8
+   },
+   {
+    "idJugador": "2033341",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "MARTÍNEZ CUCALÓN, NICOLÁS",
+    "seg": 1598,
+    "pt": 14,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 4,
+    "rt": 7,
+    "as": 3,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 17,
+    "pm": 12
+   },
+   {
+    "idJugador": "2527777",
+    "titular": false,
+    "dorsal": "17",
+    "nombre": "ZDYRKA, ILLIA",
+    "seg": 1497,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 7,
+    "rt": 8,
+    "as": 3,
+    "br": 5,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 16,
+    "pm": 16
+   },
+   {
+    "idJugador": "2815046",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "CLEDJO HOUNGUES, NATHAN",
+    "seg": 2150,
+    "pt": 20,
+    "t2": {
+     "a": 9,
+     "i": 17
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 9,
+     "i": 19
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 6,
+    "rt": 8,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 1,
+    "tco": 1,
+    "mt": 2,
+    "fc": 1,
+    "fr": 3,
+    "va": 21,
+    "pm": 11
+   },
+   {
+    "idJugador": "1995455",
+    "titular": false,
+    "dorsal": "34",
+    "nombre": "BLAZQUEZ VIDAL, ALEJANDRO",
+    "seg": 663,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -2,
+    "pm": 8
+   },
+   {
+    "idJugador": "2020015",
+    "titular": true,
+    "dorsal": "53",
+    "nombre": "SEVERA LENCINA, CARLOS",
+    "seg": 611,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 1,
+    "pm": 2
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2093551",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "ABAD ARGENTE, HUGO",
+    "seg": 798,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": -4,
+    "pm": -24
+   },
+   {
+    "idJugador": "1585186",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "ENGUIX GARCIA, BLAS IVAN",
+    "seg": 2130,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 10
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 6,
+    "rd": 8,
+    "rt": 14,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 14,
+    "pm": -15
+   },
+   {
+    "idJugador": "1892215",
+    "titular": true,
+    "dorsal": "12",
+    "nombre": "GARCIA RODRIGUEZ, JOAN",
+    "seg": 1023,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 0,
+    "va": -8,
+    "pm": 3
+   },
+   {
+    "idJugador": "1152310",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "VIDAL BALDOVI, SERGIO",
+    "seg": 1757,
+    "pt": 24,
+    "t2": {
+     "a": 8,
+     "i": 16
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 10,
+     "i": 22
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 3,
+    "rd": 7,
+    "rt": 10,
+    "as": 4,
+    "br": 2,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 24,
+    "pm": -7
+   },
+   {
+    "idJugador": "791786",
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "RAEZ CUENCA, MIGUEL",
+    "seg": 1987,
+    "pt": 15,
+    "t2": {
+     "a": 3,
+     "i": 9
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 14
+    },
+    "tl": {
+     "a": 6,
+     "i": 8
+    },
+    "ro": 2,
+    "rd": 9,
+    "rt": 11,
+    "as": 5,
+    "br": 2,
+    "bp": 3,
+    "tf": 1,
+    "tco": 2,
+    "mt": 0,
+    "fc": 4,
+    "fr": 5,
+    "va": 20,
+    "pm": -9
+   },
+   {
+    "idJugador": "2281451",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "BAGUENA IÑIGO, MIQUEL",
+    "seg": 86,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 2,
+    "pm": 2
+   },
+   {
+    "idJugador": "1635764",
+    "titular": true,
+    "dorsal": "31",
+    "nombre": "REVERT LOPEZ, ENRIQUE",
+    "seg": 2172,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 9
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 3,
+     "i": 12
+    },
+    "tl": {
+     "a": 5,
+     "i": 7
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 3,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 8,
+    "va": 7,
+    "pm": -10
+   },
+   {
+    "idJugador": "1504782",
+    "titular": true,
+    "dorsal": "33",
+    "nombre": "MARIN ABEL, GUILLEM",
+    "seg": 533,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -3,
+    "pm": -9
+   },
+   {
+    "idJugador": "1685421",
+    "titular": false,
+    "dorsal": "44",
+    "nombre": "REVERT LOPEZ, EDUARD",
+    "seg": 1514,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": 2,
+    "pm": -6
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 9,
+    "visitante": 7
+   },
+   {
+    "periodo": "2º C",
+    "local": 28,
+    "visitante": 18
+   },
+   {
+    "periodo": "3º C",
+    "local": 21,
+    "visitante": 17
+   },
+   {
+    "periodo": "4º C",
+    "local": 22,
+    "visitante": 23
+   }
+  ]
+ }
+}

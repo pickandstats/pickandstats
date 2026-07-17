@@ -1,0 +1,785 @@
+{
+ "id": "2346496",
+ "temporada": "2023",
+ "grupo": "E-A",
+ "jornada": "Jornada 22(10/03/2024)",
+ "equipoLocal": {
+  "id": "921486",
+  "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+ },
+ "equipoVisitante": {
+  "id": "921487",
+  "nombre": "C.B. PUERTO SAGUNTO"
+ },
+ "resultado": "67-92",
+ "disputado": true,
+ "descargado": "2026-07-17T15:28:10.497Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2390761",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "SÁEZ GONZÁLEZ, JUAN",
+    "seg": 1339,
+    "pt": 6,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 6,
+    "pm": -22
+   },
+   {
+    "idJugador": "1848975",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "GARCIA SAHUQUILLO, CARLOS",
+    "seg": 1105,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 1,
+    "pm": -4
+   },
+   {
+    "idJugador": "1080422",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "RUBIO PRIETO, YEXIAN GREGORIO",
+    "seg": 1490,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 10
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 2,
+    "br": 1,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": -12,
+    "pm": -11
+   },
+   {
+    "idJugador": "1467686",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "AROCA RUBIO, MANUEL",
+    "seg": 2266,
+    "pt": 18,
+    "t2": {
+     "a": 6,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 6,
+     "i": 8
+    },
+    "tl": {
+     "a": 6,
+     "i": 8
+    },
+    "ro": 0,
+    "rd": 7,
+    "rt": 7,
+    "as": 5,
+    "br": 0,
+    "bp": 5,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 8,
+    "va": 28,
+    "pm": -19
+   },
+   {
+    "idJugador": "1640509",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "RAMOS SANSEBASTIAN, SERGIO",
+    "seg": 1118,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -1,
+    "pm": -26
+   },
+   {
+    "idJugador": "2711938",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "GJENERALI, QIRJAKO",
+    "seg": 1919,
+    "pt": 21,
+    "t2": {
+     "a": 4,
+     "i": 10
+    },
+    "t3": {
+     "a": 3,
+     "i": 7
+    },
+    "tc": {
+     "a": 7,
+     "i": 17
+    },
+    "tl": {
+     "a": 4,
+     "i": 6
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 2,
+    "bp": 4,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 6,
+    "va": 19,
+    "pm": -14
+   },
+   {
+    "idJugador": "1361824",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "JIMENEZ GARCIA, ANDRES",
+    "seg": 1278,
+    "pt": 11,
+    "t2": {
+     "a": 4,
+     "i": 8
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 9
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 11,
+    "pm": -13
+   },
+   {
+    "idJugador": "1504447",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "ARGENTE GARRIDO, FEDERICO",
+    "seg": 1085,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -2,
+    "pm": -6
+   },
+   {
+    "idJugador": "1883020",
+    "titular": false,
+    "dorsal": "26",
+    "nombre": "VILLALBA MOLLA, ANTONI",
+    "seg": 400,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 2,
+    "pm": -10
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1617928",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "MONRABAL ROMEU, ANDREU",
+    "seg": 1472,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 11,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 16,
+    "pm": 13
+   },
+   {
+    "idJugador": "2028301",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "FOLCH CLARAMUNT, XAVIER",
+    "seg": 208,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 3,
+    "pm": 4
+   },
+   {
+    "idJugador": "2644569",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "VOLPATO, GERÓNIMO",
+    "seg": 1282,
+    "pt": 17,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 3,
+     "i": 8
+    },
+    "tc": {
+     "a": 6,
+     "i": 11
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 3,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 14,
+    "pm": 15
+   },
+   {
+    "idJugador": "2451667",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "TORTAROLO, MARCO ALESANDRO",
+    "seg": 1093,
+    "pt": 8,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 4,
+     "i": 6
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 3,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 12,
+    "pm": 16
+   },
+   {
+    "idJugador": "2096980",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "DE LA CAL DOMINGUEZ, ALVARO",
+    "seg": 1454,
+    "pt": 17,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 4,
+     "i": 4
+    },
+    "tc": {
+     "a": 6,
+     "i": 9
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 0,
+    "br": 2,
+    "bp": 1,
+    "tf": 0,
+    "tco": 2,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 19,
+    "pm": 10
+   },
+   {
+    "idJugador": "1883035",
+    "titular": true,
+    "dorsal": "12",
+    "nombre": "GOMEZ GARCIA, HUGO",
+    "seg": 1046,
+    "pt": 10,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 6,
+     "i": 9
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 5,
+    "va": 10,
+    "pm": 11
+   },
+   {
+    "idJugador": "2096997",
+    "titular": false,
+    "dorsal": "17",
+    "nombre": "VILLAGRASA TORTAJADA, PABLO",
+    "seg": 420,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -2,
+    "pm": -9
+   },
+   {
+    "idJugador": "2024048",
+    "titular": false,
+    "dorsal": "18",
+    "nombre": "MARTIN MARGARIT, ALVARO",
+    "seg": 495,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": -1,
+    "pm": 10
+   },
+   {
+    "idJugador": "2165883",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "SOBRINO ESCOBAR, ALEJANDRO",
+    "seg": 1120,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 5,
+    "pm": 16
+   },
+   {
+    "idJugador": "2136035",
+    "titular": true,
+    "dorsal": "55",
+    "nombre": "KASSE, VIEUX NGOUDA",
+    "seg": 1905,
+    "pt": 19,
+    "t2": {
+     "a": 9,
+     "i": 12
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 9,
+     "i": 12
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 3,
+    "rd": 7,
+    "rt": 10,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 3,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 23,
+    "pm": 15
+   },
+   {
+    "idJugador": "2525379",
+    "titular": true,
+    "dorsal": "70",
+    "nombre": "CZERAPOWIC, EDDIE JONATHAN",
+    "seg": 1505,
+    "pt": 11,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 3,
+     "i": 3
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 4,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 14,
+    "pm": 24
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 18,
+    "visitante": 29
+   },
+   {
+    "periodo": "2º C",
+    "local": 20,
+    "visitante": 19
+   },
+   {
+    "periodo": "3º C",
+    "local": 12,
+    "visitante": 21
+   },
+   {
+    "periodo": "4º C",
+    "local": 17,
+    "visitante": 23
+   }
+  ]
+ }
+}
