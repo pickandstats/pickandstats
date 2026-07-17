@@ -354,3 +354,45 @@ th.col-a { color: #ffd9c4; }
   font-size: 30px; font-weight: 700; font-variant-numeric: tabular-nums;
 }
 .partido-equipo.gana .partido-tanteo { color: var(--acento); }
+
+/* Barra de scroll horizontal siempre visible y marcada en las tablas */
+.tabla-scroll {
+  overflow-x: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--acento) var(--linea);
+}
+.tabla-scroll::-webkit-scrollbar { height: 10px; }
+.tabla-scroll::-webkit-scrollbar-track { background: var(--linea); border-radius: 0 0 var(--radio) var(--radio); }
+.tabla-scroll::-webkit-scrollbar-thumb { background: var(--acento); border-radius: 5px; }
+
+/* Tablas muy anchas (trayectoria): fuerza ancho mínimo generoso para que haya scroll */
+.tabla-ancha table:has(tfoot) { min-width: 1100px; }
+.tabla-ancha table:has(tfoot) th:first-child,
+.tabla-ancha table:has(tfoot) td:first-child { width: 110px; }
+.tabla-ancha table:has(tfoot) th:nth-child(2),
+.tabla-ancha table:has(tfoot) td:nth-child(2) { width: 200px; }
+
+/* Trayectoria: columna de equipos legible en varias líneas */
+.tabla-ancha table:has(tfoot) th:nth-child(2),
+.tabla-ancha table:has(tfoot) td:nth-child(2) {
+  width: 240px;
+  white-space: normal;      /* permite salto de línea */
+  overflow: visible;
+  text-overflow: clip;
+  line-height: 1.3;
+}
+
+/* Trayectoria: tabla más ancha y celdas numéricas sin recorte */
+.tabla-ancha table:has(tfoot) { min-width: 1500px; }
+.tabla-ancha table:has(tfoot) td,
+.tabla-ancha table:has(tfoot) th {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+}
+/* la columna de equipos sí puede partir en varias líneas */
+.tabla-ancha table:has(tfoot) th:nth-child(2),
+.tabla-ancha table:has(tfoot) td:nth-child(2) {
+  white-space: normal;
+  width: 240px;
+}

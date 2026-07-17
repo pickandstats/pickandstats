@@ -15,6 +15,7 @@ const temporadas = fs.readdirSync(BASE)
 
 console.log(`Temporadas encontradas: ${temporadas.join(', ')}`);
 
+// hist[id] = { idJugador, nombre, temporadas: {}, _bruto: {acumulado de todas} }
 const hist = {};
 
 for (const temp of temporadas) {
@@ -31,50 +32,76 @@ for (const temp of temporadas) {
   for (const [id, data] of Object.entries(porLic)) {
     const et = data.etapas;
     const tot = k => et.reduce((a, e) => a + (e[k] || 0), 0);
-    const pj = tot('pj');
-    const min = tot('minTotales');
-    const pt = tot('pt'), ro = tot('ro'), rd = tot('rd'), rt = tot('rt');
-    const as = tot('as'), br = tot('br'), bp = tot('bp'), va = tot('va');
-    const tf = tot('tfTot'), tco = tot('tcoTot'), fc = tot('fcTot'), fr = tot('frTot');
-    const t2a = tot('t2a'), t2i = tot('t2i'), t3a = tot('t3a'), t3i = tot('t3i');
-    const tla = tot('tla'), tli = tot('tli');
-    const tciC = t2i + t3i, tcaC = t2a + t3a;
-    const pp = v => pj ? r2(v / pj) : 0;
-
-    if (!hist[id]) hist[id] = { idJugador: id, nombre: data.nombre, temporadas: {} };
-    hist[id].nombre = data.nombre;
-    hist[id].temporadas[temp] = {
-      equipos: et.map(e => `${e.equipo} (${e.grupo})`),
-      grupos: [...new Set(et.map(e => e.grupo))],
-      pj,
-      minPorPartido: pp(min),
-      ptPorPartido: pp(pt),
-      roPorPartido: pp(ro),
-      rdPorPartido: pp(rd),
-      rtPorPartido: pp(rt),
-      asPorPartido: pp(as),
-      brPorPartido: pp(br),
-      bpPorPartido: pp(bp),
-      tpPorPartido: pp(tf),
-      tcoPorPartido: pp(tco),
-      fcPorPartido: pp(fc),
-      frPorPartido: pp(fr),
-      vaPorPartido: pp(va),
-      t2Pct: t2i ? r2(100 * t2a / t2i) : 0,
-      t3Pct: t3i ? r2(100 * t3a / t3i) : 0,
-      tlPct: tli ? r2(100 * tla / tli) : 0,
-      ts: (tciC + 0.44 * tli) ? r2(100 * pt / (2 * (tciC + 0.44 * tli))) : 0,
-      efg: tciC ? r2(100 * (tcaC + 0.5 * t3a) / tciC) : 0
+    const campos = {
+      pj: tot('pj'), min: tot('minTotales'),
+      pt: tot('pt'), ro: tot('ro'), rd: tot('rd'), rt: tot('rt'),
+      as: tot('as'), br: tot('br'), bp: tot('bp'), va: tot('va'),
+      tf: tot('tfTot'), tco: tot('tcoTot'), fc: tot('fcTot'), fr: tot('frTot'),
+      t2a: tot('t2a'), t2i: tot('t2i'), t3a: tot('t3a'), t3i: tot('t3i'),
+      tla: tot('tla'), tli: tot('tli')
     };
+
+    if (!hist[id]) hist[id] = {
+      idJugador: id, nombre: data.nombre, temporadas: {},
+      _bruto: { pj:0,min:0,pt:0,ro:0,rd:0,rt:0,as:0,br:0,bp:0,va:0,
+                tf:0,tco:0,fc:0,fr:0,t2a:0,t2i:0,t3a:0,t3i:0,tla:0,tli:0 },
+      _temps: new Set()
+    };
+    hist[id].nombre = data.nombre;
+    hist[id]._temps.add(temp);
+    for (const k of Object.keys(campos)) hist[id]._bruto[k] += campos[k];
+
+    hist[id].temporadas[temp] = lineaDesde(campos, et);
   }
 }
 
-const salida = Object.values(hist).map(h => ({
-  ...h,
-  nTemporadas: Object.keys(h.temporadas).length
-}));
+// Construye una línea de estadística por-partido desde un objeto de totales
+function lineaDesde(c, etapas) {
+  const pj = c.pj;
+  const pp = v => pj ? r2(v / pj) : 0;
+  const tciC = c.t2i + c.t3i, tcaC = c.t2a + c.t3a;
+  return {
+    equipos: etapas ? etapas.map(e => `${e.equipo} (${e.grupo})`) : [],
+    grupos: etapas ? [...new Set(etapas.map(e => e.grupo))] : [],
+    pj,
+    minPorPartido: pp(c.min),
+    ptPorPartido: pp(c.pt),
+    roPorPartido: pp(c.ro),
+    rdPorPartido: pp(c.rd),
+    rtPorPartido: pp(c.rt),
+    asPorPartido: pp(c.as),
+    brPorPartido: pp(c.br),
+    bpPorPartido: pp(c.bp),
+    tpPorPartido: pp(c.tf),
+    tcoPorPartido: pp(c.tco),
+    fcPorPartido: pp(c.fc),
+    frPorPartido: pp(c.fr),
+    vaPorPartido: pp(c.va),
+    t2Pct: c.t2i ? r2(100 * c.t2a / c.t2i) : 0,
+    t3Pct: c.t3i ? r2(100 * c.t3a / c.t3i) : 0,
+    tlPct: c.tli ? r2(100 * c.tla / c.tli) : 0,
+    ts: (tciC + 0.44 * c.tli) ? r2(100 * c.pt / (2 * (tciC + 0.44 * c.tli))) : 0,
+    efg: tciC ? r2(100 * (tcaC + 0.5 * c.t3a) / tciC) : 0
+  };
+}
+
+const salida = Object.values(hist).map(h => {
+  const nTemp = h._temps.size;
+  const carrera = lineaDesde(h._bruto, null);
+  carrera.nTemporadas = nTemp;
+  return {
+    idJugador: h.idJugador,
+    nombre: h.nombre,
+    temporadas: h.temporadas,
+    carrera,
+    nTemporadas: nTemp
+  };
+});
 
 fs.writeFileSync(path.join(BASE, 'historico.json'), JSON.stringify(salida, null, 1));
 
 const multi = salida.filter(h => h.nTemporadas > 1);
 console.log(`Licencias totales: ${salida.length} | En más de una temporada: ${multi.length}`);
+console.log('\n=== Muestra de carreras agregadas ===');
+multi.slice(0, 8).forEach(h =>
+  console.log(`  ${h.nombre}: ${h.carrera.pj} PJ · ${h.carrera.ptPorPartido} pts · ${h.carrera.vaPorPartido} val (${h.nTemporadas} temps)`));

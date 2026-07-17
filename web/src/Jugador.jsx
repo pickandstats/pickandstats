@@ -92,7 +92,7 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
       {trayectoria.length > 1 && (
         <>
           <h3 className="seccion">Trayectoria por temporada</h3>
-          <div className="tabla-scroll">
+          <div className="tabla-scroll tabla-ancha">
             <table>
               <thead>
                 <tr>
@@ -119,6 +119,30 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
                   </tr>
                 ))}
               </tbody>
+		<tfoot>
+                <tr className="fila-total">
+                  <td className="izq">CARRERA</td>
+                  <td className="izq">{historico.carrera.nTemporadas} temporadas</td>
+                  <td>{historico.carrera.pj}</td>
+                  <td>{historico.carrera.minPorPartido}</td>
+                  <td>{historico.carrera.ptPorPartido}</td>
+                  <td>{historico.carrera.roPorPartido}</td>
+                  <td>{historico.carrera.rdPorPartido}</td>
+                  <td>{historico.carrera.rtPorPartido}</td>
+                  <td>{historico.carrera.asPorPartido}</td>
+                  <td>{historico.carrera.brPorPartido}</td>
+                  <td>{historico.carrera.bpPorPartido}</td>
+                  <td>{historico.carrera.tpPorPartido}</td>
+                  <td>{historico.carrera.tcoPorPartido}</td>
+                  <td>{historico.carrera.fcPorPartido}</td>
+                  <td>{historico.carrera.frPorPartido}</td>
+                  <td>{historico.carrera.t2Pct}</td>
+                  <td>{historico.carrera.t3Pct}</td>
+                  <td>{historico.carrera.tlPct}</td>
+                  <td>{historico.carrera.vaPorPartido}</td>
+                  <td>{historico.carrera.ts}</td>
+                </tr>
+              </tfoot>
             
             </table>
           </div>
@@ -167,7 +191,7 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
       </div>
 
       <h3 className="seccion">{multiEtapa ? 'Etapas · temporada actual' : 'Estadística completa'}</h3>
-      <div className="tabla-scroll">
+      <div className="tabla-scroll tabla-ancha">
         <table>
           <thead>
             <tr>
