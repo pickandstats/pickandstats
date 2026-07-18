@@ -3,7 +3,6 @@ import Inicio from './Inicio';
 import Equipos from './Equipos';
 import Jugadores from './Jugadores';
 import Equipo from './Equipo';
-import Comparador from './Comparador';
 import Leyenda from './Leyenda';
 import Jugador from './Jugador';
 import Partido from './Partido';
@@ -154,7 +153,6 @@ export default function App() {
         {pestana('resultados', 'Resultados')}
         {pestana('equipos', 'Equipos')}
         {pestana('jugadores', 'Jugadores')}
-        {pestana('comparador', 'Comparador')}
         {pestana('leyenda', 'Leyenda')}
       </div>
 
@@ -183,8 +181,6 @@ export default function App() {
       ) : vista === 'jugadores' ? (
         <Jugadores jugadores={jugadores} grupos={GRUPOS} equipos={equipos}
           onVerEquipo={verEquipo} onVerJugador={verJugador} />
-      ) : vista === 'comparador' ? (
-        <Comparador equipos={equipos} grupos={GRUPOS} />
       ) : (
         <Leyenda />
       )}

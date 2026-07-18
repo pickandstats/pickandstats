@@ -1,15 +1,18 @@
-import AnalisisEquipo from './AnalisisEquipo';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, Tooltip, Legend,
   CartesianGrid, ResponsiveContainer
 } from 'recharts';
+import AnalisisEquipo from './AnalisisEquipo';
+import DossierPartido from './DossierPartido';
 
 const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
 const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 
 export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos }) {
+  const [vistaFicha, setVistaFicha] = useState('resumen');
+
   const plantilla = useMemo(() =>
     jugadores.filter(j => j.equipoId === equipo.id)
       .sort((a, b) => b.vaPorPartido - a.vaPorPartido),
@@ -123,106 +126,121 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           </div>
         </div>
       </div>
-      <h3 className="seccion">Análisis del equipo</h3>
-      <AnalisisEquipo equipo={equipo} equipos={equipos} />
 
-      <h3 className="seccion">Evolución por jornada</h3>
-      <div className="panel-grafico">
-        <ResponsiveContainer width="100%" height={280}>
-          <LineChart data={evolucion} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" />
-            <XAxis dataKey="jornada" tick={{ fontSize: 12 }} />
-            <YAxis tick={{ fontSize: 12 }} domain={['dataMin - 10', 'dataMax + 10']} />
-            <Tooltip
-              formatter={(v, nombre) => [v, nombre === 'anotados' ? 'Anotados' : 'Encajados']}
-              labelFormatter={(j, datos) => {
-                const d = datos && datos[0] && datos[0].payload;
-                return `Jornada ${j}${d ? ' · vs ' + d.rival : ''}`;
-              }}
-            />
-            <Legend formatter={v => v === 'anotados' ? 'Anotados' : 'Encajados'} />
-            <Line type="monotone" dataKey="anotados" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 3 }} />
-            <Line type="monotone" dataKey="encajados" stroke={COLOR.tinta} strokeWidth={2} dot={{ r: 3 }} strokeDasharray="4 3" />
-          </LineChart>
-        </ResponsiveContainer>
+      <div className="grupos" style={{ marginTop: 4 }}>
+        <button className={`boton-grupo ${vistaFicha === 'resumen' ? 'activo' : ''}`}
+          onClick={() => setVistaFicha('resumen')}>Resumen</button>
+        <button className={`boton-grupo ${vistaFicha === 'dossier' ? 'activo' : ''}`}
+          onClick={() => setVistaFicha('dossier')}>Preparar partido</button>
       </div>
 
-      <h3 className="seccion">Four Factors vs media del grupo</h3>
-      <div className="panel-grafico">
-        <ResponsiveContainer width="100%" height={260}>
-          <BarChart data={fourFactors} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
-            <XAxis dataKey="factor" tick={{ fontSize: 13 }} />
-            <YAxis tick={{ fontSize: 12 }} />
-            <Tooltip formatter={(v, nombre) => [v, nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
-            <Legend formatter={v => v === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`} />
-            <Bar dataKey="equipo" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
-            <Bar dataKey="grupo" fill={COLOR.suave} radius={[3, 3, 0, 0]} />
-          </BarChart>
-        </ResponsiveContainer>
-        <p className="pie" style={{ marginTop: 4 }}>
-          En TOV% (pérdidas), menos es mejor; en el resto, más es mejor.
-        </p>
-      </div>
+      {vistaFicha === 'dossier' ? (
+        <DossierPartido equipo={equipo} equipos={equipos}
+          jugadores={jugadores} onVerJugador={onVerJugador} />
+      ) : (
+        <>
+          <h3 className="seccion">Análisis del equipo</h3>
+          <AnalisisEquipo equipo={equipo} equipos={equipos} />
 
-      <h3 className="seccion">Plantilla</h3>
-      <div className="tabla-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th className="izq">Jugador</th><th>PJ</th><th>MIN</th><th>PTS</th>
-              <th>REB</th><th>AST</th><th>ROB</th><th>BP</th><th>TAP</th>
-              <th>T2%</th><th>T3%</th><th>TL%</th>
-              <th>VAL</th><th>TS%</th><th>USG%</th>
-            </tr>
-          </thead>
-          <tbody>
-            {plantilla.map(j => (
-              <tr key={j.nombre}>
-                <td className="izq">
-                  <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                </td>
-                <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
-                <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td>
-                <td>{j.brPorPartido}</td><td>{j.bpPorPartido}</td><td>{j.tpPorPartido}</td>
-                <td>{j.t2Pct}</td><td>{j.t3Pct}</td><td>{j.tlPct}</td>
-                <td>{j.vaPorPartido}</td><td>{j.ts}</td><td>{j.usg}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+          <h3 className="seccion">Evolución por jornada</h3>
+          <div className="panel-grafico">
+            <ResponsiveContainer width="100%" height={280}>
+              <LineChart data={evolucion} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" />
+                <XAxis dataKey="jornada" tick={{ fontSize: 12 }} />
+                <YAxis tick={{ fontSize: 12 }} domain={['dataMin - 10', 'dataMax + 10']} />
+                <Tooltip
+                  formatter={(v, nombre) => [v, nombre === 'anotados' ? 'Anotados' : 'Encajados']}
+                  labelFormatter={(j, datos) => {
+                    const d = datos && datos[0] && datos[0].payload;
+                    return `Jornada ${j}${d ? ' · vs ' + d.rival : ''}`;
+                  }}
+                />
+                <Legend formatter={v => v === 'anotados' ? 'Anotados' : 'Encajados'} />
+                <Line type="monotone" dataKey="anotados" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 3 }} />
+                <Line type="monotone" dataKey="encajados" stroke={COLOR.tinta} strokeWidth={2} dot={{ r: 3 }} strokeDasharray="4 3" />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
 
-      <h3 className="seccion">Resultados</h3>
-      <div className="tabla-scroll">
-        <table>
-          <thead>
-            <tr>
-              <th>Jor.</th><th className="izq">Rival</th><th className="izq">Sede</th>
-              <th className="izq">Resultado</th><th>Marcador</th>
-            </tr>
-          </thead>
-          <tbody>
-            {calendario.map(p => {
-              const r = resultadoPartido(p);
-              const rivalObj = buscarEquipo(r.rival.id);
-              return (
-                <tr key={p.id}>
-                  <td>{numJornada(p.jornada)}</td>
-                  <td className="izq">
-                    {rivalObj
-                      ? <span className="enlace" onClick={() => onVerEquipo(rivalObj)}>{r.rival.nombre}</span>
-                      : r.rival.nombre}
-                  </td>
-                  <td className="izq">{r.esLocal ? 'Casa' : 'Fuera'}</td>
-                  <td className={`izq ${r.gano ? 'net-pos' : 'net-neg'}`}>{r.gano ? 'V' : 'D'}</td>
-                  <td><span className="enlace" onClick={() => onVerPartido(p.id)}>{r.marcador}</span></td>
+          <h3 className="seccion">Four Factors vs media del grupo</h3>
+          <div className="panel-grafico">
+            <ResponsiveContainer width="100%" height={260}>
+              <BarChart data={fourFactors} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
+                <XAxis dataKey="factor" tick={{ fontSize: 13 }} />
+                <YAxis tick={{ fontSize: 12 }} />
+                <Tooltip formatter={(v, nombre) => [v, nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
+                <Legend formatter={v => v === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`} />
+                <Bar dataKey="equipo" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
+                <Bar dataKey="grupo" fill={COLOR.suave} radius={[3, 3, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="pie" style={{ marginTop: 4 }}>
+              En TOV% (pérdidas), menos es mejor; en el resto, más es mejor.
+            </p>
+          </div>
+
+          <h3 className="seccion">Plantilla</h3>
+          <div className="tabla-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th className="izq">Jugador</th><th>PJ</th><th>MIN</th><th>PTS</th>
+                  <th>REB</th><th>AST</th><th>ROB</th><th>BP</th><th>TAP</th>
+                  <th>T2%</th><th>T3%</th><th>TL%</th>
+                  <th>VAL</th><th>TS%</th><th>USG%</th>
                 </tr>
-              );
-            })}
-          </tbody>
-        </table>
-      </div>
+              </thead>
+              <tbody>
+                {plantilla.map(j => (
+                  <tr key={j.nombre}>
+                    <td className="izq">
+                      <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
+                    </td>
+                    <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
+                    <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td>
+                    <td>{j.brPorPartido}</td><td>{j.bpPorPartido}</td><td>{j.tpPorPartido}</td>
+                    <td>{j.t2Pct}</td><td>{j.t3Pct}</td><td>{j.tlPct}</td>
+                    <td>{j.vaPorPartido}</td><td>{j.ts}</td><td>{j.usg}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="seccion">Resultados</h3>
+          <div className="tabla-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Jor.</th><th className="izq">Rival</th><th className="izq">Sede</th>
+                  <th className="izq">Resultado</th><th>Marcador</th>
+                </tr>
+              </thead>
+              <tbody>
+                {calendario.map(p => {
+                  const r = resultadoPartido(p);
+                  const rivalObj = buscarEquipo(r.rival.id);
+                  return (
+                    <tr key={p.id}>
+                      <td>{numJornada(p.jornada)}</td>
+                      <td className="izq">
+                        {rivalObj
+                          ? <span className="enlace" onClick={() => onVerEquipo(rivalObj)}>{r.rival.nombre}</span>
+                          : r.rival.nombre}
+                      </td>
+                      <td className="izq">{r.esLocal ? 'Casa' : 'Fuera'}</td>
+                      <td className={`izq ${r.gano ? 'net-pos' : 'net-neg'}`}>{r.gano ? 'V' : 'D'}</td>
+                      <td><span className="enlace" onClick={() => onVerPartido(p.id)}>{r.marcador}</span></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        </>
+      )}
     </div>
   );
 }
