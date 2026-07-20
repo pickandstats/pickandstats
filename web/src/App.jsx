@@ -191,6 +191,8 @@ export default function App() {
         sanción/incomparecencia excluidos de las métricas
         {' · '}
         <span className="enlace" onClick={abrirLegal}>Aviso legal y privacidad</span>
+        {' · '}
+        <span className="enlace" onClick={() => window.dispatchEvent(new CustomEvent('abrir-consent'))}>Gestionar cookies</span>
       </p>
 
       <ConsentBanner onAbrirLegal={abrirLegal} />

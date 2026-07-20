@@ -5,14 +5,6 @@ const CLAVE = 'pas-consent'; // 'granted' | 'denied'
 export default function ConsentBanner({ onAbrirLegal }) {
   const [visible, setVisible] = useState(false);
 
-  useEffect(() => {
-    let previa = null;
-    try { previa = localStorage.getItem(CLAVE); } catch { /* sin almacenamiento */ }
-    if (previa === 'granted') actualizar('granted');
-    else if (previa === 'denied') actualizar('denied');
-    else setVisible(true);
-  }, []);
-
   const actualizar = estado => {
     if (typeof window.gtag === 'function') {
       window.gtag('consent', 'update', {
@@ -23,6 +15,19 @@ export default function ConsentBanner({ onAbrirLegal }) {
       });
     }
   };
+
+  useEffect(() => {
+    let previa = null;
+    try { previa = localStorage.getItem(CLAVE); } catch { /* sin almacenamiento */ }
+    if (previa === 'granted') actualizar('granted');
+    else if (previa === 'denied') actualizar('denied');
+    else setVisible(true);
+
+    // permitir reabrir el banner desde el pie ("gestionar cookies")
+    const reabrir = () => setVisible(true);
+    window.addEventListener('abrir-consent', reabrir);
+    return () => window.removeEventListener('abrir-consent', reabrir);
+  }, []);
 
   const decidir = estado => {
     try { localStorage.setItem(CLAVE, estado); } catch { /* ignora */ }
