@@ -1,4 +1,4 @@
-name: Actualizar datos Tercera FEB
+name: Actualizar datos FEB
 
 on:
   schedule:
@@ -19,12 +19,31 @@ jobs:
           node-version: 24
       - name: Instalar dependencias
         run: npm ci
-      - name: Scrapear partidos nuevos (temporada actual)
-        run: node scraper/scrape.js
-      - name: Recalcular estadísticas (temporada actual)
-        run: node scraper/calcular.js
-      - name: Regenerar índice histórico (todas las temporadas)
-        run: node scraper/historico.js
+
+      # ----- Tercera FEB (competición 3, por defecto) -----
+      - name: Tercera · scrapear
+        run: node scraper/scrape.js --competicion 3
+      - name: Tercera · calcular
+        run: node scraper/calcular.js --competicion 3
+      - name: Tercera · histórico
+        run: node scraper/historico.js --competicion 3
+
+      # ----- Segunda FEB (competición 2) -----
+      - name: Segunda · scrapear
+        run: node scraper/scrape.js --competicion 2
+      - name: Segunda · calcular
+        run: node scraper/calcular.js --competicion 2
+      - name: Segunda · histórico
+        run: node scraper/historico.js --competicion 2
+
+      # ----- Primera FEB (competición 1) -----
+      - name: Primera · scrapear
+        run: node scraper/scrape.js --competicion 1
+      - name: Primera · calcular
+        run: node scraper/calcular.js --competicion 1
+      - name: Primera · histórico
+        run: node scraper/historico.js --competicion 1
+
       - name: Commit y push si hay cambios
         run: |
           git config user.name "pickandstats-bot"
