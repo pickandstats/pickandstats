@@ -166,6 +166,7 @@ export default function App() {
 
       {COMPETICIONES.length > 1 && (
         <div className="barra-competiciones">
+          <span className="barra-temporadas-etiqueta">Competición</span>
           {COMPETICIONES.map(c => (
             <button key={c.id}
               className={`pastilla-competicion ${c.id === competicion ? 'activa' : ''}`}
