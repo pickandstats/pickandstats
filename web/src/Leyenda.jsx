@@ -67,6 +67,29 @@ const SECCIONES = [
       ['+/-', 'Diferencia de puntos del equipo mientras el jugador está en pista, acumulada. Sensible al contexto: úsala con precaución.'],
     ]
   },
+  {
+    titulo: 'Percentiles',
+    metricas: [
+      ['Qué son', 'En la ficha de cada jugador, las barras de percentil sitúan su rendimiento frente al resto. Un percentil 80 significa que el jugador supera al 80% de los comparables en esa métrica. Es la forma más rápida de leer un perfil de un vistazo.'],
+      ['Nacional vs. grupo', 'Cada métrica se muestra con dos referencias: el percentil respecto a todos los jugadores de la categoría (nacional) y respecto a los de su grupo. La comparación de grupo es más justa para valorar el papel de un jugador en su contexto competitivo.'],
+      ['Código de color', 'Verde para percentiles altos (élite, 80+), pasando por tonos intermedios, hasta rojo para los bajos (por debajo de 20). Solo se calculan para jugadores con un mínimo de partidos disputados, para que la muestra sea significativa.'],
+    ]
+  },
+  {
+    titulo: 'Clasificación y desempates',
+    metricas: [
+      ['Average particular', 'Cuando dos o más equipos empatan a victorias, la clasificación no los ordena por diferencia general de puntos, sino por los resultados de los partidos entre ellos (enfrentamiento directo), siguiendo el criterio de la FEB. En empates múltiples se resuelve de forma iterativa. Si el particular no basta (equipos que aún no se han enfrentado), se recurre a la diferencia general.'],
+    ]
+  },
+  {
+    titulo: 'Fases de ascenso',
+    metricas: [
+      ['Qué son', 'Al terminar la liga regular, los mejores equipos disputan las fases de ascenso a Segunda FEB. El formato ha variado por temporada: finales de conferencia entre campeones de grupo, eliminatorias por conferencia, y unas Fases Finales con liguillas de cuatro equipos en dos sedes.'],
+      ['Cómo se asciende', 'Ascienden los campeones de cada liguilla de las Fases Finales más los ganadores de los cruces entre los segundos clasificados: seis plazas en total.'],
+      ['Ida y vuelta', 'En las eliminatorias a doble partido no decide quién gana cada encuentro, sino el marcador global sumando ida y vuelta (por eso puede haber empates en un partido individual).'],
+      ['No cuentan en las estadísticas', 'Los partidos de fases se muestran como sección aparte y no computan en las medias, ratings ni percentiles de temporada regular: son pocos encuentros contra rivales de nivel alto y distorsionarían las cifras calibradas sobre la liga.'],
+    ]
+  },
 ];
 
 export default function Leyenda() {
