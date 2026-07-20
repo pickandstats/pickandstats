@@ -4,14 +4,14 @@ import FasesAscenso from './FasesAscenso';
 const numJornada = j => parseInt((String(j).match(/\d+/) || [0])[0], 10);
 const etiquetaJornada = j => (String(j).match(/Jornada\s*\d+\s*\([^)]*\)/) || [j])[0];
 
-export default function Resultados({ partidos, equipos, grupos, temporada, onVerEquipo, onVerPartido }) {
+export default function Resultados({ partidos, equipos, grupos, temporada, competicion, onVerEquipo, onVerPartido }) {
   const [seccion, setSeccion] = useState('liga');
   const [grupo, setGrupo] = useState('E-A');
   const [fases, setFases] = useState(null);
 
   useEffect(() => {
     setFases(null);
-    fetch(`data/${temporada}/fases.json`)
+    fetch(`data/${competicion}/${temporada}/fases.json`)
       .then(r => r.ok ? r.json() : [])
       .then(setFases)
       .catch(() => setFases([]));

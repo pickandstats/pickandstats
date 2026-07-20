@@ -1,5 +1,5 @@
 import ConsentBanner from './ConsentBanner';
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import Inicio from './Inicio';
 import Equipos from './Equipos';
 import Jugadores from './Jugadores';
@@ -11,10 +11,20 @@ import Resultados from './Resultados';
 import Legal from './Legal';
 import Buscador from './Buscador';
 
-const GRUPOS = ['A-A','A-B','B-A','B-B','C-A','C-B','D-A','D-B','E-A','E-B'];
+// Competiciones disponibles (con datos). Al bajar Primera/Segunda, se añaden aquí.
+const COMPETICIONES = [
+  { id: 'tercerafeb', nombre: 'Tercera FEB' },
+  // { id: 'segundafeb', nombre: 'Segunda FEB' },
+  // { id: 'primerafeb', nombre: 'Primera FEB' },
+];
+
 const etiquetaTemporada = t => `${t}/${(+t + 1).toString().slice(2)}`;
 
+// Orden natural de grupos: A-A, A-B, ... o ESTE/OESTE o UNICO
+const ordenarGrupos = grupos => [...grupos].sort((a, b) => a.localeCompare(b, 'es'));
+
 export default function App() {
+  const [competicion, setCompeticion] = useState(COMPETICIONES[0].id);
   const [temporadas, setTemporadas] = useState([]);
   const [temporada, setTemporada] = useState(null);
   const [equipos, setEquipos] = useState([]);
@@ -29,6 +39,7 @@ export default function App() {
   const [legalVisible, setLegalVisible] = useState(false);
   const [cargando, setCargando] = useState(false);
 
+  // temporadas e histórico (globales por ahora)
   useEffect(() => {
     fetch('data/temporadas.json')
       .then(r => r.json())
@@ -40,21 +51,31 @@ export default function App() {
       .catch(err => console.error('Error cargando histórico:', err));
   }, []);
 
+  // datos de la competición + temporada activas
   useEffect(() => {
     if (!temporada) return;
     setCargando(true);
+    const base = `data/${competicion}/${temporada}`;
     Promise.all([
-      fetch(`data/${temporada}/equipos.json`).then(r => r.json()),
-      fetch(`data/${temporada}/jugadores.json`).then(r => r.json()),
-      fetch(`data/${temporada}/carreras.json`).then(r => r.json()),
-      fetch(`data/${temporada}/partidos.json`).then(r => r.json())
+      fetch(`${base}/equipos.json`).then(r => r.json()),
+      fetch(`${base}/jugadores.json`).then(r => r.json()),
+      fetch(`${base}/carreras.json`).then(r => r.json()),
+      fetch(`${base}/partidos.json`).then(r => r.json())
     ])
       .then(([eq, jug, car, par]) => {
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => { console.error('Error cargando datos:', err); setCargando(false); });
-  }, [temporada]);
+  }, [competicion, temporada]);
+
+  // grupos derivados de los equipos cargados (funciona para cualquier competición)
+  const grupos = useMemo(
+    () => ordenarGrupos([...new Set(equipos.map(e => e.grupo))]),
+    [equipos]
+  );
+
+  const compActual = COMPETICIONES.find(c => c.id === competicion) || COMPETICIONES[0];
 
   const verEquipo = equipo => {
     setEquipoSel(equipo); setJugadorSel(null); setPartidoSel(null); setLegalVisible(false); window.scrollTo(0, 0);
@@ -114,6 +135,11 @@ export default function App() {
     setLegalVisible(true); setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); window.scrollTo(0, 0);
   };
 
+  const cambiarCompeticion = id => {
+    setCompeticion(id);
+    setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setLegalVisible(false);
+  };
+
   const sinSeleccion = !equipoSel && !jugadorSel && !partidoSel && !legalVisible;
 
   const pestana = (id, texto) => (
@@ -130,13 +156,25 @@ export default function App() {
       <div className="cabecera">
         <div className="cabecera-marca">
           <h1 className="marca">Pick<span>&</span>Stats</h1>
-          <p className="lema">Estadísticas avanzadas · Tercera FEB</p>
+          <p className="lema">Estadísticas avanzadas · {compActual.nombre}</p>
         </div>
         <div className="cabecera-buscador">
           <Buscador historico={historico} equipos={equipos}
             onVerJugador={verJugador} onVerEquipo={verEquipo} />
         </div>
       </div>
+
+      {COMPETICIONES.length > 1 && (
+        <div className="barra-competiciones">
+          {COMPETICIONES.map(c => (
+            <button key={c.id}
+              className={`pastilla-competicion ${c.id === competicion ? 'activa' : ''}`}
+              onClick={() => cambiarCompeticion(c.id)}>
+              {c.nombre}
+            </button>
+          ))}
+        </div>
+      )}
 
       <div className="barra-temporadas">
         <span className="barra-temporadas-etiqueta">Temporada</span>
@@ -175,12 +213,13 @@ export default function App() {
         <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos}
           temporada={temporada} onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'resultados' ? (
-        <Resultados partidos={partidos} equipos={equipos} grupos={GRUPOS} temporada={temporada}
+        <Resultados partidos={partidos} equipos={equipos} grupos={grupos} temporada={temporada}
+          competicion={competicion}
           onVerEquipo={verEquipo} onVerPartido={verPartido} />
       ) : vista === 'equipos' ? (
-        <Equipos equipos={equipos} grupos={GRUPOS} onVerEquipo={verEquipo} />
+        <Equipos equipos={equipos} grupos={grupos} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (
-        <Jugadores jugadores={jugadores} grupos={GRUPOS} equipos={equipos}
+        <Jugadores jugadores={jugadores} grupos={grupos} equipos={equipos}
           onVerEquipo={verEquipo} onVerJugador={verJugador} />
       ) : (
         <Leyenda />
