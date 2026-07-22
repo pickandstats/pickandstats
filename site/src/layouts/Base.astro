@@ -34,13 +34,13 @@ const { title, description = 'Estadísticas y guías de las ligas menores del ba
     </script>
   </head>
   <body>
-    <header class="cabecera">
-      <div class="cabecera-fila">
-        <a href="/" class="marca">Pick<span>&amp;</span>Stats</a>
-        <nav class="nav">
+    <header class="cinta">
+      <div class="cinta-fila">
+        <a href="/" class="cinta-marca">Pick<span>&amp;</span>Stats</a>
+        <nav class="cinta-nav">
           <a href="/">Inicio</a>
           <a href="/guias">Guías</a>
-          <a href="https://pickandstats.es/app">Estadísticas</a>
+          <a href="/app/">Estadísticas</a>
         </nav>
       </div>
     </header>
@@ -84,25 +84,25 @@ const { title, description = 'Estadísticas y guías de las ligas menores del ba
 
       .contenedor { max-width: 860px; margin: 0 auto; padding: 0 20px; }
 
-      .cabecera { background: var(--panel); border-bottom: 1px solid var(--linea); }
-      .cabecera-fila {
+      .cinta { background: var(--panel); border-bottom: 1px solid var(--linea); }
+      .cinta-fila {
         display: flex; align-items: center; justify-content: space-between;
         padding: 14px 20px; max-width: 1100px; margin: 0 auto;
       }
-      .marca {
+      .cinta-marca {
         font-family: var(--fuente-titulo);
         font-weight: 700; font-size: 30px; letter-spacing: .5px;
         text-transform: uppercase; text-decoration: none; color: var(--tinta);
       }
-      .marca span { color: var(--acento); }
+      .cinta-marca span { color: var(--acento); }
 
-      .nav a {
+      .cinta-nav a {
         font-family: var(--fuente-titulo);
         font-size: 17px; font-weight: 600; text-transform: uppercase;
         letter-spacing: .3px; margin-left: 20px;
         text-decoration: none; color: var(--tinta-suave);
       }
-      .nav a:hover { color: var(--acento); }
+      .cinta-nav a:hover { color: var(--acento); }
 
       main.contenedor { padding-top: 32px; padding-bottom: 48px; }
 

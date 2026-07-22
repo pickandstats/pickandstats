@@ -725,3 +725,31 @@ th.col-a { color: #ffd9c4; }
   color: #fff;
   vertical-align: middle;
 }
+
+/* ---- cinta de navegación común con el sitio de contenido ---- */
+.cinta { background: var(--panel); border-bottom: 1px solid var(--linea); }
+.cinta-fila {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 20px; max-width: 1100px; margin: 0 auto;
+}
+.cinta-marca {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 30px; letter-spacing: .5px;
+  text-transform: uppercase; text-decoration: none; color: var(--tinta);
+}
+.cinta-marca span { color: var(--acento); }
+.cinta-nav a {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .3px; margin-left: 20px;
+  text-decoration: none; color: var(--tinta-suave);
+}
+.cinta-nav a:hover, .cinta-nav a.activo { color: var(--acento); }
+
+/* título de la app, ahora que la marca vive en la cinta */
+.titulo-app {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 700; font-size: 30px; letter-spacing: .3px;
+  text-transform: uppercase; line-height: 1.1;
+  margin: 18px 0 0; color: var(--tinta);
+}

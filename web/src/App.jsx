@@ -1,4 +1,5 @@
 import ConsentBanner from './ConsentBanner';
+import CintaNav from './CintaNav';
 import { useEffect, useMemo, useState } from 'react';
 import Inicio from './Inicio';
 import Equipos from './Equipos';
@@ -152,11 +153,12 @@ export default function App() {
     : null;
 
   return (
+    <>
+    <CintaNav />
     <div className="contenedor">
       <div className="cabecera">
         <div className="cabecera-marca">
-          <h1 className="marca">Pick<span>&</span>Stats</h1>
-          <p className="lema">Estadísticas avanzadas · {compActual.nombre}</p>
+          <h1 className="titulo-app">Estadísticas avanzadas · {compActual.nombre}</h1>
         </div>
         <div className="cabecera-buscador">
           <Buscador historico={historico} equipos={equipos}
@@ -239,5 +241,6 @@ export default function App() {
 
       <ConsentBanner onAbrirLegal={abrirLegal} />
     </div>
+    </>
   );
 }
