@@ -17,7 +17,7 @@ export default function Resultados({ partidos, equipos, grupos, temporada, compe
 
   useEffect(() => {
     setFases(null);
-    fetch(`data/${competicion}/${temporada}/fases.json`)
+    fetch(`${import.meta.env.BASE_URL}data/${competicion}/${temporada}/fases.json`)
       .then(r => r.ok ? r.json() : [])
       .then(setFases)
       .catch(() => setFases([]));

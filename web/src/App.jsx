@@ -41,11 +41,11 @@ export default function App() {
 
   // temporadas e histórico, por competición
   useEffect(() => {
-    fetch(`data/${competicion}/temporadas.json`)
+    fetch(`${import.meta.env.BASE_URL}data/${competicion}/temporadas.json`)
       .then(r => r.json())
       .then(ts => { setTemporadas(ts); setTemporada(ts[0]); })
       .catch(err => console.error('Error cargando temporadas:', err));
-    fetch(`data/${competicion}/historico.json`)
+    fetch(`${import.meta.env.BASE_URL}data/${competicion}/historico.json`)
       .then(r => r.json())
       .then(setHistorico)
       .catch(err => console.error('Error cargando histórico:', err));
@@ -55,7 +55,7 @@ export default function App() {
   useEffect(() => {
     if (!temporada) return;
     setCargando(true);
-    const base = `data/${competicion}/${temporada}`;
+    const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     Promise.all([
       fetch(`${base}/equipos.json`).then(r => r.json()),
       fetch(`${base}/jugadores.json`).then(r => r.json()),
