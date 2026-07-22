@@ -12,6 +12,11 @@ const slug = s => norm(s).replace(/[^A-Z0-9À-Ÿ]+/g, '');
 let avisos = 0;
 const aviso = txt => { avisos++; console.log('   ⚠ ' + txt); };
 
+// Notas informativas: limitaciones de la propia fuente, no accionables.
+// No cuentan como avisos, para que "sin avisos" signifique que no hay nada que hacer.
+const notas = [];
+const nota = txt => notas.push(txt);
+
 // Rango de la ronda dentro de su cuadro, y "familia" (el cuadro al que pertenece)
 function escalon(nombre) {
   const n = norm(nombre);
@@ -131,9 +136,9 @@ for (const { comp, temp, dirProc } of casos) {
       if (!p.resultado) aviso(fase.fase + ': partido ' + p.id + ' sin resultado');
       else if (!p.boxscore) aviso(fase.fase + ': partido ' + p.id + ' sin boxscore');
       if (p.boxscoreIncompleto)
-        aviso(fase.fase + ': ' + p.id + ' ' + p.local + ' vs ' + p.visitante +
-              ' — la FEB publica el boxscore incompleto (marcador ' + p.resultado +
-              ' por cuartos, ' + p.resultadoFeb + ' segun sus fichas): estadistica individual coja');
+        nota(comp + ' ' + temp + ' · ' + fase.fase + ' · ' + p.id + '  ' +
+             p.local + ' vs ' + p.visitante + '  (marcador ' + p.resultado +
+             ' por cuartos, ' + p.resultadoFeb + ' según sus fichas)');
     }
 
     if (esLiguilla) {
@@ -171,6 +176,15 @@ for (const { comp, temp, dirProc } of casos) {
 
   if (desconocidos.size)
     aviso('nombres sin correspondencia en equipos.json: ' + [...desconocidos].join(' / '));
+}
+
+if (notas.length) {
+  console.log('\n' + '-'.repeat(60));
+  console.log('INFORMATIVO · ' + notas.length + ' partido(s) con el boxscore incompleto en origen.');
+  console.log('La FEB no publicó todas las fichas de jugador: el marcador se toma de los');
+  console.log('cuartos, pero la estadística individual de esos partidos está coja.');
+  console.log('No es corregible desde aquí.\n');
+  for (const n of notas) console.log('   · ' + n);
 }
 
 console.log('\n' + '='.repeat(60));
