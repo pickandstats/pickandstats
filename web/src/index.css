@@ -710,3 +710,18 @@ th.col-a { color: #ffd9c4; }
 }
 .playoff-unico:hover { background: var(--fondo); }
 .playoff-unico .serie-equipo:nth-child(2) { text-align: right; }
+
+/* Distintivo de ascenso en el cuadro de play-off */
+.badge-ascenso {
+  display: inline-block;
+  margin-left: .45rem;
+  padding: .08rem .38rem;
+  font-size: .62rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: .04em;
+  border-radius: 3px;
+  background: #1b7f3b;
+  color: #fff;
+  vertical-align: middle;
+}

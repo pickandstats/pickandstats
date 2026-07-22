@@ -221,7 +221,7 @@ export default function Resultados({ partidos, equipos, grupos, temporada, compe
             competicion === 'tercerafeb' ? (
               <FasesAscenso fases={fases} onVerEquipoNombre={clicEquipoNombre} onVerPartido={onVerPartido} />
             ) : (
-              <PlayOff fases={fases} onVerEquipoNombre={clicEquipoNombre} onVerPartido={onVerPartido} />
+              <PlayOff fases={fases} modo={competicion === 'segundafeb' ? 'global' : 'victorias'} onVerEquipoNombre={clicEquipoNombre} onVerPartido={onVerPartido} />
             )
           )}
           <p className="pie" style={{ marginTop: 8 }}>
