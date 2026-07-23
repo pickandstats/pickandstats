@@ -107,6 +107,16 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
         </div>
       </div>
 
+      {partido.boxscoreIncompleto && (
+        <p className="aviso-dato">
+          <strong>Estadística individual incompleta.</strong> La FEB no publicó todas las fichas
+          de jugador de este partido. El marcador que ves es el que suma el acta por cuartos
+          ({partido.resultado}); las fichas publicadas solo suman {partido.resultadoFeb}, así que
+          faltan jugadores y la tabla de abajo no cuadra con el resultado final. No es un error de
+          cálculo: el dato no existe en el origen.
+        </p>
+      )}
+
       {cuartos.length > 0 && (
         <>
           <h3 className="seccion">Marcador por cuartos</h3>

@@ -763,3 +763,16 @@ th.col-a { color: #ffd9c4; }
   text-transform: uppercase; line-height: 1.1;
   margin: 18px 0 0; color: var(--tinta);
 }
+
+/* Aviso cuando la fuente publica el dato incompleto */
+.aviso-dato {
+  background: #fff6ed;
+  border: 1px solid #f3c9ac;
+  border-left: 4px solid var(--acento);
+  border-radius: var(--radio);
+  padding: 12px 14px;
+  margin: 16px 0 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #7a4a2a;
+}

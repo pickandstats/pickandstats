@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# La aplicación de estadísticas se pinta con JavaScript: no hay nada
+# que indexar ahí todavía, y sus ficheros de datos no son páginas.
+Disallow: /app/data/
+
+Sitemap: https://pickandstats.es/sitemap-index.xml
