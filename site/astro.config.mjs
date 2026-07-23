@@ -1,9 +1,12 @@
 // @ts-check
 import { defineConfig, fontProviders } from 'astro/config';
 
+import sitemap from '@astrojs/sitemap';
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://pickandstats.es',
+
   fonts: [
     {
       name: 'Barlow',
@@ -21,4 +24,7 @@ export default defineConfig({
       styles: ['normal'],
       subsets: ['latin'],
     },
-  ],});
+  ],
+
+  integrations: [sitemap()],
+});

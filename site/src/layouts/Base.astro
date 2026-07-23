@@ -9,7 +9,9 @@ const {
 } = Astro.props;
 
 // URL absoluta de esta página y de la imagen para compartir
-const urlCanonica = new URL(Astro.url.pathname, Astro.site);
+// Con barra final, igual que las URLs del sitemap, para no dar señales contradictorias
+const rutaCanonica = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : Astro.url.pathname + '/';
+const urlCanonica = new URL(rutaCanonica, Astro.site);
 const urlImagen = new URL('/og.png', Astro.site);
 // Para compartir sobra el sufijo de marca que sí queremos en la pestaña
 const tituloSocial = ogTitulo ?? title.replace(/\s·\sPick&Stats$/, '');
