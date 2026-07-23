@@ -1,54 +1,64 @@
 ---
 titulo: Cómo se asciende y se desciende en Segunda FEB
-descripcion: Las tres plazas de ascenso a Primera FEB, el duelo de campeones con segunda oportunidad, el cuadro de play-off, las semifinales sin final y los cinco descensos con la eliminatoria de permanencia.
+descripcion: Las tres plazas de ascenso a Primera FEB, el duelo de campeones con segunda oportunidad, el cuadro de play-off, las semifinales sin final y los seis descensos con su fase de descenso, según las bases de la temporada 2026/27.
 fecha: 2026-07-22
+actualizado: 2026-07-23
 ---
 
+> **Temporada de referencia: 2026/27.** El sistema descrito aquí es el que recogen
+> las bases de competición aprobadas por la FEB para esa temporada. Las cifras y
+> el formato cambian con cierta frecuencia, así que la guía se revisa cada año.
+
 La Segunda FEB tiene el sistema de ascenso más enrevesado de las categorías
-nacionales, y también el peor explicado. Tiene dos conferencias independientes,
-una eliminatoria en la que perder no elimina, y un play-off que termina **sin
-final**. Esta guía lo desmonta paso a paso.
+nacionales, y también el peor explicado. Tiene dos grupos independientes, una
+eliminatoria en la que perder no elimina, y un play-off que termina **sin final**.
+Esta guía lo desmonta paso a paso.
 
-## El punto de partida: dos conferencias
+## El punto de partida: dos grupos
 
-La Segunda FEB reúne **28 equipos repartidos en dos conferencias** de catorce,
-Este y Oeste. Cada una juega su propia liga regular, sin enfrentarse entre sí:
-son, a efectos prácticos, dos ligas paralelas que solo se cruzan en la
-postemporada.
+La Segunda FEB reúne **28 equipos repartidos en dos grupos** de catorce, llamados
+**A y B**. Cada uno juega su propia liga regular a doble vuelta —26 jornadas— sin
+enfrentarse al otro: son, a efectos prácticos, dos ligas paralelas que solo se
+cruzan en la postemporada.
 
-Al terminar la fase regular se ponen en juego **tres plazas** de ascenso a
-Primera FEB.
+Al terminar se ponen en juego **tres plazas** de ascenso a Primera FEB.
 
 ## El duelo de campeones
 
-Los primeros clasificados de cada conferencia se enfrentan entre sí en una
-eliminatoria a doble partido. **El ganador asciende directamente** y se lleva la
-primera de las tres plazas.
+Los primeros clasificados de cada grupo se enfrentan entre sí en una eliminatoria
+a doble partido. **El ganador asciende directamente** y se lleva la primera plaza.
 
-Aquí está la particularidad que desconcierta a casi todo el mundo: **el perdedor
+Y aquí está la particularidad que desconcierta a casi todo el mundo: **el perdedor
 no queda eliminado**. En lugar de despedirse, baja al cuadro de play-off y entra
 directamente en cuartos de final, saltándose los octavos. Perder ese duelo cuesta
 el camino corto, pero no la temporada: le quedan dos rondas para subir igualmente.
 
 ## El cuadro de play-off
 
-En paralelo, los clasificados del **segundo al octavo** puesto de cada
-conferencia disputan los octavos de final. Son siete equipos por conferencia,
-catorce en total, en siete eliminatorias.
+En paralelo, los clasificados del **2º al 8º** puesto de cada grupo disputan los
+octavos de final. Son siete equipos por grupo, catorce en total, cruzados entre sí:
+el 2º del A contra el 8º del B, el 3º del A contra el 7º del B, y así sucesivamente
+hasta el 8º del A contra el 2º del B.
 
 De ahí salen siete ganadores que, sumados al perdedor del duelo de campeones,
 completan los **ocho equipos de cuartos de final**. Por eso el cuadro cuadra
 exactamente: siete más uno.
 
+Para los emparejamientos de cuartos se ordena a esos ocho equipos, y el perdedor
+del duelo de campeones ocupa el primer puesto de esa clasificación como premio de
+consolación. Se cruzan primero contra octavo, segundo contra séptimo, tercero
+contra sexto y cuarto contra quinto.
+
 ### Todo se decide por el global
 
 Un detalle que cambia por completo cómo se leen los resultados: **todas las
-eliminatorias son a doble partido y se resuelven por el global**, es decir, por
-la suma de puntos de la ida y la vuelta. No cuenta quién gana más partidos.
+eliminatorias son a doble partido y se resuelven por el global**, es decir, por la
+suma de puntos de la ida y la vuelta. No cuenta quién gana más partidos. La vuelta
+se juega siempre en la pista del mejor clasificado en la liga regular.
 
-Esto produce situaciones que despistan si uno mira solo los marcadores sueltos.
-Un equipo puede ganar la ida, perder la vuelta y clasificarse. O ganar uno de los
-dos partidos y quedar eliminado. Lo único que importa es el marcador acumulado.
+Esto produce situaciones que despistan si uno mira solo los marcadores sueltos. Un
+equipo puede ganar la ida, perder la vuelta y clasificarse. O ganar uno de los dos
+partidos y quedar eliminado. Lo único que importa es el marcador acumulado.
 
 ## Las semifinales, sin final
 
@@ -56,51 +66,41 @@ Los cuatro vencedores de cuartos juegan dos semifinales. Y aquí llega la segund
 rareza del sistema: **no se disputa ninguna final**.
 
 Los ganadores de ambas semifinales **ascienden los dos** a Primera FEB. Con ellos
-se completan las tres plazas: la del duelo de campeones y estas dos. No hay
-partido por el título del play-off porque no haría falta para nada: los dos
-finalistas ya han conseguido lo que venían a buscar.
+se completan las tres plazas: la del duelo de campeones y estas dos. No hay partido
+por el título del play-off porque no serviría para nada: los dos finalistas ya han
+conseguido lo que venían a buscar.
 
 ## Cómo se desciende
 
-En la temporada 2025/26 la Segunda FEB tuvo **cinco descensos** a Tercera FEB,
-repartidos por dos vías.
+En 2026/27 descienden **seis equipos** a Tercera FEB, repartidos por dos vías.
 
-**Por clasificación.** Bajan directamente los equipos que terminan en los puestos
-**13º y 14º de cada conferencia**. Son cuatro.
+**Por clasificación.** Bajan directamente los **dos últimos de cada grupo**, es
+decir, los clasificados 13º y 14º. Son cuatro.
 
-**Por la eliminatoria de permanencia.** El quinto descenso lo decide un cruce
-entre los dos **duodécimos** clasificados, uno de cada conferencia. También a
-doble partido y por el global. El perdedor baja.
+**Por la fase de descenso.** Los otros dos salen de una ronda entre los equipos
+clasificados en los puestos **11º y 12º de cada grupo**, cruzados entre sí: el 12º
+del A contra el 11º del B, y el 12º del B contra el 11º del A. También a doble
+partido y por el global, con la vuelta en casa del mejor clasificado. **Los dos
+perdedores descienden.**
 
-Como la permanencia se resuelve por el agregado, permite finales crueles: en
-2025/26 el Jaén Paraíso Interior ganó la ida y descendió igualmente, porque el
-Ciudad Molina remontó en la vuelta y se llevó el global por tres puntos.
+Como se resuelve por el agregado, permite finales crueles: se puede ganar la ida y
+bajar igualmente si el rival remonta en la vuelta.
 
-El formato de la permanencia tampoco es estable de un año para otro. En
-temporadas anteriores no fue una única eliminatoria, sino una ronda con dos
-cruces simultáneos.
+Ojo, porque este apartado es el que más se mueve de un año para otro. En 2025/26
+descendían cinco equipos y la fase de descenso era una única eliminatoria entre
+los dos duodécimos, con un solo descendido. Ahora son dos cruces y bajan dos.
 
 ## Qué pasó en 2025/26
 
-La temporada resume bien todo lo anterior. El **Coto Córdoba**, campeón del
-Oeste, ganó el duelo de campeones al **Amics Castelló**, campeón del Este, y
-ascendió directamente.
+La temporada pasada resume bien el funcionamiento del ascenso, que no ha cambiado
+—aunque entonces los grupos se llamaban Este y Oeste.
 
-El Castelló, lejos de quedar eliminado, cayó a cuartos de final, superó su
-eliminatoria y llegó hasta semifinales, donde se quedó a las puertas. Las otras
-dos plazas fueron para el **Insolac Caja 87** y el **Bueno Arenas Albacete**,
-vencedores de las dos semifinales.
-
-Por abajo descendieron Mataró y Salou (13º y 14º del Este), Círculo Gijón y
-Castillo de Gorraiz (13º y 14º del Oeste), y el Jaén Paraíso Interior tras perder
-la permanencia.
-
-## Antes de dar por buena una regla
-
-El número de plazas y el formato de las eliminatorias los fija la FEB antes de
-cada temporada y cambian con cierta frecuencia: los cinco descensos de 2025/26
-fueron seis en la temporada anterior. Cuando mires una temporada concreta,
-comprueba qué reglamento estaba vigente.
+El **Coto Córdoba**, campeón del Oeste, ganó el duelo de campeones al **Amics
+Castelló**, campeón del Este, y ascendió directamente. El Castelló, lejos de quedar
+eliminado, cayó a cuartos de final, superó su eliminatoria y llegó hasta
+semifinales, donde se quedó a las puertas. Las otras dos plazas fueron para el
+**Insolac Caja 87** y el **Bueno Arenas Albacete**, vencedores de las dos
+semifinales.
 
 ---
 

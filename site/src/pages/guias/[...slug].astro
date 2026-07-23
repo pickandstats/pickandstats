@@ -14,16 +14,21 @@ export async function getStaticPaths() {
 const { guia } = Astro.props;
 const { Content } = await render(guia);
 
-const fechaTexto = guia.data.fecha.toLocaleDateString('es-ES', {
+const comoTexto = f => f.toLocaleDateString('es-ES', {
   year: 'numeric', month: 'long', day: 'numeric'
 });
+const fechaTexto = comoTexto(guia.data.fecha);
+const actualizadoTexto = guia.data.actualizado ? comoTexto(guia.data.actualizado) : null;
 ---
 
 <Base title={`${guia.data.titulo} · Pick&Stats`} description={guia.data.descripcion} tipo="article">
   <article>
     <p class="volver"><a href="/guias">← Todas las guías</a></p>
     <h1>{guia.data.titulo}</h1>
-    <p class="meta">Publicado el {fechaTexto}</p>
+    <p class="meta">
+      Publicado el {fechaTexto}
+      {actualizadoTexto && <> · <strong>Actualizado el {actualizadoTexto}</strong></>}
+    </p>
     <Content />
   </article>
 

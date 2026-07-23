@@ -5,6 +5,10 @@ fecha: 2026-07-20
 actualizado: 2026-07-22
 ---
 
+> **Temporada de referencia: 2026/27.** El sistema descrito aquí es el que recogen
+> las bases de competición aprobadas por la FEB para esa temporada. Las cifras y el
+> formato cambian con cierta frecuencia, así que la guía se revisa cada año.
+
 Cada temporada, al terminar la liga regular, la Tercera FEB abre una de las fases
 más apasionantes y a la vez más difíciles de entender del baloncesto español: la
 **fase de ascenso a Segunda FEB**. Con cinco conferencias, dos grupos por conferencia
