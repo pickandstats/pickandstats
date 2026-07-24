@@ -6,6 +6,30 @@
 //   node scraper/scrape.js --grupo E-A                         (solo un grupo)
 //   node scraper/scrape.js --temporada 2024                    (otra temporada)
 const axios = require('axios');
+
+// Reintentos ante fallos de red transitorios (EADDRNOTAVAIL, ETIMEDOUT, 5xx...).
+// Un parpadeo de conexión no debe abortar el scrape de una competición entera.
+const REINTENTOS = 4;
+const esTransitorio = e => {
+  const cod = e.code || '';
+  if (['EADDRNOTAVAIL','ECONNRESET','ETIMEDOUT','ECONNREFUSED','ENOTFOUND','EAI_AGAIN','EPIPE','ECONNABORTED'].includes(cod)) return true;
+  const st = e.response && e.response.status;
+  return st === 429 || (st >= 500 && st < 600);
+};
+async function conReintentos(fn, que) {
+  let ultimo;
+  for (let i = 1; i <= REINTENTOS; i++) {
+    try { return await fn(); }
+    catch (e) {
+      ultimo = e;
+      if (!esTransitorio(e) || i === REINTENTOS) break;
+      const espera = 2000 * Math.pow(2, i - 1);   // 2s, 4s, 8s
+      console.log('  ↻ fallo de red en ' + que + ' (' + (e.code || e.message) + '). Reintento ' + i + '/' + (REINTENTOS-1) + ' en ' + (espera/1000) + 's');
+      await new Promise(r => setTimeout(r, espera));
+    }
+  }
+  throw ultimo;
+}
 const cheerio = require('cheerio');
 const fs = require('fs');
 const path = require('path');
@@ -28,7 +52,7 @@ function crearSesion(temporada, competicion) {
 }
 
 async function cargarInicial(sesion) {
-  const res = await axios.get(sesion.url, { headers: CFG.HEADERS });
+  const res = await conReintentos(() => axios.get(sesion.url, { headers: CFG.HEADERS }), 'carga de sesión');
   sesion.cookies = (res.headers['set-cookie'] || []).map(c => c.split(';')[0]).join('; ');
   return cheerio.load(res.data);
 }
@@ -36,14 +60,14 @@ async function cargarInicial(sesion) {
 async function postback(sesion, form, target) {
   form['__EVENTTARGET'] = target;
   form['__EVENTARGUMENT'] = '';
-  const res = await axios.post(sesion.url, new URLSearchParams(form).toString(), {
+  const res = await conReintentos(() => axios.post(sesion.url, new URLSearchParams(form).toString(), {
     headers: {
       ...CFG.HEADERS,
       'Content-Type': 'application/x-www-form-urlencoded',
       'Cookie': sesion.cookies,
       'Referer': sesion.url
     }
-  });
+  }), 'formulario');
   return cheerio.load(res.data);
 }
 
@@ -108,7 +132,7 @@ function parsearCuartos($) {
 }
 
 async function scrapePartido(idPartido) {
-  const res = await axios.get(`${CFG.BASE}/Partido.aspx?p=${idPartido}`, { headers: CFG.HEADERS });
+  const res = await conReintentos(() => axios.get(`${CFG.BASE}/Partido.aspx?p=${idPartido}`, { headers: CFG.HEADERS }), 'partido ' + idPartido);
   const $ = cheerio.load(res.data);
   const tablas = $('table').toArray();
   return {
