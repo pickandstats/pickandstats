@@ -292,6 +292,7 @@ async function main() {
   const competicionNombre = CFG.COMPETICIONES[competicion];
 
   let temporada = leerArg('--temporada');
+  const temporadaForzada = !!temporada;
   if (temporada) {
     console.log('Temporada forzada por parámetro: ' + temporada);
   } else {
@@ -354,7 +355,12 @@ async function main() {
   // Dejar constancia de qué temporada se ha bajado y cuándo.
   // Lo lee el workflow para pasársela a calcular.js, y la app para mostrar
   // la fecha de actualización de los datos.
-  try {
+  let esVigente = !temporadaForzada;
+  if (temporadaForzada) {
+    try { esVigente = (await detectar(competicion)).temporada === temporada; } catch (e) { esVigente = false; }
+    if (!esVigente) console.log('Temporada no vigente: no se actualiza estado.json');
+  }
+  if (esVigente) try {
     const fEstado = path.join('data', 'processed', 'estado.json');
     let estado = { competiciones: {} };
     if (fs.existsSync(fEstado)) estado = JSON.parse(fs.readFileSync(fEstado, 'utf8'));

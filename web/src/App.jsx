@@ -36,9 +36,14 @@ export default function App() {
   const [equipoSel, setEquipoSel] = useState(null);
   const [jugadorSel, setJugadorSel] = useState(null);
   const [partidoSel, setPartidoSel] = useState(null);
+  const [estadoDatos, setEstadoDatos] = useState(null);
   const [cargando, setCargando] = useState(false);
 
   // temporadas e histórico, por competición
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/estado.json`)
+      .then(r => r.json()).then(setEstadoDatos).catch(() => {});
+  }, []);
   useEffect(() => {
     fetch(`${import.meta.env.BASE_URL}data/${competicion}/temporadas.json`)
       .then(r => r.json())
@@ -147,6 +152,11 @@ export default function App() {
     ? historico.find(h => h.idJugador === jugadorSel.idJugador)
     : null;
 
+  const infoDatos = estadoDatos && estadoDatos.competiciones && estadoDatos.competiciones[competicion];
+  const fechaDatos = infoDatos && new Date(infoDatos.actualizado).toLocaleDateString('es-ES', {
+    day: 'numeric', month: 'long', year: 'numeric'
+  });
+
   return (
     <>
     <CintaNav />
@@ -226,6 +236,7 @@ export default function App() {
       <p className="pie">
         Datos: baloncestoenvivo.feb.es · Cálculos propios · Partidos por
         sanción/incomparecencia excluidos de las métricas
+        {fechaDatos && <> · Datos actualizados el {fechaDatos}</>}
         {' · '}
         <a className="enlace" href="/legal" target="_blank" rel="noopener">Aviso legal y privacidad</a>
         {' · '}
