@@ -1,154 +1,1374 @@
 {
   "_generado": "2026-07-25",
-  "_nota": "Valores buenos de segundafeb 2024. Si regresion.cjs falla, un cambio ha alterado el calculo.",
-  "competicion": "segundafeb",
-  "temporada": "2024",
-  "totales": {
-    "nJugadores": 460,
-    "nEquipos": 28,
-    "sumaPuntosLiga": 55325
-  },
-  "jugadores": [
+  "_nota": "Valores buenos por temporada. Si regresion.cjs falla, un cambio ha alterado el calculo.",
+  "temporadas": [
     {
-      "idJugador": "1463976",
-      "nombre": "LAFUENTE VELAZQUEZ, JORGE",
-      "exactos": {
-        "pj": 26,
-        "pt": 240,
-        "minTotales": 987.78,
-        "t2a": 66,
-        "t3a": 26,
-        "tla": 30
+      "competicion": "primerafeb",
+      "temporada": "2023",
+      "totales": {
+        "nJugadores": 291,
+        "nEquipos": 18,
+        "sumaPuntosLiga": 48580
       },
-      "aprox": {
-        "ts": 58.38,
-        "efg": 57.07,
-        "per36": {
-          "pt": 8.75,
-          "rt": 8.35,
-          "as": 5.47,
-          "br": 1.24,
-          "va": 18.3
+      "jugadores": [
+        {
+          "idJugador": "2735928",
+          "nombre": "DAVISON, BRADLEY JAMES",
+          "exactos": {
+            "pj": 34,
+            "pt": 628,
+            "minTotales": 1012.77,
+            "t2a": 71,
+            "t3a": 102,
+            "tla": 180
+          },
+          "aprox": {
+            "ts": 61.56,
+            "efg": 53.46,
+            "per36": {
+              "pt": 22.32,
+              "rt": 3.48,
+              "as": 3.02,
+              "br": 1.78,
+              "va": 22.86
+            }
+          }
+        },
+        {
+          "idJugador": "2092412",
+          "nombre": "HANNAH, CLEVIN FINLEY",
+          "exactos": {
+            "pj": 33,
+            "pt": 482,
+            "minTotales": 1002.55,
+            "t2a": 52,
+            "t3a": 91,
+            "tla": 105
+          },
+          "aprox": {
+            "ts": 59.58,
+            "efg": 53.4,
+            "per36": {
+              "pt": 17.31,
+              "rt": 1.8,
+              "as": 5.35,
+              "br": 1.36,
+              "va": 15.62
+            }
+          }
+        },
+        {
+          "idJugador": "2818742",
+          "nombre": "MC GREW, TANNER BRYCE",
+          "exactos": {
+            "pj": 34,
+            "pt": 442,
+            "minTotales": 993.7,
+            "t2a": 102,
+            "t3a": 52,
+            "tla": 82
+          },
+          "aprox": {
+            "ts": 58.58,
+            "efg": 54.88,
+            "per36": {
+              "pt": 16.01,
+              "rt": 7.32,
+              "as": 3.22,
+              "br": 0.76,
+              "va": 20.03
+            }
+          }
+        },
+        {
+          "idJugador": "2640794",
+          "nombre": "BARCELLO, ALEXANDER MICHAEL",
+          "exactos": {
+            "pj": 33,
+            "pt": 650,
+            "minTotales": 990.37,
+            "t2a": 161,
+            "t3a": 51,
+            "tla": 175
+          },
+          "aprox": {
+            "ts": 66.02,
+            "efg": 58.5,
+            "per36": {
+              "pt": 23.63,
+              "rt": 4.8,
+              "as": 4.07,
+              "br": 1.34,
+              "va": 28.1
+            }
+          }
+        },
+        {
+          "idJugador": "2647411",
+          "nombre": "VARENCE, HASAN SHAKUR",
+          "exactos": {
+            "pj": 34,
+            "pt": 344,
+            "minTotales": 956.82,
+            "t2a": 95,
+            "t3a": 40,
+            "tla": 34
+          },
+          "aprox": {
+            "ts": 54.85,
+            "efg": 53.08,
+            "per36": {
+              "pt": 12.94,
+              "rt": 9.52,
+              "as": 1.02,
+              "br": 0.94,
+              "va": 16.22
+            }
+          }
         }
-      }
+      ],
+      "equipos": [
+        {
+          "nombre": "GRUPO URETA TIZONA BURGOS",
+          "exactos": {
+            "pj": 34,
+            "pf": 3049,
+            "pc": 2721
+          }
+        },
+        {
+          "nombre": "LEYMA CORUÑA",
+          "exactos": {
+            "pj": 34,
+            "pf": 3042,
+            "pc": 2763
+          }
+        },
+        {
+          "nombre": "LONGEVIDA SAN PABLO BURGOS",
+          "exactos": {
+            "pj": 34,
+            "pf": 2964,
+            "pc": 2588
+          }
+        }
+      ]
     },
     {
-      "idJugador": "2082635",
-      "nombre": "AIZPITARTE ARANZA, IERAI",
-      "exactos": {
-        "pj": 26,
-        "pt": 332,
-        "minTotales": 862.65,
-        "t2a": 56,
-        "t3a": 57,
-        "tla": 49
+      "competicion": "primerafeb",
+      "temporada": "2024",
+      "totales": {
+        "nJugadores": 302,
+        "nEquipos": 18,
+        "sumaPuntosLiga": 49467
       },
-      "aprox": {
-        "ts": 47.05,
-        "efg": 43.94,
-        "per36": {
-          "pt": 13.85,
-          "rt": 4.55,
-          "as": 4.17,
-          "br": 1,
-          "va": 12.52
+      "jugadores": [
+        {
+          "idJugador": "2528063",
+          "nombre": "DE SOUSA ANJO BRITO, DIOGO EMANUEL",
+          "exactos": {
+            "pj": 34,
+            "pt": 401,
+            "minTotales": 999.07,
+            "t2a": 79,
+            "t3a": 65,
+            "tla": 48
+          },
+          "aprox": {
+            "ts": 54.43,
+            "efg": 52.22,
+            "per36": {
+              "pt": 14.45,
+              "rt": 6.45,
+              "as": 4.43,
+              "br": 1.87,
+              "va": 17.04
+            }
+          }
+        },
+        {
+          "idJugador": "2433147",
+          "nombre": "HUGHES, MARK ANTHONY",
+          "exactos": {
+            "pj": 34,
+            "pt": 553,
+            "minTotales": 981.73,
+            "t2a": 93,
+            "t3a": 98,
+            "tla": 73
+          },
+          "aprox": {
+            "ts": 71.28,
+            "efg": 69.16,
+            "per36": {
+              "pt": 20.28,
+              "rt": 4.99,
+              "as": 1.98,
+              "br": 1.5,
+              "va": 21.64
+            }
+          }
+        },
+        {
+          "idJugador": "2433482",
+          "nombre": "LARSEN, KEVIN RICKI",
+          "exactos": {
+            "pj": 34,
+            "pt": 521,
+            "minTotales": 960.48,
+            "t2a": 162,
+            "t3a": 29,
+            "tla": 110
+          },
+          "aprox": {
+            "ts": 55.26,
+            "efg": 49.88,
+            "per36": {
+              "pt": 19.53,
+              "rt": 8.85,
+              "as": 4.72,
+              "br": 1.27,
+              "va": 26.84
+            }
+          }
+        },
+        {
+          "idJugador": "2734617",
+          "nombre": "KING, JORDAN JAMES",
+          "exactos": {
+            "pj": 34,
+            "pt": 465,
+            "minTotales": 948.75,
+            "t2a": 70,
+            "t3a": 82,
+            "tla": 79
+          },
+          "aprox": {
+            "ts": 56.91,
+            "efg": 52.88,
+            "per36": {
+              "pt": 17.64,
+              "rt": 2.5,
+              "as": 3.68,
+              "br": 1.25,
+              "va": 14.84
+            }
+          }
+        },
+        {
+          "idJugador": "2734234",
+          "nombre": "GRANGER, JAYSON",
+          "exactos": {
+            "pj": 33,
+            "pt": 512,
+            "minTotales": 935.93,
+            "t2a": 92,
+            "t3a": 73,
+            "tla": 109
+          },
+          "aprox": {
+            "ts": 58.94,
+            "efg": 53.31,
+            "per36": {
+              "pt": 19.69,
+              "rt": 3.96,
+              "as": 8.39,
+              "br": 1.31,
+              "va": 25.42
+            }
+          }
         }
-      }
+      ],
+      "equipos": [
+        {
+          "nombre": "SILBÖ SAN PABLO BURGOS",
+          "exactos": {
+            "pj": 34,
+            "pf": 3011,
+            "pc": 2530
+          }
+        },
+        {
+          "nombre": "GRUPO URETA TIZONA BURGOS",
+          "exactos": {
+            "pj": 34,
+            "pf": 2987,
+            "pc": 3067
+          }
+        },
+        {
+          "nombre": "MOVISTAR ESTUDIANTES",
+          "exactos": {
+            "pj": 34,
+            "pf": 2970,
+            "pc": 2710
+          }
+        }
+      ]
     },
     {
-      "idJugador": "1465358",
-      "nombre": "MAZAIRA GOMEZ, ALEJANDRO",
-      "exactos": {
-        "pj": 26,
-        "pt": 416,
-        "minTotales": 822.75,
-        "t2a": 77,
-        "t3a": 67,
-        "tla": 61
+      "competicion": "primerafeb",
+      "temporada": "2025",
+      "totales": {
+        "nJugadores": 283,
+        "nEquipos": 17,
+        "sumaPuntosLiga": 44021
       },
-      "aprox": {
-        "ts": 54.51,
-        "efg": 50.86,
-        "per36": {
-          "pt": 18.2,
-          "rt": 5.12,
-          "as": 1.27,
-          "br": 0.35,
-          "va": 15.31
+      "jugadores": [
+        {
+          "idJugador": "2433482",
+          "nombre": "LARSEN, KEVIN RICKI",
+          "exactos": {
+            "pj": 32,
+            "pt": 530,
+            "minTotales": 895.27,
+            "t2a": 131,
+            "t3a": 36,
+            "tla": 160
+          },
+          "aprox": {
+            "ts": 57.38,
+            "efg": 48.68,
+            "per36": {
+              "pt": 21.31,
+              "rt": 7.56,
+              "as": 3.46,
+              "br": 0.84,
+              "va": 26.5
+            }
+          }
+        },
+        {
+          "idJugador": "2736767",
+          "nombre": "DIAZ, MATEO",
+          "exactos": {
+            "pj": 32,
+            "pt": 434,
+            "minTotales": 883.75,
+            "t2a": 83,
+            "t3a": 58,
+            "tla": 94
+          },
+          "aprox": {
+            "ts": 59.08,
+            "efg": 53.46,
+            "per36": {
+              "pt": 17.68,
+              "rt": 5.91,
+              "as": 5.42,
+              "br": 1.55,
+              "va": 21.75
+            }
+          }
+        },
+        {
+          "idJugador": "2650859",
+          "nombre": "LITTLESON, SPENCER PHILLIP",
+          "exactos": {
+            "pj": 31,
+            "pt": 518,
+            "minTotales": 866.45,
+            "t2a": 121,
+            "t3a": 66,
+            "tla": 78
+          },
+          "aprox": {
+            "ts": 55.4,
+            "efg": 51.04,
+            "per36": {
+              "pt": 21.52,
+              "rt": 2.53,
+              "as": 3.12,
+              "br": 1.16,
+              "va": 16.25
+            }
+          }
+        },
+        {
+          "idJugador": "1875914",
+          "nombre": "SOLA IDDRISU, ADAMS",
+          "exactos": {
+            "pj": 32,
+            "pt": 182,
+            "minTotales": 861.02,
+            "t2a": 37,
+            "t3a": 26,
+            "tla": 30
+          },
+          "aprox": {
+            "ts": 54.89,
+            "efg": 52.05,
+            "per36": {
+              "pt": 7.61,
+              "rt": 7.32,
+              "as": 1.84,
+              "br": 1,
+              "va": 14.3
+            }
+          }
+        },
+        {
+          "idJugador": "1710454",
+          "nombre": "MANCHON CRESPO, DANIEL",
+          "exactos": {
+            "pj": 32,
+            "pt": 354,
+            "minTotales": 851,
+            "t2a": 96,
+            "t3a": 37,
+            "tla": 51
+          },
+          "aprox": {
+            "ts": 55.19,
+            "efg": 53.72,
+            "per36": {
+              "pt": 14.98,
+              "rt": 3.93,
+              "as": 2.96,
+              "br": 2.62,
+              "va": 14.76
+            }
+          }
         }
-      }
+      ],
+      "equipos": [
+        {
+          "nombre": "MONBUS OBRADOIRO",
+          "exactos": {
+            "pj": 32,
+            "pf": 2945,
+            "pc": 2420
+          }
+        },
+        {
+          "nombre": "LEYMA CORUÑA",
+          "exactos": {
+            "pj": 32,
+            "pf": 2896,
+            "pc": 2502
+          }
+        },
+        {
+          "nombre": "MOVISTAR ESTUDIANTES",
+          "exactos": {
+            "pj": 32,
+            "pf": 2682,
+            "pc": 2561
+          }
+        }
+      ]
     },
     {
-      "idJugador": "1568569",
-      "nombre": "JUANOLA MADERA, JORDI",
-      "exactos": {
-        "pj": 26,
-        "pt": 450,
-        "minTotales": 794,
-        "t2a": 102,
-        "t3a": 40,
-        "tla": 126
+      "competicion": "segundafeb",
+      "temporada": "2023",
+      "totales": {
+        "nJugadores": 447,
+        "nEquipos": 28,
+        "sumaPuntosLiga": 55109
       },
-      "aprox": {
-        "ts": 49.88,
-        "efg": 43.67,
-        "per36": {
-          "pt": 20.4,
-          "rt": 5.08,
-          "as": 3.26,
-          "br": 1.04,
-          "va": 17.64
+      "jugadores": [
+        {
+          "idJugador": "1463976",
+          "nombre": "LAFUENTE VELAZQUEZ, JORGE",
+          "exactos": {
+            "pj": 26,
+            "pt": 190,
+            "minTotales": 863.1,
+            "t2a": 63,
+            "t3a": 14,
+            "tla": 22
+          },
+          "aprox": {
+            "ts": 67.34,
+            "efg": 66.14,
+            "per36": {
+              "pt": 7.92,
+              "rt": 8.22,
+              "as": 5.05,
+              "br": 0.96,
+              "va": 18.94
+            }
+          }
+        },
+        {
+          "idJugador": "1758807",
+          "nombre": "SALVADOR DEL AGUILA, FRANCISCO",
+          "exactos": {
+            "pj": 26,
+            "pt": 156,
+            "minTotales": 832.23,
+            "t2a": 30,
+            "t3a": 25,
+            "tla": 21
+          },
+          "aprox": {
+            "ts": 46.72,
+            "efg": 44.41,
+            "per36": {
+              "pt": 6.75,
+              "rt": 6.23,
+              "as": 1.73,
+              "br": 0.78,
+              "va": 9.78
+            }
+          }
+        },
+        {
+          "idJugador": "1997544",
+          "nombre": "HARGUINDEY MANEIRO, ALEJANDRO",
+          "exactos": {
+            "pj": 26,
+            "pt": 193,
+            "minTotales": 790.65,
+            "t2a": 54,
+            "t3a": 22,
+            "tla": 19
+          },
+          "aprox": {
+            "ts": 46.5,
+            "efg": 45.08,
+            "per36": {
+              "pt": 8.79,
+              "rt": 4.92,
+              "as": 0.55,
+              "br": 1.55,
+              "va": 8.38
+            }
+          }
+        },
+        {
+          "idJugador": "1605142",
+          "nombre": "MARTINEZ HERNANDEZ, MIGUEL",
+          "exactos": {
+            "pj": 26,
+            "pt": 249,
+            "minTotales": 788.87,
+            "t2a": 53,
+            "t3a": 38,
+            "tla": 29
+          },
+          "aprox": {
+            "ts": 49.37,
+            "efg": 46.81,
+            "per36": {
+              "pt": 11.36,
+              "rt": 3.7,
+              "as": 4.65,
+              "br": 1.78,
+              "va": 11.55
+            }
+          }
+        },
+        {
+          "idJugador": "2363916",
+          "nombre": "DE LA RUA DE AGUSTIN, DANIEL",
+          "exactos": {
+            "pj": 25,
+            "pt": 280,
+            "minTotales": 784.23,
+            "t2a": 50,
+            "t3a": 27,
+            "tla": 99
+          },
+          "aprox": {
+            "ts": 53.19,
+            "efg": 43.93,
+            "per36": {
+              "pt": 12.85,
+              "rt": 5.1,
+              "as": 7.85,
+              "br": 2.39,
+              "va": 21.44
+            }
+          }
         }
-      }
+      ],
+      "equipos": [
+        {
+          "nombre": "ZAMORA ENAMORA",
+          "exactos": {
+            "pj": 26,
+            "pf": 2231,
+            "pc": 1763
+          }
+        },
+        {
+          "nombre": "C.B. PRAT",
+          "exactos": {
+            "pj": 26,
+            "pf": 2124,
+            "pc": 1964
+          }
+        },
+        {
+          "nombre": "TEKNEI BIZKAIA ZORNOTZA",
+          "exactos": {
+            "pj": 26,
+            "pf": 2114,
+            "pc": 2005
+          }
+        }
+      ]
     },
     {
-      "idJugador": "2583212",
-      "nombre": "BRACEY, LYSANDER AMEEN",
-      "exactos": {
-        "pj": 26,
-        "pt": 404,
-        "minTotales": 773.8,
-        "t2a": 82,
-        "t3a": 51,
-        "tla": 87
+      "competicion": "segundafeb",
+      "temporada": "2024",
+      "totales": {
+        "nJugadores": 460,
+        "nEquipos": 28,
+        "sumaPuntosLiga": 55325
       },
-      "aprox": {
-        "ts": 55.71,
-        "efg": 49.69,
-        "per36": {
-          "pt": 18.8,
-          "rt": 3.54,
-          "as": 2.93,
-          "br": 1.72,
-          "va": 17.12
+      "jugadores": [
+        {
+          "idJugador": "1463976",
+          "nombre": "LAFUENTE VELAZQUEZ, JORGE",
+          "exactos": {
+            "pj": 26,
+            "pt": 240,
+            "minTotales": 987.78,
+            "t2a": 66,
+            "t3a": 26,
+            "tla": 30
+          },
+          "aprox": {
+            "ts": 58.38,
+            "efg": 57.07,
+            "per36": {
+              "pt": 8.75,
+              "rt": 8.35,
+              "as": 5.47,
+              "br": 1.24,
+              "va": 18.3
+            }
+          }
+        },
+        {
+          "idJugador": "2082635",
+          "nombre": "AIZPITARTE ARANZA, IERAI",
+          "exactos": {
+            "pj": 26,
+            "pt": 332,
+            "minTotales": 862.65,
+            "t2a": 56,
+            "t3a": 57,
+            "tla": 49
+          },
+          "aprox": {
+            "ts": 47.05,
+            "efg": 43.94,
+            "per36": {
+              "pt": 13.85,
+              "rt": 4.55,
+              "as": 4.17,
+              "br": 1,
+              "va": 12.52
+            }
+          }
+        },
+        {
+          "idJugador": "1465358",
+          "nombre": "MAZAIRA GOMEZ, ALEJANDRO",
+          "exactos": {
+            "pj": 26,
+            "pt": 416,
+            "minTotales": 822.75,
+            "t2a": 77,
+            "t3a": 67,
+            "tla": 61
+          },
+          "aprox": {
+            "ts": 54.51,
+            "efg": 50.86,
+            "per36": {
+              "pt": 18.2,
+              "rt": 5.12,
+              "as": 1.27,
+              "br": 0.35,
+              "va": 15.31
+            }
+          }
+        },
+        {
+          "idJugador": "1568569",
+          "nombre": "JUANOLA MADERA, JORDI",
+          "exactos": {
+            "pj": 26,
+            "pt": 450,
+            "minTotales": 794,
+            "t2a": 102,
+            "t3a": 40,
+            "tla": 126
+          },
+          "aprox": {
+            "ts": 49.88,
+            "efg": 43.67,
+            "per36": {
+              "pt": 20.4,
+              "rt": 5.08,
+              "as": 3.26,
+              "br": 1.04,
+              "va": 17.64
+            }
+          }
+        },
+        {
+          "idJugador": "2583212",
+          "nombre": "BRACEY, LYSANDER AMEEN",
+          "exactos": {
+            "pj": 26,
+            "pt": 404,
+            "minTotales": 773.8,
+            "t2a": 82,
+            "t3a": 51,
+            "tla": 87
+          },
+          "aprox": {
+            "ts": 55.71,
+            "efg": 49.69,
+            "per36": {
+              "pt": 18.8,
+              "rt": 3.54,
+              "as": 2.93,
+              "br": 1.72,
+              "va": 17.12
+            }
+          }
         }
-      }
-    }
-  ],
-  "equipos": [
-    {
-      "nombre": "MELILLA CIUDAD DEL DEPORTE",
-      "exactos": {
-        "pj": 26,
-        "pf": 2144,
-        "pc": 2034
-      }
+      ],
+      "equipos": [
+        {
+          "nombre": "MELILLA CIUDAD DEL DEPORTE",
+          "exactos": {
+            "pj": 26,
+            "pf": 2144,
+            "pc": 2034
+          }
+        },
+        {
+          "nombre": "CLASS BASQUET SANT ANTONI",
+          "exactos": {
+            "pj": 26,
+            "pf": 2114,
+            "pc": 1909
+          }
+        },
+        {
+          "nombre": "MADERAS SORLI BENICARLO",
+          "exactos": {
+            "pj": 26,
+            "pf": 2088,
+            "pc": 1990
+          }
+        }
+      ]
     },
     {
-      "nombre": "CLASS BASQUET SANT ANTONI",
-      "exactos": {
-        "pj": 26,
-        "pf": 2114,
-        "pc": 1909
-      }
+      "competicion": "segundafeb",
+      "temporada": "2025",
+      "totales": {
+        "nJugadores": 445,
+        "nEquipos": 28,
+        "sumaPuntosLiga": 57400
+      },
+      "jugadores": [
+        {
+          "idJugador": "2816737",
+          "nombre": "SIMEUNOVIC, DORDE",
+          "exactos": {
+            "pj": 25,
+            "pt": 517,
+            "minTotales": 861.37,
+            "t2a": 167,
+            "t3a": 30,
+            "tla": 93
+          },
+          "aprox": {
+            "ts": 52.75,
+            "efg": 49.53,
+            "per36": {
+              "pt": 21.61,
+              "rt": 8.73,
+              "as": 3.01,
+              "br": 1.3,
+              "va": 23.95
+            }
+          }
+        },
+        {
+          "idJugador": "1825944",
+          "nombre": "GARCIA SALAME, RAFAEL",
+          "exactos": {
+            "pj": 26,
+            "pt": 327,
+            "minTotales": 813.23,
+            "t2a": 70,
+            "t3a": 31,
+            "tla": 94
+          },
+          "aprox": {
+            "ts": 49.22,
+            "efg": 42.36,
+            "per36": {
+              "pt": 14.48,
+              "rt": 4.25,
+              "as": 6.37,
+              "br": 1.68,
+              "va": 18.06
+            }
+          }
+        },
+        {
+          "idJugador": "1463976",
+          "nombre": "LAFUENTE VELAZQUEZ, JORGE",
+          "exactos": {
+            "pj": 26,
+            "pt": 184,
+            "minTotales": 807.22,
+            "t2a": 57,
+            "t3a": 13,
+            "tla": 31
+          },
+          "aprox": {
+            "ts": 55.99,
+            "efg": 54.26,
+            "per36": {
+              "pt": 8.21,
+              "rt": 9.5,
+              "as": 6.02,
+              "br": 0.94,
+              "va": 19.09
+            }
+          }
+        },
+        {
+          "idJugador": "2813013",
+          "nombre": "REID, NICKLAUS WILLIAM",
+          "exactos": {
+            "pj": 26,
+            "pt": 342,
+            "minTotales": 800.25,
+            "t2a": 59,
+            "t3a": 43,
+            "tla": 95
+          },
+          "aprox": {
+            "ts": 55.31,
+            "efg": 47.68,
+            "per36": {
+              "pt": 15.39,
+              "rt": 6.16,
+              "as": 0.99,
+              "br": 0.67,
+              "va": 14.76
+            }
+          }
+        },
+        {
+          "idJugador": "2816593",
+          "nombre": "PIERRE PHILIPPE, TAVIN ANTHONY",
+          "exactos": {
+            "pj": 26,
+            "pt": 459,
+            "minTotales": 786.97,
+            "t2a": 100,
+            "t3a": 50,
+            "tla": 109
+          },
+          "aprox": {
+            "ts": 55.87,
+            "efg": 50.43,
+            "per36": {
+              "pt": 21,
+              "rt": 3.66,
+              "as": 3.29,
+              "br": 1.1,
+              "va": 18.66
+            }
+          }
+        }
+      ],
+      "equipos": [
+        {
+          "nombre": "UEMC BALONCESTO VALLADOLID",
+          "exactos": {
+            "pj": 26,
+            "pf": 2221,
+            "pc": 2070
+          }
+        },
+        {
+          "nombre": "AMICS CASTELLÓ",
+          "exactos": {
+            "pj": 26,
+            "pf": 2211,
+            "pc": 1951
+          }
+        },
+        {
+          "nombre": "PROINBENI UPB GANDIA",
+          "exactos": {
+            "pj": 26,
+            "pf": 2170,
+            "pc": 2019
+          }
+        }
+      ]
     },
     {
-      "nombre": "MADERAS SORLI BENICARLO",
-      "exactos": {
-        "pj": 26,
-        "pf": 2088,
-        "pc": 1990
-      }
+      "competicion": "tercerafeb",
+      "temporada": "2023",
+      "totales": {
+        "nJugadores": 2300,
+        "nEquipos": 137,
+        "sumaPuntosLiga": 260338
+      },
+      "jugadores": [
+        {
+          "idJugador": "1778999",
+          "nombre": "VAZQUEZ PEREZ, ISAAC",
+          "exactos": {
+            "pj": 26,
+            "pt": 441,
+            "minTotales": 905.77,
+            "t2a": 94,
+            "t3a": 61,
+            "tla": 70
+          },
+          "aprox": {
+            "ts": 53.17,
+            "efg": 49.87,
+            "per36": {
+              "pt": 17.53,
+              "rt": 7,
+              "as": 5.56,
+              "br": 1.79,
+              "va": 21.58
+            }
+          }
+        },
+        {
+          "idJugador": "1591037",
+          "nombre": "MENDEZ BLANCO, OSCAR",
+          "exactos": {
+            "pj": 26,
+            "pt": 433,
+            "minTotales": 892.97,
+            "t2a": 80,
+            "t3a": 55,
+            "tla": 108
+          },
+          "aprox": {
+            "ts": 51.47,
+            "efg": 45.26,
+            "per36": {
+              "pt": 17.46,
+              "rt": 3.91,
+              "as": 3.39,
+              "br": 1.53,
+              "va": 15.96
+            }
+          }
+        },
+        {
+          "idJugador": "1246715",
+          "nombre": "POYATOS PARRA, CARLOS",
+          "exactos": {
+            "pj": 26,
+            "pt": 478,
+            "minTotales": 887.92,
+            "t2a": 165,
+            "t3a": 15,
+            "tla": 103
+          },
+          "aprox": {
+            "ts": 57.85,
+            "efg": 57.52,
+            "per36": {
+              "pt": 19.38,
+              "rt": 10.91,
+              "as": 2.43,
+              "br": 1.42,
+              "va": 27.12
+            }
+          }
+        },
+        {
+          "idJugador": "1137773",
+          "nombre": "HERREROS REMESEIRO, DANIEL",
+          "exactos": {
+            "pj": 26,
+            "pt": 331,
+            "minTotales": 877.83,
+            "t2a": 48,
+            "t3a": 63,
+            "tla": 46
+          },
+          "aprox": {
+            "ts": 45.41,
+            "efg": 42.54,
+            "per36": {
+              "pt": 13.57,
+              "rt": 3.81,
+              "as": 3.16,
+              "br": 1.19,
+              "va": 10.83
+            }
+          }
+        },
+        {
+          "idJugador": "2524198",
+          "nombre": "TAPÉ, TETI YVES-HENRY",
+          "exactos": {
+            "pj": 26,
+            "pt": 431,
+            "minTotales": 877.22,
+            "t2a": 153,
+            "t3a": 9,
+            "tla": 98
+          },
+          "aprox": {
+            "ts": 54.61,
+            "efg": 51.07,
+            "per36": {
+              "pt": 17.69,
+              "rt": 10.1,
+              "as": 1.4,
+              "br": 1.11,
+              "va": 21.46
+            }
+          }
+        }
+      ],
+      "equipos": [
+        {
+          "nombre": "CULTURAL Y DEPORTIVA LEONESA",
+          "exactos": {
+            "pj": 26,
+            "pf": 2249,
+            "pc": 1755
+          }
+        },
+        {
+          "nombre": "BASKONIA",
+          "exactos": {
+            "pj": 26,
+            "pf": 2231,
+            "pc": 1914
+          }
+        },
+        {
+          "nombre": "CB ARIDANE",
+          "exactos": {
+            "pj": 26,
+            "pf": 2222,
+            "pc": 1845
+          }
+        }
+      ]
+    },
+    {
+      "competicion": "tercerafeb",
+      "temporada": "2024",
+      "totales": {
+        "nJugadores": 2330,
+        "nEquipos": 137,
+        "sumaPuntosLiga": 262005
+      },
+      "jugadores": [
+        {
+          "idJugador": "1999325",
+          "nombre": "OTERO GONZALEZ, JORGE",
+          "exactos": {
+            "pj": 26,
+            "pt": 332,
+            "minTotales": 869.45,
+            "t2a": 101,
+            "t3a": 27,
+            "tla": 49
+          },
+          "aprox": {
+            "ts": 53.74,
+            "efg": 52.8,
+            "per36": {
+              "pt": 13.75,
+              "rt": 6.21,
+              "as": 2.53,
+              "br": 2.28,
+              "va": 16.52
+            }
+          }
+        },
+        {
+          "idJugador": "2817428",
+          "nombre": "WILLIAMS, ZION JYAIR",
+          "exactos": {
+            "pj": 25,
+            "pt": 534,
+            "minTotales": 867.3,
+            "t2a": 182,
+            "t3a": 24,
+            "tla": 98
+          },
+          "aprox": {
+            "ts": 55.82,
+            "efg": 53.04,
+            "per36": {
+              "pt": 22.17,
+              "rt": 6.39,
+              "as": 3.61,
+              "br": 1.95,
+              "va": 23.87
+            }
+          }
+        },
+        {
+          "idJugador": "2866197",
+          "nombre": "OGUNFOLU, EMMANUEL OLADELE",
+          "exactos": {
+            "pj": 26,
+            "pt": 420,
+            "minTotales": 863.15,
+            "t2a": 101,
+            "t3a": 46,
+            "tla": 80
+          },
+          "aprox": {
+            "ts": 56.79,
+            "efg": 52.47,
+            "per36": {
+              "pt": 17.52,
+              "rt": 8.88,
+              "as": 2.17,
+              "br": 1,
+              "va": 20.9
+            }
+          }
+        },
+        {
+          "idJugador": "1372587",
+          "nombre": "GONZALEZ CAMEJO, EUDALDO IMOBACH",
+          "exactos": {
+            "pj": 26,
+            "pt": 519,
+            "minTotales": 854.73,
+            "t2a": 153,
+            "t3a": 18,
+            "tla": 159
+          },
+          "aprox": {
+            "ts": 52.42,
+            "efg": 45.45,
+            "per36": {
+              "pt": 21.86,
+              "rt": 7.58,
+              "as": 4.04,
+              "br": 2.15,
+              "va": 25.61
+            }
+          }
+        },
+        {
+          "idJugador": "1743328",
+          "nombre": "MEJIA ECHEVERRY, JHAN POOL",
+          "exactos": {
+            "pj": 26,
+            "pt": 295,
+            "minTotales": 850.88,
+            "t2a": 64,
+            "t3a": 45,
+            "tla": 32
+          },
+          "aprox": {
+            "ts": 56.44,
+            "efg": 55.25,
+            "per36": {
+              "pt": 12.48,
+              "rt": 7.19,
+              "as": 2.28,
+              "br": 1.23,
+              "va": 15.02
+            }
+          }
+        }
+      ],
+      "equipos": [
+        {
+          "nombre": "CÍRCULO GIJÓN NOEGA BALONCESTO",
+          "exactos": {
+            "pj": 26,
+            "pf": 2402,
+            "pc": 2027
+          }
+        },
+        {
+          "nombre": "EL PILAR- UPV",
+          "exactos": {
+            "pj": 26,
+            "pf": 2378,
+            "pc": 2096
+          }
+        },
+        {
+          "nombre": "PERFUMERÍAS AVENIDA XOBORG",
+          "exactos": {
+            "pj": 26,
+            "pf": 2262,
+            "pc": 1930
+          }
+        }
+      ]
+    },
+    {
+      "competicion": "tercerafeb",
+      "temporada": "2025",
+      "totales": {
+        "nJugadores": 2402,
+        "nEquipos": 139,
+        "sumaPuntosLiga": 277004
+      },
+      "jugadores": [
+        {
+          "idJugador": "1517038",
+          "nombre": "OLMEDO VELASCO, ANGEL LUIS",
+          "exactos": {
+            "pj": 26,
+            "pt": 490,
+            "minTotales": 928.1,
+            "t2a": 133,
+            "t3a": 30,
+            "tla": 134
+          },
+          "aprox": {
+            "ts": 51.24,
+            "efg": 43.84,
+            "per36": {
+              "pt": 19.01,
+              "rt": 3.92,
+              "as": 2.68,
+              "br": 1.75,
+              "va": 17.53
+            }
+          }
+        },
+        {
+          "idJugador": "2011222",
+          "nombre": "ALVAREZ HERNAN, MARTIN",
+          "exactos": {
+            "pj": 26,
+            "pt": 422,
+            "minTotales": 889.68,
+            "t2a": 99,
+            "t3a": 53,
+            "tla": 65
+          },
+          "aprox": {
+            "ts": 52.53,
+            "efg": 48.77,
+            "per36": {
+              "pt": 17.08,
+              "rt": 5.5,
+              "as": 2.19,
+              "br": 1.13,
+              "va": 14.24
+            }
+          }
+        },
+        {
+          "idJugador": "2276147",
+          "nombre": "DIAGNE, MAMADOU SALIF",
+          "exactos": {
+            "pj": 24,
+            "pt": 529,
+            "minTotales": 883.15,
+            "t2a": 180,
+            "t3a": 1,
+            "tla": 166
+          },
+          "aprox": {
+            "ts": 53.85,
+            "efg": 46.54,
+            "per36": {
+              "pt": 21.56,
+              "rt": 12.64,
+              "as": 1.47,
+              "br": 0.94,
+              "va": 29.06
+            }
+          }
+        },
+        {
+          "idJugador": "1467686",
+          "nombre": "AROCA RUBIO, MANUEL",
+          "exactos": {
+            "pj": 26,
+            "pt": 301,
+            "minTotales": 875.52,
+            "t2a": 73,
+            "t3a": 17,
+            "tla": 104
+          },
+          "aprox": {
+            "ts": 53.6,
+            "efg": 46.24,
+            "per36": {
+              "pt": 12.38,
+              "rt": 6.54,
+              "as": 5.18,
+              "br": 2.47,
+              "va": 19.61
+            }
+          }
+        },
+        {
+          "idJugador": "1930720",
+          "nombre": "GARRIDO RODRIGUEZ, ALBERT",
+          "exactos": {
+            "pj": 26,
+            "pt": 334,
+            "minTotales": 867.7,
+            "t2a": 62,
+            "t3a": 48,
+            "tla": 66
+          },
+          "aprox": {
+            "ts": 49.18,
+            "efg": 44.67,
+            "per36": {
+              "pt": 13.86,
+              "rt": 3.61,
+              "as": 4.44,
+              "br": 1.95,
+              "va": 14.06
+            }
+          }
+        }
+      ],
+      "equipos": [
+        {
+          "nombre": "JAEN PARAISO INTERIOR FS",
+          "exactos": {
+            "pj": 26,
+            "pf": 2525,
+            "pc": 2049
+          }
+        },
+        {
+          "nombre": "DAMEX CB ALGECIRAS",
+          "exactos": {
+            "pj": 26,
+            "pf": 2447,
+            "pc": 1887
+          }
+        },
+        {
+          "nombre": "UNIVERSIDAD DE OVIEDO",
+          "exactos": {
+            "pj": 26,
+            "pf": 2327,
+            "pc": 2113
+          }
+        }
+      ]
     }
   ]
 }
