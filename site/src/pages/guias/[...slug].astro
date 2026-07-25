@@ -21,7 +21,9 @@ const fechaTexto = comoTexto(guia.data.fecha);
 const actualizadoTexto = guia.data.actualizado ? comoTexto(guia.data.actualizado) : null;
 ---
 
-<Base title={`${guia.data.titulo} · Pick&Stats`} description={guia.data.descripcion} tipo="article">
+<Base title={`${guia.data.titulo} · Pick&Stats`} description={guia.data.descripcion} tipo="article"
+  publicado={guia.data.fecha.toISOString()}
+  modificado={(guia.data.actualizado ?? guia.data.fecha).toISOString()}>
   <article>
     <p class="volver"><a href="/guias">← Todas las guías</a></p>
     <h1>{guia.data.titulo}</h1>
