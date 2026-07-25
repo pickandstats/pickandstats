@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base
+  title="Sobre el proyecto · Pick&Stats"
+  description="Qué es Pick&Stats, de dónde salen los datos y cómo se calculan las estadísticas avanzadas del baloncesto FEB.">
+  <article class="sobre">
+    <h1>Sobre el proyecto</h1>
+
+    <p class="entradilla">
+      Pick&amp;Stats es un proyecto independiente que recopila, calcula y explica estadísticas
+      de las categorías nacionales del baloncesto español: Primera, Segunda y Tercera FEB.
+    </p>
+
+    <h2>Por qué existe</h2>
+    <p>
+      Miles de jugadores y aficionados siguen cada temporada las competiciones FEB, pero casi
+      nadie les dedica datos serios. La estadística avanzada —esa que ayuda a entender de verdad
+      un partido— se queda casi siempre en la Liga Endesa y las grandes ligas. Pick&amp;Stats
+      nace para llevarla también a las categorías que quedan por debajo, con el mismo rigor y
+      explicada para que cualquiera pueda usarla.
+    </p>
+
+    <h2>De dónde salen los datos</h2>
+    <p>
+      Los resultados, las clasificaciones y las estadísticas de los partidos proceden de la
+      información pública que publica la Federación Española de Baloncesto en
+      baloncestoenvivo.feb.es. A partir de las actas oficiales de cada encuentro se recopilan los
+      datos básicos —puntos, rebotes, asistencias, tiros— que sirven de base para todo lo demás.
+    </p>
+    <p>
+      Pick&amp;Stats no es un sitio oficial de la FEB ni está afiliado a ella. Es un proyecto
+      independiente que trabaja sobre datos públicos.
+    </p>
+
+    <h2>Cómo se calculan las métricas</h2>
+    <p>
+      Más allá de los datos básicos, Pick&amp;Stats calcula estadística avanzada de elaboración
+      propia: ratings ofensivo y defensivo, Four Factors, ritmo de juego, eficiencia real de tiro
+      y percentiles que sitúan a cada jugador y equipo respecto al resto de su categoría. Todos
+      estos cálculos se hacen a partir de las actas oficiales, aplicando las fórmulas habituales
+      del análisis de baloncesto.
+    </p>
+    <p>
+      Los datos se actualizan periódicamente durante la temporada. Como cualquier recopilación
+      automática, pueden contener errores o no reflejar correcciones oficiales posteriores; cuando
+      un partido no se disputa por sanción o incomparecencia, se excluye de las métricas para no
+      distorsionarlas.
+    </p>
+
+    <h2>Contacto</h2>
+    <p>
+      Para cualquier cuestión, corrección o sugerencia, puedes escribir a
+      <strong>pickandstats@gmail.com</strong>. Si eres jugador y tienes dudas sobre el tratamiento
+      de tus datos, encontrarás toda la información en el
+      <a href="/legal">aviso legal y de privacidad</a>.
+    </p>
+  </article>
+
+  <style>
+    .sobre { max-width: 720px; }
+    .sobre .entradilla { font-size: 19px; color: var(--tinta-suave); line-height: 1.6; }
+    .sobre h2 { margin-top: 32px; }
+    .sobre p { line-height: 1.65; }
+  </style>
+</Base>
