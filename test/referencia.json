@@ -1,0 +1,154 @@
+{
+  "_generado": "2026-07-25",
+  "_nota": "Valores buenos de segundafeb 2024. Si regresion.cjs falla, un cambio ha alterado el calculo.",
+  "competicion": "segundafeb",
+  "temporada": "2024",
+  "totales": {
+    "nJugadores": 460,
+    "nEquipos": 28,
+    "sumaPuntosLiga": 55325
+  },
+  "jugadores": [
+    {
+      "idJugador": "1463976",
+      "nombre": "LAFUENTE VELAZQUEZ, JORGE",
+      "exactos": {
+        "pj": 26,
+        "pt": 240,
+        "minTotales": 987.78,
+        "t2a": 66,
+        "t3a": 26,
+        "tla": 30
+      },
+      "aprox": {
+        "ts": 58.38,
+        "efg": 57.07,
+        "per36": {
+          "pt": 8.75,
+          "rt": 8.35,
+          "as": 5.47,
+          "br": 1.24,
+          "va": 18.3
+        }
+      }
+    },
+    {
+      "idJugador": "2082635",
+      "nombre": "AIZPITARTE ARANZA, IERAI",
+      "exactos": {
+        "pj": 26,
+        "pt": 332,
+        "minTotales": 862.65,
+        "t2a": 56,
+        "t3a": 57,
+        "tla": 49
+      },
+      "aprox": {
+        "ts": 47.05,
+        "efg": 43.94,
+        "per36": {
+          "pt": 13.85,
+          "rt": 4.55,
+          "as": 4.17,
+          "br": 1,
+          "va": 12.52
+        }
+      }
+    },
+    {
+      "idJugador": "1465358",
+      "nombre": "MAZAIRA GOMEZ, ALEJANDRO",
+      "exactos": {
+        "pj": 26,
+        "pt": 416,
+        "minTotales": 822.75,
+        "t2a": 77,
+        "t3a": 67,
+        "tla": 61
+      },
+      "aprox": {
+        "ts": 54.51,
+        "efg": 50.86,
+        "per36": {
+          "pt": 18.2,
+          "rt": 5.12,
+          "as": 1.27,
+          "br": 0.35,
+          "va": 15.31
+        }
+      }
+    },
+    {
+      "idJugador": "1568569",
+      "nombre": "JUANOLA MADERA, JORDI",
+      "exactos": {
+        "pj": 26,
+        "pt": 450,
+        "minTotales": 794,
+        "t2a": 102,
+        "t3a": 40,
+        "tla": 126
+      },
+      "aprox": {
+        "ts": 49.88,
+        "efg": 43.67,
+        "per36": {
+          "pt": 20.4,
+          "rt": 5.08,
+          "as": 3.26,
+          "br": 1.04,
+          "va": 17.64
+        }
+      }
+    },
+    {
+      "idJugador": "2583212",
+      "nombre": "BRACEY, LYSANDER AMEEN",
+      "exactos": {
+        "pj": 26,
+        "pt": 404,
+        "minTotales": 773.8,
+        "t2a": 82,
+        "t3a": 51,
+        "tla": 87
+      },
+      "aprox": {
+        "ts": 55.71,
+        "efg": 49.69,
+        "per36": {
+          "pt": 18.8,
+          "rt": 3.54,
+          "as": 2.93,
+          "br": 1.72,
+          "va": 17.12
+        }
+      }
+    }
+  ],
+  "equipos": [
+    {
+      "nombre": "MELILLA CIUDAD DEL DEPORTE",
+      "exactos": {
+        "pj": 26,
+        "pf": 2144,
+        "pc": 2034
+      }
+    },
+    {
+      "nombre": "CLASS BASQUET SANT ANTONI",
+      "exactos": {
+        "pj": 26,
+        "pf": 2114,
+        "pc": 1909
+      }
+    },
+    {
+      "nombre": "MADERAS SORLI BENICARLO",
+      "exactos": {
+        "pj": 26,
+        "pf": 2088,
+        "pc": 1990
+      }
+    }
+  ]
+}
