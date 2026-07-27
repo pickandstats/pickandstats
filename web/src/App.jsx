@@ -1,6 +1,7 @@
 import ConsentBanner from './ConsentBanner';
 import CintaNav from './CintaNav';
 import { useEffect, useMemo, useState } from 'react';
+import { useNavigate, useParams, useLocation, Routes, Route } from 'react-router-dom';
 import Inicio from './Inicio';
 import Equipos from './Equipos';
 import Jugadores from './Jugadores';
@@ -23,8 +24,24 @@ const etiquetaTemporada = t => `${t}/${(+t + 1).toString().slice(2)}`;
 // Orden natural de grupos: A-A, A-B, ... o ESTE/OESTE o UNICO
 const ordenarGrupos = grupos => [...grupos].sort((a, b) => a.localeCompare(b, 'es'));
 
+
+// Resuelve la ficha de equipo desde la URL: lee :idClub y busca el equipo ya cargado.
+function RutaEquipo({ equipos, jugadores, partidos, cargando, onVolver, onVerEquipo, onVerJugador, onVerPartido }) {
+  const { idClub } = useParams();
+  if (cargando) return <p className="cargando">Cargando datos…</p>;
+  const equipo = equipos.find(e => e.idClub === idClub);
+  if (!equipo) return <p className="cargando">Equipo no encontrado en esta temporada.</p>;
+  return (
+    <Equipo equipo={equipo} jugadores={jugadores} partidos={partidos}
+      equipos={equipos} onVolver={onVolver}
+      onVerEquipo={onVerEquipo} onVerJugador={onVerJugador} onVerPartido={onVerPartido} />
+  );
+}
+
 export default function App() {
   const [competicion, setCompeticion] = useState(COMPETICIONES[0].id);
+  const navigate = useNavigate();
+  const params = useParams();
   const [temporadas, setTemporadas] = useState([]);
   const [temporada, setTemporada] = useState(null);
   const [equipos, setEquipos] = useState([]);
@@ -73,6 +90,18 @@ export default function App() {
       .catch(err => { console.error('Error cargando datos:', err); setCargando(false); });
   }, [competicion, temporada]);
 
+  const location = useLocation();
+
+  // La URL manda: si trae /:comp/:temp/..., alineamos competicion y temporada.
+  // Esto hace que un enlace pegado o una recarga reconstruyan la vista correcta.
+  useEffect(() => {
+    const m = location.pathname.match(/^\/(primerafeb|segundafeb|tercerafeb)\/(\d{4})\//);
+    if (!m) return;
+    const [, comp, temp] = m;
+    if (comp !== competicion) setCompeticion(comp);
+    if (temp !== temporada && temporadas.includes(temp)) setTemporada(temp);
+  }, [location.pathname, competicion, temporada, temporadas]);
+
   // grupos derivados de los equipos cargados (funciona para cualquier competición)
   const grupos = useMemo(
     () => ordenarGrupos([...new Set(equipos.map(e => e.grupo))]),
@@ -82,7 +111,12 @@ export default function App() {
   const compActual = COMPETICIONES.find(c => c.id === competicion) || COMPETICIONES[0];
 
   const verEquipo = equipo => {
-    setEquipoSel(equipo); setJugadorSel(null); setPartidoSel(null); window.scrollTo(0, 0);
+    if (equipo && equipo.idClub && temporada) {
+      navigate(`/${competicion}/${temporada}/equipo/${equipo.idClub}`);
+    } else {
+      // sin idClub (dato viejo): comportamiento anterior por estado
+      setEquipoSel(equipo); setJugadorSel(null); setPartidoSel(null); window.scrollTo(0, 0);
+    }
   };
 
   const carreraDesdeHistorico = h => {
@@ -134,6 +168,7 @@ export default function App() {
 
   const irPestana = v => {
     setVista(v); setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
+    if (location.pathname.includes('/equipo/')) navigate('/');
   };
 
   const cambiarCompeticion = id => {
@@ -203,6 +238,15 @@ export default function App() {
         {pestana('leyenda', 'Leyenda')}
       </div>
 
+      <Routes>
+        <Route path="/:comp/:temp/equipo/:idClub" element={
+          <RutaEquipo
+            equipos={equipos} jugadores={jugadores} partidos={partidos}
+            cargando={cargando}
+            onVolver={() => navigate('/')}
+            onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
+        } />
+        <Route path="*" element={<>
       {cargando ? (
         <p className="cargando">Cargando datos…</p>
       ) : partidoSel ? (
@@ -232,6 +276,8 @@ export default function App() {
       ) : (
         <Leyenda />
       )}
+        </>} />
+      </Routes>
 
       <p className="pie">
         Datos: baloncestoenvivo.feb.es · Cálculos propios · Partidos por

@@ -5,6 +5,15 @@ import Base from '../layouts/Base.astro';
 <Base
   title="Página no encontrada · Pick&Stats"
   description="La página que buscas no existe o ha cambiado de dirección.">
+  <script is:inline>
+  (function () {
+    var ruta = location.pathname + location.search + location.hash;
+    if (ruta.indexOf('/app/') === 0 && ruta !== '/app/') {
+      // Ruta interna de la aplicación: la SPA la restaurará desde ?redir
+      location.replace('/app/?redir=' + encodeURIComponent(ruta));
+    }
+  })();
+</script>
   <section class="error404">
     <p class="codigo">404</p>
     <h1>Esta página no existe</h1>

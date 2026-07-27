@@ -10,7 +10,7 @@
   --positivo: #0a7d33;
   --negativo: #c0392b;
   --radio: 8px;
-  --alto-cinta: 59px;
+  --alto-cinta: 73px;
 }
 
 * { box-sizing: border-box; }
@@ -114,6 +114,7 @@ thead th {
   cursor: pointer;
   position: sticky;
   top: 0;
+  z-index: 10;   /* por debajo de la cinta (100), para que no la tape */
 }
 thead th.izq { text-align: left; }
 thead th:hover { color: #ffd9c4; }
@@ -733,8 +734,6 @@ th.col-a { color: #ffd9c4; }
    Por debajo del banner de cookies (z-index 1000). */
 @media (min-width: 768px) {
   .cinta { position: sticky; top: 0; z-index: 100; }
-  /* Los encabezados de tabla se pegan bajo la cinta, no bajo el borde superior */
-  thead th { top: var(--alto-cinta); }
   /* Al saltar a un ancla, dejar hueco para la cinta */
   html { scroll-padding-top: calc(var(--alto-cinta) + 8px); }
 }
