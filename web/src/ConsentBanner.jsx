@@ -43,7 +43,7 @@ export default function ConsentBanner() {
         Usamos cookies de analítica (Google Analytics) para entender cómo se usa la web y
         mejorarla. No se activan hasta que las aceptes. Puedes rechazarlas y seguir navegando
         con normalidad. Más información en el{' '}
-        <a href="/legal" target="_blank" rel="noopener">aviso legal y privacidad</a>.
+        <a href="/legal">aviso legal y privacidad</a>.
       </div>
       <div className="consent-botones">
         <button className="consent-btn consent-rechazar" onClick={() => decidir('denied')}>

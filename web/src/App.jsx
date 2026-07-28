@@ -342,7 +342,7 @@ export default function App() {
         sanción/incomparecencia excluidos de las métricas
         {fechaDatos && <> · Datos actualizados el {fechaDatos}</>}
         {' · '}
-        <a className="enlace" href="/legal" target="_blank" rel="noopener">Aviso legal y privacidad</a>
+        <a className="enlace" href="/legal">Aviso legal y privacidad</a>
         {' · '}
         <span className="enlace" onClick={() => window.dispatchEvent(new CustomEvent('abrir-consent'))}>Gestionar cookies</span>
       </p>
