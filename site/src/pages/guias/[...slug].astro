@@ -40,5 +40,56 @@ const actualizadoTexto = guia.data.actualizado ? comoTexto(guia.data.actualizado
     article :global(h2) { margin-top: 32px; }
     article :global(ul) { padding-left: 20px; }
     article :global(li) { margin-bottom: 6px; }
+
+    /* Bloques de fórmulas: legibles y con scroll propio en móvil */
+    article :global(pre) {
+      background: #f4f6f9;
+      border: 1px solid var(--linea);
+      border-left: 3px solid var(--acento);
+      border-radius: var(--radio);
+      padding: 14px 16px;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 18px 0;
+    }
+    article :global(code) {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    /* Código suelto dentro de un párrafo */
+    article :global(p code) {
+      background: #f4f6f9;
+      border: 1px solid var(--linea);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 13px;
+    }
+    article :global(pre code) { background: none; border: 0; padding: 0; }
+
+    /* Tablas de las guías */
+    article :global(table) {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 15px;
+      display: block;
+      overflow-x: auto;
+    }
+    article :global(th) {
+      background: var(--tinta);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      padding: 8px 10px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    article :global(td) {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--linea);
+    }
+    article :global(tbody tr:nth-child(even)) { background: #fafbfc; }
   </style>
 </Base>
