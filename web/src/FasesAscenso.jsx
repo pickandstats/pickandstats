@@ -116,7 +116,12 @@ export default function FasesAscenso({ fases, onVerEquipoNombre, onVerPartido })
     const [gl, gv] = jugado ? p.resultado.split('-').map(Number) : [null, null];
     return (
       <div className={`resultado-card ${jugado ? 'enlace-card' : ''}`} key={p.id}
-        onClick={() => jugado && onVerPartido(p.id)}>
+        onClick={() => jugado && onVerPartido({
+          ...p, grupo: 'Fases de ascenso',
+          local: { id: null, nombre: p.local },
+          visitante: { id: null, nombre: p.visitante },
+          cuartos: p.cuartos || []
+        })}>
         <div className="resultado-grupo">{p.fecha}</div>
         <div className={`resultado-linea ${jugado && gl > gv ? 'gana' : ''}`}>
           <span>{nombreClicable(p.local)}</span>

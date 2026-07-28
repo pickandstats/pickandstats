@@ -38,6 +38,37 @@ function RutaEquipo({ equipos, jugadores, partidos, cargando, onVolver, onVerEqu
   );
 }
 
+// Ficha de jugador desde la URL. Resuelve primero en carreras (temporada actual)
+// y, si no está, reconstruye desde el histórico.
+function RutaJugador({ carreras, historico, equipos, competicionNombre, cargando,
+                       carreraDesdeHistorico, onVolver, onVerEquipo }) {
+  const { idJugador } = useParams();
+  if (cargando) return <p className="cargando">Cargando datos…</p>;
+  let carrera = carreras.find(x => String(x.idJugador) === idJugador);
+  if (!carrera) {
+    const h = historico.find(x => String(x.idJugador) === idJugador);
+    if (h) carrera = carreraDesdeHistorico(h);
+  }
+  if (!carrera) return <p className="cargando">Jugador no encontrado en esta competición.</p>;
+  const hist = historico.find(h => String(h.idJugador) === idJugador);
+  return (
+    <Jugador carrera={carrera} historico={hist} equipos={equipos}
+      competicionNombre={competicionNombre} onVolver={onVolver} onVerEquipo={onVerEquipo} />
+  );
+}
+
+// Ficha de partido desde la URL (solo liga regular: las fases no están en partidos.json).
+function RutaPartido({ partidos, equipos, cargando, onVolver, onVerEquipo, onVerJugador }) {
+  const { idPartido } = useParams();
+  if (cargando) return <p className="cargando">Cargando datos…</p>;
+  const partido = partidos.find(x => String(x.id) === idPartido);
+  if (!partido) return <p className="cargando">Partido no encontrado en esta temporada.</p>;
+  return (
+    <Partido partido={partido} equipos={equipos}
+      onVolver={onVolver} onVerEquipo={onVerEquipo} onVerJugador={onVerJugador} />
+  );
+}
+
 export default function App() {
   const [competicion, setCompeticion] = useState(COMPETICIONES[0].id);
   const navigate = useNavigate();
@@ -150,10 +181,15 @@ export default function App() {
   };
 
   const verJugador = idJugador => {
+    if (temporada) {
+      navigate(`/${competicion}/${temporada}/jugador/${idJugador}`);
+      window.scrollTo(0, 0);
+      return;
+    }
+    // sin temporada aún: comportamiento anterior por estado
     const c = carreras.find(x => x.idJugador === idJugador);
-    if (c) {
-      setJugadorSel(c);
-    } else {
+    if (c) setJugadorSel(c);
+    else {
       const h = historico.find(x => x.idJugador === idJugador);
       if (!h) return;
       setJugadorSel(carreraDesdeHistorico(h));
@@ -162,13 +198,22 @@ export default function App() {
   };
 
   const verPartido = arg => {
+    const id = (arg && typeof arg === 'object') ? arg.id : arg;
+    const enLiga = partidos.some(x => String(x.id) === String(id));
+    if (enLiga && temporada) {
+      navigate(`/${competicion}/${temporada}/partido/${id}`);
+      window.scrollTo(0, 0);
+      return;
+    }
+    // Partidos de fases: no están en partidos.json, así que se abren por estado
     const p = (arg && typeof arg === 'object') ? arg : partidos.find(x => x.id === arg);
     if (p) { setPartidoSel(p); setEquipoSel(null); setJugadorSel(null); window.scrollTo(0, 0); }
+    else console.warn('verPartido: no encuentro el partido', arg);
   };
 
   const irPestana = v => {
     setVista(v); setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
-    if (location.pathname.includes('/equipo/')) navigate('/');
+    if (/\/(equipo|jugador|partido)\//.test(location.pathname)) navigate('/');
   };
 
   const cambiarCompeticion = id => {
@@ -245,6 +290,19 @@ export default function App() {
             cargando={cargando}
             onVolver={() => navigate('/')}
             onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
+        } />
+        <Route path="/:comp/:temp/jugador/:idJugador" element={
+          <RutaJugador
+            carreras={carreras} historico={historico} equipos={equipos}
+            competicionNombre={compActual.nombre} cargando={cargando}
+            carreraDesdeHistorico={carreraDesdeHistorico}
+            onVolver={() => navigate('/')} onVerEquipo={verEquipo} />
+        } />
+        <Route path="/:comp/:temp/partido/:idPartido" element={
+          <RutaPartido
+            partidos={partidos} equipos={equipos} cargando={cargando}
+            onVolver={() => navigate('/')}
+            onVerEquipo={verEquipo} onVerJugador={verJugador} />
         } />
         <Route path="*" element={<>
       {cargando ? (
