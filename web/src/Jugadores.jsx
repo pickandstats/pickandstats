@@ -18,10 +18,6 @@ const MODOS = {
     { clave: 'asPorPartido', titulo: 'AST' },
     { clave: 'brPorPartido', titulo: 'ROB' },
     { clave: 'bpPorPartido', titulo: 'BP',  tip: 'Pérdidas' },
-    { clave: 'tpPorPartido', titulo: 'TAP', tip: 'Tapones a favor' },
-    { clave: 'tcoPorPartido',titulo: 'TR',  tip: 'Tapones recibidos' },
-    { clave: 'fcPorPartido', titulo: 'FC',  tip: 'Faltas cometidas' },
-    { clave: 'frPorPartido', titulo: 'FR',  tip: 'Faltas recibidas' },
     { clave: 't2Pct',        titulo: 'T2%' },
     { clave: 't3Pct',        titulo: 'T3%' },
     { clave: 'tlPct',        titulo: 'TL%' },
@@ -46,9 +42,25 @@ const MODOS = {
     { clave: 'ts',  titulo: 'TS%' },
     { clave: 'usg', titulo: 'USG%' },
   ],
+  detalle: [
+    ...COMUNES,
+    { clave: 'tpPorPartido',  titulo: 'TAP', tip: 'Tapones a favor por partido' },
+    { clave: 'tcoPorPartido', titulo: 'TR',  tip: 'Tapones recibidos por partido' },
+    { clave: 'fcPorPartido',  titulo: 'FC',  tip: 'Faltas cometidas por partido' },
+    { clave: 'frPorPartido',  titulo: 'FR',  tip: 'Faltas recibidas por partido' },
+    { clave: 'bpPorPartido',  titulo: 'BP',  tip: 'Pérdidas por partido' },
+    { clave: 'brPorPartido',  titulo: 'ROB', tip: 'Robos por partido' },
+  ],
 };
 
-const ORDEN_DEFECTO = { basica: 'ptPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
+const ETIQUETAS_MODO = [
+  ['basica', 'Básica'],
+  ['detalle', 'Detalle'],
+  ['avanzada', 'Avanzada'],
+  ['per36', 'Per-36'],
+];
+
+const ORDEN_DEFECTO = { basica: 'ptPorPartido', detalle: 'tpPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
 
 export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onVerJugador }) {
   const [grupo, setGrupo] = useState('todos');
@@ -121,12 +133,10 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
         </div>
 
       <div className="filtros filtros-modo">
-        <button className={`boton-grupo ${modo === 'basica' ? 'activo' : ''}`}
-          onClick={() => cambiarModo('basica')}>Básica</button>
-        <button className={`boton-grupo ${modo === 'avanzada' ? 'activo' : ''}`}
-          onClick={() => cambiarModo('avanzada')}>Avanzada</button>
-        <button className={`boton-grupo ${modo === 'per36' ? 'activo' : ''}`}
-          onClick={() => cambiarModo('per36')}>Per-36</button>
+        {ETIQUETAS_MODO.map(([id, texto]) => (
+          <button key={id} className={`boton-grupo ${modo === id ? 'activo' : ''}`}
+            onClick={() => cambiarModo(id)}>{texto}</button>
+        ))}
       </div>
 
       <div className="tabla-scroll">

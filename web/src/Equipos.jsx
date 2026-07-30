@@ -55,6 +55,14 @@ const FACTORES = [
   { clave: 'ftrRival',     titulo: 'FTr riv',  tip: 'TL que concede el rival por 100 tiros suyos (menos es mejor)' },
 ];
 
+// Al cambiar de modo, ordenar por la métrica más relevante de ese modo
+const ORDEN_DEFECTO = {
+  basica:     'pg',
+  detalle:    'roPartido',
+  eficiencia: 'netrtg',
+  factores:   'efg',
+};
+
 const MODOS = [
   ['basica',     'Básica',        BASICA],
   ['detalle',    'Detalle',       DETALLE],
@@ -70,6 +78,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
   }, [grupos, grupo]);
   const [modo, setModo] = useState('basica');
   const [orden, setOrden] = useState({ clave: 'pg', desc: true });
+  const cambiarModo = m => { setModo(m); setOrden({ clave: ORDEN_DEFECTO[m] || 'pg', desc: true }); };
 
   const columnas = (MODOS.find(m => m[0] === modo) || MODOS[0])[2];
 
@@ -97,7 +106,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
         <span className="separador" />
         {MODOS.map(([id, texto]) => (
           <button key={id} className={`boton-grupo ${modo === id ? 'activo' : ''}`}
-            onClick={() => setModo(id)}>{texto}</button>
+            onClick={() => cambiarModo(id)}>{texto}</button>
         ))}
       </div>
 
