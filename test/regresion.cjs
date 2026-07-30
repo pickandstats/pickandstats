@@ -42,6 +42,7 @@ for (const snap of ref.temporadas) {
     const a = eq.find(x => x.nombre === e.nombre);
     if (!a) { fallo(e.nombre + ': ya no aparece'); continue; }
     for (const [k, v] of Object.entries(e.exactos)) exacto(e.nombre + '.' + k, v, a[k]);
+    for (const [k, v] of Object.entries(e.aprox || {})) aprox(e.nombre + '.' + k, v, a[k]);
   }
 
   console.log(fallos ? '   ❌ ' + fallos + ' diferencia(s)' : '   ✅ cuadra');
