@@ -775,3 +775,25 @@ th.col-a { color: #ffd9c4; }
   line-height: 1.5;
   color: #7a4a2a;
 }
+
+/* Las dos primeras columnas (nº y equipo) fijas al desplazar en horizontal:
+   sin esto, en móvil pierdes de vista a qué equipo pertenece cada número. */
+.tabla-scroll thead th:nth-child(1),
+.tabla-scroll thead th:nth-child(2),
+.tabla-scroll tbody td:nth-child(1),
+.tabla-scroll tbody td:nth-child(2) {
+  position: sticky;
+  z-index: 11;              /* sobre el resto de celdas, bajo la cinta (100) */
+}
+.tabla-scroll thead th:nth-child(1),
+.tabla-scroll tbody td:nth-child(1) { left: 0; }
+.tabla-scroll thead th:nth-child(2),
+.tabla-scroll tbody td:nth-child(2) { left: var(--ancho-col-num, 31px); }
+
+.tabla-scroll tbody td:nth-child(1),
+.tabla-scroll tbody td:nth-child(2) { background: var(--panel); }
+.tabla-scroll tbody td:nth-child(2) { box-shadow: 1px 0 0 var(--linea); }
+
+.tabla-scroll thead th:nth-child(1),
+.tabla-scroll thead th:nth-child(2) { z-index: 12; }
+.tabla-scroll thead th:nth-child(2) { box-shadow: 1px 0 0 var(--linea); }

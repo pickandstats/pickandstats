@@ -68,8 +68,8 @@ irrelevante: los tiros libres son los puntos más eficientes que existen, porque
 te defiende.
 
 Suele indicar un estilo de juego: equipos que atacan el aro en lugar de vivir del tiro
-exterior. En 2025/26 lideraron el **Grupo Alega Cantabria** y el **HLA Alicante**,
-ambos con un 29,1%.
+exterior. En 2025/26 lideró el [Caja Rural CB Zamora](/app/primerafeb/2025/equipo/zamora)
+con un 38,1%, por delante del Grupo Alega Cantabria (37,4%).
 
 ## La cara defensiva
 
@@ -93,7 +93,7 @@ el mismo balance, 28-4. Pero sus perfiles no se parecen en nada:
 | eFG% | **57,6** | 53,9 |
 | TOV% | 14,9 | **14,2** |
 | ORB% | 32,1 | **35,3** |
-| FT Rate | **27,2** | 25,9 |
+| FT Rate | **36,3** | 34,0 |
 
 El Obradoiro ganó **tirando mejor que nadie**: el mejor eFG de la liga, con diferencia.
 El Leyma llegó al mismo sitio por otro camino: tirando bien pero no de forma
@@ -139,14 +139,14 @@ Es el coeficiente más usado, aunque algunas implementaciones prefieren 0,475.
 eFG%    = 100 × (Tiros de campo anotados + 0,5 × Triples anotados) / Tiros de campo intentados
 TOV%    = 100 × Pérdidas / Posesiones
 ORB%    = 100 × Rebotes ofensivos / (Rebotes ofensivos propios + Rebotes defensivos del rival)
-FT Rate = 100 × Tiros libres anotados / Tiros de campo intentados
+FT Rate = 100 × Tiros libres intentados / Tiros de campo intentados
 ```
 
 Dos advertencias sobre estas dos últimas. El **ORB%** necesita los rebotes defensivos
 del rival, así que se calcula partido a partido y se agrega, no sobre totales sueltos.
-Y el **FT Rate** usa aquí los tiros libres **anotados**, siguiendo la formulación
-original de Dean Oliver; hay sitios que usan los intentados y obtienen cifras más altas
-para el mismo equipo.
+Y el **FT Rate** usa los tiros libres **intentados**, que es la convención más extendida:
+mide la capacidad de llegar a la línea, no el acierto una vez allí. La formulación original
+de Dean Oliver usaba los anotados, así que algunas fuentes publican cifras más bajas.
 
 **Las métricas de contexto** que aparecen junto a los factores:
 

@@ -28,7 +28,7 @@ const SECCIONES = [
       ['eFG% (tiro efectivo)', 'Porcentaje de tiro de campo que da valor 1,5 a los triples: (TC anotados + 0,5 × T3 anotados) / TC intentados. El factor más determinante para ganar.'],
       ['TOV% (pérdidas)', 'Pérdidas por cada 100 posesiones. Menos es mejor. Es la versión ajustada por ritmo del BP por partido de la básica.'],
       ['ORB% (rebote ofensivo)', 'Porcentaje de rebotes ofensivos capturados sobre los disponibles (tus RO / (tus RO + RD del rival)). Segundas oportunidades.'],
-      ['FTr (tiros libres)', 'Tiros libres intentados por cada 100 tiros de campo. Capacidad de generar faltas y puntos fáciles.'],
+      ['FTr (tiros libres)', 'Tiros libres intentados por cada 100 tiros de campo. Mide la capacidad de generar faltas y llegar a la línea.'],
     ]
   },
   {
@@ -37,7 +37,7 @@ const SECCIONES = [
       ['eFG% rival', 'El tiro efectivo que permites al rival. El corazón de una buena defensa.'],
       ['TOV forzadas', 'Pérdidas del rival por cada 100 posesiones suyas. Defensas agresivas fuerzan más.'],
       ['DRB% (rebote defensivo)', 'Porcentaje del rebote defensivo asegurado (tus RD / (tus RD + RO del rival)). Cerrar la posesión rival con un solo tiro.'],
-      ['FTr rival', 'Tiros libres que concedes por cada 100 tiros de campo del rival. Menos es mejor: defender sin hacer falta.'],
+      ['FTr rival', 'Tiros libres que concede el rival por cada 100 tiros de campo suyos. Menos es mejor: defender sin hacer falta.'],
     ]
   },
   {
