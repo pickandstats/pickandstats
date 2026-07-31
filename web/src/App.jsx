@@ -10,6 +10,7 @@ import Leyenda from './Leyenda';
 import Jugador from './Jugador';
 import Partido from './Partido';
 import Resultados from './Resultados';
+import Calendario from './Calendario';
 import Buscador from './Buscador';
 
 // Competiciones disponibles (con datos). Al bajar Primera/Segunda, se añaden aquí.
@@ -278,6 +279,7 @@ export default function App() {
       <div className="pestanas">
         {pestana('inicio', 'Inicio')}
         {pestana('resultados', 'Resultados')}
+        {pestana('calendario', 'Calendario')}
         {pestana('equipos', 'Equipos')}
         {pestana('jugadores', 'Jugadores')}
         {pestana('leyenda', 'Leyenda')}
@@ -326,6 +328,12 @@ export default function App() {
         <Resultados partidos={partidos} equipos={equipos} grupos={grupos} temporada={temporada}
           competicion={competicion}
           onVerEquipo={verEquipo} onVerPartido={verPartido} />
+      ) : vista === 'calendario' ? (
+        <Calendario competicion={competicion} competicionNombre={compActual.nombre}
+          onVerEquipoNombre={nombre => {
+            const e = equipos.find(x => x.nombre === nombre);
+            if (e) verEquipo(e);
+          }} />
       ) : vista === 'equipos' ? (
         <Equipos equipos={equipos} grupos={grupos} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (

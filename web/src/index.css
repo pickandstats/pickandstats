@@ -806,3 +806,15 @@ th.col-a { color: #ffd9c4; }
   font-weight: 600;
 }
 .leyenda-guia a:hover { text-decoration: underline; }
+
+/* Calendario de la próxima temporada */
+.calendario-jornadas { margin-top: 8px; flex-wrap: wrap; }
+.calendario-fecha {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 17px; text-transform: uppercase; letter-spacing: .4px;
+  color: var(--tinta-suave); margin: 14px 0 8px;
+}
+.calendario-lista {
+  display: grid; gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
