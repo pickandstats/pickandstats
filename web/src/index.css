@@ -797,3 +797,12 @@ th.col-a { color: #ffd9c4; }
 .tabla-scroll thead th:nth-child(1),
 .tabla-scroll thead th:nth-child(2) { z-index: 12; }
 .tabla-scroll thead th:nth-child(2) { box-shadow: 1px 0 0 var(--linea); }
+
+/* Enlace a la guía completa desde la leyenda */
+.leyenda-guia { margin: -6px 0 10px; font-size: 14px; }
+.leyenda-guia a {
+  color: var(--acento);
+  text-decoration: none;
+  font-weight: 600;
+}
+.leyenda-guia a:hover { text-decoration: underline; }

@@ -14,6 +14,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Ritmo y eficiencia global',
+    guia: { url: '/guias/rating-ofensivo-defensivo', texto: 'Guía: rating ofensivo y defensivo' },
     metricas: [
       ['Pace', 'Posesiones por partido. Estimadas como tiros de campo intentados − rebotes ofensivos + pérdidas + 0,44 × tiros libres intentados. Define el estilo: rápido o pausado. No es ni bueno ni malo.'],
       ['ORtg (rating ofensivo)', 'Puntos anotados por cada 100 posesiones. Mide la eficiencia del ataque con independencia del ritmo.'],
@@ -24,6 +25,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Four Factors (ataque)',
+    guia: { url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' },
     metricas: [
       ['eFG% (tiro efectivo)', 'Porcentaje de tiro de campo que da valor 1,5 a los triples: (TC anotados + 0,5 × T3 anotados) / TC intentados. El factor más determinante para ganar.'],
       ['TOV% (pérdidas)', 'Pérdidas por cada 100 posesiones. Menos es mejor. Es la versión ajustada por ritmo del BP por partido de la básica.'],
@@ -33,6 +35,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Four Factors (defensa)',
+    guia: { url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' },
     metricas: [
       ['eFG% rival', 'El tiro efectivo que permites al rival. El corazón de una buena defensa.'],
       ['TOV forzadas', 'Pérdidas del rival por cada 100 posesiones suyas. Defensas agresivas fuerzan más.'],
@@ -52,6 +55,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Forma y suerte',
+    guia: { url: '/guias/victorias-esperadas-suerte', texto: 'Guía: victorias esperadas y suerte' },
     metricas: [
       ['Últ. 5 (forma)', 'Récord de victorias-derrotas en los últimos 5 partidos disputados, con su diferencia media de puntos.'],
       ['Victorias esperadas (Pitágoras)', 'Las victorias que "deberías" tener según tus puntos anotados y encajados (fórmula pitagórica, exponente 10,25). Predice el futuro mejor que el récord real.'],
@@ -98,6 +102,11 @@ export default function Leyenda() {
       {SECCIONES.map(s => (
         <div key={s.titulo}>
           <h3 className="seccion">{s.titulo}</h3>
+          {s.guia && (
+            <p className="leyenda-guia">
+              <a href={s.guia.url}>{s.guia.texto} →</a>
+            </p>
+          )}
           <div className="leyenda-bloque">
             {s.metricas.map(([nombre, texto]) => (
               <div key={nombre} className="leyenda-item">

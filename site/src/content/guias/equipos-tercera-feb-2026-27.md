@@ -1,215 +1,141 @@
 ---
 titulo: Los 138 equipos de la Tercera FEB 2026/27
-descripcion: Composición completa de la Tercera FEB para la temporada 2026/27 - las cinco conferencias con todos sus equipos, el ámbito geográfico de cada una y cómo se reparten los ascensos y descensos.
+descripcion: Composición completa de la Tercera FEB para la temporada 2026/27 - las cinco conferencias con sus diez subgrupos tras el sorteo, el calendario de la liga regular y cómo se reparten ascensos y descensos.
 fecha: 2026-07-23
+actualizado: 2026-07-30
 ---
 
-La Comisión Delegada de la FEB aprobó el 21 de julio de 2026 la composición
-definitiva de las ligas masculinas. La **Tercera FEB** reunirá a **138 equipos**,
-lo que la convierte con diferencia en la competición más numerosa del baloncesto
-nacional y también en la más veterana de las que organiza la FEB.
+La Comisión Delegada de la FEB aprobó el 21 de julio de 2026 la composición definitiva
+de las ligas masculinas, y el sorteo del 27 de julio repartió los equipos en subgrupos.
+La **Tercera FEB** reunirá a **138 equipos**, lo que la convierte con diferencia en la
+competición más numerosa del baloncesto nacional.
 
-Es la puerta de entrada al baloncesto nacional: por debajo quedan las ligas
-autonómicas y por encima la Segunda FEB, a la que se reparten seis plazas.
+Es la puerta de entrada al baloncesto nacional: por debajo quedan las ligas autonómicas
+y por encima la Segunda FEB, a la que se reparten seis plazas.
 
 ## Cómo está organizada
 
 Los 138 equipos se reparten en **cinco conferencias** definidas por criterios
-geográficos, con **28 equipos cada una salvo la D**, que tiene 26. Cada conferencia
-se divide después en dos subgrupos para disputar la liga regular, de modo que los
-desplazamientos queden acotados a la zona.
+geográficos, y cada una se divide en **dos subgrupos** que disputan su propia liga
+regular. En total, diez grupos de competición.
 
-La adscripción de cada equipo a un subgrupo y el calendario se conocen tras el
-sorteo, previsto para finales de julio.
+Ocho de esos subgrupos tienen 14 equipos. Los dos de la **Conferencia D** tienen 13, y
+por eso en cada jornada uno de sus equipos descansa.
+
+## Calendario de la liga regular
+
+La liga regular arranca el **domingo 4 de octubre de 2026** y se cierra el **sábado 17 de
+abril de 2027**, con **26 jornadas** a doble vuelta: la ida ocupa las jornadas 1 a 13 y la
+vuelta, de la 14 a la 26. Después llegan las eliminatorias por el ascenso.
 
 ## Conferencia A
 
 *Galicia, Asturias, Cantabria, Castilla y León, País Vasco, Navarra y La Rioja.*
 
-1. Baloncesto La Flecha
-2. Baloncesto Villa de Mieres 2012
-3. Caja Rural RDL
-4. Calvo Basket Xiria
-5. CB Valle de Egües
-6. Círculo Gijón Baloncesto
-7. Constru. Gonzalo Crespo Pas Piélagos
-8. De Morro Fino Cantbasket
-9. Hotel 4Postes
-10. Ineltron Santo Domingo de Betanzos
-11. Iruki Take
-12. Lis Data Solutions Bezana
-13. Marín Ence Peixegalego
-14. Megacalzado Ardoi
-15. Recoletas Salud Salamanca
-16. Restaurante Los Arcos CB Solares
-17. San Prudencio
-18. Sigaltec Basket Base Club
-19. Tabirako Baque
-20. Teknei Bizkaia Zornotza
-21. Tifón Muebles Novobasket
-22. Traumacor Culleredo
-23. Ucoga Seguros CB Chantada
-24. Ulacia ZKE
-25. Ulla Oil Rosalía
-26. Universidad de Deusto Loiola Indautxu
-27. Universidad de Oviedo
-28. Usal Meins Avenida
+### Grupo A-A
+
+Baloncesto La Flecha · CB Valle de Egües · Constr. Gonzalo Crespo Pas Piélagos ·
+De Morro Fino Cantbasket04 · Hotel 4Postes Ávila Auténtica El Bulevar · Iruki Take ·
+Lis Data Solutions Bezana · Megacalzado Ardoi · Restaurante Los Arcos CB Solares ·
+San Prudencio · Tabirako Baque · Teknei Bizkaia Zornotza · Ulacia ZKE ·
+Universidad Deusto Loiola Indautxu
+
+### Grupo A-B
+
+Baloncesto Villa de Mieres 2012 · Caja Rural RDL · Calvo Basket Xiria ·
+Círculo Gijón Baloncesto · Ineltron Santo Domingo Betanzos · Marín Ence Peixegalego ·
+Novobasket Vigo · Recoletas Salud Salamanca · Sigaltec BBC · Traumacor Culleredo ·
+Ucoga Seguros CB Chantada · Ulla Oil Rosalía · Universidad de Oviedo ·
+Usal Meins Avenida
 
 ## Conferencia B
 
 *Madrid, Canarias y Castilla-La Mancha.*
 
-1. AG Movialsa QualitySport Criptana
-2. Baloncesto Alcalá
-3. Baloncesto Talavera
-4. Baloncesto Telde
-5. Basket Cervantes Ciudad Real
-6. Basket Globalcaja Quintanar
-7. CB 7 Palmas
-8. CB Aridane
-9. CB Dadarmo de Güimar
-10. CB Fuenlabrada
-11. CB Las Rozas
-12. CD Mensajero Isla de Palma
-13. Cesus Distrito Olímpico
-14. EB Felipe Antón
-15. El Ventero CBV
-16. Fundación Globalcaja La Roda
-17. Fundal Alcobendas
-18. Gran Canaria
-19. Grupo Egido Pintobasket
-20. Inmobiliaria Gálvez Santa Cruz
-21. Lujisa Guadalajara Basket
-22. Náutico Tenerife
-23. Qualis CB Villa de Valdemoro
-24. Real Canoe NC
-25. Recucym Bazu
-26. Stop Biogás Tobarra
-27. Uros de Rivas
-28. Zentro Basket Madrid
+### Grupo B-A
+
+AG Movialsa QualitySport Criptana · Basket Globalcaja Quintanar · CB Aridane ·
+CB Dadarmo de Güímar · CB Fuenlabrada · CB Las Rozas · CD Mensajero Isla de la Palma ·
+Cesur Distrito Olímpico · EB Felipe Antón · El Ventero CBV ·
+Fundación Globalcaja La Roda · Qualis CB Villa de Valdemoro · Stop Biogás Tobarra ·
+Zentro Basket Madrid
+
+### Grupo B-B
+
+Baloncesto Alcalá · Baloncesto Talavera · Baloncesto Telde ·
+Basket Cervantes Ciudad Real · CB 7 Palmas · Fundal Alcobendas · Gran Canaria ·
+Grupo Egido Pintobasket · Implica Real Canoe · Inmobiliaria Gálvez Santa Cruz ·
+Lujisa Guadalajara Basket · Náutico Tenerife · Recucym Bazu · Uros de Rivas
 
 ## Conferencia C
 
 *Cataluña, Aragón e Islas Baleares.*
 
-1. CB Artés
-2. CB Cornellá
-3. CB Cuarte de Huerva
-4. CB Granollers
-5. CB Navàs Víscola
-6. CB Quart Fai Berti
-7. CB Roser
-8. CB Valls Tallers Pablo Martínez
-9. CB Vic - Universitat de Vic
-10. DM Group Mollet
-11. Eglobe Tecla Sala
-12. Flanigan Calvià
-13. Florange UE Mataró
-14. Fundación Grupo Jorge Bto. Zuera
-15. Ibersol CB Tarragona
-16. Immo Sa Marina Ciutat d'Inca Bàsquet
-17. La Parroquia Bàsquet Samá
-18. Letra Corpórea Barbastro
-19. Monbus CB Igualada
-20. OCA Global CB Salou
-21. Pujol Mollerussa
-22. Sa Tintina CB Es Castell Menorca
-23. Sandá CB L'Hospitalet
-24. Sese A
-25. Superm. Diskont CB Ciutadella Ponent
-26. Tenea CB Esparreguera
-27. Tibu-ron Castelldefels
-28. UE Mongat
+### Grupo C-A
+
+CB Cuarte de Huerva · CB Granollers · CB Quart Fai Berti · CB Vic - Universitat de Vic ·
+DM Group Mollet · Eglobe Tecla Sala · Flanigan Calvià · Florange UE Mataró ·
+Ibersol CB Tarragona · Immo Sa Marina Ciutat d'Inca Bàsquet · Sese A ·
+Tenea CB Esparreguera · Tibu-ron Castelldefels · UE Montgat
+
+### Grupo C-B
+
+CB Artés · CB Navàs Víscola · CB Roser · CB Valls Tallers Pablo Martínez ·
+Fundación Grupo Jorge Baloncesto Zuera · La Parròquia Bàsquet Samà ·
+Letra Corpórea Barbastro · Monbus CB Igualada · OCA Global CB Salou ·
+Pujol Mollerussa · Sa Tintina CB Es Castell Menorca · Sandá CB L'Hospitalet ·
+SD Espanyol Bàsquet Cornellà · Supermercados Diskont CB Ciutadella Ponent
 
 ## Conferencia D
 
-*Andalucía, Melilla, Ceuta y Extremadura.* Es la única con 26 equipos.
+*Andalucía, Melilla, Ceuta y Extremadura.* Es la única con 26 equipos, así que sus dos
+subgrupos tienen 13 y en cada jornada descansa uno.
 
-1. AD Rem Onuba
-2. Ática Sevilla CB Coria
-3. Baloncesto Badajoz
-4. Baloncesto Comarca de la Axarquía
-5. Baublock Tugasa Gymnástica
-6. Bosco Mérida Patrimonio de la Humanidad
-7. CB Fénix
-8. CB La Zubia
-9. CB Novaschool Rincón de la Victoria
-10. CB San Fernando
-11. CB Spain
-12. CDBO Byspania Tíjola
-13. Colegio El Pinar
-14. Dehesas R. Climanavas Agrimetal Peñarroya
-15. Ecolculture CB Almería
-16. Eiffage CB Ciudad de Dos Hermanas
-17. Hospital Ochoa Marbella
-18. Insolac CB Alcalá
-19. Jaén Paraíso Interior CB
-20. La Cartonera Lucentina Coto Lucena
-21. Lithium Iberia Sagrado Cáceres
-22. Melilla Ciudad del Deporte Enrique Soler
-23. Molina Olea CB Costa Motril
-24. Oh!Tels ULB
-25. San Antonio Cáceres
-26. Surseeds B. Murgi
+### Grupo D-A
+
+Baloncesto Comarca de la Axarquía · CB La Zubia ·
+CB Novaschool Rincón de la Victoria · CDBO Byspania Tíjola ·
+Colegio El Pinar · Dehesas R. Climanavas Agrometal Peñarroya · Ecoculture CB Almería ·
+Hospital Ochoa CB Marbella · Jaén Paraíso Interior CB ·
+La Cartonera Lucentina Coto Lucena · Melilla Ciudad del Deporte Enrique Soler ·
+Molina Olea CB Costa Motril · Surseeds B. Murgi
+
+### Grupo D-B
+
+AD Rem Onuba · Baloncesto Badajoz · Baublock Tugasa Gymnástica ·
+Bosco Mérida Patrimonio de la Humanidad · CB Coria · CB Fénix · CBA Spain ·
+Club Baloncesto San Fernando · Eiffage CB Ciudad de Dos Hermanas · Insolac CB Alcalá ·
+Lithium Iberia Sagrado Cáceres · Oh!Tels ULB · San Antonio Cáceres
 
 ## Conferencia E
 
 *Comunidad Valenciana y Región de Murcia.*
 
-1. Amics Castelló B
-2. Bauhaus Godella
-3. Burjassot CB
-4. CB Estudiantes Cartagena
-5. CB Ifach Calpe
-6. CB Jorge Juan Castelló Since 1907
-7. CB Jovens Almàssera
-8. CB Morvedre
-9. CB Puerto Sagunto
-10. CB Tabernes Blanques - Fernando Gil
-11. CBI Elche
-12. Cemalu Aldaia
-13. CMG Hidráulica NB Torrent
-14. Denia Basker
-15. Eset Ontinent
-16. Fundació Caixa Rural Vila-Real
-17. Halal Food Quality Uixó Bàsquet
-18. Inversus Aceitunas Fruyper AD Cortera Sur
-19. Inversus Infante
-20. Personalhome Adesavi
-21. Rigalli Alginet
-22. SCD Carolinas
-23. Servigroup Benidorm
-24. Socage Jovens L'Eliana
-25. The Fitzgerald El Pilar
-26. Topsurface NB Paterna
-27. Turbo Manises CBC M-Q
-28. Velabasket CB Sueca
+### Grupo E-A
+
+Amics Castelló B · Bauhaus Godella · Burjassot CB · CB Jovens Almàssera ·
+CB Morvedre · CB Puerto Sagunto · CB Tabernes Blanques Fernando Gil ·
+Cemalu Aldaia · Fundació Caixa Rural Vila-real · Halal Food Quality Uixó Bàsquet ·
+Socage Jovens L'Eliana · The Fitzgerald El Pilar · Topsurface NB Paterna ·
+Turbo Manises CBC M-Q
+
+### Grupo E-B
+
+CB Ifach Calpe · CBI Elche · CB Estudiantes Cartagena ·
+CB Jorge Juan Castelló Since 1907 · CMG Hidráulica NB Torrent · Denia Basket ·
+Eset Ontinent · Inversus Aceitunas Fruyper AD Costera Sur · Inversus Infante ·
+Personalhome Adesavi · Rigalli Alginet · SCD Carolinas · Servigroup Benidorm ·
+Velabasket CB Sueca
 
 ## Quién llega y quién se va
 
-**Desde la Segunda FEB** bajan **cinco equipos**, que eran los descensos previstos
-en aquella temporada:
+**Desde la Segunda FEB** bajan cinco equipos: Florange UE Mataró y OCA Global CB Salou
+(ambos al grupo C-B y C-A respectivamente), Círculo Gijón Baloncesto y CB Valle de Egües
+en la Conferencia A, y el Jaén Paraíso Interior CB en la D.
 
-| Equipo | Cómo descendió | Conferencia |
-|---|---|---|
-| Florange UE Mataró | 13º del grupo Este | C |
-| OCA Global CB Salou | 14º del grupo Este | C |
-| Círculo Gijón Baloncesto | 13º del grupo Oeste | A |
-| CB Valle de Egües | 14º del grupo Oeste | A |
-| Jaén Paraíso Interior CB | Perdedor de la permanencia | D |
-
-El caso del **Jaén Paraíso Interior CB** es el más cruel de los cinco: llegó a la
-eliminatoria de permanencia como duodécimo, ganó el partido de ida por 69-61 y
-descendió igualmente, porque el Ciudad Molina remontó en la vuelta y se llevó el
-global por tres puntos. Ese mismo verano, otro club de la ciudad —el Jaén Paraíso
-Interior FS— hacía el camino contrario y subía a Segunda FEB.
-
-Conviene señalar que el número de descensos cambió justo después: en 2025/26 eran
-cinco, y a partir de 2026/27 son seis.
-
-**Hacia la Segunda FEB** ascendieron otros seis: Vítaly La Mar BCBadajoz, TQ-CB
-Prat, Movistar Estudiantes B y Jaén Paraíso Interior FS como campeones de sus fases
-finales, más C.B. Tres Cantos y Damex CB Algeciras por el cruce de segundos.
+**Hacia la Segunda FEB** ascendieron otros seis: Vítaly La Mar BCBadajoz, TQ-CB Prat,
+Movistar Estudiantes B y Jaén Paraíso Interior FS como campeones de sus fases finales,
+más CB Tres Cantos y Damex CB Algeciras por el cruce de segundos.
 
 ## Cómo se decide el ascenso y el descenso
 
@@ -217,9 +143,9 @@ La Tercera FEB reparte **seis plazas** de ascenso a Segunda FEB por dos caminos
 paralelos: uno para los campeones de grupo y otro para los segundos clasificados.
 
 Por abajo el volumen es mucho mayor, acorde al tamaño de la categoría, y con una
-particularidad que despista cada verano: **terminar en puesto de descenso no
-siempre significa descender**, porque las cifras se ajustan después según los
-ascensos, las renuncias y las vacantes.
+particularidad que despista cada verano: **terminar en puesto de descenso no siempre
+significa descender**, porque las cifras se ajustan después según los ascensos, las
+renuncias y las vacantes.
 
 Está explicado en la guía de
 [cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb).
