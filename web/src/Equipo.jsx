@@ -10,8 +10,13 @@ const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
 const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 
+// El modo elegido se mantiene al abrir otras fichas durante la sesión:
+// un entrenador que revisa varios equipos no quiere pulsar 'Análisis' cada vez.
+let modoRecordado = 'resumen';
+
 export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos }) {
-  const [vistaFicha, setVistaFicha] = useState('resumen');
+  const [vistaFicha, _setVistaFicha] = useState(modoRecordado);
+  const setVistaFicha = m => { modoRecordado = m; _setVistaFicha(m); };
 
   const plantilla = useMemo(() =>
     jugadores.filter(j => j.equipoId === equipo.id)
@@ -55,12 +60,50 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
 
   const buscarEquipo = id => equipos.find(e => e.id === id);
 
-  const dato = (etiqueta, valor, clase) => (
-    <div className="dato">
-      <div className="dato-valor">{valor}</div>
-      <div className={`dato-etiqueta ${clase || ''}`}>{etiqueta}</div>
-    </div>
-  );
+  // Contexto: cada cifra se compara con la media de su grupo.
+  const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
+  const mediaDe = clave => {
+    const v = delGrupo.map(e => +e[clave]).filter(x => Number.isFinite(x));
+    return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null;
+  };
+  // Métricas en las que menos es mejor
+  const MENOS_MEJOR = new Set(['pcPartido', 'bpPartido', 'fcPartido', 'tapContra',
+                               'tovPct', 'drtg', 'efgRival', 'ftrRival']);
+  // Métricas de estilo, no de calidad: no se colorean
+  const NEUTRAS = new Set(['pace', 't3ar', 'forma5', 'suerte']);
+  const CON_SIGNO = new Set(['difPartido', 'netrtg', 'suerte']);
+
+  const fmt = v => (typeof v === 'string' || !Number.isFinite(+v)) ? v : (+v).toFixed(1);
+
+  // Puesto dentro del grupo: da más contexto que el valor suelto.
+  const puestoDe = clave => {
+    const vals = delGrupo
+      .map(e => ({ id: e.id, v: +e[clave] }))
+      .filter(x => Number.isFinite(x.v));
+    if (vals.length < 3) return null;
+    vals.sort((a, b) => MENOS_MEJOR.has(clave) ? a.v - b.v : b.v - a.v);
+    const i = vals.findIndex(x => x.id === equipo.id);
+    return i < 0 ? null : { puesto: i + 1, total: vals.length };
+  };
+
+  const dato = (etiqueta, clave) => {
+    const v = equipo[clave];
+    const p = NEUTRAS.has(clave) ? null : puestoDe(clave);
+    let clase = '';
+    if (p) {
+      const tercio = p.total / 3;
+      if (p.puesto <= tercio) clase = 'val-bien';
+      else if (p.puesto > p.total - tercio) clase = 'val-mal';
+    }
+    const signo = CON_SIGNO.has(clave) && +v > 0 ? '+' : '';
+    return (
+      <div className="dato" key={etiqueta}>
+        <div className="dato-etiqueta">{etiqueta}</div>
+        <div className={`dato-valor ${clase}`}>{signo}{fmt(v)}</div>
+        <div className="dato-puesto">{p ? `${p.puesto}º de ${p.total}` : ''}</div>
+      </div>
+    );
+  };
 
   return (
     <div>
@@ -74,74 +117,99 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             {' '}Fuera {equipo.fuera.pg}-{equipo.fuera.pj - equipo.fuera.pg}</p>
         </div>
         <div className="datos-bloque">
-          <div className="datos-titulo">Básica · Anotación y tiro</div>
-          <div className="datos">
-            {dato('PF/part.', equipo.pfPartido)}
-            {dato('PC/part.', equipo.pcPartido)}
-            {dato('Dif.', (equipo.difPartido > 0 ? '+' : '') + equipo.difPartido,
-              equipo.difPartido > 0 ? 'net-pos' : 'net-neg')}
-            {dato('T2%', equipo.t2PctEq)}
-            {dato('T3%', equipo.t3PctEq)}
-            {dato('TL%', equipo.tlPctEq)}
-          </div>
-          <div className="datos-titulo">Básica · Juego</div>
-          <div className="datos">
-            {dato('RO', equipo.roPartido)}
-            {dato('RD', equipo.rdPartido)}
-            {dato('REB', equipo.rebPartido)}
-            {dato('AST', equipo.asPartido)}
-            {dato('ROB', equipo.brPartido)}
-            {dato('BP', equipo.bpPartido)}
-            {dato('FC', equipo.fcPartido)}
-            {dato('FR', equipo.frPartido)}
-            {dato('TAP', equipo.tapFavor)}
-            {dato('TR', equipo.tapContra)}
-          </div>
-          <div className="datos-titulo">Global</div>
-          <div className="datos">
-            {dato('Net', equipo.netrtg, equipo.netrtg > 0 ? 'net-pos' : 'net-neg')}
-            {dato('SRS', equipo.srs)}
-            {dato('Pace', equipo.pace)}
-            {dato('Últ. 5', equipo.forma5)}
-            {dato('Suerte', (equipo.suerte > 0 ? '+' : '') + equipo.suerte)}
-          </div>
-          <div className="datos-titulo">Ataque</div>
-          <div className="datos">
-            {dato('ORtg', equipo.ortg)}
-            {dato('eFG%', equipo.efg)}
-            {dato('TS%', equipo.ts)}
-            {dato('TOV%', equipo.tovPct)}
-            {dato('ORB%', equipo.orbPct)}
-            {dato('FTr', equipo.ftRate)}
-            {dato('3PAr', equipo.t3ar)}
-            {dato('AST%', equipo.astPct)}
-          </div>
-          <div className="datos-titulo">Defensa</div>
-          <div className="datos">
-            {dato('DRtg', equipo.drtg)}
-            {dato('eFG% rival', equipo.efgRival)}
-            {dato('TOV forz.', equipo.tovForzadas)}
-            {dato('DRB%', equipo.drbPct)}
-            {dato('FTr rival', equipo.ftrRival)}
-          </div>
         </div>
       </div>
 
       <div className="grupos" style={{ marginTop: 4 }}>
         <button className={`boton-grupo ${vistaFicha === 'resumen' ? 'activo' : ''}`}
           onClick={() => setVistaFicha('resumen')}>Resumen</button>
+        <button className={`boton-grupo ${vistaFicha === 'analisis' ? 'activo' : ''}`}
+          onClick={() => setVistaFicha('analisis')}>Análisis</button>
         <button className={`boton-grupo ${vistaFicha === 'dossier' ? 'activo' : ''}`}
           onClick={() => setVistaFicha('dossier')}>Preparar partido</button>
       </div>
 
-      {vistaFicha === 'dossier' ? (
+      {vistaFicha === 'analisis' ? (
+        <>
+        {/* Análisis movido */}
+        <div className="datos-bloque" style={{ marginTop: 12 }}>
+          <div className="datos-titulo">Básica · Anotación y tiro</div>
+          <div className="datos">
+            {dato('PF/part.', 'pfPartido')}
+            {dato('PC/part.', 'pcPartido')}
+            {dato('Dif.', 'difPartido')}
+            {dato('T2%', 't2PctEq')}
+            {dato('T3%', 't3PctEq')}
+            {dato('TL%', 'tlPctEq')}
+          </div>
+          <div className="datos-titulo">Básica · Juego</div>
+          <div className="datos">
+            {dato('RO', 'roPartido')}
+            {dato('RD', 'rdPartido')}
+            {dato('REB', 'rebPartido')}
+            {dato('AST', 'asPartido')}
+            {dato('ROB', 'brPartido')}
+            {dato('BP', 'bpPartido')}
+            {dato('FC', 'fcPartido')}
+            {dato('FR', 'frPartido')}
+            {dato('TAP', 'tapFavor')}
+            {dato('TR', 'tapContra')}
+          </div>
+          <div className="datos-titulo">Global</div>
+          <div className="datos">
+            {dato('Net', 'netrtg')}
+            {dato('SRS', 'srs')}
+            {dato('Pace', 'pace')}
+            {dato('Últ. 5', 'forma5')}
+            {dato('Suerte', 'suerte')}
+          </div>
+          <div className="datos-titulo">Ataque</div>
+          <div className="datos">
+            {dato('ORtg', 'ortg')}
+            {dato('eFG%', 'efg')}
+            {dato('TS%', 'ts')}
+            {dato('TOV%', 'tovPct')}
+            {dato('ORB%', 'orbPct')}
+            {dato('FTr', 'ftRate')}
+            {dato('3PAr', 't3ar')}
+            {dato('AST%', 'astPct')}
+          </div>
+          <div className="datos-titulo">Defensa</div>
+          <div className="datos">
+            {dato('DRtg', 'drtg')}
+            {dato('eFG% rival', 'efgRival')}
+            {dato('TOV forz.', 'tovForzadas')}
+            {dato('DRB%', 'drbPct')}
+            {dato('FTr rival', 'ftrRival')}
+          </div>
+        </div>
+          <h3 className="seccion">Análisis del equipo</h3>
+          <AnalisisEquipo equipo={equipo} equipos={equipos} />
+
+          <h3 className="seccion">Four Factors vs media del grupo</h3>
+          <div className="panel-grafico">
+            <ResponsiveContainer width="100%" height={260}>
+              <BarChart data={fourFactors} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
+                <XAxis dataKey="factor" tick={{ fontSize: 13 }} />
+                <YAxis tick={{ fontSize: 12 }} />
+                <Tooltip formatter={(v, nombre) => [v, nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
+                <Legend formatter={v => v === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`} />
+                <Bar dataKey="equipo" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
+                <Bar dataKey="grupo" fill={COLOR.suave} radius={[3, 3, 0, 0]} />
+              </BarChart>
+            </ResponsiveContainer>
+            <p className="pie" style={{ marginTop: 4 }}>
+              En TOV% (pérdidas), menos es mejor; en el resto, más es mejor.
+            </p>
+          </div>
+
+        </>
+      ) : vistaFicha === 'dossier' ? (
         <DossierPartido equipo={equipo} equipos={equipos}
           jugadores={jugadores} onVerJugador={onVerJugador} />
       ) : (
         <>
-          <h3 className="seccion">Análisis del equipo</h3>
-          <AnalisisEquipo equipo={equipo} equipos={equipos} />
-
           <h3 className="seccion">Evolución por jornada</h3>
           <div className="panel-grafico">
             <ResponsiveContainer width="100%" height={280}>
@@ -161,24 +229,6 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
                 <Line type="monotone" dataKey="encajados" stroke={COLOR.tinta} strokeWidth={2} dot={{ r: 3 }} strokeDasharray="4 3" />
               </LineChart>
             </ResponsiveContainer>
-          </div>
-
-          <h3 className="seccion">Four Factors vs media del grupo</h3>
-          <div className="panel-grafico">
-            <ResponsiveContainer width="100%" height={260}>
-              <BarChart data={fourFactors} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
-                <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
-                <XAxis dataKey="factor" tick={{ fontSize: 13 }} />
-                <YAxis tick={{ fontSize: 12 }} />
-                <Tooltip formatter={(v, nombre) => [v, nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
-                <Legend formatter={v => v === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`} />
-                <Bar dataKey="equipo" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
-                <Bar dataKey="grupo" fill={COLOR.suave} radius={[3, 3, 0, 0]} />
-              </BarChart>
-            </ResponsiveContainer>
-            <p className="pie" style={{ marginTop: 4 }}>
-              En TOV% (pérdidas), menos es mejor; en el resto, más es mejor.
-            </p>
           </div>
 
           <h3 className="seccion">Plantilla</h3>
