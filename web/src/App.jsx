@@ -41,7 +41,8 @@ function RutaEquipo({ equipos, jugadores, partidos, cargando, onVolver, onVerEqu
 
 // Ficha de jugador desde la URL. Resuelve primero en carreras (temporada actual)
 // y, si no está, reconstruye desde el histórico.
-function RutaJugador({ carreras, historico, equipos, competicionNombre, cargando,
+function RutaJugador({ carreras, historico, equipos, competicion, temporada,
+                       competicionNombre, cargando,
                        carreraDesdeHistorico, onVolver, onVerEquipo }) {
   const { idJugador } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
@@ -54,6 +55,7 @@ function RutaJugador({ carreras, historico, equipos, competicionNombre, cargando
   const hist = historico.find(h => String(h.idJugador) === idJugador);
   return (
     <Jugador carrera={carrera} historico={hist} equipos={equipos}
+      competicion={competicion} temporada={temporada}
       competicionNombre={competicionNombre} onVolver={onVolver} onVerEquipo={onVerEquipo} />
   );
 }
@@ -296,6 +298,7 @@ export default function App() {
         <Route path="/:comp/:temp/jugador/:idJugador" element={
           <RutaJugador
             carreras={carreras} historico={historico} equipos={equipos}
+            competicion={competicion} temporada={temporada}
             competicionNombre={compActual.nombre} cargando={cargando}
             carreraDesdeHistorico={carreraDesdeHistorico}
             onVolver={() => navigate('/')} onVerEquipo={verEquipo} />
@@ -314,6 +317,7 @@ export default function App() {
           onVolver={() => setPartidoSel(null)} onVerEquipo={verEquipo} onVerJugador={verJugador} />
       ) : jugadorSel ? (
         <Jugador carrera={jugadorSel} historico={histJugadorSel} equipos={equipos}
+          competicion={competicion} temporada={temporada}
           competicionNombre={compActual.nombre}
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
       ) : equipoSel ? (

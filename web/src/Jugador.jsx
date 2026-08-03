@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
   BarChart, Bar
@@ -30,7 +30,8 @@ const METRICAS_PCT = [
 // quien revisa varios jugadores seguidos no quiere volver a pulsar cada vez.
 let modoRecordado = 'resumen';
 
-export default function Jugador({ carrera, historico, equipos, onVolver, onVerEquipo, competicionNombre }) {
+export default function Jugador({ carrera, historico, equipos, onVolver, onVerEquipo,
+                                 competicionNombre, competicion, temporada }) {
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
   const pct = carrera.percentiles || null;
@@ -40,6 +41,17 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
   // Sin temporada actual no hay etapas ni evolución: nada que repartir en dos modos.
   const hayDetalle = !soloHistorico;
   const enResumen = !hayDetalle || vista === 'resumen';
+
+  // Las fases se cargan aquí y no en App: solo hacen falta al abrir una ficha.
+  const [fasesJugador, setFasesJugador] = useState(null);
+  useEffect(() => {
+    if (soloHistorico || !competicion || !temporada) { setFasesJugador(null); return; }
+    fetch(`${import.meta.env.BASE_URL}data/${competicion}/${temporada}/fases-jugadores.json`)
+      .then(r => (r.ok ? r.json() : []))
+      .then(lista => setFasesJugador(
+        lista.find(x => String(x.idJugador) === String(carrera.idJugador)) || null))
+      .catch(() => setFasesJugador(null));
+  }, [competicion, temporada, carrera.idJugador, soloHistorico]);
 
   const evolucion = useMemo(() => {
     if (soloHistorico || !carrera.etapas) return [];
@@ -373,6 +385,35 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
             </LineChart>
           </ResponsiveContainer>
         </div>
+
+        {fasesJugador && (
+          <>
+            <h3 className="seccion">
+              Fases finales · {fasesJugador.pj} {fasesJugador.pj === 1 ? 'partido' : 'partidos'}
+            </h3>
+            <div className="datos-bloque">
+              <div className="datos">
+                {dato('PJ', fasesJugador.pj, true)}
+                {dato('MIN', fasesJugador.minPorPartido)}
+                {dato('PTS', fasesJugador.ptPorPartido)}
+                {dato('REB', fasesJugador.rtPorPartido)}
+                {dato('AST', fasesJugador.asPorPartido)}
+                {dato('ROB', fasesJugador.brPorPartido)}
+                {dato('BP', fasesJugador.bpPorPartido)}
+                {dato('VAL', fasesJugador.vaPorPartido)}
+                {dato('T2%', fasesJugador.t2Pct)}
+                {dato('T3%', fasesJugador.t3Pct)}
+                {dato('TL%', fasesJugador.tlPct)}
+                {dato('TS%', fasesJugador.ts)}
+              </div>
+              <p className="pie" style={{ marginTop: 8 }}>
+                Promedios en {fasesJugador.fases.join(', ')}.
+                {fasesJugador.pj < 3 && ' Con tan pocos partidos, estos promedios describen lo que pasó, no el nivel del jugador: un buen o mal encuentro los mueve por completo.'}
+                {' '}Estas cifras no entran en las medias de temporada regular.
+              </p>
+            </div>
+          </>
+        )}
       </>)}
 
       {soloHistorico && (
