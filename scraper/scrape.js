@@ -149,26 +149,41 @@ async function scrapePartido(idPartido) {
 
 function parsearJornada($) {
   const partidos = [];
-  let equipos = [];
-  $('a').each((i, a) => {
-    const href = $(a).attr('href') || '';
-    if (href.includes('Equipo.aspx')) {
-      equipos.push({
-        id: (href.match(/i=(\d+)/) || [])[1],
-        nombre: $(a).text().trim()
-      });
-    } else if (href.includes('Partido.aspx')) {
-      const idPartido = (href.match(/p=(\d+)/) || [])[1];
-      if (equipos.length >= 2 && idPartido) {
-        partidos.push({
-          id: idPartido,
-          local: equipos[equipos.length - 2],
-          visitante: equipos[equipos.length - 1],
-          resultado: $(a).text().trim()
-        });
-      }
-      equipos = [];
+  // Se recorre fila a fila (y no enlace a enlace) para poder quedarnos con la
+  // fecha y la hora, que están en celdas y no en los enlaces. Son datos que solo
+  // existen aquí: en los partidos ya jugados no importan, pero en los futuros
+  // son lo único que hay.
+  // Solo la tabla de la jornada pedida: la página muestra además
+  // proximaJornadaDataGrid, que duplicaría cada partido.
+  $('#_ctl0_MainContentPlaceHolderMaster_jornadaDataGrid tr').each((i, tr) => {
+    const $tr = $(tr);
+    const eqs = $tr.find('a[href*="Equipo.aspx"]');
+    const aPartido = $tr.find('a[href*="Partido.aspx"]').first();
+    if (eqs.length < 2 || !aPartido.length) return;
+
+    const idPartido = ((aPartido.attr('href') || '').match(/p=(\d+)/) || [])[1];
+    if (!idPartido) return;
+
+    const celdas = $tr.find('td').map((j, td) => $(td).text().trim()).get();
+    const fechaHora = { fecha: null, hora: null };
+    for (const c of celdas) {
+      if (!fechaHora.fecha && /^\d{2}\/\d{2}\/\d{4}$/.test(c)) fechaHora.fecha = c;
+      else if (!fechaHora.hora && /^\d{1,2}:\d{2}$/.test(c)) fechaHora.hora = c;
     }
+
+    const eqDe = n => ({
+      id: (($(eqs[n]).attr('href') || '').match(/i=(\d+)/) || [])[1],
+      nombre: $(eqs[n]).text().trim()
+    });
+
+    partidos.push({
+      id: idPartido,
+      local: eqDe(0),
+      visitante: eqDe(1),
+      resultado: aPartido.text().trim(),
+      fecha: fechaHora.fecha,
+      hora: fechaHora.hora
+    });
   });
   return partidos;
 }

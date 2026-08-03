@@ -14,8 +14,8 @@ const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 // un entrenador que revisa varios equipos no quiere pulsar 'Análisis' cada vez.
 let modoRecordado = 'resumen';
 
-export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos }) {
-  const [vistaFicha, _setVistaFicha] = useState(modoRecordado);
+export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, rivalInicial }) {
+  const [vistaFicha, _setVistaFicha] = useState(rivalInicial ? 'dossier' : modoRecordado);
   const setVistaFicha = m => { modoRecordado = m; _setVistaFicha(m); };
 
   const plantilla = useMemo(() =>
@@ -206,7 +206,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
 
         </>
       ) : vistaFicha === 'dossier' ? (
-        <DossierPartido equipo={equipo} equipos={equipos}
+        <DossierPartido equipo={equipo} equipos={equipos} rivalInicial={rivalInicial}
           jugadores={jugadores} onVerJugador={onVerJugador} />
       ) : (
         <>

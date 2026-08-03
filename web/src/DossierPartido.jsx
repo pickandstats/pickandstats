@@ -15,8 +15,8 @@ function nivelVs(valor, media, menosEsMejor = false, u1 = 0.06, u2 = 0.15) {
 const etiquetaNivel = n =>
   n >= 2 ? 'muy fuerte' : n >= 1 ? 'fuerte' : n <= -2 ? 'muy flojo' : n <= -1 ? 'flojo' : 'normal';
 
-export default function DossierPartido({ equipo, equipos, jugadores, onVerJugador }) {
-  const [rivalId, setRivalId] = useState('');
+export default function DossierPartido({ equipo, equipos, jugadores, onVerJugador, rivalInicial }) {
+  const [rivalId, setRivalId] = useState(rivalInicial || '');
 
   const rivales = useMemo(() =>
     equipos.filter(e => e.grupo === equipo.grupo && e.id !== equipo.id)
