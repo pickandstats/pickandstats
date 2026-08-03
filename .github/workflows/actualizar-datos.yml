@@ -27,6 +27,8 @@ jobs:
         run: node scraper/calcular.js --competicion 3 --temporada $(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
       - name: Tercera · histórico
         run: node scraper/historico.js --competicion 3
+      - name: Tercera · fases (jugadores)
+        run: node scraper/calcular-fases-jugadores.js --competicion 3 --temporada $(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
 
       # ----- Segunda FEB (competición 2) -----
       - name: Segunda · scrapear
@@ -35,6 +37,8 @@ jobs:
         run: node scraper/calcular.js --competicion 2 --temporada $(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
       - name: Segunda · histórico
         run: node scraper/historico.js --competicion 2
+      - name: Segunda · fases (jugadores)
+        run: node scraper/calcular-fases-jugadores.js --competicion 2 --temporada $(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
 
       # ----- Primera FEB (competición 1) -----
       - name: Primera · scrapear
@@ -43,6 +47,14 @@ jobs:
         run: node scraper/calcular.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
       - name: Primera · histórico
         run: node scraper/historico.js --competicion 1
+      - name: Primera · fases (jugadores)
+        run: node scraper/calcular-fases-jugadores.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
+
+      # Si un cambio en el cálculo altera las temporadas cerradas, mejor enterarse aquí
+      # que semanas después. No detiene el commit: los datos nuevos son válidos igual.
+      - name: Comprobar que las temporadas cerradas no han cambiado
+        run: node test/regresion.cjs
+        continue-on-error: true
 
       - name: Commit y push si hay cambios
         run: |
