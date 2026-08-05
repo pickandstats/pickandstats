@@ -203,6 +203,13 @@ function nombreCortoGrupo(nombreCompleto) {
 
 async function seleccionarTemporada(sesion, temporada) {
   let $ = await cargarInicial(sesion);
+  // La URL de la sesión ya lleva la temporada, así que normalmente viene puesta.
+  // Cualquier postback vacía la tabla de la jornada visible, y en temporadas sin
+  // empezar esa tabla es la única forma de leer la primera jornada.
+  const temporadaYaMostrada = $('#_ctl0_MainContentPlaceHolderMaster_temporadasDropDownList option[selected]')
+    .attr('value') === String(temporada);
+  if (temporadaYaMostrada) return $;
+
   const form = extraerForm($);
   form['_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList'] = temporada;
   $ = await postback(sesion, form, '_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList');
@@ -226,11 +233,19 @@ async function scrapeGrupo(sesion, $, competicionNombre, temporada, grupo, maxJo
   const dirGrupo = path.join('data', 'raw', competicionNombre, temporada, grupo.corto);
   fs.mkdirSync(dirGrupo, { recursive: true });
 
-  let form = extraerForm($);
-  form['_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList'] = temporada;
-  form['_ctl0:MainContentPlaceHolderMaster:gruposDropDownList'] = grupo.id;
-  $ = await postback(sesion, form, '_ctl0:MainContentPlaceHolderMaster:gruposDropDownList');
-  await pausa(CFG.PAUSA_MS);
+  // Si el grupo pedido ya es el que la página muestra, no se hace el postback:
+  // ese evento vacía la tabla de la jornada visible y perderíamos sus partidos.
+  const grupoYaMostrado = $('#_ctl0_MainContentPlaceHolderMaster_gruposDropDownList option[selected]')
+    .attr('value') === grupo.id;
+
+  let form;
+  if (!grupoYaMostrado) {
+    form = extraerForm($);
+    form['_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList'] = temporada;
+    form['_ctl0:MainContentPlaceHolderMaster:gruposDropDownList'] = grupo.id;
+    $ = await postback(sesion, form, '_ctl0:MainContentPlaceHolderMaster:gruposDropDownList');
+    await pausa(CFG.PAUSA_MS);
+  }
 
   const jornadas = [];
   $('#_ctl0_MainContentPlaceHolderMaster_jornadasDropDownList option').each((i, opt) => {
@@ -241,12 +256,20 @@ async function scrapeGrupo(sesion, $, competicionNombre, temporada, grupo, maxJo
 
   const indice = [];
   for (const jornada of aProcesar) {
-    form = extraerForm($);
-    form['_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList'] = temporada;
-    form['_ctl0:MainContentPlaceHolderMaster:gruposDropDownList'] = grupo.id;
-    form['_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList'] = jornada.id;
-    $ = await postback(sesion, form, '_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList');
-    await pausa(CFG.PAUSA_MS);
+    // La página ya viene con una jornada seleccionada (la primera si la temporada
+    // no ha empezado, la última disputada si está en curso). Pedirla otra vez por
+    // postback devuelve la tabla vacía, así que en ese caso se parsea tal cual.
+    const yaMostrada = $('#_ctl0_MainContentPlaceHolderMaster_jornadasDropDownList option[selected]')
+      .attr('value') === jornada.id;
+
+    if (!yaMostrada) {
+      form = extraerForm($);
+      form['_ctl0:MainContentPlaceHolderMaster:temporadasDropDownList'] = temporada;
+      form['_ctl0:MainContentPlaceHolderMaster:gruposDropDownList'] = grupo.id;
+      form['_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList'] = jornada.id;
+      $ = await postback(sesion, form, '_ctl0:MainContentPlaceHolderMaster:jornadasDropDownList');
+      await pausa(CFG.PAUSA_MS);
+    }
 
     const partidos = parsearJornada($);
     console.log(`${jornada.nombre}: ${partidos.length} partidos`);
