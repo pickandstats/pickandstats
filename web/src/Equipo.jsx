@@ -42,6 +42,9 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
 
   const fourFactors = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
+  // Con un solo grupo, el SRS converge al Net multiplicado por (n-1)/n:
+  // es el mismo dato encogido, así que no se muestra.
+  const unGrupo = new Set(equipos.map(x => x.grupo)).size <= 1;
     const media = clave => delGrupo.reduce((a, e) => a + e[clave], 0) / delGrupo.length;
     return [
       { factor: 'eFG%', equipo: equipo.efg,    grupo: +media('efg').toFixed(2) },
@@ -158,7 +161,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           <div className="datos-titulo">Global</div>
           <div className="datos">
             {dato('Net', 'netrtg')}
-            {dato('SRS', 'srs')}
+            {!unGrupo && dato('SRS', 'srs')}
             {dato('Pace', 'pace')}
             {dato('Últ. 5', 'forma5')}
             {dato('Suerte', 'suerte')}

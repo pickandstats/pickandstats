@@ -37,7 +37,7 @@ const EFICIENCIA = [
   { clave: 'ortg',   titulo: 'ORtg',  tip: 'Puntos por 100 posesiones' },
   { clave: 'drtg',   titulo: 'DRtg',  tip: 'Puntos encajados por 100 posesiones' },
   { clave: 'netrtg', titulo: 'Net',   tip: 'ORtg - DRtg' },
-  { clave: 'srs',    titulo: 'SRS',   tip: 'Net ajustado por calendario (comparable dentro del grupo)' },
+  { clave: 'srs',    titulo: 'SRS',   tip: 'Net ajustado por la dificultad del calendario. Solo comparable entre equipos del mismo grupo: los grupos no se cruzan en liga regular' },
   { clave: 'victoriasEsperadas', titulo: 'VE', tip: 'Victorias esperadas segun la diferencia de puntos' },
   { clave: 'suerte', titulo: 'Suerte', tip: 'Victorias reales menos esperadas' },
   { clave: 'forma5', titulo: 'Últ.5', tip: 'Récord últimos 5 partidos' },
