@@ -22,11 +22,28 @@ for (const comp of fs.readdirSync(BASE)) {
   if (!fs.statSync(pc).isDirectory()) continue;
   for (const temp of fs.readdirSync(pc)) {
     const fp = path.join(pc, temp, 'equipos.json');
-    if (!fs.existsSync(fp)) continue;
-    const e = JSON.parse(fs.readFileSync(fp, 'utf8'));
-    for (const x of (Array.isArray(e) ? e : Object.values(e))) {
-      const nombre = x.nombre || x.equipo;
-      apar.push({ clave: nombre + ' @ ' + comp + ' ' + temp, nombre, comp, temp });
+    if (fs.existsSync(fp)) {
+      const e = JSON.parse(fs.readFileSync(fp, 'utf8'));
+      for (const x of (Array.isArray(e) ? e : Object.values(e))) {
+        const nombre = x.nombre || x.equipo;
+        apar.push({ clave: nombre + ' @ ' + comp + ' ' + temp, nombre, comp, temp });
+      }
+    }
+    // Una temporada aún sin jugar solo tiene calendario: de ahí salen los nombres
+    // nuevos (renombramientos, ascendidos) antes de que exista ningún equipos.json.
+    const fc = path.join(pc, temp, 'calendario.json');
+    if (fs.existsSync(fc)) {
+      const cal = JSON.parse(fs.readFileSync(fc, 'utf8'));
+      const vistos = new Set();
+      for (const p of (cal.partidos || [])) {
+        for (const nombre of [p.local, p.visitante]) {
+          if (!nombre || vistos.has(nombre)) continue;
+          vistos.add(nombre);
+          const clave = nombre + ' @ ' + comp + ' ' + temp;
+          if (!apar.some(a => a.clave === clave))
+            apar.push({ clave, nombre, comp, temp });
+        }
+      }
     }
   }
 }
