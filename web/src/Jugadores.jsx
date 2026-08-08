@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 
 const COMUNES = [
   { clave: 'nombre', titulo: 'Jugador', izq: true },
@@ -62,11 +62,54 @@ const ETIQUETAS_MODO = [
 
 const ORDEN_DEFECTO = { basica: 'ptPorPartido', detalle: 'tpPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
 
+const RANGOS = [
+  ['todas', 'Todas las edades', null, null],
+  ['sub20', 'Sub-20', 0, 19],
+  ['sub22', 'Sub-22', 0, 21],
+  ['sub25', 'Sub-25', 0, 24],
+  ['25a30', 'De 25 a 30', 25, 30],
+  ['mas30', 'Más de 30', 31, 99],
+];
+
+// Edad cumplida a día de hoy
+const edadDe = nacimiento => {
+  if (!nacimiento) return null;
+  const n = new Date(nacimiento), h = new Date();
+  let e = h.getFullYear() - n.getFullYear();
+  const m = h.getMonth() - n.getMonth();
+  if (m < 0 || (m === 0 && h.getDate() < n.getDate())) e--;
+  return e;
+};
+
 export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onVerJugador }) {
   const [grupo, setGrupo] = useState('todos');
   const [equipoFiltro, setEquipoFiltro] = useState('todos');
   const [busqueda, setBusqueda] = useState('');
   const [minPj, setMinPj] = useState(10);
+  const [filtroEdad, setFiltroEdad] = useState('todas');
+  const [minAntesDeEdad, setMinAntesDeEdad] = useState(null);
+
+  // Al filtrar por edad interesa ver a todos: los jóvenes son justamente los que
+  // menos partidos juegan, y el mínimo por defecto ocultaría a más de la mitad.
+  const cambiarEdad = valor => {
+    if (valor !== 'todas' && filtroEdad === 'todas') {
+      setMinAntesDeEdad(minPj);
+      setMinPj(1);
+    } else if (valor === 'todas' && minAntesDeEdad != null) {
+      setMinPj(minAntesDeEdad);
+      setMinAntesDeEdad(null);
+    }
+    setFiltroEdad(valor);
+  };
+  // 400 KB de datos personales: solo se piden si el usuario filtra por edad.
+  const [datosPers, setDatosPers] = useState(null);
+  useEffect(() => {
+    if (filtroEdad === 'todas' || datosPers) return;
+    fetch(`${import.meta.env.BASE_URL}data/jugadores-datos.json`)
+      .then(r => (r.ok ? r.json() : null))
+      .then(d => setDatosPers(d && d.jugadores ? d.jugadores : {}))
+      .catch(() => setDatosPers({}));
+  }, [filtroEdad, datosPers]);
   const [modo, setModo] = useState('basica');
   const [orden, setOrden] = useState({ clave: 'ptPorPartido', desc: true });
   const [limite, setLimite] = useState(50);
@@ -91,6 +134,14 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
 
   const filas = useMemo(() => {
     let f = jugadores.filter(j => j.pj >= minPj);
+    if (filtroEdad !== 'todas' && datosPers) {
+      const [, , min, max] = RANGOS.find(r => r[0] === filtroEdad) || [];
+      f = f.filter(j => {
+        const d = datosPers[String(j.idJugador)];
+        const e = d && edadDe(d.nacimiento);
+        return e != null && e >= min && e <= max;
+      });
+    }
     if (grupo !== 'todos') f = f.filter(j => j.grupo === grupo);
     if (equipoFiltro !== 'todos') f = f.filter(j => j.equipoId === equipoFiltro);
     if (busqueda.trim()) {
@@ -104,7 +155,7 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
       return desc ? vb - va : va - vb;
     });
     return f;
-  }, [jugadores, grupo, equipoFiltro, busqueda, minPj, orden]);
+  }, [jugadores, grupo, equipoFiltro, busqueda, minPj, orden, filtroEdad, datosPers]);
 
   const clicOrden = clave =>
     setOrden(o => o.clave === clave ? { clave, desc: !o.desc } : { clave, desc: true });
@@ -124,6 +175,9 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
         <select value={equipoFiltro} onChange={e => setEquipoFiltro(e.target.value)}>
           <option value="todos">Todos los equipos</option>
           {equiposDisponibles.map(e => <option key={e.id} value={e.id}>{e.nombre}</option>)}
+        </select>
+        <select value={filtroEdad} onChange={e => cambiarEdad(e.target.value)}>
+          {RANGOS.map(([id, texto]) => <option key={id} value={id}>{texto}</option>)}
         </select>
         <label>
           Mín. partidos{' '}
