@@ -871,3 +871,15 @@ th.col-a { color: #ffd9c4; }
   font-variant-numeric: tabular-nums; white-space: nowrap;
 }
 .datos { gap: 12px 10px; grid-template-columns: repeat(auto-fill, minmax(76px, 1fr)); }
+
+/* Selector de rival en el radar de comparación */
+.selector-rival {
+  font-family: 'Barlow', sans-serif;
+  font-size: 14px;
+  padding: 7px 10px;
+  border: 1px solid var(--linea);
+  border-radius: var(--radio);
+  background: var(--panel);
+  color: var(--tinta);
+  max-width: 320px;
+}

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import RadarJugador from './RadarJugador';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
   BarChart, Bar
@@ -30,7 +31,7 @@ const METRICAS_PCT = [
 // quien revisa varios jugadores seguidos no quiere volver a pulsar cada vez.
 let modoRecordado = 'resumen';
 
-export default function Jugador({ carrera, historico, equipos, onVolver, onVerEquipo,
+export default function Jugador({ carrera, historico, equipos, jugadores, onVolver, onVerEquipo,
                                  competicionNombre, competicion, temporada }) {
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
@@ -204,6 +205,10 @@ export default function Jugador({ carrera, historico, equipos, onVolver, onVerEq
               </p>
             </div>
           </>
+        )}
+
+        {pct && jugadores && jugadores.length > 0 && (
+          <RadarJugador carrera={carrera} jugadores={jugadores} />
         )}
 
         {trayectoria.length >= 1 && (

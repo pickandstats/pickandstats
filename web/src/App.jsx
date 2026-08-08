@@ -41,7 +41,7 @@ function RutaEquipo({ equipos, jugadores, partidos, cargando, onVolver, onVerEqu
 
 // Ficha de jugador desde la URL. Resuelve primero en carreras (temporada actual)
 // y, si no está, reconstruye desde el histórico.
-function RutaJugador({ carreras, historico, equipos, competicion, temporada,
+function RutaJugador({ carreras, historico, equipos, jugadores, competicion, temporada,
                        competicionNombre, cargando,
                        carreraDesdeHistorico, onVolver, onVerEquipo }) {
   const { idJugador } = useParams();
@@ -54,7 +54,7 @@ function RutaJugador({ carreras, historico, equipos, competicion, temporada,
   if (!carrera) return <p className="cargando">Jugador no encontrado en esta competición.</p>;
   const hist = historico.find(h => String(h.idJugador) === idJugador);
   return (
-    <Jugador carrera={carrera} historico={hist} equipos={equipos}
+    <Jugador carrera={carrera} historico={hist} equipos={equipos} jugadores={jugadores}
       competicion={competicion} temporada={temporada}
       competicionNombre={competicionNombre} onVolver={onVolver} onVerEquipo={onVerEquipo} />
   );
@@ -297,7 +297,7 @@ export default function App() {
         } />
         <Route path="/:comp/:temp/jugador/:idJugador" element={
           <RutaJugador
-            carreras={carreras} historico={historico} equipos={equipos}
+            carreras={carreras} historico={historico} equipos={equipos} jugadores={jugadores}
             competicion={competicion} temporada={temporada}
             competicionNombre={compActual.nombre} cargando={cargando}
             carreraDesdeHistorico={carreraDesdeHistorico}
@@ -316,7 +316,7 @@ export default function App() {
         <Partido partido={partidoSel} equipos={equipos}
           onVolver={() => setPartidoSel(null)} onVerEquipo={verEquipo} onVerJugador={verJugador} />
       ) : jugadorSel ? (
-        <Jugador carrera={jugadorSel} historico={histJugadorSel} equipos={equipos}
+        <Jugador carrera={jugadorSel} historico={histJugadorSel} equipos={equipos} jugadores={jugadores}
           competicion={competicion} temporada={temporada}
           competicionNombre={compActual.nombre}
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
