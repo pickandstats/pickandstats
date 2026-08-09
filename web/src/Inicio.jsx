@@ -38,13 +38,26 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
   const partidosF = useMemo(() => partidos.filter(p => sel.has(p.grupo)), [partidos, sel]);
 
   const elegibles = useMemo(() => jugadoresF.filter(j => j.pj >= MIN_PJ), [jugadoresF]);
-  const lider = clave => [...elegibles].sort((a, b) => b[clave] - a[clave]).slice(0, 5);
+  // El pipeline guarda la producción por 36 minutos; se muestra por 40, que es
+  // la duración del partido en Europa.
+  const fmtLider = v => Number.isFinite(+v) ? (+v).toFixed(1) : '—';
+  const valorDe = (j, clave) =>
+    clave === 'per40pt' ? (j.per36 ? j.per36.pt * 40 / 36 : 0) : j[clave];
+  const lider = clave => [...elegibles]
+    .filter(j => Number.isFinite(+valorDe(j, clave)))
+    .sort((a, b) => valorDe(b, clave) - valorDe(a, clave))
+    .slice(0, 5);
 
   const cardsLideres = [
     { titulo: 'Anotación', clave: 'ptPorPartido', sufijo: 'pts' },
     { titulo: 'Valoración', clave: 'vaPorPartido', sufijo: 'val' },
     { titulo: 'Rebotes', clave: 'rtPorPartido', sufijo: 'reb' },
     { titulo: 'Asistencias', clave: 'asPorPartido', sufijo: 'ast' },
+    // Las avanzadas son el diferencial: aquí es donde se ven jugadores que las
+    // medias por partido no destacan.
+    { titulo: 'Eficiencia (TS%)', clave: 'ts', sufijo: '%' },
+    { titulo: 'Uso (USG%)', clave: 'usg', sufijo: '%' },
+    { titulo: 'Producción por 40', clave: 'per40pt', sufijo: 'pts/40' },
   ];
 
   const dominantes = useMemo(() =>
@@ -102,7 +115,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                   {cabeza ? (
                     <>
                       <div className="card-cabeza">
-                        <div className="card-valor">{cabeza[card.clave]}
+                        <div className="card-valor">{fmtLider(valorDe(cabeza, card.clave))}
                           <span className="card-sufijo"> {card.sufijo}</span></div>
                         <div className="card-nombre enlace"
                           onClick={() => onVerJugador(cabeza.idJugador)}>{cabeza.nombre}</div>
@@ -112,7 +125,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                         {top.slice(1).map(j => (
                           <li key={`${j.equipoId}|${j.nombre}`}>
                             <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                            <span className="card-mini-val">{j[card.clave]}</span>
+                            <span className="card-mini-val">{fmtLider(valorDe(j, card.clave))}</span>
                           </li>
                         ))}
                       </ol>
