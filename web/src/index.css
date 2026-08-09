@@ -928,3 +928,18 @@ th.col-a { color: #ffd9c4; }
   box-shadow: 0 4px 16px rgba(22,35,58,.12);
 }
 .dispersion-n { color: var(--tinta-suave); font-size: 13px; align-self: center; }
+
+/* Navegación de jornadas: desplegable con flechas, para no ocupar filas en móvil */
+.calendario-navegacion {
+  display: flex; align-items: center; gap: 8px; margin: 10px 0 4px;
+}
+.selector-jornada {
+  font-family: 'Barlow', sans-serif; font-size: 15px;
+  padding: 8px 12px; flex: 1 1 auto; max-width: 320px;
+  border: 1px solid var(--linea); border-radius: var(--radio);
+  background: var(--panel); color: var(--tinta);
+}
+.nav-jornada {
+  font-size: 18px; line-height: 1; padding: 7px 14px; flex: 0 0 auto;
+}
+.nav-jornada:disabled { opacity: .35; cursor: default; }

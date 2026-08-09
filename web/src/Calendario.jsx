@@ -101,13 +101,29 @@ export default function Calendario({ competicion, competicionNombre, onVerEquipo
         </div>
       )}
 
-      <div className="grupos calendario-jornadas">
-        {porJornada.map(([n]) => (
-          <button key={n} className={`boton-grupo ${n === jornadaActiva ? 'activo' : ''}`}
-            onClick={() => setJornadaSel(n)}>
-            J{n}
-          </button>
-        ))}
+      <div className="calendario-navegacion">
+        <button className="boton-grupo nav-jornada"
+          disabled={porJornada.findIndex(([n]) => n === jornadaActiva) <= 0}
+          onClick={() => {
+            const i = porJornada.findIndex(([n]) => n === jornadaActiva);
+            if (i > 0) setJornadaSel(porJornada[i - 1][0]);
+          }}>‹</button>
+
+        <select className="selector-jornada" value={jornadaActiva ?? ''}
+          onChange={e => setJornadaSel(+e.target.value)}>
+          {porJornada.map(([n, lista]) => (
+            <option key={n} value={n}>
+              Jornada {n}{lista[0] && lista[0].fecha ? ' · ' + fechaCorta(lista[0].fecha) : ''}
+            </option>
+          ))}
+        </select>
+
+        <button className="boton-grupo nav-jornada"
+          disabled={porJornada.findIndex(([n]) => n === jornadaActiva) >= porJornada.length - 1}
+          onClick={() => {
+            const i = porJornada.findIndex(([n]) => n === jornadaActiva);
+            if (i >= 0 && i < porJornada.length - 1) setJornadaSel(porJornada[i + 1][0]);
+          }}>›</button>
       </div>
 
       {fechasJornada.length > 0 && (
