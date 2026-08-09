@@ -35,11 +35,11 @@ const MODOS = {
   ],
   per36: [
     ...COMUNES,
-    { clave: 'per36.pt', titulo: 'PTS/36' },
-    { clave: 'per36.rt', titulo: 'REB/36' },
-    { clave: 'per36.as', titulo: 'AST/36' },
-    { clave: 'per36.br', titulo: 'ROB/36' },
-    { clave: 'per36.va', titulo: 'VAL/36' },
+    { clave: 'per36.pt', titulo: 'PTS/40' },
+    { clave: 'per36.rt', titulo: 'REB/40' },
+    { clave: 'per36.as', titulo: 'AST/40' },
+    { clave: 'per36.br', titulo: 'ROB/40' },
+    { clave: 'per36.va', titulo: 'VAL/40' },
     { clave: 'ts',  titulo: 'TS%' },
     { clave: 'usg', titulo: 'USG%' },
   ],
@@ -58,7 +58,7 @@ const ETIQUETAS_MODO = [
   ['basica', 'Básica'],
   ['detalle', 'Detalle'],
   ['avanzada', 'Avanzada'],
-  ['per36', 'Per-36'],
+  ['per36', 'Per-40'],
   ['grafico', 'Gráfico'],
 ];
 
@@ -118,7 +118,12 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
   const [limite, setLimite] = useState(50);
 
   const columnas = MODOS[modo];
-  const valor = (j, clave) => clave.startsWith('per36.') ? j.per36[clave.split('.')[1]] : j[clave];
+  // El pipeline guarda la producción por 36 minutos; en Europa la referencia son
+  // los 40 que dura el partido, así que se convierte al mostrarla.
+  const A40 = 40 / 36;
+  const valor = (j, clave) => clave.startsWith('per36.')
+    ? (j.per36[clave.split('.')[1]] || 0) * A40
+    : j[clave];
 
   const cambiarModo = m => { setModo(m); setOrden({ clave: ORDEN_DEFECTO[m], desc: true }); };
 

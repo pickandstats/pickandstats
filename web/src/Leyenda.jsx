@@ -67,10 +67,10 @@ const SECCIONES = [
     metricas: [
       ['VAL (valoración)', 'La valoración oficial FEB: suma de contribuciones positivas menos negativas. Útil pero mejorable; por eso la acompañamos de las siguientes.'],
       ['USG% (uso)', 'Porcentaje de las posesiones del equipo que termina el jugador (tiro, tiros libres o pérdida) mientras está en pista. Un rol normal ronda el 20%; las estrellas superan el 28%.'],
-      ['Per-36', 'Producción proyectada a 36 minutos. Permite comparar titulares y suplentes en igualdad de minutos: revela a los jugadores de banquillo que producen como titulares.'],
+      ['Per-40', 'Producción proyectada a 40 minutos, la duración de un partido FIBA. Permite comparar titulares y suplentes en igualdad de minutos: revela a los jugadores de banquillo que producen como titulares. En fuentes de la NBA verás la variante por 36 minutos, un 10% más baja.'],
       ['+/-', 'Diferencia de puntos del equipo mientras el jugador está en pista, acumulada. Sensible al contexto: úsala con precaución.'],
       ['MIN tot.', 'Minutos totales disputados en la temporada, sumando todas las etapas si el jugador cambió de equipo.'],
-      ['Con varias etapas', 'Si un jugador ha pasado por más de un equipo en la misma temporada, los promedios de la ficha combinan todas sus etapas. El USG% y las métricas por 36 minutos se ponderan por los minutos jugados en cada una, así que son una buena aproximación al valor de la temporada completa, no un recálculo exacto desde los totales.'],
+      ['Con varias etapas', 'Si un jugador ha pasado por más de un equipo en la misma temporada, los promedios de la ficha combinan todas sus etapas. El USG% y las métricas por 40 minutos se ponderan por los minutos jugados en cada una, así que son una buena aproximación al valor de la temporada completa, no un recálculo exacto desde los totales.'],
     ]
   },
   {

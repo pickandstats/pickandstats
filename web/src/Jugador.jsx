@@ -80,15 +80,16 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
     const minTot = et.reduce((a, e) => a + minDe(e), 0);
     if (!minTot) return null;
     const pond = clave => et.reduce((a, e) => a + (+e[clave] || 0) * minDe(e), 0) / minTot;
-    const por36 = clave =>
-      et.reduce((a, e) => a + (+e[clave] || 0) * (e.pj || 0), 0) / minTot * 36;
+    // 40 minutos, que es lo que dura un partido en Europa
+    const por40 = clave =>
+      et.reduce((a, e) => a + (+e[clave] || 0) * (e.pj || 0), 0) / minTot * 40;
     return {
       usg: pond('usg'),
       minTotales: minTot,
-      per36: {
-        pt: por36('ptPorPartido'), rt: por36('rtPorPartido'),
-        as: por36('asPorPartido'), br: por36('brPorPartido'),
-        va: por36('vaPorPartido'),
+      per40: {
+        pt: por40('ptPorPartido'), rt: por40('rtPorPartido'),
+        as: por40('asPorPartido'), br: por40('brPorPartido'),
+        va: por40('vaPorPartido'),
       },
     };
   }, [carrera, soloHistorico]);
@@ -313,16 +314,16 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
 
           {avanzadas && (
             <>
-              <div className="datos-titulo">Por 36 minutos</div>
+              <div className="datos-titulo">Por 40 minutos</div>
               <div className="datos">
-                {dato('PTS/36', avanzadas.per36.pt)}
-                {dato('REB/36', avanzadas.per36.rt)}
-                {dato('AST/36', avanzadas.per36.as)}
-                {dato('ROB/36', avanzadas.per36.br)}
-                {dato('VAL/36', avanzadas.per36.va)}
+                {dato('PTS/40', avanzadas.per40.pt)}
+                {dato('REB/40', avanzadas.per40.rt)}
+                {dato('AST/40', avanzadas.per40.as)}
+                {dato('ROB/40', avanzadas.per40.br)}
+                {dato('VAL/40', avanzadas.per40.va)}
               </div>
               <p className="pie" style={{ marginTop: 6 }}>
-                Producción normalizada a 36 minutos. Permite comparar jugadores con papeles
+                Producción normalizada a 40 minutos, la duración de un partido. Permite comparar jugadores con papeles
                 distintos, porque descuenta el efecto de jugar más o menos tiempo. El USG% indica
                 qué porcentaje de los ataques de su equipo termina él mientras está en pista.
               </p>

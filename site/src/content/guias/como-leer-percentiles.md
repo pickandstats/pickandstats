@@ -81,8 +81,8 @@ Conviene tener claras sus limitaciones, porque son fáciles de sobreinterpretar:
 
 **No ajustan por minutos.** Un suplente que produce mucho en poco tiempo puede tener
 percentiles modestos en las métricas por partido. Para eso están las
-[estadísticas por 36 minutos](/app/), que normalizan el tiempo de juego y están
-explicadas en la pestaña Leyenda de la aplicación.
+[estadísticas por 40 minutos](/guias/estadisticas-por-40-minutos), que normalizan
+el tiempo de juego.
 
 **No ajustan por posición.** Se comparan todos los jugadores entre sí, así que un
 base siempre tendrá percentiles bajos en rebote y un pívot en asistencias. La lectura
