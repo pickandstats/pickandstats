@@ -215,7 +215,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
         {trayectoria.length >= 1 && (
           <>
             <h3 className="seccion">Trayectoria por temporada</h3>
-            <div className="tabla-scroll tabla-ancha">
+            <div className="tabla-scroll tabla-ancha tabla-una-fija">
               <table>
                 <thead>
                   <tr>
@@ -339,7 +339,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
         </div>
 
         <h3 className="seccion">{multiEtapa ? 'Etapas · temporada actual' : 'Estadística completa · temporada actual'}</h3>
-        <div className="tabla-scroll">
+        <div className="tabla-scroll tabla-una-fija">
           <table>
             <thead>
               <tr>

@@ -235,7 +235,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           </div>
 
           <h3 className="seccion">Plantilla</h3>
-          <div className="tabla-scroll">
+          <div className="tabla-scroll tabla-una-fija">
             <table>
               <thead>
                 <tr>
@@ -263,7 +263,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           </div>
 
           <h3 className="seccion">Resultados</h3>
-          <div className="tabla-scroll">
+          <div className="tabla-scroll tabla-una-fija">
             <table>
               <thead>
                 <tr>

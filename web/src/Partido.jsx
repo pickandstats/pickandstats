@@ -40,7 +40,7 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
     return (
       <>
         <h3 className="seccion">{nombre}</h3>
-        <div className="tabla-scroll">
+        <div className="tabla-scroll tabla-una-fija">
           <table>
             <thead>
               <tr>
@@ -120,7 +120,7 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
       {cuartos.length > 0 && (
         <>
           <h3 className="seccion">Marcador por cuartos</h3>
-          <div className="tabla-scroll">
+          <div className="tabla-scroll tabla-una-fija">
             <table>
               <thead>
                 <tr>

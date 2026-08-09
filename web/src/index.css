@@ -943,3 +943,52 @@ th.col-a { color: #ffd9c4; }
   font-size: 18px; line-height: 1; padding: 7px 14px; flex: 0 0 auto;
 }
 .nav-jornada:disabled { opacity: .35; cursor: default; }
+
+
+/* En móvil las columnas fijas se comen la pantalla: el número y el nombre no dejan
+   sitio a los datos, que es justo lo que se va a consultar. Se fijan solo cuando hay
+   ancho suficiente para que aporten. */
+@media (max-width: 720px) {
+  .tabla-scroll thead th:nth-child(1),
+  .tabla-scroll thead th:nth-child(2),
+  .tabla-scroll tbody td:nth-child(1),
+  .tabla-scroll tbody td:nth-child(2) {
+    position: static;
+    box-shadow: none;
+  }
+  /* El nombre, acotado para que no empuje el resto fuera de la vista */
+  .tabla-scroll td:nth-child(2) {
+    max-width: 148px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .tabla-scroll table { font-size: 13px; }
+  .tabla-scroll td, .tabla-scroll th { padding: 7px 6px; }
+}
+
+
+/* Las celdas normales deben pasar por DEBAJO de las columnas fijas al desplazar.
+   Sin z-index propio el orden lo decide el DOM y la siguiente columna se superpone. */
+.tabla-scroll tbody td { position: relative; z-index: 1; }
+.tabla-scroll thead th { z-index: 10; }
+.tabla-scroll thead th:nth-child(1),
+.tabla-scroll thead th:nth-child(2) { z-index: 12; }
+.tabla-scroll tbody td:nth-child(1),
+.tabla-scroll tbody td:nth-child(2) { z-index: 11; }
+/* celdas normales por debajo */
+
+
+/* Tablas cuya primera columna ya es el nombre (plantilla de un equipo): fijar la
+   segunda robaría espacio a los datos, que es lo que se va a consultar. */
+.tabla-una-fija thead th:nth-child(2),
+.tabla-una-fija tbody td:nth-child(2) {
+  position: static;
+  left: auto;
+  box-shadow: none;
+  z-index: 1;
+}
+.tabla-una-fija thead th:nth-child(1),
+.tabla-una-fija tbody td:nth-child(1) {
+  box-shadow: 1px 0 0 var(--linea);
+}

@@ -182,7 +182,7 @@ export default function DossierPartido({ equipo, equipos, jugadores, onVerJugado
           {jugadoresClave.length > 0 && (
             <>
               <h3 className="seccion">Jugadores a vigilar</h3>
-              <div className="tabla-scroll">
+              <div className="tabla-scroll tabla-una-fija">
                 <table>
                   <thead>
                     <tr>
@@ -236,7 +236,7 @@ export default function DossierPartido({ equipo, equipos, jugadores, onVerJugado
 
           {/* 4. Comparativa directa */}
           <h3 className="seccion">Comparativa directa</h3>
-          <div className="tabla-scroll">
+          <div className="tabla-scroll tabla-una-fija">
             <table>
               <thead>
                 <tr>
