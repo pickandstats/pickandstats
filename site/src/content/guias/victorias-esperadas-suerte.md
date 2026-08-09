@@ -112,9 +112,9 @@ positivo suele ser peor de lo que aparenta en la tabla.
 ## Cómo se relaciona con el resto
 
 Las victorias esperadas parten de la **diferencia de puntos**, que es una medida cruda.
-El [rating neto](/guias/rating-ofensivo-defensivo) mide lo mismo pero ajustado por
+El [rating neto](/guias/rating-ofensivo-defensivo/) mide lo mismo pero ajustado por
 posesiones, así que es más preciso, y los
-[Four Factors](/guias/four-factors-baloncesto) explican de dónde sale esa diferencia.
+[Four Factors](/guias/four-factors-baloncesto/) explican de dónde sale esa diferencia.
 
 Las tres se leen juntas: los factores dicen *cómo* juega un equipo, el rating *cuánto*
 rinde, y las victorias esperadas si ese rendimiento se ha traducido en la clasificación
@@ -127,5 +127,5 @@ pestaña **Avanzada**, junto al rating neto y al resto de métricas de contexto.
 
 ---
 
-Sigue por [el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo), que mide el
+Sigue por [el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo/), que mide el
 rendimiento con más precisión que la diferencia de puntos.

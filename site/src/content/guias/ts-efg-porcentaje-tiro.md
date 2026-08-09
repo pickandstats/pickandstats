@@ -100,9 +100,9 @@ por defecto en el gráfico de dispersión de la aplicación.
 ## Cómo se relaciona con el resto
 
 El eFG% es el primero de los
-[Four Factors](/guias/four-factors-baloncesto), el que más peso tiene en el resultado
+[Four Factors](/guias/four-factors-baloncesto/), el que más peso tiene en el resultado
 de un partido. Y ambas métricas alimentan
-[el rating ofensivo](/guias/rating-ofensivo-defensivo), que mide la eficiencia del
+[el rating ofensivo](/guias/rating-ofensivo-defensivo/), que mide la eficiencia del
 equipo entero por cada 100 posesiones.
 
 ## Dónde verlas
@@ -114,5 +114,5 @@ anotador de toda la categoría de un vistazo.
 
 ---
 
-Sigue por [los Four Factors](/guias/four-factors-baloncesto), donde el tiro efectivo
+Sigue por [los Four Factors](/guias/four-factors-baloncesto/), donde el tiro efectivo
 es el factor que más decide los partidos.

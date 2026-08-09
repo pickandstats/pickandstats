@@ -104,10 +104,10 @@ eliminado**, sino que entra en cuartos; y el play-off **no tiene final**, porque
 ascienden los dos ganadores de las semifinales.
 
 Está explicado paso a paso en la guía de
-[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb).
+[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb/).
 
 ---
 
 La composición del resto de categorías:
-[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27)
-y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27).
+[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27/)
+y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27/).

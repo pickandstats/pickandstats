@@ -169,5 +169,5 @@ en la ficha individual de cada equipo.
 ---
 
 Estas otras guías completan la lectura:
-[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb)
-y [los 18 equipos de la Primera FEB 2026/27](/guias/equipos-primera-feb-2026-27).
+[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb/)
+y [los 18 equipos de la Primera FEB 2026/27](/guias/equipos-primera-feb-2026-27/).

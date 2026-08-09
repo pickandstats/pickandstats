@@ -58,10 +58,10 @@ al 9º— y **tres descensos** a Segunda FEB, que se llevan los equipos que term
 en los puestos 16º, 17º y 18º.
 
 El detalle del formato está en la guía de
-[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb).
+[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb/).
 
 ---
 
 La composición del resto de categorías:
-[los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27)
-y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27).
+[los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27/)
+y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27/).

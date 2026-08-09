@@ -81,7 +81,7 @@ Conviene tener claras sus limitaciones, porque son fáciles de sobreinterpretar:
 
 **No ajustan por minutos.** Un suplente que produce mucho en poco tiempo puede tener
 percentiles modestos en las métricas por partido. Para eso están las
-[estadísticas por 40 minutos](/guias/estadisticas-por-40-minutos), que normalizan
+[estadísticas por 40 minutos](/guias/estadisticas-por-40-minutos/), que normalizan
 el tiempo de juego.
 
 **No ajustan por posición.** Se comparan todos los jugadores entre sí, así que un
@@ -100,6 +100,6 @@ valoración y eficiencia de tiro.
 
 ---
 
-Sigue por [los Four Factors](/guias/four-factors-baloncesto) o
-[el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo), que aplican la
+Sigue por [los Four Factors](/guias/four-factors-baloncesto/) o
+[el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo/), que aplican la
 misma idea de contexto a los equipos.

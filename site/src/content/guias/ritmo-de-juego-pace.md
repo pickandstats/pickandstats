@@ -39,7 +39,7 @@ Zamora necesitaba **cuatro ataques más cada noche** para llegar a la misma cifr
 ataque era claramente peor, pero el promedio por partido lo escondía por completo.
 
 Cuando se mide lo que se anota por cada 100 posesiones —el
-[rating ofensivo](/guias/rating-ofensivo-defensivo)— la diferencia aparece: seis
+[rating ofensivo](/guias/rating-ofensivo-defensivo/)— la diferencia aparece: seis
 puntos, que es un abismo.
 
 ## No es un caso aislado
@@ -109,8 +109,8 @@ completa. Es el coeficiente más usado, aunque algunas implementaciones prefiere
 ## Cómo se relaciona con el resto
 
 El ritmo es el **denominador** de casi todo lo demás. Los
-[ratings ofensivo y defensivo](/guias/rating-ofensivo-defensivo) miden puntos por
-cada 100 posesiones; los [Four Factors](/guias/four-factors-baloncesto) son
+[ratings ofensivo y defensivo](/guias/rating-ofensivo-defensivo/) miden puntos por
+cada 100 posesiones; los [Four Factors](/guias/four-factors-baloncesto/) son
 porcentajes que también neutralizan el ritmo.
 
 Esa es justamente su virtud: al fijar el denominador, todas esas métricas permiten
@@ -124,5 +124,5 @@ ficha individual de cada equipo, en el modo **Análisis**.
 
 ---
 
-Sigue por [el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo), que es
+Sigue por [el rating ofensivo y defensivo](/guias/rating-ofensivo-defensivo/), que es
 la métrica que el ritmo hace posible.

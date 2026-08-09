@@ -148,10 +148,10 @@ significa descender**, porque las cifras se ajustan después según los ascensos
 renuncias y las vacantes.
 
 Está explicado en la guía de
-[cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb).
+[cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb/).
 
 ---
 
 La composición del resto de categorías:
-[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27)
-y [los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27).
+[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27/)
+y [los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27/).

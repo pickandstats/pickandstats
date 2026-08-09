@@ -76,6 +76,6 @@ Por abajo, Cartagena y Melilla ocuparon los dos puestos de descenso.
 ---
 
 Los escalones vecinos:
-[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb),
+[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb/),
 con un sistema bastante más enrevesado, y
-[cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb).
+[cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb/).

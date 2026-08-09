@@ -99,7 +99,7 @@ vacantes.
 ---
 
 Los escalones de arriba funcionan de otra manera:
-[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb),
+[cómo se asciende y se desciende en Segunda FEB](/guias/ascensos-y-descensos-segunda-feb/),
 la categoría a la que se llega desde aquí, y
-[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb),
+[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb/),
 con sus dos plazas para la Liga Endesa.

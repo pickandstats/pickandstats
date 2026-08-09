@@ -13,7 +13,7 @@ const guias = (await getCollection('guias'))
   <ul class="lista-guias">
     {guias.map(guia => (
       <li>
-        <a href={`/guias/${guia.id}`}>{guia.data.titulo}</a>
+        <a href={`/guias/${guia.id}/`}>{guia.data.titulo}</a>
         <p>{guia.data.descripcion}</p>
       </li>
     ))}

@@ -110,7 +110,7 @@ pero no idénticas.
 ## Cómo se relacionan con los Four Factors
 
 Los ratings dicen **cuánto** de eficiente es un equipo. Los
-[Four Factors](/guias/four-factors-baloncesto) explican **por qué**: si ese ataque
+[Four Factors](/guias/four-factors-baloncesto/) explican **por qué**: si ese ataque
 funciona por acierto en el tiro, por cuidar el balón, por rebote ofensivo o por vivir en
 la línea de personal.
 
@@ -125,5 +125,5 @@ También en la ficha individual de cada equipo.
 
 ---
 
-Sigue por [los Four Factors](/guias/four-factors-baloncesto), que explican de dónde sale
+Sigue por [los Four Factors](/guias/four-factors-baloncesto/), que explican de dónde sale
 la eficiencia de un ataque.

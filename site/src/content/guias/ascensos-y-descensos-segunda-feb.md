@@ -105,5 +105,5 @@ semifinales.
 ---
 
 Los escalones vecinos:
-[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb)
-y [cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb).
+[cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb/)
+y [cómo se asciende y se desciende en la Tercera FEB](/guias/ascensos-y-descensos-tercera-feb/).

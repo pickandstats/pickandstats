@@ -90,8 +90,8 @@ lo hace cuando está en pista.
 ## Cómo se relaciona con el resto
 
 El per-40 hace con los minutos lo que
-[el rating ofensivo](/guias/rating-ofensivo-defensivo) hace con las posesiones y
-[los percentiles](/guias/como-leer-percentiles) con el nivel de la categoría:
+[el rating ofensivo](/guias/rating-ofensivo-defensivo/) hace con las posesiones y
+[los percentiles](/guias/como-leer-percentiles/) con el nivel de la categoría:
 **quitar de en medio una variable de contexto** para poder comparar en igualdad de
 condiciones.
 
@@ -107,5 +107,5 @@ ordenar toda la categoría por producción ajustada al tiempo de juego.
 
 ---
 
-Sigue por [cómo leer los percentiles](/guias/como-leer-percentiles), que sitúan a
+Sigue por [cómo leer los percentiles](/guias/como-leer-percentiles/), que sitúan a
 cada jugador frente al resto de la categoría.
