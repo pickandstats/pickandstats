@@ -883,3 +883,48 @@ th.col-a { color: #ffd9c4; }
   color: var(--tinta);
   max-width: 320px;
 }
+
+/* Leyenda del gráfico de dispersión */
+.leyenda-dispersion {
+  margin-top: 14px; padding-top: 12px;
+  border-top: 1px solid var(--linea);
+  font-size: 13px; line-height: 1.55; color: var(--tinta-suave);
+}
+.ld-fila { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 7px; }
+.ld-marca { flex: 0 0 26px; margin-top: 4px; display: inline-block; }
+.ld-punto-grande::before,
+.ld-punto-naranja::before {
+  content: ''; display: inline-block; border-radius: 50%;
+}
+.ld-punto-grande::before {
+  width: 14px; height: 14px; background: var(--tinta); opacity: .42;
+}
+.ld-punto-naranja::before {
+  width: 12px; height: 12px; background: var(--acento); opacity: .75;
+}
+.ld-linea::before {
+  content: ''; display: inline-block; width: 24px; height: 0;
+  border-top: 2px dashed #9aa1ac; vertical-align: middle;
+}
+.ld-cuadrantes { margin: 12px 0 6px; }
+.ld-rejilla {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 8px 14px; margin-bottom: 4px;
+}
+.ld-rejilla > div {
+  background: #fbfcfd; border: 1px solid var(--linea);
+  border-radius: var(--radio); padding: 8px 10px;
+}
+.ld-esquina {
+  display: block;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 12px; font-weight: 600; letter-spacing: .5px;
+  text-transform: uppercase; color: var(--tinta); margin-bottom: 2px;
+}
+.ld-nota { margin-top: 10px; }
+.tooltip-dispersion {
+  background: var(--panel); border: 1px solid var(--linea);
+  border-radius: var(--radio); padding: 8px 10px; font-size: 13px;
+  box-shadow: 0 4px 16px rgba(22,35,58,.12);
+}
+.dispersion-n { color: var(--tinta-suave); font-size: 13px; align-self: center; }

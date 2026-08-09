@@ -1,4 +1,5 @@
 import { useMemo, useState, useEffect } from 'react';
+import DispersionJugadores from './DispersionJugadores';
 
 const COMUNES = [
   { clave: 'nombre', titulo: 'Jugador', izq: true },
@@ -58,9 +59,11 @@ const ETIQUETAS_MODO = [
   ['detalle', 'Detalle'],
   ['avanzada', 'Avanzada'],
   ['per36', 'Per-36'],
+  ['grafico', 'Gráfico'],
 ];
 
-const ORDEN_DEFECTO = { basica: 'ptPorPartido', detalle: 'tpPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
+const ORDEN_DEFECTO = {
+  grafico: 'ptPorPartido', basica: 'ptPorPartido', detalle: 'tpPorPartido', avanzada: 'vaPorPartido', per36: 'per36.va' };
 
 const RANGOS = [
   ['todas', 'Todas las edades', null, null],
@@ -193,6 +196,9 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
         ))}
       </div>
 
+      {modo === 'grafico' ? (
+        <DispersionJugadores jugadores={filas} onVerJugador={onVerJugador} />
+      ) : (
       <div className="tabla-scroll">
         <table>
           <thead>
@@ -227,8 +233,9 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
           </tbody>
         </table>
       </div>
+      )}
 
-      {filas.length > limite && (
+      {modo !== 'grafico' && filas.length > limite && (
         <button className="boton-mas" onClick={() => setLimite(l => l + 50)}>
           Mostrar más ({filas.length - limite} restantes)
         </button>
