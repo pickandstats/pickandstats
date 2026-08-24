@@ -89,6 +89,7 @@ export default function App() {
   const [partidoSel, setPartidoSel] = useState(null);
   const [estadoDatos, setEstadoDatos] = useState(null);
   const [cargando, setCargando] = useState(false);
+  const [sinDatos, setSinDatos] = useState(false);
 
   // temporadas e histórico, por competición
   useEffect(() => {
@@ -110,18 +111,28 @@ export default function App() {
   useEffect(() => {
     if (!temporada) return;
     setCargando(true);
+    setSinDatos(false);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
+    const cargar = url => fetch(url).then(r => {
+      if (!r.ok) throw new Error(`${r.status} ${url}`);
+      return r.json();
+    });
     Promise.all([
-      fetch(`${base}/equipos.json`).then(r => r.json()),
-      fetch(`${base}/jugadores.json`).then(r => r.json()),
-      fetch(`${base}/carreras.json`).then(r => r.json()),
-      fetch(`${base}/partidos.json`).then(r => r.json())
+      cargar(`${base}/equipos.json`),
+      cargar(`${base}/jugadores.json`),
+      cargar(`${base}/carreras.json`),
+      cargar(`${base}/partidos.json`)
     ])
       .then(([eq, jug, car, par]) => {
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
-      .catch(err => { console.error('Error cargando datos:', err); setCargando(false); });
+      .catch(err => {
+        console.error('Error cargando datos:', err);
+        setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
+        setSinDatos(true); setCargando(false);
+      });
   }, [competicion, temporada]);
 
   const location = useLocation();
@@ -312,6 +323,25 @@ export default function App() {
         <Route path="*" element={<>
       {cargando ? (
         <p className="cargando">Cargando datos…</p>
+      ) : sinDatos && vista === 'calendario' ? (
+        <Calendario competicion={competicion} competicionNombre={compActual.nombre}
+          onVerEquipoNombre={nombre => {
+            const e = equipos.find(x => x.nombre === nombre);
+            if (e) verEquipo(e);
+          }} />
+      ) : sinDatos ? (
+        <div className="sin-datos">
+          <h2>Temporada {etiquetaTemporada(temporada)} en preparación</h2>
+          <p>
+            Todavía no hay datos disponibles para esta temporada. En cuanto
+            comience la competición y se disputen las primeras jornadas,
+            aquí aparecerán clasificaciones, estadísticas y resultados.
+          </p>
+          <p className="sin-datos-sug">
+            Mientras tanto, puedes consultar temporadas anteriores con el
+            selector de arriba, o revisar el calendario completo.
+          </p>
+        </div>
       ) : partidoSel ? (
         <Partido partido={partidoSel} equipos={equipos}
           onVolver={() => setPartidoSel(null)} onVerEquipo={verEquipo} onVerJugador={verJugador} />
