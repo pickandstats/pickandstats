@@ -9,8 +9,8 @@ import Equipo from './Equipo';
 import Leyenda from './Leyenda';
 import Jugador from './Jugador';
 import Partido from './Partido';
-import Resultados from './Resultados';
-import Calendario from './Calendario';
+import Clasificacion from './Clasificacion';
+import Partidos from './Partidos';
 import Buscador from './Buscador';
 
 // Competiciones disponibles (con datos). Al bajar Primera/Segunda, se añaden aquí.
@@ -291,8 +291,8 @@ export default function App() {
 
       <div className="pestanas">
         {pestana('inicio', 'Inicio')}
-        {pestana('resultados', 'Resultados')}
-        {pestana('calendario', 'Calendario')}
+        {pestana('clasificacion', 'Clasificacion')}
+        {pestana('partidos', 'Partidos')}
         {pestana('equipos', 'Equipos')}
         {pestana('jugadores', 'Jugadores')}
         {pestana('leyenda', 'Leyenda')}
@@ -323,12 +323,12 @@ export default function App() {
         <Route path="*" element={<>
       {cargando ? (
         <p className="cargando">Cargando datos…</p>
-      ) : sinDatos && vista === 'calendario' ? (
-        <Calendario competicion={competicion} competicionNombre={compActual.nombre}
-          onVerEquipoNombre={nombre => {
-            const e = equipos.find(x => x.nombre === nombre);
-            if (e) verEquipo(e);
-          }} />
+      ) : sinDatos && vista === 'partidos' ? (
+        <Partidos partidos={partidos} competicion={competicion} temporada={temporada}
+          competicionNombre={compActual.nombre}
+          onVerEquipo={verEquipo} onVerPartido={verPartido} />
+      ) : sinDatos && vista === 'leyenda' ? (
+        <Leyenda />
       ) : sinDatos ? (
         <div className="sin-datos">
           <h2>Temporada {etiquetaTemporada(temporada)} en preparación</h2>
@@ -358,16 +358,14 @@ export default function App() {
         <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos}
           temporada={temporada} competicionNombre={compActual.nombre}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
-      ) : vista === 'resultados' ? (
-        <Resultados partidos={partidos} equipos={equipos} grupos={grupos} temporada={temporada}
+      ) : vista === 'clasificacion' ? (
+        <Clasificacion partidos={partidos} equipos={equipos} grupos={grupos} temporada={temporada}
           competicion={competicion}
           onVerEquipo={verEquipo} onVerPartido={verPartido} />
-      ) : vista === 'calendario' ? (
-        <Calendario competicion={competicion} competicionNombre={compActual.nombre}
-          onVerEquipoNombre={nombre => {
-            const e = equipos.find(x => x.nombre === nombre);
-            if (e) verEquipo(e);
-          }} />
+      ) : vista === 'partidos' ? (
+        <Partidos partidos={partidos} competicion={competicion} temporada={temporada}
+          competicionNombre={compActual.nombre}
+          onVerEquipo={verEquipo} onVerPartido={verPartido} />
       ) : vista === 'equipos' ? (
         <Equipos equipos={equipos} grupos={grupos} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (
