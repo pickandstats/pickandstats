@@ -1020,16 +1020,22 @@ th.col-a { color: #ffd9c4; }
 }
 
 /* Datos de club en la cabecera de la ficha de equipo */
-.club-info {
+.club-ficha {
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 20px;
+  margin-top: 16px;
+  padding: 22px 24px;
+  background: var(--panel);
+  border: 1px solid var(--linea);
+  border-top: 3px solid var(--acento);
+  border-radius: var(--radio);
+  max-width: 520px;
 }
-.club-campo {
+.club-dato {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 3px;
 }
 .club-etiqueta {
   font-size: 12px;

@@ -122,24 +122,6 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             {' '}Fuera {equipo.fuera.pg}-{equipo.fuera.pj - equipo.fuera.pg}</p>
         </div>
         <div className="datos-bloque">
-          {club && (club.pabellon || club.web) && (
-            <div className="club-info">
-              {club.pabellon && (
-                <div className="club-campo">
-                  <span className="club-etiqueta">Pabellón</span>
-                  <span className="club-valor">{club.pabellon}</span>
-                  {club.direccionPabellon && (
-                    <span className="club-direccion">{club.direccionPabellon}</span>
-                  )}
-                </div>
-              )}
-              {club.web && (
-                <a className="club-web" href={club.web} target="_blank" rel="noopener noreferrer">
-                  Web oficial ↗
-                </a>
-              )}
-            </div>
-          )}
         </div>
       </div>
 
@@ -150,9 +132,43 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           onClick={() => setVistaFicha('analisis')}>Análisis</button>
         <button className={`boton-grupo ${vistaFicha === 'dossier' ? 'activo' : ''}`}
           onClick={() => setVistaFicha('dossier')}>Preparar partido</button>
+        <button className={`boton-grupo ${vistaFicha === 'informacion' ? 'activo' : ''}`}
+          onClick={() => setVistaFicha('informacion')}>Información</button>
       </div>
 
-      {vistaFicha === 'analisis' ? (
+      {vistaFicha === 'informacion' ? (
+        <div className="club-ficha">
+          {!club ? (
+            <p className="aviso-dato">No hay datos de club disponibles para este equipo.</p>
+          ) : (
+            <>
+              {club.pabellon && (
+                <div className="club-dato">
+                  <span className="club-etiqueta">Dónde juega</span>
+                  <span className="club-valor">{club.pabellon}</span>
+                  {club.direccionPabellon && (
+                    <span className="club-direccion">{club.direccionPabellon}</span>
+                  )}
+                </div>
+              )}
+              {club.horarioLocal && (
+                <div className="club-dato">
+                  <span className="club-etiqueta">Cuándo juega en casa</span>
+                  <span className="club-valor">{club.horarioLocal}</span>
+                </div>
+              )}
+              {club.web && (
+                <div className="club-dato">
+                  <span className="club-etiqueta">Web oficial</span>
+                  <a className="club-web" href={club.web} target="_blank" rel="noopener noreferrer">
+                    {club.web.replace(/^https?:\/\//, '').replace(/\/$/, '')} ↗
+                  </a>
+                </div>
+              )}
+            </>
+          )}
+        </div>
+      ) : vistaFicha === 'analisis' ? (
         <>
         {/* Análisis movido */}
         <div className="datos-bloque" style={{ marginTop: 12 }}>
