@@ -68,7 +68,19 @@ function procesar(comp) {
 
   const dir = path.join('data', 'processed', comp, TEMPORADA);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'calendario.json'), JSON.stringify(datos, null, 1));
+  const ruta = path.join(dir, 'calendario.json');
+  // Idempotencia: solo reescribir si los partidos cambiaron (ignorando 'generado',
+  // que si no provocaria un commit cada semana aunque no cambie nada real).
+  let escribir = true;
+  if (fs.existsSync(ruta)) {
+    try {
+      const previo = JSON.parse(fs.readFileSync(ruta, 'utf8'));
+      const igual = JSON.stringify(previo.partidos) === JSON.stringify(datos.partidos)
+        && previo.jornadas === datos.jornadas;
+      if (igual) escribir = false;
+    } catch {}
+  }
+  if (escribir) fs.writeFileSync(ruta, JSON.stringify(datos, null, 1));
 
   const sinFecha = partidos.filter(p => !p.fecha).length;
   const jugados = partidos.filter(p => p.resultado).length;

@@ -2,10 +2,21 @@
  "competicion": "primerafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-08-05",
+ "generado": "2026-08-25",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 34,
  "partidos": [
+  {
+   "id": "2535727",
+   "grupo": "UNICO",
+   "jornada": 1,
+   "fecha": "2026-09-25",
+   "hora": "20:00",
+   "local": "PALMER BASKET MALLORCA PALMA",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1009713",
+   "visitanteId": "1009072"
+  },
   {
    "id": "2535725",
    "grupo": "UNICO",
@@ -68,7 +79,7 @@
    "fecha": "2026-09-26",
    "hora": "19:00",
    "local": "GRUPO ALEGA CANTABRIA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009584",
    "visitanteId": "1009929"
   },
@@ -95,17 +106,6 @@
    "visitanteId": "1010324"
   },
   {
-   "id": "2535727",
-   "grupo": "UNICO",
-   "jornada": 1,
-   "fecha": "2026-09-27",
-   "hora": "18:00",
-   "local": "PALMER BASKET MALLORCA PALMA",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1009713",
-   "visitanteId": "1009072"
-  },
-  {
    "id": "2535736",
    "grupo": "UNICO",
    "jornada": 2,
@@ -115,6 +115,17 @@
    "visitante": "BUENO ARENAS ALBACETE BASKET",
    "localId": "1008400",
    "visitanteId": "1009716"
+  },
+  {
+   "id": "2535741",
+   "grupo": "UNICO",
+   "jornada": 2,
+   "fecha": "2026-10-02",
+   "hora": "20:30",
+   "local": "INSOLAC CAJA 87",
+   "visitante": "PALMER BASKET MALLORCA PALMA",
+   "localId": "1010324",
+   "visitanteId": "1009713"
   },
   {
    "id": "2535740",
@@ -128,11 +139,33 @@
    "visitanteId": "1009110"
   },
   {
+   "id": "2535739",
+   "grupo": "UNICO",
+   "jornada": 2,
+   "fecha": "2026-10-03",
+   "hora": "19:00",
+   "local": "ALIMERKA OVIEDO BALONCESTO",
+   "visitante": "COVIRAN GRANADA",
+   "localId": "1009837",
+   "visitanteId": "1009109"
+  },
+  {
+   "id": "2535735",
+   "grupo": "UNICO",
+   "jornada": 2,
+   "fecha": "2026-10-03",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "HLA ALICANTE",
+   "localId": "1009929",
+   "visitanteId": "1008687"
+  },
+  {
    "id": "2535742",
    "grupo": "UNICO",
    "jornada": 2,
    "fecha": "2026-10-03",
-   "hora": "17:30",
+   "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "MOVISTAR ESTUDIANTES",
    "localId": "1008900",
@@ -150,28 +183,6 @@
    "visitanteId": "1008797"
   },
   {
-   "id": "2535735",
-   "grupo": "UNICO",
-   "jornada": 2,
-   "fecha": "2026-10-03",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "HLA ALICANTE",
-   "localId": "1009929",
-   "visitanteId": "1008687"
-  },
-  {
-   "id": "2535739",
-   "grupo": "UNICO",
-   "jornada": 2,
-   "fecha": "2026-10-04",
-   "hora": "17:00",
-   "local": "ALIMERKA OVIEDO BALONCESTO",
-   "visitante": "COVIRAN GRANADA",
-   "localId": "1009837",
-   "visitanteId": "1009109"
-  },
-  {
    "id": "2535734",
    "grupo": "UNICO",
    "jornada": 2,
@@ -181,17 +192,6 @@
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1009072",
    "visitanteId": "1009584"
-  },
-  {
-   "id": "2535741",
-   "grupo": "UNICO",
-   "jornada": 2,
-   "fecha": "2026-10-04",
-   "hora": "12:30",
-   "local": "INSOLAC CAJA 87",
-   "visitante": "PALMER BASKET MALLORCA PALMA",
-   "localId": "1010324",
-   "visitanteId": "1009713"
   },
   {
    "id": "2535737",
@@ -211,9 +211,20 @@
    "fecha": "2026-10-09",
    "hora": "21:00",
    "local": "PALENCIA BALONCESTO",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1010207",
    "visitanteId": "1009929"
+  },
+  {
+   "id": "2535749",
+   "grupo": "UNICO",
+   "jornada": 3,
+   "fecha": "2026-10-10",
+   "hora": "20:00",
+   "local": "ALIMERKA OVIEDO BALONCESTO",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1009837",
+   "visitanteId": "1009072"
   },
   {
    "id": "2535743",
@@ -260,17 +271,6 @@
    "visitanteId": "1008797"
   },
   {
-   "id": "2535749",
-   "grupo": "UNICO",
-   "jornada": 3,
-   "fecha": "2026-10-11",
-   "hora": "17:00",
-   "local": "ALIMERKA OVIEDO BALONCESTO",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1009837",
-   "visitanteId": "1009072"
-  },
-  {
    "id": "2535751",
    "grupo": "UNICO",
    "jornada": 3,
@@ -297,7 +297,7 @@
    "grupo": "UNICO",
    "jornada": 3,
    "fecha": "2026-10-11",
-   "hora": "18:00",
+   "hora": "12:00",
    "local": "PALMER BASKET MALLORCA PALMA",
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1009713",
@@ -315,11 +315,22 @@
    "visitanteId": "1009837"
   },
   {
+   "id": "2535752",
+   "grupo": "UNICO",
+   "jornada": 4,
+   "fecha": "2026-10-17",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1009929",
+   "visitanteId": "1009072"
+  },
+  {
    "id": "2535760",
    "grupo": "UNICO",
    "jornada": 4,
    "fecha": "2026-10-17",
-   "hora": "17:30",
+   "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "COVIRAN GRANADA",
    "localId": "1008900",
@@ -370,17 +381,6 @@
    "visitanteId": "1010494"
   },
   {
-   "id": "2535752",
-   "grupo": "UNICO",
-   "jornada": 4,
-   "fecha": "2026-10-17",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1009929",
-   "visitanteId": "1009072"
-  },
-  {
    "id": "2535755",
    "grupo": "UNICO",
    "jornada": 4,
@@ -425,24 +425,13 @@
    "visitanteId": "1009584"
   },
   {
-   "id": "2535765",
-   "grupo": "UNICO",
-   "jornada": 5,
-   "fecha": "2026-10-24",
-   "hora": "18:30",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "GRAN CANARIA",
-   "localId": "1009110",
-   "visitanteId": "1008797"
-  },
-  {
    "id": "2535766",
    "grupo": "UNICO",
    "jornada": 5,
    "fecha": "2026-10-24",
    "hora": "18:30",
    "local": "FLEXICAR FUENLABRADA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1010494",
    "visitanteId": "1009929"
   },
@@ -467,6 +456,17 @@
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1009837",
    "visitanteId": "1008900"
+  },
+  {
+   "id": "2535765",
+   "grupo": "UNICO",
+   "jornada": 5,
+   "fecha": "2026-10-25",
+   "hora": "12:30",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1009110",
+   "visitanteId": "1008797"
   },
   {
    "id": "2535763",
@@ -495,7 +495,7 @@
    "grupo": "UNICO",
    "jornada": 5,
    "fecha": "2026-10-25",
-   "hora": "18:00",
+   "hora": "12:00",
    "local": "PALMER BASKET MALLORCA PALMA",
    "visitante": "GRUPO URETA TIZONA BURGOS",
    "localId": "1009713",
@@ -513,11 +513,22 @@
    "visitanteId": "1008687"
   },
   {
+   "id": "2535770",
+   "grupo": "UNICO",
+   "jornada": 6,
+   "fecha": "2026-10-31",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "INSOLAC CAJA 87",
+   "localId": "1009929",
+   "visitanteId": "1010324"
+  },
+  {
    "id": "2535778",
    "grupo": "UNICO",
    "jornada": 6,
    "fecha": "2026-10-31",
-   "hora": "17:30",
+   "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "BUENO ARENAS ALBACETE BASKET",
    "localId": "1008900",
@@ -555,17 +566,6 @@
    "visitante": "PALENCIA BALONCESTO",
    "localId": "1009584",
    "visitanteId": "1010207"
-  },
-  {
-   "id": "2535770",
-   "grupo": "UNICO",
-   "jornada": 6,
-   "fecha": "2026-10-31",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "INSOLAC CAJA 87",
-   "localId": "1009929",
-   "visitanteId": "1010324"
   },
   {
    "id": "2535774",
@@ -618,7 +618,7 @@
    "fecha": "2026-11-07",
    "hora": "19:00",
    "local": "BUENO ARENAS ALBACETE BASKET",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009716",
    "visitanteId": "1009929"
   },
@@ -711,26 +711,26 @@
    "visitanteId": "1008797"
   },
   {
+   "id": "2535789",
+   "grupo": "UNICO",
+   "jornada": 8,
+   "fecha": "2026-11-14",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "ALIMERKA OVIEDO BALONCESTO",
+   "localId": "1009929",
+   "visitanteId": "1009837"
+  },
+  {
    "id": "2535796",
    "grupo": "UNICO",
    "jornada": 8,
    "fecha": "2026-11-14",
-   "hora": "17:30",
+   "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "PALENCIA BALONCESTO",
    "localId": "1008900",
    "visitanteId": "1010207"
-  },
-  {
-   "id": "2535792",
-   "grupo": "UNICO",
-   "jornada": 8,
-   "fecha": "2026-11-14",
-   "hora": "18:30",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "FLEXICAR FUENLABRADA",
-   "localId": "1009110",
-   "visitanteId": "1010494"
   },
   {
    "id": "2535795",
@@ -755,17 +755,6 @@
    "visitanteId": "1010493"
   },
   {
-   "id": "2535789",
-   "grupo": "UNICO",
-   "jornada": 8,
-   "fecha": "2026-11-14",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "ALIMERKA OVIEDO BALONCESTO",
-   "localId": "1009929",
-   "visitanteId": "1009837"
-  },
-  {
    "id": "2535788",
    "grupo": "UNICO",
    "jornada": 8,
@@ -775,6 +764,17 @@
    "visitante": "FIBWI MALLORCA BASQUET PALMA",
    "localId": "1008687",
    "visitanteId": "1009072"
+  },
+  {
+   "id": "2535792",
+   "grupo": "UNICO",
+   "jornada": 8,
+   "fecha": "2026-11-15",
+   "hora": "12:30",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "FLEXICAR FUENLABRADA",
+   "localId": "1009110",
+   "visitanteId": "1010494"
   },
   {
    "id": "2535794",
@@ -838,7 +838,7 @@
    "fecha": "2026-11-21",
    "hora": "20:00",
    "local": "GRAN CANARIA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1008797",
    "visitanteId": "1009929"
   },
@@ -909,6 +909,17 @@
    "visitanteId": "1009584"
   },
   {
+   "id": "2535808",
+   "grupo": "UNICO",
+   "jornada": 10,
+   "fecha": "2026-12-05",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "CAJASOL COTO CÓRDOBA",
+   "localId": "1009929",
+   "visitanteId": "1009110"
+  },
+  {
    "id": "2535814",
    "grupo": "UNICO",
    "jornada": 10,
@@ -940,17 +951,6 @@
    "visitante": "PALMER BASKET MALLORCA PALMA",
    "localId": "1009109",
    "visitanteId": "1009713"
-  },
-  {
-   "id": "2535808",
-   "grupo": "UNICO",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "CAJASOL COTO CÓRDOBA",
-   "localId": "1009929",
-   "visitanteId": "1009110"
   },
   {
    "id": "2535806",
@@ -1008,6 +1008,17 @@
    "visitanteId": "1008378"
   },
   {
+   "id": "2535816",
+   "grupo": "UNICO",
+   "jornada": 11,
+   "fecha": "2026-12-12",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "CLUB OURENSE BALONCESTO",
+   "localId": "1009929",
+   "visitanteId": "1009095"
+  },
+  {
    "id": "2535815",
    "grupo": "UNICO",
    "jornada": 11,
@@ -1017,17 +1028,6 @@
    "visitante": "COVIRAN GRANADA",
    "localId": "1009716",
    "visitanteId": "1009109"
-  },
-  {
-   "id": "2535818",
-   "grupo": "UNICO",
-   "jornada": 11,
-   "fecha": "2026-12-12",
-   "hora": "18:30",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "GRUPO URETA TIZONA BURGOS",
-   "localId": "1009110",
-   "visitanteId": "1008400"
   },
   {
    "id": "2535819",
@@ -1063,15 +1063,15 @@
    "visitanteId": "1008900"
   },
   {
-   "id": "2535816",
+   "id": "2535818",
    "grupo": "UNICO",
    "jornada": 11,
-   "fecha": "2026-12-12",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "CLUB OURENSE BALONCESTO",
-   "localId": "1009929",
-   "visitanteId": "1009095"
+   "fecha": "2026-12-13",
+   "hora": "12:30",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "GRUPO URETA TIZONA BURGOS",
+   "localId": "1009110",
+   "visitanteId": "1008400"
   },
   {
    "id": "2535823",
@@ -1124,7 +1124,7 @@
    "fecha": "2026-12-19",
    "hora": "18:00",
    "local": "COVIRAN GRANADA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009109",
    "visitanteId": "1009929"
   },
@@ -1195,6 +1195,17 @@
    "visitanteId": "1008900"
   },
   {
+   "id": "2535834",
+   "grupo": "UNICO",
+   "jornada": 13,
+   "fecha": "2026-12-27",
+   "hora": "00:00",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "PALMER BASKET MALLORCA PALMA",
+   "localId": "1009929",
+   "visitanteId": "1009713"
+  },
+  {
    "id": "2535833",
    "grupo": "UNICO",
    "jornada": 13,
@@ -1210,7 +1221,7 @@
    "grupo": "UNICO",
    "jornada": 13,
    "fecha": "2026-12-27",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1008900",
@@ -1232,22 +1243,11 @@
    "grupo": "UNICO",
    "jornada": 13,
    "fecha": "2026-12-27",
-   "hora": "00:00",
+   "hora": "18:00",
    "local": "GRUPO ALEGA CANTABRIA",
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1009584",
    "visitanteId": "1009837"
-  },
-  {
-   "id": "2535834",
-   "grupo": "UNICO",
-   "jornada": 13,
-   "fecha": "2026-12-27",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "PALMER BASKET MALLORCA PALMA",
-   "localId": "1009929",
-   "visitanteId": "1009713"
   },
   {
    "id": "2535840",
@@ -1305,11 +1305,22 @@
    "visitanteId": "1009716"
   },
   {
-   "id": "2535847",
+   "id": "2535844",
    "grupo": "UNICO",
    "jornada": 14,
    "fecha": "2027-01-03",
    "hora": "00:00",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "MOVISTAR ESTUDIANTES",
+   "localId": "1009929",
+   "visitanteId": "1010493"
+  },
+  {
+   "id": "2535847",
+   "grupo": "UNICO",
+   "jornada": 14,
+   "fecha": "2027-01-03",
+   "hora": "12:30",
    "local": "CAJASOL COTO CÓRDOBA",
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1009110",
@@ -1360,17 +1371,6 @@
    "visitanteId": "1008378"
   },
   {
-   "id": "2535844",
-   "grupo": "UNICO",
-   "jornada": 14,
-   "fecha": "2027-01-03",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "MOVISTAR ESTUDIANTES",
-   "localId": "1009929",
-   "visitanteId": "1010493"
-  },
-  {
    "id": "2535842",
    "grupo": "UNICO",
    "jornada": 14,
@@ -1386,7 +1386,7 @@
    "grupo": "UNICO",
    "jornada": 14,
    "fecha": "2027-01-03",
-   "hora": "18:00",
+   "hora": "12:00",
    "local": "PALMER BASKET MALLORCA PALMA",
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1009713",
@@ -1465,7 +1465,7 @@
    "fecha": "2027-01-10",
    "hora": "18:00",
    "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1008378",
    "visitanteId": "1009929"
   },
@@ -1503,26 +1503,15 @@
    "visitanteId": "1010493"
   },
   {
-   "id": "2535863",
+   "id": "2535862",
    "grupo": "UNICO",
    "jornada": 16,
    "fecha": "2027-01-12",
    "hora": "00:00",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "GRUPO ALEGA CANTABRIA",
-   "localId": "1009110",
-   "visitanteId": "1009584"
-  },
-  {
-   "id": "2535865",
-   "grupo": "UNICO",
-   "jornada": 16,
-   "fecha": "2027-01-12",
-   "hora": "00:00",
-   "local": "CLUB OURENSE BALONCESTO",
-   "visitante": "PALMER BASKET MALLORCA PALMA",
-   "localId": "1009095",
-   "visitanteId": "1009713"
+   "local": "BÀSQUET MENORCA",
+   "visitante": "GRUPO URETA TIZONA BURGOS",
+   "localId": "1009929",
+   "visitanteId": "1008400"
   },
   {
    "id": "2535861",
@@ -1547,17 +1536,6 @@
    "visitanteId": "1008378"
   },
   {
-   "id": "2535862",
-   "grupo": "UNICO",
-   "jornada": 16,
-   "fecha": "2027-01-12",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "GRUPO URETA TIZONA BURGOS",
-   "localId": "1009929",
-   "visitanteId": "1008400"
-  },
-  {
    "id": "2535860",
    "grupo": "UNICO",
    "jornada": 16,
@@ -1578,6 +1556,28 @@
    "visitante": "PALENCIA BALONCESTO",
    "localId": "1010324",
    "visitanteId": "1010207"
+  },
+  {
+   "id": "2535863",
+   "grupo": "UNICO",
+   "jornada": 16,
+   "fecha": "2027-01-13",
+   "hora": "20:00",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "GRUPO ALEGA CANTABRIA",
+   "localId": "1009110",
+   "visitanteId": "1009584"
+  },
+  {
+   "id": "2535865",
+   "grupo": "UNICO",
+   "jornada": 16,
+   "fecha": "2027-01-13",
+   "hora": "20:45",
+   "local": "CLUB OURENSE BALONCESTO",
+   "visitante": "PALMER BASKET MALLORCA PALMA",
+   "localId": "1009095",
+   "visitanteId": "1009713"
   },
   {
    "id": "2535867",
@@ -1608,7 +1608,7 @@
    "fecha": "2027-01-17",
    "hora": "00:00",
    "local": "CAJA RURAL CB ZAMORA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1008900",
    "visitanteId": "1009929"
   },
@@ -1617,7 +1617,7 @@
    "grupo": "UNICO",
    "jornada": 17,
    "fecha": "2027-01-17",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "COVIRAN GRANADA",
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1009109",
@@ -1628,7 +1628,7 @@
    "grupo": "UNICO",
    "jornada": 17,
    "fecha": "2027-01-17",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "GRUPO ALEGA CANTABRIA",
    "visitante": "HLA ALICANTE",
    "localId": "1009584",
@@ -1694,7 +1694,7 @@
    "grupo": "UNICO",
    "jornada": 18,
    "fecha": "2027-01-30",
-   "hora": "17:30",
+   "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1008900",
@@ -1773,7 +1773,7 @@
    "fecha": "2027-01-31",
    "hora": "12:30",
    "local": "INSOLAC CAJA 87",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1010324",
    "visitanteId": "1009929"
   },
@@ -1798,6 +1798,17 @@
    "visitante": "CAJASOL COTO CÓRDOBA",
    "localId": "1008400",
    "visitanteId": "1009110"
+  },
+  {
+   "id": "2535889",
+   "grupo": "UNICO",
+   "jornada": 19,
+   "fecha": "2027-02-06",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "PALENCIA BALONCESTO",
+   "localId": "1009929",
+   "visitanteId": "1010207"
   },
   {
    "id": "2535887",
@@ -1831,17 +1842,6 @@
    "visitante": "MOVISTAR ESTUDIANTES",
    "localId": "1008797",
    "visitanteId": "1010493"
-  },
-  {
-   "id": "2535889",
-   "grupo": "UNICO",
-   "jornada": 19,
-   "fecha": "2027-02-06",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "PALENCIA BALONCESTO",
-   "localId": "1009929",
-   "visitanteId": "1010207"
   },
   {
    "id": "2535888",
@@ -1888,28 +1888,6 @@
    "visitanteId": "1009109"
   },
   {
-   "id": "2535904",
-   "grupo": "UNICO",
-   "jornada": 20,
-   "fecha": "2027-02-09",
-   "hora": "00:00",
-   "local": "CAJA RURAL CB ZAMORA",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1008900",
-   "visitanteId": "1009072"
-  },
-  {
-   "id": "2535898",
-   "grupo": "UNICO",
-   "jornada": 20,
-   "fecha": "2027-02-09",
-   "hora": "00:00",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "BUENO ARENAS ALBACETE BASKET",
-   "localId": "1009110",
-   "visitanteId": "1009716"
-  },
-  {
    "id": "2535899",
    "grupo": "UNICO",
    "jornada": 20,
@@ -1919,17 +1897,6 @@
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1009109",
    "visitanteId": "1009837"
-  },
-  {
-   "id": "2535903",
-   "grupo": "UNICO",
-   "jornada": 20,
-   "fecha": "2027-02-09",
-   "hora": "00:00",
-   "local": "GRUPO ALEGA CANTABRIA",
-   "visitante": "CLUB OURENSE BALONCESTO",
-   "localId": "1009584",
-   "visitanteId": "1009095"
   },
   {
    "id": "2535897",
@@ -1960,7 +1927,7 @@
    "fecha": "2027-02-09",
    "hora": "00:00",
    "local": "MOVISTAR ESTUDIANTES",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1010493",
    "visitanteId": "1009929"
   },
@@ -1987,6 +1954,39 @@
    "visitanteId": "1010494"
   },
   {
+   "id": "2535904",
+   "grupo": "UNICO",
+   "jornada": 20,
+   "fecha": "2027-02-10",
+   "hora": "20:30",
+   "local": "CAJA RURAL CB ZAMORA",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1008900",
+   "visitanteId": "1009072"
+  },
+  {
+   "id": "2535898",
+   "grupo": "UNICO",
+   "jornada": 20,
+   "fecha": "2027-02-10",
+   "hora": "20:00",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "BUENO ARENAS ALBACETE BASKET",
+   "localId": "1009110",
+   "visitanteId": "1009716"
+  },
+  {
+   "id": "2535903",
+   "grupo": "UNICO",
+   "jornada": 20,
+   "fecha": "2027-02-10",
+   "hora": "20:30",
+   "local": "GRUPO ALEGA CANTABRIA",
+   "visitante": "CLUB OURENSE BALONCESTO",
+   "localId": "1009584",
+   "visitanteId": "1009095"
+  },
+  {
    "id": "2535911",
    "grupo": "UNICO",
    "jornada": 21,
@@ -1996,6 +1996,17 @@
    "visitante": "PALENCIA BALONCESTO",
    "localId": "1009837",
    "visitanteId": "1010207"
+  },
+  {
+   "id": "2535907",
+   "grupo": "UNICO",
+   "jornada": 21,
+   "fecha": "2027-02-14",
+   "hora": "00:00",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
+   "localId": "1009929",
+   "visitanteId": "1008378"
   },
   {
    "id": "2535905",
@@ -2013,7 +2024,7 @@
    "grupo": "UNICO",
    "jornada": 21,
    "fecha": "2027-02-14",
-   "hora": "00:00",
+   "hora": "18:30",
    "local": "CAJASOL COTO CÓRDOBA",
    "visitante": "PALMER BASKET MALLORCA PALMA",
    "localId": "1009110",
@@ -2024,7 +2035,7 @@
    "grupo": "UNICO",
    "jornada": 21,
    "fecha": "2027-02-14",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "CLUB OURENSE BALONCESTO",
    "visitante": "FLEXICAR FUENLABRADA",
    "localId": "1009095",
@@ -2035,7 +2046,7 @@
    "grupo": "UNICO",
    "jornada": 21,
    "fecha": "2027-02-14",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "COVIRAN GRANADA",
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1009109",
@@ -2064,17 +2075,6 @@
    "visitanteId": "1008900"
   },
   {
-   "id": "2535907",
-   "grupo": "UNICO",
-   "jornada": 21,
-   "fecha": "2027-02-14",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
-   "localId": "1009929",
-   "visitanteId": "1008378"
-  },
-  {
    "id": "2535913",
    "grupo": "UNICO",
    "jornada": 21,
@@ -2092,7 +2092,7 @@
    "fecha": "2027-02-19",
    "hora": "20:45",
    "local": "GRUPO URETA TIZONA BURGOS",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1008400",
    "visitanteId": "1009929"
   },
@@ -2178,7 +2178,7 @@
    "grupo": "UNICO",
    "jornada": 22,
    "fecha": "2027-02-21",
-   "hora": "18:00",
+   "hora": "12:00",
    "local": "PALMER BASKET MALLORCA PALMA",
    "visitante": "INSOLAC CAJA 87",
    "localId": "1009713",
@@ -2194,6 +2194,17 @@
    "visitante": "PALMER BASKET MALLORCA PALMA",
    "localId": "1008400",
    "visitanteId": "1009713"
+  },
+  {
+   "id": "2535923",
+   "grupo": "UNICO",
+   "jornada": 23,
+   "fecha": "2027-03-06",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1009929",
+   "visitanteId": "1008797"
   },
   {
    "id": "2535925",
@@ -2218,28 +2229,6 @@
    "visitanteId": "1008687"
   },
   {
-   "id": "2535930",
-   "grupo": "UNICO",
-   "jornada": 23,
-   "fecha": "2027-03-06",
-   "hora": "19:00",
-   "local": "GRUPO ALEGA CANTABRIA",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1009584",
-   "visitanteId": "1009072"
-  },
-  {
-   "id": "2535923",
-   "grupo": "UNICO",
-   "jornada": 23,
-   "fecha": "2027-03-06",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "GRAN CANARIA",
-   "localId": "1009929",
-   "visitanteId": "1008797"
-  },
-  {
    "id": "2535929",
    "grupo": "UNICO",
    "jornada": 23,
@@ -2249,6 +2238,17 @@
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1009837",
    "visitanteId": "1009095"
+  },
+  {
+   "id": "2535930",
+   "grupo": "UNICO",
+   "jornada": 23,
+   "fecha": "2027-03-07",
+   "hora": "12:00",
+   "local": "GRUPO ALEGA CANTABRIA",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1009584",
+   "visitanteId": "1009072"
   },
   {
    "id": "2535931",
@@ -2290,7 +2290,7 @@
    "fecha": "2027-03-09",
    "hora": "00:00",
    "local": "ALIMERKA OVIEDO BALONCESTO",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009837",
    "visitanteId": "1009929"
   },
@@ -2304,28 +2304,6 @@
    "visitante": "PALMER BASKET MALLORCA PALMA",
    "localId": "1009716",
    "visitanteId": "1009713"
-  },
-  {
-   "id": "2535940",
-   "grupo": "UNICO",
-   "jornada": 24,
-   "fecha": "2027-03-09",
-   "hora": "00:00",
-   "local": "CAJA RURAL CB ZAMORA",
-   "visitante": "INSOLAC CAJA 87",
-   "localId": "1008900",
-   "visitanteId": "1010324"
-  },
-  {
-   "id": "2535936",
-   "grupo": "UNICO",
-   "jornada": 24,
-   "fecha": "2027-03-09",
-   "hora": "00:00",
-   "local": "CLUB OURENSE BALONCESTO",
-   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
-   "localId": "1009095",
-   "visitanteId": "1008378"
   },
   {
    "id": "2535934",
@@ -2383,11 +2361,44 @@
    "visitanteId": "1009584"
   },
   {
-   "id": "2535944",
+   "id": "2535940",
+   "grupo": "UNICO",
+   "jornada": 24,
+   "fecha": "2027-03-10",
+   "hora": "20:30",
+   "local": "CAJA RURAL CB ZAMORA",
+   "visitante": "INSOLAC CAJA 87",
+   "localId": "1008900",
+   "visitanteId": "1010324"
+  },
+  {
+   "id": "2535936",
+   "grupo": "UNICO",
+   "jornada": 24,
+   "fecha": "2027-03-10",
+   "hora": "20:45",
+   "local": "CLUB OURENSE BALONCESTO",
+   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
+   "localId": "1009095",
+   "visitanteId": "1008378"
+  },
+  {
+   "id": "2535941",
    "grupo": "UNICO",
    "jornada": 25,
    "fecha": "2027-03-14",
    "hora": "00:00",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "GRUPO ALEGA CANTABRIA",
+   "localId": "1009929",
+   "visitanteId": "1009584"
+  },
+  {
+   "id": "2535944",
+   "grupo": "UNICO",
+   "jornada": 25,
+   "fecha": "2027-03-14",
+   "hora": "18:30",
    "local": "CAJASOL COTO CÓRDOBA",
    "visitante": "FIBWI MALLORCA BASQUET PALMA",
    "localId": "1009110",
@@ -2425,17 +2436,6 @@
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1008400",
    "visitanteId": "1008900"
-  },
-  {
-   "id": "2535941",
-   "grupo": "UNICO",
-   "jornada": 25,
-   "fecha": "2027-03-14",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "GRUPO ALEGA CANTABRIA",
-   "localId": "1009929",
-   "visitanteId": "1009584"
   },
   {
    "id": "2535949",
@@ -2521,7 +2521,7 @@
    "fecha": "2027-03-20",
    "hora": "19:00",
    "local": "CLUB OURENSE BALONCESTO",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009095",
    "visitanteId": "1009929"
   },
@@ -2592,6 +2592,17 @@
    "visitanteId": "1009109"
   },
   {
+   "id": "2535959",
+   "grupo": "UNICO",
+   "jornada": 27,
+   "fecha": "2027-03-27",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "BUENO ARENAS ALBACETE BASKET",
+   "localId": "1009929",
+   "visitanteId": "1009716"
+  },
+  {
    "id": "2535967",
    "grupo": "UNICO",
    "jornada": 27,
@@ -2623,17 +2634,6 @@
    "visitante": "FLEXICAR FUENLABRADA",
    "localId": "1008797",
    "visitanteId": "1010494"
-  },
-  {
-   "id": "2535959",
-   "grupo": "UNICO",
-   "jornada": 27,
-   "fecha": "2027-03-27",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "BUENO ARENAS ALBACETE BASKET",
-   "localId": "1009929",
-   "visitanteId": "1009716"
   },
   {
    "id": "2535966",
@@ -2752,7 +2752,7 @@
    "fecha": "2027-04-03",
    "hora": "19:00",
    "local": "HLA ALICANTE",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1008687",
    "visitanteId": "1009929"
   },
@@ -2790,6 +2790,17 @@
    "visitanteId": "1010207"
   },
   {
+   "id": "2535979",
+   "grupo": "UNICO",
+   "jornada": 29,
+   "fecha": "2027-04-10",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "COVIRAN GRANADA",
+   "localId": "1009929",
+   "visitanteId": "1009109"
+  },
+  {
    "id": "2535977",
    "grupo": "UNICO",
    "jornada": 29,
@@ -2812,17 +2823,6 @@
    "visitanteId": "1010494"
   },
   {
-   "id": "2535981",
-   "grupo": "UNICO",
-   "jornada": 29,
-   "fecha": "2027-04-10",
-   "hora": "18:30",
-   "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "HLA ALICANTE",
-   "localId": "1009110",
-   "visitanteId": "1008687"
-  },
-  {
    "id": "2535983",
    "grupo": "UNICO",
    "jornada": 29,
@@ -2834,15 +2834,15 @@
    "visitanteId": "1009713"
   },
   {
-   "id": "2535979",
+   "id": "2535981",
    "grupo": "UNICO",
    "jornada": 29,
-   "fecha": "2027-04-10",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "COVIRAN GRANADA",
-   "localId": "1009929",
-   "visitanteId": "1009109"
+   "fecha": "2027-04-11",
+   "hora": "12:30",
+   "local": "CAJASOL COTO CÓRDOBA",
+   "visitante": "HLA ALICANTE",
+   "localId": "1009110",
+   "visitanteId": "1008687"
   },
   {
    "id": "2535978",
@@ -2972,9 +2972,20 @@
    "fecha": "2027-04-18",
    "hora": "18:00",
    "local": "PALMER BASKET MALLORCA PALMA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009713",
    "visitanteId": "1009929"
+  },
+  {
+   "id": "2535996",
+   "grupo": "UNICO",
+   "jornada": 31,
+   "fecha": "2027-04-20",
+   "hora": "00:00",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "FLEXICAR FUENLABRADA",
+   "localId": "1009929",
+   "visitanteId": "1010494"
   },
   {
    "id": "2535995",
@@ -2992,22 +3003,11 @@
    "grupo": "UNICO",
    "jornada": 31,
    "fecha": "2027-04-20",
-   "hora": "00:00",
+   "hora": "20:30",
    "local": "COVIRAN GRANADA",
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1009109",
    "visitanteId": "1008900"
-  },
-  {
-   "id": "2536002",
-   "grupo": "UNICO",
-   "jornada": 31,
-   "fecha": "2027-04-20",
-   "hora": "00:00",
-   "local": "GRUPO ALEGA CANTABRIA",
-   "visitante": "GRAN CANARIA",
-   "localId": "1009584",
-   "visitanteId": "1008797"
   },
   {
    "id": "2535998",
@@ -3019,17 +3019,6 @@
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1008400",
    "visitanteId": "1009095"
-  },
-  {
-   "id": "2535996",
-   "grupo": "UNICO",
-   "jornada": 31,
-   "fecha": "2027-04-20",
-   "hora": "00:00",
-   "local": "HESTIA MENORCA",
-   "visitante": "FLEXICAR FUENLABRADA",
-   "localId": "1009929",
-   "visitanteId": "1010494"
   },
   {
    "id": "2536003",
@@ -3076,6 +3065,17 @@
    "visitanteId": "1010207"
   },
   {
+   "id": "2536002",
+   "grupo": "UNICO",
+   "jornada": 31,
+   "fecha": "2027-04-21",
+   "hora": "20:30",
+   "local": "GRUPO ALEGA CANTABRIA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1009584",
+   "visitanteId": "1008797"
+  },
+  {
    "id": "2536010",
    "grupo": "UNICO",
    "jornada": 32,
@@ -3091,7 +3091,7 @@
    "grupo": "UNICO",
    "jornada": 32,
    "fecha": "2027-04-25",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1008900",
@@ -3102,9 +3102,9 @@
    "grupo": "UNICO",
    "jornada": 32,
    "fecha": "2027-04-25",
-   "hora": "00:00",
+   "hora": "18:30",
    "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009110",
    "visitanteId": "1009929"
   },
@@ -3186,6 +3186,17 @@
    "visitanteId": "1010494"
   },
   {
+   "id": "2536014",
+   "grupo": "UNICO",
+   "jornada": 33,
+   "fecha": "2027-05-01",
+   "hora": "19:30",
+   "local": "BÀSQUET MENORCA",
+   "visitante": "CAJA RURAL CB ZAMORA",
+   "localId": "1009929",
+   "visitanteId": "1008900"
+  },
+  {
    "id": "2536013",
    "grupo": "UNICO",
    "jornada": 33,
@@ -3228,17 +3239,6 @@
    "visitante": "CAJASOL COTO CÓRDOBA",
    "localId": "1009584",
    "visitanteId": "1009110"
-  },
-  {
-   "id": "2536014",
-   "grupo": "UNICO",
-   "jornada": 33,
-   "fecha": "2027-05-01",
-   "hora": "19:30",
-   "local": "HESTIA MENORCA",
-   "visitante": "CAJA RURAL CB ZAMORA",
-   "localId": "1009929",
-   "visitanteId": "1008900"
   },
   {
    "id": "2536021",
@@ -3324,7 +3324,7 @@
    "fecha": "2027-05-07",
    "hora": "21:00",
    "local": "FIBWI MALLORCA BASQUET PALMA",
-   "visitante": "HESTIA MENORCA",
+   "visitante": "BÀSQUET MENORCA",
    "localId": "1009072",
    "visitanteId": "1009929"
   },
