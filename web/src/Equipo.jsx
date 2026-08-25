@@ -14,7 +14,8 @@ const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 // un entrenador que revisa varios equipos no quiere pulsar 'Análisis' cada vez.
 let modoRecordado = 'resumen';
 
-export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, rivalInicial }) {
+export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, rivalInicial }) {
+  const club = (datosClub || {})[equipo.idClub] || null;
   const [vistaFicha, _setVistaFicha] = useState(rivalInicial ? 'dossier' : modoRecordado);
   const setVistaFicha = m => { modoRecordado = m; _setVistaFicha(m); };
 
@@ -40,11 +41,12 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   }).filter(d => d.anotados > 5 || d.encajados > 5),
   [calendario, equipo]);
 
-  const fourFactors = useMemo(() => {
-    const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
   // Con un solo grupo, el SRS converge al Net multiplicado por (n-1)/n:
   // es el mismo dato encogido, así que no se muestra.
   const unGrupo = new Set(equipos.map(x => x.grupo)).size <= 1;
+
+  const fourFactors = useMemo(() => {
+    const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
     const media = clave => delGrupo.reduce((a, e) => a + e[clave], 0) / delGrupo.length;
     return [
       { factor: 'eFG%', equipo: equipo.efg,    grupo: +media('efg').toFixed(2) },
@@ -120,6 +122,24 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             {' '}Fuera {equipo.fuera.pg}-{equipo.fuera.pj - equipo.fuera.pg}</p>
         </div>
         <div className="datos-bloque">
+          {club && (club.pabellon || club.web) && (
+            <div className="club-info">
+              {club.pabellon && (
+                <div className="club-campo">
+                  <span className="club-etiqueta">Pabellón</span>
+                  <span className="club-valor">{club.pabellon}</span>
+                  {club.direccionPabellon && (
+                    <span className="club-direccion">{club.direccionPabellon}</span>
+                  )}
+                </div>
+              )}
+              {club.web && (
+                <a className="club-web" href={club.web} target="_blank" rel="noopener noreferrer">
+                  Web oficial ↗
+                </a>
+              )}
+            </div>
+          )}
         </div>
       </div>
 
