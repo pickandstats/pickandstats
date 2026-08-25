@@ -50,6 +50,12 @@ jobs:
       - name: Primera · fases (jugadores)
         run: node scraper/calcular-fases-jugadores.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
 
+      # Refresca el calendario de la temporada próxima (pretemporada/arranque):
+      # scrapea sus índices y regenera calendario.json si la FEB cambió algo.
+      - name: Refrescar calendario de la temporada próxima
+        run: node scraper/refrescar-calendario.js
+        continue-on-error: true
+
       # Si un cambio en el cálculo altera las temporadas cerradas, mejor enterarse aquí
       # que semanas después. No detiene el commit: los datos nuevos son válidos igual.
       - name: Comprobar que las temporadas cerradas no han cambiado
