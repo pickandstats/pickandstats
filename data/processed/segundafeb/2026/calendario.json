@@ -2,7 +2,7 @@
  "competicion": "segundafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-08-05",
+ "generado": "2026-08-25",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -33,7 +33,7 @@
    "grupo": "A",
    "jornada": 1,
    "fecha": "2026-10-03",
-   "hora": "19:30",
+   "hora": "18:30",
    "local": "CLÍNICA PONFERRADA SDP",
    "visitante": "SPANISH BASKETBALL ACADEMY",
    "localId": "1008643",
@@ -139,17 +139,6 @@
    "visitanteId": "1010318"
   },
   {
-   "id": "2536124",
-   "grupo": "A",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "CULTURAL Y DEPORTIVA LEONESA",
-   "localId": "1010495",
-   "visitanteId": "1008857"
-  },
-  {
    "id": "2536125",
    "grupo": "A",
    "jornada": 2,
@@ -159,6 +148,17 @@
    "visitante": "CLÍNICA PONFERRADA SDP",
    "localId": "1010352",
    "visitanteId": "1008643"
+  },
+  {
+   "id": "2536124",
+   "grupo": "A",
+   "jornada": 2,
+   "fecha": "2026-10-11",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "CULTURAL Y DEPORTIVA LEONESA",
+   "localId": "1010495",
+   "visitanteId": "1008857"
   },
   {
    "id": "2536134",
@@ -271,28 +271,6 @@
    "visitanteId": "1009588"
   },
   {
-   "id": "2536142",
-   "grupo": "A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "19:30",
-   "local": "CB ALGECIRAS",
-   "visitante": "JAEN PARAISO INTERIOR FS",
-   "localId": "1010192",
-   "visitanteId": "1010194"
-  },
-  {
-   "id": "2536137",
-   "grupo": "A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "MOVISTAR ESTUDIANTES",
-   "localId": "1010495",
-   "visitanteId": "1010496"
-  },
-  {
    "id": "2536136",
    "grupo": "A",
    "jornada": 4,
@@ -304,6 +282,17 @@
    "visitanteId": "1010318"
   },
   {
+   "id": "2536142",
+   "grupo": "A",
+   "jornada": 4,
+   "fecha": "2026-10-25",
+   "hora": "12:30",
+   "local": "CB ALGECIRAS",
+   "visitante": "JAEN PARAISO INTERIOR FS",
+   "localId": "1010192",
+   "visitanteId": "1010194"
+  },
+  {
    "id": "2536138",
    "grupo": "A",
    "jornada": 4,
@@ -313,6 +302,17 @@
    "visitante": "C.B. TRES CANTOS",
    "localId": "1010352",
    "visitanteId": "1009723"
+  },
+  {
+   "id": "2536137",
+   "grupo": "A",
+   "jornada": 4,
+   "fecha": "2026-10-25",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "MOVISTAR ESTUDIANTES",
+   "localId": "1010495",
+   "visitanteId": "1010496"
   },
   {
    "id": "2536149",
@@ -428,23 +428,12 @@
    "id": "2536155",
    "grupo": "A",
    "jornada": 6,
-   "fecha": "2026-11-07",
-   "hora": "19:30",
+   "fecha": "2026-11-08",
+   "hora": "12:30",
    "local": "CB ALGECIRAS",
    "visitante": "CLÍNICA PONFERRADA SDP",
    "localId": "1010192",
    "visitanteId": "1008643"
-  },
-  {
-   "id": "2536150",
-   "grupo": "A",
-   "jornada": 6,
-   "fecha": "2026-11-07",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "CLUB BALONCESTO TOLEDO BASKET",
-   "localId": "1010495",
-   "visitanteId": "1010318"
   },
   {
    "id": "2536156",
@@ -469,6 +458,17 @@
    "visitanteId": "1010193"
   },
   {
+   "id": "2536150",
+   "grupo": "A",
+   "jornada": 6,
+   "fecha": "2026-11-08",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "CLUB BALONCESTO TOLEDO BASKET",
+   "localId": "1010495",
+   "visitanteId": "1010318"
+  },
+  {
    "id": "2536162",
    "grupo": "A",
    "jornada": 7,
@@ -489,17 +489,6 @@
    "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
    "localId": "1009723",
    "visitanteId": "1010321"
-  },
-  {
-   "id": "2536158",
-   "grupo": "A",
-   "jornada": 7,
-   "fecha": "2026-11-14",
-   "hora": "19:30",
-   "local": "CLÍNICA PONFERRADA SDP",
-   "visitante": "JAEN PARAISO INTERIOR FS",
-   "localId": "1008643",
-   "visitanteId": "1010194"
   },
   {
    "id": "2536157",
@@ -524,15 +513,15 @@
    "visitanteId": "1010320"
   },
   {
-   "id": "2536163",
+   "id": "2536158",
    "grupo": "A",
    "jornada": 7,
-   "fecha": "2026-11-14",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "MELILLA CIUDAD DEL DEPORTE",
-   "localId": "1010495",
-   "visitanteId": "1010352"
+   "fecha": "2026-11-15",
+   "hora": "18:30",
+   "local": "CLÍNICA PONFERRADA SDP",
+   "visitante": "JAEN PARAISO INTERIOR FS",
+   "localId": "1008643",
+   "visitanteId": "1010194"
   },
   {
    "id": "2536159",
@@ -544,6 +533,17 @@
    "visitante": "CB ALGECIRAS",
    "localId": "1008857",
    "visitanteId": "1010192"
+  },
+  {
+   "id": "2536163",
+   "grupo": "A",
+   "jornada": 7,
+   "fecha": "2026-11-15",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "MELILLA CIUDAD DEL DEPORTE",
+   "localId": "1010495",
+   "visitanteId": "1010352"
   },
   {
    "id": "2536166",
@@ -667,17 +667,6 @@
    "visitanteId": "1010192"
   },
   {
-   "id": "2536176",
-   "grupo": "A",
-   "jornada": 9,
-   "fecha": "2026-11-28",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "BCBADAJOZ",
-   "localId": "1010495",
-   "visitanteId": "1010320"
-  },
-  {
    "id": "2536172",
    "grupo": "A",
    "jornada": 9,
@@ -698,6 +687,17 @@
    "visitante": "C.B. GETAFE",
    "localId": "1010352",
    "visitanteId": "1009073"
+  },
+  {
+   "id": "2536176",
+   "grupo": "A",
+   "jornada": 9,
+   "fecha": "2026-11-29",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "BCBADAJOZ",
+   "localId": "1010495",
+   "visitanteId": "1010320"
   },
   {
    "id": "2536179",
@@ -733,17 +733,6 @@
    "visitanteId": "1010495"
   },
   {
-   "id": "2536181",
-   "grupo": "A",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:30",
-   "local": "CB ALGECIRAS",
-   "visitante": "C.B. STARLABS MORÓN",
-   "localId": "1010192",
-   "visitanteId": "1010193"
-  },
-  {
    "id": "2536184",
    "grupo": "A",
    "jornada": 10,
@@ -764,6 +753,17 @@
    "visitante": "C.B. TRES CANTOS",
    "localId": "1009588",
    "visitanteId": "1009723"
+  },
+  {
+   "id": "2536181",
+   "grupo": "A",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "12:30",
+   "local": "CB ALGECIRAS",
+   "visitante": "C.B. STARLABS MORÓN",
+   "localId": "1010192",
+   "visitanteId": "1010193"
   },
   {
    "id": "2536182",
@@ -832,17 +832,6 @@
    "visitanteId": "1009588"
   },
   {
-   "id": "2536189",
-   "grupo": "A",
-   "jornada": 11,
-   "fecha": "2026-12-12",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "CB ALGECIRAS",
-   "localId": "1010495",
-   "visitanteId": "1010192"
-  },
-  {
    "id": "2536190",
    "grupo": "A",
    "jornada": 11,
@@ -852,6 +841,17 @@
    "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
    "localId": "1010352",
    "visitanteId": "1010321"
+  },
+  {
+   "id": "2536189",
+   "grupo": "A",
+   "jornada": 11,
+   "fecha": "2026-12-13",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "CB ALGECIRAS",
+   "localId": "1010495",
+   "visitanteId": "1010192"
   },
   {
    "id": "2536193",
@@ -1063,17 +1063,6 @@
    "visitanteId": "1009723"
   },
   {
-   "id": "2536210",
-   "grupo": "A",
-   "jornada": 14,
-   "fecha": "2027-01-09",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "CLÍNICA PONFERRADA SDP",
-   "localId": "1010495",
-   "visitanteId": "1008643"
-  },
-  {
    "id": "2536209",
    "grupo": "A",
    "jornada": 14,
@@ -1083,6 +1072,17 @@
    "visitante": "UEMC BALONCESTO VALLADOLID",
    "localId": "1010352",
    "visitanteId": "1009588"
+  },
+  {
+   "id": "2536210",
+   "grupo": "A",
+   "jornada": 14,
+   "fecha": "2027-01-10",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "CLÍNICA PONFERRADA SDP",
+   "localId": "1010495",
+   "visitanteId": "1008643"
   },
   {
    "id": "2536214",
@@ -1209,23 +1209,12 @@
    "id": "2536220",
    "grupo": "A",
    "jornada": 16,
-   "fecha": "2027-01-30",
-   "hora": "19:30",
+   "fecha": "2027-01-31",
+   "hora": "12:30",
    "local": "CB ALGECIRAS",
    "visitante": "CLUB BALONCESTO TOLEDO BASKET",
    "localId": "1010192",
    "visitanteId": "1010318"
-  },
-  {
-   "id": "2536225",
-   "grupo": "A",
-   "jornada": 16,
-   "fecha": "2027-01-30",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "C.B. TRES CANTOS",
-   "localId": "1010495",
-   "visitanteId": "1009723"
   },
   {
    "id": "2536224",
@@ -1237,6 +1226,17 @@
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1010352",
    "visitanteId": "1008857"
+  },
+  {
+   "id": "2536225",
+   "grupo": "A",
+   "jornada": 16,
+   "fecha": "2027-01-31",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "C.B. TRES CANTOS",
+   "localId": "1010495",
+   "visitanteId": "1009723"
   },
   {
    "id": "2536229",
@@ -1360,17 +1360,6 @@
    "visitanteId": "1009588"
   },
   {
-   "id": "2536240",
-   "grupo": "A",
-   "jornada": 18,
-   "fecha": "2027-02-13",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "C.B. STARLABS MORÓN",
-   "localId": "1010495",
-   "visitanteId": "1010193"
-  },
-  {
    "id": "2536234",
    "grupo": "A",
    "jornada": 18,
@@ -1391,6 +1380,17 @@
    "visitante": "MOVISTAR ESTUDIANTES",
    "localId": "1010352",
    "visitanteId": "1010496"
+  },
+  {
+   "id": "2536240",
+   "grupo": "A",
+   "jornada": 18,
+   "fecha": "2027-02-14",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "C.B. STARLABS MORÓN",
+   "localId": "1010495",
+   "visitanteId": "1010193"
   },
   {
    "id": "2536242",
@@ -1602,17 +1602,6 @@
    "visitanteId": "1010321"
   },
   {
-   "id": "2536256",
-   "grupo": "A",
-   "jornada": 21,
-   "fecha": "2027-03-06",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "C.B. GETAFE",
-   "localId": "1010495",
-   "visitanteId": "1009073"
-  },
-  {
    "id": "2536260",
    "grupo": "A",
    "jornada": 21,
@@ -1622,6 +1611,17 @@
    "visitante": "JAEN PARAISO INTERIOR FS",
    "localId": "1008857",
    "visitanteId": "1010194"
+  },
+  {
+   "id": "2536256",
+   "grupo": "A",
+   "jornada": 21,
+   "fecha": "2027-03-07",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "C.B. GETAFE",
+   "localId": "1010495",
+   "visitanteId": "1009073"
   },
   {
    "id": "2536267",
@@ -1657,17 +1657,6 @@
    "visitanteId": "1010193"
   },
   {
-   "id": "2536265",
-   "grupo": "A",
-   "jornada": 22,
-   "fecha": "2027-03-13",
-   "hora": "19:30",
-   "local": "CB ALGECIRAS",
-   "visitante": "MOVISTAR ESTUDIANTES",
-   "localId": "1010192",
-   "visitanteId": "1010496"
-  },
-  {
    "id": "2536262",
    "grupo": "A",
    "jornada": 22,
@@ -1688,6 +1677,17 @@
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1009588",
    "visitanteId": "1008857"
+  },
+  {
+   "id": "2536265",
+   "grupo": "A",
+   "jornada": 22,
+   "fecha": "2027-03-14",
+   "hora": "12:30",
+   "local": "CB ALGECIRAS",
+   "visitante": "MOVISTAR ESTUDIANTES",
+   "localId": "1010192",
+   "visitanteId": "1010496"
   },
   {
    "id": "2536264",
@@ -1745,17 +1745,6 @@
    "visitanteId": "1010194"
   },
   {
-   "id": "2536271",
-   "grupo": "A",
-   "jornada": 23,
-   "fecha": "2027-03-20",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
-   "localId": "1010495",
-   "visitanteId": "1010321"
-  },
-  {
    "id": "2536275",
    "grupo": "A",
    "jornada": 23,
@@ -1776,6 +1765,17 @@
    "visitante": "BCBADAJOZ",
    "localId": "1010352",
    "visitanteId": "1010320"
+  },
+  {
+   "id": "2536271",
+   "grupo": "A",
+   "jornada": 23,
+   "fecha": "2027-03-21",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
+   "localId": "1010495",
+   "visitanteId": "1010321"
   },
   {
    "id": "2536282",
@@ -1910,17 +1910,6 @@
    "visitanteId": "1008643"
   },
   {
-   "id": "2536286",
-   "grupo": "A",
-   "jornada": 25,
-   "fecha": "2027-04-03",
-   "hora": "20:30",
-   "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "JAEN PARAISO INTERIOR FS",
-   "localId": "1010495",
-   "visitanteId": "1010194"
-  },
-  {
    "id": "2536285",
    "grupo": "A",
    "jornada": 25,
@@ -1930,6 +1919,17 @@
    "visitante": "CB ALGECIRAS",
    "localId": "1010352",
    "visitanteId": "1010192"
+  },
+  {
+   "id": "2536286",
+   "grupo": "A",
+   "jornada": 25,
+   "fecha": "2027-04-04",
+   "hora": "18:00",
+   "local": "SPANISH BASKETBALL ACADEMY",
+   "visitante": "JAEN PARAISO INTERIOR FS",
+   "localId": "1010495",
+   "visitanteId": "1010194"
   },
   {
    "id": "2536296",
@@ -2838,7 +2838,7 @@
    "grupo": "B",
    "jornada": 11,
    "fecha": "2026-12-13",
-   "hora": "12:00",
+   "hora": "18:00",
    "local": "C.B. ZARAGOZA",
    "visitante": "BASKET CARTAGENA",
    "localId": "1009133",
@@ -3329,17 +3329,6 @@
    "visitanteId": "1010348"
   },
   {
-   "id": "2536419",
-   "grupo": "B",
-   "jornada": 18,
-   "fecha": "2027-02-13",
-   "hora": "20:15",
-   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-   "visitante": "PROINBENI UPB GANDIA",
-   "localId": "1008899",
-   "visitanteId": "1010351"
-  },
-  {
    "id": "2536420",
    "grupo": "B",
    "jornada": 18,
@@ -3371,6 +3360,17 @@
    "visitante": "BASKET CARTAGENA",
    "localId": "1010200",
    "visitanteId": "1010502"
+  },
+  {
+   "id": "2536419",
+   "grupo": "B",
+   "jornada": 18,
+   "fecha": "2027-02-14",
+   "hora": "18:30",
+   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
+   "visitante": "PROINBENI UPB GANDIA",
+   "localId": "1008899",
+   "visitanteId": "1010351"
   },
   {
    "id": "2536421",
@@ -3494,17 +3494,6 @@
    "visitanteId": "1010351"
   },
   {
-   "id": "2536434",
-   "grupo": "B",
-   "jornada": 20,
-   "fecha": "2027-02-27",
-   "hora": "20:15",
-   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-   "visitante": "SOL GIRONÈS BISBAL BÀSQUET",
-   "localId": "1008899",
-   "visitanteId": "1009441"
-  },
-  {
    "id": "2536435",
    "grupo": "B",
    "jornada": 20,
@@ -3525,6 +3514,17 @@
    "visitante": "C.B. ZARAGOZA",
    "localId": "1010200",
    "visitanteId": "1009133"
+  },
+  {
+   "id": "2536434",
+   "grupo": "B",
+   "jornada": 20,
+   "fecha": "2027-02-28",
+   "hora": "18:30",
+   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
+   "visitante": "SOL GIRONÈS BISBAL BÀSQUET",
+   "localId": "1008899",
+   "visitanteId": "1009441"
   },
   {
    "id": "2536436",
@@ -3670,17 +3670,6 @@
    "visitanteId": "1010208"
   },
   {
-   "id": "2536449",
-   "grupo": "B",
-   "jornada": 22,
-   "fecha": "2027-03-13",
-   "hora": "20:15",
-   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-   "visitante": "BIELE ISB",
-   "localId": "1008899",
-   "visitanteId": "1008391"
-  },
-  {
    "id": "2536450",
    "grupo": "B",
    "jornada": 22,
@@ -3690,6 +3679,17 @@
    "visitante": "LOGROBASKET LOGI7",
    "localId": "1008636",
    "visitanteId": "1008985"
+  },
+  {
+   "id": "2536449",
+   "grupo": "B",
+   "jornada": 22,
+   "fecha": "2027-03-14",
+   "hora": "18:30",
+   "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
+   "visitante": "BIELE ISB",
+   "localId": "1008899",
+   "visitanteId": "1008391"
   },
   {
    "id": "2536446",

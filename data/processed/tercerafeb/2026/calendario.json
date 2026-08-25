@@ -2,7 +2,7 @@
  "competicion": "tercerafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-08-05",
+ "generado": "2026-08-25",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -11,7 +11,7 @@
    "grupo": "A-A",
    "jornada": 1,
    "fecha": "2026-10-03",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "HOTEL 4POSTES - ÁVILA AUTÉNTICA - EL BULEVAR",
    "localId": "1009704",
@@ -46,7 +46,7 @@
    "fecha": "2026-10-03",
    "hora": "18:30",
    "local": "TEKNEI BIZKAIA ZORNOTZA",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1009714",
    "visitanteId": "1008735"
   },
@@ -89,7 +89,7 @@
    "jornada": 2,
    "fecha": "2026-10-10",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "RESTAURANTE LOS ARCOS CB SOLARES",
    "localId": "1008735",
    "visitanteId": "1008697"
@@ -165,7 +165,7 @@
    "grupo": "A-A",
    "jornada": 3,
    "fecha": "2026-10-17",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "ULACIA ZKE",
    "localId": "1009704",
@@ -178,7 +178,7 @@
    "fecha": "2026-10-17",
    "hora": "19:00",
    "local": "SAN PRUDENCIO",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008679",
    "visitanteId": "1008735"
   },
@@ -238,17 +238,6 @@
    "visitanteId": "1010898"
   },
   {
-   "id": "2536682",
-   "grupo": "A-A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
-   "visitante": "TABIRAKO BAQUE",
-   "localId": "1008735",
-   "visitanteId": "1008897"
-  },
-  {
    "id": "2536684",
    "grupo": "A-A",
    "jornada": 4,
@@ -269,17 +258,6 @@
    "visitante": "DE MORRO FINO CANTBASKET04",
    "localId": "1008399",
    "visitanteId": "1009704"
-  },
-  {
-   "id": "2536683",
-   "grupo": "A-A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "19:00",
-   "local": "LIS DATA SOLUTIONS BEZANA",
-   "visitante": "SAN PRUDENCIO",
-   "localId": "1010898",
-   "visitanteId": "1008679"
   },
   {
    "id": "2536688",
@@ -304,6 +282,28 @@
    "visitanteId": "1009714"
   },
   {
+   "id": "2536682",
+   "grupo": "A-A",
+   "jornada": 4,
+   "fecha": "2026-10-25",
+   "hora": "18:00",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
+   "visitante": "TABIRAKO BAQUE",
+   "localId": "1008735",
+   "visitanteId": "1008897"
+  },
+  {
+   "id": "2536683",
+   "grupo": "A-A",
+   "jornada": 4,
+   "fecha": "2026-10-25",
+   "hora": "18:00",
+   "local": "LIS DATA SOLUTIONS BEZANA",
+   "visitante": "SAN PRUDENCIO",
+   "localId": "1010898",
+   "visitanteId": "1008679"
+  },
+  {
    "id": "2536686",
    "grupo": "A-A",
    "jornada": 4,
@@ -315,17 +315,6 @@
    "visitanteId": "1009137"
   },
   {
-   "id": "2536695",
-   "grupo": "A-A",
-   "jornada": 5,
-   "fecha": "2026-10-31",
-   "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
-   "visitante": "LIS DATA SOLUTIONS BEZANA",
-   "localId": "1008735",
-   "visitanteId": "1010898"
-  },
-  {
    "id": "2536690",
    "grupo": "A-A",
    "jornada": 5,
@@ -335,6 +324,17 @@
    "visitante": "MEGACALZADO ARDOI",
    "localId": "1009704",
    "visitanteId": "1008869"
+  },
+  {
+   "id": "2536695",
+   "grupo": "A-A",
+   "jornada": 5,
+   "fecha": "2026-10-31",
+   "hora": "20:00",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
+   "visitante": "LIS DATA SOLUTIONS BEZANA",
+   "localId": "1008735",
+   "visitanteId": "1010898"
   },
   {
    "id": "2536694",
@@ -398,7 +398,7 @@
    "fecha": "2026-11-07",
    "hora": "19:00",
    "local": "HOTEL 4POSTES - ÁVILA AUTÉNTICA - EL BULEVAR",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1009179",
    "visitanteId": "1008735"
   },
@@ -474,7 +474,7 @@
    "jornada": 7,
    "fecha": "2026-11-14",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "BALONCESTO LA FLECHA",
    "localId": "1008735",
    "visitanteId": "1008627"
@@ -550,7 +550,7 @@
    "grupo": "A-A",
    "jornada": 8,
    "fecha": "2026-11-21",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "UNIVERSIDAD DEUSTO LOIOLA INDAUTXU",
    "localId": "1009704",
@@ -618,7 +618,7 @@
    "fecha": "2026-11-22",
    "hora": "18:30",
    "local": "ULACIA ZKE",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1009106",
    "visitanteId": "1008735"
   },
@@ -628,7 +628,7 @@
    "jornada": 9,
    "fecha": "2026-11-28",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "IRUKI TAKE",
    "localId": "1008735",
    "visitanteId": "1008399"
@@ -704,7 +704,7 @@
    "grupo": "A-A",
    "jornada": 10,
    "fecha": "2026-12-05",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "RESTAURANTE LOS ARCOS CB SOLARES",
    "localId": "1009704",
@@ -728,7 +728,7 @@
    "fecha": "2026-12-05",
    "hora": "19:45",
    "local": "MEGACALZADO ARDOI",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008869",
    "visitanteId": "1008735"
   },
@@ -782,7 +782,7 @@
    "jornada": 11,
    "fecha": "2026-12-12",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "CONSTRUCCIONES GONZALO CRESPO PAS PIÉLAGOS",
    "localId": "1008735",
    "visitanteId": "1010577"
@@ -858,9 +858,9 @@
    "grupo": "A-A",
    "jornada": 12,
    "fecha": "2026-12-19",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1009704",
    "visitanteId": "1008735"
   },
@@ -936,7 +936,7 @@
    "jornada": 13,
    "fecha": "2027-01-09",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "UNIVERSIDAD DEUSTO LOIOLA INDAUTXU",
    "localId": "1008735",
    "visitanteId": "1009137"
@@ -1013,7 +1013,7 @@
    "jornada": 14,
    "fecha": "2027-01-16",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "TEKNEI BIZKAIA ZORNOTZA",
    "localId": "1008735",
    "visitanteId": "1009714"
@@ -1089,7 +1089,7 @@
    "grupo": "A-A",
    "jornada": 15,
    "fecha": "2027-01-23",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "BALONCESTO LA FLECHA",
    "localId": "1009704",
@@ -1157,7 +1157,7 @@
    "fecha": "2027-01-24",
    "hora": "18:00",
    "local": "RESTAURANTE LOS ARCOS CB SOLARES",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008697",
    "visitanteId": "1008735"
   },
@@ -1167,7 +1167,7 @@
    "jornada": 16,
    "fecha": "2027-01-30",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "SAN PRUDENCIO",
    "localId": "1008735",
    "visitanteId": "1008679"
@@ -1243,7 +1243,7 @@
    "grupo": "A-A",
    "jornada": 17,
    "fecha": "2027-02-06",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "IRUKI TAKE",
    "localId": "1009704",
@@ -1267,7 +1267,7 @@
    "fecha": "2027-02-06",
    "hora": "19:00",
    "local": "TABIRAKO BAQUE",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008897",
    "visitanteId": "1008735"
   },
@@ -1344,7 +1344,7 @@
    "fecha": "2027-02-13",
    "hora": "19:00",
    "local": "LIS DATA SOLUTIONS BEZANA",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1010898",
    "visitanteId": "1008735"
   },
@@ -1393,17 +1393,6 @@
    "visitanteId": "1009714"
   },
   {
-   "id": "2536788",
-   "grupo": "A-A",
-   "jornada": 19,
-   "fecha": "2027-02-20",
-   "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
-   "visitante": "HOTEL 4POSTES - ÁVILA AUTÉNTICA - EL BULEVAR",
-   "localId": "1008735",
-   "visitanteId": "1009179"
-  },
-  {
    "id": "2536793",
    "grupo": "A-A",
    "jornada": 19,
@@ -1413,6 +1402,17 @@
    "visitante": "CONSTRUCCIONES GONZALO CRESPO PAS PIÉLAGOS",
    "localId": "1009704",
    "visitanteId": "1010577"
+  },
+  {
+   "id": "2536788",
+   "grupo": "A-A",
+   "jornada": 19,
+   "fecha": "2027-02-20",
+   "hora": "20:00",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
+   "visitante": "HOTEL 4POSTES - ÁVILA AUTÉNTICA - EL BULEVAR",
+   "localId": "1008735",
+   "visitanteId": "1009179"
   },
   {
    "id": "2536789",
@@ -1474,7 +1474,7 @@
    "grupo": "A-A",
    "jornada": 20,
    "fecha": "2027-02-27",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "TABIRAKO BAQUE",
    "localId": "1009704",
@@ -1520,7 +1520,7 @@
    "fecha": "2027-02-28",
    "hora": "19:00",
    "local": "BALONCESTO LA FLECHA",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008627",
    "visitanteId": "1008735"
   },
@@ -1552,7 +1552,7 @@
    "jornada": 21,
    "fecha": "2027-03-06",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "ULACIA ZKE",
    "localId": "1008735",
    "visitanteId": "1009106"
@@ -1628,7 +1628,7 @@
    "grupo": "A-A",
    "jornada": 22,
    "fecha": "2027-03-13",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "TEKNEI BIZKAIA ZORNOTZA",
    "localId": "1009704",
@@ -1641,7 +1641,7 @@
    "fecha": "2027-03-13",
    "hora": "18:00",
    "local": "IRUKI TAKE",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1008399",
    "visitanteId": "1008735"
   },
@@ -1706,7 +1706,7 @@
    "jornada": 23,
    "fecha": "2027-03-20",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "MEGACALZADO ARDOI",
    "localId": "1008735",
    "visitanteId": "1008869"
@@ -1782,7 +1782,7 @@
    "grupo": "A-A",
    "jornada": 24,
    "fecha": "2027-04-03",
-   "hora": "17:30",
+   "hora": "19:00",
    "local": "DE MORRO FINO CANTBASKET04",
    "visitante": "SAN PRUDENCIO",
    "localId": "1009704",
@@ -1839,7 +1839,7 @@
    "fecha": "2027-04-04",
    "hora": "18:00",
    "local": "CONSTRUCCIONES GONZALO CRESPO PAS PIÉLAGOS",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1010577",
    "visitanteId": "1008735"
   },
@@ -1860,7 +1860,7 @@
    "jornada": 25,
    "fecha": "2027-04-10",
    "hora": "20:00",
-   "local": "CB VALLE DE EGÜES",
+   "local": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "visitante": "DE MORRO FINO CANTBASKET04",
    "localId": "1008735",
    "visitanteId": "1009704"
@@ -2004,7 +2004,7 @@
    "fecha": "2027-04-17",
    "hora": "19:00",
    "local": "UNIVERSIDAD DEUSTO LOIOLA INDAUTXU",
-   "visitante": "CB VALLE DE EGÜES",
+   "visitante": "ELABORADOS NATURALES VALLE DE EGÜÉS",
    "localId": "1009137",
    "visitanteId": "1008735"
   },
@@ -4033,22 +4033,11 @@
    "visitanteId": "1009702"
   },
   {
-   "id": "2537030",
-   "grupo": "B-A",
-   "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "18:45",
-   "local": "CESUR DISTRITO OLIMPICO",
-   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
-   "localId": "1009119",
-   "visitanteId": "1008408"
-  },
-  {
    "id": "2537031",
    "grupo": "B-A",
    "jornada": 1,
    "fecha": "2026-10-03",
-   "hora": "20:00",
+   "hora": "19:15",
    "local": "EB FELIPE ANTÓN",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1008778",
@@ -4075,6 +4064,17 @@
    "visitante": "CB ARIDANE",
    "localId": "1010196",
    "visitanteId": "1008407"
+  },
+  {
+   "id": "2537030",
+   "grupo": "B-A",
+   "jornada": 1,
+   "fecha": "2026-10-04",
+   "hora": "11:30",
+   "local": "CESUR DISTRITO OLIMPICO",
+   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
+   "localId": "1009119",
+   "visitanteId": "1008408"
   },
   {
    "id": "2537029",
@@ -4242,6 +4242,17 @@
    "visitanteId": "1010190"
   },
   {
+   "id": "2537050",
+   "grupo": "B-A",
+   "jornada": 4,
+   "fecha": "2026-10-23",
+   "hora": "20:00",
+   "local": "CB ARIDANE",
+   "visitante": "EL VENTERO CBV",
+   "localId": "1008407",
+   "visitanteId": "1009591"
+  },
+  {
    "id": "2537046",
    "grupo": "B-A",
    "jornada": 4,
@@ -4262,17 +4273,6 @@
    "visitante": "CESUR DISTRITO OLIMPICO",
    "localId": "1010190",
    "visitanteId": "1009119"
-  },
-  {
-   "id": "2537050",
-   "grupo": "B-A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "20:00",
-   "local": "CB ARIDANE",
-   "visitante": "EL VENTERO CBV",
-   "localId": "1008407",
-   "visitanteId": "1009591"
   },
   {
    "id": "2537048",
@@ -4312,7 +4312,7 @@
    "grupo": "B-A",
    "jornada": 4,
    "fecha": "2026-10-25",
-   "hora": "18:30",
+   "hora": "13:00",
    "local": "C.B. FUENLABRADA",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1010498",
@@ -4400,7 +4400,7 @@
    "grupo": "B-A",
    "jornada": 6,
    "fecha": "2026-11-07",
-   "hora": "19:30",
+   "hora": "16:30",
    "local": "C.B. LAS ROZAS",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1010190",
@@ -4499,7 +4499,7 @@
    "grupo": "B-A",
    "jornada": 7,
    "fecha": "2026-11-14",
-   "hora": "20:00",
+   "hora": "17:00",
    "local": "C.B. DADARMO DE GÜIMAR",
    "visitante": "CB ARIDANE",
    "localId": "1010189",
@@ -4664,7 +4664,7 @@
    "grupo": "B-A",
    "jornada": 9,
    "fecha": "2026-11-28",
-   "hora": "18:45",
+   "hora": "20:00",
    "local": "CESUR DISTRITO OLIMPICO",
    "visitante": "BASKET GLOBALCAJA QUINTANAR",
    "localId": "1009119",
@@ -4726,28 +4726,6 @@
    "visitanteId": "1009835"
   },
   {
-   "id": "2537089",
-   "grupo": "B-A",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "20:00",
-   "local": "CB ARIDANE",
-   "visitante": "FUNDACION GLOBALCAJA LA RODA",
-   "localId": "1008407",
-   "visitanteId": "1009702"
-  },
-  {
-   "id": "2537092",
-   "grupo": "B-A",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "20:30",
-   "local": "QUALIS C.B VILLA DE VALDEMORO",
-   "visitante": "C.B. DADARMO DE GÜIMAR",
-   "localId": "1009575",
-   "visitanteId": "1010189"
-  },
-  {
    "id": "2537091",
    "grupo": "B-A",
    "jornada": 10,
@@ -4770,6 +4748,17 @@
    "visitanteId": "1010498"
   },
   {
+   "id": "2537089",
+   "grupo": "B-A",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "12:00",
+   "local": "CB ARIDANE",
+   "visitante": "FUNDACION GLOBALCAJA LA RODA",
+   "localId": "1008407",
+   "visitanteId": "1009702"
+  },
+  {
    "id": "2537094",
    "grupo": "B-A",
    "jornada": 10,
@@ -4779,6 +4768,17 @@
    "visitante": "CESUR DISTRITO OLIMPICO",
    "localId": "1009591",
    "visitanteId": "1009119"
+  },
+  {
+   "id": "2537092",
+   "grupo": "B-A",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "15:30",
+   "local": "QUALIS C.B VILLA DE VALDEMORO",
+   "visitante": "C.B. DADARMO DE GÜIMAR",
+   "localId": "1009575",
+   "visitanteId": "1010189"
   },
   {
    "id": "2537095",
@@ -4862,7 +4862,7 @@
    "grupo": "B-A",
    "jornada": 12,
    "fecha": "2026-12-19",
-   "hora": "19:30",
+   "hora": "20:00",
    "local": "AG MOVIALSA QUALITYSPORT CRIPTANA",
    "visitante": "CB ARIDANE",
    "localId": "1009835",
@@ -5027,7 +5027,7 @@
    "grupo": "B-A",
    "jornada": 14,
    "fecha": "2027-01-16",
-   "hora": "20:00",
+   "hora": "19:00",
    "local": "C.B. DADARMO DE GÜIMAR",
    "visitante": "EB FELIPE ANTÓN",
    "localId": "1010189",
@@ -5133,17 +5133,6 @@
    "visitanteId": "1008408"
   },
   {
-   "id": "2537128",
-   "grupo": "B-A",
-   "jornada": 15,
-   "fecha": "2027-01-23",
-   "hora": "20:30",
-   "local": "QUALIS C.B VILLA DE VALDEMORO",
-   "visitante": "CB ARIDANE",
-   "localId": "1009575",
-   "visitanteId": "1008407"
-  },
-  {
    "id": "2537129",
    "grupo": "B-A",
    "jornada": 15,
@@ -5164,6 +5153,17 @@
    "visitante": "FUNDACION GLOBALCAJA LA RODA",
    "localId": "1009591",
    "visitanteId": "1009702"
+  },
+  {
+   "id": "2537128",
+   "grupo": "B-A",
+   "jornada": 15,
+   "fecha": "2027-01-24",
+   "hora": "12:00",
+   "local": "QUALIS C.B VILLA DE VALDEMORO",
+   "visitante": "CB ARIDANE",
+   "localId": "1009575",
+   "visitanteId": "1008407"
   },
   {
    "id": "2537136",
@@ -5236,7 +5236,7 @@
    "grupo": "B-A",
    "jornada": 16,
    "fecha": "2027-01-31",
-   "hora": "18:30",
+   "hora": "12:30",
    "local": "C.B. FUENLABRADA",
    "visitante": "EB FELIPE ANTÓN",
    "localId": "1010498",
@@ -5313,7 +5313,7 @@
    "grupo": "B-A",
    "jornada": 17,
    "fecha": "2027-02-07",
-   "hora": "12:00",
+   "hora": "11:00",
    "local": "EL VENTERO CBV",
    "visitante": "CB ARIDANE",
    "localId": "1009591",
@@ -5340,17 +5340,6 @@
    "visitante": "CESUR DISTRITO OLIMPICO",
    "localId": "1008407",
    "visitanteId": "1009119"
-  },
-  {
-   "id": "2537149",
-   "grupo": "B-A",
-   "jornada": 18,
-   "fecha": "2027-02-13",
-   "hora": "19:00",
-   "local": "FUNDACION GLOBALCAJA LA RODA",
-   "visitante": "C.B. DADARMO DE GÜIMAR",
-   "localId": "1009702",
-   "visitanteId": "1010189"
   },
   {
    "id": "2537144",
@@ -5395,6 +5384,17 @@
    "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
    "localId": "1010498",
    "visitanteId": "1008408"
+  },
+  {
+   "id": "2537149",
+   "grupo": "B-A",
+   "jornada": 18,
+   "fecha": "2027-02-14",
+   "hora": "19:00",
+   "local": "FUNDACION GLOBALCAJA LA RODA",
+   "visitante": "C.B. DADARMO DE GÜIMAR",
+   "localId": "1009702",
+   "visitanteId": "1010189"
   },
   {
    "id": "2537151",
@@ -5500,7 +5500,7 @@
    "grupo": "B-A",
    "jornada": 20,
    "fecha": "2027-02-27",
-   "hora": "20:00",
+   "hora": "14:00",
    "local": "CB ARIDANE",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1008407",
@@ -5742,7 +5742,7 @@
    "grupo": "B-A",
    "jornada": 23,
    "fecha": "2027-03-20",
-   "hora": "18:45",
+   "hora": "20:00",
    "local": "CESUR DISTRITO OLIMPICO",
    "visitante": "EL VENTERO CBV",
    "localId": "1009119",
@@ -5760,17 +5760,6 @@
    "visitanteId": "1010323"
   },
   {
-   "id": "2537180",
-   "grupo": "B-A",
-   "jornada": 23,
-   "fecha": "2027-03-20",
-   "hora": "19:00",
-   "local": "FUNDACION GLOBALCAJA LA RODA",
-   "visitante": "CB ARIDANE",
-   "localId": "1009702",
-   "visitanteId": "1008407"
-  },
-  {
    "id": "2537181",
    "grupo": "B-A",
    "jornada": 23,
@@ -5780,6 +5769,17 @@
    "visitante": "ZENTRO BASKET MADRID",
    "localId": "1010498",
    "visitanteId": "1010497"
+  },
+  {
+   "id": "2537180",
+   "grupo": "B-A",
+   "jornada": 23,
+   "fecha": "2027-03-21",
+   "hora": "11:00",
+   "local": "FUNDACION GLOBALCAJA LA RODA",
+   "visitante": "CB ARIDANE",
+   "localId": "1009702",
+   "visitanteId": "1008407"
   },
   {
    "id": "2537188",
@@ -5852,7 +5852,7 @@
    "grupo": "B-A",
    "jornada": 24,
    "fecha": "2027-04-04",
-   "hora": "12:00",
+   "hora": "11:00",
    "local": "EL VENTERO CBV",
    "visitante": "EB FELIPE ANTÓN",
    "localId": "1009591",
@@ -6046,6 +6046,17 @@
    "visitanteId": "1008707"
   },
   {
+   "id": "2537211",
+   "grupo": "B-B",
+   "jornada": 1,
+   "fecha": "2026-10-03",
+   "hora": "21:00",
+   "local": "GRAN CANARIA",
+   "visitante": "LUJISA GUADALAJARA BASKET",
+   "localId": "1009825",
+   "visitanteId": "1009931"
+  },
+  {
    "id": "2537207",
    "grupo": "B-B",
    "jornada": 1,
@@ -6057,28 +6068,6 @@
    "visitanteId": "1009178"
   },
   {
-   "id": "2537213",
-   "grupo": "B-B",
-   "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "18:45",
-   "local": "UROS DE RIVAS",
-   "visitante": "IMPLICA REAL CANOE",
-   "localId": "1008866",
-   "visitanteId": "1008865"
-  },
-  {
-   "id": "2537211",
-   "grupo": "B-B",
-   "jornada": 1,
-   "fecha": "2026-10-04",
-   "hora": "13:30",
-   "local": "GRAN CANARIA",
-   "visitante": "LUJISA GUADALAJARA BASKET",
-   "localId": "1009825",
-   "visitanteId": "1009931"
-  },
-  {
    "id": "2537210",
    "grupo": "B-B",
    "jornada": 1,
@@ -6088,6 +6077,17 @@
    "visitante": "BALONCESTO TALAVERA",
    "localId": "1008409",
    "visitanteId": "1010580"
+  },
+  {
+   "id": "2537213",
+   "grupo": "B-B",
+   "jornada": 1,
+   "fecha": "2026-10-04",
+   "hora": "12:30",
+   "local": "UROS DE RIVAS",
+   "visitante": "IMPLICA REAL CANOE",
+   "localId": "1008866",
+   "visitanteId": "1008865"
   },
   {
    "id": "2537217",
@@ -6178,17 +6178,6 @@
    "visitanteId": "1010580"
   },
   {
-   "id": "2537222",
-   "grupo": "B-B",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "20:30",
-   "local": "BALONCESTO TELDE",
-   "visitante": "GRUPO EGIDO PINTOBASKET",
-   "localId": "1008941",
-   "visitanteId": "1009178"
-  },
-  {
    "id": "2537227",
    "grupo": "B-B",
    "jornada": 3,
@@ -6220,6 +6209,17 @@
    "visitante": "LUJISA GUADALAJARA BASKET",
    "localId": "1008866",
    "visitanteId": "1009931"
+  },
+  {
+   "id": "2537222",
+   "grupo": "B-B",
+   "jornada": 3,
+   "fecha": "2026-10-18",
+   "hora": "13:30",
+   "local": "BALONCESTO TELDE",
+   "visitante": "GRUPO EGIDO PINTOBASKET",
+   "localId": "1008941",
+   "visitanteId": "1009178"
   },
   {
    "id": "2537224",
@@ -6321,6 +6321,17 @@
    "visitanteId": "1009825"
   },
   {
+   "id": "2537237",
+   "grupo": "B-B",
+   "jornada": 5,
+   "fecha": "2026-10-16",
+   "hora": "22:00",
+   "local": "GRAN CANARIA",
+   "visitante": "GRUPO EGIDO PINTOBASKET",
+   "localId": "1009825",
+   "visitanteId": "1009178"
+  },
+  {
    "id": "2537238",
    "grupo": "B-B",
    "jornada": 5,
@@ -6347,7 +6358,7 @@
    "grupo": "B-B",
    "jornada": 5,
    "fecha": "2026-10-31",
-   "hora": "18:00",
+   "hora": "19:00",
    "local": "NÁUTICO TENERIFE",
    "visitante": "BALONCESTO TELDE",
    "localId": "1009706",
@@ -6376,17 +6387,6 @@
    "visitanteId": "1008946"
   },
   {
-   "id": "2537237",
-   "grupo": "B-B",
-   "jornada": 5,
-   "fecha": "2026-11-01",
-   "hora": "13:30",
-   "local": "GRAN CANARIA",
-   "visitante": "GRUPO EGIDO PINTOBASKET",
-   "localId": "1009825",
-   "visitanteId": "1009178"
-  },
-  {
    "id": "2537236",
    "grupo": "B-B",
    "jornada": 5,
@@ -6413,7 +6413,7 @@
    "grupo": "B-B",
    "jornada": 6,
    "fecha": "2026-11-07",
-   "hora": "20:30",
+   "hora": "17:00",
    "local": "BALONCESTO TELDE",
    "visitante": "INMOBILIARIA GÁLVEZ SANTA CRUZ",
    "localId": "1008941",
@@ -6457,7 +6457,7 @@
    "grupo": "B-B",
    "jornada": 6,
    "fecha": "2026-11-08",
-   "hora": "12:00",
+   "hora": "19:00",
    "local": "BASKET CERVANTES CIUDAD REAL",
    "visitante": "IMPLICA REAL CANOE",
    "localId": "1008946",
@@ -6486,6 +6486,17 @@
    "visitanteId": "1009120"
   },
   {
+   "id": "2537250",
+   "grupo": "B-B",
+   "jornada": 7,
+   "fecha": "2026-11-14",
+   "hora": "20:00",
+   "local": "GRAN CANARIA",
+   "visitante": "BALONCESTO TELDE",
+   "localId": "1009825",
+   "visitanteId": "1008941"
+  },
+  {
    "id": "2537253",
    "grupo": "B-B",
    "jornada": 7,
@@ -6501,7 +6512,7 @@
    "grupo": "B-B",
    "jornada": 7,
    "fecha": "2026-11-14",
-   "hora": "19:00",
+   "hora": "20:00",
    "local": "LUJISA GUADALAJARA BASKET",
    "visitante": "BALONCESTO TALAVERA",
    "localId": "1009931",
@@ -6539,17 +6550,6 @@
    "visitante": "GRUPO EGIDO PINTOBASKET",
    "localId": "1008866",
    "visitanteId": "1009178"
-  },
-  {
-   "id": "2537250",
-   "grupo": "B-B",
-   "jornada": 7,
-   "fecha": "2026-11-15",
-   "hora": "13:30",
-   "local": "GRAN CANARIA",
-   "visitante": "BALONCESTO TELDE",
-   "localId": "1009825",
-   "visitanteId": "1008941"
   },
   {
    "id": "2537256",
@@ -6699,7 +6699,7 @@
    "grupo": "B-B",
    "jornada": 9,
    "fecha": "2026-11-28",
-   "hora": "18:45",
+   "hora": "17:00",
    "local": "UROS DE RIVAS",
    "visitante": "BALONCESTO TELDE",
    "localId": "1008866",
@@ -7025,6 +7025,17 @@
    "visitanteId": "1008409"
   },
   {
+   "id": "2537300",
+   "grupo": "B-B",
+   "jornada": 14,
+   "fecha": "2027-01-16",
+   "hora": "20:00",
+   "local": "BASKET CERVANTES CIUDAD REAL",
+   "visitante": "BALONCESTO TELDE",
+   "localId": "1008946",
+   "visitanteId": "1008941"
+  },
+  {
    "id": "2537298",
    "grupo": "B-B",
    "jornada": 14,
@@ -7047,17 +7058,6 @@
    "visitanteId": "1008866"
   },
   {
-   "id": "2537302",
-   "grupo": "B-B",
-   "jornada": 14,
-   "fecha": "2027-01-16",
-   "hora": "19:00",
-   "local": "LUJISA GUADALAJARA BASKET",
-   "visitante": "GRAN CANARIA",
-   "localId": "1009931",
-   "visitanteId": "1009825"
-  },
-  {
    "id": "2537303",
    "grupo": "B-B",
    "jornada": 14,
@@ -7069,17 +7069,6 @@
    "visitanteId": "1010499"
   },
   {
-   "id": "2537300",
-   "grupo": "B-B",
-   "jornada": 14,
-   "fecha": "2027-01-17",
-   "hora": "12:00",
-   "local": "BASKET CERVANTES CIUDAD REAL",
-   "visitante": "BALONCESTO TELDE",
-   "localId": "1008946",
-   "visitanteId": "1008941"
-  },
-  {
    "id": "2537299",
    "grupo": "B-B",
    "jornada": 14,
@@ -7089,6 +7078,17 @@
    "visitante": "FUNDAL ALCOBENDAS",
    "localId": "1008707",
    "visitanteId": "1009120"
+  },
+  {
+   "id": "2537302",
+   "grupo": "B-B",
+   "jornada": 14,
+   "fecha": "2027-01-17",
+   "hora": "12:30",
+   "local": "LUJISA GUADALAJARA BASKET",
+   "visitante": "GRAN CANARIA",
+   "localId": "1009931",
+   "visitanteId": "1009825"
   },
   {
    "id": "2537307",
@@ -7194,7 +7194,7 @@
    "grupo": "B-B",
    "jornada": 16,
    "fecha": "2027-01-30",
-   "hora": "19:30",
+   "hora": "16:30",
    "local": "GRUPO EGIDO PINTOBASKET",
    "visitante": "BALONCESTO TELDE",
    "localId": "1009178",
@@ -7359,7 +7359,7 @@
    "grupo": "B-B",
    "jornada": 18,
    "fecha": "2027-02-13",
-   "hora": "19:30",
+   "hora": "20:30",
    "local": "GRUPO EGIDO PINTOBASKET",
    "visitante": "GRAN CANARIA",
    "localId": "1009178",
@@ -7370,7 +7370,7 @@
    "grupo": "B-B",
    "jornada": 18,
    "fecha": "2027-02-13",
-   "hora": "19:00",
+   "hora": "18:00",
    "local": "LUJISA GUADALAJARA BASKET",
    "visitante": "RECUCYM BAZU",
    "localId": "1009931",
@@ -10087,7 +10087,7 @@
    "grupo": "C-B",
    "jornada": 1,
    "fecha": "2026-10-04",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "C.B.ROSER",
    "localId": "1009146",
@@ -10149,6 +10149,17 @@
    "visitanteId": "1009146"
   },
   {
+   "id": "2528256",
+   "grupo": "C-B",
+   "jornada": 2,
+   "fecha": "2026-10-10",
+   "hora": "17:00",
+   "local": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
+   "visitante": "C.B.VALLS.TALLERS PABLO MARTÍNEZ",
+   "localId": "1009928",
+   "visitanteId": "1008800"
+  },
+  {
    "id": "2528255",
    "grupo": "C-B",
    "jornada": 2,
@@ -10158,17 +10169,6 @@
    "visitante": "SD ESPANYOL BÀSQUET CORNELLÀ",
    "localId": "1009932",
    "visitanteId": "1010576"
-  },
-  {
-   "id": "2528256",
-   "grupo": "C-B",
-   "jornada": 2,
-   "fecha": "2026-10-11",
-   "hora": "12:00",
-   "local": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
-   "visitante": "C.B.VALLS.TALLERS PABLO MARTÍNEZ",
-   "localId": "1009928",
-   "visitanteId": "1008800"
   },
   {
    "id": "2528265",
@@ -10241,7 +10241,7 @@
    "grupo": "C-B",
    "jornada": 3,
    "fecha": "2026-10-18",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "PUJOL MOLLERUSSA",
    "localId": "1009146",
@@ -10303,6 +10303,17 @@
    "visitanteId": "1008800"
   },
   {
+   "id": "2528269",
+   "grupo": "C-B",
+   "jornada": 4,
+   "fecha": "2026-10-24",
+   "hora": "18:00",
+   "local": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
+   "visitante": "FUNDACION GRUPO JORGE BALONCESTO ZUERA",
+   "localId": "1009928",
+   "visitanteId": "1009083"
+  },
+  {
    "id": "2528268",
    "grupo": "C-B",
    "jornada": 4,
@@ -10312,17 +10323,6 @@
    "visitante": "CB ARTÉS",
    "localId": "1009932",
    "visitanteId": "1009701"
-  },
-  {
-   "id": "2528269",
-   "grupo": "C-B",
-   "jornada": 4,
-   "fecha": "2026-10-25",
-   "hora": "12:00",
-   "local": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
-   "visitante": "FUNDACION GRUPO JORGE BALONCESTO ZUERA",
-   "localId": "1009928",
-   "visitanteId": "1009083"
   },
   {
    "id": "2528278",
@@ -10395,7 +10395,7 @@
    "grupo": "C-B",
    "jornada": 5,
    "fecha": "2026-11-01",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "LETRA CORPOREA BARBASTRO",
    "localId": "1009146",
@@ -10626,7 +10626,7 @@
    "grupo": "C-B",
    "jornada": 8,
    "fecha": "2026-11-22",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "MONBUS - CB IGUALADA",
    "localId": "1009146",
@@ -10642,17 +10642,6 @@
    "visitante": "SANDÁ C.B. L´HOSPITALET",
    "localId": "1009815",
    "visitanteId": "1009816"
-  },
-  {
-   "id": "2528304",
-   "grupo": "C-B",
-   "jornada": 9,
-   "fecha": "2026-11-28",
-   "hora": "18:00",
-   "local": "C.B.VALLS.TALLERS PABLO MARTÍNEZ",
-   "visitante": "SA TINTINA CB ES CASTELL MENORCA",
-   "localId": "1008800",
-   "visitanteId": "1009146"
   },
   {
    "id": "2528303",
@@ -10688,6 +10677,17 @@
    "visitanteId": "1008966"
   },
   {
+   "id": "2528304",
+   "grupo": "C-B",
+   "jornada": 9,
+   "fecha": "2026-11-29",
+   "hora": "12:30",
+   "local": "C.B.VALLS.TALLERS PABLO MARTÍNEZ",
+   "visitante": "SA TINTINA CB ES CASTELL MENORCA",
+   "localId": "1008800",
+   "visitanteId": "1009146"
+  },
+  {
    "id": "2528307",
    "grupo": "C-B",
    "jornada": 9,
@@ -10708,17 +10708,6 @@
    "visitante": "PUJOL MOLLERUSSA",
    "localId": "1009928",
    "visitanteId": "1008936"
-  },
-  {
-   "id": "2528312",
-   "grupo": "C-B",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:30",
-   "local": "CB NAVÀS VISCOLA",
-   "visitante": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
-   "localId": "1009144",
-   "visitanteId": "1009928"
   },
   {
    "id": "2528314",
@@ -10776,11 +10765,22 @@
    "visitanteId": "1009701"
   },
   {
-   "id": "2528315",
+   "id": "2528312",
    "grupo": "C-B",
    "jornada": 10,
    "fecha": "2026-12-06",
    "hora": "12:00",
+   "local": "CB NAVÀS VISCOLA",
+   "visitante": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT",
+   "localId": "1009144",
+   "visitanteId": "1009928"
+  },
+  {
+   "id": "2528315",
+   "grupo": "C-B",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "SD ESPANYOL BÀSQUET CORNELLÀ",
    "localId": "1009146",
@@ -10934,7 +10934,7 @@
    "grupo": "C-B",
    "jornada": 12,
    "fecha": "2026-12-20",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "OCA GLOBAL C.B. SALOU",
    "localId": "1009146",
@@ -11165,7 +11165,7 @@
    "grupo": "C-B",
    "jornada": 15,
    "fecha": "2027-01-24",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "SANDÁ C.B. L´HOSPITALET",
    "localId": "1009146",
@@ -11319,7 +11319,7 @@
    "grupo": "C-B",
    "jornada": 17,
    "fecha": "2027-02-07",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "CB NAVÀS VISCOLA",
    "localId": "1009146",
@@ -11473,7 +11473,7 @@
    "grupo": "C-B",
    "jornada": 19,
    "fecha": "2027-02-21",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "LA PARRÓQUIA - BÁSQUET SAMÁ",
    "localId": "1009146",
@@ -11550,7 +11550,7 @@
    "grupo": "C-B",
    "jornada": 20,
    "fecha": "2027-02-28",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "CB ARTÉS",
    "localId": "1009146",
@@ -11704,7 +11704,7 @@
    "grupo": "C-B",
    "jornada": 22,
    "fecha": "2027-03-14",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "C.B.VALLS.TALLERS PABLO MARTÍNEZ",
    "localId": "1009146",
@@ -11858,7 +11858,7 @@
    "grupo": "C-B",
    "jornada": 24,
    "fecha": "2027-04-04",
-   "hora": "12:00",
+   "hora": "12:30",
    "local": "SA TINTINA CB ES CASTELL MENORCA",
    "visitante": "FUNDACION GRUPO JORGE BALONCESTO ZUERA",
    "localId": "1009146",
@@ -12173,17 +12173,6 @@
    "visitanteId": "1010198"
   },
   {
-   "id": "2536498",
-   "grupo": "D-A",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "19:30",
-   "local": "ECOCULTURE CB ALMERÍA",
-   "visitante": "CB NOVASCHOOL RINCÓN DE LA VICTORIA",
-   "localId": "1010894",
-   "visitanteId": "1010325"
-  },
-  {
    "id": "2536499",
    "grupo": "D-A",
    "jornada": 3,
@@ -12193,6 +12182,17 @@
    "visitante": "DEHESAS REUNIDAS CLIMANAVAS AGROMETAL PEÑARROYA",
    "localId": "1010327",
    "visitanteId": "1010199"
+  },
+  {
+   "id": "2536498",
+   "grupo": "D-A",
+   "jornada": 3,
+   "fecha": "2026-10-18",
+   "hora": "12:45",
+   "local": "ECOCULTURE CB ALMERÍA",
+   "visitante": "CB NOVASCHOOL RINCÓN DE LA VICTORIA",
+   "localId": "1010894",
+   "visitanteId": "1010325"
   },
   {
    "id": "2536497",
@@ -13794,7 +13794,7 @@
    "grupo": "D-B",
    "jornada": 1,
    "fecha": "2026-10-04",
-   "hora": "12:00",
+   "hora": "12:45",
    "local": "AD REM ONUBA",
    "visitante": "C.B. FENIX",
    "localId": "1010330",
@@ -13834,17 +13834,6 @@
    "visitanteId": "1009724"
   },
   {
-   "id": "2537400",
-   "grupo": "D-B",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "19:30",
-   "local": "OH!TELS ULB",
-   "visitante": "AD REM ONUBA",
-   "localId": "1010342",
-   "visitanteId": "1010330"
-  },
-  {
    "id": "2537401",
    "grupo": "D-B",
    "jornada": 2,
@@ -13865,6 +13854,17 @@
    "visitante": "INSOLAC CB ALCALÁ",
    "localId": "1010347",
    "visitanteId": "1010573"
+  },
+  {
+   "id": "2537400",
+   "grupo": "D-B",
+   "jornada": 2,
+   "fecha": "2026-10-11",
+   "hora": "18:00",
+   "local": "OH!TELS ULB",
+   "visitante": "AD REM ONUBA",
+   "localId": "1010342",
+   "visitanteId": "1010330"
   },
   {
    "id": "2537408",
