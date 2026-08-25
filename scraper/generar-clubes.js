@@ -26,7 +26,7 @@ for (const comp of fs.readdirSync(BASE)) {
       const e = JSON.parse(fs.readFileSync(fp, 'utf8'));
       for (const x of (Array.isArray(e) ? e : Object.values(e))) {
         const nombre = x.nombre || x.equipo;
-        apar.push({ clave: nombre + ' @ ' + comp + ' ' + temp, nombre, comp, temp });
+        apar.push({ clave: nombre + ' @ ' + comp + ' ' + temp, nombre, comp, temp, idFeb: x.id != null ? String(x.id) : null });
       }
     }
     // Una temporada aún sin jugar solo tiene calendario: de ahí salen los nombres
@@ -36,12 +36,12 @@ for (const comp of fs.readdirSync(BASE)) {
       const cal = JSON.parse(fs.readFileSync(fc, 'utf8'));
       const vistos = new Set();
       for (const p of (cal.partidos || [])) {
-        for (const nombre of [p.local, p.visitante]) {
+        for (const [nombre, idFeb] of [[p.local, p.localId], [p.visitante, p.visitanteId]]) {
           if (!nombre || vistos.has(nombre)) continue;
           vistos.add(nombre);
           const clave = nombre + ' @ ' + comp + ' ' + temp;
           if (!apar.some(a => a.clave === clave))
-            apar.push({ clave, nombre, comp, temp });
+            apar.push({ clave, nombre, comp, temp, idFeb: idFeb != null ? String(idFeb) : null });
         }
       }
     }
@@ -107,7 +107,8 @@ for (const g of Object.values(grupos)) {
   usados[id] = (usados[id] || 0) + 1;
   if (usados[id] > 1) { const base = id; id += filial ? '-b' : '-' + usados[id]; duplicados.push({ base, id, nombre: orden[0].nombre }); }
   clubes.push({ id, nombre: orden[0].nombre, filial, alias: nombres.filter(n => n !== orden[0].nombre),
-    apariciones: orden.map(a => a.comp + ' ' + a.temp) });
+    apariciones: orden.map(a => a.comp + ' ' + a.temp),
+    idsFeb: Object.fromEntries(orden.filter(a => a.idFeb).map(a => [a.comp + ' ' + a.temp, a.idFeb])) });
 }
 clubes.sort((a, b) => a.id.localeCompare(b.id));
 fs.writeFileSync(SALIDA, JSON.stringify({ generado: new Date().toISOString().slice(0, 10), clubes }, null, 1));
