@@ -87,6 +87,7 @@ function extraer(html) {
     presidente: v('presidenteLabel'),
     pabellon: v('pabellonLabel'),
     direccionPabellon: v('dirPabellonLabel'),
+    horarioLocal: v('horaJuegoLabel'),
   };
 }
 
