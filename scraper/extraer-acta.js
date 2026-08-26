@@ -123,7 +123,55 @@ async function extraerActa(partido, competicion = 1) {
   return parseTexto(res.text || '');
 }
 
-module.exports = { extraerActa, parseTexto, parseJugador };
+// Extrae los 4 cortes acumulados (c=1..4) y calcula el rendimiento POR CUARTO
+// de cada jugador restando cortes consecutivos. El parametro c de la URL controla
+// el corte: c=1 -> hasta Q1, c=2 -> hasta Q2, ... c=4 -> partido completo.
+async function extraerActaPorCuartos(partido, nCuartos = 4) {
+  const cortes = [];
+  for (let c = 1; c <= nCuartos; c++) {
+    const url = `${CFG.BASE}/BoxScore.aspx?p=${partido}&c=${c}&qd=4&t=FINAL`;
+    const r = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000, responseType: "arraybuffer" });
+    const parser = new PDFParse({ data: Buffer.from(r.data) });
+    const res = await parser.getText();
+    await parser.destroy();
+    cortes.push(parseTexto(res.text || ""));
+    await new Promise(r => setTimeout(r, CFG.PAUSA_MS || 1200));
+  }
+
+  // Campos numericos acumulables a diferenciar por cuarto
+  const difJug = (act, prev) => {
+    if (!prev) return { ...act };
+    const d = { dorsal: act.dorsal, nombre: act.nombre, titular: act.titular };
+    const resta = (a, b) => (a || 0) - (b || 0);
+    d.pts = resta(act.pts, prev.pts);
+    d.t2 = { a: resta(act.t2.a, prev.t2.a), i: resta(act.t2.i, prev.t2.i) };
+    d.t3 = { a: resta(act.t3.a, prev.t3.a), i: resta(act.t3.i, prev.t3.i) };
+    d.tl = { a: resta(act.tl.a, prev.tl.a), i: resta(act.tl.i, prev.tl.i) };
+    d.rt = resta(act.rt, prev.rt); d.ro = resta(act.ro, prev.ro); d.rd = resta(act.rd, prev.rd);
+    d.as = resta(act.as, prev.as); d.rec = resta(act.rec, prev.rec); d.per = resta(act.per, prev.per);
+    d.val = resta(act.val, prev.val);
+    return d;
+  };
+
+  // Por cada equipo y jugador (cruzado por dorsal), rendimiento de cada cuarto
+  const porCuarto = cortes.map((corte, ci) => {
+    const prev = ci > 0 ? cortes[ci - 1] : null;
+    return corte.equipos.map((eq, ei) => ({
+      jugadores: eq.jugadores.map(j => {
+        const jp = prev ? prev.equipos[ei].jugadores.find(x => x.dorsal === j.dorsal) : null;
+        return difJug(j, jp);
+      })
+    }));
+  });
+
+  return {
+    final: cortes[nCuartos - 1],   // acta completa (= extraerActa)
+    cortes,                         // los 4 acumulados
+    porCuarto,                      // rendimiento de cada cuarto por jugador
+  };
+}
+
+module.exports = { extraerActa, extraerActaPorCuartos, parseTexto, parseJugador };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
