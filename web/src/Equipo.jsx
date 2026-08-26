@@ -14,8 +14,10 @@ const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 // un entrenador que revisa varios equipos no quiere pulsar 'Análisis' cada vez.
 let modoRecordado = 'resumen';
 
-export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, rivalInicial }) {
+export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, equiposCuartos, rivalInicial }) {
   const club = (datosClub || {})[equipo.idClub] || null;
+  const cuartos = (equiposCuartos || []).find(x => x.equipoId === equipo.idClub) || null;
+  const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
   const [vistaFicha, _setVistaFicha] = useState(rivalInicial ? 'dossier' : modoRecordado);
   const setVistaFicha = m => { modoRecordado = m; _setVistaFicha(m); };
 
@@ -134,9 +136,55 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           onClick={() => setVistaFicha('dossier')}>Preparar partido</button>
         <button className={`boton-grupo ${vistaFicha === 'informacion' ? 'activo' : ''}`}
           onClick={() => setVistaFicha('informacion')}>Información</button>
+        {hayCuartos && (
+          <button className={`boton-grupo ${vistaFicha === 'cuartos' ? 'activo' : ''}`}
+            onClick={() => setVistaFicha('cuartos')}>Por cuartos</button>
+        )}
       </div>
 
-      {vistaFicha === 'informacion' ? (
+      {vistaFicha === 'cuartos' && hayCuartos ? (
+        <div className="cuartos-equipo">
+          <h3 className="seccion">Eficiencia por cuarto · temporada actual</h3>
+          <div style={{ width: '100%', height: 260, marginTop: 8 }}>
+            <ResponsiveContainer>
+              <LineChart data={cuartos.porCuarto.map((q, i) => ({
+                cuarto: `Q${i + 1}`, Ataque: q.ortg, Defensa: q.drtg,
+              }))} margin={{ top: 8, right: 12, left: -8, bottom: 4 }}>
+                <CartesianGrid strokeDasharray="3 3" stroke="#e4e7ee" />
+                <XAxis dataKey="cuarto" tick={{ fontSize: 13, fill: COLOR.tinta }} />
+                <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} />
+                <Tooltip />
+                <Legend wrapperStyle={{ fontSize: 13 }} />
+                <Line type="monotone" dataKey="Ataque" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 4 }} />
+                <Line type="monotone" dataKey="Defensa" stroke="#7d93b2" strokeWidth={2.5} dot={{ r: 4 }} />
+              </LineChart>
+            </ResponsiveContainer>
+          </div>
+          <p className="pie">
+            Puntos anotados (ataque) y recibidos (defensa) por cada 100 posesiones, en cada cuarto.
+            Cuando la línea de ataque supera a la de defensa, el equipo gana ese cuarto. Revela en qué
+            tramos del partido es fuerte o flojo.
+          </p>
+          <h3 className="seccion" style={{ marginTop: 18 }}>Ritmo por cuarto</h3>
+          <div className="datos-bloque">
+            <div className="datos">
+              {cuartos.porCuarto.map((q, i) => (
+                <div className="dato" key={i}>
+                  <div className="dato-etiqueta">{`Q${i + 1}`}</div>
+                  <div className="dato-valor">{q.pace}</div>
+                </div>
+              ))}
+              <div className="dato" key="total">
+                <div className="dato-etiqueta">Total</div>
+                <div className="dato-valor" style={{ color: COLOR.acento }}>{equipo.pace}</div>
+              </div>
+            </div>
+            <p className="pie" style={{ marginTop: 8 }}>
+              Posesiones por cuarto. Indica si el equipo acelera o frena el juego según el tramo del partido.
+            </p>
+          </div>
+        </div>
+      ) : vistaFicha === 'informacion' ? (
         <div className="club-ficha">
           {!club ? (
             <p className="aviso-dato">No hay datos de club disponibles para este equipo.</p>

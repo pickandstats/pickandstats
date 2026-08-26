@@ -27,14 +27,14 @@ const ordenarGrupos = grupos => [...grupos].sort((a, b) => a.localeCompare(b, 'e
 
 
 // Resuelve la ficha de equipo desde la URL: lee :idClub y busca el equipo ya cargado.
-function RutaEquipo({ equipos, jugadores, partidos, datosClub, cargando, onVolver, onVerEquipo, onVerJugador, onVerPartido }) {
+function RutaEquipo({ equipos, jugadores, partidos, datosClub, equiposCuartos, cargando, onVolver, onVerEquipo, onVerJugador, onVerPartido }) {
   const { idClub } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
   const equipo = equipos.find(e => e.idClub === idClub);
   if (!equipo) return <p className="cargando">Equipo no encontrado en esta temporada.</p>;
   return (
     <Equipo equipo={equipo} jugadores={jugadores} partidos={partidos}
-      equipos={equipos} datosClub={datosClub} onVolver={onVolver}
+      equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} onVolver={onVolver}
       onVerEquipo={onVerEquipo} onVerJugador={onVerJugador} onVerPartido={onVerPartido} />
   );
 }
@@ -91,6 +91,7 @@ export default function App() {
   const [partidoSel, setPartidoSel] = useState(null);
   const [estadoDatos, setEstadoDatos] = useState(null);
   const [datosClub, setDatosClub] = useState({});
+  const [equiposCuartos, setEquiposCuartos] = useState([]);
   const [cargando, setCargando] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
 
@@ -117,7 +118,7 @@ export default function App() {
     if (!temporada) return;
     setCargando(true);
     setSinDatos(false);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -128,11 +129,13 @@ export default function App() {
       cargar(`${base}/jugadores.json`),
       cargar(`${base}/carreras.json`),
       cargar(`${base}/partidos.json`),
-      cargar(`${base}/jugadores-cuartos.json`).catch(() => null)
+      cargar(`${base}/jugadores-cuartos.json`).catch(() => null),
+      cargar(`${base}/equipos-cuartos.json`).catch(() => null)
     ])
-      .then(([eq, jug, car, par, cuartos]) => {
+      .then(([eq, jug, car, par, cuartos, eqCuartos]) => {
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
         setJugadoresCuartos(cuartos || []);
+        setEquiposCuartos(eqCuartos || []);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -309,7 +312,7 @@ export default function App() {
         <Route path="/:comp/:temp/equipo/:idClub" element={
           <RutaEquipo
             equipos={equipos} jugadores={jugadores} partidos={partidos}
-            datosClub={datosClub}
+            datosClub={datosClub} equiposCuartos={equiposCuartos}
             cargando={cargando}
             onVolver={() => navigate('/')}
             onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
@@ -361,7 +364,7 @@ export default function App() {
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
       ) : equipoSel ? (
         <Equipo equipo={equipoSel} jugadores={jugadores} partidos={partidos}
-          equipos={equipos} datosClub={datosClub} onVolver={() => setEquipoSel(null)}
+          equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} onVolver={() => setEquipoSel(null)}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'inicio' ? (
         <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos}
