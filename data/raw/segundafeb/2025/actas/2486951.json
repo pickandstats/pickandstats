@@ -1,0 +1,2331 @@
+{
+ "partido": "2486951",
+ "competicion": "2",
+ "temporada": "2025",
+ "local": "MADERAS SORLI BENICARLO",
+ "visitante": "SOL GIRONÈS BISBAL BÀSQUET",
+ "marcador": {
+  "local": 69,
+  "visitante": 71
+ },
+ "parciales": [
+  {
+   "local": 8,
+   "visitante": 21
+  },
+  {
+   "local": 21,
+   "visitante": 15
+  },
+  {
+   "local": 12,
+   "visitante": 19
+  },
+  {
+   "local": 28,
+   "visitante": 16
+  }
+ ],
+ "contexto": {
+  "maximaVentaja": {
+   "local": 0,
+   "visitante": 17
+  },
+  "mejorRacha": {
+   "local": 10,
+   "visitante": 9
+  },
+  "segundaOportunidad": {
+   "local": 7,
+   "visitante": 12
+  },
+  "contraataque": {
+   "local": 8,
+   "visitante": 6
+  },
+  "pintura": {
+   "local": 26,
+   "visitante": 34
+  },
+  "trasPerdida": {
+   "local": 14,
+   "visitante": 15
+  },
+  "banquillo": {
+   "local": 28,
+   "visitante": 10
+  }
+ },
+ "nCuartos": 4,
+ "completo": true,
+ "verificado": true,
+ "porCuarto": [
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "titular": false,
+      "nombre": "AMADI MICHEL IKPEZE",
+      "min": "06:25",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 3,
+      "mas": -6
+     },
+     {
+      "dorsal": "3",
+      "titular": false,
+      "nombre": "MATTHEW JOHN BETCH",
+      "min": "05:06",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -1,
+      "mas": -7
+     },
+     {
+      "dorsal": "7",
+      "titular": false,
+      "nombre": "PAU LLORACH CORNELLES",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "8",
+      "titular": false,
+      "nombre": "ALEIX HARO VAL",
+      "min": "05:06",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": -1,
+      "mas": -8
+     },
+     {
+      "dorsal": "9",
+      "titular": true,
+      "nombre": "PABLO HARGUINDEY",
+      "min": "04:54",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -1,
+      "mas": -6
+     },
+     {
+      "dorsal": "11",
+      "titular": true,
+      "nombre": "MAKAR VORONIN",
+      "min": "04:54",
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 1,
+      "mas": -5
+     },
+     {
+      "dorsal": "12",
+      "titular": true,
+      "nombre": "ALBERT PRIOR RUIZ",
+      "min": "03:35",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": -3,
+      "mas": -7
+     },
+     {
+      "dorsal": "13",
+      "titular": true,
+      "nombre": "ANTHONY JOSEPH LIBROIA",
+      "min": "06:37",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 2,
+      "mas": -8
+     },
+     {
+      "dorsal": "18",
+      "titular": true,
+      "nombre": "MASSINE FALL",
+      "min": "03:35",
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": -1,
+      "mas": -7
+     },
+     {
+      "dorsal": "25",
+      "titular": false,
+      "nombre": "ROBERT CHIMA UKAWUBA",
+      "min": "03:23",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -2,
+      "mas": -5
+     },
+     {
+      "dorsal": "32",
+      "titular": false,
+      "nombre": "ADRIAN SANCHEZ",
+      "min": "06:25",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": 2,
+      "mas": -6
+     },
+     {
+      "dorsal": "33",
+      "titular": false,
+      "nombre": "KINGSELY OBIEKWE SAM",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "2",
+      "titular": false,
+      "nombre": "JOSE JOAQUIN CARRASCO",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "5",
+      "titular": true,
+      "nombre": "FAROUK ADEBOLA ADEBAYO",
+      "min": "10:00",
+      "pts": 9,
+      "t2": {
+       "a": 4,
+       "i": 5
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 3
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 2,
+      "val": 6,
+      "mas": 13
+     },
+     {
+      "dorsal": "6",
+      "titular": false,
+      "nombre": "PAU SALA VALLMAJO",
+      "min": "05:06",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 2,
+      "rd": 2,
+      "rt": 4,
+      "as": 1,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 5,
+      "mas": 7
+     },
+     {
+      "dorsal": "11",
+      "titular": true,
+      "nombre": "ISAAC VALERA COROMINAS",
+      "min": "04:54",
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 4,
+      "mas": 6
+     },
+     {
+      "dorsal": "13",
+      "titular": true,
+      "nombre": "MIKHAIL MIKHAILOV",
+      "min": "07:32",
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "ro": 2,
+      "rd": 1,
+      "rt": 3,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 2,
+      "val": 8,
+      "mas": 10
+     },
+     {
+      "dorsal": "21",
+      "titular": true,
+      "nombre": "BERNAT ALVAREZ TORRES",
+      "min": "06:37",
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 1,
+      "rec": 1,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 5,
+      "mas": 9
+     },
+     {
+      "dorsal": "34",
+      "titular": false,
+      "nombre": "SAMBA KANE",
+      "min": "02:28",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -1,
+      "mas": 3
+     },
+     {
+      "dorsal": "55",
+      "titular": false,
+      "nombre": "ALBERT VILA I GÓMEZ",
+      "min": "05:06",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 1,
+      "rd": 1,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 1,
+      "mas": 7
+     },
+     {
+      "dorsal": "96",
+      "titular": true,
+      "nombre": "XAVIER TORRENT BAYÉ",
+      "min": "08:17",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 4
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": -3,
+      "mas": 10
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "AMADI MICHEL IKPEZE",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 4
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 1,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "3",
+      "nombre": "MATTHEW JOHN BETCH",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "7",
+      "nombre": "PAU LLORACH CORNELLES",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "8",
+      "nombre": "ALEIX HARO VAL",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "9",
+      "nombre": "PABLO HARGUINDEY",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -2
+     },
+     {
+      "dorsal": "11",
+      "nombre": "MAKAR VORONIN",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "12",
+      "nombre": "ALBERT PRIOR RUIZ",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ANTHONY JOSEPH LIBROIA",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 7
+     },
+     {
+      "dorsal": "18",
+      "nombre": "MASSINE FALL",
+      "titular": true,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 1
+     },
+     {
+      "dorsal": "25",
+      "nombre": "ROBERT CHIMA UKAWUBA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "32",
+      "nombre": "ADRIAN SANCHEZ",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 4
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KINGSELY OBIEKWE SAM",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "2",
+      "nombre": "JOSE JOAQUIN CARRASCO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "5",
+      "nombre": "FAROUK ADEBOLA ADEBAYO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "6",
+      "nombre": "PAU SALA VALLMAJO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 1,
+      "val": -3
+     },
+     {
+      "dorsal": "11",
+      "nombre": "ISAAC VALERA COROMINAS",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -3
+     },
+     {
+      "dorsal": "13",
+      "nombre": "MIKHAIL MIKHAILOV",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 4
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "21",
+      "nombre": "BERNAT ALVAREZ TORRES",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "34",
+      "nombre": "SAMBA KANE",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 1,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ALBERT VILA I GÓMEZ",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "96",
+      "nombre": "XAVIER TORRENT BAYÉ",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "AMADI MICHEL IKPEZE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -2
+     },
+     {
+      "dorsal": "3",
+      "nombre": "MATTHEW JOHN BETCH",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "7",
+      "nombre": "PAU LLORACH CORNELLES",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "8",
+      "nombre": "ALEIX HARO VAL",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "9",
+      "nombre": "PABLO HARGUINDEY",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -3
+     },
+     {
+      "dorsal": "11",
+      "nombre": "MAKAR VORONIN",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "12",
+      "nombre": "ALBERT PRIOR RUIZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -2
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ANTHONY JOSEPH LIBROIA",
+      "titular": true,
+      "pts": 6,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 2,
+      "per": 0,
+      "val": 8
+     },
+     {
+      "dorsal": "18",
+      "nombre": "MASSINE FALL",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "25",
+      "nombre": "ROBERT CHIMA UKAWUBA",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "32",
+      "nombre": "ADRIAN SANCHEZ",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 2
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 5
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KINGSELY OBIEKWE SAM",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "2",
+      "nombre": "JOSE JOAQUIN CARRASCO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "5",
+      "nombre": "FAROUK ADEBOLA ADEBAYO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "6",
+      "nombre": "PAU SALA VALLMAJO",
+      "titular": false,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "11",
+      "nombre": "ISAAC VALERA COROMINAS",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 5
+     },
+     {
+      "dorsal": "13",
+      "nombre": "MIKHAIL MIKHAILOV",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 3,
+       "i": 4
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 7
+     },
+     {
+      "dorsal": "21",
+      "nombre": "BERNAT ALVAREZ TORRES",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 1,
+      "per": 2,
+      "val": 1
+     },
+     {
+      "dorsal": "34",
+      "nombre": "SAMBA KANE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ALBERT VILA I GÓMEZ",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "96",
+      "nombre": "XAVIER TORRENT BAYÉ",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -4
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "AMADI MICHEL IKPEZE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "3",
+      "nombre": "MATTHEW JOHN BETCH",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "7",
+      "nombre": "PAU LLORACH CORNELLES",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "8",
+      "nombre": "ALEIX HARO VAL",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 3,
+      "rec": 1,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "9",
+      "nombre": "PABLO HARGUINDEY",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "11",
+      "nombre": "MAKAR VORONIN",
+      "titular": true,
+      "pts": 7,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 2,
+      "per": 0,
+      "val": 7
+     },
+     {
+      "dorsal": "12",
+      "nombre": "ALBERT PRIOR RUIZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ANTHONY JOSEPH LIBROIA",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 2,
+      "rec": 0,
+      "per": 2,
+      "val": 2
+     },
+     {
+      "dorsal": "18",
+      "nombre": "MASSINE FALL",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "25",
+      "nombre": "ROBERT CHIMA UKAWUBA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "32",
+      "nombre": "ADRIAN SANCHEZ",
+      "titular": false,
+      "pts": 8,
+      "t2": {
+       "a": 4,
+       "i": 6
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 7,
+      "ro": 5,
+      "rd": 2,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 16
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KINGSELY OBIEKWE SAM",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "2",
+      "nombre": "JOSE JOAQUIN CARRASCO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "5",
+      "nombre": "FAROUK ADEBOLA ADEBAYO",
+      "titular": true,
+      "pts": 8,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 6
+     },
+     {
+      "dorsal": "6",
+      "nombre": "PAU SALA VALLMAJO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     },
+     {
+      "dorsal": "11",
+      "nombre": "ISAAC VALERA COROMINAS",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "13",
+      "nombre": "MIKHAIL MIKHAILOV",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "21",
+      "nombre": "BERNAT ALVAREZ TORRES",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 2
+     },
+     {
+      "dorsal": "34",
+      "nombre": "SAMBA KANE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ALBERT VILA I GÓMEZ",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 0
+     },
+     {
+      "dorsal": "96",
+      "nombre": "XAVIER TORRENT BAYÉ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     }
+    ]
+   }
+  ]
+ ],
+ "generado": "2026-08-26"
+}

@@ -1,0 +1,2331 @@
+{
+ "partido": "2487886",
+ "competicion": "2",
+ "temporada": "2025",
+ "local": "C.B. STARLABS MORÓN",
+ "visitante": "REINA PROTEÍNAS CLAVIJO",
+ "marcador": {
+  "local": 78,
+  "visitante": 66
+ },
+ "parciales": [
+  {
+   "local": 17,
+   "visitante": 10
+  },
+  {
+   "local": 23,
+   "visitante": 15
+  },
+  {
+   "local": 20,
+   "visitante": 19
+  },
+  {
+   "local": 18,
+   "visitante": 22
+  }
+ ],
+ "contexto": {
+  "maximaVentaja": {
+   "local": 19,
+   "visitante": 0
+  },
+  "mejorRacha": {
+   "local": 9,
+   "visitante": 5
+  },
+  "segundaOportunidad": {
+   "local": 13,
+   "visitante": 8
+  },
+  "contraataque": {
+   "local": 4,
+   "visitante": 6
+  },
+  "pintura": {
+   "local": 26,
+   "visitante": 26
+  },
+  "trasPerdida": {
+   "local": 7,
+   "visitante": 13
+  },
+  "banquillo": {
+   "local": 27,
+   "visitante": 22
+  }
+ },
+ "nCuartos": 4,
+ "completo": true,
+ "verificado": true,
+ "porCuarto": [
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "0",
+      "titular": false,
+      "nombre": "ZION JYAIR WILLIAMS",
+      "min": "05:12",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 1,
+      "rd": 0,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 1,
+      "mas": 2
+     },
+     {
+      "dorsal": "3",
+      "titular": false,
+      "nombre": "KEVIN NAVARRO ARRUE",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "6",
+      "titular": true,
+      "nombre": "JAVIER MARIN ORTEGA",
+      "min": "07:04",
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 7,
+      "mas": 5
+     },
+     {
+      "dorsal": "8",
+      "titular": true,
+      "nombre": "GONZALO FERNANDEZ DIAZ",
+      "min": "04:48",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 1
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": 0,
+      "mas": 5
+     },
+     {
+      "dorsal": "10",
+      "titular": false,
+      "nombre": "ALVARO HERRERA",
+      "min": "02:56",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": -2,
+      "mas": 2
+     },
+     {
+      "dorsal": "13",
+      "titular": false,
+      "nombre": "ALEJANDRO MARIN ORTEGA",
+      "min": "03:56",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 1,
+      "rec": 1,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 2,
+      "val": 3,
+      "mas": 2
+     },
+     {
+      "dorsal": "27",
+      "titular": true,
+      "nombre": "ANTONIO BURGOS",
+      "min": "07:56",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 0,
+      "mas": 5
+     },
+     {
+      "dorsal": "33",
+      "titular": false,
+      "nombre": "LUIS MARIA PAREJO",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "45",
+      "titular": true,
+      "nombre": "VOLODYMYR ORLOV",
+      "min": "04:48",
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "ro": 0,
+      "rd": 3,
+      "rt": 3,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": 5,
+      "mas": 5
+     },
+     {
+      "dorsal": "77",
+      "titular": false,
+      "nombre": "DIEGO RODRIGUEZ CALZADO",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "85",
+      "titular": false,
+      "nombre": "SIDNEY BENJAMIN CORREIA",
+      "min": "05:12",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 2,
+      "rd": 2,
+      "rt": 4,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 3,
+      "mas": 2
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "titular": false,
+      "nombre": "ELUKU A NONGO BERTHOLD",
+      "min": "04:05",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 2,
+      "mas": 2
+     },
+     {
+      "dorsal": "3",
+      "titular": true,
+      "nombre": "OBIAJULUM UGOMEZUEM",
+      "min": "05:55",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 2
+      },
+      "ro": 1,
+      "rd": 1,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": -2,
+      "mas": -9
+     },
+     {
+      "dorsal": "5",
+      "titular": false,
+      "nombre": "MIGUEL DE PABLO DEL",
+      "min": "03:56",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": -2,
+      "mas": -2
+     },
+     {
+      "dorsal": "7",
+      "titular": true,
+      "nombre": "VIT HRABAR",
+      "min": "06:04",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 1,
+      "mas": -5
+     },
+     {
+      "dorsal": "8",
+      "titular": true,
+      "nombre": "JOSEBA QUEREJETA",
+      "min": "06:04",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": -1,
+      "mas": -5
+     },
+     {
+      "dorsal": "9",
+      "titular": false,
+      "nombre": "HUGO ARBOSA ROLDAN",
+      "min": "07:01",
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 3,
+      "mas": 0
+     },
+     {
+      "dorsal": "11",
+      "titular": false,
+      "nombre": "JOAN PARDINA MOLINA",
+      "min": "03:56",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 0,
+      "mas": -2
+     },
+     {
+      "dorsal": "12",
+      "titular": true,
+      "nombre": "PA MOR DIENE",
+      "min": "02:59",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": -7
+     },
+     {
+      "dorsal": "33",
+      "titular": true,
+      "nombre": "KEVIN TORRES CUEVAS",
+      "min": "06:04",
+      "pts": 4,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": 1,
+      "mas": -5
+     },
+     {
+      "dorsal": "55",
+      "titular": false,
+      "nombre": "CHANDLER CHARLES JACOBS",
+      "min": "03:56",
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": 3,
+      "mas": -2
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "0",
+      "nombre": "ZION JYAIR WILLIAMS",
+      "titular": false,
+      "pts": 5,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "3",
+      "nombre": "KEVIN NAVARRO ARRUE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "6",
+      "nombre": "JAVIER MARIN ORTEGA",
+      "titular": true,
+      "pts": 7,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": 8
+     },
+     {
+      "dorsal": "8",
+      "nombre": "GONZALO FERNANDEZ DIAZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "10",
+      "nombre": "ALVARO HERRERA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ALEJANDRO MARIN ORTEGA",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "27",
+      "nombre": "ANTONIO BURGOS",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 2,
+      "val": -3
+     },
+     {
+      "dorsal": "33",
+      "nombre": "LUIS MARIA PAREJO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 1,
+      "rec": 1,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "45",
+      "nombre": "VOLODYMYR ORLOV",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 4
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "77",
+      "nombre": "DIEGO RODRIGUEZ CALZADO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "85",
+      "nombre": "SIDNEY BENJAMIN CORREIA",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 1,
+      "per": 1,
+      "val": 2
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "ELUKU A NONGO BERTHOLD",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 1,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 7
+     },
+     {
+      "dorsal": "3",
+      "nombre": "OBIAJULUM UGOMEZUEM",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "5",
+      "nombre": "MIGUEL DE PABLO DEL",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "7",
+      "nombre": "VIT HRABAR",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOSEBA QUEREJETA",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "9",
+      "nombre": "HUGO ARBOSA ROLDAN",
+      "titular": false,
+      "pts": 5,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "11",
+      "nombre": "JOAN PARDINA MOLINA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -2
+     },
+     {
+      "dorsal": "12",
+      "nombre": "PA MOR DIENE",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "val": -2
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KEVIN TORRES CUEVAS",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "55",
+      "nombre": "CHANDLER CHARLES JACOBS",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 1,
+      "per": 1,
+      "val": 0
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "0",
+      "nombre": "ZION JYAIR WILLIAMS",
+      "titular": false,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 3,
+       "i": 6
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "3",
+      "nombre": "KEVIN NAVARRO ARRUE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "6",
+      "nombre": "JAVIER MARIN ORTEGA",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 2,
+      "rec": 0,
+      "per": 1,
+      "val": 0
+     },
+     {
+      "dorsal": "8",
+      "nombre": "GONZALO FERNANDEZ DIAZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -2
+     },
+     {
+      "dorsal": "10",
+      "nombre": "ALVARO HERRERA",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ALEJANDRO MARIN ORTEGA",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": 5
+     },
+     {
+      "dorsal": "27",
+      "nombre": "ANTONIO BURGOS",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "33",
+      "nombre": "LUIS MARIA PAREJO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "45",
+      "nombre": "VOLODYMYR ORLOV",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 1,
+      "rec": 1,
+      "per": 1,
+      "val": 6
+     },
+     {
+      "dorsal": "77",
+      "nombre": "DIEGO RODRIGUEZ CALZADO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "85",
+      "nombre": "SIDNEY BENJAMIN CORREIA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -2
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "ELUKU A NONGO BERTHOLD",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "3",
+      "nombre": "OBIAJULUM UGOMEZUEM",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "5",
+      "nombre": "MIGUEL DE PABLO DEL",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -4
+     },
+     {
+      "dorsal": "7",
+      "nombre": "VIT HRABAR",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOSEBA QUEREJETA",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 4
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 2,
+      "val": 2
+     },
+     {
+      "dorsal": "9",
+      "nombre": "HUGO ARBOSA ROLDAN",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "11",
+      "nombre": "JOAN PARDINA MOLINA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "12",
+      "nombre": "PA MOR DIENE",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 3,
+      "ro": 2,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 1,
+      "val": 5
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KEVIN TORRES CUEVAS",
+      "titular": true,
+      "pts": 11,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 7,
+       "i": 7
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 13
+     },
+     {
+      "dorsal": "55",
+      "nombre": "CHANDLER CHARLES JACOBS",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -2
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "0",
+      "nombre": "ZION JYAIR WILLIAMS",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "3",
+      "nombre": "KEVIN NAVARRO ARRUE",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "6",
+      "nombre": "JAVIER MARIN ORTEGA",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "8",
+      "nombre": "GONZALO FERNANDEZ DIAZ",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 1,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "10",
+      "nombre": "ALVARO HERRERA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "ALEJANDRO MARIN ORTEGA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "27",
+      "nombre": "ANTONIO BURGOS",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "33",
+      "nombre": "LUIS MARIA PAREJO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "45",
+      "nombre": "VOLODYMYR ORLOV",
+      "titular": true,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "77",
+      "nombre": "DIEGO RODRIGUEZ CALZADO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "85",
+      "nombre": "SIDNEY BENJAMIN CORREIA",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 2
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "1",
+      "nombre": "ELUKU A NONGO BERTHOLD",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "3",
+      "nombre": "OBIAJULUM UGOMEZUEM",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "5",
+      "nombre": "MIGUEL DE PABLO DEL",
+      "titular": false,
+      "pts": 5,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "7",
+      "nombre": "VIT HRABAR",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOSEBA QUEREJETA",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 8
+     },
+     {
+      "dorsal": "9",
+      "nombre": "HUGO ARBOSA ROLDAN",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 5
+     },
+     {
+      "dorsal": "11",
+      "nombre": "JOAN PARDINA MOLINA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     },
+     {
+      "dorsal": "12",
+      "nombre": "PA MOR DIENE",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "33",
+      "nombre": "KEVIN TORRES CUEVAS",
+      "titular": true,
+      "pts": 7,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "55",
+      "nombre": "CHANDLER CHARLES JACOBS",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     }
+    ]
+   }
+  ]
+ ],
+ "generado": "2026-08-26"
+}

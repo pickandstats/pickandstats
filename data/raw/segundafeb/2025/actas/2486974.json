@@ -1,0 +1,2225 @@
+{
+ "partido": "2486974",
+ "competicion": "2",
+ "temporada": "2025",
+ "local": "C.B. ZARAGOZA",
+ "visitante": "AMICS CASTELLÓ",
+ "marcador": {
+  "local": 78,
+  "visitante": 76
+ },
+ "parciales": [
+  {
+   "local": 23,
+   "visitante": 23
+  },
+  {
+   "local": 17,
+   "visitante": 11
+  },
+  {
+   "local": 15,
+   "visitante": 26
+  },
+  {
+   "local": 23,
+   "visitante": 16
+  }
+ ],
+ "contexto": {
+  "maximaVentaja": {
+   "local": 8,
+   "visitante": 10
+  },
+  "mejorRacha": {
+   "local": 9,
+   "visitante": 15
+  },
+  "segundaOportunidad": {
+   "local": 9,
+   "visitante": 13
+  },
+  "contraataque": {
+   "local": 4,
+   "visitante": 6
+  },
+  "pintura": {
+   "local": 38,
+   "visitante": 36
+  },
+  "trasPerdida": {
+   "local": 22,
+   "visitante": 15
+  },
+  "banquillo": {
+   "local": 41,
+   "visitante": 45
+  }
+ },
+ "nCuartos": 4,
+ "completo": true,
+ "verificado": true,
+ "porCuarto": [
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "00",
+      "titular": false,
+      "nombre": "DANIEL MUÑOZ SAMATAN",
+      "min": "04:38",
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 1,
+      "rd": 0,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 1,
+      "fc": 0,
+      "fr": 1,
+      "val": 5,
+      "mas": 0
+     },
+     {
+      "dorsal": "5",
+      "titular": false,
+      "nombre": "DANIEL ARJOL LOPEZ",
+      "min": "02:16",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 1,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -2,
+      "mas": -3
+     },
+     {
+      "dorsal": "7",
+      "titular": true,
+      "nombre": "OSCAR MIGUEL ALVARADO",
+      "min": "07:44",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 3,
+      "rt": 3,
+      "as": 3,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": 7,
+      "mas": 3
+     },
+     {
+      "dorsal": "12",
+      "titular": false,
+      "nombre": "EDUARD GATELL SANZ",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "13",
+      "titular": true,
+      "nombre": "PABLO ASO JIMENEZ",
+      "min": "06:58",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": -3
+     },
+     {
+      "dorsal": "17",
+      "titular": true,
+      "nombre": "YASIN GARCIA KOLO",
+      "min": "05:22",
+      "pts": 7,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 2,
+      "fr": 0,
+      "val": 2,
+      "mas": 0
+     },
+     {
+      "dorsal": "22",
+      "titular": true,
+      "nombre": "JOHNATAN THOMAS ZHAO",
+      "min": "07:44",
+      "pts": 6,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 2,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 3,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": 9,
+      "mas": 3
+     },
+     {
+      "dorsal": "24",
+      "titular": false,
+      "nombre": "GUILLEM COLOM BARRUFET",
+      "min": "02:16",
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 1,
+      "mas": -3
+     },
+     {
+      "dorsal": "55",
+      "titular": false,
+      "nombre": "ADRIA ARAGONES NAVAIS",
+      "min": "04:38",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 1,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": -1,
+      "mas": 0
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "4",
+      "titular": false,
+      "nombre": "ROGER FABREGA URPINA",
+      "min": "04:38",
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 2,
+      "rec": 3,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 1,
+      "val": 7,
+      "mas": 0
+     },
+     {
+      "dorsal": "8",
+      "titular": true,
+      "nombre": "JOAN FANER CATALA",
+      "min": "05:22",
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 3,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": 5,
+      "mas": 0
+     },
+     {
+      "dorsal": "10",
+      "titular": false,
+      "nombre": "OLUWASESAN BENJAMIN",
+      "min": "05:55",
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 2,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 5,
+      "mas": 1
+     },
+     {
+      "dorsal": "11",
+      "titular": true,
+      "nombre": "DIANTE AQUIL-HASSAN BAH",
+      "min": "05:41",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 1,
+      "rd": 0,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 1,
+      "fc": 0,
+      "fr": 1,
+      "val": 1,
+      "mas": 2
+     },
+     {
+      "dorsal": "13",
+      "titular": true,
+      "nombre": "PEDRO GARCIA CARRERO",
+      "min": "05:41",
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 5,
+      "mas": 2
+     },
+     {
+      "dorsal": "15",
+      "titular": false,
+      "nombre": "IGNACIO ROSA POMPIDO",
+      "min": "03:02",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 1,
+      "tapRec": 0,
+      "fc": 2,
+      "fr": 0,
+      "val": -3,
+      "mas": -3
+     },
+     {
+      "dorsal": "22",
+      "titular": false,
+      "nombre": "KOBE ALEXANDER NEWTON",
+      "min": "03:06",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 1,
+      "rt": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 1,
+      "mas": -2
+     },
+     {
+      "dorsal": "26",
+      "titular": false,
+      "nombre": "MIKE MUKENDI MUKENDI",
+      "min": "00:00",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": 0,
+      "mas": 0
+     },
+     {
+      "dorsal": "33",
+      "titular": false,
+      "nombre": "MAXIMILIANO ANDREATTA",
+      "min": "04:19",
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 2,
+      "rt": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 1,
+      "val": 7,
+      "mas": -2
+     },
+     {
+      "dorsal": "42",
+      "titular": true,
+      "nombre": "FREDERIC GEORGE STUTZ",
+      "min": "05:22",
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 6
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 1,
+      "fr": 0,
+      "val": -1,
+      "mas": 0
+     },
+     {
+      "dorsal": "67",
+      "titular": true,
+      "nombre": "ALEX TAMAYO LESMES",
+      "min": "06:54",
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "ro": 0,
+      "rd": 0,
+      "rt": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "tap": 0,
+      "tapRec": 0,
+      "fc": 0,
+      "fr": 0,
+      "val": -1,
+      "mas": 2
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "00",
+      "nombre": "DANIEL MUÑOZ SAMATAN",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 3,
+      "ro": 2,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 7
+     },
+     {
+      "dorsal": "5",
+      "nombre": "DANIEL ARJOL LOPEZ",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 1,
+      "per": 1,
+      "val": 2
+     },
+     {
+      "dorsal": "7",
+      "nombre": "OSCAR MIGUEL ALVARADO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "12",
+      "nombre": "EDUARD GATELL SANZ",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PABLO ASO JIMENEZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "17",
+      "nombre": "YASIN GARCIA KOLO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 1
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "22",
+      "nombre": "JOHNATAN THOMAS ZHAO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 0
+     },
+     {
+      "dorsal": "24",
+      "nombre": "GUILLEM COLOM BARRUFET",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ADRIA ARAGONES NAVAIS",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 3
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 0
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "4",
+      "nombre": "ROGER FABREGA URPINA",
+      "titular": false,
+      "pts": 6,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 3,
+      "ro": 1,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 9
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOAN FANER CATALA",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": 3
+     },
+     {
+      "dorsal": "10",
+      "nombre": "OLUWASESAN BENJAMIN",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "11",
+      "nombre": "DIANTE AQUIL-HASSAN BAH",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -4
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PEDRO GARCIA CARRERO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "15",
+      "nombre": "IGNACIO ROSA POMPIDO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "22",
+      "nombre": "KOBE ALEXANDER NEWTON",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -4
+     },
+     {
+      "dorsal": "26",
+      "nombre": "MIKE MUKENDI MUKENDI",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "33",
+      "nombre": "MAXIMILIANO ANDREATTA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     },
+     {
+      "dorsal": "42",
+      "nombre": "FREDERIC GEORGE STUTZ",
+      "titular": true,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 0
+     },
+     {
+      "dorsal": "67",
+      "nombre": "ALEX TAMAYO LESMES",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "00",
+      "nombre": "DANIEL MUÑOZ SAMATAN",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 2
+     },
+     {
+      "dorsal": "5",
+      "nombre": "DANIEL ARJOL LOPEZ",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "val": 1
+     },
+     {
+      "dorsal": "7",
+      "nombre": "OSCAR MIGUEL ALVARADO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 2,
+       "i": 4
+      },
+      "rt": 3,
+      "ro": 0,
+      "rd": 3,
+      "as": 2,
+      "rec": 0,
+      "per": 2,
+      "val": 0
+     },
+     {
+      "dorsal": "12",
+      "nombre": "EDUARD GATELL SANZ",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PABLO ASO JIMENEZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "17",
+      "nombre": "YASIN GARCIA KOLO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 2
+     },
+     {
+      "dorsal": "22",
+      "nombre": "JOHNATAN THOMAS ZHAO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "24",
+      "nombre": "GUILLEM COLOM BARRUFET",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 1
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ADRIA ARAGONES NAVAIS",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 2,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 2,
+      "val": 4
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "4",
+      "nombre": "ROGER FABREGA URPINA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOAN FANER CATALA",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 1
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 2,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "10",
+      "nombre": "OLUWASESAN BENJAMIN",
+      "titular": false,
+      "pts": 11,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 2,
+       "i": 4
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 12
+     },
+     {
+      "dorsal": "11",
+      "nombre": "DIANTE AQUIL-HASSAN BAH",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PEDRO GARCIA CARRERO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 2,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 2
+     },
+     {
+      "dorsal": "15",
+      "nombre": "IGNACIO ROSA POMPIDO",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 2
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 2,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "22",
+      "nombre": "KOBE ALEXANDER NEWTON",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 2
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "26",
+      "nombre": "MIKE MUKENDI MUKENDI",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "33",
+      "nombre": "MAXIMILIANO ANDREATTA",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 3,
+      "ro": 2,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -1
+     },
+     {
+      "dorsal": "42",
+      "nombre": "FREDERIC GEORGE STUTZ",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 5
+     },
+     {
+      "dorsal": "67",
+      "nombre": "ALEX TAMAYO LESMES",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "jugadores": [
+     {
+      "dorsal": "00",
+      "nombre": "DANIEL MUÑOZ SAMATAN",
+      "titular": false,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 2
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "5",
+      "nombre": "DANIEL ARJOL LOPEZ",
+      "titular": false,
+      "pts": 8,
+      "t2": {
+       "a": 4,
+       "i": 4
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 2,
+      "per": 0,
+      "val": 11
+     },
+     {
+      "dorsal": "7",
+      "nombre": "OSCAR MIGUEL ALVARADO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "12",
+      "nombre": "EDUARD GATELL SANZ",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PABLO ASO JIMENEZ",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "17",
+      "nombre": "YASIN GARCIA KOLO",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 2,
+      "ro": 0,
+      "rd": 2,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "22",
+      "nombre": "JOHNATAN THOMAS ZHAO",
+      "titular": true,
+      "pts": 5,
+      "t2": {
+       "a": 1,
+       "i": 2
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 3,
+       "i": 3
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 2,
+      "val": 3
+     },
+     {
+      "dorsal": "24",
+      "nombre": "GUILLEM COLOM BARRUFET",
+      "titular": false,
+      "pts": 7,
+      "t2": {
+       "a": 2,
+       "i": 2
+      },
+      "t3": {
+       "a": 1,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 6
+     },
+     {
+      "dorsal": "55",
+      "nombre": "ADRIA ARAGONES NAVAIS",
+      "titular": false,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     }
+    ]
+   },
+   {
+    "jugadores": [
+     {
+      "dorsal": "4",
+      "nombre": "ROGER FABREGA URPINA",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 3
+      },
+      "tl": {
+       "a": 0,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 1,
+      "rec": 0,
+      "per": 1,
+      "val": -4
+     },
+     {
+      "dorsal": "8",
+      "nombre": "JOAN FANER CATALA",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 1
+     },
+     {
+      "dorsal": "10",
+      "nombre": "OLUWASESAN BENJAMIN",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 1,
+      "rec": 0,
+      "per": 2,
+      "val": -1
+     },
+     {
+      "dorsal": "11",
+      "nombre": "DIANTE AQUIL-HASSAN BAH",
+      "titular": true,
+      "pts": 1,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 1,
+       "i": 4
+      },
+      "rt": 1,
+      "ro": 1,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": 0
+     },
+     {
+      "dorsal": "13",
+      "nombre": "PEDRO GARCIA CARRERO",
+      "titular": true,
+      "pts": 2,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 1
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 3
+     },
+     {
+      "dorsal": "15",
+      "nombre": "IGNACIO ROSA POMPIDO",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": -1
+     },
+     {
+      "dorsal": "22",
+      "nombre": "KOBE ALEXANDER NEWTON",
+      "titular": false,
+      "pts": 3,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 1,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "26",
+      "nombre": "MIKE MUKENDI MUKENDI",
+      "titular": false,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 0,
+      "ro": 0,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 0
+     },
+     {
+      "dorsal": "33",
+      "nombre": "MAXIMILIANO ANDREATTA",
+      "titular": false,
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 1
+      },
+      "t3": {
+       "a": 0,
+       "i": 0
+      },
+      "tl": {
+       "a": 2,
+       "i": 3
+      },
+      "rt": 2,
+      "ro": 1,
+      "rd": 1,
+      "as": 0,
+      "rec": 1,
+      "per": 0,
+      "val": 8
+     },
+     {
+      "dorsal": "42",
+      "nombre": "FREDERIC GEORGE STUTZ",
+      "titular": true,
+      "pts": 4,
+      "t2": {
+       "a": 1,
+       "i": 3
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 2,
+       "i": 2
+      },
+      "rt": 2,
+      "ro": 2,
+      "rd": 0,
+      "as": 0,
+      "rec": 0,
+      "per": 0,
+      "val": 4
+     },
+     {
+      "dorsal": "67",
+      "nombre": "ALEX TAMAYO LESMES",
+      "titular": true,
+      "pts": 0,
+      "t2": {
+       "a": 0,
+       "i": 0
+      },
+      "t3": {
+       "a": 0,
+       "i": 1
+      },
+      "tl": {
+       "a": 0,
+       "i": 0
+      },
+      "rt": 1,
+      "ro": 0,
+      "rd": 1,
+      "as": 0,
+      "rec": 0,
+      "per": 1,
+      "val": -2
+     }
+    ]
+   }
+  ]
+ ],
+ "generado": "2026-08-26"
+}
