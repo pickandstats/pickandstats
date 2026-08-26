@@ -20,6 +20,15 @@ if (!compNombre) { console.error('Competicion no valida'); process.exit(1); }
 const UMBRAL_AJUSTADO = 8; // diferencia maxima al inicio del ultimo cuarto
 
 const baseRaw = path.join('data', 'raw', compNombre, temp);
+// Mapa idFeb -> slug (idClub) para dar a cada equipo su identificador estable,
+// ya que el id de la FEB cambia cada temporada y el nombre lleva patrocinador.
+const rutaEquipos = path.join('web', 'public', 'data', compNombre, temp, 'equipos.json');
+const mapaSlug = {};
+if (fs.existsSync(rutaEquipos)) {
+  const eqs = JSON.parse(fs.readFileSync(rutaEquipos, 'utf8'));
+  const arr = Array.isArray(eqs) ? eqs : (eqs.equipos || Object.values(eqs)[0]);
+  arr.forEach(e => { if (e.id && e.idClub) mapaSlug[String(e.id)] = e.idClub; });
+}
 const dirActas = path.join(baseRaw, 'actas');
 if (!fs.existsSync(dirActas)) { console.error('No hay actas en', dirActas); process.exit(1); }
 
@@ -32,6 +41,9 @@ function puenteDorsalId(idPartido) {
       const map = { local: {}, visitante: {} };
       (raw.boxscore.local || []).forEach(j => { map.local[j.dorsal] = j; });
       (raw.boxscore.visitante || []).forEach(j => { map.visitante[j.dorsal] = j; });
+      // slug estable de cada equipo, resuelto desde el id FEB via equipos.json
+      map.slugLocal = mapaSlug[String((raw.equipoLocal || {}).id)] || null;
+      map.slugVisitante = mapaSlug[String((raw.equipoVisitante || {}).id)] || null;
       return map;
     }
   }
@@ -94,13 +106,10 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
         const t = sumaEquipoCuarto(equipoCuarto.jugadores);
         const tR = sumaEquipoCuarto(rivalCuarto.jugadores);
         // idEquipo desde el puente (cualquier jugador con match)
-        let equipoId = null, equipoNom = ladoNombre[ei];
-        for (const j of equipoCuarto.jugadores) {
-          const raw = puente[lado][j.dorsal];
-          if (raw) { equipoId = raw.equipoId || null; break; }
-        }
-        // el boxscore raw no trae equipoId por jugador; usamos nombre como clave si falta
-        const claveEq = equipoId || equipoNom;
+        const equipoNom = ladoNombre[ei];
+        // clave estable: slug del equipo (idClub). Si no se resolvió, cae al nombre.
+        const slug = ei === 0 ? puente.slugLocal : puente.slugVisitante;
+        const claveEq = slug || equipoNom;
         const E = initEq(claveEq, equipoNom);
         const q = E.porCuarto[ci];
         q.pj++; q.pf += t.pt; q.pc += tR.pt;
@@ -145,6 +154,7 @@ const salidaJug = Object.values(jugadores).map(J => ({
 }));
 
 const salidaEq = Object.values(equipos).map(E => ({
+  equipoId: E.equipoId,
   equipo: E.equipo,
   porCuarto: E.porCuarto.map(q => ({
     pj: q.pj,
