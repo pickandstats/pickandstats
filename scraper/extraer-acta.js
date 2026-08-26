@@ -126,16 +126,41 @@ async function extraerActa(partido, competicion = 1) {
 // Extrae los 4 cortes acumulados (c=1..4) y calcula el rendimiento POR CUARTO
 // de cada jugador restando cortes consecutivos. El parametro c de la URL controla
 // el corte: c=1 -> hasta Q1, c=2 -> hasta Q2, ... c=4 -> partido completo.
-async function extraerActaPorCuartos(partido, nCuartos = 4) {
+async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
+  const url = `${CFG.BASE}/BoxScore.aspx?p=${partido}&c=${c}&qd=${qd}&t=FINAL`;
+  for (let intento = 1; intento <= reintentos; intento++) {
+    try {
+      const r = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000, responseType: "arraybuffer" });
+      const parser = new PDFParse({ data: Buffer.from(r.data) });
+      const res = await parser.getText();
+      await parser.destroy();
+      return parseTexto(res.text || "");
+    } catch (e) {
+      const esRed = /ENOTFOUND|ETIMEDOUT|ECONNRESET|EAI_AGAIN|socket/i.test(e.message);
+      if (esRed && intento < reintentos) {
+        await new Promise(r => setTimeout(r, 3000 * intento)); // espera creciente
+        continue;
+      }
+      throw e;
+    }
+  }
+}
+
+async function extraerActaPorCuartos(partido, nCuartos = null) {
+  const pausa = () => new Promise(r => setTimeout(r, CFG.PAUSA_MS || 1200));
+  // Sondeo con c=4&qd=4 (siempre válido) para saber cuántos periodos tiene el
+  // partido. El qd de la URL DEBE ser el nº total de periodos (4 normal, 5+ con
+  // prórroga); si no coincide, la FEB devuelve "Invalid PDF structure".
+  const sonda = await pedirCorte(partido, 4, 4);
+  await pausa();
+  const total = nCuartos || Math.max(4, sonda.parciales.length);
+
   const cortes = [];
-  for (let c = 1; c <= nCuartos; c++) {
-    const url = `${CFG.BASE}/BoxScore.aspx?p=${partido}&c=${c}&qd=4&t=FINAL`;
-    const r = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000, responseType: "arraybuffer" });
-    const parser = new PDFParse({ data: Buffer.from(r.data) });
-    const res = await parser.getText();
-    await parser.destroy();
-    cortes.push(parseTexto(res.text || ""));
-    await new Promise(r => setTimeout(r, CFG.PAUSA_MS || 1200));
+  for (let c = 1; c <= total; c++) {
+    let corte = null;
+    try { corte = await pedirCorte(partido, c, total); } catch (e) { corte = null; }
+    cortes.push(corte);
+    await pausa();
   }
 
   // Campos numericos acumulables a diferenciar por cuarto
@@ -153,21 +178,25 @@ async function extraerActaPorCuartos(partido, nCuartos = 4) {
     return d;
   };
 
-  // Por cada equipo y jugador (cruzado por dorsal), rendimiento de cada cuarto
+  // Por cada equipo y jugador (cruzado por dorsal), rendimiento de cada cuarto.
+  // Si un corte es null (fallo puntual), ese cuarto queda null y se detecta luego.
   const porCuarto = cortes.map((corte, ci) => {
+    if (!corte) return null;
     const prev = ci > 0 ? cortes[ci - 1] : null;
     return corte.equipos.map((eq, ei) => ({
       jugadores: eq.jugadores.map(j => {
-        const jp = prev ? prev.equipos[ei].jugadores.find(x => x.dorsal === j.dorsal) : null;
+        const jp = (prev && prev.equipos[ei]) ? prev.equipos[ei].jugadores.find(x => x.dorsal === j.dorsal) : null;
         return difJug(j, jp);
       })
     }));
   });
 
+  const validos = cortes.filter(c => c !== null);
   return {
-    final: cortes[nCuartos - 1],   // acta completa (= extraerActa)
-    cortes,                         // los 4 acumulados
-    porCuarto,                      // rendimiento de cada cuarto por jugador
+    final: validos[validos.length - 1] || null,  // acta completa (= extraerActa)
+    cortes,                                        // los N cortes acumulados
+    porCuarto,                                     // rendimiento de cada cuarto por jugador
+    completo: cortes.every(c => c !== null),       // false si algun corte fallo
   };
 }
 
