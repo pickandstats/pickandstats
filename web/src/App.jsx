@@ -41,7 +41,7 @@ function RutaEquipo({ equipos, jugadores, partidos, datosClub, cargando, onVolve
 
 // Ficha de jugador desde la URL. Resuelve primero en carreras (temporada actual)
 // y, si no está, reconstruye desde el histórico.
-function RutaJugador({ carreras, historico, equipos, jugadores, competicion, temporada,
+function RutaJugador({ carreras, historico, equipos, jugadores, jugadoresCuartos, competicion, temporada,
                        competicionNombre, cargando,
                        carreraDesdeHistorico, onVolver, onVerEquipo }) {
   const { idJugador } = useParams();
@@ -55,6 +55,7 @@ function RutaJugador({ carreras, historico, equipos, jugadores, competicion, tem
   const hist = historico.find(h => String(h.idJugador) === idJugador);
   return (
     <Jugador carrera={carrera} historico={hist} equipos={equipos} jugadores={jugadores}
+      jugadoresCuartos={jugadoresCuartos}
       competicion={competicion} temporada={temporada}
       competicionNombre={competicionNombre} onVolver={onVolver} onVerEquipo={onVerEquipo} />
   );
@@ -80,6 +81,7 @@ export default function App() {
   const [temporada, setTemporada] = useState(null);
   const [equipos, setEquipos] = useState([]);
   const [jugadores, setJugadores] = useState([]);
+  const [jugadoresCuartos, setJugadoresCuartos] = useState([]);
   const [carreras, setCarreras] = useState([]);
   const [partidos, setPartidos] = useState([]);
   const [historico, setHistorico] = useState([]);
@@ -115,7 +117,7 @@ export default function App() {
     if (!temporada) return;
     setCargando(true);
     setSinDatos(false);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -125,10 +127,12 @@ export default function App() {
       cargar(`${base}/equipos.json`),
       cargar(`${base}/jugadores.json`),
       cargar(`${base}/carreras.json`),
-      cargar(`${base}/partidos.json`)
+      cargar(`${base}/partidos.json`),
+      cargar(`${base}/jugadores-cuartos.json`).catch(() => null)
     ])
-      .then(([eq, jug, car, par]) => {
+      .then(([eq, jug, car, par, cuartos]) => {
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
+        setJugadoresCuartos(cuartos || []);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -313,6 +317,7 @@ export default function App() {
         <Route path="/:comp/:temp/jugador/:idJugador" element={
           <RutaJugador
             carreras={carreras} historico={historico} equipos={equipos} jugadores={jugadores}
+            jugadoresCuartos={jugadoresCuartos}
             competicion={competicion} temporada={temporada}
             competicionNombre={compActual.nombre} cargando={cargando}
             carreraDesdeHistorico={carreraDesdeHistorico}

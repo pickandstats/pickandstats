@@ -31,11 +31,14 @@ const METRICAS_PCT = [
 // quien revisa varios jugadores seguidos no quiere volver a pulsar cada vez.
 let modoRecordado = 'resumen';
 
-export default function Jugador({ carrera, historico, equipos, jugadores, onVolver, onVerEquipo,
+export default function Jugador({ carrera, historico, equipos, jugadores, jugadoresCuartos, onVolver, onVerEquipo,
                                  competicionNombre, competicion, temporada }) {
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
   const pct = carrera.percentiles || null;
+  // Datos por cuarto de este jugador (si la temporada/competicion los tiene)
+  const cuartos = (jugadoresCuartos || []).find(x => String(x.idJugador) === String(carrera.idJugador)) || null;
+  const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
 
   const [vista, _setVista] = useState(modoRecordado);
   const setVista = m => { modoRecordado = m; _setVista(m); };
@@ -174,6 +177,10 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
             onClick={() => setVista('resumen')}>Resumen</button>
           <button className={`boton-grupo ${vista === 'detalle' ? 'activo' : ''}`}
             onClick={() => setVista('detalle')}>Detalle</button>
+          {hayCuartos && (
+            <button className={`boton-grupo ${vista === 'cuartos' ? 'activo' : ''}`}
+              onClick={() => setVista('cuartos')}>Por cuartos</button>
+          )}
         </div>
       )}
 
@@ -416,6 +423,53 @@ export default function Jugador({ carrera, historico, equipos, jugadores, onVolv
                 Promedios en {fasesJugador.fases.join(', ')}.
                 {fasesJugador.pj < 3 && ' Con tan pocos partidos, estos promedios describen lo que pasó, no el nivel del jugador: un buen o mal encuentro los mueve por completo.'}
                 {' '}Estas cifras no entran en las medias de temporada regular.
+              </p>
+            </div>
+          </>
+        )}
+      </>)}
+
+      {/* ---------------------------------------------------------- POR CUARTOS */}
+      {hayCuartos && vista === 'cuartos' && (<>
+        <h3 className="seccion">Rendimiento por cuarto · temporada actual</h3>
+        <div style={{ width: '100%', height: 260, marginTop: 8 }}>
+          <ResponsiveContainer>
+            <LineChart data={cuartos.porCuarto.map((q, i) => ({
+              cuarto: `Q${i + 1}`, Puntos: q.ptMedia, Valoración: q.valMedia,
+            }))} margin={{ top: 8, right: 12, left: -8, bottom: 4 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="#e4e7ee" />
+              <XAxis dataKey="cuarto" tick={{ fontSize: 13, fill: COLOR.tinta }} />
+              <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} />
+              <Tooltip />
+              <Legend wrapperStyle={{ fontSize: 13 }} />
+              <Line type="monotone" dataKey="Puntos" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 4 }} />
+              <Line type="monotone" dataKey="Valoración" stroke="#7d93b2" strokeWidth={2.5} dot={{ r: 4 }} />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
+        <p className="pie">
+          Producción media en cada cuarto a lo largo de la temporada. Ayuda a ver si el jugador
+          arranca fuerte, crece con el partido o pierde peso en los tramos finales.
+        </p>
+
+        {cuartos.clutch && (
+          <>
+            <h3 className="seccion" style={{ marginTop: 18 }}>Aportación en momentos decisivos · por partido</h3>
+            <div className="datos-bloque">
+              <div className="datos">
+                {dato('Puntos', cuartos.clutch.partidosAjustados ? Math.round(10 * cuartos.clutch.pt / cuartos.clutch.partidosAjustados) / 10 : 0)}
+                {dato('Asistencias', cuartos.clutch.partidosAjustados ? Math.round(10 * cuartos.clutch.as / cuartos.clutch.partidosAjustados) / 10 : 0)}
+                {dato('PT+AST', cuartos.clutch.ptMasAsPorPartido)}
+                {dato('Partidos', cuartos.clutch.partidosAjustados, true)}
+              </div>
+              <p className="pie" style={{ marginTop: 8 }}>
+                Puntos + asistencias del jugador en el último cuarto (y prórrogas) de los partidos
+                que llegaron al último periodo con 8 puntos de diferencia o menos: los que aún estaban
+                en juego. Mide quién aparece cuando el partido se decide.
+                {cuartos.clutch.partidosAjustados < 5 && (
+                  <>{' '}<strong>Atención:</strong> muestra pequeña ({cuartos.clutch.partidosAjustados} partidos),
+                  el dato es solo orientativo.</>
+                )}
               </p>
             </div>
           </>
