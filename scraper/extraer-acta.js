@@ -148,20 +148,47 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
 
 async function extraerActaPorCuartos(partido, nCuartos = null) {
   const pausa = () => new Promise(r => setTimeout(r, CFG.PAUSA_MS || 1200));
-  // Sondeo con c=4&qd=4 (siempre válido) para saber cuántos periodos tiene el
-  // partido. El qd de la URL DEBE ser el nº total de periodos (4 normal, 5+ con
-  // prórroga); si no coincide, la FEB devuelve "Invalid PDF structure".
-  const sonda = await pedirCorte(partido, 4, 4);
-  await pausa();
-  const total = nCuartos || Math.max(4, sonda.parciales.length);
+  // Descubrir cuántos cortes válidos tiene el partido probando c=1,2,3,... hasta
+  // que uno falle. Normal llega a 4; prórroga a 5+; un acta incompleta se corta
+  // antes (p.ej. sin 4º cuarto en la FEB). No asumimos que c=4 exista.
+  // El qd de la URL debe ser el nº total de periodos: probamos varios valores
+  // por corte (para cubrir prórrogas) antes de darlo por inexistente.
+  // Paso 1: detectar cuántos periodos tiene el partido. El corte c=1 con qd=4
+  // es válido casi siempre y su nº de parciales... es 1 (solo Q1), no sirve para
+  // el total. El total lo da el partido COMPLETO, al que se accede con c=qd=N.
+  // Probamos qd de 4 a 8: el primero que devuelva un PDF válido con c=qd es el
+  // nº real de periodos (4 normal, 5+ prórroga). Un acta truncada no dará ninguno
+  // completo, así que caemos a descubrir por cortes crecientes.
+  let periodos = null;
+  for (const n of [4, 5, 6, 7, 8]) {
+    try { const t = await pedirCorte(partido, n, n); periodos = t.parciales.length; await pausa(); break; }
+    catch (e) { await pausa(); }
+  }
 
   const cortes = [];
-  for (let c = 1; c <= total; c++) {
-    let corte = null;
-    try { corte = await pedirCorte(partido, c, total); } catch (e) { corte = null; }
-    cortes.push(corte);
-    await pausa();
+  if (periodos) {
+    // Partido completo detectado: pedir c=1..periodos con qd=periodos
+    for (let c = 1; c <= periodos; c++) {
+      let corte = null;
+      try { corte = await pedirCorte(partido, c, periodos); } catch (e) { corte = null; }
+      cortes.push(corte);
+      await pausa();
+      if (nCuartos && cortes.length >= nCuartos) break;
+    }
+  } else {
+    // Acta truncada (sin partido completo accesible): descubrir cortes crecientes
+    // con qd=4 hasta que uno falle.
+    let c = 1;
+    while (c <= 4) {
+      let corte = null;
+      try { corte = await pedirCorte(partido, c, 4); } catch (e) { corte = null; }
+      await pausa();
+      if (!corte) break;
+      cortes.push(corte);
+      c++;
+    }
   }
+  if (!cortes.filter(Boolean).length) throw new Error("Sin cortes válidos (acta no disponible)");
 
   // Campos numericos acumulables a diferenciar por cuarto
   const difJug = (act, prev) => {
@@ -196,7 +223,7 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
     final: validos[validos.length - 1] || null,  // acta completa (= extraerActa)
     cortes,                                        // los N cortes acumulados
     porCuarto,                                     // rendimiento de cada cuarto por jugador
-    completo: cortes.every(c => c !== null),       // false si algun corte fallo
+    completo: cortes.every(c => c !== null) && cortes.length >= 4, // false si falta algun corte o hay menos de 4 cuartos (acta truncada)
   };
 }
 
