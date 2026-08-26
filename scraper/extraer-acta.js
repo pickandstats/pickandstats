@@ -8,6 +8,7 @@
 //
 // Uso como módulo:  const { extraerActa } = require('./extraer-acta');
 // Uso directo:      node scraper/extraer-acta.js --partido 2484702 --competicion 1
+const fs = require('fs');
 const axios = require('axios');
 const { PDFParse } = require('pdf-parse');
 const CFG = require('./config');
@@ -131,6 +132,24 @@ if (require.main === module) {
   const comp = val('--competicion') || '1';
   if (!partido) { console.error('Falta --partido. Ej: node scraper/extraer-acta.js --partido 2484702 --competicion 1'); process.exit(1); }
   extraerActa(partido, comp).then(a => {
+    const path = require('path');
+    const dir = path.join('data', 'actas');
+    fs.mkdirSync(dir, { recursive: true });
+    const salida = {
+      partido, competicion: comp,
+      marcador: a.marcador,
+      local: a.nombreLocal, visitante: a.nombreVisitante,
+      parciales: a.parciales,
+      contexto: a.contexto,
+      equipos: a.equipos.map((e, i) => ({
+        lado: i === 0 ? 'local' : 'visitante',
+        nombre: i === 0 ? a.nombreLocal : a.nombreVisitante,
+        jugadores: e.jugadores,
+      })),
+      generado: new Date().toISOString().slice(0, 10),
+    };
+    fs.writeFileSync(path.join(dir, partido + '.json'), JSON.stringify(salida, null, 1));
+    console.log('guardado data/actas/' + partido + '.json');
     console.log('marcador:', JSON.stringify(a.marcador));
     console.log('parciales:', a.parciales.map(p => `${p.local}-${p.visitante}`).join(', '));
     console.log("\ncontexto:", JSON.stringify(a.contexto, null, 1));
