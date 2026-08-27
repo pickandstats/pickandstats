@@ -19,6 +19,28 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   const cuartos = (equiposCuartos || []).find(x => x.equipoId === equipo.idClub) || null;
   const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
   const [vistaFicha, _setVistaFicha] = useState(rivalInicial ? 'dossier' : modoRecordado);
+  const [cuartosSel, setCuartosSel] = useState([0, 1, 2, 3]); // cuartos activos en el selector de contexto
+  const CAMPOS_CTX = [
+    ['contraataque', 'Contraataque'], ['pintura', 'Pintura'],
+    ['segundaOportunidad', '2ª oportunidad'], ['trasPerdida', 'Tras pérdida'], ['banquillo', 'Banquillo'],
+  ];
+  const ctxSumado = useMemo(() => {
+    const acc = { favor: {}, contra: {} };
+    CAMPOS_CTX.forEach(([c]) => { acc.favor[c] = 0; acc.contra[c] = 0; });
+    if (hayCuartos) cuartosSel.forEach(i => {
+      const q = cuartos.porCuarto[i];
+      if (!q) return;
+      CAMPOS_CTX.forEach(([c]) => {
+        acc.favor[c] += (q.ctxFavor && q.ctxFavor[c]) || 0;
+        acc.contra[c] += (q.ctxContra && q.ctxContra[c]) || 0;
+      });
+    });
+    CAMPOS_CTX.forEach(([c]) => {
+      acc.favor[c] = Math.round(acc.favor[c] * 10) / 10;
+      acc.contra[c] = Math.round(acc.contra[c] * 10) / 10;
+    });
+    return acc;
+  }, [cuartos, cuartosSel, hayCuartos]);
   const setVistaFicha = m => { modoRecordado = m; _setVistaFicha(m); };
 
   const plantilla = useMemo(() =>
@@ -183,6 +205,47 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
               Posesiones por cuarto. Indica si el equipo acelera o frena el juego según el tramo del partido.
             </p>
           </div>
+
+          <h3 className="seccion" style={{ marginTop: 18 }}>Contexto por cuarto</h3>
+          <div className="grupos" style={{ marginTop: 4 }}>
+            {[0, 1, 2, 3].map(i => {
+              const activo = cuartosSel.includes(i);
+              return (
+                <button key={i} className={`boton-grupo ${activo ? 'activo' : ''}`}
+                  onClick={() => setCuartosSel(activo
+                    ? (cuartosSel.length > 1 ? cuartosSel.filter(x => x !== i) : cuartosSel)
+                    : [...cuartosSel, i].sort())}>
+                  {`Q${i + 1}`}
+                </button>
+              );
+            })}
+            <button className={`boton-grupo ${cuartosSel.length === 4 ? 'activo' : ''}`}
+              onClick={() => setCuartosSel([0, 1, 2, 3])}>Todos</button>
+          </div>
+          <div className="tabla-scroll tabla-una-fija" style={{ marginTop: 8 }}>
+            <table>
+              <thead>
+                <tr>
+                  <th className="izq">Puntos de…</th>
+                  <th>A favor</th>
+                  <th>En contra</th>
+                </tr>
+              </thead>
+              <tbody>
+                {CAMPOS_CTX.map(([clave, etiqueta]) => (
+                  <tr key={clave}>
+                    <td className="izq">{etiqueta}</td>
+                    <td>{ctxSumado.favor[clave]}</td>
+                    <td>{ctxSumado.contra[clave]}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="pie" style={{ marginTop: 4 }}>
+            Medias por partido en los cuartos seleccionados. «A favor» es lo que genera el equipo; «en contra», lo que concede al rival.
+            Contraataque, puntos en la pintura, de segunda oportunidad, tras pérdida del rival y desde el banquillo.
+          </p>
         </div>
       ) : vistaFicha === 'informacion' ? (
         <div className="club-ficha">
