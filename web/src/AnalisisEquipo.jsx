@@ -13,7 +13,7 @@ function nivel(valor, media, { menosEsMejor = false, u1 = 0.06, u2 = 0.15 } = {}
   return 0;
 }
 
-export default function AnalisisEquipo({ equipo, equipos }) {
+export default function AnalisisEquipo({ equipo, equipos, cuartos }) {
   const analisis = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
     const media = clave => delGrupo.reduce((a, e) => a + e[clave], 0) / delGrupo.length;
@@ -42,6 +42,17 @@ export default function AnalisisEquipo({ equipo, equipos }) {
     const nAst = nivel(equipo.astPct, m.astPct);
     if (nAst >= 1) identidad.push('Juego muy coral: comparte mucho el balón, alto porcentaje de canastas asistidas.');
     else if (nAst <= -1) identidad.push('Ataque más individual: menos canastas asistidas de lo habitual.');
+
+    // Perfil de cierre: compara el net rating del ultimo cuarto con la media de
+    // sus cuartos. Umbral en diferencia absoluta (±6 pts): el porcentaje falla
+    // porque el net cruza el cero. Solo se activa con datos por cuarto completos.
+    if (cuartos && cuartos.porCuarto && cuartos.porCuarto.length >= 4 && cuartos.porCuarto.every(q => q.pj > 0)) {
+      const nets = cuartos.porCuarto.slice(0, 4).map(q => q.ortg - q.drtg);
+      const mediaNet = nets.reduce((a, b) => a + b, 0) / nets.length;
+      const difUlt = nets[3] - mediaNet;
+      if (difUlt >= 6) identidad.push('Cierra fuerte: sube su rendimiento en el último cuarto respecto al resto del partido.');
+      else if (difUlt <= -6) identidad.push('Le cuesta cerrar: baja su rendimiento en el último cuarto respecto al resto del partido.');
+    }
 
     // --- Ataque (Four Factors ofensivos) ---
     const ataque = [];
@@ -124,7 +135,7 @@ export default function AnalisisEquipo({ equipo, equipos }) {
     revisa('Juego coral (asistencias)', nivel(equipo.astPct, m.astPct));
 
     return { identidad, ataque, resumenAtaque, defensa, resumenDefensa, claves, fortalezas, debilidades };
-  }, [equipo, equipos]);
+  }, [equipo, equipos, cuartos]);
 
   const bloque = (titulo, items, clase = '') => (
     items.length > 0 && (

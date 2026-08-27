@@ -337,7 +337,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           </div>
         </div>
           <h3 className="seccion">Análisis del equipo</h3>
-          <AnalisisEquipo equipo={equipo} equipos={equipos} />
+          <AnalisisEquipo equipo={equipo} equipos={equipos} cuartos={cuartos} />
 
           <h3 className="seccion">Four Factors vs media del grupo</h3>
           <div className="panel-grafico">
