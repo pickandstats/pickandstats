@@ -96,6 +96,15 @@ const SECCIONES = [
       ['No cuentan en las estadísticas', 'Los partidos de fases se muestran como sección aparte y no computan en las medias, ratings ni percentiles de temporada regular: son pocos encuentros contra rivales de nivel alto y distorsionarían las cifras calibradas sobre la liga.'],
     ]
   },
+  {
+    titulo: 'Análisis por cuartos',
+    metricas: [
+      ['Rendimiento por cuarto (jugador)', 'Producción media (puntos, valoración) en cada cuarto a lo largo de la temporada. Revela si un jugador arranca fuerte, crece con el partido o baja en los tramos finales.'],
+      ['Momentos decisivos (clutch)', 'Puntos y asistencias en el último cuarto y prórrogas de los partidos que llegaron al último periodo con 8 puntos de diferencia o menos: los que aún estaban en juego. Mide quién aparece cuando el partido se decide, anotando o generando. Es una métrica de muestra pequeña —se indica el número de partidos ajustados—: con pocos, tómala como orientativa.'],
+      ['Eficiencia por cuarto (equipo)', 'Ataque (ORtg) y defensa (DRtg) por cada 100 posesiones, calculados para cada cuarto. Muestra en qué tramos del partido un equipo es fuerte o flojo; cuando el ataque supera a la defensa, gana ese cuarto.'],
+      ['Ritmo por cuarto (equipo)', 'Posesiones en cada cuarto, con el total del partido como referencia. Indica si un equipo acelera o frena el juego según el momento.'],
+    ]
+  },
 ];
 
 export default function Leyenda() {
