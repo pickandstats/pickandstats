@@ -18,6 +18,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   const club = (datosClub || {})[equipo.idClub] || null;
   const cuartos = (equiposCuartos || []).find(x => x.equipoId === equipo.idClub) || null;
   const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
+  const hayContexto = hayCuartos && cuartos.porCuarto.some(q => q.ctxFavor);
   const [vistaFicha, _setVistaFicha] = useState(rivalInicial ? 'dossier' : modoRecordado);
   const [cuartosSel, setCuartosSel] = useState([0, 1, 2, 3]); // cuartos activos en el selector de contexto
   const CAMPOS_CTX = [
@@ -206,6 +207,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             </p>
           </div>
 
+          {hayContexto && (<>
           <h3 className="seccion" style={{ marginTop: 18 }}>Contexto por cuarto</h3>
           <div className="grupos" style={{ marginTop: 4 }}>
             {[0, 1, 2, 3].map(i => {
@@ -246,6 +248,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
             Medias por partido en los cuartos seleccionados. «A favor» es lo que genera el equipo; «en contra», lo que concede al rival.
             Contraataque, puntos en la pintura, de segunda oportunidad, tras pérdida del rival y desde el banquillo.
           </p>
+          </>)}
         </div>
       ) : vistaFicha === 'informacion' ? (
         <div className="club-ficha">
