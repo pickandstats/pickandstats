@@ -1,13 +1,44 @@
-import { useMemo } from 'react';
+import { useMemo, useEffect, useState } from 'react';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer
 } from 'recharts';
 
 const COLOR = { local: '#e8622c', visitante: '#16233a' };
 
-export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVerJugador }) {
+export default function Partido({ partido, equipos, competicion, temporada, onVolver, onVerEquipo, onVerJugador }) {
   const [gl, gv] = partido.resultado.split('-').map(Number);
   const cuartos = partido.cuartos || [];
+
+  // Carga diferida del contexto por cuarto de este partido (fichero por competicion,
+  // solo se descarga al abrir una ficha de partido). Robusto si aun no existe.
+  const [ctxPartido, setCtxPartido] = useState(null);
+  useEffect(() => {
+    let vivo = true;
+    const url = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}/partidos-contexto.json`;
+    fetch(url)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (vivo) setCtxPartido(data ? (data[partido.id] || null) : null); })
+      .catch(() => { if (vivo) setCtxPartido(null); });
+    return () => { vivo = false; };
+  }, [competicion, temporada, partido.id]);
+
+  const [cuartosSel, setCuartosSel] = useState([0, 1, 2, 3]);
+  const CAMPOS_CTX = [
+    ['contraataque', 'Contraataque'], ['pintura', 'Pintura'],
+    ['segundaOportunidad', '2ª oportunidad'], ['trasPerdida', 'Tras pérdida'], ['banquillo', 'Banquillo'],
+  ];
+  const ctxSumado = useMemo(() => {
+    const acc = {};
+    CAMPOS_CTX.forEach(([c]) => { acc[c] = { local: 0, visitante: 0 }; });
+    if (ctxPartido) cuartosSel.forEach(i => {
+      const q = ctxPartido[i];
+      if (!q) return;
+      CAMPOS_CTX.forEach(([c]) => {
+        if (q[c]) { acc[c].local += q[c].local || 0; acc[c].visitante += q[c].visitante || 0; }
+      });
+    });
+    return acc;
+  }, [ctxPartido, cuartosSel]);
 
   const evolucion = useMemo(() => {
     let al = 0, av = 0;
@@ -172,6 +203,51 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
             </ResponsiveContainer>
             <p className="pie" style={{ marginTop: 4 }}>Marcador acumulado al final de cada periodo.</p>
           </div>
+
+          {ctxPartido && (
+            <>
+              <h3 className="seccion" style={{ marginTop: 18 }}>Contexto por cuarto</h3>
+              <div className="grupos" style={{ marginTop: 4 }}>
+                {[0, 1, 2, 3].map(i => {
+                  const activo = cuartosSel.includes(i);
+                  return (
+                    <button key={i} className={`boton-grupo ${activo ? 'activo' : ''}`}
+                      onClick={() => setCuartosSel(activo
+                        ? (cuartosSel.length > 1 ? cuartosSel.filter(x => x !== i) : cuartosSel)
+                        : [...cuartosSel, i].sort())}>
+                      {`Q${i + 1}`}
+                    </button>
+                  );
+                })}
+                <button className={`boton-grupo ${cuartosSel.length === 4 ? 'activo' : ''}`}
+                  onClick={() => setCuartosSel([0, 1, 2, 3])}>Todos</button>
+              </div>
+              <div className="tabla-scroll tabla-una-fija" style={{ marginTop: 8 }}>
+                <table>
+                  <thead>
+                    <tr>
+                      <th className="izq">Puntos de…</th>
+                      <th>{partido.local.nombre}</th>
+                      <th>{partido.visitante.nombre}</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {CAMPOS_CTX.map(([clave, etiqueta]) => (
+                      <tr key={clave}>
+                        <td className="izq">{etiqueta}</td>
+                        <td>{ctxSumado[clave].local}</td>
+                        <td>{ctxSumado[clave].visitante}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="pie" style={{ marginTop: 4 }}>
+                Puntos de cada tipo en los cuartos seleccionados: contraataque, en la pintura, de segunda
+                oportunidad, tras pérdida del rival y desde el banquillo.
+              </p>
+            </>
+          )}
         </>
       )}
 

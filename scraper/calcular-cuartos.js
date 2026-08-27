@@ -52,6 +52,7 @@ function puenteDorsalId(idPartido) {
 
 const jugadores = {};  // idJugador -> agregado por cuarto
 const equipos = {};    // equipoId -> agregado por cuarto
+const contextoPartidos = {}; // idPartido -> contextoPorCuarto (para la ficha de partido)
 
 function initJug(id, nombre, equipoId, equipo) {
   if (!jugadores[id]) jugadores[id] = {
@@ -89,6 +90,8 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
   const puente = puenteDorsalId(acta.partido);
   if (!puente) { sinPuente++; continue; }
   nPartidos++;
+  // recolectar el contexto por cuarto de cada partido (para la ficha de partido)
+  if (acta.contextoPorCuarto) contextoPartidos[acta.partido] = acta.contextoPorCuarto;
 
   // ¿fue partido ajustado? diferencia al inicio del ULTIMO cuarto de liga (4º)
   // = suma de los 3 primeros parciales
@@ -190,6 +193,8 @@ const dirOut = path.join('web', 'public', 'data', compNombre, temp);
 fs.mkdirSync(dirOut, { recursive: true });
 fs.writeFileSync(path.join(dirOut, 'jugadores-cuartos.json'), JSON.stringify(salidaJug, null, 1));
 fs.writeFileSync(path.join(dirOut, 'equipos-cuartos.json'), JSON.stringify(salidaEq, null, 1));
+// contexto por cuarto de cada partido, indexado por id, sin indentar (carga diferida en la ficha de partido)
+fs.writeFileSync(path.join(dirOut, 'partidos-contexto.json'), JSON.stringify(contextoPartidos));
 
 console.log(`${compNombre} ${temp}: ${nPartidos} actas procesadas` + (sinPuente ? ` (${sinPuente} sin boxscore raw)` : ''));
 console.log(`  jugadores-cuartos.json: ${salidaJug.length} jugadores`);

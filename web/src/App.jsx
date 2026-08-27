@@ -62,13 +62,14 @@ function RutaJugador({ carreras, historico, equipos, jugadores, jugadoresCuartos
 }
 
 // Ficha de partido desde la URL (solo liga regular: las fases no están en partidos.json).
-function RutaPartido({ partidos, equipos, cargando, onVolver, onVerEquipo, onVerJugador }) {
+function RutaPartido({ partidos, equipos, competicion, temporada, cargando, onVolver, onVerEquipo, onVerJugador }) {
   const { idPartido } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
   const partido = partidos.find(x => String(x.id) === idPartido);
   if (!partido) return <p className="cargando">Partido no encontrado en esta temporada.</p>;
   return (
     <Partido partido={partido} equipos={equipos}
+      competicion={competicion} temporada={temporada}
       onVolver={onVolver} onVerEquipo={onVerEquipo} onVerJugador={onVerJugador} />
   );
 }
@@ -328,7 +329,7 @@ export default function App() {
         } />
         <Route path="/:comp/:temp/partido/:idPartido" element={
           <RutaPartido
-            partidos={partidos} equipos={equipos} cargando={cargando}
+            partidos={partidos} equipos={equipos} competicion={competicion} temporada={temporada} cargando={cargando}
             onVolver={() => navigate('/')}
             onVerEquipo={verEquipo} onVerJugador={verJugador} />
         } />
