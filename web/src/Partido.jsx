@@ -17,6 +17,17 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
     });
   }, [cuartos]);
 
+  // Cuarto decisivo: el de mayor diferencia de parcial (swing). Puro dato, sin
+  // interpretar: señala dónde un equipo saco mas ventaja. Si hay empate, el ultimo.
+  const cuartoDecisivo = useMemo(() => {
+    let idx = -1, maxSwing = -1;
+    cuartos.forEach((c, i) => {
+      const swing = Math.abs(c.local - c.visitante);
+      if (swing >= maxSwing) { maxSwing = swing; idx = i; }
+    });
+    return { idx, swing: maxSwing };
+  }, [cuartos]);
+
   const enlaceEquipo = eq => {
     const e = equipos.find(x => x.id === eq.id);
     return e
@@ -125,24 +136,27 @@ export default function Partido({ partido, equipos, onVolver, onVerEquipo, onVer
               <thead>
                 <tr>
                   <th className="izq">Equipo</th>
-                  {cuartos.map((c, i) => <th key={i}>{c.periodo}</th>)}
+                  {cuartos.map((c, i) => <th key={i} style={i === cuartoDecisivo.idx ? { background: '#fbe9e1' } : null}>{c.periodo}</th>)}
                   <th>Total</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td className="izq">{partido.local.nombre}</td>
-                  {cuartos.map((c, i) => <td key={i}>{c.local}</td>)}
+                  {cuartos.map((c, i) => <td key={i} style={i === cuartoDecisivo.idx ? { background: '#fbe9e1' } : null}>{c.local}</td>)}
                   <td style={{ fontWeight: 600 }}>{gl}</td>
                 </tr>
                 <tr>
                   <td className="izq">{partido.visitante.nombre}</td>
-                  {cuartos.map((c, i) => <td key={i}>{c.visitante}</td>)}
+                  {cuartos.map((c, i) => <td key={i} style={i === cuartoDecisivo.idx ? { background: '#fbe9e1' } : null}>{c.visitante}</td>)}
                   <td style={{ fontWeight: 600 }}>{gv}</td>
                 </tr>
               </tbody>
             </table>
           </div>
+          <p className="pie" style={{ marginTop: 4 }}>
+            Se resalta el cuarto con mayor diferencia de parcial: el tramo donde un equipo sacó más ventaja.
+          </p>
 
           <div className="panel-grafico">
             <ResponsiveContainer width="100%" height={240}>
