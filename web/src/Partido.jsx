@@ -40,6 +40,52 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
     return acc;
   }, [ctxPartido, cuartosSel]);
 
+  // Carga diferida del boxscore por cuarto (fichero por partido). Solo permite
+  // desglose si el partido tiene todos los cuartos (completo); si falta alguno,
+  // se muestran los totales del partido sin desglose.
+  const [boxCuartos, setBoxCuartos] = useState(null);
+  useEffect(() => {
+    let vivo = true;
+    const url = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}/boxscore-cuartos/${partido.id}.json`;
+    fetch(url)
+      .then(r => r.ok ? r.json() : null)
+      .then(data => { if (vivo) setBoxCuartos(data && data.completo ? data : null); })
+      .catch(() => { if (vivo) setBoxCuartos(null); });
+    return () => { vivo = false; };
+  }, [competicion, temporada, partido.id]);
+
+  const hayDesglose = !!boxCuartos; // solo si el fichero existe y esta completo
+  const parcial = hayDesglose && cuartosSel.length < boxCuartos.porCuarto.length;
+  const etiquetaCuartos = cuartosSel.map(i => `Q${i + 1}`).join(' + ');
+
+  // Boxscore sumado de los cuartos seleccionados, mapeado al formato de partido.boxscore.
+  // Cruza jugadores por dorsal (uno puede no jugar todos los cuartos).
+  const mins = txt => { const m = String(txt || "0:0").split(":"); return (+m[0] || 0) * 60 + (+m[1] || 0); };
+  const boxDeCuartos = useMemo(() => {
+    if (!hayDesglose) return null;
+    const porEquipo = [0, 1].map(ei => {
+      const acc = {};
+      cuartosSel.forEach(qi => {
+        const eq = boxCuartos.porCuarto[qi] && boxCuartos.porCuarto[qi][ei];
+        if (!eq) return;
+        eq.jugadores.forEach(j => {
+          let a = acc[j.dorsal];
+          if (!a) a = acc[j.dorsal] = { dorsal: j.dorsal, nombre: j.nombre, idJugador: j.idJugador || null,
+            seg: 0, pt: 0, t2: {a:0,i:0}, t3: {a:0,i:0}, tl: {a:0,i:0},
+            ro: 0, rd: 0, rt: 0, as: 0, br: 0, bp: 0, tf: 0, tco: 0, fc: 0, fr: 0, va: 0 };
+          a.seg += mins(j.min);
+          a.pt += j.pts || 0;
+          a.t2.a += j.t2.a; a.t2.i += j.t2.i; a.t3.a += j.t3.a; a.t3.i += j.t3.i; a.tl.a += j.tl.a; a.tl.i += j.tl.i;
+          a.ro += j.ro; a.rd += j.rd; a.rt += j.rt; a.as += j.as;
+          a.br += j.rec || 0; a.bp += j.per || 0; a.tf += j.tap || 0; a.tco += j.tapRec || 0;
+          a.fc += j.fc; a.fr += j.fr; a.va += j.val || 0;
+        });
+      });
+      return Object.values(acc);
+    });
+    return { local: porEquipo[0], visitante: porEquipo[1] };
+  }, [boxCuartos, cuartosSel, hayDesglose]);
+
   const evolucion = useMemo(() => {
     let al = 0, av = 0;
     return cuartos.map(c => {
@@ -253,8 +299,13 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
 
       {partido.boxscore && partido.boxscore.local && (
         <>
-          {tablaBox(partido.boxscore.local, partido.local.nombre)}
-          {tablaBox(partido.boxscore.visitante, partido.visitante.nombre)}
+          {parcial && (
+            <p className="pie" style={{ marginTop: 12, marginBottom: 0 }}>
+              Estadística de jugadores en <strong>{etiquetaCuartos}</strong>. Cambia la selección de cuartos arriba, o pulsa «Todos» para el partido completo.
+            </p>
+          )}
+          {tablaBox(parcial ? boxDeCuartos.local : partido.boxscore.local, partido.local.nombre)}
+          {tablaBox(parcial ? boxDeCuartos.visitante : partido.boxscore.visitante, partido.visitante.nombre)}
         </>
       )}
     </div>
