@@ -67,7 +67,12 @@ function initJug(id, nombre, equipoId, equipo) {
 function initEq(id, nombre) {
   if (!equipos[id]) equipos[id] = {
     equipoId: id, equipo: nombre,
-    porCuarto: [1,2,3,4].map(() => ({ pj: 0, pf: 0, pc: 0, pos: 0, posRival: 0 })),
+    porCuarto: [1,2,3,4].map(() => ({
+      pj: 0, pf: 0, pc: 0, pos: 0, posRival: 0,
+      // contexto acumulado: a favor (lo que genera) y en contra (lo que concede)
+      ctxFavor: { contraataque: 0, pintura: 0, segundaOportunidad: 0, trasPerdida: 0, banquillo: 0 },
+      ctxContra: { contraataque: 0, pintura: 0, segundaOportunidad: 0, trasPerdida: 0, banquillo: 0 },
+    })),
   };
   return equipos[id];
 }
@@ -114,6 +119,18 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
         const q = E.porCuarto[ci];
         q.pj++; q.pf += t.pt; q.pc += tR.pt;
         q.pos += posesiones(t); q.posRival += posesiones(tR);
+        // contexto por cuarto: favor = lado propio, contra = lado rival
+        const cx = acta.contextoPorCuarto && acta.contextoPorCuarto[ci];
+        if (cx) {
+          const ladoP = ei === 0 ? "local" : "visitante";
+          const ladoR = ei === 0 ? "visitante" : "local";
+          for (const campo of ["contraataque","pintura","segundaOportunidad","trasPerdida","banquillo"]) {
+            if (cx[campo]) {
+              q.ctxFavor[campo] += cx[campo][ladoP] || 0;
+              q.ctxContra[campo] += cx[campo][ladoR] || 0;
+            }
+          }
+        }
       }
       // jugadores
       equipoCuarto.jugadores.forEach(j => {
@@ -156,12 +173,17 @@ const salidaJug = Object.values(jugadores).map(J => ({
 const salidaEq = Object.values(equipos).map(E => ({
   equipoId: E.equipoId,
   equipo: E.equipo,
-  porCuarto: E.porCuarto.map(q => ({
-    pj: q.pj,
-    pace: q.pj ? r1(q.pos / q.pj) : 0,
-    ortg: q.pos ? r1(100 * q.pf / q.pos) : 0,
-    drtg: q.posRival ? r1(100 * q.pc / q.posRival) : 0,
-  })),
+  porCuarto: E.porCuarto.map(q => {
+    const media = obj => Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, q.pj ? r1(v / q.pj) : 0]));
+    return {
+      pj: q.pj,
+      pace: q.pj ? r1(q.pos / q.pj) : 0,
+      ortg: q.pos ? r1(100 * q.pf / q.pos) : 0,
+      drtg: q.posRival ? r1(100 * q.pc / q.posRival) : 0,
+      ctxFavor: media(q.ctxFavor),
+      ctxContra: media(q.ctxContra),
+    };
+  }),
 }));
 
 const dirOut = path.join('web', 'public', 'data', compNombre, temp);

@@ -218,11 +218,33 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
     }));
   });
 
+  // Contexto por cuarto: resta el acumulado de cortes consecutivos. Solo campos
+  // ACUMULATIVOS (puntos que se suman). NO maximaVentaja ni mejorRacha, que son
+  // records (no acumulables): restarlos daria datos falsos. Esos quedan solo en
+  // el contexto global del acta.
+  const CAMPOS_ACUM = ['segundaOportunidad', 'contraataque', 'pintura', 'trasPerdida', 'banquillo'];
+  const contextoPorCuarto = cortes.map((corte, ci) => {
+    if (!corte || !corte.contexto) return null;
+    const prev = (ci > 0 && cortes[ci - 1]) ? cortes[ci - 1].contexto : null;
+    const out = {};
+    for (const campo of CAMPOS_ACUM) {
+      const act = corte.contexto[campo];
+      if (!act) { out[campo] = null; continue; }
+      const pre = prev ? prev[campo] : null;
+      out[campo] = {
+        local: act.local - (pre ? pre.local : 0),
+        visitante: act.visitante - (pre ? pre.visitante : 0),
+      };
+    }
+    return out;
+  });
+
   const validos = cortes.filter(c => c !== null);
   return {
     final: validos[validos.length - 1] || null,  // acta completa (= extraerActa)
     cortes,                                        // los N cortes acumulados
     porCuarto,                                     // rendimiento de cada cuarto por jugador
+    contextoPorCuarto,                             // contexto acumulativo desglosado por cuarto
     completo: cortes.every(c => c !== null) && cortes.length >= 4, // false si falta algun corte o hay menos de 4 cuartos (acta truncada)
   };
 }

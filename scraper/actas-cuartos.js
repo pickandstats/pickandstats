@@ -18,6 +18,7 @@ const COMPS = { 1: 'primerafeb', 2: 'segundafeb', 3: 'tercerafeb' };
 
 const comp = val('--competicion') || '1';
 const temp = val('--temporada') || '2025';
+const forzar = args.includes('--forzar'); // re-extrae aunque el fichero ya exista
 const limite = val('--limite') ? parseInt(val('--limite'), 10) : null;
 const compNombre = COMPS[comp];
 if (!compNombre) { console.error('Competicion no valida:', comp); process.exit(1); }
@@ -43,7 +44,7 @@ fs.mkdirSync(dirActas, { recursive: true });
     if (limite && procesados + saltados >= limite) break;
     const p = jugados[i];
     const destino = path.join(dirActas, p.id + '.json');
-    if (fs.existsSync(destino)) { saltados++; continue; }
+    if (!forzar && fs.existsSync(destino)) { saltados++; continue; }
 
     try {
       const acta = await extraerActaPorCuartos(p.id);
@@ -71,6 +72,7 @@ fs.mkdirSync(dirActas, { recursive: true });
         completo: acta.completo,
         verificado: cuadra,
         porCuarto: acta.porCuarto,   // [cuarto][equipo].jugadores[]
+        contextoPorCuarto: acta.contextoPorCuarto, // [cuarto] contraataque, pintura, 2a op, tras perdida, banquillo
         generado: new Date().toISOString().slice(0, 10),
       };
       fs.writeFileSync(destino, JSON.stringify(salida, null, 1));
