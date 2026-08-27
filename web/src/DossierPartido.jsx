@@ -15,7 +15,7 @@ function nivelVs(valor, media, menosEsMejor = false, u1 = 0.06, u2 = 0.15) {
 const etiquetaNivel = n =>
   n >= 2 ? 'muy fuerte' : n >= 1 ? 'fuerte' : n <= -2 ? 'muy flojo' : n <= -1 ? 'flojo' : 'normal';
 
-export default function DossierPartido({ equipo, equipos, jugadores, onVerJugador, rivalInicial }) {
+export default function DossierPartido({ equipo, equipos, jugadores, equiposCuartos, onVerJugador, rivalInicial }) {
   const [rivalId, setRivalId] = useState(rivalInicial || '');
 
   const rivales = useMemo(() =>
@@ -82,6 +82,16 @@ export default function DossierPartido({ equipo, equipos, jugadores, onVerJugado
       if (f.ventaja >= 2) claves.push(`${rival.nombre} puede dominar en ${f.nombre.toLowerCase()}: ataque ${etiquetaNivel(f.nAt)} contra defensa ${etiquetaNivel(f.nDef)}.`);
       if (f.ventaja <= -2) claves.push(`${equipo.nombre} puede frenar a ${rival.nombre} en ${f.nombre.toLowerCase()}: defensa ${etiquetaNivel(f.nDef)} contra ataque ${etiquetaNivel(f.nAt)}.`);
     }
+    // Perfil de cierre del rival por cuartos (mismo criterio que AnalisisEquipo):
+    // net del ultimo cuarto vs media de sus cuartos, umbral +-6 en diferencia absoluta.
+    const cuartosRival = (equiposCuartos || []).find(x => x.equipoId === rival.idClub);
+    if (cuartosRival && cuartosRival.porCuarto && cuartosRival.porCuarto.length >= 4 && cuartosRival.porCuarto.every(q => q.pj > 0)) {
+      const nets = cuartosRival.porCuarto.slice(0, 4).map(q => q.ortg - q.drtg);
+      const mediaNet = nets.reduce((a, b) => a + b, 0) / nets.length;
+      const difUlt = nets[3] - mediaNet;
+      if (difUlt <= -6) claves.push(`Llega vivo al último cuarto: ${rival.nombre} tiende a bajar su rendimiento en los finales.`);
+      else if (difUlt >= 6) claves.push(`Cuidado con relajarse con ventaja: ${rival.nombre} aprieta en los últimos cuartos.`);
+    }
     if (!claves.length) claves.push('Duelo sin brechas claras entre estilos: partido abierto donde los detalles decidirán.');
 
     const difNet = equipo.netrtg - rival.netrtg;
@@ -98,7 +108,7 @@ export default function DossierPartido({ equipo, equipos, jugadores, onVerJugado
     else if (paceA <= -1 && paceB <= -1) ritmo = 'Ambos pausados: partido de pocas posesiones.';
 
     return { ataqueA, ataqueB, claves, pronostico, ritmo };
-  }, [rival, equipo, equipos]);
+  }, [rival, equipo, equipos, equiposCuartos]);
 
   const flecha = v => v >= 2 ? '◀◀' : v >= 1 ? '◀' : v <= -2 ? '▶▶' : v <= -1 ? '▶' : '=';
 

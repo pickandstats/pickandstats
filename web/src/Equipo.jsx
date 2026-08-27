@@ -360,7 +360,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
         </>
       ) : vistaFicha === 'dossier' ? (
         <DossierPartido equipo={equipo} equipos={equipos} rivalInicial={rivalInicial}
-          jugadores={jugadores} onVerJugador={onVerJugador} />
+          jugadores={jugadores} equiposCuartos={equiposCuartos} onVerJugador={onVerJugador} />
       ) : (
         <>
           <h3 className="seccion">Evolución por jornada</h3>
