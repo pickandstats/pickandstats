@@ -20,6 +20,18 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
+      # Cache de las actas por cuartos (data/raw/.../actas). Persisten entre
+      # ejecuciones para no re-extraer toda la temporada cada semana: solo se
+      # descargan las actas de partidos nuevos. La clave rota por ejecucion con
+      # fallback a la mas reciente (restore-keys).
+      - name: Restaurar cache de actas
+        uses: actions/cache@v4
+        with:
+          path: data/raw/*/*/actas
+          key: actas-${{ github.run_id }}
+          restore-keys: |
+            actas-
+
       # ----- Tercera FEB (competición 3, por defecto) -----
       - name: Tercera · scrapear
         run: node scraper/scrape.js --competicion 3
@@ -50,6 +62,35 @@ jobs:
       - name: Primera · fases (jugadores)
         run: node scraper/calcular-fases-jugadores.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
 
+      # ----- Análisis por cuartos (las tres categorías) -----
+      # Usa la cache de actas: actas-cuartos solo extrae las de partidos nuevos.
+      # continue-on-error para que un fallo aquí (cache expirada, PDF caído) no
+      # tumbe la actualización del resto de datos.
+      - name: Cuartos · Tercera
+        continue-on-error: true
+        run: |
+          T=$(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
+          node scraper/actas-cuartos.js --competicion 3 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 3 --temporada $T
+          node scraper/calcular-cuartos.js --competicion 3 --temporada $T
+          node scraper/boxscore-cuartos.js --competicion 3 --temporada $T
+      - name: Cuartos · Segunda
+        continue-on-error: true
+        run: |
+          T=$(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
+          node scraper/actas-cuartos.js --competicion 2 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 2 --temporada $T
+          node scraper/calcular-cuartos.js --competicion 2 --temporada $T
+          node scraper/boxscore-cuartos.js --competicion 2 --temporada $T
+      - name: Cuartos · Primera
+        continue-on-error: true
+        run: |
+          T=$(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
+          node scraper/actas-cuartos.js --competicion 1 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 1 --temporada $T
+          node scraper/calcular-cuartos.js --competicion 1 --temporada $T
+          node scraper/boxscore-cuartos.js --competicion 1 --temporada $T
+
       # Refresca el calendario de la temporada próxima (pretemporada/arranque):
       # scrapea sus índices y regenera calendario.json si la FEB cambió algo.
       - name: Refrescar calendario de la temporada próxima
@@ -66,7 +107,7 @@ jobs:
         run: |
           git config user.name "pickandstats-bot"
           git config user.email "actions@github.com"
-          git add data/
+          git add data/ web/public/data/*/*/equipos-cuartos.json web/public/data/*/*/jugadores-cuartos.json web/public/data/*/*/partidos-contexto.json web/public/data/*/*/boxscore-cuartos
           if git diff --staged --quiet; then
             echo "Sin partidos nuevos esta semana."
           else
