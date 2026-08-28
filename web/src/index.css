@@ -1063,3 +1063,79 @@ th.col-a { color: #ffd9c4; }
   width: fit-content;
 }
 .club-web:hover { text-decoration: underline; }
+
+/* ============================================================
+   IMPRESIÓN / PDF DEL DOSSIER
+   Solo se imprime el dossier (Preparar partido). Se oculta el
+   resto de la interfaz. Enfoque: ocultar todo con visibility y
+   volver a mostrar solo el dossier y sus descendientes.
+   ============================================================ */
+@media print {
+  /* Ocultar todo el árbol visible */
+  body * { visibility: hidden; }
+
+  /* Mostrar solo el dossier y sus hijos */
+  .dossier, .dossier * { visibility: visible; }
+
+  /* El dossier ocupa la página desde arriba */
+  .dossier {
+    position: absolute;
+    left: 0; top: 0; right: 0;
+    margin: 0;
+    padding: 0 6mm;
+  }
+
+  /* Ocultar el selector de rival y el botón (no van en papel) */
+  .filtros-dossier { display: none !important; }
+
+  /* Encabezado de impresión: aparece solo al imprimir */
+  .dossier::before {
+    content: "Dossier de preparación · pickandstats.es";
+    display: block;
+    visibility: visible;
+    font-size: 10pt;
+    color: #16233a;
+    border-bottom: 1.5pt solid #e8622c;
+    padding-bottom: 3mm;
+    margin-bottom: 5mm;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+  }
+
+  /* Imprimir fondos y colores (radar, badges, veredictos) */
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+
+  /* Evitar que los bloques se corten entre páginas */
+  .analisis-bloque, .duelo-cabecera, table { break-inside: avoid; page-break-inside: avoid; }
+  h3 { break-after: avoid; page-break-after: avoid; }
+
+  /* Márgenes de página */
+  @page { margin: 12mm; }
+
+  /* Quitar sombras y fondos de pantalla que no aportan en papel */
+  .dossier, .analisis-bloque { box-shadow: none !important; }
+}
+
+/* Ajustes finos de impresión del dossier (fondo blanco, tabla de jugadores) */
+@media print {
+  html, body, .contenedor, .dossier { background: #fff !important; }
+
+  /* Tabla de jugadores clave: que quepa y no se corte el perfil */
+  .dossier table { width: 100% !important; font-size: 8pt !important; table-layout: fixed; }
+  .dossier table td, .dossier table th { overflow: hidden; text-overflow: ellipsis; word-break: break-word; white-space: normal !important; }
+
+  /* La columna de perfil puede envolver en varias líneas en vez de cortarse */
+  .dossier .col-perfil, .dossier td:last-child { white-space: normal !important; }
+}
+
+/* Fila de perfil del jugador (bajo su fila de números) en el dossier */
+.fila-jug-perfil td { padding-top: 0; padding-bottom: 8px; color: #5a6472; font-style: italic; font-size: 0.92em; border-top: none; }
+.fila-jug-num td { border-bottom: none; padding-bottom: 2px; }
+
+/* Tabla de jugadores del dossier en impresión: nombre con más ancho y sin cortes feos */
+@media print {
+  .tabla-jugadores { table-layout: auto !important; }
+  .tabla-jugadores td, .tabla-jugadores th { word-break: normal !important; overflow-wrap: normal !important; }
+  .tabla-jugadores td.izq, .tabla-jugadores th.izq { width: 22%; white-space: normal !important; }
+  .tabla-jugadores td:not(.izq), .tabla-jugadores th:not(.izq) { white-space: nowrap !important; }
+}

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useEffect } from 'react';
 import AnalisisEquipo from './AnalisisEquipo';
 
 function nivelVs(valor, media, menosEsMejor = false, u1 = 0.06, u2 = 0.15) {
@@ -24,6 +24,15 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
     [equipos, equipo]);
 
   const rival = rivales.find(e => e.id === rivalId) || null;
+
+  // Título del documento para el PDF (nombre del archivo al guardar).
+  useEffect(() => {
+    if (rival) {
+      const prev = document.title;
+      document.title = `Dossier · ${equipo.nombre} vs ${rival.nombre}`;
+      return () => { document.title = prev; };
+    }
+  }, [rival, equipo]);
 
   const jugadoresClave = useMemo(() => {
     if (!rival) return [];
@@ -154,7 +163,7 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
 
   return (
     <div className="dossier">
-      <div className="filtros">
+      <div className="filtros filtros-dossier">
         <label>
           Preparar partido contra{' '}
           <select value={rivalId} onChange={e => setRivalId(e.target.value)}>
@@ -162,6 +171,11 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
             {rivales.map(r => <option key={r.id} value={r.id}>{r.nombre}</option>)}
           </select>
         </label>
+        {rival && (
+          <button className="boton-imprimir" onClick={() => window.print()}>
+            Imprimir / Guardar PDF
+          </button>
+        )}
       </div>
 
       {rival && duelo && (
@@ -193,12 +207,11 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
             <>
               <h3 className="seccion">Jugadores a vigilar</h3>
               <div className="tabla-scroll tabla-una-fija">
-                <table>
+                <table className="tabla-jugadores">
                   <thead>
                     <tr>
                       <th className="izq">Jugador</th><th>PJ</th><th>MIN</th><th>PTS</th>
                       <th>REB</th><th>AST</th><th>VAL</th><th>TS%</th><th>USG%</th>
-                      <th className="izq">Perfil</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -214,15 +227,21 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
                       }
                       if (j.usg >= 28) perfil.push('centraliza el ataque');
                       return (
-                        <tr key={j.nombre}>
-                          <td className="izq">
-                            <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                          </td>
-                          <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
-                          <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td><td>{j.vaPorPartido}</td>
-                          <td>{j.ts}</td><td>{j.usg}</td>
-                          <td className="izq duelo-detalle">{perfil.join(', ') || '—'}</td>
-                        </tr>
+                        <>
+                          <tr key={j.nombre} className="fila-jug-num">
+                            <td className="izq">
+                              <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
+                            </td>
+                            <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
+                            <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td><td>{j.vaPorPartido}</td>
+                            <td>{j.ts}</td><td>{j.usg}</td>
+                          </tr>
+                          {perfil.length > 0 && (
+                            <tr key={j.nombre + '-perfil'} className="fila-jug-perfil">
+                              <td className="izq duelo-detalle" colSpan={9}>{perfil.join(', ')}</td>
+                            </tr>
+                          )}
+                        </>
                       );
                     })}
                   </tbody>
