@@ -1139,3 +1139,19 @@ th.col-a { color: #ffd9c4; }
   .tabla-jugadores td.izq, .tabla-jugadores th.izq { width: 22%; white-space: normal !important; }
   .tabla-jugadores td:not(.izq), .tabla-jugadores th:not(.izq) { white-space: nowrap !important; }
 }
+
+/* Botón secundario de imprimir/PDF en el dossier: contorno de acento que se rellena al pasar el ratón */
+.boton-imprimir {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border: 1px solid var(--acento);
+  border-radius: var(--radio);
+  background: transparent;
+  color: var(--acento);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  margin-left: 12px;
+}
+.boton-imprimir:hover { background: var(--acento); color: #fff; }
