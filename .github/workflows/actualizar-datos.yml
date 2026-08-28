@@ -71,24 +71,24 @@ jobs:
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
           node scraper/actas-cuartos.js --competicion 3 --temporada $T
-          node scraper/verificar-cuartos.js --competicion 3 --temporada $T
-          node scraper/calcular-cuartos.js --competicion 3 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 3 --temporada $T && \
+          node scraper/calcular-cuartos.js --competicion 3 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 3 --temporada $T
       - name: Cuartos · Segunda
         continue-on-error: true
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
           node scraper/actas-cuartos.js --competicion 2 --temporada $T
-          node scraper/verificar-cuartos.js --competicion 2 --temporada $T
-          node scraper/calcular-cuartos.js --competicion 2 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 2 --temporada $T && \
+          node scraper/calcular-cuartos.js --competicion 2 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 2 --temporada $T
       - name: Cuartos · Primera
         continue-on-error: true
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
           node scraper/actas-cuartos.js --competicion 1 --temporada $T
-          node scraper/verificar-cuartos.js --competicion 1 --temporada $T
-          node scraper/calcular-cuartos.js --competicion 1 --temporada $T
+          node scraper/verificar-cuartos.js --competicion 1 --temporada $T && \
+          node scraper/calcular-cuartos.js --competicion 1 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 1 --temporada $T
 
       # Refresca el calendario de la temporada próxima (pretemporada/arranque):
