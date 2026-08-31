@@ -19,15 +19,24 @@ const COMPS = { 1: 'primerafeb', 2: 'segundafeb', 3: 'tercerafeb' };
 const comp = val('--competicion') || '1';
 const temp = val('--temporada') || '2025';
 const forzar = args.includes('--forzar'); // re-extrae aunque el fichero ya exista
+const soloFases = args.includes('--fases'); // extrae las actas de fases (playoffs, ascensos) en vez de la liga regular
 const limite = val('--limite') ? parseInt(val('--limite'), 10) : null;
 const compNombre = COMPS[comp];
 if (!compNombre) { console.error('Competicion no valida:', comp); process.exit(1); }
 
-// Fuente de la lista de partidos: partidos.json ya procesado
-const rutaPartidos = path.join('web', 'public', 'data', compNombre, temp, 'partidos.json');
+// Fuente de la lista de partidos: partidos.json (liga regular) o fases.json (--fases)
+const nombreFuente = soloFases ? 'fases.json' : 'partidos.json';
+const rutaPartidos = path.join('web', 'public', 'data', compNombre, temp, nombreFuente);
 if (!fs.existsSync(rutaPartidos)) { console.error('No existe', rutaPartidos); process.exit(1); }
 const raw = JSON.parse(fs.readFileSync(rutaPartidos, 'utf8'));
-const arr = Array.isArray(raw) ? raw : (raw.partidos || Object.values(raw)[0]);
+let arr;
+if (soloFases) {
+  // fases.json: array de fases, cada una con partidos[] anidados
+  arr = [];
+  (Array.isArray(raw) ? raw : []).forEach(fase => (fase.partidos || []).forEach(p => arr.push(p)));
+} else {
+  arr = Array.isArray(raw) ? raw : (raw.partidos || Object.values(raw)[0]);
+}
 const jugados = arr.filter(p => p.resultado && /\d+-\d+/.test(p.resultado));
 
 const dirActas = path.join('data', 'raw', compNombre, temp, 'actas');

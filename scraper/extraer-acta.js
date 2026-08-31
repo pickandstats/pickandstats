@@ -231,10 +231,12 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
       const act = corte.contexto[campo];
       if (!act) { out[campo] = null; continue; }
       const pre = prev ? prev[campo] : null;
-      out[campo] = {
-        local: act.local - (pre ? pre.local : 0),
-        visitante: act.visitante - (pre ? pre.visitante : 0),
-      };
+      const dl = act.local - (pre ? pre.local : 0);
+      const dv = act.visitante - (pre ? pre.visitante : 0);
+      // Un acumulado no puede decrecer: si la resta da negativo, el corte no es
+      // fiable (errata del PDF o corte mal alineado). Marcar el campo como null
+      // en vez de guardar un valor imposible que contaminaria los agregados.
+      out[campo] = (dl < 0 || dv < 0) ? null : { local: dl, visitante: dv };
     }
     return out;
   });

@@ -36,8 +36,12 @@ for (const f of ficheros) {
   if (a.contextoPorCuarto) conContexto++; else { sinContexto++; if (sinContextoIds.length < 8) sinContextoIds.push(a.partido); }
   if (a.completo && a.verificado !== false) completas++; else { truncadas++; if (truncadasIds.length < 8) truncadasIds.push(a.partido); }
 
-  // Coherencia: puntos de pintura por cuarto en rango razonable (0..40)
-  if (a.contextoPorCuarto) for (const q of a.contextoPorCuarto) {
+  // Coherencia del contexto: solo se exige en actas fiables (completo y
+  // verificado). En actas truncadas/incoherentes el desglose por resta de
+  // cortes puede dar valores imposibles, pero su contexto no se usa en la app,
+  // asi que no debe bloquear la generacion.
+  const actaFiable = a.completo && a.verificado !== false;
+  if (actaFiable && a.contextoPorCuarto) for (const q of a.contextoPorCuarto) {
     if (q && q.pintura) {
       const tot = (q.pintura.local || 0) + (q.pintura.visitante || 0);
       sumPintura += tot; nPintura++;
