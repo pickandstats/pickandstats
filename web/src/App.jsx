@@ -12,6 +12,7 @@ import Partido from './Partido';
 import Clasificacion from './Clasificacion';
 import Partidos from './Partidos';
 import Buscador from './Buscador';
+import Comparador from './Comparador';
 
 // Competiciones disponibles (con datos). Al bajar Primera/Segunda, se añaden aquí.
 const COMPETICIONES = [
@@ -331,6 +332,7 @@ export default function App() {
         {pestana('partidos', 'Partidos')}
         {pestana('equipos', 'Equipos')}
         {pestana('jugadores', 'Jugadores')}
+        {pestana('comparador', 'Comparador')}
         {pestana('leyenda', 'Leyenda')}
       </div>
 
@@ -409,6 +411,8 @@ export default function App() {
       ) : vista === 'jugadores' ? (
         <Jugadores jugadores={jugadores} grupos={grupos} equipos={equipos}
           onVerEquipo={verEquipo} onVerJugador={verJugador} />
+      ) : vista === 'comparador' ? (
+        <Comparador temporada={temporada} />
       ) : (
         <Leyenda />
       )}
