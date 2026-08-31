@@ -53,6 +53,14 @@ function puenteDorsalId(idPartido) {
 const jugadores = {};  // idJugador -> agregado por cuarto
 const equipos = {};    // equipoId -> agregado por cuarto
 const contextoPartidos = {}; // idPartido -> contextoPorCuarto (para la ficha de partido)
+// Ids de liga regular: los agregados (medias por cuarto, clutch) se calculan SOLO
+// con estos. Las actas de fase (playoffs) estan en el mismo directorio y se usan
+// para el contexto por partido, pero NO deben entrar en las medias de temporada.
+const rutaLiga = path.join("web", "public", "data", compNombre, temp, "partidos.json");
+const idsLiga = new Set(
+  (fs.existsSync(rutaLiga) ? JSON.parse(fs.readFileSync(rutaLiga, "utf8")) : [])
+    .map(p => String(p.id))
+);
 
 function initJug(id, nombre, equipoId, equipo) {
   if (!jugadores[id]) jugadores[id] = {
@@ -87,11 +95,22 @@ const sumaEquipoCuarto = jugs => jugs.reduce((s, j) => ({
 let nPartidos = 0, sinPuente = 0;
 for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json'))) {
   const acta = JSON.parse(fs.readFileSync(path.join(dirActas, fichero), 'utf8'));
+
+  // recolectar el contexto por cuarto de cada partido (para la ficha de partido).
+  // Esto SI incluye las fases: es dato por-partido, la ficha de playoff lo usa.
+  // Va antes de cualquier otra cosa porque las fases no tienen boxscore raw en
+  // esta ruta (viven en _fases/) y romperian puenteDorsalId.
+  if (acta.contextoPorCuarto) contextoPartidos[acta.partido] = acta.contextoPorCuarto;
+
+  // A partir de aqui, solo agregados de temporada: excluir las actas de fase
+  // para no contaminar las medias por cuarto (criterio: fases en linea aparte).
+  if (!idsLiga.has(String(acta.partido))) continue;
+
+  // puenteDorsalId cruza el acta con el boxscore raw de liga; solo se llama para
+  // partidos de liga (ya filtrados arriba).
   const puente = puenteDorsalId(acta.partido);
   if (!puente) { sinPuente++; continue; }
   nPartidos++;
-  // recolectar el contexto por cuarto de cada partido (para la ficha de partido)
-  if (acta.contextoPorCuarto) contextoPartidos[acta.partido] = acta.contextoPorCuarto;
 
   // ¿fue partido ajustado? diferencia al inicio del ULTIMO cuarto de liga (4º)
   // = suma de los 3 primeros parciales
