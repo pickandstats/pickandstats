@@ -207,7 +207,7 @@
   },
   "resultado": "*-*",
   "fecha": "11/10/2026",
-  "hora": "18:00"
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 3(17/10/2026)",
@@ -417,7 +417,7 @@
   },
   "resultado": "*-*",
   "fecha": "25/10/2026",
-  "hora": "18:00"
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 5(31/10/2026)",
@@ -627,7 +627,7 @@
   },
   "resultado": "*-*",
   "fecha": "08/11/2026",
-  "hora": "18:00"
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 7(14/11/2026)",
@@ -1152,7 +1152,7 @@
   },
   "resultado": "*-*",
   "fecha": "13/12/2026",
-  "hora": "18:00"
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 12(19/12/2026)",
@@ -1168,21 +1168,6 @@
   "resultado": "*-*",
   "fecha": "19/12/2026",
   "hora": "18:30"
- },
- {
-  "jornada": "Jornada 12(19/12/2026)",
-  "id": "2536193",
-  "local": {
-   "id": "1010321",
-   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
-  },
-  "visitante": {
-   "id": "1009073",
-   "nombre": "C.B. GETAFE"
-  },
-  "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "19:00"
  },
  {
   "jornada": "Jornada 12(19/12/2026)",
@@ -1228,6 +1213,21 @@
   "resultado": "*-*",
   "fecha": "19/12/2026",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 12(19/12/2026)",
+  "id": "2536193",
+  "local": {
+   "id": "1010321",
+   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
+  },
+  "visitante": {
+   "id": "1009073",
+   "nombre": "C.B. GETAFE"
+  },
+  "resultado": "*-*",
+  "fecha": "19/12/2026",
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 12(19/12/2026)",
@@ -1591,21 +1591,6 @@
  },
  {
   "jornada": "Jornada 16(30/01/2027)",
-  "id": "2536221",
-  "local": {
-   "id": "1010321",
-   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
-  },
-  "visitante": {
-   "id": "1010194",
-   "nombre": "JAEN PARAISO INTERIOR FS"
-  },
-  "resultado": "*-*",
-  "fecha": "30/01/2027",
-  "hora": "19:00"
- },
- {
-  "jornada": "Jornada 16(30/01/2027)",
   "id": "2536222",
   "local": {
    "id": "1010320",
@@ -1636,18 +1621,18 @@
  },
  {
   "jornada": "Jornada 16(30/01/2027)",
-  "id": "2536224",
+  "id": "2536221",
   "local": {
-   "id": "1010352",
-   "nombre": "MELILLA CIUDAD DEL DEPORTE"
+   "id": "1010321",
+   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
   },
   "visitante": {
-   "id": "1008857",
-   "nombre": "CULTURAL Y DEPORTIVA LEONESA"
+   "id": "1010194",
+   "nombre": "JAEN PARAISO INTERIOR FS"
   },
   "resultado": "*-*",
-  "fecha": "31/01/2027",
-  "hora": "12:30"
+  "fecha": "30/01/2027",
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 16(30/01/2027)",
@@ -1659,6 +1644,21 @@
   "visitante": {
    "id": "1010318",
    "nombre": "CLUB BALONCESTO TOLEDO BASKET"
+  },
+  "resultado": "*-*",
+  "fecha": "31/01/2027",
+  "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 16(30/01/2027)",
+  "id": "2536224",
+  "local": {
+   "id": "1010352",
+   "nombre": "MELILLA CIUDAD DEL DEPORTE"
+  },
+  "visitante": {
+   "id": "1008857",
+   "nombre": "CULTURAL Y DEPORTIVA LEONESA"
   },
   "resultado": "*-*",
   "fecha": "31/01/2027",

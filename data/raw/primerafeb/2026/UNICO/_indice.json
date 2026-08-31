@@ -252,7 +252,7 @@
   },
   "resultado": "*-*",
   "fecha": "04/10/2026",
-  "hora": "18:00"
+  "hora": "12:00"
  },
  {
   "jornada": "Jornada 2(02/10/2026)",
@@ -556,21 +556,6 @@
  },
  {
   "jornada": "Jornada 5(23/10/2026)",
-  "id": "2535766",
-  "local": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "visitante": {
-   "id": "1009929",
-   "nombre": "BÀSQUET MENORCA"
-  },
-  "resultado": "*-*",
-  "fecha": "24/10/2026",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 5(23/10/2026)",
   "id": "2535761",
   "local": {
    "id": "1009716",
@@ -658,6 +643,21 @@
   "resultado": "*-*",
   "fecha": "25/10/2026",
   "hora": "17:00"
+ },
+ {
+  "jornada": "Jornada 5(23/10/2026)",
+  "id": "2535766",
+  "local": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "visitante": {
+   "id": "1009929",
+   "nombre": "BÀSQUET MENORCA"
+  },
+  "resultado": "*-*",
+  "fecha": "25/10/2026",
+  "hora": "18:00"
  },
  {
   "jornada": "Jornada 5(23/10/2026)",
@@ -1126,21 +1126,6 @@
  },
  {
   "jornada": "Jornada 9(20/11/2026)",
-  "id": "2535804",
-  "local": {
-   "id": "1009584",
-   "nombre": "GRUPO ALEGA CANTABRIA"
-  },
-  "visitante": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
-  },
-  "resultado": "*-*",
-  "fecha": "21/11/2026",
-  "hora": "19:00"
- },
- {
-  "jornada": "Jornada 9(20/11/2026)",
   "id": "2535803",
   "local": {
    "id": "1008797",
@@ -1153,6 +1138,36 @@
   "resultado": "*-*",
   "fecha": "21/11/2026",
   "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 9(20/11/2026)",
+  "id": "2535799",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1009095",
+   "nombre": "CLUB OURENSE BALONCESTO"
+  },
+  "resultado": "*-*",
+  "fecha": "22/11/2026",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 9(20/11/2026)",
+  "id": "2535804",
+  "local": {
+   "id": "1009584",
+   "nombre": "GRUPO ALEGA CANTABRIA"
+  },
+  "visitante": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "resultado": "*-*",
+  "fecha": "22/11/2026",
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 9(20/11/2026)",
@@ -1200,21 +1215,6 @@
   "hora": "18:00"
  },
  {
-  "jornada": "Jornada 9(20/11/2026)",
-  "id": "2535799",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009095",
-   "nombre": "CLUB OURENSE BALONCESTO"
-  },
-  "resultado": "*-*",
-  "fecha": "22/11/2026",
-  "hora": "18:30"
- },
- {
   "jornada": "Jornada 10(04/12/2026)",
   "id": "2535809",
   "local": {
@@ -1243,21 +1243,6 @@
   "resultado": "*-*",
   "fecha": "05/12/2026",
   "hora": "17:30"
- },
- {
-  "jornada": "Jornada 10(04/12/2026)",
-  "id": "2535810",
-  "local": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
-  },
-  "visitante": {
-   "id": "1009713",
-   "nombre": "PALMER BASKET MALLORCA PALMA"
-  },
-  "resultado": "*-*",
-  "fecha": "05/12/2026",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 10(04/12/2026)",
@@ -1306,18 +1291,18 @@
  },
  {
   "jornada": "Jornada 10(04/12/2026)",
-  "id": "2535807",
+  "id": "2535810",
   "local": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
   },
   "visitante": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
+   "id": "1009713",
+   "nombre": "PALMER BASKET MALLORCA PALMA"
   },
   "resultado": "*-*",
   "fecha": "06/12/2026",
-  "hora": "18:00"
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 10(04/12/2026)",
@@ -1329,6 +1314,21 @@
   "visitante": {
    "id": "1010324",
    "nombre": "INSOLAC CAJA 87"
+  },
+  "resultado": "*-*",
+  "fecha": "06/12/2026",
+  "hora": "18:00"
+ },
+ {
+  "jornada": "Jornada 10(04/12/2026)",
+  "id": "2535807",
+  "local": {
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "visitante": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
   },
   "resultado": "*-*",
   "fecha": "06/12/2026",
@@ -1501,21 +1501,6 @@
  },
  {
   "jornada": "Jornada 12(18/12/2026)",
-  "id": "2535827",
-  "local": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
-  },
-  "visitante": {
-   "id": "1009929",
-   "nombre": "BÀSQUET MENORCA"
-  },
-  "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "18:00"
- },
- {
-  "jornada": "Jornada 12(18/12/2026)",
   "id": "2535829",
   "local": {
    "id": "1010494",
@@ -1576,6 +1561,21 @@
  },
  {
   "jornada": "Jornada 12(18/12/2026)",
+  "id": "2535827",
+  "local": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "visitante": {
+   "id": "1009929",
+   "nombre": "BÀSQUET MENORCA"
+  },
+  "resultado": "*-*",
+  "fecha": "20/12/2026",
+  "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 12(18/12/2026)",
   "id": "2535831",
   "local": {
    "id": "1009837",
@@ -1588,21 +1588,6 @@
   "resultado": "*-*",
   "fecha": "20/12/2026",
   "hora": "17:00"
- },
- {
-  "jornada": "Jornada 12(18/12/2026)",
-  "id": "2535825",
-  "local": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
-  },
-  "visitante": {
-   "id": "1010207",
-   "nombre": "PALENCIA BALONCESTO"
-  },
-  "resultado": "*-*",
-  "fecha": "20/12/2026",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 12(18/12/2026)",
@@ -1620,19 +1605,19 @@
   "hora": "18:00"
  },
  {
-  "jornada": "Jornada 13(27/12/2026)",
-  "id": "2535833",
+  "jornada": "Jornada 12(18/12/2026)",
+  "id": "2535825",
   "local": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
   },
   "visitante": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
+   "id": "1010207",
+   "nombre": "PALENCIA BALONCESTO"
   },
   "resultado": "*-*",
-  "fecha": "27/12/2026",
-  "hora": "00:00"
+  "fecha": "20/12/2026",
+  "hora": "18:00"
  },
  {
   "jornada": "Jornada 13(27/12/2026)",
@@ -1644,21 +1629,6 @@
   "visitante": {
    "id": "1009713",
    "nombre": "PALMER BASKET MALLORCA PALMA"
-  },
-  "resultado": "*-*",
-  "fecha": "27/12/2026",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 13(27/12/2026)",
-  "id": "2535835",
-  "local": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
-  },
-  "visitante": {
-   "id": "1009110",
-   "nombre": "CAJASOL COTO CÓRDOBA"
   },
   "resultado": "*-*",
   "fecha": "27/12/2026",
@@ -1678,6 +1648,51 @@
   "resultado": "*-*",
   "fecha": "27/12/2026",
   "hora": "00:00"
+ },
+ {
+  "jornada": "Jornada 13(27/12/2026)",
+  "id": "2535833",
+  "local": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "visitante": {
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
+  },
+  "resultado": "*-*",
+  "fecha": "27/12/2026",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 13(27/12/2026)",
+  "id": "2535837",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "resultado": "*-*",
+  "fecha": "27/12/2026",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 13(27/12/2026)",
+  "id": "2535835",
+  "local": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "visitante": {
+   "id": "1009110",
+   "nombre": "CAJASOL COTO CÓRDOBA"
+  },
+  "resultado": "*-*",
+  "fecha": "27/12/2026",
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 13(27/12/2026)",
@@ -1738,21 +1753,6 @@
   "resultado": "*-*",
   "fecha": "27/12/2026",
   "hora": "18:00"
- },
- {
-  "jornada": "Jornada 13(27/12/2026)",
-  "id": "2535837",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "resultado": "*-*",
-  "fecha": "27/12/2026",
-  "hora": "18:30"
  },
  {
   "jornada": "Jornada 14(03/01/2027)",
@@ -2026,36 +2026,6 @@
  },
  {
   "jornada": "Jornada 16(12/01/2027)",
-  "id": "2535860",
-  "local": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
-  },
-  "visitante": {
-   "id": "1008900",
-   "nombre": "CAJA RURAL CB ZAMORA"
-  },
-  "resultado": "*-*",
-  "fecha": "12/01/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 16(12/01/2027)",
-  "id": "2535861",
-  "local": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
-  },
-  "visitante": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "resultado": "*-*",
-  "fecha": "12/01/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 16(12/01/2027)",
   "id": "2535862",
   "local": {
    "id": "1009929",
@@ -2071,14 +2041,14 @@
  },
  {
   "jornada": "Jornada 16(12/01/2027)",
-  "id": "2535864",
+  "id": "2535860",
   "local": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
   },
   "visitante": {
-   "id": "1008378",
-   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+   "id": "1008900",
+   "nombre": "CAJA RURAL CB ZAMORA"
   },
   "resultado": "*-*",
   "fecha": "12/01/2027",
@@ -2116,6 +2086,21 @@
  },
  {
   "jornada": "Jornada 16(12/01/2027)",
+  "id": "2535861",
+  "local": {
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "visitante": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "resultado": "*-*",
+  "fecha": "13/01/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 16(12/01/2027)",
   "id": "2535863",
   "local": {
    "id": "1009110",
@@ -2128,6 +2113,21 @@
   "resultado": "*-*",
   "fecha": "13/01/2027",
   "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 16(12/01/2027)",
+  "id": "2535864",
+  "local": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "visitante": {
+   "id": "1008378",
+   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+  },
+  "resultado": "*-*",
+  "fecha": "13/01/2027",
+  "hora": "20:30"
  },
  {
   "jornada": "Jornada 16(12/01/2027)",
@@ -2158,21 +2158,6 @@
   "resultado": "*-*",
   "fecha": "13/01/2027",
   "hora": "21:00"
- },
- {
-  "jornada": "Jornada 17(17/01/2027)",
-  "id": "2535869",
-  "local": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "visitante": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
-  },
-  "resultado": "*-*",
-  "fecha": "17/01/2027",
-  "hora": "00:00"
  },
  {
   "jornada": "Jornada 17(17/01/2027)",
@@ -2221,21 +2206,6 @@
  },
  {
   "jornada": "Jornada 17(17/01/2027)",
-  "id": "2535874",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009110",
-   "nombre": "CAJASOL COTO CÓRDOBA"
-  },
-  "resultado": "*-*",
-  "fecha": "17/01/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 17(17/01/2027)",
   "id": "2535875",
   "local": {
    "id": "1010207",
@@ -2266,18 +2236,33 @@
  },
  {
   "jornada": "Jornada 17(17/01/2027)",
-  "id": "2535876",
+  "id": "2535869",
   "local": {
-   "id": "1009584",
-   "nombre": "GRUPO ALEGA CANTABRIA"
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
   },
   "visitante": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
   },
   "resultado": "*-*",
   "fecha": "17/01/2027",
-  "hora": "12:30"
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 17(17/01/2027)",
+  "id": "2535874",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1009110",
+   "nombre": "CAJASOL COTO CÓRDOBA"
+  },
+  "resultado": "*-*",
+  "fecha": "17/01/2027",
+  "hora": "12:00"
  },
  {
   "jornada": "Jornada 17(17/01/2027)",
@@ -2289,6 +2274,21 @@
   "visitante": {
    "id": "1009095",
    "nombre": "CLUB OURENSE BALONCESTO"
+  },
+  "resultado": "*-*",
+  "fecha": "17/01/2027",
+  "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 17(17/01/2027)",
+  "id": "2535876",
+  "local": {
+   "id": "1009584",
+   "nombre": "GRUPO ALEGA CANTABRIA"
+  },
+  "visitante": {
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
   },
   "resultado": "*-*",
   "fecha": "17/01/2027",
@@ -2566,14 +2566,29 @@
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
-  "id": "2535899",
+  "id": "2535896",
   "local": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
+   "id": "1009713",
+   "nombre": "PALMER BASKET MALLORCA PALMA"
   },
   "visitante": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "resultado": "*-*",
+  "fecha": "09/02/2027",
+  "hora": "00:00"
+ },
+ {
+  "jornada": "Jornada 20(09/02/2027)",
+  "id": "2535897",
+  "local": {
+   "id": "1008400",
+   "nombre": "GRUPO URETA TIZONA BURGOS"
+  },
+  "visitante": {
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
   },
   "resultado": "*-*",
   "fecha": "09/02/2027",
@@ -2626,36 +2641,6 @@
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
-  "id": "2535896",
-  "local": {
-   "id": "1009713",
-   "nombre": "PALMER BASKET MALLORCA PALMA"
-  },
-  "visitante": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "resultado": "*-*",
-  "fecha": "09/02/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 20(09/02/2027)",
-  "id": "2535897",
-  "local": {
-   "id": "1008400",
-   "nombre": "GRUPO URETA TIZONA BURGOS"
-  },
-  "visitante": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
-  },
-  "resultado": "*-*",
-  "fecha": "09/02/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 20(09/02/2027)",
   "id": "2535898",
   "local": {
    "id": "1009110",
@@ -2668,6 +2653,21 @@
   "resultado": "*-*",
   "fecha": "10/02/2027",
   "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 20(09/02/2027)",
+  "id": "2535899",
+  "local": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "visitante": {
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+  },
+  "resultado": "*-*",
+  "fecha": "10/02/2027",
+  "hora": "20:30"
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
@@ -2698,21 +2698,6 @@
   "resultado": "*-*",
   "fecha": "10/02/2027",
   "hora": "20:30"
- },
- {
-  "jornada": "Jornada 21(14/02/2027)",
-  "id": "2535905",
-  "local": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "visitante": {
-   "id": "1008400",
-   "nombre": "GRUPO URETA TIZONA BURGOS"
-  },
-  "resultado": "*-*",
-  "fecha": "14/02/2027",
-  "hora": "00:00"
  },
  {
   "jornada": "Jornada 21(14/02/2027)",
@@ -2773,6 +2758,21 @@
   "resultado": "*-*",
   "fecha": "14/02/2027",
   "hora": "00:00"
+ },
+ {
+  "jornada": "Jornada 21(14/02/2027)",
+  "id": "2535905",
+  "local": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "visitante": {
+   "id": "1008400",
+   "nombre": "GRUPO URETA TIZONA BURGOS"
+  },
+  "resultado": "*-*",
+  "fecha": "14/02/2027",
+  "hora": "12:00"
  },
  {
   "jornada": "Jornada 21(14/02/2027)",
@@ -3031,6 +3031,21 @@
  },
  {
   "jornada": "Jornada 23(05/03/2027)",
+  "id": "2535928",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1008900",
+   "nombre": "CAJA RURAL CB ZAMORA"
+  },
+  "resultado": "*-*",
+  "fecha": "07/03/2027",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 23(05/03/2027)",
   "id": "2535930",
   "local": {
    "id": "1009584",
@@ -3090,36 +3105,6 @@
   "hora": "18:00"
  },
  {
-  "jornada": "Jornada 23(05/03/2027)",
-  "id": "2535928",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1008900",
-   "nombre": "CAJA RURAL CB ZAMORA"
-  },
-  "resultado": "*-*",
-  "fecha": "07/03/2027",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 24(09/03/2027)",
-  "id": "2535932",
-  "local": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "visitante": {
-   "id": "1009713",
-   "nombre": "PALMER BASKET MALLORCA PALMA"
-  },
-  "resultado": "*-*",
-  "fecha": "09/03/2027",
-  "hora": "00:00"
- },
- {
   "jornada": "Jornada 24(09/03/2027)",
   "id": "2535933",
   "local": {
@@ -3129,36 +3114,6 @@
   "visitante": {
    "id": "1010493",
    "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "resultado": "*-*",
-  "fecha": "09/03/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 24(09/03/2027)",
-  "id": "2535934",
-  "local": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
-  },
-  "visitante": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
-  },
-  "resultado": "*-*",
-  "fecha": "09/03/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 24(09/03/2027)",
-  "id": "2535935",
-  "local": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "visitante": {
-   "id": "1009110",
-   "nombre": "CAJASOL COTO CÓRDOBA"
   },
   "resultado": "*-*",
   "fecha": "09/03/2027",
@@ -3211,6 +3166,36 @@
  },
  {
   "jornada": "Jornada 24(09/03/2027)",
+  "id": "2535935",
+  "local": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "visitante": {
+   "id": "1009110",
+   "nombre": "CAJASOL COTO CÓRDOBA"
+  },
+  "resultado": "*-*",
+  "fecha": "09/03/2027",
+  "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 24(09/03/2027)",
+  "id": "2535934",
+  "local": {
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "visitante": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "resultado": "*-*",
+  "fecha": "10/03/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 24(09/03/2027)",
   "id": "2535940",
   "local": {
    "id": "1008900",
@@ -3219,6 +3204,21 @@
   "visitante": {
    "id": "1010324",
    "nombre": "INSOLAC CAJA 87"
+  },
+  "resultado": "*-*",
+  "fecha": "10/03/2027",
+  "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 24(09/03/2027)",
+  "id": "2535932",
+  "local": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "visitante": {
+   "id": "1009713",
+   "nombre": "PALMER BASKET MALLORCA PALMA"
   },
   "resultado": "*-*",
   "fecha": "10/03/2027",
@@ -3238,6 +3238,36 @@
   "resultado": "*-*",
   "fecha": "10/03/2027",
   "hora": "20:45"
+ },
+ {
+  "jornada": "Jornada 25(14/03/2027)",
+  "id": "2535947",
+  "local": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "visitante": {
+   "id": "1010207",
+   "nombre": "PALENCIA BALONCESTO"
+  },
+  "resultado": "*-*",
+  "fecha": "13/03/2027",
+  "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 25(14/03/2027)",
+  "id": "2535945",
+  "local": {
+   "id": "1008378",
+   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+  },
+  "visitante": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "resultado": "*-*",
+  "fecha": "14/03/2027",
+  "hora": "00:00"
  },
  {
   "jornada": "Jornada 25(14/03/2027)",
@@ -3286,14 +3316,14 @@
  },
  {
   "jornada": "Jornada 25(14/03/2027)",
-  "id": "2535945",
+  "id": "2535949",
   "local": {
-   "id": "1008378",
-   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
   },
   "visitante": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
   },
   "resultado": "*-*",
   "fecha": "14/03/2027",
@@ -3312,37 +3342,7 @@
   },
   "resultado": "*-*",
   "fecha": "14/03/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 25(14/03/2027)",
-  "id": "2535947",
-  "local": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "visitante": {
-   "id": "1010207",
-   "nombre": "PALENCIA BALONCESTO"
-  },
-  "resultado": "*-*",
-  "fecha": "14/03/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 25(14/03/2027)",
-  "id": "2535949",
-  "local": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
-  },
-  "visitante": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
-  },
-  "resultado": "*-*",
-  "fecha": "14/03/2027",
-  "hora": "00:00"
+  "hora": "12:00"
  },
  {
   "jornada": "Jornada 25(14/03/2027)",
@@ -3586,6 +3586,21 @@
  },
  {
   "jornada": "Jornada 27(26/03/2027)",
+  "id": "2535964",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1009584",
+   "nombre": "GRUPO ALEGA CANTABRIA"
+  },
+  "resultado": "*-*",
+  "fecha": "28/03/2027",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 27(26/03/2027)",
   "id": "2535966",
   "local": {
    "id": "1010324",
@@ -3628,21 +3643,6 @@
   "resultado": "*-*",
   "fecha": "28/03/2027",
   "hora": "18:00"
- },
- {
-  "jornada": "Jornada 27(26/03/2027)",
-  "id": "2535964",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009584",
-   "nombre": "GRUPO ALEGA CANTABRIA"
-  },
-  "resultado": "*-*",
-  "fecha": "28/03/2027",
-  "hora": "18:30"
  },
  {
   "jornada": "Jornada 28(02/04/2027)",
@@ -4051,21 +4051,6 @@
  },
  {
   "jornada": "Jornada 31(20/04/2027)",
-  "id": "2535995",
-  "local": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "visitante": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
-  },
-  "resultado": "*-*",
-  "fecha": "20/04/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 31(20/04/2027)",
   "id": "2535996",
   "local": {
    "id": "1009929",
@@ -4126,21 +4111,6 @@
  },
  {
   "jornada": "Jornada 31(20/04/2027)",
-  "id": "2536001",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
-  },
-  "resultado": "*-*",
-  "fecha": "20/04/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 31(20/04/2027)",
   "id": "2536003",
   "local": {
    "id": "1010324",
@@ -4171,6 +4141,21 @@
  },
  {
   "jornada": "Jornada 31(20/04/2027)",
+  "id": "2536001",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "resultado": "*-*",
+  "fecha": "21/04/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 31(20/04/2027)",
   "id": "2536002",
   "local": {
    "id": "1009584",
@@ -4185,6 +4170,51 @@
   "hora": "20:30"
  },
  {
+  "jornada": "Jornada 31(20/04/2027)",
+  "id": "2535995",
+  "local": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "visitante": {
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+  },
+  "resultado": "*-*",
+  "fecha": "21/04/2027",
+  "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 32(25/04/2027)",
+  "id": "2536004",
+  "local": {
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
+  },
+  "visitante": {
+   "id": "1009716",
+   "nombre": "BUENO ARENAS ALBACETE BASKET"
+  },
+  "resultado": "*-*",
+  "fecha": "25/04/2027",
+  "hora": "00:00"
+ },
+ {
+  "jornada": "Jornada 32(25/04/2027)",
+  "id": "2536005",
+  "local": {
+   "id": "1009072",
+   "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "visitante": {
+   "id": "1008400",
+   "nombre": "GRUPO URETA TIZONA BURGOS"
+  },
+  "resultado": "*-*",
+  "fecha": "25/04/2027",
+  "hora": "00:00"
+ },
+ {
   "jornada": "Jornada 32(25/04/2027)",
   "id": "2536007",
   "local": {
@@ -4194,21 +4224,6 @@
   "visitante": {
    "id": "1009109",
    "nombre": "COVIRAN GRANADA"
-  },
-  "resultado": "*-*",
-  "fecha": "25/04/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 32(25/04/2027)",
-  "id": "2536008",
-  "local": {
-   "id": "1010494",
-   "nombre": "FLEXICAR FUENLABRADA"
-  },
-  "visitante": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
   },
   "resultado": "*-*",
   "fecha": "25/04/2027",
@@ -4261,36 +4276,6 @@
  },
  {
   "jornada": "Jornada 32(25/04/2027)",
-  "id": "2536004",
-  "local": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
-  },
-  "visitante": {
-   "id": "1009716",
-   "nombre": "BUENO ARENAS ALBACETE BASKET"
-  },
-  "resultado": "*-*",
-  "fecha": "25/04/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 32(25/04/2027)",
-  "id": "2536005",
-  "local": {
-   "id": "1009072",
-   "nombre": "FIBWI MALLORCA BASQUET PALMA"
-  },
-  "visitante": {
-   "id": "1008400",
-   "nombre": "GRUPO URETA TIZONA BURGOS"
-  },
-  "resultado": "*-*",
-  "fecha": "25/04/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 32(25/04/2027)",
   "id": "2536012",
   "local": {
    "id": "1008900",
@@ -4303,6 +4288,21 @@
   "resultado": "*-*",
   "fecha": "25/04/2027",
   "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 32(25/04/2027)",
+  "id": "2536008",
+  "local": {
+   "id": "1010494",
+   "nombre": "FLEXICAR FUENLABRADA"
+  },
+  "visitante": {
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
+  },
+  "resultado": "*-*",
+  "fecha": "25/04/2027",
+  "hora": "18:00"
  },
  {
   "jornada": "Jornada 32(25/04/2027)",
