@@ -1155,3 +1155,56 @@ th.col-a { color: #ffd9c4; }
   margin-left: 12px;
 }
 .boton-imprimir:hover { background: var(--acento); color: #fff; }
+
+/* ============ COMPARADOR DE JUGADORES ============ */
+.comparador { max-width: 100%; }
+
+/* Fichas de los jugadores elegidos (serán las columnas de la comparación) */
+.comparador-elegidos {
+  display: flex; flex-wrap: wrap; gap: 8px; margin: 10px 0 16px;
+}
+.comparador-ficha {
+  display: flex; flex-direction: column; gap: 2px;
+  padding: 8px 30px 8px 12px; position: relative;
+  border: 1.5px solid var(--acento); border-radius: var(--radio);
+  background: var(--panel); min-width: 150px;
+}
+.comparador-ficha-nombre { font-weight: 600; font-size: 14px; color: var(--tinta); }
+.comparador-ficha-cat { font-size: 12px; color: var(--tinta-suave); }
+.comparador-quitar {
+  position: absolute; top: 4px; right: 4px;
+  width: 22px; height: 22px; padding: 0; line-height: 1;
+  border: none; background: transparent; color: var(--tinta-suave);
+  font-size: 18px; cursor: pointer; border-radius: 4px;
+}
+.comparador-quitar:hover { background: var(--fondo); color: var(--negativo); }
+.comparador-hueco { align-self: center; font-size: 13px; color: var(--tinta-suave); font-style: italic; }
+
+/* Filtros en cascada */
+.comparador-filtros {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+}
+.comparador-filtros select, .comparador-filtros input {
+  font-size: 14px; min-width: 160px; flex: 1 1 160px; max-width: 260px;
+}
+
+/* Lista de jugadores filtrados */
+.comparador-lista {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 6px; margin-bottom: 16px;
+}
+.comparador-item {
+  display: flex; flex-direction: column; gap: 2px; text-align: left;
+  padding: 8px 12px; cursor: pointer;
+  border: 1px solid var(--linea); border-radius: var(--radio); background: var(--panel);
+  transition: border-color .12s, background .12s;
+}
+.comparador-item:hover:not(:disabled) { border-color: var(--acento); background: var(--fondo); }
+.comparador-item:disabled { opacity: .45; cursor: default; }
+.comparador-item-nombre { font-weight: 600; font-size: 14px; color: var(--tinta); }
+.comparador-item-meta { font-size: 12px; color: var(--tinta-suave); }
+
+@media (max-width: 600px) {
+  .comparador-filtros select, .comparador-filtros input { max-width: none; flex-basis: 100%; }
+  .comparador-lista { grid-template-columns: 1fr; }
+}
