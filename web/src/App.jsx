@@ -61,12 +61,33 @@ function RutaJugador({ carreras, historico, equipos, jugadores, jugadoresCuartos
   );
 }
 
-// Ficha de partido desde la URL (solo liga regular: las fases no están en partidos.json).
-function RutaPartido({ partidos, equipos, competicion, temporada, cargando, onVolver, onVerEquipo, onVerJugador }) {
+// Ficha de partido desde la URL. Busca en partidos.json (liga) y, si no, en fases.json (playoffs/ascensos), aplanando sus partidos anidados.
+function RutaPartido({ partidos, fases, equipos, competicion, temporada, cargando, onVolver, onVerEquipo, onVerJugador }) {
   const { idPartido } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
-  const partido = partidos.find(x => String(x.id) === idPartido);
+  let partido = partidos.find(x => String(x.id) === idPartido)
+    || (fases || []).flatMap(f => {
+         // nº de jornadas distintas de la fase: define si es ida/vuelta (2), unico (1) o liguilla (3+)
+         const njorn = new Set((f.partidos || []).map(pp => (pp.jornada || "").replace(/\(.*\)/, "").trim())).size;
+         return (f.partidos || []).map(pp => ({ ...pp, _fase: f.fase, _njorn: njorn }));
+       }).find(x => String(x.id) === idPartido);
   if (!partido) return <p className="cargando">Partido no encontrado en esta temporada.</p>;
+  // Normalizar partido de fase: local/visitante vienen como string (no {id, nombre}
+  // como en liga). El resto de la estructura (cuartos, boxscore) es identica.
+  if (typeof partido.local === "string") {
+    // Etiqueta de jornada: en eliminatorias a doble partido (2 jornadas) mostrar
+    // IDA/VUELTA; en partido unico (1) quitarla; en liguillas (3+) dejar la jornada.
+    let jorn = partido.jornada || "";
+    const fecha = (jorn.match(/\((.*)\)/) || [])[1] || "";
+    if (partido._njorn === 2) {
+      if (/Jornada\s*1/.test(jorn)) jorn = fecha ? `IDA (${fecha})` : "IDA";
+      else if (/Jornada\s*2/.test(jorn)) jorn = fecha ? `VUELTA (${fecha})` : "VUELTA";
+    } else if (partido._njorn === 1) {
+      jorn = fecha ? `PARTIDO ÚNICO (${fecha})` : "PARTIDO ÚNICO";
+    }
+    partido = { ...partido, local: { nombre: partido.local }, visitante: { nombre: partido.visitante },
+      grupo: partido._fase || "Fase final", jornada: jorn };
+  }
   return (
     <Partido partido={partido} equipos={equipos}
       competicion={competicion} temporada={temporada}
@@ -93,6 +114,7 @@ export default function App() {
   const [estadoDatos, setEstadoDatos] = useState(null);
   const [datosClub, setDatosClub] = useState({});
   const [equiposCuartos, setEquiposCuartos] = useState([]);
+  const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
   const [cargando, setCargando] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
 
@@ -119,7 +141,7 @@ export default function App() {
     if (!temporada) return;
     setCargando(true);
     setSinDatos(false);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -131,12 +153,14 @@ export default function App() {
       cargar(`${base}/carreras.json`),
       cargar(`${base}/partidos.json`),
       cargar(`${base}/jugadores-cuartos.json`).catch(() => null),
-      cargar(`${base}/equipos-cuartos.json`).catch(() => null)
+      cargar(`${base}/equipos-cuartos.json`).catch(() => null),
+      cargar(`${base}/fases.json`).catch(() => null)
     ])
-      .then(([eq, jug, car, par, cuartos, eqCuartos]) => {
+      .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData]) => {
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
         setJugadoresCuartos(cuartos || []);
         setEquiposCuartos(eqCuartos || []);
+        setFases(fasesData || []);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -224,13 +248,14 @@ export default function App() {
 
   const verPartido = arg => {
     const id = (arg && typeof arg === 'object') ? arg.id : arg;
-    const enLiga = partidos.some(x => String(x.id) === String(id));
-    if (enLiga && temporada) {
+    // Liga y fases se abren por URL: RutaPartido busca el partido en partidos.json
+    // y en fases.json (playoffs/ascensos), y normaliza los de fase.
+    if (id && temporada) {
       navigate(`/${competicion}/${temporada}/partido/${id}`);
       window.scrollTo(0, 0);
       return;
     }
-    // Partidos de fases: no están en partidos.json, así que se abren por estado
+    // Fallback sin temporada: abrir por estado (comportamiento anterior)
     const p = (arg && typeof arg === 'object') ? arg : partidos.find(x => x.id === arg);
     if (p) { setPartidoSel(p); setEquipoSel(null); setJugadorSel(null); window.scrollTo(0, 0); }
     else console.warn('verPartido: no encuentro el partido', arg);
@@ -329,7 +354,7 @@ export default function App() {
         } />
         <Route path="/:comp/:temp/partido/:idPartido" element={
           <RutaPartido
-            partidos={partidos} equipos={equipos} competicion={competicion} temporada={temporada} cargando={cargando}
+            partidos={partidos} fases={fases} equipos={equipos} competicion={competicion} temporada={temporada} cargando={cargando}
             onVolver={() => navigate('/')}
             onVerEquipo={verEquipo} onVerJugador={verJugador} />
         } />
