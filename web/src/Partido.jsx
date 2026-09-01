@@ -114,6 +114,49 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
 
   const total = (box, fn) => box.reduce((a, j) => a + fn(j), 0);
 
+  // Barras divergentes del partido (estilo FEB): tiros por % de acierto,
+  // conteos por valor. Cada barra = cuota del equipo sobre el total de ambos.
+  const barrasPartido = (() => {
+    if (!partido.boxscore || !partido.boxscore.local) return null;
+    const L = partido.boxscore.local, V = partido.boxscore.visitante;
+    const sum = (box, fn) => box.reduce((a, j) => a + fn(j), 0);
+    const pctTiro = (box, sel) => {
+      const h = sum(box, j => sel(j).a), i = sum(box, j => sel(j).i);
+      return { h, i, pct: i > 0 ? (100 * h / i) : 0 };
+    };
+    const filaTiro = (et, sel) => {
+      const l = pctTiro(L, sel), v = pctTiro(V, sel);
+      const tot = l.pct + v.pct || 1;
+      return {
+        et, lGana: l.pct >= v.pct,
+        lPct: 100 * l.pct / tot, vPct: 100 * v.pct / tot,
+        lTxt: Math.round(l.pct) + "% [" + l.h + "/" + l.i + "]",
+        vTxt: Math.round(v.pct) + "% [" + v.h + "/" + v.i + "]",
+      };
+    };
+    const filaConteo = (et, fn) => {
+      const l = sum(L, fn), v = sum(V, fn);
+      const tot = l + v || 1;
+      return {
+        et, lGana: l >= v,
+        lPct: 100 * l / tot, vPct: 100 * v / tot,
+        lTxt: String(l), vTxt: String(v),
+      };
+    };
+    return [
+      filaTiro("T. CAMPO", j => ({ a: j.t2.a + j.t3.a, i: j.t2.i + j.t3.i })),
+      filaTiro("T2", j => j.t2),
+      filaTiro("T3", j => j.t3),
+      filaTiro("T. LIBRES", j => j.tl),
+      filaConteo("ASIST.", j => j.as),
+      filaConteo("REBOTES", j => j.rt),
+      filaConteo("ROBOS", j => j.br),
+      filaConteo("TAPONES", j => j.tf),
+      filaConteo("PÉRDIDAS", j => j.bp),
+      filaConteo("FALTAS", j => j.fc),
+    ];
+  })();
+
   const tablaBox = (box, nombre) => {
     const t = {
       pt: total(box, j => j.pt),
@@ -294,6 +337,36 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
               </p>
             </>
           )}
+        </>
+      )}
+
+      {barrasPartido && (
+        <>
+          <h3 className="seccion" style={{ textAlign: "center" }}>Comparativa del partido</h3>
+          <div className="barras-partido">
+            <div className="barras-cabecera">
+              <span className="barras-eq barras-eq-l">{partido.local.nombre}</span>
+              <span className="barras-eq barras-eq-v">{partido.visitante.nombre}</span>
+            </div>
+            {barrasPartido.map(b => (
+              <div key={b.et} className="barras-fila">
+                <div className="barras-lado barras-lado-l">
+                  <div className={`barras-b ${b.lGana ? "gana" : "pierde"}`} style={{ width: b.lPct + "%" }}>
+                    <span>{b.lTxt}</span>
+                  </div>
+                </div>
+                <div className="barras-metrica">{b.et}</div>
+                <div className="barras-lado barras-lado-r">
+                  <div className={`barras-b ${!b.lGana ? "gana" : "pierde"}`} style={{ width: b.vPct + "%" }}>
+                    <span>{b.vTxt}</span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <p className="pie" style={{ textAlign: "center" }}>
+            Cada barra es la cuota del equipo sobre el total de ambos; en naranja, quien domina cada faceta. En los tiros, % de acierto y [aciertos/intentos].
+          </p>
         </>
       )}
 

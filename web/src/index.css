@@ -1221,3 +1221,26 @@ th.col-a { color: #ffd9c4; }
 .comparador-mejor .comparador-crudo { color: var(--acento); }
 .comparador-fila-ctx td { color: var(--tinta-suave); }
 .comparador-fila-ctx .comparador-crudo { font-weight: 400; color: var(--tinta-suave); }
+
+/* ============ BARRAS DIVERGENTES DEL PARTIDO (estilo FEB) ============ */
+.barras-partido { max-width: 720px; margin: 4px auto 8px; }
+.barras-cabecera { display: flex; justify-content: space-between; margin-bottom: 10px; padding: 0 2px; }
+.barras-eq { font-weight: 700; font-size: 15px; }
+.barras-eq-l { color: var(--acento); }
+.barras-eq-v { color: var(--tinta); text-align: right; }
+.barras-fila { display: grid; grid-template-columns: 1fr 76px 1fr; align-items: center; margin-bottom: 8px; }
+.barras-lado { height: 26px; display: flex; align-items: center; overflow: hidden; }
+.barras-lado-l { justify-content: flex-end; }
+.barras-lado-r { justify-content: flex-start; }
+.barras-b { height: 100%; display: flex; align-items: center; min-width: 34px; white-space: nowrap; }
+.barras-lado-l .barras-b { border-radius: 4px 0 0 4px; flex-direction: row-reverse; }
+.barras-lado-r .barras-b { border-radius: 0 4px 4px 0; }
+.barras-b.gana { background: var(--acento); }
+.barras-b.pierde { background: var(--gris, #b8bec8); }
+.barras-b span { font-size: 12.5px; font-weight: 700; color: #fff; padding: 0 8px; }
+.barras-metrica { text-align: center; font-size: 12px; font-weight: 700; color: var(--tinta-suave); }
+@media (max-width: 600px) {
+  .barras-fila { grid-template-columns: 1fr 60px 1fr; }
+  .barras-b span { font-size: 11px; padding: 0 5px; }
+  .barras-metrica { font-size: 11px; }
+}
