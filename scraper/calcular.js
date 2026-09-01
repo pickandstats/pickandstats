@@ -64,6 +64,9 @@ fs.mkdirSync(DIR_OUT, { recursive: true });
 const partidos = [];
 const excluidos = [];
 for (const grupo of fs.readdirSync(DIR_RAW)) {
+  // Saltar carpetas que no son grupos de partidos: actas (cuartos) y _fases
+  // tienen otra estructura y romperian el parseo.
+  if (grupo === 'actas' || grupo.startsWith('_')) continue;
   const dirGrupo = path.join(DIR_RAW, grupo);
   if (!fs.statSync(dirGrupo).isDirectory()) continue;
   for (const f of fs.readdirSync(dirGrupo)) {
@@ -375,6 +378,28 @@ const salidaPartidos = partidos.map(p => ({
 }));
 
 // ---------- escritura ----------
+// ---------- percentiles de equipos (nacional, dentro de la categoria) ----------
+// Directos (sin invertir): en el comparador se indica la direccion buena de cada
+// metrica. Todos los equipos tienen percentil (juegan la liga completa).
+const METRICAS_EQ_PCT = [
+  'pace', 'ortg', 'drtg', 'pfPartido', 'pcPartido',
+  't2PctEq', 't3PctEq', 'roPartido', 'rdPartido', 'rebPartido',
+  'asPartido', 'brPartido', 'bpPartido', 'fcPartido',
+];
+{
+  const ordNac = {};
+  for (const m of METRICAS_EQ_PCT) {
+    ordNac[m] = salidaEquipos.map(e => e[m]).filter(v => v != null).sort((a, b) => a - b);
+  }
+  for (const e of salidaEquipos) {
+    const pct = {};
+    for (const m of METRICAS_EQ_PCT) {
+      pct[m] = { nac: e[m] != null ? percentilEn(ordNac[m], e[m]) : null };
+    }
+    e.percentiles = pct;
+  }
+}
+
 fs.writeFileSync(path.join(DIR_OUT, 'equipos.json'), JSON.stringify(salidaEquipos, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'jugadores.json'), JSON.stringify(salidaJugadores, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'carreras.json'), JSON.stringify(carreras, null, 1));
