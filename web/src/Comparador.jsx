@@ -11,6 +11,21 @@ const COMPS = [
 ];
 const MAX = 4;
 
+const METRICAS = [
+  { k: 'ptPorPartido', etiq: 'Puntos', dec: 1 },
+  { k: 'rtPorPartido', etiq: 'Rebotes', dec: 1 },
+  { k: 'asPorPartido', etiq: 'Asistencias', dec: 1 },
+  { k: 'brPorPartido', etiq: 'Robos', dec: 1 },
+  { k: 'vaPorPartido', etiq: 'Valoración', dec: 1 },
+  { k: 'ts', etiq: 'TS%', dec: 1 },
+  { k: 'efg', etiq: 'eFG%', dec: 1 },
+  { k: 't3Pct', etiq: 'Triple %', dec: 1 },
+];
+const CONTEXTO = [
+  { k: 'minPorPartido', etiq: 'Minutos', dec: 1 },
+  { k: 'pj', etiq: 'Partidos', dec: 0 },
+];
+
 export default function Comparador({ temporada = '2025' }) {
   const [cargando, setCargando] = useState(true);
   const [jugadoresTodos, setJugadoresTodos] = useState([]);
@@ -54,7 +69,6 @@ export default function Comparador({ temporada = '2025' }) {
       const t = busca.trim().toLowerCase();
       arr = arr.filter(j => (j.nombre || '').toLowerCase().includes(t));
     }
-    // Requiere equipo o nombre para listar (no volcar toda una categoria de golpe)
     if (!equipoSel && busca.trim().length < 2) return null;
     return arr.slice(0, 60);
   }, [jugadoresTodos, catSel, equipoSel, busca]);
@@ -65,6 +79,19 @@ export default function Comparador({ temporada = '2025' }) {
     setElegidos([...elegidos, j]);
   };
   const quitar = id => setElegidos(elegidos.filter(j => String(j.idJugador) !== String(id)));
+
+  const pctDe = (j, k) => (j.percentiles && j.percentiles[k] ? j.percentiles[k].nac : null);
+  const catsMezcladas = new Set(elegidos.map(j => j._catId)).size > 1;
+
+  // Índice del mejor de cada métrica, por percentil (comparación justa entre categorías)
+  const mejorPorFila = k => {
+    let mejor = -1, idx = -1;
+    elegidos.forEach((j, i) => {
+      const p = pctDe(j, k);
+      if (p != null && p > mejor) { mejor = p; idx = i; }
+    });
+    return idx;
+  };
 
   if (cargando) return <p className="cargando">Cargando jugadores de las tres categorías…</p>;
   if (error) return <p className="cargando">No se pudieron cargar los datos del comparador.</p>;
@@ -116,9 +143,62 @@ export default function Comparador({ temporada = '2025' }) {
         </div>
       )}
 
-      {elegidos.length >= 2
-        ? <p className="pie">Tabla comparativa en construcción ({elegidos.length} elegidos).</p>
-        : <p className="pie">Añade al menos 2 jugadores para compararlos.</p>}
+      {elegidos.length < 2 ? (
+        <p className="pie">Añade al menos 2 jugadores para compararlos.</p>
+      ) : (
+        <>
+          <div className="tabla-scroll">
+            <table className="comparador-tabla">
+              <thead>
+                <tr>
+                  <th className="izq">Métrica</th>
+                  {elegidos.map(j => (
+                    <th key={j.idJugador}>
+                      <div className="comparador-th-nombre">{j.nombre}</div>
+                      <div className="comparador-th-cat">{j._cat}</div>
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {METRICAS.map(m => {
+                  const mejor = mejorPorFila(m.k);
+                  return (
+                    <tr key={m.k}>
+                      <td className="izq">{m.etiq}</td>
+                      {elegidos.map((j, i) => {
+                        const v = j[m.k];
+                        const p = pctDe(j, m.k);
+                        return (
+                          <td key={j.idJugador} className={i === mejor ? 'comparador-mejor' : ''}>
+                            <span className="comparador-crudo">{v != null ? v.toFixed(m.dec) : '—'}</span>
+                            {p != null && <span className="comparador-pct">P{p}</span>}
+                          </td>
+                        );
+                      })}
+                    </tr>
+                  );
+                })}
+                {CONTEXTO.map(m => (
+                  <tr key={m.k} className="comparador-fila-ctx">
+                    <td className="izq">{m.etiq}</td>
+                    {elegidos.map(j => (
+                      <td key={j.idJugador}>
+                        <span className="comparador-crudo">{j[m.k] != null ? j[m.k].toFixed(m.dec) : '—'}</span>
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="pie">
+            Cada celda muestra el valor por partido y, debajo, el percentil dentro de su categoría (P = mejor que ese % de jugadores de su categoría).
+            {catsMezcladas && ' Como comparas jugadores de categorías distintas, el percentil es la referencia justa: el valor crudo no es directamente equiparable entre categorías.'}
+            {' '}El resaltado marca el mejor percentil de cada fila.
+          </p>
+        </>
+      )}
     </div>
   );
 }
