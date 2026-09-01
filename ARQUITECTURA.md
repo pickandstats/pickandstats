@@ -475,3 +475,45 @@ Solucion (URL propia para partidos de fase):
 - Titulo segun formato de eliminatoria (derivado de _njorn): IDA/VUELTA si la fase tiene 2 jornadas (doble partido), PARTIDO UNICO si tiene 1, Jornada N si tiene 3+ (liguilla).
 
 Resultado: los partidos de fase se abren como los de liga (URL compartible, boton atras), con su contexto y boxscore por cuarto. Los datos ya existian; faltaba el enrutado. Detectado porque el contexto no aparecia en las fichas de fase de ascenso pese a estar en los datos.
+
+## 15. El comparador (jugadores y equipos)
+
+Vista "Comparador" (pestaña propia) con un toggle jugadores/equipos
+(ComparadorPanel.jsx envuelve Comparador.jsx y ComparadorEquipos.jsx).
+
+**Comparador de jugadores** (Comparador.jsx):
+- Carga bajo demanda los jugadores.json de las tres categorias (solo al entrar; ~9.5 MB, Tercera pesa 7 MB — optimizable a un fichero ligero si molesta).
+- Filtros en cascada: categoria -> equipo -> nombre (no vuelca una categoria entera de golpe; espera equipo o busqueda).
+- Seleccion acumulativa de hasta 4 jugadores (fichas quitables). Los elegidos persisten al cambiar de filtro, permitiendo comparar entre categorias.
+- Tabla: cada metrica con valor crudo + percentil dentro de su categoria (percentil 'nac', ya calculado en jugadores.json). Resaltado del mejor por percentil.
+- Radar de perfil superpuesto (6 ejes de percentil), un color por jugador.
+
+**Comparador de equipos** (ComparadorEquipos.jsx):
+- Igual patron, seleccion mas simple (categoria -> equipo; hay pocos equipos).
+- Requirio generar percentiles de equipos por categoria en calcular.js (no existian; los jugadores si los tenian). Directos, sin invertir.
+- Metricas 'menos es mejor' (drtg, puntos en contra, perdidas) marcadas con ↓: el resaltado y el radar las corrigen (100 - percentil) para que "mas es mejor" sea consistente, aunque el percentil guardado es directo.
+
+**Comparacion entre categorias:** el percentil es la referencia justa (un 16 de puntos en Tercera no equivale a un 16 en Primera, pero P92 vs P85 si es comparable). Cuando se mezclan categorias, se avisa. El valor crudo se muestra igual, pero como dato descriptivo, no como juicio de calidad.
+
+**Pendiente del comparador:** radar ya hecho para ambos; barras divergentes en las fichas de partido (para el enfrentamiento real de un partido; el grafico divergente implica "duelo", apropiado para un partido pero no para comparar medias de temporada). Optimizar la carga de jugadores (fichero ligero) si el peso de Tercera molesta.
+
+## 16. Gotchas del pipeline descubiertos con el comparador
+
+**La carpeta actas/ rompia calcular.js.** calcular.js recorre los subdirectorios
+de data/raw/<comp>/<temp>/ asumiendo que todos son grupos de partidos. La
+carpeta actas/ (creada para el analisis por cuartos) tiene otra estructura
+(campos partido, local, porCuarto... sin equipoLocal) y rompia el parseo. No se
+detecto durante semanas porque calcular.js no se re-ejecuto localmente desde que
+se crearon las actas, y en el workflow del bot el fallo quedaba enmascarado por
+continue-on-error (el bot seguia commiteando datos, potencialmente
+desactualizados). Arreglado: calcular.js salta 'actas' y cualquier carpeta que
+empiece por '_'. Leccion: al anadir cualquier carpeta a data/raw que no sea un
+grupo de partidos, revisar que calcular.js (y similares que recorran el
+directorio) la excluyan.
+
+**Los percentiles de equipos van a data/processed, no a web/public/data.**
+calcular.js escribe en data/processed; el deploy copia processed -> public. Los
+cuartos, en cambio, se generan directamente en public (inconsistencia ya
+conocida). Al generar los percentiles de equipos con calcular.js, quedaron en
+processed; para probar en local (donde la app lee de public) hay que copiar
+processed -> public manualmente. En produccion el deploy lo hace solo.
