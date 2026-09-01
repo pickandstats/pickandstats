@@ -1,4 +1,8 @@
 import { useEffect, useState, useMemo } from 'react';
+import {
+  Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
+  ResponsiveContainer, Legend, Tooltip
+} from 'recharts';
 
 // Comparador de jugadores de cualquier categoría. Carga bajo demanda las listas
 // de jugadores de las tres competiciones y permite enfrentar 2-4 jugadores con
@@ -10,6 +14,18 @@ const COMPS = [
   { id: '3', slug: 'tercerafeb', nombre: 'Tercera FEB' },
 ];
 const MAX = 4;
+// Colores distinguibles para hasta 4 jugadores superpuestos en el radar
+const COLORES = ['#e8622c', '#16233a', '#0a7d33', '#7b3f9e'];
+// Ejes del radar (percentiles): 6 para que se lea bien
+const EJES_RADAR = [
+  { k: 'ptPorPartido', t: 'Puntos' },
+  { k: 'rtPorPartido', t: 'Rebotes' },
+  { k: 'asPorPartido', t: 'Asistencias' },
+  { k: 'brPorPartido', t: 'Robos' },
+  { k: 'ts', t: 'Eficiencia (TS%)' },
+  { k: 't3Pct', t: 'Triple' },
+];
+const apellido = n => String(n).split(',')[0].trim();
 
 const METRICAS = [
   { k: 'ptPorPartido', etiq: 'Puntos', dec: 1 },
@@ -82,6 +98,17 @@ export default function Comparador({ temporada = '2025' }) {
 
   const pctDe = (j, k) => (j.percentiles && j.percentiles[k] ? j.percentiles[k].nac : null);
   const catsMezcladas = new Set(elegidos.map(j => j._catId)).size > 1;
+
+  // Datos del radar: una fila por eje, con el percentil de cada jugador elegido.
+  // Percentiles (0-100) para que la comparacion sea justa entre categorias.
+  const datosRadar = useMemo(() => EJES_RADAR.map(e => {
+    const fila = { eje: e.t };
+    elegidos.forEach((j, i) => {
+      const p = pctDe(j, e.k);
+      fila["j" + i] = p != null ? p : 0;
+    });
+    return fila;
+  }), [elegidos]);
 
   // Índice del mejor de cada métrica, por percentil (comparación justa entre categorías)
   const mejorPorFila = k => {
@@ -197,6 +224,31 @@ export default function Comparador({ temporada = '2025' }) {
             {catsMezcladas && ' Como comparas jugadores de categorías distintas, el percentil es la referencia justa: el valor crudo no es directamente equiparable entre categorías.'}
             {' '}El resaltado marca el mejor percentil de cada fila.
           </p>
+
+          <h3 className="seccion" style={{ marginTop: 20 }}>Perfil comparado</h3>
+          <div className="panel-grafico">
+            <ResponsiveContainer width="100%" height={360}>
+              <RadarChart data={datosRadar} outerRadius="72%">
+                <PolarGrid stroke="#e3e6eb" />
+                <PolarAngleAxis dataKey="eje" tick={{ fontSize: 12, fill: '#5b6472' }} />
+                <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} tickCount={5} />
+                <Tooltip formatter={(v, n) => {
+                  const i = +String(n).replace('j', '');
+                  return [`percentil ${v}`, elegidos[i] ? apellido(elegidos[i].nombre) : ''];
+                }} />
+                <Legend formatter={n => {
+                  const i = +String(n).replace('j', '');
+                  return elegidos[i] ? apellido(elegidos[i].nombre) : '';
+                }} />
+                {elegidos.map((j, i) => (
+                  <Radar key={j.idJugador} name={"j" + i} dataKey={"j" + i}
+                    stroke={COLORES[i % COLORES.length]} fill={COLORES[i % COLORES.length]}
+                    fillOpacity={0.18} strokeWidth={2} />
+                ))}
+              </RadarChart>
+            </ResponsiveContainer>
+          </div>
+          <p className="pie">Cada eje es el percentil dentro de su categoría (0-100). Cuanto más hacia fuera, mejor respecto a su categoría.</p>
         </>
       )}
     </div>
