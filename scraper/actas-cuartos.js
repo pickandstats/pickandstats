@@ -2,7 +2,12 @@
 // para todos los partidos jugados de una competicion/temporada, y lo guarda como
 // un fichero por partido en data/raw/<comp>/<temp>/actas/<id>.json
 //
-// Incremental e idempotente: salta los partidos que ya tienen fichero.
+// Incremental: salta un partido solo si su acta ya guardada esta SANA (completa,
+// verificada y con contexto por cuarto). Las actas rotas se reintentan hasta 4
+// veces (campo "intentos" en el propio fichero); pasado ese limite se rinden,
+// porque hay actas que la FEB nunca completara. Un fallo de red/PDF NO consume
+// intento (solo anota "fallosRed"): rendirse por un fallo transitorio dejaria un
+// agujero permanente en los datos, mientras que reintentarlo cuesta una peticion.
 //
 // Uso:
 //   node scraper/actas-cuartos.js --competicion 1 --temporada 2025
@@ -42,9 +47,17 @@ const jugados = arr.filter(p => p.resultado && /\d+-\d+/.test(p.resultado));
 const dirActas = path.join('data', 'raw', compNombre, temp, 'actas');
 fs.mkdirSync(dirActas, { recursive: true });
 
+// Un acta esta "sana" si esta completa, cuadra la verificacion y trae contexto
+// por cuarto. Es la MISMA condicion que usa el verificador para dar por buena un
+// acta; solo las sanas se saltan por existir.
+const esSana = a => !!(a && a.completo && a.verificado !== false && a.contextoPorCuarto);
+const LIMITE_INTENTOS = 4;
+
 (async () => {
-  let procesados = 0, saltados = 0, errores = 0, incompletos = 0;
-  const problemas = [];
+  let procesados = 0, saltados = 0, errores = 0, reparadas = 0;
+  const rotaIds = new Set();   // actas presentes en disco que NO estan sanas
+  const rendidasIds = [];      // rotas que ya agotaron los intentos: no se reintentan
+  const erroresIds = [];       // la extraccion fallo (red, PDF inaccesible)
   const total = limite ? Math.min(limite, jugados.length) : jugados.length;
   console.log(`${compNombre} ${temp}: ${jugados.length} partidos jugados` +
     (limite ? ` (procesando ${total})` : '') + `\n`);
@@ -53,7 +66,18 @@ fs.mkdirSync(dirActas, { recursive: true });
     if (limite && procesados + saltados >= limite) break;
     const p = jugados[i];
     const destino = path.join(dirActas, p.id + '.json');
-    if (!forzar && fs.existsSync(destino)) { saltados++; continue; }
+
+    let previa = null, intentosPrevios = 0;
+    if (!forzar && fs.existsSync(destino)) {
+      try { previa = JSON.parse(fs.readFileSync(destino, 'utf8')); }
+      catch (e) { previa = { _corrupta: true }; }   // ilegible: tratar como rota
+      if (esSana(previa)) { saltados++; continue; }
+      // Rota: cuenta como aviso en disco y, si agoto los intentos, se rinde.
+      rotaIds.add(String(p.id));
+      intentosPrevios = previa._corrupta ? 0 : (previa.intentos || 0);
+      if (intentosPrevios >= LIMITE_INTENTOS) { rendidasIds.push(p.id); continue; }
+      // si no, cae a la re-extraccion de abajo
+    }
 
     try {
       const acta = await extraerActaPorCuartos(p.id);
@@ -84,17 +108,41 @@ fs.mkdirSync(dirActas, { recursive: true });
         contextoPorCuarto: acta.contextoPorCuarto, // [cuarto] contraataque, pintura, 2a op, tras perdida, banquillo
         generado: new Date().toISOString().slice(0, 10),
       };
+
+      const sana = esSana(salida);
+      if (!sana) {
+        // Sigue rota tras extraerla bien: consume un intento. Al llegar al limite
+        // dejara de reintentarse en semanas futuras.
+        salida.intentos = intentosPrevios + 1;
+        rotaIds.add(String(p.id));
+      } else {
+        // Quedo sana: sin campo intentos (el fichero queda limpio).
+        rotaIds.delete(String(p.id));
+        if (previa && !esSana(previa)) reparadas++;
+      }
       fs.writeFileSync(destino, JSON.stringify(salida, null, 1));
       procesados++;
-      if (!acta.completo || !cuadra) { incompletos++; problemas.push(`${p.id} (completo:${acta.completo} verificado:${cuadra})`); }
-      const marca = (!acta.completo || !cuadra) ? ' ⚠' : '';
+      const marca = !sana ? ' ⚠' : '';
       process.stdout.write(`\r  ${procesados} procesados, ${saltados} saltados${marca}   `);
     } catch (e) {
+      // Fallo de extraccion (red, PDF inaccesible). NO consume intento: solo se
+      // anota fallosRed en el acta previa (si la hay) para poder informar luego.
       errores++;
-      problemas.push(`${p.id} ERROR: ${e.message}`);
+      erroresIds.push(`${p.id}: ${e.message}`);
+      if (previa && !previa._corrupta) {
+        previa.fallosRed = (previa.fallosRed || 0) + 1;
+        try { fs.writeFileSync(destino, JSON.stringify(previa, null, 1)); } catch (_) {}
+      }
     }
   }
 
-  console.log(`\n\nHecho: ${procesados} nuevos, ${saltados} ya existian, ${errores} errores, ${incompletos} con avisos`);
-  if (problemas.length) { console.log('\nPartidos con incidencias:'); problemas.forEach(p => console.log('  ' + p)); }
+  // Resumen: cuenta lo que hay EN DISCO, no solo lo tocado en esta ejecucion.
+  const rotas = [...rotaIds];
+  console.log(`\n\nHecho: ${procesados} escritas` +
+    (reparadas ? ` (${reparadas} reparadas)` : '') +
+    `, ${saltados} sanas sin tocar, ${errores} errores de extraccion`);
+  console.log(`Actas rotas en disco: ${rotas.length}` + (rotas.length ? ' -> ' + rotas.join(', ') : ''));
+  if (rendidasIds.length)
+    console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no se reintentan): ${rendidasIds.length} -> ${rendidasIds.join(', ')}`);
+  if (erroresIds.length) { console.log('\nErrores de extraccion (se reintentaran):'); erroresIds.forEach(x => console.log('  ' + x)); }
 })();

@@ -537,40 +537,54 @@ en julio de 2026, con las temporadas 2023/24, 2024/25 y 2025/26 ya cerradas y
 cargadas hacia atrás. El pipeline nunca ha corrido contra una temporada en
 curso.** Todo lo que sigue son caminos sin estrenar, no bugs observados.
 
-### 17.1 El acta incompleta que nunca se re-extrae
+### 17.1 El acta incompleta que nunca se re-extraía
 
-Dos comportamientos razonables por separado que juntos forman una trampa:
+> **Corregido el 2/9/2026** (`actas-cuartos.js`). Lo que sigue describe el
+> problema —que se mantiene como registro— y, al final, el comportamiento actual.
 
-- `actas-cuartos.js` salta cualquier partido cuyo fichero ya exista, **sin mirar
-  si ese fichero es bueno**: no consulta `completo`, ni `verificado`, ni
+Dos comportamientos razonables por separado que juntos formaban una trampa:
+
+- `actas-cuartos.js` saltaba cualquier partido cuyo fichero ya existiera, **sin
+  mirar si ese fichero era bueno**: no consultaba `completo`, ni `verificado`, ni
   `contextoPorCuarto`.
-- El contador "N con avisos" del resumen solo cuenta las actas extraídas en esa
-  ejecución. Nunca las que ya estaban. Un "0 con avisos" puede convivir con
+- El contador "N con avisos" del resumen solo contaba las actas extraídas en esa
+  ejecución. Nunca las que ya estaban. Un "0 con avisos" podía convivir con
   actas rotas en disco.
 
-De ahí salen dos fallos distintos, y el segundo es el más probable en septiembre:
+De ahí salían dos fallos distintos, y el segundo es el más probable en septiembre:
 
-**(a) Categoría congelada.** Si un acta queda escrita *sin* `contextoPorCuarto`,
+**(a) Categoría congelada.** Si un acta quedaba escrita *sin* `contextoPorCuarto`,
 `verificar-cuartos.js` sale 1 cada semana, el `&&` corta la generación, y los
 cuartos de esa categoría se quedan clavados en la última generación buena
 mientras `partidos.json` avanza. Como el bloque va con `continue-on-error`, el
 workflow sale **verde**. Históricamente este caso vino de un cambio de esquema
-(el contexto se añadió después), no de la FEB.
+(el contexto se añadió después), no de la FEB. Nota medida el 2/9/2026: de las 33
+actas rotas que hoy hay en disco, **ninguna carece de contexto** (todas son
+truncadas con `completo:false`), así que este caso (a) no existe ahora mismo en
+producción; el que importa hoy es el (b).
 
 **(b) Datos parciales dados por buenos —el escenario realista.** Un partido del
 domingo cuya acta la FEB aún no ha cerrado no llega sin contexto: llega
 **truncada** (`completo:false`). Y las truncadas el verificador las tolera
-explícitamente: dice LISTO y genera. Ese fichero no se vuelve a tocar jamás,
-aunque la FEB complete el PDF el martes. Resultado: los cuartos de ese partido
-quedan mal para siempre, sin alarma de ningún tipo. Datos silenciosamente
+explícitamente: dice LISTO y genera. Ese fichero no se volvía a tocar jamás,
+aunque la FEB completara el PDF el martes. Resultado: los cuartos de ese partido
+quedaban mal para siempre, sin alarma de ningún tipo. Datos silenciosamente
 incorrectos son peor que un pipeline parado, porque un pipeline parado se acaba
 notando.
 
-**Arreglo:** saltar solo si el fichero existe *y* está sano
-(`completo && verificado !== false && contextoPorCuarto`). Cierra los dos casos.
-Necesita un contador de reintentos en el propio fichero (rendirse a los 3-4),
-porque hay ~33 actas que la FEB no va a completar nunca y si no se reintentarían
-cada semana indefinidamente.
+**Comportamiento actual.** `actas-cuartos.js` salta un partido solo si su acta
+está **sana** (`completo && verificado !== false && contextoPorCuarto`) —la misma
+condición que usa el verificador—. Una acta rota se re-extrae, y si sigue rota
+tras extraerla bien se apunta un `intentos` en el propio fichero; al llegar a 4
+se rinde y deja de reintentarse (las ~33 truncadas que la FEB no completará no se
+reintentan eternamente). Cuando una re-extracción la deja sana, el campo
+`intentos` se borra. **Un fallo de red o un PDF inaccesible NO consume intento**
+(la asimetría es deliberada: reintentar un PDF inalcanzable cuesta una petición
+semanal; rendirse por un fallo transitorio dejaría un agujero permanente); solo
+se anota un `fallosRed` aparte, informativo, que no cuenta para rendirse. El
+resumen final cuenta las actas rotas **en disco**, no solo las tocadas en esa
+ejecución, y lista los ids de las rendidas para alimentar el resumen de salud del
+punto 4 de §17.5.
 
 ### 17.2 La temporada no cambia sola
 
@@ -622,8 +636,9 @@ y es precisamente el que va envuelto en `continue-on-error`.
 
 ### 17.5 Orden de arreglo acordado
 
-1. La condición de "acta sana" en `actas-cuartos.js` (§17.1). Una línea, cierra el
-   riesgo peor.
+1. ✅ **Hecho (2/9/2026).** La condición de "acta sana" en `actas-cuartos.js`
+   (§17.1), con contador de `intentos` (se rinde a los 4), `fallosRed` aparte para
+   los fallos de red, y resumen que cuenta las rotas en disco y lista las rendidas.
 2. El canario de `discrepancia` (§17.2): un paso propio que falle si
    `discrepancia && mes >= 9`. Es el único punto con fecha impuesta desde fuera, y
    además avisa el día que la FEB mueva el selector.
