@@ -19,6 +19,7 @@ const CFG = require('./config');
 
 const MAX_DIAS_INDICES = 14;   // >2 refrescos semanales perdidos: el canario esta ciego
 const DIAS_ARRANQUE = 42;      // ~6 semanas: ventana de calendarios escalonados (S17.5.4)
+const DIAS_ACTA = 10;          // acta que falta para un partido jugado hace mas de esto = extraccion rota
 const criticos = [], avisos = [];
 const lineas = [];             // para el resumen legible
 
@@ -51,9 +52,17 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
 
   // 2) Grupos sin partidos en la temporada seleccionada (con otros que si tienen)
   const dirSel = path.join('data', 'raw', nombre, sel);
+  const dirActas = path.join(dirSel, 'actas');
+  // Partidos no disputados (incomparecencias/sanciones): llevan un marcador
+  // nominal (0-2, 20-0...) que parece "jugado" pero no tienen boxscore ni acta, y
+  // nunca la tendran. Se excluyen del check de actas que faltan usando la lista
+  // autoritativa que ya genera calcular.js.
+  const excl = leerJSON(path.join('web', 'public', 'data', nombre, sel, 'excluidos.json'));
+  const excluidos = new Set((Array.isArray(excl) ? excl : []).map(x => String(x.id != null ? x.id : x)));
   if (fs.existsSync(dirSel)) {
     const cuenta = new Map();
-    let primerPartido = null;   // fecha mas temprana de la temporada (arranque)
+    let primerPartido = null;          // fecha mas temprana de la temporada (arranque)
+    const jugadosSinActa = [];         // partido jugado hace >DIAS_ACTA sin acta en disco
     for (const grupo of fs.readdirSync(dirSel)) {
       if (grupo === 'actas') continue;   // no es un grupo
       const fi = path.join(dirSel, grupo, '_indice.json');
@@ -63,6 +72,9 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       for (const p of (Array.isArray(arr) ? arr : [])) {
         const f = parseFecha(p.fecha);
         if (f && (!primerPartido || f < primerPartido)) primerPartido = f;
+        const jugado = /\d+\s*-\s*\d+/.test(p.resultado || '');
+        if (jugado && !excluidos.has(String(p.id)) && f && (Date.now() - f.getTime()) / 86400000 > DIAS_ACTA &&
+            !fs.existsSync(path.join(dirActas, p.id + '.json'))) jugadosSinActa.push(p.id);
       }
     }
     const valores = [...cuenta.values()];
@@ -82,6 +94,17 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
         if (arrancando) avisos.push(`${msg} (temporada recien empezada; calendarios escalonados de la FEB)`);
         else criticos.push(`${msg} (¿scraper roto?)`);
       }
+    }
+
+    // 2b) Punto ciego cerrado: acta que FALTA para un partido jugado hace mas de
+    // DIAS_ACTA. Por debajo del umbral es el retraso normal con que la FEB cierra
+    // las actas; por encima, la extraccion esta rota y NADIE MAS lo dice: el
+    // verificador da LISTO porque tolera las actas que faltan, y el reporte del
+    // run (cuartos-run) ni existe si actas-cuartos.js no llego a correr. Este
+    // check no guarda estado entre ejecuciones: se deriva de fecha + existencia.
+    if (jugadosSinActa.length) {
+      const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
+      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) faltan para partidos jugados hace >${DIAS_ACTA}d -> ${muestra} (¿extraccion de actas rota?)`);
     }
   }
 
