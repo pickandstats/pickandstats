@@ -660,13 +660,17 @@ y es precisamente el que va envuelto en `continue-on-error`.
   `scraper/actas-release.sh`. Los artifacts se descartaron porque **caducan** (máx.
   90 días): no son copia persistente; un release asset no caduca. El workflow
   restaura en orden **cache → release → FEB** (paso "Asegurar actas") con una línea
-  de log inequívoca `ACTAS: CACHE|RELEASE|FEB`, y sube la temporada en curso al
-  final ("Publicar actas"). Sin manifest a propósito: la cache es todo-o-nada, así
-  que la regla de restauración es simple —si el directorio de actas de la temporada
-  está vacío o no existe, restaurar del release; si está, usarlo—. Al arrancar una
-  temporada nueva aún no hay tarball suyo: eso se registra como normal, no como
-  error; solo un release que no responde o está corrupto hace ruido. Detalle y
-  criterio en `_informe-persistir-actas.md`. El repo es público (verificado) y las
+  de log inequívoca, y sube la temporada en curso al final ("Publicar actas"). Sin
+  manifest a propósito: la cache es todo-o-nada, así que la regla de restauración es
+  simple —si el directorio de actas de la temporada está vacío o no existe, restaurar
+  del release; si está, usarlo—. La línea distingue cuatro estados y el caer al
+  camino lento por un motivo normal del que merece atención: `ACTAS: CACHE`,
+  `ACTAS: RELEASE`, `ACTAS: FEB (temporada nueva, normal)` —al arrancar una temporada
+  aún no hay tarball suyo, esperado— y `ACTAS: FEB (respaldo ausente o roto)` —lo
+  único que pide mirar—. La clasificación se decide comprobando la **existencia** del
+  release y del asset concreto (`gh release view --json assets`), no grepeando el
+  texto del mensaje de gh (que depende del idioma). Detalle y criterio en
+  `_informe-persistir-actas.md`. El repo es público (verificado) y las
   actas derivan de PDF públicos de la FEB, así que publicarlas no expone nada.
   Escala barato: git no crece (nunca se versionan), y el release suma ~100 MB por
   temporada, que en repo público es gratis.

@@ -149,6 +149,10 @@ data/raw/*/*/actas/
 # Reporte efimero por ejecucion de actas-cuartos (lo lee el resumen de salud)
 data/processed/cuartos-run-*.json
 
+# Tarballs de respaldo de actas: se crean en un tmp y se borran, pero por si un
+# job cancelado deja alguno colgando en el arbol (actas-release.sh)
+*.tar.gz
+
 # Informes de trabajo (no se versionan)
 _informe*.md
 _informe.txt

@@ -14,7 +14,11 @@
 #   bash scraper/actas-release.sh restaurar [--forzar]   # cache -> release -> (FEB)
 #   bash scraper/actas-release.sh publicar               # sube la temporada en curso
 #
-# 'restaurar' imprime una linea inequivoca: ACTAS: CACHE | RELEASE | FEB.
+# 'restaurar' imprime una linea inequivoca:
+#   ACTAS: CACHE
+#   ACTAS: RELEASE
+#   ACTAS: FEB (temporada nueva, normal)     <- ausencia esperada, NO caido al lento
+#   ACTAS: FEB (respaldo ausente o roto)     <- esto si merece atencion
 set -uo pipefail
 
 TAG="actas-cache"
@@ -24,10 +28,23 @@ ESTADO="data/processed/estado.json"
 temporada_de() { node -p "((require('./$ESTADO').competiciones||{})['$1']||{}).temporada||''" 2>/dev/null; }
 contar() { if [ -d "$1" ]; then find "$1" -maxdepth 1 -name '*.json' | wc -l | tr -d ' '; else echo 0; fi; }
 
+# Lista de assets del release, cacheada y consultada una sola vez. release_rc=0
+# si el release existe (aunque este vacio), !=0 si no existe o gh/red fallan. No
+# se clasifica por el TEXTO del mensaje de gh (depende de idioma/wording): se
+# decide con la existencia comprobable del release y del asset concreto.
+release_assets=""; release_rc=1; release_fetched=0
+ensure_release_list() {
+  [ "$release_fetched" = "1" ] && return
+  release_assets=$(gh release view "$TAG" --json assets --jq '.assets[].name' 2>/dev/null)
+  release_rc=$?
+  release_fetched=1
+}
+
 restaurar() {
   local forzar=0
   [ "${1:-}" = "--forzar" ] && forzar=1
-  local overall="CACHE"   # peor caso encontrado: FEB > RELEASE > CACHE
+  # Estado global: 0=CACHE 1=RELEASE 2=FEB(normal) 3=FEB(atencion). Se queda con el peor.
+  local rank=0
 
   for cat in $CATS; do
     local T dir n
@@ -41,29 +58,36 @@ restaurar() {
       continue
     fi
 
-    # No hay actas en disco (o se fuerza): intentar restaurar del release.
-    local tmp err rc
-    tmp=$(mktemp -d)
-    err=$(gh release download "$TAG" -p "actas-$cat-$T.tar.gz" -D "$tmp" --clobber 2>&1); rc=$?
-    if [ "$rc" -eq 0 ]; then
-      mkdir -p "data/raw/$cat/$T"
-      tar -xzf "$tmp/actas-$cat-$T.tar.gz" -C "data/raw/$cat/$T"
-      local m; m=$(contar "$dir")
-      echo "  $cat $T: restauradas $m actas desde RELEASE"
-      [ "$overall" != "FEB" ] && overall="RELEASE"
-    elif echo "$err" | grep -qiE 'release not found|no assets|not find|no artifact|404'; then
-      # Ausencia esperada: al arrancar una temporada todavia no hay tarball suyo.
+    # Hacen falta actas (o se fuerza). Decidir con la existencia del release/asset.
+    ensure_release_list
+    local asset="actas-$cat-$T.tar.gz"
+    if [ "$release_rc" -ne 0 ]; then
+      echo "  $cat $T: ⚠ el release '$TAG' no existe o no responde; se re-extraeran desde la FEB"
+      [ "$rank" -lt 3 ] && rank=3
+    elif ! printf '%s\n' "$release_assets" | grep -qx "$asset"; then
       echo "  $cat $T: todavia no hay respaldo de esta temporada (normal al arrancar); se re-extraeran desde la FEB"
-      overall="FEB"
+      [ "$rank" -lt 2 ] && rank=2
     else
-      # Fallo real (red, permisos, asset corrupto): esto si merece ruido.
-      echo "  $cat $T: ⚠ el release no responde o esta corrupto -> $err"
-      overall="FEB"
+      local tmp; tmp=$(mktemp -d)
+      if gh release download "$TAG" -p "$asset" -D "$tmp" --clobber 2>/dev/null && \
+         mkdir -p "data/raw/$cat/$T" && tar -xzf "$tmp/$asset" -C "data/raw/$cat/$T" 2>/dev/null; then
+        local m; m=$(contar "$dir")
+        echo "  $cat $T: restauradas $m actas desde RELEASE"
+        [ "$rank" -lt 1 ] && rank=1
+      else
+        echo "  $cat $T: ⚠ el asset existe pero no se pudo descargar/extraer (¿corrupto?); se re-extraeran desde la FEB"
+        [ "$rank" -lt 3 ] && rank=3
+      fi
+      rm -rf "$tmp"
     fi
-    rm -rf "$tmp"
   done
 
-  echo "ACTAS: $overall"
+  case "$rank" in
+    0) echo "ACTAS: CACHE";;
+    1) echo "ACTAS: RELEASE";;
+    2) echo "ACTAS: FEB (temporada nueva, normal)";;
+    3) echo "ACTAS: FEB (respaldo ausente o roto)";;
+  esac
 }
 
 publicar() {
@@ -83,13 +107,16 @@ publicar() {
       echo "  release '$TAG' creado (bootstrap)"
     fi
 
-    tar -czf "actas-$cat-$T.tar.gz" -C "data/raw/$cat/$T" actas
-    if gh release upload "$TAG" "actas-$cat-$T.tar.gz" --clobber; then
+    # El tar.gz va a un directorio temporal, no a la raiz del repo: si la subida
+    # falla o el job se cancela, no deja 73 MB colgando en el arbol de trabajo.
+    local tmp; tmp=$(mktemp -d)
+    tar -czf "$tmp/actas-$cat-$T.tar.gz" -C "data/raw/$cat/$T" actas
+    if gh release upload "$TAG" "$tmp/actas-$cat-$T.tar.gz" --clobber; then
       echo "  $cat $T: subidas $n actas al release"
     else
       echo "  $cat $T: ⚠ no se pudo subir el respaldo al release"
     fi
-    rm -f "actas-$cat-$T.tar.gz"
+    rm -rf "$tmp"
   done
 }
 
