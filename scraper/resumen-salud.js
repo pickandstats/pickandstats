@@ -18,10 +18,13 @@ const { execFileSync } = require('child_process');
 const CFG = require('./config');
 
 const MAX_DIAS_INDICES = 14;   // >2 refrescos semanales perdidos: el canario esta ciego
+const DIAS_ARRANQUE = 42;      // ~6 semanas: ventana de calendarios escalonados (S17.5.4)
 const criticos = [], avisos = [];
 const lineas = [];             // para el resumen legible
 
 const leerJSON = f => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { return null; } };
+// Fecha de partido en los _indice.json (raw): formato dd/mm/yyyy. null si no parsea.
+const parseFecha = s => { const m = /^(\d{2})\/(\d{2})\/(\d{4})$/.exec(s || ''); return m ? new Date(+m[3], +m[2] - 1, +m[1]) : null; };
 
 const estado = leerJSON(path.join('data', 'processed', 'estado.json')) || { competiciones: {} };
 
@@ -50,16 +53,35 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   const dirSel = path.join('data', 'raw', nombre, sel);
   if (fs.existsSync(dirSel)) {
     const cuenta = new Map();
+    let primerPartido = null;   // fecha mas temprana de la temporada (arranque)
     for (const grupo of fs.readdirSync(dirSel)) {
+      if (grupo === 'actas') continue;   // no es un grupo
       const fi = path.join(dirSel, grupo, '_indice.json');
       if (!fs.existsSync(fi)) continue;
       const arr = leerJSON(fi);
       cuenta.set(grupo, Array.isArray(arr) ? arr.length : 0);
+      for (const p of (Array.isArray(arr) ? arr : [])) {
+        const f = parseFecha(p.fecha);
+        if (f && (!primerPartido || f < primerPartido)) primerPartido = f;
+      }
     }
     const valores = [...cuenta.values()];
     if (valores.length && Math.max(...valores) > 0) {
       const vacios = [...cuenta].filter(([, n]) => n === 0).map(([grp]) => grp);
-      if (vacios.length) criticos.push(`${nombre} ${sel}: grupo(s) sin partidos: ${vacios.join(', ')} (¿scraper roto?)`);
+      if (vacios.length) {
+        // Critico solo si la temporada ya lleva rodando mas de DIAS_ARRANQUE. En
+        // las primeras semanas la FEB publica los calendarios de los grupos de
+        // forma escalonada, asi que un indice vacio es legitimo: ponerlo en rojo
+        // cada lunes de septiembre taparia las senales reales. Ya rodada la
+        // temporada, un grupo vacio si es senal de scraper roto. Discriminante:
+        // la fecha del primer partido de la temporada (esta en los _indice.json,
+        // tambien para los grupos ya publicados). Sin fecha -> aviso (no bloquea).
+        const diasDesdeInicio = primerPartido ? (Date.now() - primerPartido.getTime()) / 86400000 : null;
+        const arrancando = diasDesdeInicio === null || diasDesdeInicio <= DIAS_ARRANQUE;
+        const msg = `${nombre} ${sel}: grupo(s) sin partidos: ${vacios.join(', ')}`;
+        if (arrancando) avisos.push(`${msg} (temporada recien empezada; calendarios escalonados de la FEB)`);
+        else criticos.push(`${msg} (¿scraper roto?)`);
+      }
     }
   }
 
