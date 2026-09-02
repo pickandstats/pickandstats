@@ -5,6 +5,11 @@ on:
     # Lunes a las 07:00 UTC (08:00/09:00 en España según horario)
     - cron: '0 7 * * 1'
   workflow_dispatch:   # y botón manual para lanzarlo cuando quieras
+    inputs:
+      restaurar_desde_release:
+        description: 'Forzar la restauración de actas desde el release (para verificar el respaldo, aunque la cache tenga actas)'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -41,6 +46,23 @@ jobs:
           key: actas-${{ github.run_id }}
           restore-keys: |
             actas-
+
+      # Respaldo persistente (ARQUITECTURA.md S17.4). La cache de arriba es el
+      # camino rapido pero caduca a los 7 dias; este paso restaura del release las
+      # actas de la temporada seleccionada si la cache no las trajo. Orden
+      # cache -> release -> FEB, con una linea de log inequivoca (ACTAS: ...) para
+      # ver si un lunes cayo al camino lento (FEB = horas). Tolerante: si el release
+      # falla, se cae a re-extraer de la FEB, que es el comportamiento sin respaldo.
+      - name: Asegurar actas (cache -> release -> FEB)
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "${{ github.event.inputs.restaurar_desde_release }}" = "true" ]; then
+            bash scraper/actas-release.sh restaurar --forzar
+          else
+            bash scraper/actas-release.sh restaurar
+          fi
 
       # ----- Tercera FEB (competición 3, por defecto) -----
       - name: Tercera · scrapear
@@ -100,6 +122,17 @@ jobs:
           node scraper/verificar-cuartos.js --competicion 1 --temporada $T && \
           node scraper/calcular-cuartos.js --competicion 1 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 1 --temporada $T
+
+      # Sube al release las actas de la temporada en curso (ARQUITECTURA.md S17.4),
+      # el respaldo persistente del que restaura el paso "Asegurar actas". Crea el
+      # release si no existe (bootstrap en la 1a ejecucion). Siempre sube la
+      # temporada en curso (sin manifest: la cache es todo-o-nada, el disco ya es la
+      # fuente de verdad). Tolerante: un fallo de subida no tumba la actualizacion.
+      - name: Publicar actas al release
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: bash scraper/actas-release.sh publicar
 
       # Refresca el calendario de la temporada próxima (pretemporada/arranque):
       # scrapea sus índices y regenera calendario.json si la FEB cambió algo.

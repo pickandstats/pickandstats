@@ -652,11 +652,24 @@ y es precisamente el que va envuelto en `continue-on-error`.
 
 ### 17.4 Otros hallazgos
 
-- **Las actas solo existen en la cache de Actions.** 100 MB gitignored, sin copia
-  persistente. Reconstrucción en frío ≈ 4 h solo de espera (límite de job: 6 h) y
-  la clave rota por `run_id` suma ~100 MB semanales al presupuesto de 10 GB con
-  evicción LRU. Salida barata que no exige versionarlas: subirlas
-  periódicamente como *release asset* o artifact del repo.
+- **Las actas ya no viven solo en la cache de Actions** ✅ *(resuelto el 2/9/2026)*.
+  Eran 100 MB gitignored sin copia persistente; la cache caduca a los 7 días y el
+  cron es semanal, así que estábamos a un lunes fallido de perderlas (reconstruir
+  en frío ≈ 4 h contra la FEB). Ahora se respaldan como **release assets** (tag
+  dedicado `actas-cache`, un `tar.gz` por categoría y temporada) mediante
+  `scraper/actas-release.sh`. Los artifacts se descartaron porque **caducan** (máx.
+  90 días): no son copia persistente; un release asset no caduca. El workflow
+  restaura en orden **cache → release → FEB** (paso "Asegurar actas") con una línea
+  de log inequívoca `ACTAS: CACHE|RELEASE|FEB`, y sube la temporada en curso al
+  final ("Publicar actas"). Sin manifest a propósito: la cache es todo-o-nada, así
+  que la regla de restauración es simple —si el directorio de actas de la temporada
+  está vacío o no existe, restaurar del release; si está, usarlo—. Al arrancar una
+  temporada nueva aún no hay tarball suyo: eso se registra como normal, no como
+  error; solo un release que no responde o está corrupto hace ruido. Detalle y
+  criterio en `_informe-persistir-actas.md`. El repo es público (verificado) y las
+  actas derivan de PDF públicos de la FEB, así que publicarlas no expone nada.
+  Escala barato: git no crece (nunca se versionan), y el release suma ~100 MB por
+  temporada, que en repo público es gratis.
 - **El commit semanal nunca está vacío.** `estado.json` reescribe `actualizado`
   en cada ejecución, así que `git diff --staged --quiet` no se cumple nunca y la
   rama "Sin partidos nuevos esta semana" es código muerto. Efecto práctico: no se
