@@ -19,7 +19,8 @@ const CFG = require('./config');
 
 const MAX_DIAS_INDICES = 14;   // >2 refrescos semanales perdidos: el canario esta ciego
 const DIAS_ARRANQUE = 42;      // ~6 semanas: ventana de calendarios escalonados (S17.5.4)
-const DIAS_ACTA = 10;          // acta que falta para un partido jugado hace mas de esto = extraccion rota
+const DIAS_ACTA = 10;          // suelo: por debajo es el retraso normal con que la FEB cierra actas
+const DIAS_ACTA_TOPE = 60;     // techo: por encima es laguna historica, no extraccion rota (ventana [10d, 60d])
 const criticos = [], avisos = [];
 const lineas = [];             // para el resumen legible
 
@@ -73,7 +74,14 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
         const f = parseFecha(p.fecha);
         if (f && (!primerPartido || f < primerPartido)) primerPartido = f;
         const jugado = /\d+\s*-\s*\d+/.test(p.resultado || '');
-        if (jugado && !excluidos.has(String(p.id)) && f && (Date.now() - f.getTime()) / 86400000 > DIAS_ACTA &&
+        // Ventana [DIAS_ACTA, DIAS_ACTA_TOPE]: por debajo del suelo es el retraso
+        // normal de la FEB; por encima del techo es laguna historica (no accionable)
+        // y NO extraccion rota —lo que hace accionable a un aviso es la recencia, no
+        // la temporada—. En temporada cerrada la ventana queda vacia y el check se
+        // apaga solo. Ver S17.5.4 y _informe-salud-primera-ejecucion.md.
+        const edad = f ? (Date.now() - f.getTime()) / 86400000 : null;
+        if (jugado && !excluidos.has(String(p.id)) && edad !== null &&
+            edad > DIAS_ACTA && edad <= DIAS_ACTA_TOPE &&
             !fs.existsSync(path.join(dirActas, p.id + '.json'))) jugadosSinActa.push(p.id);
       }
     }
@@ -104,7 +112,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     // check no guarda estado entre ejecuciones: se deriva de fecha + existencia.
     if (jugadosSinActa.length) {
       const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
-      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) faltan para partidos jugados hace >${DIAS_ACTA}d -> ${muestra} (¿extraccion de actas rota?)`);
+      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) faltan para partidos jugados hace ${DIAS_ACTA}-${DIAS_ACTA_TOPE}d -> ${muestra} (¿extraccion de actas rota?)`);
     }
   }
 
