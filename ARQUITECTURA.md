@@ -381,13 +381,13 @@ quedan intactos. La cache se va poblando en runs sucesivos.
 
 ## 12. Pendientes y roadmap
 
-**Prioridad alta:**
-- Completar Tercera con el análisis por cuartos (extracción → agregados → boxscore → deploy).
-- Estrenar y vigilar el workflow con cuartos en sus primeras ejecuciones reales (la cache y el comportamiento en CI solo se validan ejecutándolo).
+**Hecho:**
+- Completar Tercera con el análisis por cuartos (extracción → agregados → boxscore → deploy). *(31/08/2026)*
+- Estrenar y vigilar el workflow con cuartos en sus primeras ejecuciones reales: la actualización automática del 31/08/2026 ya regeneró los agregados de cuartos de Primera y Segunda sin incidencias. *(31/08/2026)*
+- Comparador de equipos/jugadores lado a lado (toggle en la pestaña Comparador, ver sección 15). *(01/09/2026)*
 
 **Prioridad media:**
-- Servicio de generación de PDF "al vuelo" que evite las notas de cabecera/pie del navegador.
-- Comparador de equipos/jugadores lado a lado.
+- Servicio de generación de PDF "al vuelo" que evite las notas de cabecera/pie del navegador (la exportación actual del dossier usa `window.print()` con CSS de impresión, que no las evita).
 - Índice propio (valoración sintética).
 - Unificar la ubicación de los ficheros de cuartos (llevarlos a data/processed/ como el resto) para eliminar la inconsistencia.
 
