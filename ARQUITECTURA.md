@@ -140,9 +140,18 @@ en config.js (BASE baloncestoenvivo.feb.es, las tres competiciones, pausa de
 - Equipos: idClub / slug (estable), NO el id FEB (que cambia cada temporada con el patrocinador).
 - Cruce acta↔boxscore: por dorsal dentro de cada partido (nunca por nombre — la FEB trunca nombres de forma inconsistente).
 
-**Caché vs producto final:**
-- Caché regenerable (gitignored): `data/raw/` — boxscores brutos y actas PDF extraídas (~85 MB de actas).
+**Caché vs producto final** (corregido el 02/09/2026; la versión anterior decía
+que `data/raw/` entero estaba gitignored, y no es cierto):
+- Caché regenerable (gitignored): **solo** `data/raw/*/*/actas/` (~100 MB) y `data/actas/`. Son las dos únicas rutas de datos que excluye el .gitignore.
+- **Versionado:** el resto de `data/raw/` —los boxscores brutos y los `_indice.json` de cada grupo— sí está en git, y el workflow lo commitea con `git add data/`.
 - Producto final (versionado): los agregados en `web/public/data/`, aunque se regeneren. Razón: son lo que la app sirve, deben estar en el repo para el despliegue.
+
+Esa distinción dejó de ser trivia el 02/09/2026: el canario de transición
+(`comprobar-temporada.js`, §17.2) decide si la temporada nueva ha empezado
+leyendo los `_indice.json` de la temporada máxima. Funciona en CI **porque esos
+índices están versionados** y sobreviven al checkout limpio de cada ejecución. Si
+algún día se ampliara el .gitignore a `data/raw/` entero, el canario dejaría de
+dispararse en silencio —el mismo tipo de fallo mudo que fue creado para detectar.
 
 ## 6. El sistema de análisis por cuartos
 
