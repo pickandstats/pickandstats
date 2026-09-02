@@ -111,7 +111,23 @@ tiene que existir en disco.**
 ARQUITECTURA.md o al documento de estado del proyecto. No los acumules como si
 fueran documentación: son un canal de paso, no un archivo.
 
-### Canal de vuelta: la nube edita estos ficheros
+### Canal de vuelta (1): `_instrucciones.md`
+
+La sesión en la nube **no puede hablar contigo directamente**: corre en un
+contenedor remoto de Anthropic y tú corres en el Mac. Lo único que comparten es
+esta carpeta. Así que cuando tenga encargos para ti, los escribe en
+**`_instrucciones.md`** en la raíz (gitignored, como los informes).
+
+Si Alexandre te dice algo como "lee `_instrucciones.md` y hazlo", ese fichero es
+el encargo completo: léelo entero antes de empezar. Puede traer varias tareas con
+su orden, los mensajes de commit sugeridos y qué quiere ver verificado. Al
+terminar responde por el canal de ida (`_informe-<tema>.md`), no solo por
+terminal: ella no ve tu terminal.
+
+`_instrucciones.md` es de un solo uso y se reescribe entero cada vez. No lo
+edites ni lo acumules; si hay algo que dejar por escrito, va al informe.
+
+### Canal de vuelta (2): la nube edita estos ficheros
 
 Esto es lo importante. **La sesión en la nube edita ficheros de este repo
 directamente.** Las secciones 6 y 17 de ARQUITECTURA.md las escribió ella.
