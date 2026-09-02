@@ -145,4 +145,13 @@ const LIMITE_INTENTOS = 4;
   if (rendidasIds.length)
     console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no se reintentan): ${rendidasIds.length} -> ${rendidasIds.join(', ')}`);
   if (erroresIds.length) { console.log('\nErrores de extraccion (se reintentaran):'); erroresIds.forEach(x => console.log('  ' + x)); }
-})();
+
+  // Codigo de salida honesto (S17.3): solo se falla si el fallo es SISTEMICO
+  // —hubo errores y no se escribio nada—, senal de que la FEB no responde o algo
+  // se rompio. Errores sueltos con extracciones que si funcionaron no fallan: son
+  // el goteo normal de PDF caidos, que se reintentan la semana siguiente.
+  if (errores > 0 && procesados === 0) {
+    console.error(`\n❌ Fallo sistemico: ${errores} errores y 0 actas escritas. Revisa la conexion o si la FEB cambio las actas.`);
+    process.exit(1);
+  }
+})().catch(err => { console.error('Error inesperado en actas-cuartos:', err.message); process.exit(1); });

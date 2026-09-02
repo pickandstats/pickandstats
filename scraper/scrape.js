@@ -418,4 +418,6 @@ async function main() {
   console.log('\nScraping completado.');
 }
 
-main().catch(err => console.error('Error general:', err.message));
+// Salir con codigo 1 ante cualquier excepcion no capturada: antes salia 0 y un
+// fallo (HTML de la FEB cambiado, etc.) pasaba desapercibido en CI (S17.3).
+main().catch(err => { console.error('Error general:', err.message); process.exit(1); });

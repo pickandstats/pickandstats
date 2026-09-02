@@ -672,7 +672,11 @@ y es precisamente el que va envuelto en `continue-on-error`.
    la FEB mueva su selector, la discrepancia desaparece y pasa a verde solo.
    Verificado en local: hoy 2/9/2026 pasa (0 jugados en la 2026), y dispara en
    cuanto un índice de la máxima trae un marcador.
-3. Códigos de salida honestos (§17.3).
+3. ✅ **Hecho (2/9/2026).** Códigos de salida honestos (§17.3): `scrape.js` sale 1
+   ante cualquier excepción no capturada (antes salía 0). `actas-cuartos.js` sale 1
+   solo si el fallo es **sistémico** (`errores > 0 && procesados === 0`): un goteo
+   de PDF caídos con extracciones que sí funcionaron no falla, porque se reintentan
+   la semana siguiente. Verificado con stub: fallo total → 1, éxito → 0.
 4. Un paso final de resumen sin `continue-on-error` que lea los veredictos y falle
    solo por lo crítico, manteniendo los bloques de cuartos tolerantes.
 
