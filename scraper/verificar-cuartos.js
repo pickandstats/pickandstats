@@ -27,12 +27,24 @@ const idsPresentes = new Set(ficheros.map(f => f.replace('.json', '')));
 const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
-let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0;
-const sinContextoIds = [], truncadasIds = [];
+let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
+const sinContextoIds = [], truncadasIds = [], rendidasIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
+const LIMITE_INTENTOS = 4;
 
 for (const f of ficheros) {
   const a = JSON.parse(fs.readFileSync(path.join(dirActas, f), 'utf8'));
+
+  // Actas rendidas: actas-cuartos.js las reintento LIMITE_INTENTOS veces sin
+  // lograr que quedaran sanas (la FEB no las completa). Se tratan como las
+  // truncadas: se reportan en su propia linea y NO bloquean. Sin esto, una
+  // rendida sin contexto contaria en "sinContexto" y congelaria los cuartos de
+  // toda la categoria para siempre — el caso (a) de ARQUITECTURA.md S17.1.
+  if ((a.intentos || 0) >= LIMITE_INTENTOS) {
+    rendidas++; if (rendidasIds.length < 8) rendidasIds.push(a.partido);
+    continue;
+  }
+
   if (a.contextoPorCuarto) conContexto++; else { sinContexto++; if (sinContextoIds.length < 8) sinContextoIds.push(a.partido); }
   if (a.completo && a.verificado !== false) completas++; else { truncadas++; if (truncadasIds.length < 8) truncadasIds.push(a.partido); }
 
@@ -62,6 +74,7 @@ console.log(`SIN contexto (re-extraer):          ${sinContexto}${sinContexto ? '
 console.log('');
 console.log(`Completas (4 cuartos, sin huecos):  ${completas}`);
 console.log(`Truncadas / con hueco:              ${truncadas}${truncadas ? ' -> ej: ' + truncadasIds.join(', ') : ''}`);
+console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no bloquean): ${rendidas}${rendidas ? ' -> ej: ' + rendidasIds.join(', ') : ''}`);
 console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
@@ -74,7 +87,7 @@ if (valoresRaros > 0) problemas.push(`${valoresRaros} valores raros`);
 
 if (problemas.length === 0) {
   console.log('VEREDICTO: LISTO para generar agregados y boxscore.');
-  console.log(`(${faltan.length} partidos sin acta y ${truncadas} truncados son normales; la app los maneja.)`);
+  console.log(`(${faltan.length} partidos sin acta, ${truncadas} truncados y ${rendidas} rendidos son normales; la app los maneja.)`);
 } else {
   console.log('VEREDICTO: NO generar todavia. Problemas: ' + problemas.join('; ') + '.');
   if (sinContexto > 0) console.log('  -> Borra las actas sin contexto y re-extrae (sin --forzar) antes de generar.');

@@ -586,6 +586,15 @@ resumen final cuenta las actas rotas **en disco**, no solo las tocadas en esa
 ejecución, y lista los ids de las rendidas para alimentar el resumen de salud del
 punto 4 de §17.5.
 
+Complemento imprescindible en `verificar-cuartos.js` (2/9/2026): una acta
+**rendida** (`intentos >= 4`) se trata como una truncada —se reporta en su propia
+línea y **no** cuenta en `sinContexto` ni bloquea la generación—. Sin esto, una
+rendida sin contexto contaría como acta sin contexto, el verificador saldría 1
+cada semana y congelaría los cuartos de toda la categoría para siempre: exactamente
+el caso (a) que este arreglo venía a cerrar. La condición de bloqueo sigue intacta
+para las actas no rendidas: una que pierda el contexto y aún tenga intentos por
+gastar sí bloquea, porque se puede y se debe re-extraer.
+
 ### 17.2 La temporada no cambia sola
 
 `temporada-actual.js` prefiere el `selected` del desplegable de la FEB sobre el
@@ -639,13 +648,21 @@ y es precisamente el que va envuelto en `continue-on-error`.
 1. ✅ **Hecho (2/9/2026).** La condición de "acta sana" en `actas-cuartos.js`
    (§17.1), con contador de `intentos` (se rinde a los 4), `fallosRed` aparte para
    los fallos de red, y resumen que cuenta las rotas en disco y lista las rendidas.
-2. ✅ **Hecho (2/9/2026).** El canario de `discrepancia` (§17.2):
+   Complementado en `verificar-cuartos.js`: las rendidas no bloquean (§17.1).
+2. ✅ **Hecho (2/9/2026).** El canario de transición de temporada (§17.2):
    `scraper/comprobar-temporada.js`, primer paso del workflow y **sin**
    `continue-on-error` (va el primero para que un arranque mal detectado no
-   reescriba `estado.json` con un "actualizado hoy" falso). Falla si
-   `discrepancia && mes >= 9`; hoy 2/9/2026 ya sale rojo en las tres categorías.
-   Cuando la FEB mueva su selector, la discrepancia desaparece y el canario pasa
-   a verde solo: ese es el aviso de que se puede arrancar la temporada nueva.
+   reescriba `estado.json` con un "actualizado hoy" falso). **No dispara por el
+   mes** —eso paralizaría la actualización semanal durante semanas de pretemporada
+   con todo sano—: falla solo cuando la temporada máxima **ya tiene partidos
+   jugados** (los detecta en los `_indice.json` que baja `refrescar-calendario.js`)
+   y la FEB sigue seleccionando la anterior. Una discrepancia sin partidos aún es
+   pretemporada normal: informa, no falla. Caveat: los índices son los de la
+   ejecución anterior, así que el canario puede tardar hasta una semana en
+   dispararse tras el primer partido —margen aceptable y del lado seguro—. Cuando
+   la FEB mueva su selector, la discrepancia desaparece y pasa a verde solo.
+   Verificado en local: hoy 2/9/2026 pasa (0 jugados en la 2026), y dispara en
+   cuanto un índice de la máxima trae un marcador.
 3. Códigos de salida honestos (§17.3).
 4. Un paso final de resumen sin `continue-on-error` que lea los veredictos y falle
    solo por lo crítico, manteniendo los bloques de cuartos tolerantes.

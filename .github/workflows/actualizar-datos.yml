@@ -21,11 +21,12 @@ jobs:
         run: npm ci
 
       # Canario de transicion de temporada (ARQUITECTURA.md S17.2). Falla el
-      # workflow si estamos en el arranque de liga (mes >= 9) y la FEB aun
-      # selecciona la temporada anterior: sin esto, el pipeline scrapearia y
-      # publicaria una temporada cerrada como si fuera la vigente, en silencio.
-      # SIN continue-on-error a proposito, y el PRIMERO: si salta, no queremos
-      # que el resto del job reescriba estado.json con un "actualizado hoy" falso.
+      # workflow si la temporada nueva YA TIENE PARTIDOS JUGADOS y la FEB aun
+      # selecciona la anterior: sin esto, el pipeline scrapearia y publicaria una
+      # temporada cerrada como si fuera la vigente, en silencio. Una discrepancia
+      # sin partidos aun (pretemporada) NO falla, solo informa. SIN
+      # continue-on-error a proposito, y el PRIMERO: si salta, no queremos que el
+      # resto del job reescriba estado.json con un "actualizado hoy" falso.
       - name: Comprobar transicion de temporada
         run: node scraper/comprobar-temporada.js
 
