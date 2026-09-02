@@ -101,6 +101,12 @@ sesión en la nube los lee directamente.
 Un informe que solo existe en tu terminal es un informe que alguien tiene que
 copiar y pegar a mano.
 
+**Y no solo los informes.** Cualquier respuesta tuya que requiera criterio de la
+sesión en la nube —una propuesta de implementación, una duda de diseño, un "hay
+dos formas de hacer esto"— también va a un `_informe-<tema>.md`, por breve que
+sea. La regla práctica: **si esperas que alguien opine antes de seguir, ese texto
+tiene que existir en disco.**
+
 **Los `_informe*` son desechables.** Lo que merezca sobrevivir se incorpora a
 ARQUITECTURA.md o al documento de estado del proyecto. No los acumules como si
 fueran documentación: son un canal de paso, no un archivo.
@@ -116,9 +122,19 @@ Por tanto:
   Tu última lectura puede estar obsoleta aunque tú no hayas tocado nada.
 - **Nunca sobrescribas un fichero entero a partir de una versión que leíste
   hace varios turnos.** Prefiere ediciones puntuales sobre una lectura fresca.
-- Si `git status` muestra un fichero modificado que tú no tocaste, no es un
-  misterio ni un error: probablemente es la otra sesión. Léelo antes de
-  commitearlo, y no lo des por tuyo en el mensaje de commit.
+
+### Los commits los haces tú (norma permanente)
+
+**TODOS los commits del proyecto los haces tú**, incluidos los cambios que haya
+escrito la sesión en la nube. Ella edita ficheros pero **no commitea**.
+
+- **Antes de cada tanda, mira `git status`.** Si hay ficheros modificados que tú
+  no tocaste, son suyos.
+- **Léelos** antes de commitearlos —distribuyes lo que commiteas, y debes haber
+  visto lo que va a git.
+- **Commitéalos aparte, con su propio mensaje**, dejando claro que el contenido
+  lo escribió la sesión en la nube. No los mezcles con tu trabajo ni los
+  atribuyas a ti.
 
 ### Formato de informe que funciona
 
