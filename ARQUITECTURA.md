@@ -478,6 +478,16 @@ que se había colado, y las 8 actas con contexto corrupto en Tercera. La lecció
 verificar la coherencia de los datos, no solo su presencia; el mensaje de éxito
 del scraper ("N ya existían") no garantiza que los datos sean correctos.
 
+**Laguna permanente conocida — partido sin acta por cuartos.** El partido
+`2487720` (Zentro Basket Madrid vs Uros de Rivas, Tercera grupo B-B, jornada 21,
+07/03/2026, 81-62) se jugó de verdad —tiene boxscore raw completo— pero la FEB
+**no publica su acta oficial en PDF**: el extractor responde "Sin cortes válidos
+(acta no disponible)" (comprobado el 2/9/2026, dos intentos). Es la única acta que
+falta en los 2.429 partidos jugados de la 2025/26; no es un fallo de extracción,
+es que el documento no existe en la fuente. Queda sin datos por cuarto y la app lo
+maneja como cualquier partido sin desglose. El resumen de salud (§17.5.4) no la
+marca: su ventana `[10d, 60d]` deja fuera las lagunas históricas como esta.
+
 ### 13.1 Fichas de partido de fase (UI)
 
 Los datos de fase (boxscore y contexto por cuarto) se generan igual que los de
@@ -654,6 +664,8 @@ y es precisamente el que va envuelto en `continue-on-error`.
 
 ### 17.5 Orden de arreglo acordado
 
+**Completo (2/9/2026): los cuatro puntos están hechos.**
+
 1. ✅ **Hecho (2/9/2026).** La condición de "acta sana" en `actas-cuartos.js`
    (§17.1), con contador de `intentos` (se rinde a los 4), `fallosRed` aparte para
    los fallos de red, y resumen que cuenta las rotas en disco y lista las rendidas.
@@ -723,4 +735,6 @@ permanente de un partido suelto es para enterarse, no para retener la
 actualización de toda la categoría —sería el mismo sobre-bloqueo que se quitó del
 canario en §17.2—. Si conviene, subirla a crítico es un cambio de una línea.
 
-Lo demás (§17.4) puede esperar al arranque.
+Con esto §17.5 queda cerrado. Lo de §17.4 (unificar la ubicación de los ficheros
+de cuartos, y el commit vacío que nunca lo está) sigue pendiente pero no es de
+transición; puede esperar al arranque.
