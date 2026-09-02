@@ -64,6 +64,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     const cuenta = new Map();
     let primerPartido = null;          // fecha mas temprana de la temporada (arranque)
     const jugadosSinActa = [];         // partido jugado hace >DIAS_ACTA sin acta en disco
+    let fechasSinParsear = 0;          // fechas presentes que no casan dd/mm/yyyy (¿cambio de formato?)
     for (const grupo of fs.readdirSync(dirSel)) {
       if (grupo === 'actas') continue;   // no es un grupo
       const fi = path.join(dirSel, grupo, '_indice.json');
@@ -72,6 +73,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       cuenta.set(grupo, Array.isArray(arr) ? arr.length : 0);
       for (const p of (Array.isArray(arr) ? arr : [])) {
         const f = parseFecha(p.fecha);
+        if (p.fecha && !f) fechasSinParsear++;   // presente pero ilegible: el check de actas se saltaria
         if (f && (!primerPartido || f < primerPartido)) primerPartido = f;
         const jugado = /\d+\s*-\s*\d+/.test(p.resultado || '');
         // Ventana [DIAS_ACTA, DIAS_ACTA_TOPE]: por debajo del suelo es el retraso
@@ -114,6 +116,14 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
       criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) faltan para partidos jugados hace ${DIAS_ACTA}-${DIAS_ACTA_TOPE}d -> ${muestra} (¿extraccion de actas rota?)`);
     }
+
+    // 2c) Ultima puerta muda de esta pieza: si la FEB cambiara el formato de fecha,
+    // parseFecha devolveria null, el check de actas que faltan se saltaria en
+    // silencio y el resumen seguiria diciendo OK sin comprobar nada. Un recuento
+    // de fechas ilegibles lo hace ruidoso. Aviso, no critico: no rompe nada por si
+    // solo, pero avisa de que el check ha quedado ciego.
+    if (fechasSinParsear > 0)
+      avisos.push(`${nombre} ${sel}: ${fechasSinParsear} fecha(s) de los _indice.json no parsean (¿cambio el formato en la FEB? el check de actas que faltan podria estar ciego)`);
   }
 
   // 3) Reporte del run de actas (gitignored, efimero): rendidas nuevas y errores.
