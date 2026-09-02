@@ -145,3 +145,7 @@ _publish/
 .DS_Store
 data/actas/
 data/raw/*/*/actas/
+
+# Informes de trabajo (no se versionan)
+_informe*.md
+_informe.txt

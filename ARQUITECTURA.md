@@ -171,8 +171,19 @@ luego los cortes). Se manejan actas truncadas y con huecos.
 
 **Referencias validadas sobre datos reales:** pace ~18-19 en Primera/Segunda,
 ~20 en Tercera (categoría más rápida); pintura ~14-24 puntos/cuarto sumando
-ambos equipos. Estos rangos los usa el verificador para detectar valores
-anómalos.
+ambos equipos.
+
+**Precisión sobre qué comprueba realmente el verificador** (corregido el
+02/09/2026; la versión anterior de este párrafo afirmaba de más): de esas
+referencias, `verificar-cuartos.js` solo calcula la media de pintura, y la
+**imprime sin que entre en el veredicto**. El pace no se comprueba en ningún
+sitio: solo aparece en `calcular.js` y `calcular-cuartos.js`, que lo generan.
+El veredicto depende únicamente de dos condiciones: actas sin
+`contextoPorCuarto`, y "valores raros" —un umbral por cuarto individual
+(`total < 0 || total > 60`) que es un detector de disparates, no un test
+estadístico, y por eso es inmune al tamaño de la muestra. Conviene tenerlo
+presente: el verificador comprueba **presencia y coherencia gruesa**, no
+plausibilidad estadística.
 
 ## 7. Las vistas de la app
 
@@ -517,3 +528,108 @@ cuartos, en cambio, se generan directamente en public (inconsistencia ya
 conocida). Al generar los percentiles de equipos con calcular.js, quedaron en
 processed; para probar en local (donde la app lee de public) hay que copiar
 processed -> public manualmente. En produccion el deploy lo hace solo.
+
+## 17. El camino incremental y la transición de temporada (2/9/2026)
+
+Sección escrita tras un ensayo de transición hecho en sandbox, antes del arranque
+de la 2026/27. Su premisa es un hecho que conviene no olvidar: **este repo se creó
+en julio de 2026, con las temporadas 2023/24, 2024/25 y 2025/26 ya cerradas y
+cargadas hacia atrás. El pipeline nunca ha corrido contra una temporada en
+curso.** Todo lo que sigue son caminos sin estrenar, no bugs observados.
+
+### 17.1 El acta incompleta que nunca se re-extrae
+
+Dos comportamientos razonables por separado que juntos forman una trampa:
+
+- `actas-cuartos.js` salta cualquier partido cuyo fichero ya exista, **sin mirar
+  si ese fichero es bueno**: no consulta `completo`, ni `verificado`, ni
+  `contextoPorCuarto`.
+- El contador "N con avisos" del resumen solo cuenta las actas extraídas en esa
+  ejecución. Nunca las que ya estaban. Un "0 con avisos" puede convivir con
+  actas rotas en disco.
+
+De ahí salen dos fallos distintos, y el segundo es el más probable en septiembre:
+
+**(a) Categoría congelada.** Si un acta queda escrita *sin* `contextoPorCuarto`,
+`verificar-cuartos.js` sale 1 cada semana, el `&&` corta la generación, y los
+cuartos de esa categoría se quedan clavados en la última generación buena
+mientras `partidos.json` avanza. Como el bloque va con `continue-on-error`, el
+workflow sale **verde**. Históricamente este caso vino de un cambio de esquema
+(el contexto se añadió después), no de la FEB.
+
+**(b) Datos parciales dados por buenos —el escenario realista.** Un partido del
+domingo cuya acta la FEB aún no ha cerrado no llega sin contexto: llega
+**truncada** (`completo:false`). Y las truncadas el verificador las tolera
+explícitamente: dice LISTO y genera. Ese fichero no se vuelve a tocar jamás,
+aunque la FEB complete el PDF el martes. Resultado: los cuartos de ese partido
+quedan mal para siempre, sin alarma de ningún tipo. Datos silenciosamente
+incorrectos son peor que un pipeline parado, porque un pipeline parado se acaba
+notando.
+
+**Arreglo:** saltar solo si el fichero existe *y* está sano
+(`completo && verificado !== false && contextoPorCuarto`). Cierra los dos casos.
+Necesita un contador de reintentos en el propio fichero (rendirse a los 3-4),
+porque hay ~33 actas que la FEB no va a completar nunca y si no se reintentarían
+cada semana indefinidamente.
+
+### 17.2 La temporada no cambia sola
+
+`temporada-actual.js` prefiere el `selected` del desplegable de la FEB sobre el
+máximo. Calcula `discrepancia`, pero **nadie actúa sobre ese campo**: en
+`scrape.js` es solo un `console.log`. A 2/9/2026 las tres categorías están ya en
+discrepancia (seleccionada 2025 = 2025/26, máxima 2026).
+
+Si la FEB no mueve el `selected` a 2026 al arrancar la liga, el lunes siguiente a
+la jornada 1: los nueve pasos corren sobre una temporada cerrada y no encuentran
+nada; `estado.json` se reescribe con `temporada: "2025"` y un `actualizado`
+fresco, así que **la app anuncia "actualizado hoy" mostrando una temporada
+terminada**; los cuartos regeneran 2025; y no hay un solo error en ningún sitio.
+
+Corolario para `refrescar-calendario.js`: su comentario justifica que es barato
+porque "no hay actas, solo baja los _indice.json". Esa premisa **caduca en la
+jornada 1**: a partir de ahí descarga boxscores reales de 2026 a 1.200 ms por
+petición, bajo `continue-on-error`, acumulando raw en `data/raw/*/2026/` que
+nadie procesa. No corrompe el estado (la temporada va forzada por parámetro, así
+que no escribe `estado.json`), pero es trabajo desperdiciado e invisible.
+
+### 17.3 Inventario de fallos que hoy no pueden ponerse rojos
+
+| Sitio | Comportamiento |
+|---|---|
+| `scrape.js`, última línea | `main().catch(err => console.error(...))` sin `process.exit(1)`: cualquier excepción no capturada sale con código 0. |
+| `scrape.js`, detección | Si `detectar()` falla, cae a `TEMPORADA_DEFECTO` y sigue. Un cambio de HTML en la FEB deja el scraper trabajando sobre 2025 el resto de la temporada. |
+| `actas-cuartos.js` | El IIFE async no tiene `.catch` ni `process.exit`. El 100% de actas fallidas sigue saliendo 0. |
+| `scrape.js`, grupos vacíos | Razona sobre si estamos en temporada, pero solo imprime. |
+| workflow, bloques de cuartos | `continue-on-error: true`. |
+
+La ironía: el único script que sabe decir "no" es `verificar-cuartos.js` (exit 1),
+y es precisamente el que va envuelto en `continue-on-error`.
+
+**El principio que falta:** separar "no hay datos nuevos" (normal, silencioso) de
+"no he podido trabajar" (anómalo, ruidoso). Hoy los dos se ven igual.
+
+### 17.4 Otros hallazgos
+
+- **Las actas solo existen en la cache de Actions.** 100 MB gitignored, sin copia
+  persistente. Reconstrucción en frío ≈ 4 h solo de espera (límite de job: 6 h) y
+  la clave rota por `run_id` suma ~100 MB semanales al presupuesto de 10 GB con
+  evicción LRU. Salida barata que no exige versionarlas: subirlas
+  periódicamente como *release asset* o artifact del repo.
+- **El commit semanal nunca está vacío.** `estado.json` reescribe `actualizado`
+  en cada ejecución, así que `git diff --staged --quiet` no se cumple nunca y la
+  rama "Sin partidos nuevos esta semana" es código muerto. Efecto práctico: no se
+  distingue de un vistazo una semana con datos de una semana en blanco.
+
+### 17.5 Orden de arreglo acordado
+
+1. La condición de "acta sana" en `actas-cuartos.js` (§17.1). Una línea, cierra el
+   riesgo peor.
+2. El canario de `discrepancia` (§17.2): un paso propio que falle si
+   `discrepancia && mes >= 9`. Es el único punto con fecha impuesta desde fuera, y
+   además avisa el día que la FEB mueva el selector.
+3. Códigos de salida honestos (§17.3).
+4. Un paso final de resumen sin `continue-on-error` que lea los veredictos y falle
+   solo por lo crítico, manteniendo los bloques de cuartos tolerantes.
+
+Lo demás (§17.4, y un resumen de salud en `GITHUB_STEP_SUMMARY`) puede esperar al
+arranque.
