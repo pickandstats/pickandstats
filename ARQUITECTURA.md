@@ -639,9 +639,13 @@ y es precisamente el que va envuelto en `continue-on-error`.
 1. ✅ **Hecho (2/9/2026).** La condición de "acta sana" en `actas-cuartos.js`
    (§17.1), con contador de `intentos` (se rinde a los 4), `fallosRed` aparte para
    los fallos de red, y resumen que cuenta las rotas en disco y lista las rendidas.
-2. El canario de `discrepancia` (§17.2): un paso propio que falle si
-   `discrepancia && mes >= 9`. Es el único punto con fecha impuesta desde fuera, y
-   además avisa el día que la FEB mueva el selector.
+2. ✅ **Hecho (2/9/2026).** El canario de `discrepancia` (§17.2):
+   `scraper/comprobar-temporada.js`, primer paso del workflow y **sin**
+   `continue-on-error` (va el primero para que un arranque mal detectado no
+   reescriba `estado.json` con un "actualizado hoy" falso). Falla si
+   `discrepancia && mes >= 9`; hoy 2/9/2026 ya sale rojo en las tres categorías.
+   Cuando la FEB mueva su selector, la discrepancia desaparece y el canario pasa
+   a verde solo: ese es el aviso de que se puede arrancar la temporada nueva.
 3. Códigos de salida honestos (§17.3).
 4. Un paso final de resumen sin `continue-on-error` que lea los veredictos y falle
    solo por lo crítico, manteniendo los bloques de cuartos tolerantes.

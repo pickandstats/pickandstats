@@ -20,6 +20,15 @@ jobs:
       - name: Instalar dependencias
         run: npm ci
 
+      # Canario de transicion de temporada (ARQUITECTURA.md S17.2). Falla el
+      # workflow si estamos en el arranque de liga (mes >= 9) y la FEB aun
+      # selecciona la temporada anterior: sin esto, el pipeline scrapearia y
+      # publicaria una temporada cerrada como si fuera la vigente, en silencio.
+      # SIN continue-on-error a proposito, y el PRIMERO: si salta, no queremos
+      # que el resto del job reescriba estado.json con un "actualizado hoy" falso.
+      - name: Comprobar transicion de temporada
+        run: node scraper/comprobar-temporada.js
+
       # Cache de las actas por cuartos (data/raw/.../actas). Persisten entre
       # ejecuciones para no re-extraer toda la temporada cada semana: solo se
       # descargan las actas de partidos nuevos. La clave rota por ejecucion con
