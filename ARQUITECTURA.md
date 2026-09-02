@@ -682,10 +682,31 @@ y es precisamente el que va envuelto en `continue-on-error`.
    no un guardián —los datos ya se publicaron; ponerse rojo avisa de un problema
    meta sin retener datos válidos—. Falla solo por lo **crítico**: una categoría
    con los cuartos bloqueados (re-ejecuta `verificar-cuartos.js`), un grupo sin
-   partidos en la temporada seleccionada teniendo otros que sí, o los índices de la
-   temporada máxima obsoletos (el canario quedaría ciego). **Avisa** sin fallar de:
-   actas nuevas rendidas y errores de extracción del run. Escribe también a
+   partidos en la temporada seleccionada **ya rodada** (ver más abajo), los índices
+   de la temporada máxima obsoletos (el canario quedaría ciego), o **un acta que
+   falta para un partido jugado hace más de 10 días** (ver punto ciego más abajo).
+   **Avisa** sin fallar de: actas nuevas rendidas, errores de extracción del run, y
+   grupos vacíos en el arranque de temporada. Escribe también a
    `GITHUB_STEP_SUMMARY`. Los bloques de cuartos siguen tolerantes; aquí se juzga.
+
+   **Grupo vacío: crítico solo con la temporada ya rodada.** La FEB publica los
+   calendarios de los grupos de forma escalonada en las primeras semanas, así que
+   en septiembre habrá índices vacíos legítimos; marcarlos críticos pondría el
+   workflow en rojo cada lunes justo cuando más falta hace leer señales reales.
+   Discriminante: la fecha del primer partido de la temporada (en los
+   `_indice.json`); si arrancó hace ≤42 días (~6 semanas), un grupo vacío es aviso;
+   ya rodada, sigue siendo crítico (scraper roto).
+
+   **Punto ciego cerrado — acta que falta para un partido jugado.** Si
+   `actas-cuartos.js` fallaba del todo en una categoría, no había señal en ningún
+   sitio: el verificador da LISTO porque tolera las actas que faltan, y el reporte
+   del run (`cuartos-run`) ni existe si el script no llegó a correr. Los cuartos se
+   quedaban atrás en silencio. El resumen cruza ahora los `_indice.json` (que traen
+   fecha y resultado de cada partido) con la carpeta de actas: un partido jugado
+   hace más de 10 días sin acta = crítico. Por debajo del umbral es el retraso
+   normal con que la FEB cierra las actas. Se excluyen las incomparecencias
+   (`excluidos.json`): llevan marcador nominal pero no tienen acta ni la tendrán.
+   Las fechas viven en los `_indice.json`, no en el `partidos.json` procesado.
 
    Dos piezas que lo alimentan: `actas-cuartos.js` deja un reporte efímero del run
    en `data/processed/cuartos-run-<comp>.json` (gitignored) con las rendidas nuevas
