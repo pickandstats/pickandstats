@@ -677,8 +677,29 @@ y es precisamente el que va envuelto en `continue-on-error`.
    solo si el fallo es **sistémico** (`errores > 0 && procesados === 0`): un goteo
    de PDF caídos con extracciones que sí funcionaron no falla, porque se reintentan
    la semana siguiente. Verificado con stub: fallo total → 1, éxito → 0.
-4. Un paso final de resumen sin `continue-on-error` que lea los veredictos y falle
-   solo por lo crítico, manteniendo los bloques de cuartos tolerantes.
+4. ✅ **Hecho (2/9/2026).** `scraper/resumen-salud.js`, último paso del workflow y
+   **sin** `continue-on-error`. Corre **después** del commit/push: es una alarma,
+   no un guardián —los datos ya se publicaron; ponerse rojo avisa de un problema
+   meta sin retener datos válidos—. Falla solo por lo **crítico**: una categoría
+   con los cuartos bloqueados (re-ejecuta `verificar-cuartos.js`), un grupo sin
+   partidos en la temporada seleccionada teniendo otros que sí, o los índices de la
+   temporada máxima obsoletos (el canario quedaría ciego). **Avisa** sin fallar de:
+   actas nuevas rendidas y errores de extracción del run. Escribe también a
+   `GITHUB_STEP_SUMMARY`. Los bloques de cuartos siguen tolerantes; aquí se juzga.
 
-Lo demás (§17.4, y un resumen de salud en `GITHUB_STEP_SUMMARY`) puede esperar al
-arranque.
+   Dos piezas que lo alimentan: `actas-cuartos.js` deja un reporte efímero del run
+   en `data/processed/cuartos-run-<comp>.json` (gitignored) con las rendidas nuevas
+   y los errores; y `refrescar-calendario.js` sella en `estado.json`
+   (`calendarios[cat] = {temporada, actualizado}`) cuándo refrescó por última vez
+   los índices de la temporada futura, y borra la marca cuando ya no hay futuro que
+   seguir. El resumen mide la frescura por esa marca, **no** por la fecha de commit
+   de los índices: en pretemporada esos índices no cambian de contenido durante
+   semanas aunque `refrescar` corra bien, así que la fecha de commit daría un falso
+   "obsoleto"; la marca de proceso es la señal correcta.
+
+Clasificación de "actas nuevas rendidas" como aviso (no crítico): una laguna
+permanente de un partido suelto es para enterarse, no para retener la
+actualización de toda la categoría —sería el mismo sobre-bloqueo que se quitó del
+canario en §17.2—. Si conviene, subirla a crítico es un cambio de una línea.
+
+Lo demás (§17.4) puede esperar al arranque.

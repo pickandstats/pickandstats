@@ -124,3 +124,12 @@ jobs:
             git commit -m "Actualización automática de datos ($(date +%d/%m/%Y))"
             git push
           fi
+
+      # Resumen de salud (ARQUITECTURA.md S17.5.4). EL ULTIMO y SIN
+      # continue-on-error: es una alarma, no un guardian. Los datos ya se
+      # commitearon; si algo critico esta mal (cuartos bloqueados, un grupo sin
+      # partidos, indices de la temporada maxima obsoletos => canario ciego) el
+      # workflow se pone rojo para que una persona lo mire, sin haber retenido
+      # datos validos. Los bloques de cuartos siguen tolerantes; aqui se juzga.
+      - name: Resumen de salud del pipeline
+        run: node scraper/resumen-salud.js

@@ -146,6 +146,9 @@ _publish/
 data/actas/
 data/raw/*/*/actas/
 
+# Reporte efimero por ejecucion de actas-cuartos (lo lee el resumen de salud)
+data/processed/cuartos-run-*.json
+
 # Informes de trabajo (no se versionan)
 _informe*.md
 _informe.txt

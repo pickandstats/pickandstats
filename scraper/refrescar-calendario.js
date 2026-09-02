@@ -11,6 +11,8 @@
 // Uso manual:
 //   node scraper/refrescar-calendario.js               (todas las competiciones)
 //   node scraper/refrescar-calendario.js --competicion 1
+const fs = require('fs');
+const path = require('path');
 const { execFileSync } = require('child_process');
 const { detectar } = require('./temporada-actual');
 const CFG = require('./config');
@@ -23,6 +25,25 @@ const correr = (script, argv) => {
   console.log(`\n$ node scraper/${script} ${argv.join(' ')}`);
   execFileSync('node', [`scraper/${script}`, ...argv], { stdio: 'inherit' });
 };
+
+// Marca de frescura para el resumen de salud (S17.5.4): registra CUANDO se
+// refresco por ultima vez el calendario de la temporada futura de cada
+// categoria. El resumen la compara con "ahora" para saber si el canario de
+// temporada (que lee esos indices) sigue viendo datos recientes. Se sella al
+// refrescar con exito y se borra cuando ya no hay temporada futura que seguir.
+const F_ESTADO = path.join('data', 'processed', 'estado.json');
+function editarEstado(fn) {
+  let estado = { competiciones: {} };
+  if (fs.existsSync(F_ESTADO)) { try { estado = JSON.parse(fs.readFileSync(F_ESTADO, 'utf8')); } catch (e) {} }
+  estado.calendarios = estado.calendarios || {};
+  fn(estado);
+  fs.mkdirSync(path.dirname(F_ESTADO), { recursive: true });
+  fs.writeFileSync(F_ESTADO, JSON.stringify(estado, null, 1));
+}
+const sellarCalendario = (nombre, temporada) =>
+  editarEstado(e => { e.calendarios[nombre] = { temporada, actualizado: new Date().toISOString() }; });
+const limpiarCalendario = nombre =>
+  editarEstado(e => { delete e.calendarios[nombre]; });
 
 (async () => {
   const comps = Object.keys(CFG.COMPETICIONES); // ['1','2','3']
@@ -43,6 +64,7 @@ const correr = (script, argv) => {
     if (!det.discrepancia || det.maxima === det.temporada) {
       console.log(`\n${nombre}: temporada estable (${det.temporada}). ` +
         `El scrape normal ya la cubre, no hay calendario futuro que refrescar.`);
+      limpiarCalendario(nombre); // no hay futuro que seguir: el resumen no debe vigilar su frescura
       continue;
     }
 
@@ -53,6 +75,7 @@ const correr = (script, argv) => {
     correr('scrape.js', ['--competicion', g, '--temporada', det.maxima]);
     // 2) Regenerar el calendario desde esos índices (idempotente).
     correr('calcular-calendario.js', ['--temporada', det.maxima, '--competicion', g]);
+    sellarCalendario(nombre, det.maxima); // ambos pasos salieron bien: registrar la frescura
     refrescadas++;
   }
 

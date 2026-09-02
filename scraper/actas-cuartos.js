@@ -57,6 +57,7 @@ const LIMITE_INTENTOS = 4;
   let procesados = 0, saltados = 0, errores = 0, reparadas = 0;
   const rotaIds = new Set();   // actas presentes en disco que NO estan sanas
   const rendidasIds = [];      // rotas que ya agotaron los intentos: no se reintentan
+  const nuevasRendidasIds = []; // actas que cruzan a rendida (>=LIMITE) EN ESTA ejecucion
   const erroresIds = [];       // la extraccion fallo (red, PDF inaccesible)
   const total = limite ? Math.min(limite, jugados.length) : jugados.length;
   console.log(`${compNombre} ${temp}: ${jugados.length} partidos jugados` +
@@ -115,6 +116,7 @@ const LIMITE_INTENTOS = 4;
         // dejara de reintentarse en semanas futuras.
         salida.intentos = intentosPrevios + 1;
         rotaIds.add(String(p.id));
+        if (salida.intentos >= LIMITE_INTENTOS) nuevasRendidasIds.push(p.id); // cruza a rendida ahora
       } else {
         // Quedo sana: sin campo intentos (el fichero queda limpio).
         rotaIds.delete(String(p.id));
@@ -145,6 +147,18 @@ const LIMITE_INTENTOS = 4;
   if (rendidasIds.length)
     console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no se reintentan): ${rendidasIds.length} -> ${rendidasIds.join(', ')}`);
   if (erroresIds.length) { console.log('\nErrores de extraccion (se reintentaran):'); erroresIds.forEach(x => console.log('  ' + x)); }
+
+  // Reporte de esta ejecucion para el resumen de salud (S17.5.4). Gitignored:
+  // es estado efimero del run, no producto. Solo lo actionable: las actas que
+  // acaban de quedar permanentemente incompletas y los errores de extraccion.
+  try {
+    const fReporte = path.join('data', 'processed', 'cuartos-run-' + comp + '.json');
+    fs.mkdirSync(path.dirname(fReporte), { recursive: true });
+    fs.writeFileSync(fReporte, JSON.stringify({
+      competicion: comp, temporada: temp, generado: new Date().toISOString(),
+      nuevasRendidas: nuevasRendidasIds, errores: erroresIds,
+    }, null, 1));
+  } catch (e) { console.log('  ⚠ no se pudo escribir el reporte de ejecucion: ' + e.message); }
 
   // Codigo de salida honesto (S17.3): solo se falla si el fallo es SISTEMICO
   // —hubo errores y no se escribio nada—, senal de que la FEB no responde o algo
