@@ -2,7 +2,7 @@
  "competicion": "primerafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-08-31",
+ "generado": "2026-09-03",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 34,
  "partidos": [
@@ -24,7 +24,7 @@
    "fecha": "2026-09-26",
    "hora": "19:00",
    "local": "BUENO ARENAS ALBACETE BASKET",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009716",
    "visitanteId": "1010207"
   },
@@ -117,6 +117,17 @@
    "visitanteId": "1009716"
   },
   {
+   "id": "2535740",
+   "grupo": "UNICO",
+   "jornada": 2,
+   "fecha": "2026-10-02",
+   "hora": "21:00",
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "CAJASOL COTO CÓRDOBA",
+   "localId": "1010207",
+   "visitanteId": "1009110"
+  },
+  {
    "id": "2535741",
    "grupo": "UNICO",
    "jornada": 2,
@@ -128,22 +139,11 @@
    "visitanteId": "1009713"
   },
   {
-   "id": "2535740",
-   "grupo": "UNICO",
-   "jornada": 2,
-   "fecha": "2026-10-02",
-   "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "CAJASOL COTO CÓRDOBA",
-   "localId": "1010207",
-   "visitanteId": "1009110"
-  },
-  {
    "id": "2535739",
    "grupo": "UNICO",
    "jornada": 2,
    "fecha": "2026-10-03",
-   "hora": "19:00",
+   "hora": "17:30",
    "local": "ALIMERKA OVIEDO BALONCESTO",
    "visitante": "COVIRAN GRANADA",
    "localId": "1009837",
@@ -210,7 +210,7 @@
    "jornada": 3,
    "fecha": "2026-10-09",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "BÀSQUET MENORCA",
    "localId": "1010207",
    "visitanteId": "1009929"
@@ -264,7 +264,7 @@
    "grupo": "UNICO",
    "jornada": 3,
    "fecha": "2026-10-10",
-   "hora": "19:00",
+   "hora": "18:30",
    "local": "HLA ALICANTE",
    "visitante": "GRAN CANARIA",
    "localId": "1008687",
@@ -313,6 +313,17 @@
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1008400",
    "visitanteId": "1009837"
+  },
+  {
+   "id": "2535755",
+   "grupo": "UNICO",
+   "jornada": 4,
+   "fecha": "2026-10-16",
+   "hora": "20:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "PALMER BASKET MALLORCA PALMA",
+   "localId": "1008378",
+   "visitanteId": "1009713"
   },
   {
    "id": "2535752",
@@ -381,24 +392,13 @@
    "visitanteId": "1010494"
   },
   {
-   "id": "2535755",
-   "grupo": "UNICO",
-   "jornada": 4,
-   "fecha": "2026-10-18",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "PALMER BASKET MALLORCA PALMA",
-   "localId": "1008378",
-   "visitanteId": "1009713"
-  },
-  {
    "id": "2535756",
    "grupo": "UNICO",
    "jornada": 4,
    "fecha": "2026-10-18",
    "hora": "18:30",
    "local": "MOVISTAR ESTUDIANTES",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1010493",
    "visitanteId": "1010207"
   },
@@ -408,7 +408,7 @@
    "jornada": 5,
    "fecha": "2026-10-23",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "CLUB OURENSE BALONCESTO",
    "localId": "1010207",
    "visitanteId": "1009095"
@@ -423,17 +423,6 @@
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1009716",
    "visitanteId": "1009584"
-  },
-  {
-   "id": "2535762",
-   "grupo": "UNICO",
-   "jornada": 5,
-   "fecha": "2026-10-24",
-   "hora": "19:00",
-   "local": "HLA ALICANTE",
-   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
-   "localId": "1008687",
-   "visitanteId": "1008378"
   },
   {
    "id": "2535767",
@@ -478,6 +467,17 @@
    "visitante": "BÀSQUET MENORCA",
    "localId": "1010494",
    "visitanteId": "1009929"
+  },
+  {
+   "id": "2535762",
+   "grupo": "UNICO",
+   "jornada": 5,
+   "fecha": "2026-10-25",
+   "hora": "12:15",
+   "local": "HLA ALICANTE",
+   "visitante": "INVEREADY ASKATUAK GIPUZKOA",
+   "localId": "1008687",
+   "visitanteId": "1008378"
   },
   {
    "id": "2535769",
@@ -563,7 +563,7 @@
    "fecha": "2026-10-31",
    "hora": "19:00",
    "local": "GRUPO ALEGA CANTABRIA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009584",
    "visitanteId": "1010207"
   },
@@ -606,7 +606,7 @@
    "jornada": 7,
    "fecha": "2026-11-06",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "COVIRAN GRANADA",
    "localId": "1010207",
    "visitanteId": "1009109"
@@ -728,7 +728,7 @@
    "fecha": "2026-11-14",
    "hora": "19:30",
    "local": "CAJA RURAL CB ZAMORA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1008900",
    "visitanteId": "1010207"
   },
@@ -766,6 +766,17 @@
    "visitanteId": "1009072"
   },
   {
+   "id": "2535794",
+   "grupo": "UNICO",
+   "jornada": 8,
+   "fecha": "2026-11-14",
+   "hora": "19:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "GRUPO ALEGA CANTABRIA",
+   "localId": "1008378",
+   "visitanteId": "1009584"
+  },
+  {
    "id": "2535792",
    "grupo": "UNICO",
    "jornada": 8,
@@ -775,17 +786,6 @@
    "visitante": "FLEXICAR FUENLABRADA",
    "localId": "1009110",
    "visitanteId": "1010494"
-  },
-  {
-   "id": "2535794",
-   "grupo": "UNICO",
-   "jornada": 8,
-   "fecha": "2026-11-15",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "GRUPO ALEGA CANTABRIA",
-   "localId": "1008378",
-   "visitanteId": "1009584"
   },
   {
    "id": "2535790",
@@ -804,7 +804,7 @@
    "jornada": 9,
    "fecha": "2026-11-20",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "PALMER BASKET MALLORCA PALMA",
    "localId": "1010207",
    "visitanteId": "1009713"
@@ -942,17 +942,6 @@
    "visitanteId": "1009837"
   },
   {
-   "id": "2535806",
-   "grupo": "UNICO",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:00",
-   "local": "HLA ALICANTE",
-   "visitante": "PALENCIA BALONCESTO",
-   "localId": "1008687",
-   "visitanteId": "1010207"
-  },
-  {
    "id": "2535810",
    "grupo": "UNICO",
    "jornada": 10,
@@ -973,6 +962,17 @@
    "visitante": "FLEXICAR FUENLABRADA",
    "localId": "1009072",
    "visitanteId": "1010494"
+  },
+  {
+   "id": "2535806",
+   "grupo": "UNICO",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "12:15",
+   "local": "HLA ALICANTE",
+   "visitante": "IBEROLEA PALENCIA",
+   "localId": "1008687",
+   "visitanteId": "1010207"
   },
   {
    "id": "2535811",
@@ -1002,7 +1002,7 @@
    "jornada": 11,
    "fecha": "2026-12-11",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "INVEREADY ASKATUAK GIPUZKOA",
    "localId": "1010207",
    "visitanteId": "1008378"
@@ -1179,7 +1179,7 @@
    "fecha": "2026-12-20",
    "hora": "18:00",
    "local": "FIBWI MALLORCA BASQUET PALMA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009072",
    "visitanteId": "1010207"
   },
@@ -1193,6 +1193,17 @@
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1008378",
    "visitanteId": "1008900"
+  },
+  {
+   "id": "2535836",
+   "grupo": "UNICO",
+   "jornada": 13,
+   "fecha": "2026-12-26",
+   "hora": "19:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "FIBWI MALLORCA BASQUET PALMA",
+   "localId": "1008378",
+   "visitanteId": "1009072"
   },
   {
    "id": "2535834",
@@ -1250,6 +1261,17 @@
    "visitanteId": "1009837"
   },
   {
+   "id": "2535838",
+   "grupo": "UNICO",
+   "jornada": 13,
+   "fecha": "2026-12-27",
+   "hora": "00:00",
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "GRUPO URETA TIZONA BURGOS",
+   "localId": "1010207",
+   "visitanteId": "1008400"
+  },
+  {
    "id": "2535840",
    "grupo": "UNICO",
    "jornada": 13,
@@ -1261,17 +1283,6 @@
    "visitanteId": "1008797"
   },
   {
-   "id": "2535836",
-   "grupo": "UNICO",
-   "jornada": 13,
-   "fecha": "2026-12-27",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "FIBWI MALLORCA BASQUET PALMA",
-   "localId": "1008378",
-   "visitanteId": "1009072"
-  },
-  {
    "id": "2535837",
    "grupo": "UNICO",
    "jornada": 13,
@@ -1281,17 +1292,6 @@
    "visitante": "FLEXICAR FUENLABRADA",
    "localId": "1010493",
    "visitanteId": "1010494"
-  },
-  {
-   "id": "2535838",
-   "grupo": "UNICO",
-   "jornada": 13,
-   "fecha": "2026-12-27",
-   "hora": "00:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "GRUPO URETA TIZONA BURGOS",
-   "localId": "1010207",
-   "visitanteId": "1008400"
   },
   {
    "id": "2535849",
@@ -1355,7 +1355,7 @@
    "fecha": "2027-01-03",
    "hora": "13:00",
    "local": "GRAN CANARIA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1008797",
    "visitanteId": "1010207"
   },
@@ -1398,10 +1398,21 @@
    "jornada": 15,
    "fecha": "2027-01-08",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1010207",
    "visitanteId": "1009837"
+  },
+  {
+   "id": "2535854",
+   "grupo": "UNICO",
+   "jornada": 15,
+   "fecha": "2027-01-08",
+   "hora": "20:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "BÀSQUET MENORCA",
+   "localId": "1008378",
+   "visitanteId": "1009929"
   },
   {
    "id": "2535851",
@@ -1459,17 +1470,6 @@
    "visitanteId": "1010324"
   },
   {
-   "id": "2535854",
-   "grupo": "UNICO",
-   "jornada": 15,
-   "fecha": "2027-01-10",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "BÀSQUET MENORCA",
-   "localId": "1008378",
-   "visitanteId": "1009929"
-  },
-  {
    "id": "2535855",
    "grupo": "UNICO",
    "jornada": 15,
@@ -1514,24 +1514,13 @@
    "visitanteId": "1008400"
   },
   {
-   "id": "2535860",
-   "grupo": "UNICO",
-   "jornada": 16,
-   "fecha": "2027-01-12",
-   "hora": "00:00",
-   "local": "HLA ALICANTE",
-   "visitante": "CAJA RURAL CB ZAMORA",
-   "localId": "1008687",
-   "visitanteId": "1008900"
-  },
-  {
    "id": "2535868",
    "grupo": "UNICO",
    "jornada": 16,
    "fecha": "2027-01-12",
    "hora": "00:00",
    "local": "INSOLAC CAJA 87",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1010324",
    "visitanteId": "1010207"
   },
@@ -1591,6 +1580,17 @@
    "visitanteId": "1009109"
   },
   {
+   "id": "2535860",
+   "grupo": "UNICO",
+   "jornada": 16,
+   "fecha": "2027-01-13",
+   "hora": "20:45",
+   "local": "HLA ALICANTE",
+   "visitante": "CAJA RURAL CB ZAMORA",
+   "localId": "1008687",
+   "visitanteId": "1008900"
+  },
+  {
    "id": "2535869",
    "grupo": "UNICO",
    "jornada": 17,
@@ -1606,7 +1606,7 @@
    "grupo": "UNICO",
    "jornada": 17,
    "fecha": "2027-01-17",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "CAJA RURAL CB ZAMORA",
    "visitante": "BÀSQUET MENORCA",
    "localId": "1008900",
@@ -1646,11 +1646,22 @@
    "visitanteId": "1009072"
   },
   {
-   "id": "2535873",
+   "id": "2535875",
    "grupo": "UNICO",
    "jornada": 17,
    "fecha": "2027-01-17",
    "hora": "00:00",
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "FLEXICAR FUENLABRADA",
+   "localId": "1010207",
+   "visitanteId": "1010494"
+  },
+  {
+   "id": "2535873",
+   "grupo": "UNICO",
+   "jornada": 17,
+   "fecha": "2027-01-17",
+   "hora": "18:00",
    "local": "INVEREADY ASKATUAK GIPUZKOA",
    "visitante": "ALIMERKA OVIEDO BALONCESTO",
    "localId": "1008378",
@@ -1666,17 +1677,6 @@
    "visitante": "CAJASOL COTO CÓRDOBA",
    "localId": "1010493",
    "visitanteId": "1009110"
-  },
-  {
-   "id": "2535875",
-   "grupo": "UNICO",
-   "jornada": 17,
-   "fecha": "2027-01-17",
-   "hora": "00:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "FLEXICAR FUENLABRADA",
-   "localId": "1010207",
-   "visitanteId": "1010494"
   },
   {
    "id": "2535870",
@@ -1718,7 +1718,7 @@
    "fecha": "2027-01-30",
    "hora": "19:00",
    "local": "CLUB OURENSE BALONCESTO",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009095",
    "visitanteId": "1010207"
   },
@@ -1806,7 +1806,7 @@
    "fecha": "2027-02-06",
    "hora": "19:30",
    "local": "BÀSQUET MENORCA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009929",
    "visitanteId": "1010207"
   },
@@ -1899,15 +1899,15 @@
    "visitanteId": "1010324"
   },
   {
-   "id": "2535900",
+   "id": "2535902",
    "grupo": "UNICO",
    "jornada": 20,
    "fecha": "2027-02-09",
    "hora": "00:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "GRAN CANARIA",
-   "localId": "1008378",
-   "visitanteId": "1008797"
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "HLA ALICANTE",
+   "localId": "1010207",
+   "visitanteId": "1008687"
   },
   {
    "id": "2535901",
@@ -1919,17 +1919,6 @@
    "visitante": "BÀSQUET MENORCA",
    "localId": "1010493",
    "visitanteId": "1009929"
-  },
-  {
-   "id": "2535902",
-   "grupo": "UNICO",
-   "jornada": 20,
-   "fecha": "2027-02-09",
-   "hora": "00:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "HLA ALICANTE",
-   "localId": "1010207",
-   "visitanteId": "1008687"
   },
   {
    "id": "2535896",
@@ -1987,13 +1976,24 @@
    "visitanteId": "1009095"
   },
   {
+   "id": "2535900",
+   "grupo": "UNICO",
+   "jornada": 20,
+   "fecha": "2027-02-10",
+   "hora": "20:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1008378",
+   "visitanteId": "1008797"
+  },
+  {
    "id": "2535911",
    "grupo": "UNICO",
    "jornada": 21,
    "fecha": "2027-02-14",
    "hora": "00:00",
    "local": "ALIMERKA OVIEDO BALONCESTO",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009837",
    "visitanteId": "1010207"
   },
@@ -2102,7 +2102,7 @@
    "jornada": 22,
    "fecha": "2027-02-19",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "MOVISTAR ESTUDIANTES",
    "localId": "1010207",
    "visitanteId": "1010493"
@@ -2196,6 +2196,17 @@
    "visitanteId": "1009713"
   },
   {
+   "id": "2535927",
+   "grupo": "UNICO",
+   "jornada": 23,
+   "fecha": "2027-03-05",
+   "hora": "20:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "FLEXICAR FUENLABRADA",
+   "localId": "1008378",
+   "visitanteId": "1010494"
+  },
+  {
    "id": "2535923",
    "grupo": "UNICO",
    "jornada": 23,
@@ -2213,7 +2224,7 @@
    "fecha": "2027-03-06",
    "hora": "18:30",
    "local": "CAJASOL COTO CÓRDOBA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009110",
    "visitanteId": "1010207"
   },
@@ -2262,17 +2273,6 @@
    "visitanteId": "1009716"
   },
   {
-   "id": "2535927",
-   "grupo": "UNICO",
-   "jornada": 23,
-   "fecha": "2027-03-07",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "FLEXICAR FUENLABRADA",
-   "localId": "1008378",
-   "visitanteId": "1010494"
-  },
-  {
    "id": "2535928",
    "grupo": "UNICO",
    "jornada": 23,
@@ -2317,23 +2317,12 @@
    "visitanteId": "1008400"
   },
   {
-   "id": "2535933",
-   "grupo": "UNICO",
-   "jornada": 24,
-   "fecha": "2027-03-09",
-   "hora": "00:00",
-   "local": "HLA ALICANTE",
-   "visitante": "MOVISTAR ESTUDIANTES",
-   "localId": "1008687",
-   "visitanteId": "1010493"
-  },
-  {
    "id": "2535938",
    "grupo": "UNICO",
    "jornada": 24,
    "fecha": "2027-03-09",
    "hora": "00:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "GRUPO ALEGA CANTABRIA",
    "localId": "1010207",
    "visitanteId": "1009584"
@@ -2383,13 +2372,24 @@
    "visitanteId": "1009109"
   },
   {
+   "id": "2535933",
+   "grupo": "UNICO",
+   "jornada": 24,
+   "fecha": "2027-03-10",
+   "hora": "20:45",
+   "local": "HLA ALICANTE",
+   "visitante": "MOVISTAR ESTUDIANTES",
+   "localId": "1008687",
+   "visitanteId": "1010493"
+  },
+  {
    "id": "2535947",
    "grupo": "UNICO",
    "jornada": 25,
    "fecha": "2027-03-13",
    "hora": "18:30",
    "local": "FLEXICAR FUENLABRADA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1010494",
    "visitanteId": "1010207"
   },
@@ -2487,7 +2487,7 @@
    "jornada": 26,
    "fecha": "2027-03-19",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "INSOLAC CAJA 87",
    "localId": "1010207",
    "visitanteId": "1010324"
@@ -2636,6 +2636,17 @@
    "visitanteId": "1010494"
   },
   {
+   "id": "2535963",
+   "grupo": "UNICO",
+   "jornada": 27,
+   "fecha": "2027-03-27",
+   "hora": "19:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "IBEROLEA PALENCIA",
+   "localId": "1008378",
+   "visitanteId": "1010207"
+  },
+  {
    "id": "2535966",
    "grupo": "UNICO",
    "jornada": 27,
@@ -2645,17 +2656,6 @@
    "visitante": "FIBWI MALLORCA BASQUET PALMA",
    "localId": "1010324",
    "visitanteId": "1009072"
-  },
-  {
-   "id": "2535963",
-   "grupo": "UNICO",
-   "jornada": 27,
-   "fecha": "2027-03-28",
-   "hora": "18:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "PALENCIA BALONCESTO",
-   "localId": "1008378",
-   "visitanteId": "1010207"
   },
   {
    "id": "2535964",
@@ -2685,7 +2685,7 @@
    "jornada": 28,
    "fecha": "2027-04-02",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "CAJA RURAL CB ZAMORA",
    "localId": "1010207",
    "visitanteId": "1008900"
@@ -2785,7 +2785,7 @@
    "fecha": "2027-04-09",
    "hora": "20:45",
    "local": "GRUPO URETA TIZONA BURGOS",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1008400",
    "visitanteId": "1010207"
   },
@@ -2883,7 +2883,7 @@
    "jornada": 30,
    "fecha": "2027-04-16",
    "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
+   "local": "IBEROLEA PALENCIA",
    "visitante": "FIBWI MALLORCA BASQUET PALMA",
    "localId": "1010207",
    "visitanteId": "1009072"
@@ -3021,24 +3021,13 @@
    "visitanteId": "1009110"
   },
   {
-   "id": "2536000",
-   "grupo": "UNICO",
-   "jornada": 31,
-   "fecha": "2027-04-20",
-   "hora": "00:00",
-   "local": "INVEREADY ASKATUAK GIPUZKOA",
-   "visitante": "HLA ALICANTE",
-   "localId": "1008378",
-   "visitanteId": "1008687"
-  },
-  {
    "id": "2535997",
    "grupo": "UNICO",
    "jornada": 31,
    "fecha": "2027-04-20",
    "hora": "00:00",
    "local": "PALMER BASKET MALLORCA PALMA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009713",
    "visitanteId": "1010207"
   },
@@ -3063,6 +3052,17 @@
    "visitante": "GRAN CANARIA",
    "localId": "1009584",
    "visitanteId": "1008797"
+  },
+  {
+   "id": "2536000",
+   "grupo": "UNICO",
+   "jornada": 31,
+   "fecha": "2027-04-21",
+   "hora": "20:00",
+   "local": "INVEREADY ASKATUAK GIPUZKOA",
+   "visitante": "HLA ALICANTE",
+   "localId": "1008378",
+   "visitanteId": "1008687"
   },
   {
    "id": "2536001",
@@ -3146,11 +3146,22 @@
    "grupo": "UNICO",
    "jornada": 32,
    "fecha": "2027-04-25",
-   "hora": "00:00",
+   "hora": "12:15",
    "local": "HLA ALICANTE",
    "visitante": "BUENO ARENAS ALBACETE BASKET",
    "localId": "1008687",
    "visitanteId": "1009716"
+  },
+  {
+   "id": "2536011",
+   "grupo": "UNICO",
+   "jornada": 32,
+   "fecha": "2027-04-25",
+   "hora": "00:00",
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1010207",
+   "visitanteId": "1008797"
   },
   {
    "id": "2536007",
@@ -3162,17 +3173,6 @@
    "visitante": "COVIRAN GRANADA",
    "localId": "1008378",
    "visitanteId": "1009109"
-  },
-  {
-   "id": "2536011",
-   "grupo": "UNICO",
-   "jornada": 32,
-   "fecha": "2027-04-25",
-   "hora": "00:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "GRAN CANARIA",
-   "localId": "1010207",
-   "visitanteId": "1008797"
   },
   {
    "id": "2536016",
@@ -3214,7 +3214,7 @@
    "fecha": "2027-05-01",
    "hora": "18:00",
    "local": "COVIRAN GRANADA",
-   "visitante": "PALENCIA BALONCESTO",
+   "visitante": "IBEROLEA PALENCIA",
    "localId": "1009109",
    "visitanteId": "1010207"
   },
@@ -3351,6 +3351,17 @@
    "visitanteId": "1010324"
   },
   {
+   "id": "2536029",
+   "grupo": "UNICO",
+   "jornada": 34,
+   "fecha": "2027-05-07",
+   "hora": "21:00",
+   "local": "IBEROLEA PALENCIA",
+   "visitante": "BUENO ARENAS ALBACETE BASKET",
+   "localId": "1010207",
+   "visitanteId": "1009716"
+  },
+  {
    "id": "2536025",
    "grupo": "UNICO",
    "jornada": 34,
@@ -3360,17 +3371,6 @@
    "visitante": "GRUPO URETA TIZONA BURGOS",
    "localId": "1008378",
    "visitanteId": "1008400"
-  },
-  {
-   "id": "2536029",
-   "grupo": "UNICO",
-   "jornada": 34,
-   "fecha": "2027-05-07",
-   "hora": "21:00",
-   "local": "PALENCIA BALONCESTO",
-   "visitante": "BUENO ARENAS ALBACETE BASKET",
-   "localId": "1010207",
-   "visitanteId": "1009716"
   }
  ]
 }

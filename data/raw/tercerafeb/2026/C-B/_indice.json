@@ -1,6 +1,21 @@
 [
  {
   "jornada": "Jornada 1(04/10/2026)",
+  "id": "2528250",
+  "local": {
+   "id": "1009146",
+   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
+  },
+  "visitante": {
+   "id": "1009815",
+   "nombre": "C.B.ROSER"
+  },
+  "resultado": "*-*",
+  "fecha": "03/10/2026",
+  "hora": "17:00"
+ },
+ {
+  "jornada": "Jornada 1(04/10/2026)",
   "id": "2528251",
   "local": {
    "id": "1008699",
@@ -61,21 +76,6 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
-  "id": "2528249",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009816",
-   "nombre": "SANDÁ C.B. L´HOSPITALET"
-  },
-  "resultado": "*-*",
-  "fecha": "03/10/2026",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 1(04/10/2026)",
   "id": "2528253",
   "local": {
    "id": "1010576",
@@ -91,33 +91,18 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
-  "id": "2528250",
+  "id": "2528249",
   "local": {
-   "id": "1009146",
-   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
   },
   "visitante": {
-   "id": "1009815",
-   "nombre": "C.B.ROSER"
+   "id": "1009816",
+   "nombre": "SANDÁ C.B. L´HOSPITALET"
   },
   "resultado": "*-*",
-  "fecha": "04/10/2026",
-  "hora": "12:30"
- },
- {
-  "jornada": "Jornada 2(11/10/2026)",
-  "id": "2528256",
-  "local": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "visitante": {
-   "id": "1008800",
-   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
-  },
-  "resultado": "*-*",
-  "fecha": "10/10/2026",
-  "hora": "17:00"
+  "fecha": "03/10/2026",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 2(11/10/2026)",
@@ -196,6 +181,21 @@
  },
  {
   "jornada": "Jornada 2(11/10/2026)",
+  "id": "2528256",
+  "local": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "visitante": {
+   "id": "1008800",
+   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
+  },
+  "resultado": "*-*",
+  "fecha": "11/10/2026",
+  "hora": "17:00"
+ },
+ {
+  "jornada": "Jornada 2(11/10/2026)",
   "id": "2528255",
   "local": {
    "id": "1009932",
@@ -208,6 +208,36 @@
   "resultado": "*-*",
   "fecha": "11/10/2026",
   "hora": "17:30"
+ },
+ {
+  "jornada": "Jornada 3(18/10/2026)",
+  "id": "2528266",
+  "local": {
+   "id": "1010576",
+   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "visitante": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "resultado": "*-*",
+  "fecha": "17/10/2026",
+  "hora": "17:30"
+ },
+ {
+  "jornada": "Jornada 3(18/10/2026)",
+  "id": "2528267",
+  "local": {
+   "id": "1009083",
+   "nombre": "FUNDACION GRUPO JORGE BALONCESTO ZUERA"
+  },
+  "visitante": {
+   "id": "1009932",
+   "nombre": "OCA GLOBAL C.B. SALOU"
+  },
+  "resultado": "*-*",
+  "fecha": "17/10/2026",
+  "hora": "18:00"
  },
  {
   "jornada": "Jornada 3(18/10/2026)",
@@ -226,14 +256,14 @@
  },
  {
   "jornada": "Jornada 3(18/10/2026)",
-  "id": "2528267",
+  "id": "2528263",
   "local": {
-   "id": "1009083",
-   "nombre": "FUNDACION GRUPO JORGE BALONCESTO ZUERA"
+   "id": "1009146",
+   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
   },
   "visitante": {
-   "id": "1009932",
-   "nombre": "OCA GLOBAL C.B. SALOU"
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
   },
   "resultado": "*-*",
   "fecha": "17/10/2026",
@@ -282,37 +312,7 @@
   },
   "resultado": "*-*",
   "fecha": "17/10/2026",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 3(18/10/2026)",
-  "id": "2528266",
-  "local": {
-   "id": "1010576",
-   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
-  },
-  "visitante": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "resultado": "*-*",
-  "fecha": "17/10/2026",
-  "hora": "19:30"
- },
- {
-  "jornada": "Jornada 3(18/10/2026)",
-  "id": "2528263",
-  "local": {
-   "id": "1009146",
-   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
-  },
-  "visitante": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "resultado": "*-*",
-  "fecha": "18/10/2026",
-  "hora": "12:30"
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
@@ -376,21 +376,6 @@
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
-  "id": "2528273",
-  "local": {
-   "id": "1009144",
-   "nombre": "CB NAVÀS VISCOLA"
-  },
-  "visitante": {
-   "id": "1009146",
-   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
-  },
-  "resultado": "*-*",
-  "fecha": "24/10/2026",
-  "hora": "19:30"
- },
- {
-  "jornada": "Jornada 4(25/10/2026)",
   "id": "2528270",
   "local": {
    "id": "1009815",
@@ -406,6 +391,21 @@
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
+  "id": "2528273",
+  "local": {
+   "id": "1009144",
+   "nombre": "CB NAVÀS VISCOLA"
+  },
+  "visitante": {
+   "id": "1009146",
+   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
+  },
+  "resultado": "*-*",
+  "fecha": "25/10/2026",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 4(25/10/2026)",
   "id": "2528268",
   "local": {
    "id": "1009932",
@@ -418,21 +418,6 @@
   "resultado": "*-*",
   "fecha": "25/10/2026",
   "hora": "17:30"
- },
- {
-  "jornada": "Jornada 5(01/11/2026)",
-  "id": "2528278",
-  "local": {
-   "id": "1008800",
-   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
-  },
-  "visitante": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "resultado": "*-*",
-  "fecha": "31/10/2026",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
@@ -481,6 +466,21 @@
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
+  "id": "2528278",
+  "local": {
+   "id": "1008800",
+   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
+  },
+  "visitante": {
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
+  },
+  "resultado": "*-*",
+  "fecha": "31/10/2026",
+  "hora": "19:00"
+ },
+ {
+  "jornada": "Jornada 5(01/11/2026)",
   "id": "2528279",
   "local": {
    "id": "1010576",
@@ -522,7 +522,7 @@
   },
   "resultado": "*-*",
   "fecha": "01/11/2026",
-  "hora": "17:30"
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
@@ -571,21 +571,6 @@
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
-  "id": "2528288",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009146",
-   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
-  },
-  "resultado": "*-*",
-  "fecha": "07/11/2026",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 6(08/11/2026)",
   "id": "2528286",
   "local": {
    "id": "1009144",
@@ -598,6 +583,21 @@
   "resultado": "*-*",
   "fecha": "07/11/2026",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 6(08/11/2026)",
+  "id": "2528288",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1009146",
+   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
+  },
+  "resultado": "*-*",
+  "fecha": "07/11/2026",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
@@ -628,6 +628,21 @@
   "resultado": "*-*",
   "fecha": "08/11/2026",
   "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 7(15/11/2026)",
+  "id": "2528290",
+  "local": {
+   "id": "1008699",
+   "nombre": "MONBUS - CB IGUALADA"
+  },
+  "visitante": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "resultado": "*-*",
+  "fecha": "14/11/2026",
+  "hora": "17:30"
  },
  {
   "jornada": "Jornada 7(15/11/2026)",
@@ -676,21 +691,6 @@
  },
  {
   "jornada": "Jornada 7(15/11/2026)",
-  "id": "2528290",
-  "local": {
-   "id": "1008699",
-   "nombre": "MONBUS - CB IGUALADA"
-  },
-  "visitante": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "resultado": "*-*",
-  "fecha": "14/11/2026",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 7(15/11/2026)",
   "id": "2528292",
   "local": {
    "id": "1010576",
@@ -736,21 +736,6 @@
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
-  "id": "2528297",
-  "local": {
-   "id": "1009816",
-   "nombre": "SANDÁ C.B. L´HOSPITALET"
-  },
-  "visitante": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "resultado": "*-*",
-  "fecha": "21/11/2026",
-  "hora": "18:15"
- },
- {
-  "jornada": "Jornada 8(22/11/2026)",
   "id": "2528298",
   "local": {
    "id": "1008936",
@@ -781,21 +766,6 @@
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
-  "id": "2528301",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1008800",
-   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
-  },
-  "resultado": "*-*",
-  "fecha": "21/11/2026",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 8(22/11/2026)",
   "id": "2528299",
   "local": {
    "id": "1009144",
@@ -808,6 +778,21 @@
   "resultado": "*-*",
   "fecha": "21/11/2026",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 8(22/11/2026)",
+  "id": "2528301",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1008800",
+   "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
+  },
+  "resultado": "*-*",
+  "fecha": "21/11/2026",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
@@ -838,6 +823,21 @@
   "resultado": "*-*",
   "fecha": "22/11/2026",
   "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 8(22/11/2026)",
+  "id": "2528297",
+  "local": {
+   "id": "1009816",
+   "nombre": "SANDÁ C.B. L´HOSPITALET"
+  },
+  "visitante": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "resultado": "*-*",
+  "fecha": "22/11/2026",
+  "hora": "13:00"
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
@@ -1017,7 +1017,7 @@
   },
   "resultado": "*-*",
   "fecha": "05/12/2026",
-  "hora": "19:15"
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 10(06/12/2026)",
@@ -1096,6 +1096,21 @@
  },
  {
   "jornada": "Jornada 11(13/12/2026)",
+  "id": "2528321",
+  "local": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "visitante": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "resultado": "*-*",
+  "fecha": "12/12/2026",
+  "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 11(13/12/2026)",
   "id": "2528318",
   "local": {
    "id": "1010576",
@@ -1123,21 +1138,6 @@
   "resultado": "*-*",
   "fecha": "12/12/2026",
   "hora": "20:15"
- },
- {
-  "jornada": "Jornada 11(13/12/2026)",
-  "id": "2528321",
-  "local": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "visitante": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "resultado": "*-*",
-  "fecha": "13/12/2026",
-  "hora": "12:00"
  },
  {
   "jornada": "Jornada 11(13/12/2026)",
@@ -1201,36 +1201,6 @@
  },
  {
   "jornada": "Jornada 12(20/12/2026)",
-  "id": "2528329",
-  "local": {
-   "id": "1008699",
-   "nombre": "MONBUS - CB IGUALADA"
-  },
-  "visitante": {
-   "id": "1009083",
-   "nombre": "FUNDACION GRUPO JORGE BALONCESTO ZUERA"
-  },
-  "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 12(20/12/2026)",
-  "id": "2528327",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 12(20/12/2026)",
   "id": "2528325",
   "local": {
    "id": "1009144",
@@ -1246,6 +1216,36 @@
  },
  {
   "jornada": "Jornada 12(20/12/2026)",
+  "id": "2528329",
+  "local": {
+   "id": "1008699",
+   "nombre": "MONBUS - CB IGUALADA"
+  },
+  "visitante": {
+   "id": "1009083",
+   "nombre": "FUNDACION GRUPO JORGE BALONCESTO ZUERA"
+  },
+  "resultado": "*-*",
+  "fecha": "19/12/2026",
+  "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 12(20/12/2026)",
+  "id": "2528327",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "resultado": "*-*",
+  "fecha": "19/12/2026",
+  "hora": "19:45"
+ },
+ {
+  "jornada": "Jornada 12(20/12/2026)",
   "id": "2528328",
   "local": {
    "id": "1009146",
@@ -1257,7 +1257,7 @@
   },
   "resultado": "*-*",
   "fecha": "20/12/2026",
-  "hora": "12:30"
+  "hora": "16:30"
  },
  {
   "jornada": "Jornada 13(10/01/2027)",
@@ -1516,21 +1516,6 @@
  },
  {
   "jornada": "Jornada 15(24/01/2027)",
-  "id": "2528350",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "resultado": "*-*",
-  "fecha": "23/01/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 15(24/01/2027)",
   "id": "2528346",
   "local": {
    "id": "1010576",
@@ -1543,6 +1528,21 @@
   "resultado": "*-*",
   "fecha": "23/01/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 15(24/01/2027)",
+  "id": "2528350",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
+  },
+  "resultado": "*-*",
+  "fecha": "23/01/2027",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 15(24/01/2027)",
@@ -1741,21 +1741,6 @@
  },
  {
   "jornada": "Jornada 17(07/02/2027)",
-  "id": "2528365",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "resultado": "*-*",
-  "fecha": "06/02/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 17(07/02/2027)",
   "id": "2528361",
   "local": {
    "id": "1010576",
@@ -1768,6 +1753,21 @@
   "resultado": "*-*",
   "fecha": "06/02/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 17(07/02/2027)",
+  "id": "2528365",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "resultado": "*-*",
+  "fecha": "06/02/2027",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 17(07/02/2027)",
@@ -1831,21 +1831,6 @@
  },
  {
   "jornada": "Jornada 18(14/02/2027)",
-  "id": "2528366",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009701",
-   "nombre": "CB ARTÉS"
-  },
-  "resultado": "*-*",
-  "fecha": "13/02/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 18(14/02/2027)",
   "id": "2528368",
   "local": {
    "id": "1009144",
@@ -1858,6 +1843,21 @@
   "resultado": "*-*",
   "fecha": "13/02/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 18(14/02/2027)",
+  "id": "2528366",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1009701",
+   "nombre": "CB ARTÉS"
+  },
+  "resultado": "*-*",
+  "fecha": "13/02/2027",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 18(14/02/2027)",
@@ -1887,7 +1887,7 @@
   },
   "resultado": "*-*",
   "fecha": "14/02/2027",
-  "hora": "12:00"
+  "hora": "16:30"
  },
  {
   "jornada": "Jornada 19(21/02/2027)",
@@ -2041,21 +2041,6 @@
  },
  {
   "jornada": "Jornada 20(28/02/2027)",
-  "id": "2528381",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1008699",
-   "nombre": "MONBUS - CB IGUALADA"
-  },
-  "resultado": "*-*",
-  "fecha": "27/02/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 20(28/02/2027)",
   "id": "2528383",
   "local": {
    "id": "1009144",
@@ -2068,6 +2053,21 @@
   "resultado": "*-*",
   "fecha": "27/02/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 20(28/02/2027)",
+  "id": "2528381",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1008699",
+   "nombre": "MONBUS - CB IGUALADA"
+  },
+  "resultado": "*-*",
+  "fecha": "27/02/2027",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 20(28/02/2027)",
@@ -2266,21 +2266,6 @@
  },
  {
   "jornada": "Jornada 22(14/03/2027)",
-  "id": "2528396",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1010576",
-   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
-  },
-  "resultado": "*-*",
-  "fecha": "13/03/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 22(14/03/2027)",
   "id": "2528398",
   "local": {
    "id": "1009144",
@@ -2293,6 +2278,21 @@
   "resultado": "*-*",
   "fecha": "13/03/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 22(14/03/2027)",
+  "id": "2528396",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1010576",
+   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "resultado": "*-*",
+  "fecha": "13/03/2027",
+  "hora": "19:45"
  },
  {
   "jornada": "Jornada 22(14/03/2027)",
@@ -2446,21 +2446,6 @@
  },
  {
   "jornada": "Jornada 24(04/04/2027)",
-  "id": "2528412",
-  "local": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "visitante": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "resultado": "*-*",
-  "fecha": "03/04/2027",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 24(04/04/2027)",
   "id": "2528414",
   "local": {
    "id": "1008936",
@@ -2476,21 +2461,6 @@
  },
  {
   "jornada": "Jornada 24(04/04/2027)",
-  "id": "2528411",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009932",
-   "nombre": "OCA GLOBAL C.B. SALOU"
-  },
-  "resultado": "*-*",
-  "fecha": "03/04/2027",
-  "hora": "19:15"
- },
- {
-  "jornada": "Jornada 24(04/04/2027)",
   "id": "2528413",
   "local": {
    "id": "1009144",
@@ -2503,6 +2473,36 @@
   "resultado": "*-*",
   "fecha": "03/04/2027",
   "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 24(04/04/2027)",
+  "id": "2528411",
+  "local": {
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
+  },
+  "visitante": {
+   "id": "1009932",
+   "nombre": "OCA GLOBAL C.B. SALOU"
+  },
+  "resultado": "*-*",
+  "fecha": "03/04/2027",
+  "hora": "19:45"
+ },
+ {
+  "jornada": "Jornada 24(04/04/2027)",
+  "id": "2528412",
+  "local": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "visitante": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "resultado": "*-*",
+  "fecha": "04/04/2027",
+  "hora": "12:00"
  },
  {
   "jornada": "Jornada 24(04/04/2027)",
@@ -2622,7 +2622,7 @@
   },
   "resultado": "*-*",
   "fecha": "11/04/2027",
-  "hora": "17:30"
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 26(17/04/2027)",
