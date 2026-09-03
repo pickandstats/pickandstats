@@ -634,6 +634,18 @@ petición, bajo `continue-on-error`, acumulando raw en `data/raw/*/2026/` que
 nadie procesa. No corrompe el estado (la temporada va forzada por parámetro, así
 que no escribe `estado.json`), pero es trabajo desperdiciado e invisible.
 
+**Limitación conocida del canario (`comprobar-temporada.js`).** Captura el fallo
+de `detectar()` por categoría y la omite —su trabajo es la discrepancia, no la
+disponibilidad de la FEB—. Consecuencia no obvia: **si la detección falla en las
+tres categorías, el canario pasa en verde sin haber comprobado nada**. En la
+ventana de transición de temporada es un hueco silencioso. Se acepta a sabiendas:
+el riesgo real es bajo (un run perdido, y el canario ya tiene ~1 semana de
+latencia por diseño al leer los índices de la ejecución anterior). Si alguna vez
+se quiere cerrar, el sitio **no** es el canario sino `resumen-salud.js`: que avise
+cuando el canario no pudo evaluar ninguna categoría. (El canario, además, ya no
+puede *colgarse* en `detectar()`: se le añadió timeout y reintentos el 3/9/2026
+tras verlo colgar el workflow entero en la primera ejecución real — §17.4.)
+
 ### 17.3 Inventario de fallos que hoy no pueden ponerse rojos
 
 | Sitio | Comportamiento |
@@ -674,6 +686,20 @@ y es precisamente el que va envuelto en `continue-on-error`.
   actas derivan de PDF públicos de la FEB, así que publicarlas no expone nada.
   Escala barato: git no crece (nunca se versionan), y el release suma ~100 MB por
   temporada, que en repo público es gratis.
+- **El commit del workflow es resistente a concurrencia** ✅ *(3/9/2026)*. El paso
+  "Commit y push" hacía `git push` a pelo: si el remoto había avanzado entre el
+  checkout y el push, salía `[rejected] (fetch first)` y el run moría (visto de
+  verdad al solapar dos ejecuciones manuales, y le pasaría igual a un push de
+  Alexandre desde el portátil mientras corre el cron). Ahora, **dos piezas**: (1)
+  un bloque `concurrency: { group: actualizar-datos, cancel-in-progress: false }`
+  que serializa las ejecuciones de este workflow entre sí (un dispatch espera al
+  cron, no lo mata); y (2) en el paso de commit, si el `push` es rechazado se hace
+  `git pull --rebase origin main` y se reintenta (hasta 3 veces). El `concurrency`
+  solo cubre choques de este workflow consigo mismo; el rebase cubre el caso real
+  de un push humano concurrente. Bot (datos) y humano (docs/scripts) casi nunca
+  tocan los mismos ficheros, así que el rebase se resuelve solo; un conflicto
+  **real** en datos deja el rebase a medias y el paso sale con código 1 —falla
+  ruidosamente, que es lo que merece que una persona lo mire—.
 - **El commit semanal nunca está vacío.** `estado.json` reescribe `actualizado`
   en cada ejecución, así que `git diff --staged --quiet` no se cumple nunca y la
   rama "Sin partidos nuevos esta semana" es código muerto. Efecto práctico: no se

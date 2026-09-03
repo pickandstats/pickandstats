@@ -14,6 +14,14 @@ on:
 permissions:
   contents: write
 
+# Pieza 1 contra la carrera de push (S17.4): serializa las ejecuciones de ESTE
+# workflow entre si. Un dispatch manual que solape con el cron espera su turno en
+# vez de correr en paralelo y chocar en el push. cancel-in-progress: false a
+# proposito: un dispatch NO debe matar un cron en curso, debe encolarse.
+concurrency:
+  group: actualizar-datos
+  cancel-in-progress: false
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -155,7 +163,20 @@ jobs:
             echo "Sin partidos nuevos esta semana."
           else
             git commit -m "Actualización automática de datos ($(date +%d/%m/%Y))"
-            git push
+            # Pieza 2 contra la carrera de push (S17.4): el concurrency de arriba
+            # serializa ESTE workflow, pero un push manual a main mientras corre el
+            # job (Alexandre empuja a menudo) produce el mismo rechazo. Si el push
+            # es rechazado, rebasar sobre origin/main y reintentar: bot (datos) y
+            # humano (docs/scripts) casi nunca tocan los mismos ficheros, asi que
+            # el rebase se resuelve solo. Un conflicto REAL en datos deja el rebase
+            # a medias y sale con codigo 1 -> falla ruidosamente para que se mire.
+            pushed=0
+            for intento in 1 2 3; do
+              if git push; then pushed=1; break; fi
+              echo "push rechazado (intento $intento); rebase sobre origin/main y reintento"
+              git pull --rebase origin main || { echo "CONFLICTO en el rebase: requiere intervencion manual"; exit 1; }
+            done
+            [ "$pushed" = 1 ] || { echo "push fallo tras 3 intentos"; exit 1; }
           fi
 
       # Resumen de salud (ARQUITECTURA.md S17.5.4). EL ULTIMO y SIN
