@@ -8,7 +8,18 @@ const CFG = require('./config');
 
 async function detectar(competicion = 3) {
   const url = `${CFG.BASE}/resultados.aspx?g=${competicion}&t=${CFG.TEMPORADA_DEFECTO}`;
-  const res = await axios.get(url, { headers: CFG.HEADERS });
+  // timeout imprescindible: sin el, una peticion estancada desde el runner de
+  // Actions colgaba el proceso indefinidamente (hasta el limite de 6h del job).
+  // Como el canario S17.2 es el primer paso y NO es continue-on-error, un cuelgue
+  // aqui bloqueaba toda la actualizacion semanal. Con timeout, una peticion mala
+  // lanza y los llamadores ya lo toleran (try/catch por categoria). 3 intentos
+  // con espera creciente para no rendirse ante un parpadeo transitorio.
+  let res, ultimo;
+  for (let intento = 1; intento <= 3; intento++) {
+    try { res = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000 }); break; }
+    catch (e) { ultimo = e; if (intento < 3) await new Promise(r => setTimeout(r, 2000 * intento)); }
+  }
+  if (!res) throw ultimo;
   const $ = cheerio.load(res.data);
   const opts = $('select[id*="temporadasDropDownList"] option')
     .map((i, o) => ({ valor: $(o).attr('value'), texto: $(o).text().trim(), sel: $(o).attr('selected') != null }))
