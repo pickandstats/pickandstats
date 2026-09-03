@@ -158,7 +158,7 @@ jobs:
         run: |
           git config user.name "pickandstats-bot"
           git config user.email "actions@github.com"
-          git add data/ web/public/data/*/*/equipos-cuartos.json web/public/data/*/*/jugadores-cuartos.json web/public/data/*/*/partidos-contexto.json web/public/data/*/*/boxscore-cuartos
+          git add data/   # los cuartos ya viven en data/processed (S17.4), cubiertos por esto
           if git diff --staged --quiet; then
             echo "Sin partidos nuevos esta semana."
           else

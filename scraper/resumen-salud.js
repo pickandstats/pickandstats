@@ -135,17 +135,17 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       avisos.push(`${nombre}: ${rep.errores.length} error(es) de extraccion este run (se reintentan)`);
   }
 
-  // 3b) Los ficheros de cuartos existen en la ruta que sirve la app. Guardian del
-  // movimiento de S17.4/S16 (llevar los cuartos de web/public/data a
-  // data/processed): si el deploy o el git add quedan mal encajados, los cuartos
-  // desaparecen de produccion EN SILENCIO —el verificador protege la generacion,
-  // no el emplazamiento—. Se exige solo si la categoria tiene cuartos generados
-  // (hay actas extraidas de la temporada); en una temporada recien arrancada sin
+  // 3b) Los ficheros de cuartos se generaron y estan donde se commitean
+  // (data/processed, S17.4). Este es un check MENOR: el guardian de verdad —que
+  // los cuartos llegan a produccion— vive en desplegar.yml mirando web/dist, que
+  // no se mueve con el cambio (verificar-cuartos-desplegados.js). Aqui solo se
+  // confirma que la generacion produjo los ficheros, y solo si la categoria tiene
+  // cuartos generados (hay actas extraidas); en una temporada recien arrancada sin
   // actas no se exige nada.
   const dirActasSel = path.join('data', 'raw', nombre, sel, 'actas');
   const hayActas = fs.existsSync(dirActasSel) && fs.readdirSync(dirActasSel).some(f => f.endsWith('.json'));
   if (hayActas) {
-    const servido = path.join('web', 'public', 'data', nombre, sel);
+    const servido = path.join('data', 'processed', nombre, sel);
     const faltan = [];
     for (const f of ['jugadores-cuartos.json', 'equipos-cuartos.json', 'partidos-contexto.json']) {
       const p = path.join(servido, f);
@@ -155,9 +155,9 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     const boxOk = fs.existsSync(dirBox) && fs.readdirSync(dirBox).some(f => f.endsWith('.json'));
     if (!boxOk) faltan.push('boxscore-cuartos/');
     if (faltan.length)
-      criticos.push(`${nombre} ${sel}: faltan ficheros de cuartos en la ruta servida (web/public/data): ${faltan.join(', ')} (¿ubicacion o deploy roto?)`);
+      criticos.push(`${nombre} ${sel}: faltan ficheros de cuartos generados en data/processed: ${faltan.join(', ')} (¿fallo la generacion?)`);
     else
-      lineas.push(`${nombre} ${sel}: ficheros de cuartos presentes en la ruta servida`);
+      lineas.push(`${nombre} ${sel}: cuartos generados en data/processed`);
   }
 }
 

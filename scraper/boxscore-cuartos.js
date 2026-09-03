@@ -22,7 +22,8 @@ if (!compNombre) { console.error('Competicion no valida'); process.exit(1); }
 const dirActas = path.join('data', 'raw', compNombre, temp, 'actas');
 if (!fs.existsSync(dirActas)) { console.error('No hay actas en', dirActas); process.exit(1); }
 
-const dirOut = path.join('web', 'public', 'data', compNombre, temp, 'boxscore-cuartos');
+// En data/processed como el resto (S17.4); el cp del deploy lo lleva a public.
+const dirOut = path.join('data', 'processed', compNombre, temp, 'boxscore-cuartos');
 fs.mkdirSync(dirOut, { recursive: true });
 
 let generados = 0, incompletos = 0;

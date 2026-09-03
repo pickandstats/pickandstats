@@ -208,7 +208,9 @@ const salidaEq = Object.values(equipos).map(E => ({
   }),
 }));
 
-const dirOut = path.join('web', 'public', 'data', compNombre, temp);
+// Los cuartos se escriben en data/processed como el resto de agregados (S17.4);
+// el cp del deploy los lleva a web/public/data y de ahi Vite a web/dist.
+const dirOut = path.join('data', 'processed', compNombre, temp);
 fs.mkdirSync(dirOut, { recursive: true });
 fs.writeFileSync(path.join(dirOut, 'jugadores-cuartos.json'), JSON.stringify(salidaJug, null, 1));
 fs.writeFileSync(path.join(dirOut, 'equipos-cuartos.json'), JSON.stringify(salidaEq, null, 1));
