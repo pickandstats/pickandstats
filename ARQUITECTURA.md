@@ -290,17 +290,18 @@ Detalles clave de este workflow:
 - Cache de actas (actions/cache): las actas (data/raw/.../actas/) persisten entre ejecuciones semanales, con clave que rota por ejecución y fallback a la más reciente. Sin esto, al ser las actas caché gitignored, CI las re-extraería todas cada semana (horas). Con la cache, solo se descargan las de partidos nuevos.
 - El verificador como guardián: los pasos de cuartos encadenan verificar && calcular && boxscore. Si el verificador detecta que faltan actas o contexto, sale con código 1 y la generación NO corre —protege los datos versionados de ser sobrescritos con datos incompletos. Esto hace seguro incluso el primer run con cache vacía.
 - continue-on-error en los pasos de cuartos: un fallo ahí (cache expirada, PDF caído) no tumba la actualización del resto de datos.
-- git add ampliado: incluye los ficheros de cuartos, que viven en web/public/data/ (no en data/processed/ como el resto).
+- git add data/: los cuartos ya viven en data/processed/ (unificados el 3/9/2026, §17.4), así que quedan cubiertos por `git add data/` como el resto.
 
 **desplegar.yml — despliegue en GitHub Pages.** Se ejecuta en cada push a
 main. Compila el sitio Astro (→ raíz del dominio) y la app React (→ /app/),
-copia los datos procesados, ensambla la salida (verifica que el CNAME esté
-presente para no perder el dominio) y publica. Nota de mantenimiento: copia
-datos con cp -r data/processed/. web/public/data/. Como los ficheros de
-cuartos viven directamente en web/public/data/ (no en data/processed/), esta
-copia no los pisa (cp no borra lo que no está en origen). Funciona, pero es
-una inconsistencia de ubicación a tener presente: si algún día el deploy
-pasara a sincronizar con borrado (rsync --delete), los cuartos desaparecerían.
+copia los datos procesados (cp -r data/processed/. web/public/data/), y —tras el
+build y antes de publicar— un guardián (`verificar-cuartos-desplegados.js`)
+comprueba que los cuartos de la temporada en curso están en `web/dist`: si
+faltan, el deploy falla y el sitio se queda en la versión anterior (correcta) en
+vez de publicarse sin cuartos. Ensambla la salida (verifica que el CNAME esté
+presente para no perder el dominio) y publica. Desde la unificación, los cuartos
+llegan a producción por el mismo `cp` que el resto de agregados, así que un deploy
+con `rsync --delete` ya no los perdería.
 
 ## 10. Decisiones de diseño y su porqué
 
@@ -386,10 +387,13 @@ boxscore.
 ~3h desde cero): cortaría la red. nohup sobrevive a cerrar el terminal pero no
 a la suspensión.
 
-**Los ficheros de cuartos viven en web/public/data/, no en data/processed/.**
-Inconsistencia con el resto del pipeline. Importa para: el git add del
-workflow (ampliado para incluirlos) y el cp del despliegue (que no los pisa,
-pero cuidado si se cambia a rsync --delete).
+**Los ficheros de cuartos ya viven en data/processed/ como el resto** *(unificado
+el 3/9/2026, ver §17.4)*. `calcular-cuartos.js` y `boxscore-cuartos.js` escriben
+en `data/processed`; el `cp` del deploy los lleva a `web/public/data` y Vite a
+`web/dist`. El `git add` del workflow volvió a ser `git add data/`. Un guardián en
+`desplegar.yml` (`verificar-cuartos-desplegados.js`) comprueba, tras el build y
+antes de publicar, que los cuartos están en `web/dist`: si faltan, el deploy falla
+y el sitio se queda en la versión anterior en vez de publicarse sin cuartos.
 
 **El primer run del workflow con cache vacía es seguro** gracias al guardián
 (verificar && calcular): si faltan actas, no se genera y los datos versionados
@@ -405,11 +409,11 @@ quedan intactos. La cache se va poblando en runs sucesivos.
 - Completar Tercera con el análisis por cuartos (extracción → agregados → boxscore → deploy). *(31/08/2026)*
 - Estrenar y vigilar el workflow con cuartos en sus primeras ejecuciones reales: la actualización automática del 31/08/2026 ya regeneró los agregados de cuartos de Primera y Segunda sin incidencias. *(31/08/2026)*
 - Comparador de equipos/jugadores lado a lado (toggle en la pestaña Comparador, ver sección 15). *(01/09/2026)*
+- Unificar la ubicación de los ficheros de cuartos: llevados de `web/public/data/` a `data/processed/` como el resto, con guardián de deploy que verifica que llegan al build (§17.4). *(03/09/2026)*
 
 **Prioridad media:**
 - Servicio de generación de PDF "al vuelo" que evite las notas de cabecera/pie del navegador (la exportación actual del dossier usa `window.print()` con CSS de impresión, que no las evita).
 - Índice propio (valoración sintética).
-- Unificar la ubicación de los ficheros de cuartos (llevarlos a data/processed/ como el resto) para eliminar la inconsistencia.
 
 **Prioridad baja / a evaluar:**
 - Ligas femeninas FEB (identificadas: g=4 LF Endesa grupo único, g=9/g=10 las de dos grupos; g=5-8 NO son nuevas, son vistas alternativas de Tercera). Esfuerzo ~2 tardes; la decisión es de demanda, no de viabilidad.
@@ -543,11 +547,14 @@ grupo de partidos, revisar que calcular.js (y similares que recorran el
 directorio) la excluyan.
 
 **Los percentiles de equipos van a data/processed, no a web/public/data.**
-calcular.js escribe en data/processed; el deploy copia processed -> public. Los
-cuartos, en cambio, se generan directamente en public (inconsistencia ya
-conocida). Al generar los percentiles de equipos con calcular.js, quedaron en
-processed; para probar en local (donde la app lee de public) hay que copiar
-processed -> public manualmente. En produccion el deploy lo hace solo.
+calcular.js escribe en data/processed; el deploy copia processed -> public. Al
+generar los percentiles de equipos con calcular.js, quedaron en processed; para
+probar en local (donde la app lee de public) hay que copiar processed -> public
+manualmente. En produccion el deploy lo hace solo. *(Nota 3/9/2026: los cuartos,
+que antes eran la excepcion generandose directamente en public, ya se generan
+tambien en data/processed, §17.4. Ahora todo el pipeline escribe en processed y el
+mismo cp del deploy lo sirve; el "copiar a mano para dev local" aplica por igual a
+los cuartos.)*
 
 ## 17. El camino incremental y la transición de temporada (2/9/2026)
 
@@ -701,6 +708,22 @@ y es precisamente el que va envuelto en `continue-on-error`.
   tocan los mismos ficheros, así que el rebase se resuelve solo; un conflicto
   **real** en datos deja el rebase a medias y el paso sale con código 1 —falla
   ruidosamente, que es lo que merece que una persona lo mire—.
+- **Los ficheros de cuartos ya viven en data/processed** ✅ *(3/9/2026)*. Eran la
+  única cosa que se generaba directamente en `web/public/data/` (el resto va a
+  `data/processed/` y el `cp` del deploy lo sirve); si el deploy pasara a
+  `rsync --delete`, los cuartos desaparecerían. Ahora `calcular-cuartos.js` y
+  `boxscore-cuartos.js` escriben en `data/processed/`, el `git add` del workflow
+  volvió a `git add data/`, y el `cp` del deploy los lleva a `web/public/data` →
+  Vite → `web/dist` como el resto. El guardián de este cambio **no** vive en
+  `resumen-salud.js` (corre en `actualizar-datos`, antes del deploy, mirando
+  `web/public/data` —un proxy que el movimiento invalidaba—) sino en
+  `desplegar.yml`: `verificar-cuartos-desplegados.js` comprueba, tras el build y
+  antes de publicar, que los cuartos están en `web/dist` (que es el mismo antes y
+  después del movimiento). Si faltan, el deploy falla y el sitio se queda en la
+  versión anterior: rotura silenciosa → deploy rojo. Verificado de punta a punta
+  en CI (deploy verde con los cuartos servidos desde `data/processed`). Detalle en
+  `_informe-guardian-deploy.md`. Pendiente relacionado (§12): ~155 MB de no-cuartos
+  duplicados en git, limpieza de off-season, sin mezclar con esto.
 - **El commit semanal nunca está vacío.** `estado.json` reescribe `actualizado`
   en cada ejecución, así que `git diff --staged --quiet` no se cumple nunca y la
   rama "Sin partidos nuevos esta semana" es código muerto. Efecto práctico: no se

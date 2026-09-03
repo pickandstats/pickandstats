@@ -66,9 +66,13 @@ Los que muerden de verdad. La lista completa está en ARQUITECTURA.md §11 y §1
 - **Las actas son caché gitignored** (`data/raw/*/*/actas/`, ~100 MB) y solo
   existen en la cache de GitHub Actions. Los agregados que sirve la app sí se
   versionan. Regla mental: si la app lo sirve, va a git.
-- **Los ficheros de cuartos viven en `web/public/data/`**, no en
-  `data/processed/` como el resto. Inconsistencia conocida; importa para el
-  `git add` del workflow y para el `cp -r` del despliegue.
+- **Los ficheros de cuartos viven en `data/processed/`** como el resto (unificado
+  el 3/9/2026, S17.4). El `cp -r` del deploy los lleva a `web/public/data/` y Vite
+  a `web/dist/`; un guardián en `desplegar.yml`
+  (`verificar-cuartos-desplegados.js`) falla el deploy si no llegan al build, así
+  que el sitio nunca se publica sin cuartos. En **dev local** (`npm run dev`) sirve
+  de `web/public/`, así que hay que copiar `data/processed`→`web/public/data` a
+  mano para ver los cuartos, igual que el resto de agregados.
 - **Cruza por identificador estable, nunca por nombre**: jugadores por
   idJugador (licencia FEB), equipos por idClub/slug, acta↔boxscore por dorsal.
   La FEB cambia el id de equipo cada año y trunca nombres de forma
