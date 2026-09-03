@@ -724,10 +724,16 @@ y es precisamente el que va envuelto en `continue-on-error`.
   en CI (deploy verde con los cuartos servidos desde `data/processed`). Detalle en
   `_informe-guardian-deploy.md`. Pendiente relacionado (§12): ~155 MB de no-cuartos
   duplicados en git, limpieza de off-season, sin mezclar con esto.
-- **El commit semanal nunca está vacío.** `estado.json` reescribe `actualizado`
-  en cada ejecución, así que `git diff --staged --quiet` no se cumple nunca y la
-  rama "Sin partidos nuevos esta semana" es código muerto. Efecto práctico: no se
-  distingue de un vistazo una semana con datos de una semana en blanco.
+- **La semana en blanco ya se distingue en el historial** ✅ *(3/9/2026)*.
+  `estado.json` reescribe sus timestamps (y `calendarios`) en cada ejecución, así
+  que `git diff --staged --quiet` no se cumple nunca y todos los commits salían
+  iguales. No se podía tocar el timestamp (la app usa `estado.actualizado` para la
+  fecha de datos) ni dejar de commitear `estado.json` (`resumen-salud.js` lee
+  `estado.calendarios` para la frescura de índices). Solución: el commit se sigue
+  haciendo, pero el **mensaje** distingue —si lo único que cambió es
+  `data/processed/estado.json`, es "Sin datos nuevos, solo estado (fecha)"; si
+  hay ficheros de datos, "Actualización automática de datos (fecha)"—. El check es
+  portable (`grep -v … | grep -q .`, no `grep -qv`, que difiere entre GNU y BSD).
 
 ### 17.5 Orden de arreglo acordado
 

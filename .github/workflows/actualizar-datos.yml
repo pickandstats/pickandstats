@@ -160,9 +160,20 @@ jobs:
           git config user.email "actions@github.com"
           git add data/   # los cuartos ya viven en data/processed (S17.4), cubiertos por esto
           if git diff --staged --quiet; then
-            echo "Sin partidos nuevos esta semana."
+            echo "Nada que commitear."
           else
-            git commit -m "Actualización automática de datos ($(date +%d/%m/%Y))"
+            # Distinguir semana con datos de semana en blanco. estado.json reescribe
+            # sus timestamps (y calendarios) en cada ejecucion, asi que git nunca lo
+            # ve "vacio" y el commit salia siempre igual (S17.4). Si lo UNICO que
+            # cambio es estado.json, no hubo datos nuevos: se refleja en el mensaje
+            # para distinguirlo de un vistazo en el historial. estado.json se
+            # commitea igual —la app usa estado.actualizado para la fecha de datos y
+            # resumen-salud lee estado.calendarios para la frescura de indices—.
+            if git diff --staged --name-only | grep -v '^data/processed/estado\.json$' | grep -q .; then
+              git commit -m "Actualización automática de datos ($(date +%d/%m/%Y))"
+            else
+              git commit -m "Sin datos nuevos, solo estado ($(date +%d/%m/%Y))"
+            fi
             # Pieza 2 contra la carrera de push (S17.4): el concurrency de arriba
             # serializa ESTE workflow, pero un push manual a main mientras corre el
             # job (Alexandre empuja a menudo) produce el mismo rechazo. Si el push
