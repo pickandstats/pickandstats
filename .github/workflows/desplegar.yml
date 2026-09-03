@@ -43,6 +43,15 @@ jobs:
         working-directory: web
         run: npm run build
 
+      # Guardian de despliegue (ARQUITECTURA.md S17.4): el build que se va a
+      # publicar debe llevar los ficheros de cuartos de la temporada en curso. Va
+      # DESPUES del build y ANTES de publicar: si faltan, falla aqui y el sitio se
+      # queda en la version anterior (correcta) en vez de publicar una sin cuartos.
+      # Mira web/dist, que es el mismo antes y despues de mover los cuartos a
+      # data/processed, asi que el instrumento no se mueve con el cambio que vigila.
+      - name: Verificar que el build lleva los cuartos
+        run: node scraper/verificar-cuartos-desplegados.js
+
       # ---- Ensamblar la salida final ----
       - name: Ensamblar
         run: |
