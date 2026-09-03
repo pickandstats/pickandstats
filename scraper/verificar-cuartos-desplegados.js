@@ -1,8 +1,10 @@
 // Guardian de despliegue (ARQUITECTURA.md S17.4/S16): comprueba que el BUILD que
-// se va a publicar contiene los ficheros de cuartos de la temporada en curso de
-// cada categoria. Corre en desplegar.yml DESPUES del `npm run build` de Vite y
-// ANTES de publicar: si faltan, sale con codigo 1, el deploy falla y el sitio se
-// queda en la version anterior (correcta) en vez de publicar una sin cuartos.
+// se va a publicar contiene los ficheros que el pipeline genera en data/processed
+// y sirve por el cp del deploy: los cuartos de la temporada en curso, y el
+// jugadores-comparador.json de TODA temporada con datos. Corre en desplegar.yml
+// DESPUES del `npm run build` de Vite y ANTES de publicar: si faltan, sale con
+// codigo 1, el deploy falla y el sitio se queda en la version anterior (correcta)
+// en vez de publicar una incompleta.
 //
 // Mira web/dist/data/<comp>/<temp>/, que es el mismo antes y despues de mover los
 // cuartos de web/public/data a data/processed: hoy llegan a dist porque Vite copia
@@ -49,10 +51,29 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   else console.log(`${nombre} ${sel}: cuartos presentes en el build (${jugados} partidos jugados)`);
 }
 
+// Comparador: jugadores-comparador.json debe estar en el build para TODA temporada
+// que tenga jugadores.json (el comparador sigue el selector de temporada, no solo
+// la vigente). Exigirlo solo donde hay jugadores.json evita gritar en falso en una
+// temporada sin datos aun (p.ej. la que arranca).
+for (const g of Object.keys(CFG.COMPETICIONES)) {
+  const nombre = CFG.COMPETICIONES[g];
+  const dirCat = path.join(distBase, nombre);
+  if (!fs.existsSync(dirCat)) continue;
+  for (const t of fs.readdirSync(dirCat)) {
+    const dirT = path.join(dirCat, t);
+    if (!fs.statSync(dirT).isDirectory()) continue;
+    if (!fs.existsSync(path.join(dirT, 'jugadores.json'))) continue; // sin datos -> no se exige
+    const lite = path.join(dirT, 'jugadores-comparador.json');
+    if (!fs.existsSync(lite) || fs.statSync(lite).size === 0)
+      problemas.push(`${nombre} ${t}: falta jugadores-comparador.json (lo usa el comparador)`);
+    else console.log(`${nombre} ${t}: comparador presente en el build`);
+  }
+}
+
 if (problemas.length) {
-  console.error('\n❌ El build NO tiene los ficheros de cuartos esperados; no se publica:');
+  console.error('\n❌ El build NO tiene los ficheros esperados; no se publica:');
   problemas.forEach(p => console.error('  ' + p));
-  console.error('El sitio se queda en la version anterior. Revisa el cp del deploy y la generacion de cuartos.');
+  console.error('El sitio se queda en la version anterior. Revisa el cp del deploy y la generacion en data/processed.');
   process.exit(1);
 }
-console.log('\nCuartos presentes en el build para todas las categorias con datos. OK.');
+console.log('\nCuartos y comparador presentes en el build para todas las categorias/temporadas con datos. OK.');

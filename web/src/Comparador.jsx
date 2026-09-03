@@ -56,7 +56,7 @@ export default function Comparador({ temporada = '2025' }) {
     let vivo = true;
     setCargando(true); setError(false);
     Promise.all(COMPS.map(c =>
-      fetch(`${import.meta.env.BASE_URL}data/${c.slug}/${temporada}/jugadores.json`)
+      fetch(`${import.meta.env.BASE_URL}data/${c.slug}/${temporada}/jugadores-comparador.json`)
         .then(r => r.ok ? r.json() : [])
         .then(arr => (arr || []).map(j => ({ ...j, _cat: c.nombre, _catId: c.id })))
         .catch(() => [])

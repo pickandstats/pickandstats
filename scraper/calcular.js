@@ -402,6 +402,24 @@ const METRICAS_EQ_PCT = [
 
 fs.writeFileSync(path.join(DIR_OUT, 'equipos.json'), JSON.stringify(salidaEquipos, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'jugadores.json'), JSON.stringify(salidaJugadores, null, 1));
+
+// Fichero ligero para el comparador: solo lo que Comparador.jsx usa (identidad,
+// filtros, 8 metricas y sus percentiles nac). ~88% mas pequeno que jugadores.json,
+// que el comparador carga de las tres categorias de golpe. Mismos nombres de campo
+// para que la vista solo cambie la URL del fetch. Compacto (sin indentar). Se
+// genera para cada temporada/categoria que se calcule, no solo la vigente, porque
+// el comparador sigue el selector de temporada. Ver _informe-comparador.md.
+const CAMPOS_COMPARADOR = ['ptPorPartido', 'rtPorPartido', 'asPorPartido', 'brPorPartido', 'vaPorPartido', 'ts', 'efg', 't3Pct'];
+const jugadoresComparador = salidaJugadores.map(j => {
+  const o = { idJugador: j.idJugador, nombre: j.nombre, equipo: j.equipo, pj: j.pj, minPorPartido: j.minPorPartido };
+  for (const k of CAMPOS_COMPARADOR) o[k] = j[k];
+  const p = {};
+  if (j.percentiles) for (const k of CAMPOS_COMPARADOR) if (j.percentiles[k]) p[k] = { nac: j.percentiles[k].nac };
+  o.percentiles = p;
+  return o;
+});
+fs.writeFileSync(path.join(DIR_OUT, 'jugadores-comparador.json'), JSON.stringify(jugadoresComparador));
+
 fs.writeFileSync(path.join(DIR_OUT, 'carreras.json'), JSON.stringify(carreras, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'partidos.json'), JSON.stringify(salidaPartidos, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'excluidos.json'), JSON.stringify(excluidos, null, 1));
