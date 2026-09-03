@@ -415,6 +415,7 @@ quedan intactos. La cache se va poblando en runs sucesivos.
 - Ligas femeninas FEB (identificadas: g=4 LF Endesa grupo único, g=9/g=10 las de dos grupos; g=5-8 NO son nuevas, son vistas alternativas de Tercera). Esfuerzo ~2 tardes; la decisión es de demanda, no de viabilidad.
 - Filiales en el registro de clubes (el campo existe, sin poblar).
 - Shot charts con coordenadas — solo posibles vía la API autenticada; dependen de que la FEB responda a la solicitud de acceso.
+- **Grasa: ~155 MB de datos duplicados en git** *(confirmado el 3/9/2026)*. 66 ficheros no-cuartos (equipos.json, jugadores.json, partidos.json, etc. de las tres categorías y temporadas) están versionados **a la vez** en `data/processed/` y en `web/public/data/`, con contenido idéntico (comprobado). El `cp` del deploy reconstruye la copia de public en cada build, así que la versionada en public es redundante. Candidato de limpieza para la off-season: dejar de versionar los no-cuartos en `web/public/data/` (gitignorarlos allí, ya que el deploy los regenera). NO mezclar con la unificación de cuartos —una limpieza y un cambio transversal juntos es justo lo que lo vuelve arriesgado—.
 
 **Contexto de negocio** (a completar): el feedback de entrenadores contactados,
 qué funcionalidades piden, y cómo priorizar según demanda real —eso vive fuera
