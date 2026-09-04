@@ -1,26 +1,52 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { FAMILIAS } from '../../familias';
 
-const guias = (await getCollection('guias'))
-  .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime());
+const todas = await getCollection('guias');
+
+// Dentro de cada familia manda el campo `orden`; las guías sin él caen al final,
+// y entre iguales gana la más reciente.
+const porOrden = (a, b) =>
+  (a.data.orden ?? 999) - (b.data.orden ?? 999) ||
+  b.data.fecha.getTime() - a.data.fecha.getTime();
+
+const bloques = FAMILIAS
+  .map(familia => ({
+    ...familia,
+    guias: todas.filter(g => g.data.familia === familia.clave).sort(porOrden),
+  }))
+  .filter(bloque => bloque.guias.length > 0);
 ---
 
-<Base title="Guías · Pick&Stats" description="Guías para entender el baloncesto de las ligas menores: ascensos, descensos, reglamento y más.">
+<Base title="Guías · Pick&Stats" description="Cómo se leen las estadísticas avanzadas de baloncesto, cómo funcionan los ascensos y descensos y quién juega cada temporada en las tres categorías FEB.">
   <h1>Guías</h1>
-  <p>Explicaciones claras de las dudas que se repiten cada temporada.</p>
+  <p class="intro">
+    Qué significa cada número de la aplicación, cómo funcionan los ascensos y los
+    descensos, y quién compite cada temporada en las tres categorías FEB.
+  </p>
 
-  <ul class="lista-guias">
-    {guias.map(guia => (
-      <li>
-        <a href={`/guias/${guia.id}/`}>{guia.data.titulo}</a>
-        <p>{guia.data.descripcion}</p>
-      </li>
-    ))}
-  </ul>
+  {bloques.map(bloque => (
+    <section id={bloque.clave} class="familia">
+      <h2>{bloque.titulo}</h2>
+      <p class="entradilla">{bloque.entradilla}</p>
+      <ul class="lista-guias">
+        {bloque.guias.map(guia => (
+          <li>
+            <a href={`/guias/${guia.id}/`}>{guia.data.titulo}</a>
+            <p>{guia.data.descripcion}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
 
   <style>
-    .lista-guias { list-style: none; padding: 0; }
+    .intro { color: var(--tinta-suave); }
+    .familia { margin-top: 38px; scroll-margin-top: 20px; }
+    .familia h2 { margin-bottom: 4px; }
+    .entradilla { color: var(--tinta-suave); font-size: 15px; margin: 0 0 16px; }
+    .lista-guias { list-style: none; padding: 0; margin: 0; }
     .lista-guias li {
       border: 1px solid var(--linea); border-radius: var(--radio);
       padding: 18px 20px; margin-bottom: 14px; background: var(--panel);

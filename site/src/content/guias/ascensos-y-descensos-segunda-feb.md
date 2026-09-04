@@ -1,6 +1,9 @@
 ---
 titulo: Cómo se asciende y se desciende en Segunda FEB
 descripcion: Las tres plazas de ascenso a Primera FEB, el duelo de campeones con segunda oportunidad, el cuadro de play-off, las semifinales sin final y los seis descensos con su fase de descenso, según las bases de la temporada 2026/27.
+descripcionSeo: Las tres plazas de ascenso a Primera FEB, el cuadro de play-off y los seis descensos con su fase, según las bases de la temporada 2026/27.
+familia: competicion
+orden: 2
 fecha: 2026-07-22
 actualizado: 2026-07-23
 ---

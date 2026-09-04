@@ -1,6 +1,9 @@
 ---
 titulo: El ritmo de juego, por qué los puntos por partido engañan
 descripcion: Qué es el ritmo o pace en baloncesto, cómo se calcula y por qué dos equipos que anotan lo mismo pueden atacar de forma muy distinta, con ejemplos reales de la FEB.
+descripcionSeo: Qué es el ritmo o pace, cómo se calcula y por qué dos equipos que anotan lo mismo pueden atacar de forma muy distinta. Ejemplos de la FEB.
+familia: metricas
+orden: 1
 fecha: 2026-08-03
 temporada: "2025/26"
 ---

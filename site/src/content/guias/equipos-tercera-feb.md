@@ -1,6 +1,9 @@
 ---
 titulo: Los 138 equipos de la Tercera FEB 2026/27
 descripcion: Composición completa de la Tercera FEB para la temporada 2026/27 - las cinco conferencias con sus diez subgrupos tras el sorteo, el calendario de la liga regular y cómo se reparten ascensos y descensos.
+descripcionSeo: "Los 138 equipos de la Tercera FEB 2026/27: las cinco conferencias con sus diez subgrupos, el calendario y el reparto de ascensos."
+familia: equipos
+orden: 3
 fecha: 2026-07-23
 actualizado: 2026-07-30
 ---
@@ -153,5 +156,5 @@ Está explicado en la guía de
 ---
 
 La composición del resto de categorías:
-[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27/)
-y [los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27/).
+[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb/)
+y [los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb/).

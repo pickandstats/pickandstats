@@ -1,6 +1,9 @@
 ---
 titulo: Cómo se asciende y se desciende en Primera FEB
 descripcion: Las dos plazas de ascenso a la Liga Endesa, el ascenso directo del campeón, el play-off al mejor de cinco, la Final Four y los tres descensos a Segunda FEB, según las bases de la temporada 2026/27.
+descripcionSeo: Las dos plazas de ascenso a la Liga Endesa, el play-off al mejor de cinco y los tres descensos a Segunda FEB, según las bases de 2026/27.
+familia: competicion
+orden: 1
 fecha: 2026-07-22
 actualizado: 2026-07-23
 ---

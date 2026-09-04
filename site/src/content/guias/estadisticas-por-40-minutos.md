@@ -1,6 +1,9 @@
 ---
 titulo: Las estadísticas por 40 minutos, cómo comparar a un suplente con un titular
 descripcion: Qué son las estadísticas per-40, por qué revelan a jugadores que las medias por partido esconden y qué límites tienen, con ejemplos reales de la Tercera FEB.
+descripcionSeo: Qué son las estadísticas per-40, por qué revelan a jugadores que las medias por partido esconden y qué límites tienen. Ejemplos de Tercera FEB.
+familia: metricas
+orden: 6
 fecha: 2026-08-03
 actualizado: 2026-08-09
 temporada: "2025/26"

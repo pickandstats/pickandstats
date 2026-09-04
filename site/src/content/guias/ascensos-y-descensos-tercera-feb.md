@@ -1,6 +1,9 @@
 ---
 titulo: Cómo funcionan los ascensos y descensos en la Tercera FEB
 descripcion: Guía completa de la Tercera FEB - las fases finales, los dos caminos hacia el ascenso, las seis plazas en juego y cómo funcionan los descensos a Primera División Masculina.
+descripcionSeo: Las fases finales de la Tercera FEB, los dos caminos hacia el ascenso, las seis plazas en juego y cómo funcionan los descensos.
+familia: competicion
+orden: 3
 fecha: 2026-07-20
 actualizado: 2026-07-22
 ---

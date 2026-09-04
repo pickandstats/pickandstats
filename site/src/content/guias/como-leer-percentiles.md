@@ -1,6 +1,9 @@
 ---
 titulo: Cómo leer los percentiles, la forma más rápida de valorar a un jugador
 descripcion: Qué es un percentil, por qué compara mejor que las medias, cómo se leen las dos referencias (nacional y grupo) y qué límites tiene, con ejemplos reales de la Tercera FEB.
+descripcionSeo: Qué es un percentil, por qué compara mejor que las medias y cómo leer las dos referencias, nacional y grupo, con ejemplos de la Tercera FEB.
+familia: metricas
+orden: 7
 fecha: 2026-08-03
 temporada: "2025/26"
 ---

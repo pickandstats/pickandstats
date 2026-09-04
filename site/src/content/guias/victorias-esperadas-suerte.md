@@ -1,6 +1,9 @@
 ---
 titulo: Victorias esperadas y suerte, cuántos partidos merecía ganar tu equipo
 descripcion: Qué son las victorias esperadas, cómo se calculan con la fórmula pitagórica y por qué revelan si un equipo ha tenido suerte o se le ha escapado la temporada, con ejemplos de la Primera FEB.
+descripcionSeo: Qué son las victorias esperadas, cómo se calculan con la fórmula pitagórica y por qué revelan si un equipo ha tenido suerte. Primera FEB.
+familia: metricas
+orden: 4
 fecha: 2026-07-27
 temporada: "2025/26"
 ---

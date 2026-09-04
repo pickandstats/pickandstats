@@ -1,6 +1,9 @@
 ---
 titulo: Los Four Factors, las cuatro cosas que deciden un partido de baloncesto
 descripcion: Qué son los Four Factors, cómo se calculan y cómo leerlos, explicados con ejemplos reales de la Primera FEB. La forma más rápida de entender por qué gana un equipo.
+descripcionSeo: Qué son los Four Factors, cómo se calculan y cómo leerlos para entender por qué gana un equipo, con ejemplos reales de la Primera FEB.
+familia: metricas
+orden: 3
 fecha: 2026-07-27
 temporada: "2025/26"
 ---
@@ -156,4 +159,4 @@ en la ficha individual de cada equipo.
 
 Estas otras guías completan la lectura:
 [cómo se asciende y se desciende en Primera FEB](/guias/ascensos-y-descensos-primera-feb/)
-y [los 18 equipos de la Primera FEB 2026/27](/guias/equipos-primera-feb-2026-27/).
+y [los 18 equipos de la Primera FEB 2026/27](/guias/equipos-primera-feb/).

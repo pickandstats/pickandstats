@@ -1,0 +1,17 @@
+---
+// La guía del censo pasó a una URL sin temporada: se reescribe cada año y la
+// dirección no cambia. Esta página mantiene viva la URL antigua, ya indexada.
+const destino = '/guias/equipos-tercera-feb/';
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="canonical" href={`https://pickandstats.es${destino}`} />
+    <meta http-equiv="refresh" content={`0; url=${destino}`} />
+    <title>Equipos de la Tercera FEB · Pick&Stats</title>
+  </head>
+  <body>
+    <p>Esta guía se ha movido: <a href={destino}>los equipos de la Tercera FEB</a>.</p>
+  </body>
+</html>

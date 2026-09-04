@@ -1,6 +1,9 @@
 ---
 titulo: Los 28 equipos de la Segunda FEB 2026/27
 descripcion: Composición completa de la Segunda FEB para la temporada 2026/27 - los dos grupos de catorce equipos, los seis ascendidos desde Tercera FEB con su vía de ascenso, y quién baja desde Primera.
+descripcionSeo: "Los 28 equipos de la Segunda FEB 2026/27: los dos grupos de catorce, los seis ascendidos desde Tercera y quién baja desde Primera."
+familia: equipos
+orden: 2
 fecha: 2026-07-23
 ---
 
@@ -109,5 +112,5 @@ Está explicado paso a paso en la guía de
 ---
 
 La composición del resto de categorías:
-[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb-2026-27/)
-y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27/).
+[los 18 equipos de la Primera FEB](/guias/equipos-primera-feb/)
+y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb/).

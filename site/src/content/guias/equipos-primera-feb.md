@@ -1,6 +1,9 @@
 ---
 titulo: Los 18 equipos de la Primera FEB 2026/27
 descripcion: Composición completa de la Primera FEB para la temporada 2026/27 - los 18 participantes, quién llega desde la Liga Endesa, quién asciende desde Segunda FEB y quién descendió.
+descripcionSeo: "Los 18 equipos de la Primera FEB 2026/27: quién llega desde la Liga Endesa, quién asciende desde Segunda FEB y quién descendió."
+familia: equipos
+orden: 1
 fecha: 2026-07-23
 ---
 
@@ -63,5 +66,5 @@ El detalle del formato está en la guía de
 ---
 
 La composición del resto de categorías:
-[los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb-2026-27/)
-y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb-2026-27/).
+[los 28 equipos de la Segunda FEB](/guias/equipos-segunda-feb/)
+y [los 138 equipos de la Tercera FEB](/guias/equipos-tercera-feb/).

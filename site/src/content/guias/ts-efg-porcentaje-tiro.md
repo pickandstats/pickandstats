@@ -1,6 +1,9 @@
 ---
 titulo: TS% y eFG%, por qué el porcentaje de tiro engaña
 descripcion: Qué miden el porcentaje efectivo de tiro y la eficiencia real, en qué se diferencian y por qué un jugador con buen porcentaje de dos puede ser ineficiente, con ejemplos de la Tercera FEB.
+descripcionSeo: Qué miden el porcentaje efectivo de tiro y la eficiencia real, en qué se diferencian y por qué el T2% engaña. Ejemplos de la Tercera FEB.
+familia: metricas
+orden: 5
 fecha: 2026-08-09
 temporada: "2025/26"
 ---

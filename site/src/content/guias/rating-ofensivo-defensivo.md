@@ -1,6 +1,9 @@
 ---
 titulo: Rating ofensivo y defensivo, la forma correcta de medir a un equipo
 descripcion: Qué son el rating ofensivo, el defensivo y el neto, por qué los puntos por partido engañan y cómo leerlos, con ejemplos reales de la Primera FEB.
+descripcionSeo: Qué son el rating ofensivo, el defensivo y el neto, por qué los puntos por partido engañan y cómo leerlos, con ejemplos de la Primera FEB.
+familia: metricas
+orden: 2
 fecha: 2026-07-27
 temporada: "2025/26"
 ---
