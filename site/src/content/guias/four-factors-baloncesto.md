@@ -2,6 +2,7 @@
 titulo: Los Four Factors, las cuatro cosas que deciden un partido de baloncesto
 descripcion: Qué son los Four Factors, cómo se calculan y cómo leerlos, explicados con ejemplos reales de la Primera FEB. La forma más rápida de entender por qué gana un equipo.
 fecha: 2026-07-27
+temporada: "2025/26"
 ---
 
 Dos equipos terminan la liga regular con el mismo balance, 28 victorias y 4 derrotas.
@@ -122,19 +123,6 @@ Distintas webs publican números diferentes para la misma métrica, porque no to
 usan la misma convención. Estas son las que aplica Pick&Stats, para que puedas
 comprobar los cálculos o compararlos con otra fuente sabiendo dónde está la diferencia.
 
-**Posesiones.** Todo lo demás se apoya en esta estimación, porque el acta no registra
-las posesiones directamente:
-
-```
-Posesiones = Tiros de campo intentados − Rebotes ofensivos + Pérdidas + 0,44 × Tiros libres intentados
-```
-
-Ese 0,44 estima qué proporción de tiros libres termina realmente una posesión. No todos
-lo hacen: un tiro adicional tras canasta, o un técnico, no consumen posesión completa.
-Es el coeficiente más usado, aunque algunas implementaciones prefieren 0,475.
-
-**Los cuatro factores:**
-
 ```
 eFG%    = 100 × (Tiros de campo anotados + 0,5 × Triples anotados) / Tiros de campo intentados
 TOV%    = 100 × Pérdidas / Posesiones
@@ -142,23 +130,21 @@ ORB%    = 100 × Rebotes ofensivos / (Rebotes ofensivos propios + Rebotes defens
 FT Rate = 100 × Tiros libres intentados / Tiros de campo intentados
 ```
 
-Dos advertencias sobre estas dos últimas. El **ORB%** necesita los rebotes defensivos
+El **TOV%** se apoya en una estimación de las posesiones, porque el acta no las
+registra: el cálculo está en
+[la guía del ritmo de juego](/guias/ritmo-de-juego-pace/#posesiones).
+
+Dos advertencias sobre los dos últimos. El **ORB%** necesita los rebotes defensivos
 del rival, así que se calcula partido a partido y se agrega, no sobre totales sueltos.
 Y el **FT Rate** usa los tiros libres **intentados**, que es la convención más extendida:
 mide la capacidad de llegar a la línea, no el acierto una vez allí. La formulación original
 de Dean Oliver usaba los anotados, así que algunas fuentes publican cifras más bajas.
 
-**Las métricas de contexto** que aparecen junto a los factores:
-
-```
-Ritmo (Pace)      = Posesiones / Partidos jugados
-Rating ofensivo   = 100 × Puntos a favor / Posesiones
-Rating defensivo  = 100 × Puntos en contra / Posesiones del rival
-Rating neto       = Rating ofensivo − Rating defensivo
-```
-
-Los ratings se expresan por cada 100 posesiones, que es lo que permite comparar equipos
-de ritmos distintos con la misma vara.
+Las **métricas de contexto** que acompañan a los factores tienen guía propia, con sus
+fórmulas: [el ritmo de juego](/guias/ritmo-de-juego-pace/) y
+[el rating ofensivo, defensivo y neto](/guias/rating-ofensivo-defensivo/). El **eFG%** se
+desarrolla en detalle, junto a la eficiencia real de tiro, en
+[la guía de TS% y eFG%](/guias/ts-efg-porcentaje-tiro/).
 
 ## Dónde verlos
 

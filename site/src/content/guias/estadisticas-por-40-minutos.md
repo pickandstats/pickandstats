@@ -3,6 +3,7 @@ titulo: Las estadísticas por 40 minutos, cómo comparar a un suplente con un ti
 descripcion: Qué son las estadísticas per-40, por qué revelan a jugadores que las medias por partido esconden y qué límites tienen, con ejemplos reales de la Tercera FEB.
 fecha: 2026-08-03
 actualizado: 2026-08-09
+temporada: "2025/26"
 ---
 
 En la Tercera FEB 2025/26, Arturo Seara promedió 20,1 puntos por partido y Juan

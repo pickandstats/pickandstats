@@ -2,6 +2,7 @@
 titulo: El ritmo de juego, por qué los puntos por partido engañan
 descripcion: Qué es el ritmo o pace en baloncesto, cómo se calcula y por qué dos equipos que anotan lo mismo pueden atacar de forma muy distinta, con ejemplos reales de la FEB.
 fecha: 2026-08-03
+temporada: "2025/26"
 ---
 
 En la Primera FEB 2025/26, el Súper Agropal Palencia y el Caja Rural CB Zamora
@@ -86,10 +87,15 @@ uno de Primera con 82 — probablemente al revés.
 
 Compara siempre dentro de la misma categoría y temporada.
 
-## Cómo se calcula
+<span id="posesiones"></span>
 
-El acta de un partido no registra las posesiones, así que hay que estimarlas. La
-fórmula estándar cuenta las formas en que un ataque puede terminar:
+## Cómo se estiman las posesiones
+
+El acta de un partido no registra las posesiones, así que hay que estimarlas. Es el
+cálculo del que dependen casi todas las métricas avanzadas de esta web —los ratings,
+las pérdidas por posesión, la eficiencia de tiro—, así que vive en este apartado y el
+resto de guías enlazan aquí. La fórmula estándar cuenta las formas en que un ataque
+puede terminar:
 
 ```
 Posesiones = Tiros de campo intentados − Rebotes ofensivos + Pérdidas + 0,44 × Tiros libres intentados

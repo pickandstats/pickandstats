@@ -2,6 +2,7 @@
 titulo: Rating ofensivo y defensivo, la forma correcta de medir a un equipo
 descripcion: Qué son el rating ofensivo, el defensivo y el neto, por qué los puntos por partido engañan y cómo leerlos, con ejemplos reales de la Primera FEB.
 fecha: 2026-07-27
+temporada: "2025/26"
 ---
 
 Dos equipos de la Primera FEB 2025/26 anotaron exactamente lo mismo: 83,6 puntos por
@@ -88,16 +89,11 @@ sus rivales reales, no respecto a una referencia abstracta.
 
 ## Las fórmulas
 
-Todo se apoya en una estimación de las posesiones, porque el acta no las registra:
+Todo se apoya en una estimación de las posesiones, porque el acta no las registra. El
+cálculo, con el porqué de cada término, está en
+[la guía del ritmo de juego](/guias/ritmo-de-juego-pace/#posesiones). A partir de ahí:
 
 ```
-Posesiones = Tiros de campo intentados − Rebotes ofensivos + Pérdidas + 0,44 × Tiros libres intentados
-```
-
-Y a partir de ahí:
-
-```
-Ritmo (Pace)      = Posesiones / Partidos jugados
 Rating ofensivo   = 100 × Puntos a favor / Posesiones propias
 Rating defensivo  = 100 × Puntos en contra / Posesiones del rival
 Rating neto       = Rating ofensivo − Rating defensivo

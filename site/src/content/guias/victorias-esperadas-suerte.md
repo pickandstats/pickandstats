@@ -2,6 +2,7 @@
 titulo: Victorias esperadas y suerte, cuántos partidos merecía ganar tu equipo
 descripcion: Qué son las victorias esperadas, cómo se calculan con la fórmula pitagórica y por qué revelan si un equipo ha tenido suerte o se le ha escapado la temporada, con ejemplos de la Primera FEB.
 fecha: 2026-07-27
+temporada: "2025/26"
 ---
 
 Un equipo de la Primera FEB 2025/26 terminó con 19 victorias y 13 derrotas, séptimo,

@@ -31,12 +31,29 @@ const actualizadoTexto = guia.data.actualizado ? comoTexto(guia.data.actualizado
       Publicado el {fechaTexto}
       {actualizadoTexto && <> · <strong>Actualizado el {actualizadoTexto}</strong></>}
     </p>
+    {guia.data.temporada && (
+      <p class="datos">
+        Los ejemplos de esta guía usan datos de la temporada <strong>{guia.data.temporada}</strong>.
+        Las cifras no se refrescan cada año: ilustran cómo se lee la métrica, no el estado
+        de la temporada en curso.
+      </p>
+    )}
     <Content />
   </article>
 
   <style>
     .volver { font-size: 14px; }
     .meta { color: var(--tinta-suave); font-size: 14px; margin-top: -8px; }
+    .datos {
+      color: var(--tinta-suave);
+      font-size: 14px;
+      line-height: 1.6;
+      background: var(--panel);
+      border-left: 3px solid var(--linea);
+      border-radius: 0 var(--radio) var(--radio) 0;
+      padding: 10px 14px;
+      margin: 18px 0 24px;
+    }
     article :global(h2) { margin-top: 32px; }
     article :global(ul) { padding-left: 20px; }
     article :global(li) { margin-bottom: 6px; }

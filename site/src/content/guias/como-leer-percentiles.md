@@ -2,6 +2,7 @@
 titulo: Cómo leer los percentiles, la forma más rápida de valorar a un jugador
 descripcion: Qué es un percentil, por qué compara mejor que las medias, cómo se leen las dos referencias (nacional y grupo) y qué límites tiene, con ejemplos reales de la Tercera FEB.
 fecha: 2026-08-03
+temporada: "2025/26"
 ---
 
 Un jugador de la Tercera FEB promedia 7,9 puntos por partido. ¿Es bueno? ¿Es malo?

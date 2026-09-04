@@ -2,6 +2,7 @@
 titulo: TS% y eFG%, por qué el porcentaje de tiro engaña
 descripcion: Qué miden el porcentaje efectivo de tiro y la eficiencia real, en qué se diferencian y por qué un jugador con buen porcentaje de dos puede ser ineficiente, con ejemplos de la Tercera FEB.
 fecha: 2026-08-09
+temporada: "2025/26"
 ---
 
 Un jugador de la Tercera FEB 2025/26 acertó el **56% de sus tiros de dos**. Suena
@@ -49,7 +50,10 @@ TS% = 100 × Puntos / (2 × (Tiros de campo intentados + 0,44 × Tiros libres in
 ```
 
 Ese 0,44 estima cuántas oportunidades de tiro representan los tiros libres, porque no
-todos consumen una posesión completa —un tiro adicional tras canasta, por ejemplo.
+todos consumen una posesión completa —un tiro adicional tras canasta, por ejemplo. Es
+el mismo coeficiente que aparece en
+[la estimación de posesiones](/guias/ritmo-de-juego-pace/#posesiones), pero aplicado a
+una cuenta distinta: allí se estiman posesiones, aquí oportunidades de tiro.
 
 La diferencia entre eFG y TS mide, en la práctica, **cuánto aporta un jugador desde la
 línea de personal**. Y puede ser enorme: **José Luis Sáez** tuvo un eFG de 42,4, malo,
