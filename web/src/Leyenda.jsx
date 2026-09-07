@@ -98,6 +98,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Análisis por cuartos',
+    guia: { url: '/guias/analisis-por-cuartos', texto: 'Guía: el análisis por cuartos' },
     metricas: [
       ['Rendimiento por cuarto (jugador)', 'Producción media (puntos, valoración) en cada cuarto a lo largo de la temporada. Revela si un jugador arranca fuerte, crece con el partido o baja en los tramos finales.'],
       ['Momentos decisivos (clutch)', 'Puntos y asistencias en el último cuarto y prórrogas de los partidos que llegaron al último periodo con 8 puntos de diferencia o menos: los que aún estaban en juego. Mide quién aparece cuando el partido se decide, anotando o generando. Es una métrica de muestra pequeña —se indica el número de partidos ajustados—: con pocos, tómala como orientativa.'],
