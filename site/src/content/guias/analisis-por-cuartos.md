@@ -42,12 +42,12 @@ Antes de leer a un equipo conviene saber contra qué se le compara. En la Primer
 
 | | Q1 | Q2 | Q3 | Q4 |
 |---|---|---|---|---|
-| Rating ofensivo | 107,3 | 107,4 | 107,2 | 107,1 |
-| Ritmo (posesiones) | 18,8 | 18,8 | 18,5 | 18,8 |
+| Rating ofensivo | 107,3 | 107,4 | 107,0 | 107,0 |
+| Ritmo (posesiones) | 18,8 | 18,8 | 18,6 | 18,6 |
 
-**No existe un cuarto donde se anote más.** La eficiencia media es la misma en los
-cuatro, y el ritmo apenas baja en el tercero. La idea de que los partidos "se abren" al
-final, o de que el primer cuarto es de tanteo, no aparece en los datos agregados.
+**No existe un cuarto donde se anote más.** La eficiencia media es prácticamente la
+misma en los cuatro, y el ritmo apenas se mueve. La idea de que los partidos "se abren"
+al final, o de que el primer cuarto es de tanteo, no aparece en los datos agregados.
 
 Eso tiene una consecuencia útil: cuando el perfil de un equipo no es plano, la
 desviación es suya. No es un efecto del formato del partido.
@@ -62,7 +62,7 @@ cuartos. En toda la temporada 2025/26 solo lo dispararon cuatro de diecisiete:
 |---|---|---|---|---|---|
 | Caja Rural CB Zamora | −9,7 | −13,4 | +2,7 | +6,1 | **+9,7** |
 | Alimerka Oviedo | +3,2 | +0,9 | +6,0 | +15,1 | **+8,8** |
-| Flexicar Fuenlabrada | −1,9 | −4,4 | +9,8 | −7,1 | **−6,2** |
+| Flexicar Fuenlabrada | −1,9 | −4,4 | +8,8 | −8,4 | **−6,9** |
 | Inveready Gipuzkoa | +12,5 | +9,8 | +6,4 | +0,6 | **−6,7** |
 
 Los otros trece son razonablemente los mismos en los cuatro cuartos, **y eso también es
@@ -70,8 +70,8 @@ información**: el Monbus Obradoiro, campeón con 28-4, dominó de principio a f
 +23,0, +17,4 y +25,0) sin ningún tramo débil. Un equipo plano y muy bueno no tiene un
 problema de cierre que arreglar.
 
-El caso del Fuenlabrada merece una mirada aparte: un tercer cuarto excelente (+9,8) y un
-último cuarto de los peores de la liga (−7,1). Un perfil así apunta a algo concreto
+El caso del Fuenlabrada merece una mirada aparte: un tercer cuarto excelente (+8,8) y un
+último cuarto de los peores de la liga (−8,4). Un perfil así apunta a algo concreto
 —rotaciones, físico, gestión de las últimas posesiones— que la cifra de temporada,
 −0,9 de neto, escondía por completo.
 
@@ -85,7 +85,7 @@ de quién crece con el partido.
 último. Su equipo era el que más subía al final de los partidos, y la curva de su máximo
 anotador —16,2 puntos por partido— cuenta la misma historia desde dentro. **Jayson
 Granger**, del
-Movistar Estudiantes, dibuja una curva parecida: 2,6, 3,0, 3,2 y 4,2.
+Movistar Estudiantes, dibuja una curva parecida: 2,6, 3,0, 3,2 y 4,3.
 
 ## Momentos decisivos: el filtro que hace falta
 
@@ -125,11 +125,12 @@ cuánto tiempo estuvo el jugador en pista en ese tramo. Para comparar producció
 igualdad de tiempo están las
 [estadísticas por 40 minutos](/guias/estadisticas-por-40-minutos/).
 
-**El marcador también manda en el equipo.** Los dos peores equipos de la categoría,
-Grupo Ureta Tizona Burgos (10-22) y Grupo Caesa Seguros FC Cartagena (8-24), fueron los
-que más aceleraron en el último cuarto: de 19,4 a 21,0 posesiones el primero, de 18,4 a
-20,9 el segundo. No es una elección de estilo, es ir por detrás — faltas, reloj parado y
-prisa. Un ritmo alto en el último cuarto suele significar que se va perdiendo.
+**El marcador también condiciona al equipo, aunque menos de lo que parece.** Es habitual
+oír que los equipos que van por detrás disparan el ritmo del último cuarto, entre faltas
+y reloj parado. En la Primera FEB 2025/26 el efecto existe pero es pequeño: **ningún
+equipo varía más de 0,7 posesiones** entre su último cuarto y la media de los tres
+primeros, y el que más acelera —Hestia Menorca— acabó en mitad de tabla, no colista.
+Conviene no leer un ritmo alto en el último cuarto como prueba de que se va perdiendo.
 
 **No ajusta por rival.** Un cuarto se juega contra quien toca, y ni el rendimiento por
 cuarto ni los momentos decisivos corrigen la calidad del oponente.
