@@ -65,7 +65,7 @@ describe un estilo, no una calidad**.
 En la Primera FEB 2025/26, los dos equipos que acabaron primeros —Monbus Obradoiro
 (76,8) y Leyma Coruña (77,3)— estaban entre los más rápidos. Pero el tercero,
 Palencia (74,4), estaba por debajo de la media. Y el equipo más lento, Menorca,
-acabó séptimo, mientras que el más rápido, Zamora, fue décimo.
+acabó octavo, mientras que el más rápido, Zamora, fue décimo.
 
 Se gana corriendo y se gana pausando. Lo que no se puede es **juzgar un ataque por
 sus puntos** sin saber a qué ritmo se consiguieron.
