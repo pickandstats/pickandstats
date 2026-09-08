@@ -30,6 +30,8 @@ const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
+// campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
+const concentrados = {};
 const LIMITE_INTENTOS = 4;
 
 for (const f of ficheros) {
@@ -60,6 +62,28 @@ for (const f of ficheros) {
       if (tot < 0 || tot > 60) valoresRaros++;
     }
   }
+
+  // Campos NO acumulativos disfrazados de acumulativos. Si un campo trae todo su
+  // valor en Q1 y cero en el resto, la fuente lo esta publicando como TOTAL DE
+  // PARTIDO repetido en cada corte, y la resta de cortes lo vuelca entero en Q1.
+  // Es exactamente lo que pasaba con trasPerdida (8/9/2026): el dato parecia por
+  // periodo, se pintaba por periodo, y era basura en el 96% de los partidos.
+  // NO bloquea: es una propiedad del acta de la FEB, no un fallo del pipeline.
+  // Pero tiene que verse, porque el siguiente campo que la FEB publique asi
+  // entraria igual de silencioso.
+  if (actaFiable && a.contextoPorCuarto && a.contextoPorCuarto.length >= 4) {
+    const qs = a.contextoPorCuarto.slice(0, 4);
+    const campos = new Set();
+    qs.forEach(q => q && Object.keys(q).forEach(c => campos.add(c)));
+    for (const c of campos) {
+      const tot = i => { const q = qs[i]; return (q && q[c]) ? (q[c].local || 0) + (q[c].visitante || 0) : 0; };
+      const q1 = tot(0), resto = tot(1) + tot(2) + tot(3);
+      if (q1 + resto === 0) continue;               // sin datos de ese campo: no cuenta
+      if (!concentrados[c]) concentrados[c] = { q1solo: 0, conDatos: 0 };
+      concentrados[c].conDatos++;
+      if (resto === 0 && q1 > 0) concentrados[c].q1solo++;
+    }
+  }
 }
 
 const mediaPintura = nPintura ? (sumPintura / nPintura).toFixed(1) : '?';
@@ -79,6 +103,26 @@ console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
 console.log('');
+console.log('Contexto concentrado en Q1 (senal de "total de partido", no por periodo):');
+const sospechosos = [];
+const entradas = Object.entries(concentrados);
+if (!entradas.length) console.log('  (sin contexto que comprobar)');
+for (const [c, d] of entradas) {
+  const pct = d.conDatos ? (100 * d.q1solo / d.conDatos) : 0;
+  if (pct >= 50) sospechosos.push(`${c} (${pct.toFixed(0)}%)`);
+  console.log(`  ${c.padEnd(20)} ${d.q1solo}/${d.conDatos} actas = ${pct.toFixed(1)}%${pct >= 50 ? '  <-- REVISAR' : ''}`);
+}
+console.log('');
+
+// Aviso que NO bloquea: un campo asi no impide generar, pero no se puede pintar
+// por cuarto. La accion es sacarlo de CAMPOS_ACUM en extraer-acta.js y del
+// contexto por cuarto, como se hizo con trasPerdida.
+if (sospechosos.length) {
+  console.log('AVISO (no bloquea): ' + sospechosos.join(', ') + ' llegan concentrados en Q1.');
+  console.log('  -> La FEB publica ese campo como total de partido, no por periodo.');
+  console.log('     Sacarlo de CAMPOS_ACUM en extraer-acta.js y del contexto por cuarto.');
+  console.log('');
+}
 
 // Veredicto
 const problemas = [];

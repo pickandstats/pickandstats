@@ -25,7 +25,7 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
   const [cuartosSel, setCuartosSel] = useState([0, 1, 2, 3]);
   const CAMPOS_CTX = [
     ['contraataque', 'Contraataque'], ['pintura', 'Pintura'],
-    ['segundaOportunidad', '2ª oportunidad'], ['trasPerdida', 'Tras pérdida'], ['banquillo', 'Banquillo'],
+    ['segundaOportunidad', '2ª oportunidad'], ['banquillo', 'Banquillo'],
   ];
   const ctxSumado = useMemo(() => {
     const acc = {};
@@ -333,7 +333,8 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
               </div>
               <p className="pie" style={{ marginTop: 4 }}>
                 Puntos de cada tipo en los cuartos seleccionados: contraataque, en la pintura, de segunda
-                oportunidad, tras pérdida del rival y desde el banquillo.
+                oportunidad y desde el banquillo. Los puntos tras pérdida del rival no aparecen aquí: la
+                FEB solo los publica como total de partido, no por periodo.
               </p>
             </>
           )}

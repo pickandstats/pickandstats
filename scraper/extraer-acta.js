@@ -222,7 +222,12 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
   // ACUMULATIVOS (puntos que se suman). NO maximaVentaja ni mejorRacha, que son
   // records (no acumulables): restarlos daria datos falsos. Esos quedan solo en
   // el contexto global del acta.
-  const CAMPOS_ACUM = ['segundaOportunidad', 'contraataque', 'pintura', 'trasPerdida', 'banquillo'];
+  // trasPerdida NO esta aqui a proposito. La FEB lo publica como TOTAL DE PARTIDO
+  // repetido en cada acta parcial (verificado: 96% de los equipos-partido de
+  // primerafeb 2025), asi que la resta de cortes daria todo el valor en Q1 y cero
+  // en el resto. El total sigue siendo correcto y vive en el contexto global del
+  // acta (`contexto.trasPerdida`); lo que no se puede reconstruir es su reparto.
+  const CAMPOS_ACUM = ['segundaOportunidad', 'contraataque', 'pintura', 'banquillo'];
   const contextoPorCuarto = cortes.map((corte, ci) => {
     if (!corte || !corte.contexto) return null;
     const prev = (ci > 0 && cortes[ci - 1]) ? cortes[ci - 1].contexto : null;

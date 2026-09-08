@@ -78,9 +78,10 @@ function initEq(id, nombre) {
     equipoId: id, equipo: nombre,
     porCuarto: [1,2,3,4].map(() => ({
       pj: 0, pf: 0, pc: 0, pos: 0, posRival: 0,
-      // contexto acumulado: a favor (lo que genera) y en contra (lo que concede)
-      ctxFavor: { contraataque: 0, pintura: 0, segundaOportunidad: 0, trasPerdida: 0, banquillo: 0 },
-      ctxContra: { contraataque: 0, pintura: 0, segundaOportunidad: 0, trasPerdida: 0, banquillo: 0 },
+      // contexto acumulado: a favor (lo que genera) y en contra (lo que concede).
+      // Sin trasPerdida: la FEB no lo publica por periodo (ver extraer-acta.js).
+      ctxFavor: { contraataque: 0, pintura: 0, segundaOportunidad: 0, banquillo: 0 },
+      ctxContra: { contraataque: 0, pintura: 0, segundaOportunidad: 0, banquillo: 0 },
     })),
   };
   return equipos[id];
@@ -100,7 +101,16 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
   // Esto SI incluye las fases: es dato por-partido, la ficha de playoff lo usa.
   // Va antes de cualquier otra cosa porque las fases no tienen boxscore raw en
   // esta ruta (viven en _fases/) y romperian puenteDorsalId.
-  if (acta.contextoPorCuarto) contextoPartidos[acta.partido] = acta.contextoPorCuarto;
+  // Se limpia trasPerdida al vuelo: las actas ya extraidas lo siguen trayendo, pero
+  // no es un dato por periodo (ver extraer-acta.js). Asi la ficha de partido deja de
+  // recibirlo sin esperar a una re-extraccion completa.
+  if (acta.contextoPorCuarto) {
+    contextoPartidos[acta.partido] = acta.contextoPorCuarto.map(q => {
+      if (!q) return q;
+      const { trasPerdida, ...resto } = q;
+      return resto;
+    });
+  }
 
   // A partir de aqui, solo agregados de temporada: excluir las actas de fase
   // para no contaminar las medias por cuarto (criterio: fases en linea aparte).
@@ -146,7 +156,7 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
         if (cx) {
           const ladoP = ei === 0 ? "local" : "visitante";
           const ladoR = ei === 0 ? "visitante" : "local";
-          for (const campo of ["contraataque","pintura","segundaOportunidad","trasPerdida","banquillo"]) {
+          for (const campo of ["contraataque","pintura","segundaOportunidad","banquillo"]) {
             if (cx[campo]) {
               q.ctxFavor[campo] += cx[campo][ladoP] || 0;
               q.ctxContra[campo] += cx[campo][ladoR] || 0;

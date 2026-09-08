@@ -23,7 +23,7 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   const [cuartosSel, setCuartosSel] = useState([0, 1, 2, 3]); // cuartos activos en el selector de contexto
   const CAMPOS_CTX = [
     ['contraataque', 'Contraataque'], ['pintura', 'Pintura'],
-    ['segundaOportunidad', '2ª oportunidad'], ['trasPerdida', 'Tras pérdida'], ['banquillo', 'Banquillo'],
+    ['segundaOportunidad', '2ª oportunidad'], ['banquillo', 'Banquillo'],
   ];
   const ctxSumado = useMemo(() => {
     const acc = { favor: {}, contra: {} };
@@ -246,7 +246,9 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           </div>
           <p className="pie" style={{ marginTop: 4 }}>
             Medias por partido en los cuartos seleccionados. «A favor» es lo que genera el equipo; «en contra», lo que concede al rival.
-            Contraataque, puntos en la pintura, de segunda oportunidad, tras pérdida del rival y desde el banquillo.
+            Contraataque, puntos en la pintura, de segunda oportunidad y desde el banquillo.
+            Los puntos tras pérdida del rival no aparecen aquí: la FEB solo los publica como total de
+            partido, no por periodo.
           </p>
           </>)}
         </div>
