@@ -101,8 +101,8 @@ tiros libres sin ser buen tirador.
 
 Y ninguna de las dos dice **cuánto** tira un jugador. Una eficiencia altísima con
 cinco tiros por partido no es lo mismo que la misma eficiencia asumiendo veinte. Para
-eso está el porcentaje de uso, que se lee junto a estas dos: es el cruce que aparece
-por defecto en el gráfico de dispersión de la aplicación.
+eso está [el porcentaje de uso](/guias/porcentaje-de-uso-usg/), que se lee junto a estas
+dos: es el cruce que aparece por defecto en el gráfico de dispersión de la aplicación.
 
 ## Cómo se relaciona con el resto
 
