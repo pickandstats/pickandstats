@@ -168,6 +168,21 @@ for (const p of partidos) {
 const net = {};
 for (const e of Object.values(equipos))
   net[e.id] = 100 * e.pf / e.pos - 100 * e.pc / e.posRival;
+
+// Recentrado por grupo. La iteracion x <- net + media(rivales) tiene una componente
+// constante de autovalor 1: cada vuelta suma la media del net del grupo a todo el
+// grupo, y tras 50 vueltas el desfase es 50 x esa media (hasta +7,8 y -5,1 en Tercera
+// 2025/26). Sin esto, SRS - net -- que es lo unico que aporta la metrica -- sale con
+// el signo cambiado. Se recentra a la media del net del grupo, no a cero: el ajuste
+// medio por calendario dentro de un grupo tiene que ser cero, porque todos juegan
+// contra todos.
+const idsPorGrupo = {};
+for (const e of Object.values(equipos))
+  (idsPorGrupo[e.grupo] = idsPorGrupo[e.grupo] || []).push(e.id);
+const mediaNetGrupo = {};
+for (const [g, ids] of Object.entries(idsPorGrupo))
+  mediaNetGrupo[g] = ids.reduce((a, id) => a + net[id], 0) / ids.length;
+
 let srs = { ...net };
 for (let iter = 0; iter < 50; iter++) {
   const nuevo = {};
@@ -175,6 +190,10 @@ for (let iter = 0; iter < 50; iter++) {
     const opps = rivalesDe[id] || [];
     const sos = opps.length ? opps.reduce((a, o) => a + srs[o], 0) / opps.length : 0;
     nuevo[id] = net[id] + sos;
+  }
+  for (const [g, ids] of Object.entries(idsPorGrupo)) {
+    const m = ids.reduce((a, id) => a + nuevo[id], 0) / ids.length;
+    for (const id of ids) nuevo[id] -= (m - mediaNetGrupo[g]);
   }
   srs = nuevo;
 }

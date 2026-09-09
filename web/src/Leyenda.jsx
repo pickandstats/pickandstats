@@ -20,7 +20,7 @@ const SECCIONES = [
       ['ORtg (rating ofensivo)', 'Puntos anotados por cada 100 posesiones. Mide la eficiencia del ataque con independencia del ritmo.'],
       ['DRtg (rating defensivo)', 'Puntos encajados por cada 100 posesiones del rival. Cuanto más bajo, mejor.'],
       ['Net Rating', 'ORtg − DRtg. La medida global de dominio de un equipo por 100 posesiones.'],
-      ['SRS (rating ajustado)', 'Net Rating corregido por la dificultad del calendario: suma la media del SRS de los rivales a los que te has enfrentado. Importante: en liga regular no hay partidos entre grupos, así que el SRS solo es comparable entre equipos del mismo grupo.'],
+      ['SRS (rating ajustado)', 'Net Rating corregido por la dificultad del calendario: suma la media del SRS de los rivales a los que te has enfrentado. Con dos límites que conviene tener claros. En liga regular no hay partidos entre grupos, así que solo es comparable entre equipos del mismo grupo. Y con la liga terminada, donde todos han jugado contra todos las mismas veces, el ajuste se reduce a "no te enfrentas a ti mismo" y no altera el orden respecto al Net Rating: el SRS aporta a mitad de temporada, cuando los calendarios todavía están desequilibrados.'],
     ]
   },
   {
