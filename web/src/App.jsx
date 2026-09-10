@@ -192,11 +192,21 @@ export default function App() {
   const compActual = COMPETICIONES.find(c => c.id === competicion) || COMPETICIONES[0];
 
   const verEquipo = equipo => {
-    if (equipo && equipo.idClub && temporada) {
-      navigate(`/${competicion}/${temporada}/equipo/${equipo.idClub}`);
+    if (!equipo) return;
+    // Hay vistas que solo tienen el {id, nombre} que trae el partido, sin idClub ni
+    // estadisticas: la pestaña Partidos es una. Resolver contra los equipos ya
+    // cargados antes de decidir como navegar. Sin esto se caia al camino antiguo
+    // pasando ese objeto incompleto a Equipo.jsx, que lee equipo.pg y revienta con
+    // la pantalla en blanco.
+    const completo = equipo.idClub
+      ? equipo
+      : equipos.find(e => String(e.id) === String(equipo.id));
+    if (!completo) return;   // mejor no navegar que romper la aplicacion
+    if (completo.idClub && temporada) {
+      navigate(`/${competicion}/${temporada}/equipo/${completo.idClub}`);
     } else {
       // sin idClub (dato viejo): comportamiento anterior por estado
-      setEquipoSel(equipo); setJugadorSel(null); setPartidoSel(null); window.scrollTo(0, 0);
+      setEquipoSel(completo); setJugadorSel(null); setPartidoSel(null); window.scrollTo(0, 0);
     }
   };
 
