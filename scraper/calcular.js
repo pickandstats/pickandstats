@@ -61,8 +61,9 @@ if (!fs.existsSync(DIR_RAW)) {
 fs.mkdirSync(DIR_OUT, { recursive: true });
 
 // ---------- carga ----------
-const partidos = [];
-const excluidos = [];
+const partidos = [];      // con boxscore: alimentan TODOS los agregados
+const sinBoxscore = [];   // sin boxscore: solo van a partidos.json, para la clasificacion
+const excluidos = [];     // el resumen que se publica en excluidos.json
 for (const grupo of fs.readdirSync(DIR_RAW)) {
   // Saltar carpetas que no son grupos de partidos: actas (cuartos) y _fases
   // tienen otra estructura y romperian el parseo.
@@ -75,15 +76,23 @@ for (const grupo of fs.readdirSync(DIR_RAW)) {
     const disputado = p.boxscore &&
       p.boxscore.local.length > 0 && p.boxscore.visitante.length > 0;
     if (!disputado) {
+      // Sin boxscore no hay estadisticas, pero SI hay resultado, y el articulo 84
+      // del RGyC exige contarlo en la clasificacion. Por eso este partido queda
+      // fuera de `partidos` (los agregados) pero entra en partidos.json.
+      // El motivo real de que falte el boxscore no se puede saber desde aqui; lo
+      // unico distinguible es la incomparecencia, que la FEB publica como 2-0.
+      const r = String(p.resultado || '').replace(/\s/g, '');
+      const motivo = (r === '0-2' || r === '2-0') ? 'incomparecencia' : 'sin-boxscore';
       excluidos.push({ id: p.id, grupo: p.grupo, jornada: p.jornada,
         partido: `${p.equipoLocal.nombre} vs ${p.equipoVisitante.nombre}`,
-        resultado: p.resultado });
+        resultado: p.resultado, motivo });
+      if (p.resultado) sinBoxscore.push(p);
       continue;
     }
     partidos.push(p);
   }
 }
-console.log(`${COMP_NOMBRE} ${TEMPORADA} — Partidos cargados: ${partidos.length} | Excluidos: ${excluidos.length}`);
+console.log(`${COMP_NOMBRE} ${TEMPORADA} — Partidos cargados: ${partidos.length} | Sin boxscore: ${excluidos.length} (${sinBoxscore.length} con resultado, cuentan en la clasificacion)`);
 
 // ---------- utilidades ----------
 const sum = (arr, fn) => arr.reduce((a, x) => a + fn(x), 0);
@@ -389,12 +398,19 @@ const carreras = Object.values(porLicencia).map(c => {
 const traspasados = carreras.filter(c => c.nEtapas > 1);
 
 // ---------- partidos ----------
-const salidaPartidos = partidos.map(p => ({
-  id: p.id, grupo: p.grupo, jornada: p.jornada,
-  local: p.equipoLocal, visitante: p.equipoVisitante, resultado: p.resultado,
-  cuartos: (p.boxscore && p.boxscore.cuartos) || [],
-  boxscore: p.boxscore ? { local: p.boxscore.local, visitante: p.boxscore.visitante } : null
-}));
+// partidos.json lleva TODO partido con resultado, tenga boxscore o no: la
+// clasificacion los necesita (articulo 84 del RGyC) aunque las estadisticas no
+// puedan usarlos. Los que no tienen boxscore salen con `boxscore: null`, que es
+// lo que ya espera la app.
+const salidaPartidos = [...partidos, ...sinBoxscore].map(p => {
+  const tieneBoxscore = p.boxscore && p.boxscore.local.length > 0 && p.boxscore.visitante.length > 0;
+  return {
+    id: p.id, grupo: p.grupo, jornada: p.jornada,
+    local: p.equipoLocal, visitante: p.equipoVisitante, resultado: p.resultado,
+    cuartos: (p.boxscore && p.boxscore.cuartos) || [],
+    boxscore: tieneBoxscore ? { local: p.boxscore.local, visitante: p.boxscore.visitante } : null
+  };
+});
 
 // ---------- escritura ----------
 // ---------- percentiles de equipos (nacional, dentro de la categoria) ----------
