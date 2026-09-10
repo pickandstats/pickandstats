@@ -3,7 +3,7 @@ titulo: El porcentaje de uso, cuánta responsabilidad ofensiva asume un jugador
 descripcion: Qué mide el USG%, por qué el 20% es la cifra de referencia, cómo se lee cruzado con la eficiencia de tiro y qué no dice sobre la calidad de un jugador. Con ejemplos reales de la Tercera FEB.
 descripcionSeo: Qué mide el porcentaje de uso, cómo se lee junto a la eficiencia de tiro y por qué en la Tercera FEB los que más tiran son también los más eficientes.
 familia: metricas
-orden: 7
+orden: 8
 fecha: 2026-09-08
 temporada: "2025/26"
 ---

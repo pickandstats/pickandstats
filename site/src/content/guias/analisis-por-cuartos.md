@@ -3,7 +3,7 @@ titulo: El análisis por cuartos, en qué tramo del partido gana cada equipo
 descripcion: Qué revela el rendimiento por cuarto de un equipo y de un jugador, qué mide exactamente la métrica de momentos decisivos, y por qué el marcador contamina los promedios del último cuarto. Con ejemplos reales de la Primera FEB.
 descripcionSeo: Cómo leer el rendimiento por cuarto de equipos y jugadores, qué miden los momentos decisivos y por qué el marcador contamina los promedios.
 familia: metricas
-orden: 5
+orden: 6
 fecha: 2026-09-04
 temporada: "2025/26"
 ---
