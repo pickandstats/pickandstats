@@ -46,16 +46,24 @@ function partidosJugados(compNombre, temporada) {
 (async () => {
   const conflictos = [];   // temporada nueva ya empezada + FEB en la anterior
   const enPretemporada = []; // discrepancia pero sin partidos aun: normal
+  const fallidas = [];     // deteccion caida (red, HTML cambiado): no se pudo comprobar
 
-  for (const g of Object.keys(CFG.COMPETICIONES)) {
+  const categorias = Object.keys(CFG.COMPETICIONES);
+  for (const g of categorias) {
     const nombre = CFG.COMPETICIONES[g];
     let r;
     try {
+      // Gancho de prueba, solo para forzar el caso "las tres caidas" a mano:
+      // FORZAR_FALLO_CANARIO=1 node scraper/comprobar-temporada.js
+      if (process.env.FORZAR_FALLO_CANARIO) throw new Error('fallo forzado (prueba)');
       r = await detectar(g);
     } catch (e) {
-      // Un fallo de deteccion (red, HTML cambiado) NO tumba el canario: su
-      // trabajo es la transicion de temporada, no la disponibilidad de la FEB.
+      // Un fallo de deteccion (red, HTML cambiado) no dispara el conflicto de
+      // transicion (ese es otro juicio), pero TAMPOCO puede colar como "sin
+      // discrepancias": si fallan todas, el canario no ha comprobado nada y
+      // decirlo seria peor que quedarse callado. Se cuenta y se juzga al final.
       console.log(`${nombre.padEnd(12)} no se pudo detectar (${e.message}) — se omite`);
+      fallidas.push({ nombre, error: e.message });
       continue;
     }
 
@@ -93,10 +101,34 @@ function partidosJugados(compNombre, temporada) {
     process.exit(1);
   }
 
+  if (fallidas.length === categorias.length) {
+    // Las tres cayeron: el canario no ha podido hacer su trabajo. Callarse aqui
+    // seria afirmar una salud que no se ha verificado — justo el desastre que
+    // existe para evitar, y en plena ventana de transicion no puede pasar por
+    // verde. SIN continue-on-error en el workflow: esto bloquea el pipeline.
+    console.error('❌ NO SE HA PODIDO COMPROBAR NINGUNA CATEGORIA.');
+    console.error('');
+    console.error('Las tres detecciones fallaron (red caida, o la FEB cambio el HTML que');
+    console.error('parseamos). El canario de transicion de temporada no ha verificado nada,');
+    console.error('asi que no se puede afirmar que la temporada seleccionada siga siendo la');
+    console.error('vigente. Revisalo antes de fiarte del resto del pipeline.');
+    console.error('');
+    fallidas.forEach(f => console.error(`  · ${f.nombre}: ${f.error}`));
+    process.exit(1);
+  }
+
+  if (fallidas.length) {
+    console.log('⚠ ' + fallidas.length + ' de ' + categorias.length + ' categoria(s) sin comprobar:');
+    fallidas.forEach(f => console.log(`  · ${f.nombre}: ${f.error}`));
+    console.log('No se bloquea (las demas si se comprobaron), pero esto no es "sin discrepancias".');
+  }
+
   if (enPretemporada.length) {
     console.log('Discrepancia de pretemporada (temporada nueva anunciada, sin partidos aun): normal.');
     console.log('No se bloquea. El canario disparara cuando la ' + enPretemporada[0].maxima + ' tenga resultados.');
-  } else {
+  } else if (!fallidas.length) {
+    // Solo se afirma "sin discrepancias" cuando las tres categorias se
+    // comprobaron de verdad: con alguna sin comprobar, la frase seria falsa.
     console.log('Sin discrepancias: la temporada seleccionada es la mas reciente en las tres categorias.');
   }
 })().catch(e => { console.error('Error inesperado en el canario de temporada:', e.message); process.exit(1); });
