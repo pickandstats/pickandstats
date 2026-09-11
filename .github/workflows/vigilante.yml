@@ -1,0 +1,55 @@
+name: Vigilante del pipeline de datos
+
+# Corre en su PROPIO workflow, independiente de actualizar-datos.yml. El resumen
+# de salud (S17.5.4) vigila DESDE DENTRO de ese job: si GitHub descarta la
+# ejecucion programada bajo carga (ocurre, esta documentado), no hay job, no hay
+# alarma. Este workflow solo lee el latido que el pipeline ya escribe en cada
+# ejecucion con exito (data/processed/estado.json, campo `actualizado`) — no
+# reconstruye nada, solo vigila que siga avanzando. Logica completa y comentada
+# en scraper/vigilante.js.
+#
+# IMPORTANTE, para quien toque esto despues: el latido mide "la ultima vez que
+# el pipeline miro", NO "la ultima vez que cambiaron los datos". El pipeline
+# corre los 12 meses del año, tambien en pretemporada y fuera de temporada, asi
+# que un latido viejo siempre significa lo mismo (la ejecucion no ocurrio),
+# independientemente de si habia partidos que procesar esa semana. Si esto se
+# "mejora" para que compruebe si cambiaron los datos, aparecen falsos positivos
+# en cada semana en blanco.
+#
+# Limite conocido, dejado escrito a proposito: este workflow es TAMBIEN
+# programado, y GitHub puede descartarlo igual que al de datos. Dos dias
+# independientes (miercoles y sabado) hacen improbable perder los dos, no
+# imposible. Lo unico que elimina el riesgo del todo es un dead-man's switch
+# externo — un tercero que espera un ping semanal y avisa si no llega. No se
+# monta aqui a proposito: mete una dependencia externa y un secreto en un
+# proyecto de una persona. Queda como via de mejora si el riesgo residual deja
+# de ser aceptable.
+on:
+  schedule:
+    # Miercoles y sabado a las 09:23 UTC: dias distintos del lunes del cron de
+    # datos (07:00 UTC) y fuera del minuto 0, para no compartir ni el dia ni el
+    # instante de carga de GitHub con el.
+    - cron: '23 9 * * 3,6'
+  workflow_dispatch:
+    inputs:
+      simular_retraso:
+        description: 'Dias a restar al latido, SOLO para probar la alarma de punta a punta (no usar en produccion)'
+        type: number
+        default: 0
+
+permissions:
+  contents: read
+  issues: write   # para abrir/actualizar/cerrar la issue de alarma
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Comprobar el latido de estado.json
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scraper/vigilante.js --simular-retraso "${{ github.event.inputs.simular_retraso || 0 }}"
