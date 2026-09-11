@@ -147,16 +147,21 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                     <tr><th>#</th><th className="izq">Equipo</th><th>Gr.</th><th>V-D</th><th>SRS</th><th>Net</th></tr>
                   </thead>
                   <tbody>
-                    {dominantes.map((e, i) => (
+                    {dominantes.map((e, i) => {
+                      // Ver el comentario en Equipo.jsx: `balance` puede faltar si el
+                      // navegador sirve un equipos.json cacheado de antes de que existiera.
+                      const bal = e.balance ?? e;
+                      return (
                       <tr key={e.id}>
                         <td>{i + 1}</td>
                         <td className="izq"><span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span></td>
                         <td>{e.grupo}</td>
-                        <td>{e.balance.pg}-{e.balance.pp}</td>
+                        <td>{bal.pg}-{bal.pp}</td>
                         <td>{e.srs}</td>
                         <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{e.netrtg}</td>
                       </tr>
-                    ))}
+                      );
+                    })}
                   </tbody>
                 </table>
               </div>

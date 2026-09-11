@@ -15,6 +15,9 @@ const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 let modoRecordado = 'resumen';
 
 export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, equiposCuartos, rivalInicial }) {
+  // Los datos viven en una URL estable y el bundle no: un navegador puede servir un
+  // equipos.json anterior a que existiera `balance`. Sin esto, eso es pantalla en blanco.
+  const bal = equipo.balance ?? equipo;
   const club = (datosClub || {})[equipo.idClub] || null;
   const cuartos = (equiposCuartos || []).find(x => x.equipoId === equipo.idClub) || null;
   const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
@@ -142,15 +145,15 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       <div className="ficha-cabecera">
         <div>
           <h2 className="ficha-nombre">{equipo.nombre}</h2>
-          <p className="lema">Grupo {equipo.grupo} · {equipo.balance.pg}-{equipo.balance.pp} ·
-            {' '}Casa {equipo.balance.casa.pg}-{equipo.balance.casa.pj - equipo.balance.casa.pg} ·
-            {' '}Fuera {equipo.balance.fuera.pg}-{equipo.balance.fuera.pj - equipo.balance.fuera.pg}</p>
+          <p className="lema">Grupo {equipo.grupo} · {bal.pg}-{bal.pp} ·
+            {' '}Casa {bal.casa.pg}-{bal.casa.pj - bal.casa.pg} ·
+            {' '}Fuera {bal.fuera.pg}-{bal.fuera.pj - bal.fuera.pg}</p>
         </div>
         <div className="datos-bloque">
         </div>
       </div>
 
-      {equipo.balance.pj !== equipo.pj && (() => {
+      {equipo.balance && equipo.balance.pj !== equipo.pj && (() => {
         const sinActa = equipo.balance.pj - equipo.pj;
         return (
           <p className="aviso-dato">
