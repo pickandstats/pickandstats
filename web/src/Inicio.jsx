@@ -152,7 +152,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                         <td>{i + 1}</td>
                         <td className="izq"><span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span></td>
                         <td>{e.grupo}</td>
-                        <td>{e.pg}-{e.pp}</td>
+                        <td>{e.balance.pg}-{e.balance.pp}</td>
                         <td>{e.srs}</td>
                         <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{e.netrtg}</td>
                       </tr>

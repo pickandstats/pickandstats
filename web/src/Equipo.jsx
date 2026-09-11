@@ -142,13 +142,26 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       <div className="ficha-cabecera">
         <div>
           <h2 className="ficha-nombre">{equipo.nombre}</h2>
-          <p className="lema">Grupo {equipo.grupo} · {equipo.pg}-{equipo.pp} ·
-            {' '}Casa {equipo.casa.pg}-{equipo.casa.pj - equipo.casa.pg} ·
-            {' '}Fuera {equipo.fuera.pg}-{equipo.fuera.pj - equipo.fuera.pg}</p>
+          <p className="lema">Grupo {equipo.grupo} · {equipo.balance.pg}-{equipo.balance.pp} ·
+            {' '}Casa {equipo.balance.casa.pg}-{equipo.balance.casa.pj - equipo.balance.casa.pg} ·
+            {' '}Fuera {equipo.balance.fuera.pg}-{equipo.balance.fuera.pj - equipo.balance.fuera.pg}</p>
         </div>
         <div className="datos-bloque">
         </div>
       </div>
+
+      {equipo.balance.pj !== equipo.pj && (() => {
+        const sinActa = equipo.balance.pj - equipo.pj;
+        return (
+          <p className="aviso-dato">
+            <strong>Estadísticas sobre una muestra menor.</strong> El balance de arriba cuenta
+            los {equipo.balance.pj} partidos de competición, como la clasificación. Pero
+            {' '}{sinActa === 1 ? '1 se resolvió' : `${sinActa} se resolvieron`} sin acta
+            (incomparecencia o sanción) y no {sinActa === 1 ? 'tiene' : 'tienen'} datos de
+            juego, así que el resto de esta ficha se calcula sobre los otros {equipo.pj}.
+          </p>
+        );
+      })()}
 
       <div className="grupos" style={{ marginTop: 4 }}>
         <button className={`boton-grupo ${vistaFicha === 'resumen' ? 'activo' : ''}`}

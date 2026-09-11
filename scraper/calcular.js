@@ -126,8 +126,21 @@ function initEquipo(id, nombre, grupo) {
     pf: 0, pc: 0, pos: 0, posRival: 0,
     t: { t2a:0,t2i:0,t3a:0,t3i:0,tla:0,tli:0,ro:0,rd:0,as:0,br:0,bp:0,tf:0,tco:0,fc:0,seg:0 },
     r: { t2a:0,t2i:0,t3a:0,t3i:0,tla:0,tli:0,ro:0,rd:0,bp:0,fc:0 },
-    casa: { pj:0, pg:0 }, fuera: { pj:0, pg:0 }, resultados: [] };
+    casa: { pj:0, pg:0 }, fuera: { pj:0, pg:0 }, resultados: [],
+    // Balance oficial de competicion: cuenta TODO partido con resultado, tenga
+    // boxscore o no (los siete sin acta de Tercera entran aqui). `pj`/`pg`/`casa`/
+    // `fuera` de arriba, en cambio, son el tamano de la muestra estadistica: solo
+    // partidos con boxscore, porque son el divisor de todas las medias por partido
+    // (pfPartido, pace, etc.). Los dos balances no coinciden cuando falta un acta,
+    // y eso es intencional: mezclarlos envenenaria esas medias en silencio.
+    balance: { pj: 0, pg: 0, casa: { pj: 0, pg: 0 }, fuera: { pj: 0, pg: 0 } } };
   return equipos[id];
+}
+
+function acumularBalance(eq, esLocal, gano) {
+  eq.balance.pj++; if (gano) eq.balance.pg++;
+  const split = esLocal ? eq.balance.casa : eq.balance.fuera;
+  split.pj++; if (gano) split.pg++;
 }
 
 function acumular(eq, t, tRival, esLocal, gano, jor) {
@@ -139,6 +152,7 @@ function acumular(eq, t, tRival, esLocal, gano, jor) {
   const split = esLocal ? eq.casa : eq.fuera;
   split.pj++; if (gano) split.pg++;
   eq.resultados.push({ jor, gano, dif: t.pt - tRival.pt });
+  acumularBalance(eq, esLocal, gano);
 }
 
 function acumularJugador(j, equipoId, equipoNombre, grupo, jornada, idPartido) {
@@ -171,6 +185,16 @@ for (const p of partidos) {
   (rivalesDe[eqV.id] = rivalesDe[eqV.id] || []).push(eqL.id);
   p.boxscore.local.forEach(j => acumularJugador(j, p.equipoLocal.id, p.equipoLocal.nombre, p.grupo, p.jornada, p.id));
   p.boxscore.visitante.forEach(j => acumularJugador(j, p.equipoVisitante.id, p.equipoVisitante.nombre, p.grupo, p.jornada, p.id));
+}
+
+// Los partidos sin acta solo alimentan el balance oficial (pj/pg/casa/fuera de
+// arriba y t/r/pos/pf/pc no se tocan: no hay boxscore que sumarles).
+for (const p of sinBoxscore) {
+  const [gL, gV] = p.resultado.split('-').map(Number);
+  const eqL = initEquipo(p.equipoLocal.id, p.equipoLocal.nombre, p.grupo);
+  const eqV = initEquipo(p.equipoVisitante.id, p.equipoVisitante.nombre, p.grupo);
+  acumularBalance(eqL, true, gL > gV);
+  acumularBalance(eqV, false, gV > gL);
 }
 
 // ---------- SRS ----------
@@ -220,6 +244,13 @@ const salidaEquipos = Object.values(equipos).map(e => {
     pj: e.pj, pg: e.pg, pp: e.pj - e.pg,
     pf: e.pf, pc: e.pc,
     casa: e.casa, fuera: e.fuera,
+    // Balance oficial de competicion (articulo 84 del RGyC): cuenta tambien los
+    // partidos sin acta. Ver comentario en initEquipo. Presente siempre, aunque
+    // coincida con pj/pg/pp, para que la app compare en vez de comprobar nulos.
+    balance: {
+      pj: e.balance.pj, pg: e.balance.pg, pp: e.balance.pj - e.balance.pg,
+      casa: e.balance.casa, fuera: e.balance.fuera
+    },
     pfPartido: r1(e.pf / e.pj),
     pcPartido: r1(e.pc / e.pj),
     difPartido: r1((e.pf - e.pc) / e.pj),
