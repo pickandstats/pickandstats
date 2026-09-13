@@ -1,0 +1,114 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const CORTES = {
+  inicio: 'Inicio de temporada',
+  mitad: 'Mitad de temporada',
+  cierre: 'Cierre de temporada',
+};
+
+export async function getStaticPaths() {
+  const posts = await getCollection('observatorio');
+  return posts.map(post => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const comoTexto = f => f.toLocaleDateString('es-ES', {
+  year: 'numeric', month: 'long', day: 'numeric'
+});
+const fechaTexto = comoTexto(post.data.fecha);
+const actualizadoTexto = post.data.actualizado ? comoTexto(post.data.actualizado) : null;
+---
+
+<Base title={`${post.data.titulo} · Pick&Stats`} description={post.data.descripcionSeo} tipo="article"
+  publicado={post.data.fecha.toISOString()}
+  modificado={(post.data.actualizado ?? post.data.fecha).toISOString()}>
+  <article>
+    <p class="volver">
+      <a href="/observatorio/">← Observatorio</a>
+    </p>
+    <h1>{post.data.titulo}</h1>
+    <p class="meta">
+      Publicado el {fechaTexto}
+      {actualizadoTexto && <> · <strong>Actualizado el {actualizadoTexto}</strong></>}
+    </p>
+    <p class="datos">
+      {CORTES[post.data.corte]} de la temporada <strong>{post.data.temporada}</strong>.
+    </p>
+    <Content />
+  </article>
+
+  <style>
+    .volver { font-size: 14px; }
+    .meta { color: var(--tinta-suave); font-size: 14px; margin-top: -8px; }
+    .datos {
+      color: var(--tinta-suave);
+      font-size: 14px;
+      line-height: 1.6;
+      background: var(--panel);
+      border-left: 3px solid var(--linea);
+      border-radius: 0 var(--radio) var(--radio) 0;
+      padding: 10px 14px;
+      margin: 18px 0 24px;
+    }
+    article :global(h2) { margin-top: 32px; }
+    article :global(ul) { padding-left: 20px; }
+    article :global(li) { margin-bottom: 6px; }
+
+    /* Bloques de fórmulas: legibles y con scroll propio en móvil */
+    article :global(pre) {
+      background: #f4f6f9;
+      border: 1px solid var(--linea);
+      border-left: 3px solid var(--acento);
+      border-radius: var(--radio);
+      padding: 14px 16px;
+      overflow-x: auto;
+      font-size: 14px;
+      line-height: 1.7;
+      margin: 18px 0;
+    }
+    article :global(code) {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    }
+    article :global(p code) {
+      background: #f4f6f9;
+      border: 1px solid var(--linea);
+      border-radius: 4px;
+      padding: 1px 5px;
+      font-size: 13px;
+    }
+    article :global(pre code) { background: none; border: 0; padding: 0; }
+
+    /* Tablas del observatorio */
+    article :global(table) {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 18px 0;
+      font-size: 15px;
+      display: block;
+      overflow-x: auto;
+    }
+    article :global(th) {
+      background: var(--tinta);
+      color: #fff;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      padding: 8px 10px;
+      text-align: left;
+      white-space: nowrap;
+    }
+    article :global(td) {
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--linea);
+    }
+    article :global(tbody tr:nth-child(even)) { background: #fafbfc; }
+  </style>
+</Base>

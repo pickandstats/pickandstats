@@ -25,4 +25,23 @@ const guias = defineCollection({
   }),
 });
 
-export const collections = { guias };
+// Los cortes del observatorio son posts fechados que se suceden tres veces por
+// temporada (inicio/mitad/cierre): no caben en `guias`, que son perennes y con
+// ejemplos congelados a propósito. Colección aparte, sin `familia` ni `orden`
+// (aquí ordena la fecha, descendente) y con `temporada`/`corte` obligatorios:
+// un corte del observatorio siempre pertenece a una temporada y a un momento
+// de ella, a diferencia de una guía.
+const observatorio = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/observatorio' }),
+  schema: z.object({
+    titulo: z.string(),
+    descripcion: z.string(),
+    descripcionSeo: z.string().max(155),
+    temporada: z.string().regex(/^\d{4}\/\d{2}$/, 'Formato esperado: 2026/27'),
+    corte: z.enum(['inicio', 'mitad', 'cierre']),
+    fecha: z.coerce.date(),
+    actualizado: z.coerce.date().optional(),
+  }),
+});
+
+export const collections = { guias, observatorio };

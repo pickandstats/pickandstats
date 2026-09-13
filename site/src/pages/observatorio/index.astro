@@ -1,0 +1,75 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+
+const CORTES = {
+  inicio: 'Inicio de temporada',
+  mitad: 'Mitad de temporada',
+  cierre: 'Cierre de temporada',
+};
+
+const todos = await getCollection('observatorio');
+
+// Agrupado por temporada, la más reciente arriba; dentro de cada temporada,
+// por fecha descendente (el corte más nuevo primero).
+const temporadas = [...new Set(todos.map(p => p.data.temporada))]
+  .sort((a, b) => b.localeCompare(a));
+
+const bloques = temporadas.map(temporada => ({
+  temporada,
+  posts: todos
+    .filter(p => p.data.temporada === temporada)
+    .sort((a, b) => b.data.fecha.getTime() - a.data.fecha.getTime()),
+}));
+---
+
+<Base title="Observatorio · Pick&Stats" description="Cómo evoluciona el estilo de juego en las tres categorías FEB, con un corte al inicio, a mitad y al cierre de cada temporada.">
+  <h1>Observatorio</h1>
+  <p class="intro">
+    Cómo evoluciona el estilo de juego —ritmo, tiro de tres, eficiencia— en las tres
+    categorías FEB. Tres cortes por temporada: inicio, mitad y cierre.
+  </p>
+
+  {bloques.map(bloque => (
+    <section class="temporada">
+      <h2>{bloque.temporada}</h2>
+      <ul class="lista-posts">
+        {bloque.posts.map(post => (
+          <li>
+            <span class="etiqueta-corte">{CORTES[post.data.corte]}</span>
+            <a href={`/observatorio/${post.id}/`}>{post.data.titulo}</a>
+            <p>{post.data.descripcion}</p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
+
+  <style>
+    .intro { color: var(--tinta-suave); }
+    .temporada { margin-top: 38px; }
+    .temporada h2 { margin-bottom: 16px; }
+    .lista-posts { list-style: none; padding: 0; margin: 0; }
+    .lista-posts li {
+      border: 1px solid var(--linea); border-radius: var(--radio);
+      padding: 18px 20px; margin-bottom: 14px; background: var(--panel);
+    }
+    .etiqueta-corte {
+      display: inline-block;
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+      color: var(--acento);
+      margin-bottom: 6px;
+    }
+    .lista-posts a {
+      display: block;
+      font-family: var(--fuente-titulo); font-size: 22px;
+      font-weight: 600; text-decoration: none; color: var(--tinta);
+    }
+    .lista-posts a:hover { color: var(--acento); }
+    .lista-posts p { margin: 6px 0 0; color: var(--tinta-suave); font-size: 15px; }
+  </style>
+</Base>
