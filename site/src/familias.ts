@@ -2,11 +2,17 @@
 // agrupa en este orden y la ficha de cada guía las usa para la miga de pan.
 // Añadir una familia es tocar solo este fichero.
 
-export const CLAVES = ['metricas', 'competicion', 'equipos'] as const;
+export const CLAVES = ['app', 'metricas', 'competicion', 'equipos'] as const;
 export type Familia = (typeof CLAVES)[number];
 
 // El orden de este array es el orden en el que aparecen las secciones del índice.
 export const FAMILIAS: { clave: Familia; titulo: string; entradilla: string }[] = [
+  {
+    clave: 'app',
+    titulo: 'Cómo usar Pick&Stats',
+    entradilla:
+      'Sacarle partido a la aplicación: qué hay en cada pestaña y qué responde cada herramienta.',
+  },
   {
     clave: 'metricas',
     titulo: 'Entender las estadísticas',

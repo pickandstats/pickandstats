@@ -3,9 +3,9 @@ import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 
 const CORTES = {
-  inicio: 'Inicio de temporada',
-  mitad: 'Mitad de temporada',
-  cierre: 'Cierre de temporada',
+  inicio: 'Corte de inicio',
+  mitad: 'Corte de mitad',
+  cierre: 'Corte de cierre',
 };
 
 export async function getStaticPaths() {
@@ -39,7 +39,7 @@ const actualizadoTexto = post.data.actualizado ? comoTexto(post.data.actualizado
       {actualizadoTexto && <> · <strong>Actualizado el {actualizadoTexto}</strong></>}
     </p>
     <p class="datos">
-      {CORTES[post.data.corte]} de la temporada <strong>{post.data.temporada}</strong>.
+      {CORTES[post.data.corte]} · temporada <strong>{post.data.temporada}</strong>.
     </p>
     <Content />
   </article>
