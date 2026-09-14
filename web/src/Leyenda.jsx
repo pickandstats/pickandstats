@@ -14,7 +14,11 @@ const SECCIONES = [
   },
   {
     titulo: 'Ritmo y eficiencia global',
-    guia: { url: '/guias/rating-ofensivo-defensivo', texto: 'Guía: rating ofensivo y defensivo' },
+    guias: [
+      { url: '/guias/rating-ofensivo-defensivo', texto: 'Guía: rating ofensivo y defensivo' },
+      { url: '/guias/ritmo-de-juego-pace', texto: 'Guía: el ritmo de juego' },
+      { url: '/guias/srs-rating-ajustado', texto: 'Guía: el SRS (rating ajustado)' },
+    ],
     metricas: [
       ['Pace', 'Posesiones por partido. Estimadas como tiros de campo intentados − rebotes ofensivos + pérdidas + 0,44 × tiros libres intentados. Define el estilo: rápido o pausado. No es ni bueno ni malo.'],
       ['ORtg (rating ofensivo)', 'Puntos anotados por cada 100 posesiones. Mide la eficiencia del ataque con independencia del ritmo.'],
@@ -25,7 +29,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Four Factors (ataque)',
-    guia: { url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' },
+    guias: [{ url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' }],
     metricas: [
       ['eFG% (tiro efectivo)', 'Porcentaje de tiro de campo que da valor 1,5 a los triples: (TC anotados + 0,5 × T3 anotados) / TC intentados. El factor más determinante para ganar.'],
       ['TOV% (pérdidas)', 'Pérdidas por cada 100 posesiones. Menos es mejor. Es la versión ajustada por ritmo del BP por partido de la básica.'],
@@ -35,7 +39,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Four Factors (defensa)',
-    guia: { url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' },
+    guias: [{ url: '/guias/four-factors-baloncesto', texto: 'Guía: los Four Factors' }],
     metricas: [
       ['eFG% rival', 'El tiro efectivo que permites al rival. El corazón de una buena defensa.'],
       ['TOV forzadas', 'Pérdidas del rival por cada 100 posesiones suyas. Defensas agresivas fuerzan más.'],
@@ -45,6 +49,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Perfil de ataque',
+    guias: [{ url: '/guias/ts-efg-porcentaje-tiro', texto: 'Guía: TS% y eFG%' }],
     metricas: [
       ['TS% (True Shooting)', 'Eficiencia total de anotación incluyendo tiros libres: puntos / (2 × (TC intentados + 0,44 × TL intentados)). La mejor medida individual de eficiencia anotadora.'],
       ['3PAr', 'Proporción de tiros de campo que son triples. Define el perfil: equipo triplista o interior.'],
@@ -55,7 +60,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Forma y suerte',
-    guia: { url: '/guias/victorias-esperadas-suerte', texto: 'Guía: victorias esperadas y suerte' },
+    guias: [{ url: '/guias/victorias-esperadas-suerte', texto: 'Guía: victorias esperadas y suerte' }],
     metricas: [
       ['Últ. 5 (forma)', 'Récord de victorias-derrotas en los últimos 5 partidos disputados, con su diferencia media de puntos.'],
       ['Victorias esperadas (Pitágoras)', 'Las victorias que "deberías" tener según tus puntos anotados y encajados (fórmula pitagórica, exponente 10,25). Predice el futuro mejor que el récord real.'],
@@ -64,6 +69,10 @@ const SECCIONES = [
   },
   {
     titulo: 'Métricas de jugador',
+    guias: [
+      { url: '/guias/porcentaje-de-uso-usg', texto: 'Guía: el porcentaje de uso' },
+      { url: '/guias/estadisticas-por-40-minutos', texto: 'Guía: las estadísticas por 40 minutos' },
+    ],
     metricas: [
       ['VAL (valoración)', 'La valoración oficial FEB: suma de contribuciones positivas menos negativas. Útil pero mejorable; por eso la acompañamos de las siguientes.'],
       ['USG% (uso)', 'Porcentaje de las posesiones del equipo que termina el jugador (tiro, tiros libres o pérdida) mientras está en pista. Un rol normal ronda el 20%; las estrellas superan el 28%.'],
@@ -75,20 +84,25 @@ const SECCIONES = [
   },
   {
     titulo: 'Percentiles',
+    guias: [{ url: '/guias/como-leer-percentiles', texto: 'Guía: cómo leer los percentiles' }],
     metricas: [
       ['Qué son', 'En la ficha de cada jugador, las barras de percentil sitúan su rendimiento frente al resto. Un percentil 80 significa que el jugador supera al 80% de los comparables en esa métrica. Es la forma más rápida de leer un perfil de un vistazo.'],
       ['Nacional vs. grupo', 'Cada métrica se muestra con dos referencias: el percentil respecto a todos los jugadores de la categoría (nacional) y respecto a los de su grupo. La comparación de grupo es más justa para valorar el papel de un jugador en su contexto competitivo.'],
-      ['Código de color', 'Verde para percentiles altos (élite, 80+), pasando por tonos intermedios, hasta rojo para los bajos (por debajo de 20). Solo se calculan para jugadores con un mínimo de partidos disputados, para que la muestra sea significativa.'],
+      ['Código de color', 'Verde para percentiles altos (élite, 80+), pasando por tonos intermedios, hasta rojo para los bajos (por debajo de 20). Solo se calculan para jugadores con un mínimo de 12 partidos disputados, para que la muestra sea significativa.'],
     ]
   },
   {
     titulo: 'Clasificación y desempates',
+    guias: [{ url: '/guias/average-particular-desempates-feb', texto: 'Guía: los desempates de la FEB' }],
     metricas: [
-      ['Average particular', 'Cuando dos o más equipos empatan a victorias, la clasificación no los ordena por diferencia general de puntos, sino por los resultados de los partidos entre ellos (enfrentamiento directo), siguiendo el criterio de la FEB. En empates múltiples se resuelve de forma iterativa. Si el particular no basta (equipos que aún no se han enfrentado), se recurre a la diferencia general.'],
+      ['Cómo se ordena la tabla', 'Los equipos se ordenan por victorias. En las competiciones FEB no se suman dos puntos por victoria y uno por derrota: la clasificación es un balance, no un marcador de puntos. Cuando dos o más equipos empatan a victorias, el desempate sigue el artículo 84 del Reglamento General y de Competiciones.'],
+      ['Los dos regímenes', 'El artículo 84 no tiene una lista de criterios, tiene dos. Hasta el final de la primera vuelta mandan la diferencia y el cociente generales de puntos, y el enfrentamiento directo entre los empatados es solo el tercer criterio. Desde el inicio de la segunda vuelta se invierte: manda el enfrentamiento directo, y lo general no se mira hasta el cuarto. Por eso un mismo empate puede ordenarse de dos formas distintas según la jornada que estés mirando.'],
+      ['La regla del 2-0', 'Un equipo que arrastre un tanteo de 2-0 en contra —una incomparecencia o una sanción que acabe en ese resultado— ocupa la última posición entre todos los equipos empatados a victorias con él, independientemente de los resultados que haya conseguido contra ellos.'],
     ]
   },
   {
     titulo: 'Fases de ascenso',
+    guias: [{ url: '/guias/#competicion', texto: 'Guías: cómo funciona la competición' }],
     metricas: [
       ['Qué son', 'Al terminar la liga regular, los mejores equipos disputan las fases de ascenso a Segunda FEB. El formato ha variado por temporada: finales de conferencia entre campeones de grupo, eliminatorias por conferencia, y unas Fases Finales con liguillas de cuatro equipos en dos sedes.'],
       ['Cómo se asciende', 'Ascienden los campeones de cada liguilla de las Fases Finales más los ganadores de los cruces entre los segundos clasificados: seis plazas en total.'],
@@ -98,7 +112,7 @@ const SECCIONES = [
   },
   {
     titulo: 'Análisis por cuartos',
-    guia: { url: '/guias/analisis-por-cuartos', texto: 'Guía: el análisis por cuartos' },
+    guias: [{ url: '/guias/analisis-por-cuartos', texto: 'Guía: el análisis por cuartos' }],
     metricas: [
       ['Rendimiento por cuarto (jugador)', 'Producción media (puntos, valoración) en cada cuarto a lo largo de la temporada. Revela si un jugador arranca fuerte, crece con el partido o baja en los tramos finales.'],
       ['Momentos decisivos (clutch)', 'Puntos y asistencias en el último cuarto y prórrogas de los partidos que llegaron al último periodo con 8 puntos de diferencia o menos: los que aún estaban en juego. Mide quién aparece cuando el partido se decide, anotando o generando. Es una métrica de muestra pequeña —se indica el número de partidos ajustados—: con pocos, tómala como orientativa.'],
@@ -114,9 +128,14 @@ export default function Leyenda() {
       {SECCIONES.map(s => (
         <div key={s.titulo}>
           <h3 className="seccion">{s.titulo}</h3>
-          {s.guia && (
+          {s.guias && (
             <p className="leyenda-guia">
-              <a href={s.guia.url}>{s.guia.texto} →</a>
+              {s.guias.map((g, i) => (
+                <span key={g.url}>
+                  {i > 0 && ' · '}
+                  <a href={g.url}>{g.texto} →</a>
+                </span>
+              ))}
             </p>
           )}
           <div className="leyenda-bloque">

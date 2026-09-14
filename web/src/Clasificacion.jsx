@@ -254,7 +254,8 @@ export default function Clasificacion({
             </table>
           </div>
           <p className="pie" style={{ marginTop: 4 }}>
-            Desempates según el artículo 84 del Reglamento General y de Competiciones de la
+            Desempates según el <a href="/guias/average-particular-desempates-feb/">artículo 84</a> del
+            Reglamento General y de Competiciones de la
             FEB. Hasta el final de la primera vuelta mandan la diferencia y el cociente
             generales; desde la segunda vuelta, el enfrentamiento directo entre los equipos
             igualados a victorias. Un equipo con un 2-0 en contra ocupa la última posición
