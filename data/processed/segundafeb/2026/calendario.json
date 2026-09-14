@@ -2,7 +2,7 @@
  "competicion": "segundafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-09-07",
+ "generado": "2026-09-14",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -24,7 +24,7 @@
    "fecha": "2026-10-03",
    "hora": "19:30",
    "local": "CB ALGECIRAS",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010192",
    "visitanteId": "1010320"
   },
@@ -84,17 +84,6 @@
    "visitanteId": "1009073"
   },
   {
-   "id": "2536127",
-   "grupo": "A",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "JAEN PARAISO INTERIOR FS",
-   "localId": "1010320",
-   "visitanteId": "1010194"
-  },
-  {
    "id": "2536126",
    "grupo": "A",
    "jornada": 2,
@@ -126,6 +115,17 @@
    "visitante": "CB ALGECIRAS",
    "localId": "1010321",
    "visitanteId": "1010192"
+  },
+  {
+   "id": "2536127",
+   "grupo": "A",
+   "jornada": 2,
+   "fecha": "2026-10-10",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "JAEN PARAISO INTERIOR FS",
+   "localId": "1010320",
+   "visitanteId": "1010194"
   },
   {
    "id": "2536122",
@@ -200,7 +200,7 @@
    "fecha": "2026-10-17",
    "hora": "19:00",
    "local": "UEMC BALONCESTO VALLADOLID",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1009588",
    "visitanteId": "1010320"
   },
@@ -238,17 +238,6 @@
    "visitanteId": "1010321"
   },
   {
-   "id": "2536140",
-   "grupo": "A",
-   "jornada": 4,
-   "fecha": "2026-10-24",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "CLÍNICA PONFERRADA SDP",
-   "localId": "1010320",
-   "visitanteId": "1008643"
-  },
-  {
    "id": "2536139",
    "grupo": "A",
    "jornada": 4,
@@ -269,6 +258,17 @@
    "visitante": "UEMC BALONCESTO VALLADOLID",
    "localId": "1010321",
    "visitanteId": "1009588"
+  },
+  {
+   "id": "2536140",
+   "grupo": "A",
+   "jornada": 4,
+   "fecha": "2026-10-24",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "CLÍNICA PONFERRADA SDP",
+   "localId": "1010320",
+   "visitanteId": "1008643"
   },
   {
    "id": "2536136",
@@ -387,20 +387,9 @@
    "fecha": "2026-11-01",
    "hora": "18:30",
    "local": "CULTURAL Y DEPORTIVA LEONESA",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1008857",
    "visitanteId": "1010320"
-  },
-  {
-   "id": "2536153",
-   "grupo": "A",
-   "jornada": 6,
-   "fecha": "2026-11-07",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "C.B. TRES CANTOS",
-   "localId": "1010320",
-   "visitanteId": "1009723"
   },
   {
    "id": "2536152",
@@ -423,6 +412,17 @@
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1010321",
    "visitanteId": "1008857"
+  },
+  {
+   "id": "2536153",
+   "grupo": "A",
+   "jornada": 6,
+   "fecha": "2026-11-07",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "C.B. TRES CANTOS",
+   "localId": "1010320",
+   "visitanteId": "1009723"
   },
   {
    "id": "2536155",
@@ -495,11 +495,11 @@
    "grupo": "A",
    "jornada": 7,
    "fecha": "2026-11-14",
-   "hora": "19:30",
-   "local": "MOVISTAR ESTUDIANTES",
-   "visitante": "BCBADAJOZ",
-   "localId": "1010496",
-   "visitanteId": "1010320"
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "MOVISTAR ESTUDIANTES",
+   "localId": "1010320",
+   "visitanteId": "1010496"
   },
   {
    "id": "2536158",
@@ -546,28 +546,6 @@
    "visitanteId": "1010352"
   },
   {
-   "id": "2536166",
-   "grupo": "A",
-   "jornada": 8,
-   "fecha": "2026-11-21",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "C.B. STARLABS MORÓN",
-   "localId": "1010320",
-   "visitanteId": "1010193"
-  },
-  {
-   "id": "2536165",
-   "grupo": "A",
-   "jornada": 8,
-   "fecha": "2026-11-21",
-   "hora": "19:30",
-   "local": "C.B. GETAFE",
-   "visitante": "SPANISH BASKETBALL ACADEMY",
-   "localId": "1009073",
-   "visitanteId": "1010495"
-  },
-  {
    "id": "2536167",
    "grupo": "A",
    "jornada": 8,
@@ -588,6 +566,17 @@
    "visitante": "C.B. TRES CANTOS",
    "localId": "1010192",
    "visitanteId": "1009723"
+  },
+  {
+   "id": "2536166",
+   "grupo": "A",
+   "jornada": 8,
+   "fecha": "2026-11-21",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "C.B. STARLABS MORÓN",
+   "localId": "1010320",
+   "visitanteId": "1010193"
   },
   {
    "id": "2536170",
@@ -621,6 +610,17 @@
    "visitante": "CLUB BALONCESTO TOLEDO BASKET",
    "localId": "1010352",
    "visitanteId": "1010318"
+  },
+  {
+   "id": "2536165",
+   "grupo": "A",
+   "jornada": 8,
+   "fecha": "2026-12-09",
+   "hora": "20:15",
+   "local": "C.B. GETAFE",
+   "visitante": "SPANISH BASKETBALL ACADEMY",
+   "localId": "1009073",
+   "visitanteId": "1010495"
   },
   {
    "id": "2536175",
@@ -695,20 +695,9 @@
    "fecha": "2026-11-29",
    "hora": "18:00",
    "local": "SPANISH BASKETBALL ACADEMY",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010495",
    "visitanteId": "1010320"
-  },
-  {
-   "id": "2536179",
-   "grupo": "A",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "MELILLA CIUDAD DEL DEPORTE",
-   "localId": "1010320",
-   "visitanteId": "1010352"
   },
   {
    "id": "2536178",
@@ -742,6 +731,17 @@
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1008643",
    "visitanteId": "1008857"
+  },
+  {
+   "id": "2536179",
+   "grupo": "A",
+   "jornada": 10,
+   "fecha": "2026-12-05",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "MELILLA CIUDAD DEL DEPORTE",
+   "localId": "1010320",
+   "visitanteId": "1010352"
   },
   {
    "id": "2536183",
@@ -783,7 +783,7 @@
    "fecha": "2026-12-12",
    "hora": "19:30",
    "local": "C.B. GETAFE",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1009073",
    "visitanteId": "1010320"
   },
@@ -904,7 +904,7 @@
    "fecha": "2026-12-20",
    "hora": "12:00",
    "local": "CLUB BALONCESTO TOLEDO BASKET",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010318",
    "visitanteId": "1010320"
   },
@@ -931,22 +931,11 @@
    "visitanteId": "1010495"
   },
   {
-   "id": "2536205",
-   "grupo": "A",
-   "jornada": 13,
-   "fecha": "2027-01-03",
-   "hora": "00:00",
-   "local": "BCBADAJOZ",
-   "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
-   "localId": "1010320",
-   "visitanteId": "1010321"
-  },
-  {
    "id": "2536204",
    "grupo": "A",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "C.B. GETAFE",
    "visitante": "CB ALGECIRAS",
    "localId": "1009073",
@@ -957,7 +946,7 @@
    "grupo": "A",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "12:30",
    "local": "C.B. STARLABS MORÓN",
    "visitante": "CLÍNICA PONFERRADA SDP",
    "localId": "1010193",
@@ -975,6 +964,17 @@
    "visitanteId": "1010318"
   },
   {
+   "id": "2536205",
+   "grupo": "A",
+   "jornada": 13,
+   "fecha": "2027-01-03",
+   "hora": "12:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
+   "localId": "1010320",
+   "visitanteId": "1010321"
+  },
+  {
    "id": "2536203",
    "grupo": "A",
    "jornada": 13,
@@ -990,7 +990,7 @@
    "grupo": "A",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "12:30",
+   "hora": "19:30",
    "local": "MOVISTAR ESTUDIANTES",
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1010496",
@@ -1001,22 +1001,11 @@
    "grupo": "A",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "18:00",
    "local": "SPANISH BASKETBALL ACADEMY",
    "visitante": "UEMC BALONCESTO VALLADOLID",
    "localId": "1010495",
    "visitanteId": "1009588"
-  },
-  {
-   "id": "2536207",
-   "grupo": "A",
-   "jornada": 14,
-   "fecha": "2027-01-09",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "CB ALGECIRAS",
-   "localId": "1010320",
-   "visitanteId": "1010192"
   },
   {
    "id": "2536208",
@@ -1050,6 +1039,17 @@
    "visitante": "CLUB BALONCESTO TOLEDO BASKET",
    "localId": "1010321",
    "visitanteId": "1010318"
+  },
+  {
+   "id": "2536207",
+   "grupo": "A",
+   "jornada": 14,
+   "fecha": "2027-01-09",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "CB ALGECIRAS",
+   "localId": "1010320",
+   "visitanteId": "1010192"
   },
   {
    "id": "2536212",
@@ -1157,20 +1157,9 @@
    "fecha": "2027-01-17",
    "hora": "12:30",
    "local": "JAEN PARAISO INTERIOR FS",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010194",
    "visitanteId": "1010320"
-  },
-  {
-   "id": "2536222",
-   "grupo": "A",
-   "jornada": 16,
-   "fecha": "2027-01-30",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "UEMC BALONCESTO VALLADOLID",
-   "localId": "1010320",
-   "visitanteId": "1009588"
   },
   {
    "id": "2536223",
@@ -1204,6 +1193,17 @@
    "visitante": "JAEN PARAISO INTERIOR FS",
    "localId": "1010321",
    "visitanteId": "1010194"
+  },
+  {
+   "id": "2536222",
+   "grupo": "A",
+   "jornada": 16,
+   "fecha": "2027-01-30",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "UEMC BALONCESTO VALLADOLID",
+   "localId": "1010320",
+   "visitanteId": "1009588"
   },
   {
    "id": "2536220",
@@ -1256,7 +1256,7 @@
    "fecha": "2027-02-06",
    "hora": "19:30",
    "local": "CLÍNICA PONFERRADA SDP",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1008643",
    "visitanteId": "1010320"
   },
@@ -1316,17 +1316,6 @@
    "visitanteId": "1010192"
   },
   {
-   "id": "2536237",
-   "grupo": "A",
-   "jornada": 18,
-   "fecha": "2027-02-13",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "CULTURAL Y DEPORTIVA LEONESA",
-   "localId": "1010320",
-   "visitanteId": "1008857"
-  },
-  {
    "id": "2536238",
    "grupo": "A",
    "jornada": 18,
@@ -1358,6 +1347,17 @@
    "visitante": "UEMC BALONCESTO VALLADOLID",
    "localId": "1010192",
    "visitanteId": "1009588"
+  },
+  {
+   "id": "2536237",
+   "grupo": "A",
+   "jornada": 18,
+   "fecha": "2027-02-13",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "CULTURAL Y DEPORTIVA LEONESA",
+   "localId": "1010320",
+   "visitanteId": "1008857"
   },
   {
    "id": "2536234",
@@ -1410,7 +1410,7 @@
    "fecha": "2027-02-20",
    "hora": "20:00",
    "local": "C.B. TRES CANTOS",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1009723",
    "visitanteId": "1010320"
   },
@@ -1468,17 +1468,6 @@
    "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
    "localId": "1008857",
    "visitanteId": "1010321"
-  },
-  {
-   "id": "2536252",
-   "grupo": "A",
-   "jornada": 20,
-   "fecha": "2027-02-27",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "MOVISTAR ESTUDIANTES",
-   "localId": "1010320",
-   "visitanteId": "1010496"
   },
   {
    "id": "2536253",
@@ -1547,13 +1536,24 @@
    "visitanteId": "1010495"
   },
   {
+   "id": "2536252",
+   "grupo": "A",
+   "jornada": 20,
+   "fecha": "2027-02-28",
+   "hora": "12:30",
+   "local": "MOVISTAR ESTUDIANTES",
+   "visitante": "IREN BCBADAJOZ",
+   "localId": "1010496",
+   "visitanteId": "1010320"
+  },
+  {
    "id": "2536257",
    "grupo": "A",
    "jornada": 21,
    "fecha": "2027-03-06",
    "hora": "18:00",
    "local": "C.B. STARLABS MORÓN",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010193",
    "visitanteId": "1010320"
   },
@@ -1624,17 +1624,6 @@
    "visitanteId": "1009073"
   },
   {
-   "id": "2536267",
-   "grupo": "A",
-   "jornada": 22,
-   "fecha": "2027-03-13",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "SPANISH BASKETBALL ACADEMY",
-   "localId": "1010320",
-   "visitanteId": "1010495"
-  },
-  {
    "id": "2536268",
    "grupo": "A",
    "jornada": 22,
@@ -1666,6 +1655,17 @@
    "visitante": "CLUB BALONCESTO TOLEDO BASKET",
    "localId": "1008643",
    "visitanteId": "1010318"
+  },
+  {
+   "id": "2536267",
+   "grupo": "A",
+   "jornada": 22,
+   "fecha": "2027-03-13",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "SPANISH BASKETBALL ACADEMY",
+   "localId": "1010320",
+   "visitanteId": "1010495"
   },
   {
    "id": "2536263",
@@ -1751,7 +1751,7 @@
    "fecha": "2027-03-21",
    "hora": "12:30",
    "local": "MELILLA CIUDAD DEL DEPORTE",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010352",
    "visitanteId": "1010320"
   },
@@ -1776,17 +1776,6 @@
    "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
    "localId": "1010495",
    "visitanteId": "1010321"
-  },
-  {
-   "id": "2536282",
-   "grupo": "A",
-   "jornada": 24,
-   "fecha": "2027-03-27",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "C.B. GETAFE",
-   "localId": "1010320",
-   "visitanteId": "1009073"
   },
   {
    "id": "2536281",
@@ -1822,6 +1811,17 @@
    "visitanteId": "1009723"
   },
   {
+   "id": "2536282",
+   "grupo": "A",
+   "jornada": 24,
+   "fecha": "2027-03-27",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "C.B. GETAFE",
+   "localId": "1010320",
+   "visitanteId": "1009073"
+  },
+  {
    "id": "2536278",
    "grupo": "A",
    "jornada": 24,
@@ -1855,17 +1855,6 @@
    "visitanteId": "1010193"
   },
   {
-   "id": "2536283",
-   "grupo": "A",
-   "jornada": 25,
-   "fecha": "2027-04-03",
-   "hora": "19:00",
-   "local": "BCBADAJOZ",
-   "visitante": "CLUB BALONCESTO TOLEDO BASKET",
-   "localId": "1010320",
-   "visitanteId": "1010318"
-  },
-  {
    "id": "2536284",
    "grupo": "A",
    "jornada": 25,
@@ -1897,6 +1886,17 @@
    "visitante": "CULTURAL Y DEPORTIVA LEONESA",
    "localId": "1009723",
    "visitanteId": "1008857"
+  },
+  {
+   "id": "2536283",
+   "grupo": "A",
+   "jornada": 25,
+   "fecha": "2027-04-03",
+   "hora": "19:00",
+   "local": "IREN BCBADAJOZ",
+   "visitante": "CLUB BALONCESTO TOLEDO BASKET",
+   "localId": "1010320",
+   "visitanteId": "1010318"
   },
   {
    "id": "2536288",
@@ -1938,7 +1938,7 @@
    "fecha": "2027-04-10",
    "hora": "20:00",
    "local": "CACERES PATRIMONIO DE LA HUMANIDAD",
-   "visitante": "BCBADAJOZ",
+   "visitante": "IREN BCBADAJOZ",
    "localId": "1010321",
    "visitanteId": "1010320"
   },
@@ -2020,17 +2020,6 @@
    "visitanteId": "1008391"
   },
   {
-   "id": "2536300",
-   "grupo": "B",
-   "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "LOGROBASKET LOGI7",
-   "localId": "1010348",
-   "visitanteId": "1008985"
-  },
-  {
    "id": "2536297",
    "grupo": "B",
    "jornada": 1,
@@ -2062,6 +2051,17 @@
    "visitante": "AMICS CASTELLÓ",
    "localId": "1010351",
    "visitanteId": "1010208"
+  },
+  {
+   "id": "2536300",
+   "grupo": "B",
+   "jornada": 1,
+   "fecha": "2026-10-03",
+   "hora": "19:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "LOGROBASKET LOGI7",
+   "localId": "1010348",
+   "visitanteId": "1008985"
   },
   {
    "id": "2536303",
@@ -2108,17 +2108,6 @@
    "visitanteId": "1008706"
   },
   {
-   "id": "2536308",
-   "grupo": "B",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "18:00",
-   "local": "TQ-CB PRAT",
-   "visitante": "CIUDAD MOLINA BASKET",
-   "localId": "1008636",
-   "visitanteId": "1010348"
-  },
-  {
    "id": "2536305",
    "grupo": "B",
    "jornada": 2,
@@ -2163,6 +2152,17 @@
    "visitanteId": "1010502"
   },
   {
+   "id": "2536308",
+   "grupo": "B",
+   "jornada": 2,
+   "fecha": "2026-10-11",
+   "hora": "12:30",
+   "local": "TQ-CB PRAT",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "localId": "1008636",
+   "visitanteId": "1010348"
+  },
+  {
    "id": "2536314",
    "grupo": "B",
    "jornada": 3,
@@ -2172,17 +2172,6 @@
    "visitante": "TQ-CB PRAT",
    "localId": "1010502",
    "visitanteId": "1008636"
-  },
-  {
-   "id": "2536313",
-   "grupo": "B",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-   "localId": "1010348",
-   "visitanteId": "1008899"
   },
   {
    "id": "2536311",
@@ -2216,6 +2205,17 @@
    "visitante": "AMICS CASTELLÓ",
    "localId": "1009441",
    "visitanteId": "1010208"
+  },
+  {
+   "id": "2536313",
+   "grupo": "B",
+   "jornada": 3,
+   "fecha": "2026-10-17",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "LOBE TU PROVINCIA HUESCA LA MAGIA",
+   "localId": "1010348",
+   "visitanteId": "1008899"
   },
   {
    "id": "2536316",
@@ -2301,7 +2301,7 @@
    "fecha": "2026-10-25",
    "hora": "18:00",
    "local": "INTERMAQUINAS BENICARLO",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1010200",
    "visitanteId": "1010348"
   },
@@ -2326,17 +2326,6 @@
    "visitante": "INTERMAQUINAS BENICARLO",
    "localId": "1010502",
    "visitanteId": "1010200"
-  },
-  {
-   "id": "2536326",
-   "grupo": "B",
-   "jornada": 5,
-   "fecha": "2026-10-31",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "CLUB ESPORTIU BÀSQUET LLÍRIA",
-   "localId": "1010348",
-   "visitanteId": "1008978"
   },
   {
    "id": "2536325",
@@ -2370,6 +2359,17 @@
    "visitante": "LOGROBASKET LOGI7",
    "localId": "1009441",
    "visitanteId": "1008985"
+  },
+  {
+   "id": "2536326",
+   "grupo": "B",
+   "jornada": 5,
+   "fecha": "2026-10-31",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "CLUB ESPORTIU BÀSQUET LLÍRIA",
+   "localId": "1010348",
+   "visitanteId": "1008978"
   },
   {
    "id": "2536331",
@@ -2466,7 +2466,7 @@
    "fecha": "2026-11-08",
    "hora": "12:00",
    "local": "REINA PROTEÍNAS CLAVIJO",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1010350",
    "visitanteId": "1010348"
   },
@@ -2488,7 +2488,7 @@
    "fecha": "2026-11-14",
    "hora": "19:30",
    "local": "CLASS BASQUET SANT ANTONI",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1008706",
    "visitanteId": "1010348"
   },
@@ -2548,17 +2548,6 @@
    "visitanteId": "1010200"
   },
   {
-   "id": "2536352",
-   "grupo": "B",
-   "jornada": 8,
-   "fecha": "2026-11-21",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "BASKET CARTAGENA",
-   "localId": "1010348",
-   "visitanteId": "1010502"
-  },
-  {
    "id": "2536350",
    "grupo": "B",
    "jornada": 8,
@@ -2590,6 +2579,17 @@
    "visitante": "BIELE ISB",
    "localId": "1008636",
    "visitanteId": "1008391"
+  },
+  {
+   "id": "2536352",
+   "grupo": "B",
+   "jornada": 8,
+   "fecha": "2026-11-21",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "BASKET CARTAGENA",
+   "localId": "1010348",
+   "visitanteId": "1010502"
   },
   {
    "id": "2536349",
@@ -2642,7 +2642,7 @@
    "fecha": "2026-11-28",
    "hora": "19:00",
    "local": "PROINBENI UPB GANDIA",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1010351",
    "visitanteId": "1010348"
   },
@@ -2713,17 +2713,6 @@
    "visitanteId": "1010351"
   },
   {
-   "id": "2536365",
-   "grupo": "B",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "C.B. ZARAGOZA",
-   "localId": "1010348",
-   "visitanteId": "1009133"
-  },
-  {
    "id": "2536363",
    "grupo": "B",
    "jornada": 10,
@@ -2755,6 +2744,17 @@
    "visitante": "CLASS BASQUET SANT ANTONI",
    "localId": "1008636",
    "visitanteId": "1008706"
+  },
+  {
+   "id": "2536365",
+   "grupo": "B",
+   "jornada": 10,
+   "fecha": "2026-12-05",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "C.B. ZARAGOZA",
+   "localId": "1010348",
+   "visitanteId": "1009133"
   },
   {
    "id": "2536362",
@@ -2796,7 +2796,7 @@
    "fecha": "2026-12-12",
    "hora": "18:10",
    "local": "SOL GIRONÈS BISBAL BÀSQUET",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1009441",
    "visitanteId": "1010348"
   },
@@ -2867,17 +2867,6 @@
    "visitanteId": "1009441"
   },
   {
-   "id": "2536378",
-   "grupo": "B",
-   "jornada": 12,
-   "fecha": "2026-12-19",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "AMICS CASTELLÓ",
-   "localId": "1010348",
-   "visitanteId": "1010208"
-  },
-  {
    "id": "2536374",
    "grupo": "B",
    "jornada": 12,
@@ -2922,6 +2911,17 @@
    "visitanteId": "1009133"
   },
   {
+   "id": "2536378",
+   "grupo": "B",
+   "jornada": 12,
+   "fecha": "2026-12-19",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "AMICS CASTELLÓ",
+   "localId": "1010348",
+   "visitanteId": "1010208"
+  },
+  {
    "id": "2536377",
    "grupo": "B",
    "jornada": 12,
@@ -2950,7 +2950,7 @@
    "fecha": "2027-01-03",
    "hora": "18:00",
    "local": "BIELE ISB",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1008391",
    "visitanteId": "1010348"
   },
@@ -2970,7 +2970,7 @@
    "grupo": "B",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "18:30",
    "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
    "visitante": "INTERMAQUINAS BENICARLO",
    "localId": "1008899",
@@ -3082,7 +3082,7 @@
    "fecha": "2027-01-10",
    "hora": "17:30",
    "local": "LOGROBASKET LOGI7",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1008985",
    "visitanteId": "1010348"
   },
@@ -3096,17 +3096,6 @@
    "visitante": "LOGROBASKET LOGI7",
    "localId": "1010502",
    "visitanteId": "1008985"
-  },
-  {
-   "id": "2536399",
-   "grupo": "B",
-   "jornada": 15,
-   "fecha": "2027-01-16",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "TQ-CB PRAT",
-   "localId": "1010348",
-   "visitanteId": "1008636"
   },
   {
    "id": "2536395",
@@ -3140,6 +3129,17 @@
    "visitante": "BIELE ISB",
    "localId": "1010351",
    "visitanteId": "1008391"
+  },
+  {
+   "id": "2536399",
+   "grupo": "B",
+   "jornada": 15,
+   "fecha": "2027-01-16",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "TQ-CB PRAT",
+   "localId": "1010348",
+   "visitanteId": "1008636"
   },
   {
    "id": "2536396",
@@ -3181,7 +3181,7 @@
    "fecha": "2027-01-30",
    "hora": "20:15",
    "local": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1008899",
    "visitanteId": "1010348"
   },
@@ -3252,17 +3252,6 @@
    "visitanteId": "1008899"
   },
   {
-   "id": "2536414",
-   "grupo": "B",
-   "jornada": 17,
-   "fecha": "2027-02-06",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "INTERMAQUINAS BENICARLO",
-   "localId": "1010348",
-   "visitanteId": "1010200"
-  },
-  {
    "id": "2536409",
    "grupo": "B",
    "jornada": 17,
@@ -3296,6 +3285,17 @@
    "visitanteId": "1008391"
   },
   {
+   "id": "2536414",
+   "grupo": "B",
+   "jornada": 17,
+   "fecha": "2027-02-06",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "INTERMAQUINAS BENICARLO",
+   "localId": "1010348",
+   "visitanteId": "1010200"
+  },
+  {
    "id": "2536411",
    "grupo": "B",
    "jornada": 17,
@@ -3324,7 +3324,7 @@
    "fecha": "2027-02-13",
    "hora": "18:30",
    "local": "CLUB ESPORTIU BÀSQUET LLÍRIA",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1008978",
    "visitanteId": "1010348"
   },
@@ -3406,17 +3406,6 @@
    "visitanteId": "1008978"
   },
   {
-   "id": "2536429",
-   "grupo": "B",
-   "jornada": 19,
-   "fecha": "2027-02-20",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "REINA PROTEÍNAS CLAVIJO",
-   "localId": "1010348",
-   "visitanteId": "1010350"
-  },
-  {
    "id": "2536423",
    "grupo": "B",
    "jornada": 19,
@@ -3450,6 +3439,17 @@
    "visitanteId": "1008636"
   },
   {
+   "id": "2536429",
+   "grupo": "B",
+   "jornada": 19,
+   "fecha": "2027-02-20",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "REINA PROTEÍNAS CLAVIJO",
+   "localId": "1010348",
+   "visitanteId": "1010350"
+  },
+  {
    "id": "2536424",
    "grupo": "B",
    "jornada": 19,
@@ -3472,17 +3472,6 @@
    "visitanteId": "1008899"
   },
   {
-   "id": "2536430",
-   "grupo": "B",
-   "jornada": 20,
-   "fecha": "2027-02-27",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "CLASS BASQUET SANT ANTONI",
-   "localId": "1010348",
-   "visitanteId": "1008706"
-  },
-  {
    "id": "2536432",
    "grupo": "B",
    "jornada": 20,
@@ -3503,6 +3492,17 @@
    "visitante": "AMICS CASTELLÓ",
    "localId": "1008636",
    "visitanteId": "1010208"
+  },
+  {
+   "id": "2536430",
+   "grupo": "B",
+   "jornada": 20,
+   "fecha": "2027-02-27",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "CLASS BASQUET SANT ANTONI",
+   "localId": "1010348",
+   "visitanteId": "1008706"
   },
   {
    "id": "2536433",
@@ -3555,7 +3555,7 @@
    "fecha": "2027-03-06",
    "hora": "19:00",
    "local": "BASKET CARTAGENA",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1010502",
    "visitanteId": "1010348"
   },
@@ -3637,17 +3637,6 @@
    "visitanteId": "1008706"
   },
   {
-   "id": "2536445",
-   "grupo": "B",
-   "jornada": 22,
-   "fecha": "2027-03-13",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "PROINBENI UPB GANDIA",
-   "localId": "1010348",
-   "visitanteId": "1010351"
-  },
-  {
    "id": "2536447",
    "grupo": "B",
    "jornada": 22,
@@ -3679,6 +3668,17 @@
    "visitante": "LOGROBASKET LOGI7",
    "localId": "1008636",
    "visitanteId": "1008985"
+  },
+  {
+   "id": "2536445",
+   "grupo": "B",
+   "jornada": 22,
+   "fecha": "2027-03-13",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "PROINBENI UPB GANDIA",
+   "localId": "1010348",
+   "visitanteId": "1010351"
   },
   {
    "id": "2536449",
@@ -3764,7 +3764,7 @@
    "fecha": "2027-03-21",
    "hora": "12:00",
    "local": "C.B. ZARAGOZA",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1009133",
    "visitanteId": "1010348"
   },
@@ -3789,17 +3789,6 @@
    "visitante": "C.B. ZARAGOZA",
    "localId": "1010502",
    "visitanteId": "1009133"
-  },
-  {
-   "id": "2536460",
-   "grupo": "B",
-   "jornada": 24,
-   "fecha": "2027-03-27",
-   "hora": "19:30",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "SOL GIRONÈS BISBAL BÀSQUET",
-   "localId": "1010348",
-   "visitanteId": "1009441"
   },
   {
    "id": "2536462",
@@ -3833,6 +3822,17 @@
    "visitante": "CLASS BASQUET SANT ANTONI",
    "localId": "1010351",
    "visitanteId": "1008706"
+  },
+  {
+   "id": "2536460",
+   "grupo": "B",
+   "jornada": 24,
+   "fecha": "2027-03-27",
+   "hora": "18:30",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "SOL GIRONÈS BISBAL BÀSQUET",
+   "localId": "1010348",
+   "visitanteId": "1009441"
   },
   {
    "id": "2536463",
@@ -3896,7 +3896,7 @@
    "fecha": "2027-04-04",
    "hora": "12:00",
    "local": "AMICS CASTELLÓ",
-   "visitante": "CIUDAD MOLINA BASKET",
+   "visitante": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
    "localId": "1010208",
    "visitanteId": "1010348"
   },
@@ -3943,17 +3943,6 @@
    "visitante": "AMICS CASTELLÓ",
    "localId": "1010502",
    "visitanteId": "1010208"
-  },
-  {
-   "id": "2536475",
-   "grupo": "B",
-   "jornada": 26,
-   "fecha": "2027-04-10",
-   "hora": "20:00",
-   "local": "CIUDAD MOLINA BASKET",
-   "visitante": "BIELE ISB",
-   "localId": "1010348",
-   "visitanteId": "1008391"
   },
   {
    "id": "2536472",
@@ -4009,6 +3998,17 @@
    "visitante": "LOGROBASKET LOGI7",
    "localId": "1010350",
    "visitanteId": "1008985"
+  },
+  {
+   "id": "2536475",
+   "grupo": "B",
+   "jornada": 26,
+   "fecha": "2027-04-10",
+   "hora": "20:00",
+   "local": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
+   "visitante": "BIELE ISB",
+   "localId": "1010348",
+   "visitanteId": "1008391"
   }
  ]
 }

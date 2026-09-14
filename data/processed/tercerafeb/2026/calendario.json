@@ -2,7 +2,7 @@
  "competicion": "tercerafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-09-07",
+ "generado": "2026-09-14",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -2078,23 +2078,12 @@
    "id": "2536844",
    "grupo": "A-B",
    "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "19:00",
+   "fecha": "2026-10-04",
+   "hora": "17:00",
    "local": "UNIVERSIDAD DE OVIEDO",
    "visitante": "TERRITORIO MINERO BALONCESTO VILLA DE MIERES",
    "localId": "1008632",
    "visitanteId": "1010206"
-  },
-  {
-   "id": "2536853",
-   "grupo": "A-B",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "19:30",
-   "local": "CALVO BASKET XIRIA",
-   "visitante": "MARÍN ENCE PEIXEGALEGO",
-   "localId": "1010503",
-   "visitanteId": "1008919"
   },
   {
    "id": "2536850",
@@ -2128,6 +2117,17 @@
    "visitante": "ULLA OIL ROSALIA",
    "localId": "1010574",
    "visitanteId": "1010897"
+  },
+  {
+   "id": "2536853",
+   "grupo": "A-B",
+   "jornada": 2,
+   "fecha": "2026-10-11",
+   "hora": "12:00",
+   "local": "CALVO BASKET XIRIA",
+   "visitante": "MARÍN ENCE PEIXEGALEGO",
+   "localId": "1010503",
+   "visitanteId": "1008919"
   },
   {
    "id": "2536856",
@@ -4187,6 +4187,17 @@
    "visitanteId": "1008408"
   },
   {
+   "id": "2537044",
+   "grupo": "B-A",
+   "jornada": 3,
+   "fecha": "2026-10-17",
+   "hora": "20:00",
+   "local": "C.B. FUENLABRADA",
+   "visitante": "EB FELIPE ANTÓN",
+   "localId": "1010498",
+   "visitanteId": "1008778"
+  },
+  {
    "id": "2537043",
    "grupo": "B-A",
    "jornada": 3,
@@ -4196,17 +4207,6 @@
    "visitante": "FUNDACION GLOBALCAJA LA RODA",
    "localId": "1009119",
    "visitanteId": "1009702"
-  },
-  {
-   "id": "2537044",
-   "grupo": "B-A",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "20:00",
-   "local": "EB FELIPE ANTÓN",
-   "visitante": "C.B. FUENLABRADA",
-   "localId": "1008778",
-   "visitanteId": "1010498"
   },
   {
    "id": "2537040",
@@ -4506,6 +4506,17 @@
    "visitanteId": "1008407"
   },
   {
+   "id": "2537073",
+   "grupo": "B-A",
+   "jornada": 7,
+   "fecha": "2026-11-14",
+   "hora": "18:30",
+   "local": "C.B. FUENLABRADA",
+   "visitante": "FUNDACION GLOBALCAJA LA RODA",
+   "localId": "1010498",
+   "visitanteId": "1009702"
+  },
+  {
    "id": "2537069",
    "grupo": "B-A",
    "jornada": 7,
@@ -4526,17 +4537,6 @@
    "visitante": "ZENTRO BASKET MADRID",
    "localId": "1008778",
    "visitanteId": "1010497"
-  },
-  {
-   "id": "2537073",
-   "grupo": "B-A",
-   "jornada": 7,
-   "fecha": "2026-11-15",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "FUNDACION GLOBALCAJA LA RODA",
-   "localId": "1010498",
-   "visitanteId": "1009702"
   },
   {
    "id": "2537068",
@@ -5237,10 +5237,10 @@
    "jornada": 16,
    "fecha": "2027-01-31",
    "hora": "12:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "EB FELIPE ANTÓN",
-   "localId": "1010498",
-   "visitanteId": "1008778"
+   "local": "EB FELIPE ANTÓN",
+   "visitante": "C.B. FUENLABRADA",
+   "localId": "1008778",
+   "visitanteId": "1010498"
   },
   {
    "id": "2537139",
@@ -6090,17 +6090,6 @@
    "visitanteId": "1008865"
   },
   {
-   "id": "2537217",
-   "grupo": "B-B",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "20:30",
-   "local": "BALONCESTO TALAVERA",
-   "visitante": "GRAN CANARIA",
-   "localId": "1010580",
-   "visitanteId": "1009825"
-  },
-  {
    "id": "2537220",
    "grupo": "B-B",
    "jornada": 2,
@@ -6143,6 +6132,17 @@
    "visitante": "UROS DE RIVAS",
    "localId": "1008935",
    "visitanteId": "1008866"
+  },
+  {
+   "id": "2537217",
+   "grupo": "B-B",
+   "jornada": 2,
+   "fecha": "2026-10-11",
+   "hora": "12:00",
+   "local": "BALONCESTO TALAVERA",
+   "visitante": "GRAN CANARIA",
+   "localId": "1010580",
+   "visitanteId": "1009825"
   },
   {
    "id": "2537218",
@@ -12199,7 +12199,7 @@
    "grupo": "D-A",
    "jornada": 3,
    "fecha": "2026-10-18",
-   "hora": "12:30",
+   "hora": "18:00",
    "local": "JAEN PARAÍSO INTERIOR CB",
    "visitante": "CB LA ZUBIA",
    "localId": "1010332",
@@ -12254,7 +12254,7 @@
    "grupo": "D-A",
    "jornada": 4,
    "fecha": "2026-10-24",
-   "hora": "18:00",
+   "hora": "18:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "SURSEEDS - B. MURGI",
    "localId": "1008850",
@@ -12386,7 +12386,7 @@
    "grupo": "D-A",
    "jornada": 6,
    "fecha": "2026-11-07",
-   "hora": "18:00",
+   "hora": "18:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "JAEN PARAÍSO INTERIOR CB",
    "localId": "1008850",
@@ -12507,7 +12507,7 @@
    "grupo": "D-A",
    "jornada": 8,
    "fecha": "2026-11-21",
-   "hora": "18:00",
+   "hora": "17:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "HOSPITAL OCHOA CB MARBELLA",
    "localId": "1008850",
@@ -12782,7 +12782,7 @@
    "grupo": "D-A",
    "jornada": 12,
    "fecha": "2026-12-20",
-   "hora": "12:30",
+   "hora": "18:00",
    "local": "JAEN PARAÍSO INTERIOR CB",
    "visitante": "ECOCULTURE CB ALMERÍA",
    "localId": "1010332",
@@ -13057,7 +13057,7 @@
    "grupo": "D-A",
    "jornada": 16,
    "fecha": "2027-01-30",
-   "hora": "18:00",
+   "hora": "18:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "BALONCESTO COMARCA DE LA AXARQUIA",
    "localId": "1008850",
@@ -13178,7 +13178,7 @@
    "grupo": "D-A",
    "jornada": 18,
    "fecha": "2027-02-13",
-   "hora": "18:00",
+   "hora": "18:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "CDBO BYSPANIA TÍJOLA",
    "localId": "1008850",
@@ -13563,7 +13563,7 @@
    "grupo": "D-A",
    "jornada": 24,
    "fecha": "2027-04-03",
-   "hora": "18:00",
+   "hora": "18:30",
    "local": "MELILLA CIUDAD DEL DEPORTE ENRIQUE SOLER",
    "visitante": "CB LA ZUBIA",
    "localId": "1008850",
@@ -14131,17 +14131,6 @@
    "visitanteId": "1009724"
   },
   {
-   "id": "2537434",
-   "grupo": "D-B",
-   "jornada": 7,
-   "fecha": "2026-11-14",
-   "hora": "18:00",
-   "local": "BALONCESTO BADAJOZ",
-   "visitante": "CB CORIA",
-   "localId": "1009724",
-   "visitanteId": "1010195"
-  },
-  {
    "id": "2537432",
    "grupo": "D-B",
    "jornada": 7,
@@ -14173,6 +14162,17 @@
    "visitante": "BOSCO MÉRIDA PATRIMONIO DE LA HUMANIDAD",
    "localId": "1010573",
    "visitanteId": "1009814"
+  },
+  {
+   "id": "2537434",
+   "grupo": "D-B",
+   "jornada": 7,
+   "fecha": "2026-11-15",
+   "hora": "12:00",
+   "local": "BALONCESTO BADAJOZ",
+   "visitante": "CB CORIA",
+   "localId": "1009724",
+   "visitanteId": "1010195"
   },
   {
    "id": "2537437",
@@ -15528,6 +15528,17 @@
    "visitanteId": "1010319"
   },
   {
+   "id": "2537583",
+   "grupo": "E-A",
+   "jornada": 2,
+   "fecha": "2026-10-09",
+   "hora": "19:00",
+   "local": "HALAL FOOD QUALITY UIXÓ BÀSQUET",
+   "visitante": "CB MORVEDRE",
+   "localId": "1008694",
+   "visitanteId": "1008790"
+  },
+  {
    "id": "2537581",
    "grupo": "E-A",
    "jornada": 2,
@@ -15548,17 +15559,6 @@
    "visitante": "ECOSIONA JOVENS L’ELIANA",
    "localId": "1010491",
    "visitanteId": "1010204"
-  },
-  {
-   "id": "2537583",
-   "grupo": "E-A",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "19:00",
-   "local": "HALAL FOOD QUALITY UIXÓ BÀSQUET",
-   "visitante": "CB MORVEDRE",
-   "localId": "1008694",
-   "visitanteId": "1008790"
   },
   {
    "id": "2537582",
@@ -15609,7 +15609,7 @@
    "grupo": "E-A",
    "jornada": 3,
    "fecha": "2026-10-17",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "BURJASSOT CB",
    "localId": "1008690",
@@ -15763,7 +15763,7 @@
    "grupo": "E-A",
    "jornada": 5,
    "fecha": "2026-10-31",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "THE FITZGERALD EL PILAR",
    "localId": "1008690",
@@ -15917,7 +15917,7 @@
    "grupo": "E-A",
    "jornada": 7,
    "fecha": "2026-11-14",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "CB MORVEDRE",
    "localId": "1008690",
@@ -16144,22 +16144,11 @@
    "visitanteId": "1008692"
   },
   {
-   "id": "2537634",
-   "grupo": "E-A",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "18:30",
-   "local": "BURJASSOT CB",
-   "visitante": "TOPSURFACE NB PATERNA",
-   "localId": "1008915",
-   "visitanteId": "1009121"
-  },
-  {
    "id": "2537640",
    "grupo": "E-A",
    "jornada": 10,
    "fecha": "2026-12-05",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "ECOSIONA JOVENS L’ELIANA",
    "localId": "1008690",
@@ -16219,6 +16208,17 @@
    "visitante": "CB JOVENS ALMÀSSERA",
    "localId": "1010319",
    "visitanteId": "1010491"
+  },
+  {
+   "id": "2537634",
+   "grupo": "E-A",
+   "jornada": 10,
+   "fecha": "2026-12-15",
+   "hora": "21:00",
+   "local": "BURJASSOT CB",
+   "visitante": "TOPSURFACE NB PATERNA",
+   "localId": "1008915",
+   "visitanteId": "1009121"
   },
   {
    "id": "2537646",
@@ -16302,7 +16302,7 @@
    "grupo": "E-A",
    "jornada": 12,
    "fecha": "2026-12-19",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "TURBO MANISES C.B.C M-Q",
    "localId": "1008690",
@@ -16533,7 +16533,7 @@
    "grupo": "E-A",
    "jornada": 15,
    "fecha": "2027-01-23",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "BAUHAUS GODELLA",
    "localId": "1008690",
@@ -16687,7 +16687,7 @@
    "grupo": "E-A",
    "jornada": 17,
    "fecha": "2027-02-06",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "HALAL FOOD QUALITY UIXÓ BÀSQUET",
    "localId": "1008690",
@@ -16841,7 +16841,7 @@
    "grupo": "E-A",
    "jornada": 19,
    "fecha": "2027-02-20",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "CB TABERNES BLANQUES - FERNANDO GIL",
    "localId": "1008690",
@@ -16995,7 +16995,7 @@
    "grupo": "E-A",
    "jornada": 21,
    "fecha": "2027-03-06",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "AMICS CASTELLÓ B",
    "localId": "1008690",
@@ -17083,7 +17083,7 @@
    "grupo": "E-A",
    "jornada": 22,
    "fecha": "2027-03-13",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "TOPSURFACE NB PATERNA",
    "localId": "1008690",
@@ -17237,7 +17237,7 @@
    "grupo": "E-A",
    "jornada": 24,
    "fecha": "2027-04-03",
-   "hora": "18:30",
+   "hora": "19:15",
    "local": "C.B. PUERTO SAGUNTO",
    "visitante": "CEMALU ALDAIA",
    "localId": "1008690",
@@ -17995,8 +17995,8 @@
    "id": "2537806",
    "grupo": "E-B",
    "jornada": 8,
-   "fecha": "2026-11-21",
-   "hora": "19:00",
+   "fecha": "2026-11-18",
+   "hora": "20:30",
    "local": "C.B. JORGE JUAN CASTELLÓ SINCE 1907",
    "visitante": "VELABASKET CB SUECA",
    "localId": "1008688",
