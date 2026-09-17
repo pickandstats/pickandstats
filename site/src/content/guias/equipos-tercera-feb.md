@@ -37,19 +37,19 @@ vuelta, de la 14 a la 26. Después llegan las eliminatorias por el ascenso.
 
 ### Grupo A-A
 
-Baloncesto La Flecha · CB Valle de Egües · Constr. Gonzalo Crespo Pas Piélagos ·
-De Morro Fino Cantbasket04 · Hotel 4Postes Ávila Auténtica El Bulevar · Iruki Take ·
-Lis Data Solutions Bezana · Megacalzado Ardoi · Restaurante Los Arcos CB Solares ·
-San Prudencio · Tabirako Baque · Teknei Bizkaia Zornotza · Ulacia ZKE ·
-Universidad Deusto Loiola Indautxu
+Baloncesto La Flecha · Constr. Gonzalo Crespo Pas Piélagos · De Morro Fino Cantbasket04 ·
+Elaborados Naturales Valle de Egüés · Hotel 4Postes Ávila Auténtica El Bulevar ·
+Iruki Take · Lis Data Solutions Bezana · Megacalzado Ardoi ·
+Restaurante Los Arcos CB Solares · San Prudencio · Tabirako Baque ·
+Teknei Bizkaia Zornotza · Ulacia ZKE · Universidad Deusto Loiola Indautxu
 
 ### Grupo A-B
 
-Baloncesto Villa de Mieres 2012 · Caja Rural RDL · Calvo Basket Xiria ·
-Círculo Gijón Baloncesto · Ineltron Santo Domingo Betanzos · Marín Ence Peixegalego ·
-Novobasket Vigo · Recoletas Salud Salamanca · Sigaltec BBC · Traumacor Culleredo ·
-Ucoga Seguros CB Chantada · Ulla Oil Rosalía · Universidad de Oviedo ·
-Usal Meins Avenida
+Caja Rural RDL · Calvo Basket Xiria · Ineltron Santo Domingo Betanzos ·
+Marín Ence Peixegalego · Novobasket Vigo · Okticket Círculo Gijón ·
+Recoletas Salud Salamanca · Sigaltec BBC · Territorio Minero Baloncesto Villa de Mieres ·
+Traumacor Culleredo · Ucoga Seguros CB Chantada · Ulla Oil Rosalía ·
+Universidad de Oviedo · Usal Meins Avenida
 
 ## Conferencia B
 
@@ -118,8 +118,8 @@ Lithium Iberia Sagrado Cáceres · Oh!Tels ULB · San Antonio Cáceres
 
 Amics Castelló B · Bauhaus Godella · Burjassot CB · CB Jovens Almàssera ·
 CB Morvedre · CB Puerto Sagunto · CB Tabernes Blanques Fernando Gil ·
-Cemalu Aldaia · Fundació Caixa Rural Vila-real · Halal Food Quality Uixó Bàsquet ·
-Socage Jovens L'Eliana · The Fitzgerald El Pilar · Topsurface NB Paterna ·
+Cemalu Aldaia · Ecosiona Jovens L'Eliana · Fundació Caixa Rural Vila-real ·
+Halal Food Quality Uixó Bàsquet · The Fitzgerald El Pilar · Topsurface NB Paterna ·
 Turbo Manises CBC M-Q
 
 ### Grupo E-B
@@ -133,8 +133,8 @@ Velabasket CB Sueca
 ## Quién llega y quién se va
 
 **Desde la Segunda FEB** bajan cinco equipos: Florange UE Mataró y OCA Global CB Salou
-(ambos al grupo C-B y C-A respectivamente), Círculo Gijón Baloncesto y CB Valle de Egües
-en la Conferencia A, y el Jaén Paraíso Interior CB en la D.
+(ambos al grupo C-B y C-A respectivamente), Okticket Círculo Gijón y Elaborados
+Naturales Valle de Egüés en la Conferencia A, y el Jaén Paraíso Interior CB en la D.
 
 **Hacia la Segunda FEB** ascendieron otros seis: Vítaly La Mar BCBadajoz, TQ-CB Prat,
 Movistar Estudiantes B y Jaén Paraíso Interior FS como campeones de sus fases finales,

@@ -31,12 +31,12 @@ Por orden alfabético; el listado no refleja ninguna clasificación.
 10. Grupo Alega Cantabria
 11. Grupo Ureta Tizona Burgos
 12. Hestia Menorca
-13. Insolac Caja 87
-14. Inveready Gipuzkoa
-15. Lucentum Alicante
-16. Movistar Estudiantes
-17. Palmer Basket Mallorca Palma
-18. Súper Agropal Palencia
+13. Iberolea Palencia
+14. Insolac Caja 87
+15. Inveready Askatuak Gipuzkoa
+16. Lucentum Alicante
+17. Movistar Estudiantes
+18. Palmer Basket Mallorca Palma
 
 ## Quién llega y quién se va
 
