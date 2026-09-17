@@ -437,6 +437,15 @@ th.col-a { color: #ffd9c4; }
 }
 .cabecera-marca { flex: 0 0 auto; }
 .cabecera-buscador { flex: 1 1 320px; max-width: 480px; }
+
+/* .titulo-app ("Estadísticas avanzadas · Tercera FEB") vive dentro de
+   .cabecera-marca, y flex-shrink:0 le impide encoger: por debajo de 768px
+   el h1 no cabe en una línea y desborda la página en horizontal en vez de
+   partirse en dos. Por debajo de ese ancho, que ocupe toda la fila y pueda
+   envolver con normalidad. */
+@media (max-width: 767px) {
+  .cabecera-marca { flex: 1 1 100%; }
+}
 .cabecera-buscador .buscador { max-width: none; }
 
 .barra-temporadas {
