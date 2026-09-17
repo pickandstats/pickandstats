@@ -20,15 +20,15 @@ sitio se quedaron fuera.
 
 Por orden alfabético; el listado no refleja ninguna clasificación.
 
-1. BCBadajoz
-2. Cáceres Patrimonio de la Humanidad
-3. CB Algeciras
-4. CB Getafe
-5. CB Starlabs Morón
-6. CB Toledo Basket
-7. CB Tres Cantos
-8. Clínica Ponferrada SDP
-9. Cultural y Deportiva Leonesa
+1. Cáceres Patrimonio de la Humanidad
+2. CB Algeciras
+3. CB Getafe
+4. CB Starlabs Morón
+5. CB Toledo Basket
+6. CB Tres Cantos
+7. Clínica Ponferrada SDP
+8. Cultural y Deportiva Leonesa
+9. Iren BCBadajoz
 10. Jaén Paraíso Interior FS
 11. Melilla Ciudad del Deporte
 12. Movistar Estudiantes B
@@ -41,16 +41,16 @@ Por orden alfabético; el listado no refleja ninguna clasificación.
 2. Basket Cartagena
 3. Biele ISB
 4. CB Zaragoza
-5. Ciudad Molina Basket
-6. Class Bàsquet Sant Antoni
-7. Club Esportiu Bàsquet Llíria
-8. Intermaquinas Benicarló
-9. Lobe Tu Provincia Huesca La Magia
-10. LogroBasket Logi7
-11. Proinbeni UPB Gandía
-12. Reina Proteínas Clavijo
-13. Sol Gironès Bisbal Bàsquet
-14. TQ-CB Prat
+5. Class Bàsquet Sant Antoni
+6. Club Esportiu Bàsquet Llíria
+7. Intermaquinas Benicarló
+8. Lobe Tu Provincia Huesca La Magia
+9. LogroBasket Logi7
+10. Proinbeni UPB Gandía
+11. Reina Proteínas Clavijo
+12. Sol Gironès Bisbal Bàsquet
+13. TQ-CB Prat
+14. Vidal Golosinas Ciudad Molina Basket
 
 ## Cómo se reparten los grupos
 

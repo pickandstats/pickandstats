@@ -76,10 +76,10 @@ Lujisa Guadalajara Basket · Náutico Tenerife · Recucym Bazu · Uros de Rivas
 
 ### Grupo C-A
 
-CB Cuarte de Huerva · CB Granollers · CB Quart Fai Berti · CB Vic - Universitat de Vic ·
-DM Group Mollet · Eglobe Tecla Sala · Flanigan Calvià · Florange UE Mataró ·
+Bàsquet Calvià · CB Cuarte de Huerva · CB Granollers · CB Quart Fai Berti ·
+CB Vic - Universitat de Vic · Eglobe Tecla Sala · Florange UE Mataró ·
 Ibersol CB Tarragona · Immo Sa Marina Ciutat d'Inca Bàsquet · Sese A ·
-Tenea CB Esparreguera · Tibu-ron Castelldefels · UE Montgat
+Shad Mollet · Tenea CB Esparreguera · Tibu-ron Castelldefels · UE Montgat
 
 ### Grupo C-B
 
@@ -125,7 +125,7 @@ Turbo Manises CBC M-Q
 ### Grupo E-B
 
 CB Ifach Calpe · CBI Elche · CB Estudiantes Cartagena ·
-CB Jorge Juan Castelló Since 1907 · CMG Hidráulica NB Torrent · Denia Basket ·
+CB Jorge Juan Castelló Since 1907 · CMG Hidráulica NB Torrent · Denia Basquet ·
 Eset Ontinent · Inversus Aceitunas Fruyper AD Costera Sur · Inversus Infante ·
 Personalhome Adesavi · Rigalli Alginet · SCD Carolinas · Servigroup Benidorm ·
 Velabasket CB Sueca

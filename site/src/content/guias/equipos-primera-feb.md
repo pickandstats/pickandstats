@@ -20,21 +20,21 @@ la Liga Endesa.
 Por orden alfabético; el listado no refleja ninguna clasificación.
 
 1. Alimerka Oviedo Baloncesto
-2. Bueno Arenas Albacete
-3. Caja Rural CB Zamora
-4. Cajasol Coto Córdoba
-5. Club Ourense Baloncesto
-6. Covirán Granada
-7. Fibwi Mallorca Básquet Palma
-8. Flexicar Fuenlabrada
-9. Gran Canaria CB
-10. Grupo Alega Cantabria
-11. Grupo Ureta Tizona Burgos
-12. Hestia Menorca
-13. Iberolea Palencia
-14. Insolac Caja 87
-15. Inveready Askatuak Gipuzkoa
-16. Lucentum Alicante
+2. Bàsquet Menorca
+3. Bueno Arenas Albacete
+4. Caja Rural CB Zamora
+5. Cajasol Coto Córdoba
+6. Club Ourense Baloncesto
+7. Covirán Granada
+8. Fibwi Mallorca Básquet Palma
+9. Flexicar Fuenlabrada
+10. Gran Canaria CB
+11. Grupo Alega Cantabria
+12. Grupo Ureta Tizona Burgos
+13. HLA Alicante
+14. Iberolea Palencia
+15. Insolac Caja 87
+16. Inveready Askatuak Gipuzkoa
 17. Movistar Estudiantes
 18. Palmer Basket Mallorca Palma
 

@@ -3,11 +3,30 @@
 // descargado (data/processed/<comp>/<temporada>/calendario.json), de la
 // temporada mas reciente disponible.
 //
+// LA REGLA: el nombre bueno es el del calendario de la FEB, literal, aunque la
+// prensa vaya por delante anunciando un patrocinio nuevo. La app pinta los
+// nombres que vienen de la FEB, asi que seguir a la prensa antes de tiempo deja
+// la guia diciendo una cosa y la app otra (17/9/2026: paso exactamente con
+// BCBadajoz y Ciudad Molina Basket, que la prensa ya llamaba con su nuevo
+// patrocinador pero el calendario tardo unos dias mas en registrarlo). El
+// calendario se refresca cada semana via el cron de datos: si la FEB inscribe
+// un nombre nuevo, este verificador lo detectara en su siguiente ejecucion.
+//
 // Avisa, no bloquea: los cambios de patrocinador y las abreviaturas
-// editoriales dan falsos positivos legitimos (p.ej. "Constr." por
-// "Construcciones", o una errata que la propia FEB arrastra en origen). La
-// lista es de "revisar", no de "errores". De ejecucion manual, no esta
-// enchufado al workflow semanal.
+// editoriales dan falsos positivos legitimos. Dos que ya se investigaron y se
+// dejan a proposito, para no reinvestigarlos desde cero cada vez:
+//   - "Construcciones Gonzalo Crespo Pas Piélagos" (Tercera, grupo A-A): en la
+//     guia va abreviado "Constr. Gonzalo Crespo Pas Piélagos". Es el mismo
+//     club, cosmetico.
+//   - "Eset Ontinet" (Tercera, grupo E-B): la guia dice "Eset Ontinent", con
+//     una n mas. El pueblo es Ontinyent/Ontinent; "Ontinet" parece una errata
+//     que la propia FEB arrastra en origen, no nuestra. Se deja como esta en
+//     la guia.
+// La lista que imprime este script es de "revisar", no de "errores": antes de
+// tocar una guia por lo que salga aqui, contrastalo con el calendario mismo
+// (autoridad) y, si hace falta mas contexto sobre el porque, con la prensa.
+// No esta enchufado al workflow semanal: de ejecucion manual, y conviene
+// pasarlo cada pocas semanas y antes de cada corte del observatorio.
 //
 // Uso: node scraper/verificar-censo.js
 const fs = require('fs');
