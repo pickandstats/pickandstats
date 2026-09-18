@@ -3,7 +3,7 @@ titulo: Los desempates de la FEB, o por qué el average particular no siempre ma
 descripcion: Cómo ordena la FEB a los equipos empatados a victorias. Los dos regímenes del artículo 84 —uno para la primera vuelta y otro para la segunda—, por qué el average particular no manda siempre, y la regla del 2-0 que manda a un equipo al último puesto de su empate.
 descripcionSeo: Cómo desempata la FEB a los equipos con las mismas victorias, los dos regímenes del artículo 84, el average particular y la regla del 2-0.
 familia: competicion
-orden: 1
+orden: 2
 fecha: 2026-09-10
 temporada: "2025/26"
 ---
