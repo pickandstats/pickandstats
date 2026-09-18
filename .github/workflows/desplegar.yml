@@ -23,6 +23,15 @@ jobs:
         with:
           node-version: 24
 
+      # Guardian de la cinta de navegación: site/src/layouts/Base.astro y
+      # web/src/CintaNav.jsx se mantienen idénticas a mano (mismos enlaces,
+      # mismo orden), y el único aviso que lo protegía era un comentario —
+      # así que la app se quedó una semana entera sin el enlace de
+      # Observatorio sin que nada avisara. Va ANTES de construir, y bloquea
+      # a propósito: el arreglo siempre es de una línea.
+      - name: Verificar que la cinta del sitio y de la app coinciden
+        run: node test/verificar-cinta.cjs
+
       # ---- Sitio de contenido (Astro) -> raíz del dominio ----
       - name: Astro · instalar
         working-directory: site
