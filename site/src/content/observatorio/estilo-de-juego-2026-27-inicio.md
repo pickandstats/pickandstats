@@ -5,6 +5,7 @@ descripcionSeo: Ritmo, volumen de triple y eficiencia en las tres categorías FE
 temporada: "2026/27"
 corte: inicio
 fecha: 2026-09-11
+actualizado: 2026-09-19
 ---
 
 La idea está en cualquier conversación de baloncesto en España: **se corre más, se tira más
@@ -138,7 +139,13 @@ Las tres preguntas que quedan abiertas:
 2. **¿Se recupera el acierto?** Si el volumen sube porque los equipos tiran mejor, el
    porcentaje debería dejar de caer en algún momento. De momento no lo ha hecho.
 3. **¿Siguen subiendo los tiros libres y el rebote ofensivo?** Es el hallazgo menos esperado
-   de esta línea base y el que más nos interesa seguir.
+   de esta línea base y el que más nos interesa seguir. Y desde que se publicó este corte hay
+   un motivo nuevo para mirarlo: el 1 de octubre entra en vigor el
+   [reglamento nuevo de FIBA](/guias/falta-disruptiva-flagrante-reglas-fiba-2026/), que
+   redefine qué es una acción de tiro y sustituye la falta antideportiva por dos figuras
+   distintas. Las dos cosas tocan de lleno la tasa de tiros libres. Si se mueve, habrá que
+   separar cuánto es estilo de juego y cuánto es reglamento — y las cifras de arriba son
+   justo la referencia que permite intentarlo.
 
 Todas las cifras salen de los datos públicos de la FEB procesados en
 [Pick&Stats](/app/), y se pueden recalcular equipo a equipo desde la vista de **Equipos** de

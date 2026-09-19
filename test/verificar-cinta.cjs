@@ -21,6 +21,14 @@ const FICHEROS = {
 
 // Extrae el bloque <nav class="cinta-nav">...</nav> (o className=) y, de
 // dentro, la lista ordenada de {href, texto} de cada <a>.
+//
+// El regex de <a> exige que href sea el PRIMER atributo. Si algún día un
+// enlace se escribe con otro atributo por delante (<a className="x"
+// href="/y">), ese <a> no lo captura — y si eso pasa en los dos ficheros a
+// la vez, las dos listas seguirían teniendo la misma longitud y el cotejo
+// pasaría en verde sin haber comparado ese enlace. Por eso se cuentan
+// también las aperturas `<a` del bloque: si no coincide con lo capturado,
+// el extractor se ha dejado alguno y hay que saberlo, no callarlo.
 function extraerCinta(contenido) {
   const bloque = contenido.match(/<nav\s+class(?:Name)?="cinta-nav">([\s\S]*?)<\/nav>/);
   if (!bloque) return null;
@@ -30,7 +38,8 @@ function extraerCinta(contenido) {
   while ((m = reA.exec(bloque[1]))) {
     enlaces.push({ href: m[1], texto: m[2].trim() });
   }
-  return enlaces;
+  const totalTags = (bloque[1].match(/<a\b/g) || []).length;
+  return { enlaces, totalTags };
 }
 
 let error = false;
@@ -42,8 +51,8 @@ for (const [clave, fichero] of Object.entries(FICHEROS)) {
     continue;
   }
   const contenido = fs.readFileSync(fichero, 'utf8');
-  const enlaces = extraerCinta(contenido);
-  if (!enlaces || !enlaces.length) {
+  const extraido = extraerCinta(contenido);
+  if (!extraido || !extraido.enlaces.length) {
     console.error(
       `✗ No se encontró la cinta (.cinta-nav) en ${fichero}. ` +
       'Si el marcado cambió, actualiza este extractor: no des el cotejo por bueno sin haber comprobado nada.'
@@ -51,7 +60,17 @@ for (const [clave, fichero] of Object.entries(FICHEROS)) {
     error = true;
     continue;
   }
-  listas[clave] = enlaces;
+  if (extraido.enlaces.length !== extraido.totalTags) {
+    console.error(
+      `✗ El extractor se ha dejado enlaces en ${fichero}: hay ${extraido.totalTags} etiquetas ` +
+      `<a> en la cinta pero solo capturó ${extraido.enlaces.length}. Probablemente hay un <a> ` +
+      'con el href fuera de la primera posición (p.ej. <a className="x" href="/y">): actualiza ' +
+      'el regex de extraerCinta, no ignores el hueco.'
+    );
+    error = true;
+    continue;
+  }
+  listas[clave] = extraido.enlaces;
 }
 
 if (error) process.exit(1);

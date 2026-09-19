@@ -12,13 +12,13 @@ El 1 de octubre de 2026 entran en vigor las nuevas Reglas Oficiales de Baloncest
 FIBA. La fecha no cae en verano ni en el parón de Navidad: cae **con las ligas FEB ya
 arrancando**.
 
-De los 2.438 partidos de liga regular que el calendario de la FEB tiene publicados para
-las tres categorías masculinas, **nueve** se juegan antes del 1 de octubre. Son los nueve
-de la jornada 1 de Primera FEB, del viernes 25 al domingo 27 de septiembre. La Segunda y
-la Tercera empiezan el 3 de octubre, ya con el reglamento nuevo, y la Primera vuelve el
-día 2 con la jornada 2.
+De los 2.438 partidos de liga regular que el calendario de la FEB tiene publicados para la
+temporada 2026/27 en las tres categorías masculinas, **nueve** se juegan antes del 1 de
+octubre. Son los nueve de la jornada 1 de Primera FEB, del viernes 25 al domingo 27 de
+septiembre. La Segunda y la Tercera empiezan el 3 de octubre, ya con el reglamento nuevo, y
+la Primera vuelve el día 2 con la jornada 2.
 
-| Categoría | Jornada 1 | Partidos antes del 1 de octubre |
+| Categoría | Jornada 1 | Antes del 1 de octubre |
 |---|---|---|
 | Primera FEB | 25–27 de septiembre | 9 |
 | Segunda FEB | 3–4 de octubre | 0 |
