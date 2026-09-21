@@ -2,7 +2,7 @@
  "competicion": "segundafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-09-14",
+ "generado": "2026-09-21",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -425,6 +425,17 @@
    "visitanteId": "1009723"
   },
   {
+   "id": "2536156",
+   "grupo": "A",
+   "jornada": 6,
+   "fecha": "2026-11-07",
+   "hora": "19:00",
+   "local": "UEMC BALONCESTO VALLADOLID",
+   "visitante": "JAEN PARAISO INTERIOR FS",
+   "localId": "1009588",
+   "visitanteId": "1010194"
+  },
+  {
    "id": "2536155",
    "grupo": "A",
    "jornada": 6,
@@ -434,17 +445,6 @@
    "visitante": "CLÍNICA PONFERRADA SDP",
    "localId": "1010192",
    "visitanteId": "1008643"
-  },
-  {
-   "id": "2536156",
-   "grupo": "A",
-   "jornada": 6,
-   "fecha": "2026-11-08",
-   "hora": "12:30",
-   "local": "JAEN PARAISO INTERIOR FS",
-   "visitante": "UEMC BALONCESTO VALLADOLID",
-   "localId": "1010194",
-   "visitanteId": "1009588"
   },
   {
    "id": "2536151",
@@ -1437,17 +1437,6 @@
    "visitanteId": "1009073"
   },
   {
-   "id": "2536247",
-   "grupo": "A",
-   "jornada": 19,
-   "fecha": "2027-02-20",
-   "hora": "19:00",
-   "local": "UEMC BALONCESTO VALLADOLID",
-   "visitante": "JAEN PARAISO INTERIOR FS",
-   "localId": "1009588",
-   "visitanteId": "1010194"
-  },
-  {
    "id": "2536241",
    "grupo": "A",
    "jornada": 19,
@@ -1468,6 +1457,17 @@
    "visitante": "CACERES PATRIMONIO DE LA HUMANIDAD",
    "localId": "1008857",
    "visitanteId": "1010321"
+  },
+  {
+   "id": "2536247",
+   "grupo": "A",
+   "jornada": 19,
+   "fecha": "2027-02-21",
+   "hora": "12:30",
+   "local": "JAEN PARAISO INTERIOR FS",
+   "visitante": "UEMC BALONCESTO VALLADOLID",
+   "localId": "1010194",
+   "visitanteId": "1009588"
   },
   {
    "id": "2536253",
@@ -2013,7 +2013,7 @@
    "grupo": "B",
    "jornada": 1,
    "fecha": "2026-10-03",
-   "hora": "19:00",
+   "hora": "20:30",
    "local": "BASKET CARTAGENA",
    "visitante": "BIELE ISB",
    "localId": "1010502",
@@ -2992,7 +2992,7 @@
    "grupo": "B",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "12:00",
    "local": "SOL GIRONÈS BISBAL BÀSQUET",
    "visitante": "PROINBENI UPB GANDIA",
    "localId": "1009441",
@@ -3003,7 +3003,7 @@
    "grupo": "B",
    "jornada": 13,
    "fecha": "2027-01-03",
-   "hora": "00:00",
+   "hora": "13:00",
    "local": "TQ-CB PRAT",
    "visitante": "CLUB ESPORTIU BÀSQUET LLÍRIA",
    "localId": "1008636",

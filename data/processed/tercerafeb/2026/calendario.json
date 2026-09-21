@@ -2,7 +2,7 @@
  "competicion": "tercerafeb",
  "temporada": "2026",
  "fuente": "baloncestoenvivo.feb.es (scraper)",
- "generado": "2026-09-14",
+ "generado": "2026-09-21",
  "nota": "Calendario de liga regular con fecha y hora oficiales. Los partidos ya disputados incluyen resultado.",
  "jornadas": 26,
  "partidos": [
@@ -1096,17 +1096,6 @@
    "visitanteId": "1008627"
   },
   {
-   "id": "2536765",
-   "grupo": "A-A",
-   "jornada": 15,
-   "fecha": "2027-01-23",
-   "hora": "19:45",
-   "local": "MEGACALZADO ARDOI",
-   "visitante": "IRUKI TAKE",
-   "localId": "1008869",
-   "visitanteId": "1008399"
-  },
-  {
    "id": "2536759",
    "grupo": "A-A",
    "jornada": 15,
@@ -1149,6 +1138,17 @@
    "visitante": "ULACIA ZKE",
    "localId": "1010577",
    "visitanteId": "1009106"
+  },
+  {
+   "id": "2536765",
+   "grupo": "A-A",
+   "jornada": 15,
+   "fecha": "2027-01-24",
+   "hora": "16:00",
+   "local": "MEGACALZADO ARDOI",
+   "visitante": "IRUKI TAKE",
+   "localId": "1008869",
+   "visitanteId": "1008399"
   },
   {
    "id": "2536760",
@@ -4083,9 +4083,20 @@
    "fecha": "2026-10-04",
    "hora": "12:00",
    "local": "EL VENTERO CBV",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1009591",
    "visitanteId": "1010498"
+  },
+  {
+   "id": "2537034",
+   "grupo": "B-A",
+   "jornada": 2,
+   "fecha": "2026-10-10",
+   "hora": "18:30",
+   "local": "ARISTOS FUENLABRADA",
+   "visitante": "CESUR DISTRITO OLIMPICO",
+   "localId": "1010498",
+   "visitanteId": "1009119"
   },
   {
    "id": "2537033",
@@ -4108,17 +4119,6 @@
    "visitante": "AG MOVIALSA QUALITYSPORT CRIPTANA",
    "localId": "1010189",
    "visitanteId": "1009835"
-  },
-  {
-   "id": "2537034",
-   "grupo": "B-A",
-   "jornada": 2,
-   "fecha": "2026-10-10",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "CESUR DISTRITO OLIMPICO",
-   "localId": "1010498",
-   "visitanteId": "1009119"
   },
   {
    "id": "2537036",
@@ -4176,26 +4176,26 @@
    "visitanteId": "1010196"
   },
   {
-   "id": "2537045",
-   "grupo": "B-A",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "20:00",
-   "local": "C.B. DADARMO DE GÜIMAR",
-   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
-   "localId": "1010189",
-   "visitanteId": "1008408"
-  },
-  {
    "id": "2537044",
    "grupo": "B-A",
    "jornada": 3,
    "fecha": "2026-10-17",
    "hora": "20:00",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "EB FELIPE ANTÓN",
    "localId": "1010498",
    "visitanteId": "1008778"
+  },
+  {
+   "id": "2537045",
+   "grupo": "B-A",
+   "jornada": 3,
+   "fecha": "2026-10-17",
+   "hora": "13:00",
+   "local": "C.B. DADARMO DE GÜIMAR",
+   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
+   "localId": "1010189",
+   "visitanteId": "1008408"
   },
   {
    "id": "2537043",
@@ -4302,7 +4302,7 @@
    "jornada": 4,
    "fecha": "2026-10-25",
    "hora": "13:00",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1010498",
    "visitanteId": "1010189"
@@ -4347,7 +4347,7 @@
    "fecha": "2026-10-31",
    "hora": "20:00",
    "local": "C. D. MENSAJERO ISLA DE LA PALMA",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1008408",
    "visitanteId": "1010498"
   },
@@ -4467,7 +4467,7 @@
    "jornada": 6,
    "fecha": "2026-11-08",
    "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "AG MOVIALSA QUALITYSPORT CRIPTANA",
    "localId": "1010498",
    "visitanteId": "1009835"
@@ -4482,6 +4482,17 @@
    "visitante": "BASKET GLOBALCAJA QUINTANAR",
    "localId": "1009835",
    "visitanteId": "1010323"
+  },
+  {
+   "id": "2537073",
+   "grupo": "B-A",
+   "jornada": 7,
+   "fecha": "2026-11-14",
+   "hora": "18:30",
+   "local": "ARISTOS FUENLABRADA",
+   "visitante": "FUNDACION GLOBALCAJA LA RODA",
+   "localId": "1010498",
+   "visitanteId": "1009702"
   },
   {
    "id": "2537072",
@@ -4504,17 +4515,6 @@
    "visitante": "CB ARIDANE",
    "localId": "1010189",
    "visitanteId": "1008407"
-  },
-  {
-   "id": "2537073",
-   "grupo": "B-A",
-   "jornada": 7,
-   "fecha": "2026-11-14",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "FUNDACION GLOBALCAJA LA RODA",
-   "localId": "1010498",
-   "visitanteId": "1009702"
   },
   {
    "id": "2537069",
@@ -4609,7 +4609,7 @@
    "grupo": "B-A",
    "jornada": 8,
    "fecha": "2026-11-21",
-   "hora": "20:15",
+   "hora": "13:15",
    "local": "ZENTRO BASKET MADRID",
    "visitante": "C.B. DADARMO DE GÜIMAR",
    "localId": "1010497",
@@ -4622,7 +4622,7 @@
    "fecha": "2026-11-22",
    "hora": "19:30",
    "local": "C.B. LAS ROZAS",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1010190",
    "visitanteId": "1010498"
   },
@@ -4698,7 +4698,7 @@
    "jornada": 9,
    "fecha": "2026-11-29",
    "hora": "12:00",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "CB ARIDANE",
    "localId": "1010498",
    "visitanteId": "1008407"
@@ -4743,7 +4743,7 @@
    "fecha": "2026-12-05",
    "hora": "20:15",
    "local": "ZENTRO BASKET MADRID",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1010497",
    "visitanteId": "1010498"
   },
@@ -4852,7 +4852,7 @@
    "jornada": 11,
    "fecha": "2026-12-13",
    "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "STOP BIOGÁS TOBARRA",
    "localId": "1010498",
    "visitanteId": "1010196"
@@ -4897,7 +4897,7 @@
    "fecha": "2026-12-19",
    "hora": "20:30",
    "local": "QUALIS C.B VILLA DE VALDEMORO",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1009575",
    "visitanteId": "1010498"
   },
@@ -4935,6 +4935,17 @@
    "visitanteId": "1010189"
   },
   {
+   "id": "2537112",
+   "grupo": "B-A",
+   "jornada": 13,
+   "fecha": "2027-01-09",
+   "hora": "18:30",
+   "local": "ARISTOS FUENLABRADA",
+   "visitante": "BASKET GLOBALCAJA QUINTANAR",
+   "localId": "1010498",
+   "visitanteId": "1010323"
+  },
+  {
    "id": "2537111",
    "grupo": "B-A",
    "jornada": 13,
@@ -4955,17 +4966,6 @@
    "visitante": "CESUR DISTRITO OLIMPICO",
    "localId": "1010189",
    "visitanteId": "1009119"
-  },
-  {
-   "id": "2537112",
-   "grupo": "B-A",
-   "jornada": 13,
-   "fecha": "2027-01-09",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "BASKET GLOBALCAJA QUINTANAR",
-   "localId": "1010498",
-   "visitanteId": "1010323"
   },
   {
    "id": "2537114",
@@ -5083,7 +5083,7 @@
    "jornada": 14,
    "fecha": "2027-01-17",
    "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "EL VENTERO CBV",
    "localId": "1010498",
    "visitanteId": "1009591"
@@ -5117,7 +5117,7 @@
    "fecha": "2027-01-23",
    "hora": "18:45",
    "local": "CESUR DISTRITO OLIMPICO",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1009119",
    "visitanteId": "1010498"
   },
@@ -5238,7 +5238,7 @@
    "fecha": "2027-01-31",
    "hora": "12:30",
    "local": "EB FELIPE ANTÓN",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1008778",
    "visitanteId": "1010498"
   },
@@ -5282,7 +5282,7 @@
    "fecha": "2027-02-06",
    "hora": "20:00",
    "local": "C.B. DADARMO DE GÜIMAR",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1010189",
    "visitanteId": "1010498"
   },
@@ -5318,6 +5318,17 @@
    "visitante": "CB ARIDANE",
    "localId": "1009591",
    "visitanteId": "1008407"
+  },
+  {
+   "id": "2537150",
+   "grupo": "B-A",
+   "jornada": 18,
+   "fecha": "2027-02-13",
+   "hora": "20:00",
+   "local": "ARISTOS FUENLABRADA",
+   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
+   "localId": "1010498",
+   "visitanteId": "1008408"
   },
   {
    "id": "2537148",
@@ -5375,17 +5386,6 @@
    "visitanteId": "1009591"
   },
   {
-   "id": "2537150",
-   "grupo": "B-A",
-   "jornada": 18,
-   "fecha": "2027-02-14",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "C. D. MENSAJERO ISLA DE LA PALMA",
-   "localId": "1010498",
-   "visitanteId": "1008408"
-  },
-  {
    "id": "2537149",
    "grupo": "B-A",
    "jornada": 18,
@@ -5403,7 +5403,7 @@
    "fecha": "2027-02-20",
    "hora": "19:30",
    "local": "AG MOVIALSA QUALITYSPORT CRIPTANA",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1009835",
    "visitanteId": "1010498"
   },
@@ -5513,7 +5513,7 @@
    "fecha": "2027-02-27",
    "hora": "19:00",
    "local": "FUNDACION GLOBALCAJA LA RODA",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1009702",
    "visitanteId": "1010498"
   },
@@ -5611,7 +5611,7 @@
    "jornada": 21,
    "fecha": "2027-03-07",
    "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "C.B. LAS ROZAS",
    "localId": "1010498",
    "visitanteId": "1010190"
@@ -5656,7 +5656,7 @@
    "fecha": "2027-03-13",
    "hora": "20:00",
    "local": "CB ARIDANE",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1008407",
    "visitanteId": "1010498"
   },
@@ -5749,6 +5749,17 @@
    "visitanteId": "1010323"
   },
   {
+   "id": "2537181",
+   "grupo": "B-A",
+   "jornada": 23,
+   "fecha": "2027-03-21",
+   "hora": "18:30",
+   "local": "ARISTOS FUENLABRADA",
+   "visitante": "ZENTRO BASKET MADRID",
+   "localId": "1010498",
+   "visitanteId": "1010497"
+  },
+  {
    "id": "2537183",
    "grupo": "B-A",
    "jornada": 23,
@@ -5758,17 +5769,6 @@
    "visitante": "QUALIS C.B VILLA DE VALDEMORO",
    "localId": "1010189",
    "visitanteId": "1009575"
-  },
-  {
-   "id": "2537181",
-   "grupo": "B-A",
-   "jornada": 23,
-   "fecha": "2027-03-21",
-   "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
-   "visitante": "ZENTRO BASKET MADRID",
-   "localId": "1010498",
-   "visitanteId": "1010497"
   },
   {
    "id": "2537180",
@@ -5832,7 +5832,7 @@
    "fecha": "2027-04-03",
    "hora": "18:30",
    "local": "STOP BIOGÁS TOBARRA",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1010196",
    "visitanteId": "1010498"
   },
@@ -5930,7 +5930,7 @@
    "jornada": 25,
    "fecha": "2027-04-11",
    "hora": "18:30",
-   "local": "C.B. FUENLABRADA",
+   "local": "ARISTOS FUENLABRADA",
    "visitante": "QUALIS C.B VILLA DE VALDEMORO",
    "localId": "1010498",
    "visitanteId": "1009575"
@@ -5953,7 +5953,7 @@
    "fecha": "2027-04-17",
    "hora": "19:00",
    "local": "BASKET GLOBALCAJA QUINTANAR",
-   "visitante": "C.B. FUENLABRADA",
+   "visitante": "ARISTOS FUENLABRADA",
    "localId": "1010323",
    "visitanteId": "1010498"
   },
@@ -8048,17 +8048,6 @@
    "visitanteId": "1009170"
   },
   {
-   "id": "2525751",
-   "grupo": "C-A",
-   "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "19:00",
-   "local": "FLORANGE U.E.MATARÓ",
-   "visitante": "CB QUART FAI BERTI",
-   "localId": "1008948",
-   "visitanteId": "1009062"
-  },
-  {
    "id": "2525753",
    "grupo": "C-A",
    "jornada": 1,
@@ -8079,6 +8068,17 @@
    "visitante": "IBERSOL CB TARRAGONA",
    "localId": "1009587",
    "visitanteId": "1010575"
+  },
+  {
+   "id": "2525751",
+   "grupo": "C-A",
+   "jornada": 1,
+   "fecha": "2026-10-04",
+   "hora": "19:00",
+   "local": "FLORANGE U.E.MATARÓ",
+   "visitante": "CB QUART FAI BERTI",
+   "localId": "1008948",
+   "visitanteId": "1009062"
   },
   {
    "id": "2525754",
@@ -8206,7 +8206,7 @@
    "grupo": "C-A",
    "jornada": 3,
    "fecha": "2026-10-17",
-   "hora": "18:00",
+   "hora": "17:00",
    "local": "IMMO SA MARINA CIUTAT D’INCA BASQUET",
    "visitante": "IBERSOL CB TARRAGONA",
    "localId": "1008789",
@@ -12055,8 +12055,8 @@
    "id": "2536484",
    "grupo": "D-A",
    "jornada": 1,
-   "fecha": "2026-10-04",
-   "hora": "12:30",
+   "fecha": "2026-10-03",
+   "hora": "19:30",
    "local": "JAEN PARAÍSO INTERIOR CB",
    "visitante": "DEHESAS REUNIDAS CLIMANAVAS AGROMETAL PEÑARROYA",
    "localId": "1010332",
@@ -12239,6 +12239,17 @@
    "visitanteId": "1010327"
   },
   {
+   "id": "2536504",
+   "grupo": "D-A",
+   "jornada": 4,
+   "fecha": "2026-10-24",
+   "hora": "18:00",
+   "local": "CDBO BYSPANIA TÍJOLA",
+   "visitante": "MOLINA OLEA CB COSTA MOTRIL",
+   "localId": "1010331",
+   "visitanteId": "1010328"
+  },
+  {
    "id": "2536503",
    "grupo": "D-A",
    "jornada": 4,
@@ -12270,17 +12281,6 @@
    "visitante": "BALONCESTO COMARCA DE LA AXARQUIA",
    "localId": "1010896",
    "visitanteId": "1010895"
-  },
-  {
-   "id": "2536504",
-   "grupo": "D-A",
-   "jornada": 4,
-   "fecha": "2026-10-25",
-   "hora": "12:30",
-   "local": "MOLINA OLEA CB COSTA MOTRIL",
-   "visitante": "CDBO BYSPANIA TÍJOLA",
-   "localId": "1010328",
-   "visitanteId": "1010331"
   },
   {
    "id": "2536509",
@@ -13086,17 +13086,6 @@
    "visitanteId": "1010896"
   },
   {
-   "id": "2536595",
-   "grupo": "D-A",
-   "jornada": 17,
-   "fecha": "2027-02-06",
-   "hora": "18:00",
-   "local": "CDBO BYSPANIA TÍJOLA",
-   "visitante": "MOLINA OLEA CB COSTA MOTRIL",
-   "localId": "1010331",
-   "visitanteId": "1010328"
-  },
-  {
    "id": "2536593",
    "grupo": "D-A",
    "jornada": 17,
@@ -13128,6 +13117,17 @@
    "visitante": "COLEGIO EL PINAR",
    "localId": "1010332",
    "visitanteId": "1010198"
+  },
+  {
+   "id": "2536595",
+   "grupo": "D-A",
+   "jornada": 17,
+   "fecha": "2027-02-07",
+   "hora": "12:30",
+   "local": "MOLINA OLEA CB COSTA MOTRIL",
+   "visitante": "CDBO BYSPANIA TÍJOLA",
+   "localId": "1010328",
+   "visitanteId": "1010331"
   },
   {
    "id": "2536596",
@@ -13900,17 +13900,6 @@
    "visitanteId": "1010501"
   },
   {
-   "id": "2537404",
-   "grupo": "D-B",
-   "jornada": 3,
-   "fecha": "2026-10-17",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "CB CORIA",
-   "localId": "1010353",
-   "visitanteId": "1010195"
-  },
-  {
    "id": "2537405",
    "grupo": "D-B",
    "jornada": 3,
@@ -13931,6 +13920,17 @@
    "visitante": "CBA SPAIN",
    "localId": "1010322",
    "visitanteId": "1010893"
+  },
+  {
+   "id": "2537404",
+   "grupo": "D-B",
+   "jornada": 3,
+   "fecha": "2026-10-18",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "CB CORIA",
+   "localId": "1010353",
+   "visitanteId": "1010195"
   },
   {
    "id": "2537416",
@@ -14109,17 +14109,6 @@
    "visitanteId": "1010322"
   },
   {
-   "id": "2537430",
-   "grupo": "D-B",
-   "jornada": 6,
-   "fecha": "2026-11-07",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "AD REM ONUBA",
-   "localId": "1010353",
-   "visitanteId": "1010330"
-  },
-  {
    "id": "2537427",
    "grupo": "D-B",
    "jornada": 6,
@@ -14129,6 +14118,17 @@
    "visitante": "BALONCESTO BADAJOZ",
    "localId": "1010329",
    "visitanteId": "1009724"
+  },
+  {
+   "id": "2537430",
+   "grupo": "D-B",
+   "jornada": 6,
+   "fecha": "2026-11-08",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "AD REM ONUBA",
+   "localId": "1010353",
+   "visitanteId": "1010330"
   },
   {
    "id": "2537432",
@@ -14230,17 +14230,6 @@
    "visitanteId": "1010347"
   },
   {
-   "id": "2537443",
-   "grupo": "D-B",
-   "jornada": 8,
-   "fecha": "2026-11-21",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "INSOLAC CB ALCALÁ",
-   "localId": "1010353",
-   "visitanteId": "1010573"
-  },
-  {
    "id": "2537444",
    "grupo": "D-B",
    "jornada": 8,
@@ -14261,6 +14250,17 @@
    "visitante": "CBA SPAIN",
    "localId": "1010329",
    "visitanteId": "1010893"
+  },
+  {
+   "id": "2537443",
+   "grupo": "D-B",
+   "jornada": 8,
+   "fecha": "2026-11-22",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "INSOLAC CB ALCALÁ",
+   "localId": "1010353",
+   "visitanteId": "1010573"
   },
   {
    "id": "2537447",
@@ -14362,17 +14362,6 @@
    "visitanteId": "1010347"
   },
   {
-   "id": "2537456",
-   "grupo": "D-B",
-   "jornada": 10,
-   "fecha": "2026-12-05",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "LITHIUM IBERIA SAGRADO CÁCERES",
-   "localId": "1010353",
-   "visitanteId": "1010322"
-  },
-  {
    "id": "2537457",
    "grupo": "D-B",
    "jornada": 10,
@@ -14393,6 +14382,17 @@
    "visitante": "C.B. FENIX",
    "localId": "1010329",
    "visitanteId": "1010501"
+  },
+  {
+   "id": "2537456",
+   "grupo": "D-B",
+   "jornada": 10,
+   "fecha": "2026-12-06",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "LITHIUM IBERIA SAGRADO CÁCERES",
+   "localId": "1010353",
+   "visitanteId": "1010322"
   },
   {
    "id": "2537460",
@@ -14505,17 +14505,6 @@
    "visitanteId": "1009724"
   },
   {
-   "id": "2537469",
-   "grupo": "D-B",
-   "jornada": 12,
-   "fecha": "2026-12-19",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "EIFFAGE CB CIUDAD DE DOS HERMANAS",
-   "localId": "1010353",
-   "visitanteId": "1010347"
-  },
-  {
    "id": "2537470",
    "grupo": "D-B",
    "jornada": 12,
@@ -14525,6 +14514,17 @@
    "visitante": "CBA SPAIN",
    "localId": "1010330",
    "visitanteId": "1010893"
+  },
+  {
+   "id": "2537469",
+   "grupo": "D-B",
+   "jornada": 12,
+   "fecha": "2026-12-20",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "EIFFAGE CB CIUDAD DE DOS HERMANAS",
+   "localId": "1010353",
+   "visitanteId": "1010347"
   },
   {
    "id": "2537477",
@@ -14703,17 +14703,6 @@
    "visitanteId": "1010347"
   },
   {
-   "id": "2537492",
-   "grupo": "D-B",
-   "jornada": 15,
-   "fecha": "2027-01-23",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "CLUB BALONCESTO SAN FERNANDO",
-   "localId": "1010353",
-   "visitanteId": "1010329"
-  },
-  {
    "id": "2537491",
    "grupo": "D-B",
    "jornada": 15,
@@ -14723,6 +14712,17 @@
    "visitante": "OH!TELS ULB",
    "localId": "1010330",
    "visitanteId": "1010342"
+  },
+  {
+   "id": "2537492",
+   "grupo": "D-B",
+   "jornada": 15,
+   "fecha": "2027-01-24",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "CLUB BALONCESTO SAN FERNANDO",
+   "localId": "1010353",
+   "visitanteId": "1010329"
   },
   {
    "id": "2537498",
@@ -14824,17 +14824,6 @@
    "visitanteId": "1010342"
   },
   {
-   "id": "2537507",
-   "grupo": "D-B",
-   "jornada": 17,
-   "fecha": "2027-02-06",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "BOSCO MÉRIDA PATRIMONIO DE LA HUMANIDAD",
-   "localId": "1010353",
-   "visitanteId": "1009814"
-  },
-  {
    "id": "2537506",
    "grupo": "D-B",
    "jornada": 17,
@@ -14855,6 +14844,17 @@
    "visitante": "EIFFAGE CB CIUDAD DE DOS HERMANAS",
    "localId": "1010322",
    "visitanteId": "1010347"
+  },
+  {
+   "id": "2537507",
+   "grupo": "D-B",
+   "jornada": 17,
+   "fecha": "2027-02-07",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "BOSCO MÉRIDA PATRIMONIO DE LA HUMANIDAD",
+   "localId": "1010353",
+   "visitanteId": "1009814"
   },
   {
    "id": "2537509",
@@ -15033,17 +15033,6 @@
    "visitanteId": "1010893"
   },
   {
-   "id": "2537523",
-   "grupo": "D-B",
-   "jornada": 20,
-   "fecha": "2027-02-27",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "BAUBLOCK TUGASA GYMNÁSTICA",
-   "localId": "1010353",
-   "visitanteId": "1010341"
-  },
-  {
    "id": "2537526",
    "grupo": "D-B",
    "jornada": 20,
@@ -15053,6 +15042,17 @@
    "visitante": "LITHIUM IBERIA SAGRADO CÁCERES",
    "localId": "1010329",
    "visitanteId": "1010322"
+  },
+  {
+   "id": "2537523",
+   "grupo": "D-B",
+   "jornada": 20,
+   "fecha": "2027-02-28",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "BAUBLOCK TUGASA GYMNÁSTICA",
+   "localId": "1010353",
+   "visitanteId": "1010341"
   },
   {
    "id": "2537533",
@@ -15154,17 +15154,6 @@
    "visitanteId": "1010501"
   },
   {
-   "id": "2537538",
-   "grupo": "D-B",
-   "jornada": 22,
-   "fecha": "2027-03-13",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "BALONCESTO BADAJOZ",
-   "localId": "1010353",
-   "visitanteId": "1009724"
-  },
-  {
    "id": "2537537",
    "grupo": "D-B",
    "jornada": 22,
@@ -15185,6 +15174,17 @@
    "visitante": "EIFFAGE CB CIUDAD DE DOS HERMANAS",
    "localId": "1010329",
    "visitanteId": "1010347"
+  },
+  {
+   "id": "2537538",
+   "grupo": "D-B",
+   "jornada": 22,
+   "fecha": "2027-03-14",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "BALONCESTO BADAJOZ",
+   "localId": "1010353",
+   "visitanteId": "1009724"
   },
   {
    "id": "2537548",
@@ -15224,7 +15224,7 @@
    "grupo": "D-B",
    "jornada": 23,
    "fecha": "2027-03-20",
-   "hora": "18:00",
+   "hora": "19:30",
    "local": "EIFFAGE CB CIUDAD DE DOS HERMANAS",
    "visitante": "CB CORIA",
    "localId": "1010347",
@@ -15286,17 +15286,6 @@
    "visitanteId": "1010501"
   },
   {
-   "id": "2537553",
-   "grupo": "D-B",
-   "jornada": 24,
-   "fecha": "2027-04-03",
-   "hora": "18:00",
-   "local": "SAN ANTONIO CÁCERES",
-   "visitante": "CBA SPAIN",
-   "localId": "1010353",
-   "visitanteId": "1010893"
-  },
-  {
    "id": "2537552",
    "grupo": "D-B",
    "jornada": 24,
@@ -15317,6 +15306,17 @@
    "visitante": "OH!TELS ULB",
    "localId": "1010329",
    "visitanteId": "1010342"
+  },
+  {
+   "id": "2537553",
+   "grupo": "D-B",
+   "jornada": 24,
+   "fecha": "2027-04-04",
+   "hora": "12:00",
+   "local": "SAN ANTONIO CÁCERES",
+   "visitante": "CBA SPAIN",
+   "localId": "1010353",
+   "visitanteId": "1010893"
   },
   {
    "id": "2537563",
@@ -15451,26 +15451,26 @@
    "visitanteId": "1010501"
   },
   {
-   "id": "2537575",
-   "grupo": "E-A",
-   "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "18:30",
-   "local": "C.B. PUERTO SAGUNTO",
-   "visitante": "CB JOVENS ALMÀSSERA",
-   "localId": "1008690",
-   "visitanteId": "1010491"
-  },
-  {
    "id": "2537572",
    "grupo": "E-A",
    "jornada": 1,
-   "fecha": "2026-10-03",
-   "hora": "18:15",
+   "fecha": "2026-10-02",
+   "hora": "20:45",
    "local": "CB TABERNES BLANQUES - FERNANDO GIL",
    "visitante": "HALAL FOOD QUALITY UIXÓ BÀSQUET",
    "localId": "1008692",
    "visitanteId": "1008694"
+  },
+  {
+   "id": "2537575",
+   "grupo": "E-A",
+   "jornada": 1,
+   "fecha": "2026-10-03",
+   "hora": "19:15",
+   "local": "C.B. PUERTO SAGUNTO",
+   "visitante": "CB JOVENS ALMÀSSERA",
+   "localId": "1008690",
+   "visitanteId": "1010491"
   },
   {
    "id": "2537576",
@@ -15664,7 +15664,7 @@
    "grupo": "E-A",
    "jornada": 3,
    "fecha": "2026-10-18",
-   "hora": "18:00",
+   "hora": "17:30",
    "local": "CEMALU ALDAIA",
    "visitante": "CB JOVENS ALMÀSSERA",
    "localId": "1009585",
@@ -15686,7 +15686,7 @@
    "grupo": "E-A",
    "jornada": 4,
    "fecha": "2026-10-24",
-   "hora": "18:15",
+   "hora": "18:30",
    "local": "BAUHAUS GODELLA",
    "visitante": "CEMALU ALDAIA",
    "localId": "1009719",
@@ -15994,7 +15994,7 @@
    "grupo": "E-A",
    "jornada": 8,
    "fecha": "2026-11-21",
-   "hora": "18:15",
+   "hora": "18:30",
    "local": "BAUHAUS GODELLA",
    "visitante": "TOPSURFACE NB PATERNA",
    "localId": "1009719",
@@ -17699,7 +17699,7 @@
    "grupo": "E-B",
    "jornada": 4,
    "fecha": "2026-10-24",
-   "hora": "18:15",
+   "hora": "17:30",
    "local": "CB IFACH CALPE",
    "visitante": "C.B. ESTUDIANTES CARTAGENA",
    "localId": "1008691",
