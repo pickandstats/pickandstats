@@ -1,0 +1,88 @@
+{
+ "_comentario": "Huella estructural de referencia de una acta oficial FEB, generada el 2026-09-27 con scraper/huella-acta.js. Sale de los 9 partidos de la jornada 1 de Primera FEB (25-27/09/2026, competicion 1) -- los ultimos jugados con el reglamento anterior al cambio de FIBA del 1 de octubre de 2026. Las nueve huellas (partidos 2535725, 2535726, 2535727, 2535728, 2535729, 2535730, 2535731, 2535732, 2535733) son identicas entre si: confirmado ejecutando huella-acta.js sobre cada uno y comparando el JSON completo, no solo leyendo el codigo. Uso: node scraper/huella-acta.js --partido <id> --competicion <comp> contra un partido de octubre en adelante, y diff contra el campo huella de este fichero. Si difieren, extraer-acta.js puede estar leyendo columnas desplazadas por el cambio de reglamento.",
+ "huella": {
+  "cabeceras": [
+   "Nº 5I Jugadores Min PTS TC2P | A/I % | TC3P | A/I % | TL | A/I % | REB | O D T AS REC PER TAP | Com Rec | FP/FT | Com Rec VAL +/-",
+   "Nº 5I Jugadores Min PTS TC2P | A/I % | TC3P | A/I % | TL | A/I % | REB | O D T AS REC PER TAP | Com Rec | FP/FT | Com Rec VAL +/-"
+  ],
+  "contexto": [
+   {
+    "conteos": [
+     2,
+     2
+    ],
+    "etiquetas": [
+     "Máxima ventaja",
+     "Mejor racha anotadora",
+     "Cambios de ventaja",
+     "Veces empatado"
+    ]
+   },
+   {
+    "conteos": [
+     5,
+     5
+    ],
+    "etiquetas": [
+     "Puntos 2ª oportunidad",
+     "Puntos contraataque",
+     "Puntos en pintura",
+     "Puntos tras pérdida",
+     "Puntos banquillo"
+    ]
+   }
+  ],
+  "marcasUnaLetra": [
+   "*"
+  ],
+  "secciones": [
+   "<EQUIPO>",
+   "Nº 5I Jugadores Min PTS TC2P",
+   "A/I %",
+   "TC3P",
+   "A/I %",
+   "TL",
+   "A/I %",
+   "REB",
+   "O D T AS REC PER TAP",
+   "Com Rec",
+   "FP/FT",
+   "Com Rec VAL +/-",
+   "Entrenador:",
+   "<EQUIPO>",
+   "Nº 5I Jugadores Min PTS TC2P",
+   "A/I %",
+   "TC3P",
+   "A/I %",
+   "TL",
+   "A/I %",
+   "REB",
+   "O D T AS REC PER TAP",
+   "Com Rec",
+   "FP/FT",
+   "Com Rec VAL +/-",
+   "Entrenador:",
+   "Máxima ventaja",
+   "Mejor racha anotadora",
+   "Cambios de ventaja",
+   "Veces empatado",
+   "<EQUIPO>",
+   "<EQUIPO>",
+   "Puntos 2ª oportunidad",
+   "Puntos contraataque",
+   "Puntos en pintura",
+   "Puntos tras pérdida",
+   "Puntos banquillo",
+   "<EQUIPO>",
+   "<EQUIPO>",
+   "ESTADISTICAS DEL PARTIDO",
+   "Árbitros:",
+   "P1 P2 P3 P4",
+   "-- 1 of 2 --",
+   "-- 2 of 2 --"
+  ],
+  "tokensPorFila": [
+   19
+  ]
+ }
+}
