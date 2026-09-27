@@ -13,6 +13,16 @@ const axios = require('axios');
 const { PDFParse } = require('pdf-parse');
 const CFG = require('./config');
 
+// Homoglifos de ":" que algunos PDF de la FEB usan en el MM:SS en vez del ASCII
+// normal (U+003A) -- visto de verdad: U+2236 RATIO en el partido 2484716, que
+// dejaba el acta entera sin una sola fila de jugador reconocida (ninguna
+// coincidia con el ancla MM:SS). Si la fuente no garantiza ASCII, el problema
+// no es ESE caracter concreto: arreglar uno a uno nos deja esperando al
+// siguiente, asi que se normaliza la familia entera en una sola pasada sobre
+// el texto extraido, antes de trocearlo en lineas.
+const HOMOGLIFOS_DOS_PUNTOS = /[∶꞉：]/g;
+const normalizarHomoglifos = texto => texto.replace(HOMOGLIFOS_DOS_PUNTOS, ':');
+
 // Parsea una fila de jugador. Ancla: MM:SS separa (nº [*] nombre) de los números.
 function parseJugador(linea) {
   const l = linea.replace(/\t/g, ' ').replace(/\s+/g, ' ').trim();
@@ -193,7 +203,7 @@ async function extraerActa(partido, competicion = 1) {
   const parser = new PDFParse({ data: Buffer.from(r.data) });
   const res = await parser.getText();
   await parser.destroy();
-  const acta = parseTexto(res.text || '');
+  const acta = parseTexto(normalizarHomoglifos(res.text || ''));
   verificarActa(acta, partido);
   return acta;
 }
@@ -209,7 +219,7 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
       const parser = new PDFParse({ data: Buffer.from(r.data) });
       const res = await parser.getText();
       await parser.destroy();
-      return parseTexto(res.text || "");
+      return parseTexto(normalizarHomoglifos(res.text || ""));
     } catch (e) {
       const esRed = /ENOTFOUND|ETIMEDOUT|ECONNRESET|EAI_AGAIN|socket/i.test(e.message);
       if (esRed && intento < reintentos) {
@@ -344,7 +354,31 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
   };
 }
 
-module.exports = { extraerActa, extraerActaPorCuartos, parseTexto, parseJugador, verificarActa };
+// Reconstruye el "equipos" minimo que necesita verificarActa (solo el min por
+// jugador) sumando los cuartos de porCuarto ya cacheado, sin volver a pedir el
+// PDF. Sirve para poder pasar el mismo guardian sobre lo que ya hay en disco
+// (usado por verificar-cuartos.js) en vez de duplicar la comprobacion.
+function equiposDesdePorCuarto(porCuarto) {
+  const segundos = mmss => { const [m, s] = String(mmss || '00:00').split(':').map(Number); return (m || 0) * 60 + (s || 0); };
+  const minutoDesdeSeg = seg => { const s = Math.max(0, seg); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
+  const porDorsal = [new Map(), new Map()];
+  for (const cuarto of (porCuarto || [])) {
+    if (!cuarto) continue;
+    cuarto.forEach((eq, ei) => {
+      for (const j of ((eq && eq.jugadores) || [])) {
+        porDorsal[ei].set(j.dorsal, (porDorsal[ei].get(j.dorsal) || 0) + segundos(j.min));
+      }
+    });
+  }
+  return porDorsal.map(mapa => ({
+    jugadores: [...mapa.entries()].map(([dorsal, seg]) => ({ dorsal, min: minutoDesdeSeg(seg) })),
+  }));
+}
+
+module.exports = {
+  extraerActa, extraerActaPorCuartos, parseTexto, parseJugador, verificarActa,
+  equiposDesdePorCuarto, normalizarHomoglifos,
+};
 
 if (require.main === module) {
   const args = process.argv.slice(2);

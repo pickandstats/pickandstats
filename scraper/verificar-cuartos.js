@@ -4,6 +4,7 @@
 // Uso: node scraper/verificar-cuartos.js --competicion 3 --temporada 2025
 const fs = require('fs');
 const path = require('path');
+const { verificarActa, equiposDesdePorCuarto } = require('./extraer-acta');
 
 const args = process.argv.slice(2);
 const val = f => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : null; };
@@ -28,7 +29,8 @@ const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
-const sinContextoIds = [], truncadasIds = [], rendidasIds = [];
+let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0;
+const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
 // campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
 const concentrados = {};
@@ -49,6 +51,27 @@ for (const f of ficheros) {
 
   if (a.contextoPorCuarto) conContexto++; else { sinContexto++; if (sinContextoIds.length < 8) sinContextoIds.push(a.partido); }
   if (a.completo && a.verificado !== false) completas++; else { truncadas++; if (truncadasIds.length < 8) truncadasIds.push(a.partido); }
+
+  // Guardian real (S17.6, reusado): que haya jugadores dentro, no solo que la
+  // coleccion exista. Un acta con porCuarto vacio de principio a fin (visto de
+  // verdad: 2484716) pasaba conContexto y completo/verificado sin que nadie
+  // comprobara que hubiera una sola fila de jugador -- este es el chequeo que
+  // faltaba. Solo es FIABLE en actas ya regeneradas con el arreglo que hace que
+  // difJug conserve "min" en los cuartos 2-4: en la cache vieja "min" falta ahi
+  // y la suma saldria corta por el formato, no por un jugador perdido de
+  // verdad, asi que esas se cuentan aparte para no mentir con el numero.
+  const minEnQ2a4 = (a.porCuarto || []).slice(1).every(cuarto =>
+    !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
+  if (a.porCuarto && minEnQ2a4) {
+    try {
+      verificarActa({ parciales: a.parciales, equipos: equiposDesdePorCuarto(a.porCuarto) }, a.partido);
+      sinJugadoresSanas++;
+    } catch (e) {
+      sinJugadores++; if (sinJugadoresIds.length < 8) sinJugadoresIds.push(`${a.partido} (${e.message.split(': ').slice(1).join(': ')})`);
+    }
+  } else {
+    cacheAntigua++;
+  }
 
   // Coherencia del contexto: solo se exige en actas fiables (completo y
   // verificado). En actas truncadas/incoherentes el desglose por resta de
@@ -99,6 +122,12 @@ console.log('');
 console.log(`Completas (4 cuartos, sin huecos):  ${completas}`);
 console.log(`Truncadas / con hueco:              ${truncadas}${truncadas ? ' -> ej: ' + truncadasIds.join(', ') : ''}`);
 console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no bloquean): ${rendidas}${rendidas ? ' -> ej: ' + rendidasIds.join(', ') : ''}`);
+console.log('');
+console.log(`Guardian de jugadores (verificarActa, S17.6):`);
+console.log(`  De cache VIEJA (sin "min" en Q2-4, no medible todavia): ${cacheAntigua}`);
+console.log(`  Medibles con el guardian:            ${sinJugadores + sinJugadoresSanas}`);
+console.log(`    Sanas:                             ${sinJugadoresSanas}`);
+console.log(`    FALLAN (min descuadrado o sin fila): ${sinJugadores}${sinJugadores ? ' -> ' + sinJugadoresIds.join('; ') : ''}`);
 console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
