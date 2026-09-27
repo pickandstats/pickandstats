@@ -266,10 +266,21 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
   if (!cortes.filter(Boolean).length) throw new Error("Sin cortes válidos (acta no disponible)");
 
   // Campos numericos acumulables a diferenciar por cuarto
+  //
+  // "min" tambien es acumulado (igual que pts): el corte c trae los minutos
+  // jugados HASTA ese corte, no los del cuarto suelto -- por eso se diferencia
+  // igual que pts, NO se copia tal cual. Copiarlo sin diferenciar dejaria en
+  // Q2/Q3/Q4 los minutos acumulados hasta ese punto, no los del cuarto, y la
+  // suma de los 4 cuartos no daria el total del partido (S17.6: es lo que hacia
+  // falta para poder aplicar el invariante de 200:00+prorrogas sumando los 4
+  // cortes, no solo el cuarto 1).
+  const segMinuto = mmss => { const [m, s] = String(mmss || '00:00').split(':').map(Number); return (m || 0) * 60 + (s || 0); };
+  const minutoDesdeSeg = seg => { const s = Math.max(0, seg); return String(Math.floor(s / 60)).padStart(2, '0') + ':' + String(s % 60).padStart(2, '0'); };
   const difJug = (act, prev) => {
     if (!prev) return { ...act };
     const d = { dorsal: act.dorsal, nombre: act.nombre, titular: act.titular };
     const resta = (a, b) => (a || 0) - (b || 0);
+    d.min = minutoDesdeSeg(segMinuto(act.min) - segMinuto(prev.min));
     d.pts = resta(act.pts, prev.pts);
     d.t2 = { a: resta(act.t2.a, prev.t2.a), i: resta(act.t2.i, prev.t2.i) };
     d.t3 = { a: resta(act.t3.a, prev.t3.a), i: resta(act.t3.i, prev.t3.i) };
