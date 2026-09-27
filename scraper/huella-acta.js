@@ -10,17 +10,18 @@
 // equivocados).
 //
 // Baja el acta por la MISMA via que extraer-acta.js: misma URL, mismos
-// parametros, mismo pdf-parse. Lo que importa es lo que ve el parser, no lo que
-// ve un humano abriendo el PDF -- por eso esta huella replica las mismas reglas
-// de deteccion de fila de jugador (patron /^\d+\s/ + ancla MM:SS) que usan
-// parseTexto/parseJugador, incluido su punto ciego conocido: si el PDF envuelve
-// el nombre de un jugador en dos lineas, ninguna de las dos trae el ancla MM:SS
-// junto al dorsal, y esa fila no cuenta como fila de jugador -- ni aqui ni en
-// extraer-acta.js. Visto de verdad en el partido 2535727 (Angel Comendador,
-// lineas "24  ANGEL COMENDADOR" / "I" / "12:20  9  3/6..."): la fila queda fuera
-// de tokensPorFila y de marcasUnaLetra, y ademas ese jugador no aparece en el
-// boxscore que produce extraerActa. Es un hallazgo aparte, no algo que esta
-// huella intente arreglar.
+// parametros, mismo pdf-parse. Para tokensPorFila y marcasUnaLetra usa a
+// proposito una deteccion de fila MAS ESTRICTA que la de extraer-acta.js hoy
+// (patron /^\d+\s/ + ancla MM:SS en la MISMA linea, SIN unir lineas envueltas):
+// asi la huella mide "cuantos tokens trae una fila que llega entera en una
+// linea", que es justo la suposicion de la que depende parseJugador (n[0]..
+// n[18]) y la que un cambio de reglamento pondria en riesgo. Union de nombres
+// envueltos en dos lineas: ya NO es un punto ciego de extraer-acta.js (ver
+// S17.6, arreglado a raiz de esto mismo -- partido 2535727, Angel Comendador,
+// lineas "24  ANGEL COMENDADOR" / "I" / "12:20  9  3/6..."), pero esta huella
+// sigue sin unirlas aposta: son fenomenos distintos (una fila envuelta es un
+// problema de maquetacion del PDF, no de reglamento) y mezclarlos aqui
+// esconderia un cambio de columnas detras de un caso de nombre largo.
 //
 // Uso: node scraper/huella-acta.js --partido 2535727 --competicion 1
 const axios = require('axios');

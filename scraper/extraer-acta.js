@@ -34,18 +34,53 @@ function parseJugador(linea) {
   };
 }
 
+// Cuantas lineas de continuacion se prueban como maximo al unir un nombre que
+// el PDF envuelve (ver la nota de parseTexto). Un nombre largo envuelve como
+// mucho en 2 lineas, mas alguna linea suelta de un acento partido -- 3 da
+// margen sin arriesgarse a tragarse una fila de verdad por error.
+const MAX_LINEAS_UNION_NOMBRE = 3;
+
 function parseTexto(texto) {
   const lineas = texto.split('\n');
 
   // --- jugadores: filas que empiezan por número, hasta cada "Totales" ---
+  //
+  // El PDF a veces envuelve un nombre largo (o un apellido compuesto) en dos
+  // lineas de texto plano, a veces con una linea suelta de una sola letra de
+  // por medio (resto de un acento partido: "Í", "É"...). Cuando la linea del
+  // dorsal no trae el ancla MM:SS, se van uniendo las lineas siguientes -- se
+  // descartan las de una sola letra, se para si aparece otra fila de jugador o
+  // "Totales" antes de encontrar el ancla -- hasta MAX_LINEAS_UNION_NOMBRE.
+  // Sin esto la fila se perdia en silencio (visto de verdad: Angel Comendador,
+  // partido 2535727; Ismael Hani Massoud, partido 2486272; Juan Pedro Jimenez
+  // y Ramiro Enrique Martinez-, partido 2486858 -- estos dos con 0 puntos, asi
+  // que ni siquiera descuadraban el marcador, solo los minutos).
+  //
+  // Las que ni uniendo se entienden se guardan en filasRechazadas: eso ya NO
+  // puede pasar en silencio (ver verificarActa).
   const equipos = [];
+  const filasRechazadas = [];
   let actual = null;
-  for (const raw of lineas) {
+  for (let i = 0; i < lineas.length; i++) {
+    const raw = lineas[i];
     const l = raw.replace(/\t/g, ' ').replace(/\s+/g, ' ').trim();
     if (/^Totales\s/.test(l)) { if (actual) { equipos.push(actual); actual = null; } continue; }
     if (/^\d+\s/.test(l)) {
-      const j = parseJugador(raw);
+      let combinado = raw;
+      let j = parseJugador(combinado);
+      let k = i;
+      while (!j && k < lineas.length - 1 && (k - i) < MAX_LINEAS_UNION_NOMBRE) {
+        k++;
+        const siguiente = lineas[k];
+        const siguienteNorm = siguiente.replace(/\t/g, ' ').replace(/\s+/g, ' ').trim();
+        if (!siguienteNorm || /^Totales\s/.test(siguienteNorm) || /^\d+\s/.test(siguienteNorm)) break;
+        if (siguienteNorm.length <= 1) continue; // fragmento suelto, no aporta al nombre
+        combinado += ' ' + siguiente;
+        j = parseJugador(combinado);
+        if (j) i = k; // avanzar el indice exterior: no releer las lineas ya unidas
+      }
       if (j) { (actual ||= { jugadores: [] }).jugadores.push(j); }
+      else filasRechazadas.push(l);
     }
   }
 
@@ -111,7 +146,45 @@ function parseTexto(texto) {
     banquillo:     g2 ? { local: g2.local[4], visitante: g2.visitante[4] } : null,
   };
 
-  return { marcador, nombreLocal, nombreVisitante, parciales, contexto, equipos };
+  return { marcador, nombreLocal, nombreVisitante, parciales, contexto, equipos, filasRechazadas };
+}
+
+// Guardián de integridad de una acta ya parseada (S17.6): si los minutos de un
+// equipo no cuadran con el reglamentario, o si el texto traia alguna fila con
+// pinta de jugador que ni uniendo lineas se ha entendido, es un dato malo, no
+// una curiosidad -- GRITA (lanza) en vez de dejarlo pasar en silencio.
+//
+// Por que bloquea y no solo avisa: quien llama a extraerActa/
+// extraerActaPorCuartos (actas-cuartos.js) ya aisla los fallos por partido —
+// una excepcion aqui cuenta como "error de extraccion" de ESE partido, no tira
+// el resto del job, y el partido se reintenta la semana que viene (hasta 4
+// veces) igual que un fallo de red. Es exactamente la garantia que hacia falta
+// para que un acta con minutos incompletos no entre nunca en data/processed en
+// silencio, y no añade riesgo nuevo al fin de semana del estreno: reutiliza el
+// aislamiento por partido que actas-cuartos.js ya tenia.
+//
+// Solo tiene sentido contra un acta COMPLETA (el corte final, o extraerActa
+// directamente) -- un corte parcial (Q1, Q2...) nunca sumara 200:00 y no es lo
+// que este guardian vigila.
+function verificarActa(acta, partido) {
+  if (acta.filasRechazadas && acta.filasRechazadas.length) {
+    throw new Error(`Acta ${partido || '?'}: ${acta.filasRechazadas.length} fila(s) con pinta de ` +
+      `jugador que el parser no ha entendido (ni uniendo lineas): ${JSON.stringify(acta.filasRechazadas)}`);
+  }
+  const segundos = mmss => { const [m, s] = String(mmss).split(':').map(Number); return (m || 0) * 60 + (s || 0); };
+  const nProrrogas = Math.max(0, (acta.parciales || []).length - 4);
+  const esperados = 200 * 60 + nProrrogas * 25 * 60;
+  const lados = ['local', 'visitante'];
+  acta.equipos.forEach((eq, ei) => {
+    const suma = eq.jugadores.reduce((acc, j) => acc + segundos(j.min), 0);
+    if (suma !== esperados) {
+      throw new Error(`Acta ${partido || '?'}: los minutos del equipo ${lados[ei] || ei} suman ` +
+        `${Math.floor(suma / 60)}:${String(suma % 60).padStart(2, '0')}, se esperaban ` +
+        `${Math.floor(esperados / 60)}:${String(esperados % 60).padStart(2, '0')}` +
+        `${nProrrogas ? ` (200:00 + ${nProrrogas} prorroga(s))` : ''}. Dato incompleto: probablemente ` +
+        'una fila de jugador perdida.');
+    }
+  });
 }
 
 async function extraerActa(partido, competicion = 1) {
@@ -120,7 +193,9 @@ async function extraerActa(partido, competicion = 1) {
   const parser = new PDFParse({ data: Buffer.from(r.data) });
   const res = await parser.getText();
   await parser.destroy();
-  return parseTexto(res.text || '');
+  const acta = parseTexto(res.text || '');
+  verificarActa(acta, partido);
+  return acta;
 }
 
 // Extrae los 4 cortes acumulados (c=1..4) y calcula el rendimiento POR CUARTO
@@ -247,8 +322,10 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
   });
 
   const validos = cortes.filter(c => c !== null);
+  const final = validos[validos.length - 1] || null;
+  if (final) verificarActa(final, partido); // solo el corte final es un partido completo; los parciales nunca suman 200:00
   return {
-    final: validos[validos.length - 1] || null,  // acta completa (= extraerActa)
+    final,  // acta completa (= extraerActa)
     cortes,                                        // los N cortes acumulados
     porCuarto,                                     // rendimiento de cada cuarto por jugador
     contextoPorCuarto,                             // contexto acumulativo desglosado por cuarto
@@ -256,7 +333,7 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
   };
 }
 
-module.exports = { extraerActa, extraerActaPorCuartos, parseTexto, parseJugador };
+module.exports = { extraerActa, extraerActaPorCuartos, parseTexto, parseJugador, verificarActa };
 
 if (require.main === module) {
   const args = process.argv.slice(2);
