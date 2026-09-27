@@ -24,12 +24,23 @@ const idsEsperados = new Set(partidos.map(p => String(p.id)));
 const ficheros = fs.readdirSync(dirActas).filter(f => f.endsWith('.json'));
 const idsPresentes = new Set(ficheros.map(f => f.replace('.json', '')));
 
+// Partidos con cuartos incompletos EN ORIGEN (mismo idiom que excluidos.json):
+// el propio PDF de la FEB solo trae menos de 4 cuartos, así que no van a pasar
+// nunca por muchas veces que se re-extraigan. Declarados con su motivo y su
+// evidencia en cuartos-incompletos-origen.json (S17.6) para que el guardián de
+// jugadores no los cuente como fallo cada semana sin dejar de tenerlos en cuenta.
+const fIncompletosOrigen = path.join('data', 'processed', compNombre, temp, 'cuartos-incompletos-origen.json');
+const idsIncompletosOrigen = new Set(
+  (fs.existsSync(fIncompletosOrigen) ? JSON.parse(fs.readFileSync(fIncompletosOrigen, 'utf8')) : [])
+    .map(e => String(e.partido))
+);
+
 // 1) Cobertura: actas presentes vs partidos esperados
 const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
-let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0;
+let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
 // campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
@@ -60,6 +71,11 @@ for (const f of ficheros) {
   // difJug conserve "min" en los cuartos 2-4: en la cache vieja "min" falta ahi
   // y la suma saldria corta por el formato, no por un jugador perdido de
   // verdad, asi que esas se cuentan aparte para no mentir con el numero.
+  if (idsIncompletosOrigen.has(String(a.partido))) {
+    incompletosOrigen++;
+    continue; // declarado en cuartos-incompletos-origen.json: no va a cuadrar nunca, no cuenta como fallo
+  }
+
   const minEnQ2a4 = (a.porCuarto || []).slice(1).every(cuarto =>
     !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
   if (a.porCuarto && minEnQ2a4) {
@@ -124,6 +140,7 @@ console.log(`Truncadas / con hueco:              ${truncadas}${truncadas ? ' -> 
 console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no bloquean): ${rendidas}${rendidas ? ' -> ej: ' + rendidasIds.join(', ') : ''}`);
 console.log('');
 console.log(`Guardian de jugadores (verificarActa, S17.6):`);
+console.log(`  Incompletos en origen (declarados, no bloquean): ${incompletosOrigen}${incompletosOrigen ? ' -> ' + [...idsIncompletosOrigen].join(', ') : ''}`);
 console.log(`  De cache VIEJA (sin "min" en Q2-4, no medible todavia): ${cacheAntigua}`);
 console.log(`  Medibles con el guardian:            ${sinJugadores + sinJugadoresSanas}`);
 console.log(`    Sanas:                             ${sinJugadoresSanas}`);
@@ -157,6 +174,12 @@ if (sospechosos.length) {
 const problemas = [];
 if (sinContexto > 0) problemas.push(`${sinContexto} actas sin contexto`);
 if (valoresRaros > 0) problemas.push(`${valoresRaros} valores raros`);
+// Bloquea (28/9/2026, S17.6): un acta con jugadores perdidos o minutos que no
+// cuadran no debe entrar en agregados. Antes de encenderlo se midio que solo 3
+// de 2537 actas eran medibles con este chequeo y las 3 eran fallos ya conocidos
+// -- cero falsos positivos -- y las que nunca van a cuadrar (origen truncado)
+// se declaran en cuartos-incompletos-origen.json para no bloquear para siempre.
+if (sinJugadores > 0) problemas.push(`${sinJugadores} actas con jugadores perdidos o minutos descuadrados`);
 
 if (problemas.length === 0) {
   console.log('VEREDICTO: LISTO para generar agregados y boxscore.');
@@ -164,6 +187,7 @@ if (problemas.length === 0) {
 } else {
   console.log('VEREDICTO: NO generar todavia. Problemas: ' + problemas.join('; ') + '.');
   if (sinContexto > 0) console.log('  -> Borra las actas sin contexto y re-extrae (sin --forzar) antes de generar.');
+  if (sinJugadores > 0) console.log('  -> Re-extrae (sin --forzar) ' + sinJugadoresIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, declaralo en cuartos-incompletos-origen.json.');
 }
 console.log('');
 // Codigo de salida: 1 si hay problemas (util en CI para que el paso quede marcado)

@@ -811,3 +811,123 @@ canario en §17.2—. Si conviene, subirla a crítico es un cambio de una línea
 Con esto §17.5 queda cerrado. Lo de §17.4 (unificar la ubicación de los ficheros
 de cuartos, y el commit vacío que nunca lo está) sigue pendiente pero no es de
 transición; puede esperar al arranque.
+
+### 17.6 El jugador que desaparece, y el verificador que no verificaba nada *(27/9/2026)*
+
+Construyendo `scraper/huella-acta.js` (fingerprint estructural del acta, para el
+cambio de reglamento FIBA del 1/10 — ver §2ª parte de este documento si existe, o
+`_informe-huella-acta.md`) apareció un bug real, de tres temporadas de antigüedad,
+en `extraer-acta.js`: **`parseJugador` exige el ancla `MM:SS` en la misma línea que
+el dorsal**, y cuando el PDF envuelve un nombre largo en dos líneas de texto plano
+(a veces con una letra suelta de por medio, resto de un acento partido: "Í", "É"),
+la fila no coincide nunca con el regex y **se descarta en silencio** — sin error,
+sin log. Si los totales de equipo se calculan sumando filas de jugador, un jugador
+perdido deja al equipo con menos puntos, menos minutos y menos rebotes de los que
+tuvo de verdad: contamina posesiones, ORtg, eFG y todo lo que cuelgue de ahí, para
+ESE partido, sin ninguna señal.
+
+**Alcance medido sin red** (sumando primero puntos de `porCuarto` contra el
+marcador —un suelo, no ve a un jugador de 0 puntos—, luego minutos del cuarto 1
+contra 50:00 —FIBA, 5 en pista × 10 min, no depende de prórrogas—, unión de los
+dos métodos): **534 de 2537 partidos de las tres temporadas cerradas** (Primera 25,
+Segunda 85, Tercera 424) tienen al menos una fila de jugador perdida. Lista con la
+metodología completa en `test/partidos-cuartos-incompletos.json`.
+
+**Arreglo (`extraer-acta.js`):** `parseTexto` une la línea del dorsal con las
+siguientes hasta encontrar el ancla `MM:SS`, descartando fragmentos sueltos de una
+sola letra, con tope de 3 líneas de margen. Verificado contra el caso real
+(partido 2535727, Ángel Comendador): aparece limpio y el equipo pasa de 11 a 12
+jugadores.
+
+**El guardián que hacía falta, `verificarActa` (mismo fichero):** sumar los
+minutos de cada equipo y compararlos con `200:00 + 25:00 × nº de prórrogas` (las
+prórrogas se deducen de `parciales.length`) es un invariante del reglamento, no
+una suposición — un jugador perdido siempre lo rompe, tenga los puntos que tenga.
+Lanza si no cuadra, o si queda alguna fila con pinta de jugador que ni uniendo
+líneas se ha entendido. **Bloquea, no solo avisa**, porque quien lo llama en
+producción (`actas-cuartos.js`) ya aísla los fallos por partido y reintenta la
+semana siguiente (§17.1): no hacía falta red de seguridad nueva, y el cron semanal
+(`actualizar-datos.yml`) no llama a `extraer-acta.js` en absoluto, así que esto no
+interactúa con el despliegue de datos en vivo.
+
+Para que el invariante se pudiera aplicar sumando los 4 cuartos (no solo el
+cuarto 1), `extraerActaPorCuartos` tuvo que dejar de perder el campo `min` en los
+cuartos 2-4: `difJug()` construía esas filas a mano y no lo copiaba. **Corregido
+diferenciándolo, no copiándolo tal cual** — `min` es acumulado igual que `pts` (el
+corte trae los minutos HASTA ese corte), así que copiarlo sin diferenciar habría
+dejado el acumulado en vez del cuarto suelto y la suma de los 4 no habría dado el
+total.
+
+**Un segundo fallo de la misma familia, y más serio: `∶` no es `:`.** El partido
+2484716 tenía `porCuarto` vacío de las cuatro entradas — ni una fila de jugador
+reconocida — porque su PDF usa el homoglifo Unicode U+2236 (RATIO) en vez de
+U+003A (dos puntos ASCII) en todo el `MM:SS`. Unir líneas no lo arregla: no hay
+ningún `:` que encontrar por mucho que se junten. **Arreglado normalizando la
+familia de homoglifos** (RATIO, MODIFIER LETTER COLON U+A789, FULLWIDTH U+FF1A) a
+`:` en una sola pasada sobre el texto extraído, no añadiendo el carácter concreto
+al regex — si una fuente no garantiza ASCII, el problema no es el carácter que ya
+se ha visto, es el siguiente que aún no.
+
+**Y el hallazgo que pesa más que los dos bugs juntos:** `verificar-cuartos.js`
+—el guardián pensado precisamente para cazar actas incompletas— dejaba pasar un
+acta con `porCuarto` vacío de principio a fin. `contextoPorCuarto` existía (se
+parsea por etiqueta de texto — "Máxima ventaja", "Puntos 2ª oportunidad" — y no
+depende de ningún `:`, así que sale sano aunque no haya ni un jugador). Y
+`verificado` en `actas-cuartos.js` salía de un `forEach` sobre `acta.final.equipos`
+que, con `equipos: []`, **no itera nunca**: `cuadra` se quedaba en su `true`
+inicial sin que nadie lo pusiera a prueba. **Un acta vacía "verifica" por
+omisión.**
+
+> **Regla general, tercera vez que aparece esta forma exacta** (antes: el canario
+> de temporada afirmando salud sin haberla comprobado, §17.2; `verificar-cinta.cjs`
+> pudiendo pasar en verde sin comparar nada, `desplegar.yml`): **un verificador que
+> recorre una colección tiene que afirmar primero que la colección no está vacía.
+> Un bucle sobre una lista vacía no falla — aprueba.**
+
+Arreglado reusando `verificarActa` desde `verificar-cuartos.js` (con
+`equiposDesdePorCuarto`, que reconstruye los minutos por jugador desde la caché ya
+en disco sin volver a pedir el PDF) en vez de un `some(...)` suelto: caza el acta
+vacía *y* la de minutos descuadrados con la misma llamada, un guardián menos que
+mantener en dos sitios. Medido antes de encenderlo: de las 2537 actas cacheadas,
+solo 3 eran medibles con el código de hoy (casi toda la caché es de antes de este
+arreglo y no tiene `min` en los cuartos 2-4), y las 3 fallan — los 3 casos ya
+conocidos, cero falsos positivos. **Bloquea el veredicto** *(28/9/2026)*.
+
+**El acta deja de tratarse como infalible.** El partido 2484716 llevó a comprobar
+si sus propios parciales sumaban su propio marcador — y en la copia cacheada
+original (extraída meses atrás, con el campo `parciales` que no depende de ningún
+`:` y por tanto nunca sufrió el bug del homoglifo) **sí sumaban**: 4 cuartos
+completos, coherentes con el resultado final. La FEB, en este caso, publicó bien.
+Pero **volver a pedir ese mismo PDF hoy, ya con el homoglifo arreglado, devolvió
+solo 3 cuartos** — la misma degradación de "re-pedir un partido viejo al sitio en
+vivo puede traer menos datos de los que trajo en su día" ya vista en 2486858, no
+un defecto nuevo del PDF original. Conclusión operativa: **los invariantes
+(minutos, suma de parciales contra marcador) se comprueban siempre, nunca se
+asume que el acta —ni la copia recién bajada— es correcta por venir de la FEB.**
+
+**Registro de "cuartos incompletos en origen"** (mismo idiom que `excluidos.json`:
+declarar el hueco con su motivo, no dejarlo en silencio ni bloquear para siempre
+algo que nunca va a cuadrar): `data/processed/<comp>/2025/cuartos-incompletos-origen.json`.
+Dos partidos confirmados con la copia cacheada **original**, no con un re-fetch
+(1 solo cuarto/parcial, coincide con el marcador — la FEB solo publicó ese
+cuarto): `2513268` (primerafeb) y `2486938` (segundafeb). `2484716` **no** entra
+aquí — su origen era bueno (4 parciales, cuadran); queda pendiente de la
+re-extracción en paralelo de la semana del 5/10 (ver más abajo), no de un defecto
+de origen. `verificar-cuartos.js` excluye estos IDs del bloqueo para que dejen de
+contar como fallo cada semana sin dejar de estar declarados.
+
+**Re-extracción histórica, aprobada, no ejecutada todavía** (noche del 6/10, tras
+la prueba de carga del 5/10 con 90 partidos — no pedir dos cosas grandes a la FEB
+el mismo día): re-extraer a una carpeta paralela, nunca sobre la caché existente
+—precisamente por lo que enseñó 2486858/2484716—, y por partido: `verificarActa`
+primero (si la nueva pasa y la vieja no, gana la nueva); si empatan pasando o
+fallando, gana la de más `parciales.length` (más cuartos es estrictamente más
+dato). Reanudable (la carpeta paralela como punto de control) y con informe del
+reparto (cuántos promueven, cuántos se quedan, cuántos van al registro de
+incompletos en origen) — sin eso se sabe que la pasada terminó, no qué hizo.
+Disco: ~200 MB de pico (100 MB actuales + 100 MB de la copia nueva). Tiempo:
+~4-5 h a la pausa de 1,2 s habitual.
+
+Detalle completo, con lo verificado separado de lo deducido en cada paso:
+`_informe-jugador-perdido.md`, `_informe-alcance-real.md`, `_informe-dos-fallos.md`,
+`_informe-homoglifos-y-guardian.md`.
