@@ -3,6 +3,8 @@ name: Desplegar web en GitHub Pages
 on:
   push:
     branches: [main]
+  schedule:
+    - cron: '0 15 * * *'
   workflow_dispatch:
 
 permissions:
