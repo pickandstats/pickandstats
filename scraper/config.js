@@ -9,7 +9,7 @@ module.exports = {
     2: 'segundafeb',
     3: 'tercerafeb'
   },
-  TEMPORADA_DEFECTO: '2025',
+  TEMPORADA_DEFECTO: '2026',
   FILTRO_GRUPOS: /liga regular/i,
   PAUSA_MS: 1200,
   HEADERS: {
