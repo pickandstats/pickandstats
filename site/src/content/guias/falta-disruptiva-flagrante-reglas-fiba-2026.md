@@ -5,6 +5,7 @@ descripcionSeo: Faltas disruptivas y flagrantes, las dos categorías de técnica
 familia: competicion
 orden: 1
 fecha: 2026-09-18
+actualizado: 2026-10-04
 temporada: "2025/26"
 ---
 
@@ -182,11 +183,15 @@ ambos lados del cambio, que es exactamente lo que queremos evitar.
 
 Esta es la parte incómoda, y es mejor decirla antes.
 
-- **No vamos a distinguir las faltas por tipo.** Las estadísticas de Pick&Stats salen del
-  acta oficial de cada partido, y el acta da faltas **cometidas** y **recibidas** por
-  jugador, sin desglosar. Aunque el anexo del documento de la FIBA distinga la disruptiva
-  (DI) y la flagrante (FL) en el acta, mientras el resumen estadístico siga dando un único
-  total, aquí verás un único total. No podremos decirte cuántas disruptivas lleva un equipo.
+- **No vamos a distinguir las faltas por tipo, y esto ya está comprobado.** Las estadísticas
+  de Pick&Stats salen del acta oficial de cada partido, y el acta da faltas **cometidas** y
+  **recibidas** por jugador, sin desglosar. El documento de la FIBA distingue la disruptiva
+  (DI) y la flagrante (FL) en su anexo del acta de anotación, pero **el resumen estadístico
+  que publica la FEB no las separa**: comparamos la estructura de siete actas de la jornada 2
+  de Primera, ya jugada con el reglamento nuevo, contra la de la jornada 1, jugada con el
+  anterior, y **es idéntica** — mismas columnas, mismo número de campos por jugador, ninguna
+  marca nueva. Así que aquí verás un único total, y no podremos decirte cuántas disruptivas
+  lleva un equipo.
 - **La costura no la vamos a marcar en los datos.** Los nueve partidos del 25 al 27 de
   septiembre entran en la temporada 2026/27 como cualquier otro. Si alguna vez comparas
   algo muy fino de esa jornada 1 de Primera con el resto, ten presente que puede haberse
