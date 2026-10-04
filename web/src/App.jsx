@@ -23,6 +23,12 @@ const COMPETICIONES = [
 
 const etiquetaTemporada = t => `${t}/${(+t + 1).toString().slice(2)}`;
 
+const fechaLarga = f => {
+  if (!f) return '';
+  const d = new Date(f + 'T12:00:00');
+  return d.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+};
+
 // Orden natural de grupos: A-A, A-B, ... o ESTE/OESTE o UNICO
 const ordenarGrupos = grupos => [...grupos].sort((a, b) => a.localeCompare(b, 'es'));
 
@@ -118,6 +124,7 @@ export default function App() {
   const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
   const [cargando, setCargando] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
+  const [proximaFecha, setProximaFecha] = useState(null);
 
   // temporadas e histórico, por competición
   useEffect(() => {
@@ -127,14 +134,33 @@ export default function App() {
       .then(r => r.json()).then(d => setDatosClub(d.equipos || {})).catch(() => {});
   }, []);
   useEffect(() => {
+    let cancelado = false;
     fetch(`${import.meta.env.BASE_URL}data/${competicion}/temporadas.json`)
       .then(r => r.json())
-      .then(ts => { setTemporadas(ts); setTemporada(ts[0]); })
+      .then(async ts => {
+        setTemporadas(ts);
+        // La temporada mas reciente de la lista puede estar anunciada pero
+        // sin empezar (p.ej. Tercera en septiembre, con el calendario ya
+        // publicado y 0 equipos con datos todavia). Por defecto se abre la
+        // mas reciente que SI tenga equipos, probando equipos.json de mas
+        // nueva a mas vieja; sigue pudiendo elegirse a mano desde el
+        // selector, que es donde se explica que aun no ha empezado.
+        let porDefecto = ts[0];
+        for (const t of ts) {
+          try {
+            const r = await fetch(`${import.meta.env.BASE_URL}data/${competicion}/${t}/equipos.json`);
+            const eq = r.ok ? await r.json() : [];
+            if (Array.isArray(eq) && eq.length > 0) { porDefecto = t; break; }
+          } catch (e) { /* sigue probando con la siguiente */ }
+        }
+        if (!cancelado) setTemporada(porDefecto);
+      })
       .catch(err => console.error('Error cargando temporadas:', err));
     fetch(`${import.meta.env.BASE_URL}data/${competicion}/historico.json`)
       .then(r => r.json())
       .then(setHistorico)
       .catch(err => console.error('Error cargando histórico:', err));
+    return () => { cancelado = true; };
   }, [competicion]);
 
   // datos de la competición + temporada activas
@@ -142,12 +168,24 @@ export default function App() {
     if (!temporada) return;
     setCargando(true);
     setSinDatos(false);
+    setProximaFecha(null);
     setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
       return r.json();
     });
+    // Una temporada anunciada pero sin jugar (calendario publicado, 0 equipos
+    // con datos aun) busca su fecha de inicio real en calendario.json, para
+    // decir "empieza el X" en vez de un aviso generico o un "selecciona un
+    // grupo" de una lista vacia.
+    const buscarProximaFecha = () => fetch(`${base}/calendario.json`)
+      .then(r => r.ok ? r.json() : null)
+      .then(cal => {
+        const fechas = ((cal && cal.partidos) || []).map(p => p.fecha).filter(Boolean).sort();
+        if (fechas.length) setProximaFecha(fechas[0]);
+      })
+      .catch(() => {});
     Promise.all([
       cargar(`${base}/equipos.json`),
       cargar(`${base}/jugadores.json`),
@@ -158,6 +196,12 @@ export default function App() {
       cargar(`${base}/fases.json`).catch(() => null)
     ])
       .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData]) => {
+        if (eq.length === 0) {
+          setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
+          setSinDatos(true); setCargando(false);
+          buscarProximaFecha();
+          return;
+        }
         setEquipos(eq); setJugadores(jug); setCarreras(car); setPartidos(par);
         setJugadoresCuartos(cuartos || []);
         setEquiposCuartos(eqCuartos || []);
@@ -168,6 +212,7 @@ export default function App() {
         console.error('Error cargando datos:', err);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
         setSinDatos(true); setCargando(false);
+        buscarProximaFecha();
       });
   }, [competicion, temporada]);
 
@@ -383,9 +428,12 @@ export default function App() {
         <div className="sin-datos">
           <h2>Temporada {etiquetaTemporada(temporada)} en preparación</h2>
           <p>
-            Todavía no hay datos disponibles para esta temporada. En cuanto
-            comience la competición y se disputen las primeras jornadas,
-            aquí aparecerán clasificaciones, estadísticas y resultados.
+            {proximaFecha
+              ? <>La {compActual.nombre} {etiquetaTemporada(temporada)} empieza el{' '}
+                  {fechaLarga(proximaFecha)}.</>
+              : 'Todavía no hay datos disponibles para esta temporada.'}
+            {' '}En cuanto comience la competición y se disputen las primeras
+            jornadas, aquí aparecerán clasificaciones, estadísticas y resultados.
           </p>
           <p className="sin-datos-sug">
             Mientras tanto, puedes consultar temporadas anteriores con el
