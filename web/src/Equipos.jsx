@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { srsListo, notaSrs } from './srsUtil';
 
 const COMUNES = [
   { clave: 'nombre', titulo: 'Equipo', izq: true },
@@ -82,8 +83,11 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
 
   const columnas = (MODOS.find(m => m[0] === modo) || MODOS[0])[2];
 
+  const equiposGrupo = useMemo(() => equipos.filter(e => e.grupo === grupo), [equipos, grupo]);
+  const srsOk = srsListo(equiposGrupo);
+
   const filas = useMemo(() => {
-    const f = equipos.filter(e => e.grupo === grupo);
+    const f = [...equiposGrupo];
     const { clave, desc } = orden;
     f.sort((a, b) => {
       const va = a[clave], vb = b[clave];
@@ -91,7 +95,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
       return desc ? vb - va : va - vb;
     });
     return f;
-  }, [equipos, grupo, orden]);
+  }, [equiposGrupo, orden]);
 
   const clicOrden = clave =>
     setOrden(o => o.clave === clave ? { clave, desc: !o.desc } : { clave, desc: true });
@@ -136,7 +140,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
                     ].join(' ').trim()}>
                     {c.clave === 'nombre'
                       ? <span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span>
-                      : e[c.clave]}
+                      : c.clave === 'srs' && !srsOk ? '—' : e[c.clave]}
                   </td>
                 ))}
               </tr>
@@ -144,6 +148,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
           </tbody>
         </table>
       </div>
+      {modo === 'eficiencia' && !srsOk && <p className="nota-tabla">{notaSrs(equiposGrupo)}</p>}
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
+import { srsListo, notaSrs } from './srsUtil';
 
 const MIN_PJ = 12;
 
@@ -60,8 +61,13 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
     { titulo: 'Producción por 40', clave: 'per40pt', sufijo: 'pts/40' },
   ];
 
+  // Antes de que el SRS tenga sentido (ver srsUtil.js), "dominantes" ordena
+  // por net: es el mismo número que se enseña en la columna de al lado, así
+  // que el orden siempre coincide con algo visible.
+  const srsOk = srsListo(equiposF);
   const dominantes = useMemo(() =>
-    [...equiposF].sort((a, b) => b.srs - a.srs).slice(0, 8), [equiposF]);
+    [...equiposF].sort((a, b) => (srsOk ? b.srs - a.srs : b.netrtg - a.netrtg)).slice(0, 8),
+    [equiposF, srsOk]);
 
   const enRacha = useMemo(() => {
     const victorias = e => parseInt((e.forma5 || '0-0').split('-')[0], 10);
@@ -157,7 +163,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                         <td className="izq"><span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span></td>
                         <td>{e.grupo}</td>
                         <td>{bal.pg}-{bal.pp}</td>
-                        <td>{e.srs}</td>
+                        <td>{srsOk ? e.srs : '—'}</td>
                         <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{e.netrtg}</td>
                       </tr>
                       );
@@ -165,6 +171,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                   </tbody>
                 </table>
               </div>
+              {!srsOk && <p className="nota-tabla">{notaSrs(equiposF)}</p>}
             </div>
 
             <div>

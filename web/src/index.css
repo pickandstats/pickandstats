@@ -135,6 +135,7 @@ tbody tr:last-child td { border-bottom: none; }
 .net-neg { color: var(--negativo); font-weight: 600; }
 
 .pie { color: #9aa1ac; font-size: 12px; margin-top: 16px; }
+.nota-tabla { color: #9aa1ac; font-size: 12px; margin: 6px 0 0; }
 .cargando { color: var(--tinta-suave); margin-top: 24px; }
 
 /* ---- tablas con fila de totales (boxscore de partido) ---- */

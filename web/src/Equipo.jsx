@@ -5,6 +5,7 @@ import {
 } from 'recharts';
 import AnalisisEquipo from './AnalisisEquipo';
 import DossierPartido from './DossierPartido';
+import { srsListo, notaSrs } from './srsUtil';
 
 const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
@@ -72,6 +73,9 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   // Con un solo grupo, el SRS converge al Net multiplicado por (n-1)/n:
   // es el mismo dato encogido, así que no se muestra.
   const unGrupo = new Set(equipos.map(x => x.grupo)).size <= 1;
+  // Y antes de la jornada 15 (ver srsUtil.js) es ruido de muestra, con
+  // independencia de cuántos grupos haya.
+  const srsOk = srsListo(equipos.filter(e => e.grupo === equipo.grupo));
 
   const fourFactors = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
@@ -137,6 +141,14 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       </div>
     );
   };
+
+  const datoVacio = etiqueta => (
+    <div className="dato" key={etiqueta}>
+      <div className="dato-etiqueta">{etiqueta}</div>
+      <div className="dato-valor">—</div>
+      <div className="dato-puesto"></div>
+    </div>
+  );
 
   return (
     <div>
@@ -329,11 +341,12 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
           <div className="datos-titulo">Global</div>
           <div className="datos">
             {dato('Net', 'netrtg')}
-            {!unGrupo && dato('SRS', 'srs')}
+            {!unGrupo && (srsOk ? dato('SRS', 'srs') : datoVacio('SRS'))}
             {dato('Pace', 'pace')}
             {dato('Últ. 5', 'forma5')}
             {dato('Suerte', 'suerte')}
           </div>
+          {!unGrupo && !srsOk && <p className="nota-tabla">{notaSrs(equipos.filter(e => e.grupo === equipo.grupo))}</p>}
           <div className="datos-titulo">Ataque</div>
           <div className="datos">
             {dato('ORtg', 'ortg')}
