@@ -10,7 +10,7 @@
    "id": "1008899",
    "nombre": "LOBE TU PROVINCIA HUESCA LA MAGIA"
   },
-  "resultado": "*-*",
+  "resultado": "84-82",
   "fecha": "03/10/2026",
   "hora": "18:30"
  },
@@ -25,24 +25,9 @@
    "id": "1010208",
    "nombre": "AMICS CASTELLÓ"
   },
-  "resultado": "*-*",
+  "resultado": "94-88",
   "fecha": "03/10/2026",
   "hora": "19:00"
- },
- {
-  "jornada": "Jornada 1(03/10/2026)",
-  "id": "2536297",
-  "local": {
-   "id": "1008706",
-   "nombre": "CLASS BASQUET SANT ANTONI"
-  },
-  "visitante": {
-   "id": "1010200",
-   "nombre": "INTERMAQUINAS BENICARLO"
-  },
-  "resultado": "*-*",
-  "fecha": "03/10/2026",
-  "hora": "19:30"
  },
  {
   "jornada": "Jornada 1(03/10/2026)",
@@ -55,7 +40,7 @@
    "id": "1008985",
    "nombre": "LOGROBASKET LOGI7"
   },
-  "resultado": "*-*",
+  "resultado": "67-81",
   "fecha": "03/10/2026",
   "hora": "19:30"
  },
@@ -64,13 +49,13 @@
   "id": "2536301",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008391",
    "nombre": "BIELE ISB"
   },
-  "resultado": "*-*",
+  "resultado": "93-86",
   "fecha": "03/10/2026",
   "hora": "20:30"
  },
@@ -85,7 +70,7 @@
    "id": "1008636",
    "nombre": "TQ-CB PRAT"
   },
-  "resultado": "*-*",
+  "resultado": "63-81",
   "fecha": "04/10/2026",
   "hora": "12:00"
  },
@@ -100,9 +85,24 @@
    "id": "1009441",
    "nombre": "SOL GIRONÈS BISBAL BÀSQUET"
   },
-  "resultado": "*-*",
+  "resultado": "93-71",
   "fecha": "04/10/2026",
   "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 1(03/10/2026)",
+  "id": "2536297",
+  "local": {
+   "id": "1008706",
+   "nombre": "CLASS BASQUET SANT ANTONI"
+  },
+  "visitante": {
+   "id": "1010200",
+   "nombre": "INTERMAQUINAS BENICARLO"
+  },
+  "resultado": "*-*",
+  "fecha": null,
+  "hora": null
  },
  {
   "jornada": "Jornada 2(10/10/2026)",
@@ -173,7 +173,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "11/10/2026",
@@ -244,7 +244,7 @@
   "id": "2536314",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008636",
@@ -353,7 +353,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "24/10/2026",
@@ -451,21 +451,6 @@
  },
  {
   "jornada": "Jornada 5(31/10/2026)",
-  "id": "2536327",
-  "local": {
-   "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
-  },
-  "visitante": {
-   "id": "1010200",
-   "nombre": "INTERMAQUINAS BENICARLO"
-  },
-  "resultado": "*-*",
-  "fecha": "31/10/2026",
-  "hora": "19:00"
- },
- {
-  "jornada": "Jornada 5(31/10/2026)",
   "id": "2536328",
   "local": {
    "id": "1010351",
@@ -496,18 +481,18 @@
  },
  {
   "jornada": "Jornada 5(31/10/2026)",
-  "id": "2536331",
+  "id": "2536327",
   "local": {
-   "id": "1010208",
-   "nombre": "AMICS CASTELLÓ"
+   "id": "1010502",
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
-   "id": "1008391",
-   "nombre": "BIELE ISB"
+   "id": "1010200",
+   "nombre": "INTERMAQUINAS BENICARLO"
   },
   "resultado": "*-*",
-  "fecha": "01/11/2026",
-  "hora": "12:00"
+  "fecha": "31/10/2026",
+  "hora": "20:30"
  },
  {
   "jornada": "Jornada 5(31/10/2026)",
@@ -519,6 +504,21 @@
   "visitante": {
    "id": "1008636",
    "nombre": "TQ-CB PRAT"
+  },
+  "resultado": "*-*",
+  "fecha": "01/11/2026",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 5(31/10/2026)",
+  "id": "2536331",
+  "local": {
+   "id": "1010208",
+   "nombre": "AMICS CASTELLÓ"
+  },
+  "visitante": {
+   "id": "1008391",
+   "nombre": "BIELE ISB"
   },
   "resultado": "*-*",
   "fecha": "01/11/2026",
@@ -548,7 +548,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "07/11/2026",
@@ -649,7 +649,7 @@
   "id": "2536340",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1010350",
@@ -773,7 +773,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "21/11/2026",
@@ -878,7 +878,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "28/11/2026",
@@ -994,7 +994,7 @@
   "id": "2536366",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1010351",
@@ -1148,7 +1148,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "13/12/2026",
@@ -1189,7 +1189,7 @@
   "id": "2536379",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1009441",
@@ -1298,7 +1298,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "03/01/2027",
@@ -1448,7 +1448,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "10/01/2027",
@@ -1519,7 +1519,7 @@
   "id": "2536398",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008985",
@@ -1583,7 +1583,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "30/01/2027",
@@ -1729,7 +1729,7 @@
   "id": "2536413",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008899",
@@ -1868,7 +1868,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "14/02/2027",
@@ -1939,7 +1939,7 @@
   "id": "2536428",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008978",
@@ -2048,7 +2048,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "28/02/2027",
@@ -2134,7 +2134,7 @@
   "id": "2536443",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1010348",
@@ -2269,7 +2269,7 @@
   "id": "2536444",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1008706",
@@ -2333,7 +2333,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "20/03/2027",
@@ -2464,7 +2464,7 @@
   "id": "2536459",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1009133",
@@ -2543,7 +2543,7 @@
   },
   "visitante": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "resultado": "*-*",
   "fecha": "03/04/2027",
@@ -2659,7 +2659,7 @@
   "id": "2536474",
   "local": {
    "id": "1010502",
-   "nombre": "BASKET CARTAGENA"
+   "nombre": "LA SALUD CARTAGENA C.B."
   },
   "visitante": {
    "id": "1010208",

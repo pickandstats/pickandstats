@@ -1,0 +1,823 @@
+{
+ "id": "2536299",
+ "temporada": "2026",
+ "competicion": "segundafeb",
+ "grupo": "B",
+ "jornada": "Jornada 1(03/10/2026)",
+ "equipoLocal": {
+  "id": "1010350",
+  "nombre": "REINA PROTEÍNAS CLAVIJO"
+ },
+ "equipoVisitante": {
+  "id": "1008636",
+  "nombre": "TQ-CB PRAT"
+ },
+ "resultado": "63-81",
+ "disputado": true,
+ "descargado": "2026-10-05T15:55:25.475Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1957023",
+    "titular": true,
+    "dorsal": "0",
+    "nombre": "RIOS CADENAS, POL",
+    "seg": 1271,
+    "pt": 8,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 3,
+    "pm": -11
+   },
+   {
+    "idJugador": "2846994",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "CURFMAN, KAMDYN BRYANT",
+    "seg": 1501,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 7
+    },
+    "tc": {
+     "a": 1,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 1,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -6,
+    "pm": -10
+   },
+   {
+    "idJugador": "2715040",
+    "titular": true,
+    "dorsal": "4",
+    "nombre": "TRAORE, BREHIMA SEYDOU",
+    "seg": 1661,
+    "pt": 19,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 12
+    },
+    "tl": {
+     "a": 6,
+     "i": 13
+    },
+    "ro": 3,
+    "rd": 6,
+    "rt": 9,
+    "as": 2,
+    "br": 2,
+    "bp": 2,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 8,
+    "va": 25,
+    "pm": -5
+   },
+   {
+    "idJugador": "1555336",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "DE PABLO DEL CASTILLO, MIGUEL",
+    "seg": 1731,
+    "pt": 16,
+    "t2": {
+     "a": 4,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 6
+    },
+    "tc": {
+     "a": 5,
+     "i": 12
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 3,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 5,
+    "va": 18,
+    "pm": -18
+   },
+   {
+    "idJugador": "2018712",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "SAMA PEREZ, IKER",
+    "seg": 477,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 2,
+    "pm": 0
+   },
+   {
+    "idJugador": "1998365",
+    "titular": false,
+    "dorsal": "9",
+    "nombre": "HARGUINDEY MANEIRO, PABLO",
+    "seg": 1122,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 2,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 6,
+    "pm": -20
+   },
+   {
+    "idJugador": "1950468",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "PARDINA MOLINA, JOAN",
+    "seg": 1397,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 3,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 11,
+    "pm": 3
+   },
+   {
+    "idJugador": "2151562",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "THIAM PEDRERA, OMAR",
+    "seg": 1158,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -2,
+    "pm": -16
+   },
+   {
+    "idJugador": "2525411",
+    "titular": false,
+    "dorsal": "17",
+    "nombre": "IDEHEN IDEHEN, EGHOSASERE ROBINSON",
+    "seg": 694,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": -3,
+    "pm": -6
+   },
+   {
+    "idJugador": "2883440",
+    "titular": true,
+    "dorsal": "18",
+    "nombre": "IANGUAS, PEDRO HENRIQUE",
+    "seg": 988,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 4,
+    "pm": -7
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "1396420",
+    "titular": false,
+    "dorsal": "3",
+    "nombre": "CARRASCO SAGRISTA, RAIMON",
+    "seg": 1063,
+    "pt": 7,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 1,
+    "pm": 15
+   },
+   {
+    "idJugador": "216888",
+    "titular": true,
+    "dorsal": "5",
+    "nombre": "COSTA I VÁZQUEZ, SERGI",
+    "seg": 1517,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 5,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 3,
+    "pm": 6
+   },
+   {
+    "idJugador": "2077313",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "GARCÍA RIERA, GUILLEM",
+    "seg": 1067,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 4,
+    "rd": 2,
+    "rt": 6,
+    "as": 4,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 17,
+    "pm": 17
+   },
+   {
+    "idJugador": "1300334",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "SALVANS HIDALGO, QUIM",
+    "seg": 1343,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 4,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 8,
+    "pm": 8
+   },
+   {
+    "idJugador": "1665447",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "CARREÑO VIDAL, PAU",
+    "seg": 877,
+    "pt": 6,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 4,
+    "br": 0,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 8,
+    "pm": 7
+   },
+   {
+    "idJugador": "1909787",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "AMABILINO PEREZ, ADRIA MARC",
+    "seg": 1334,
+    "pt": 12,
+    "t2": {
+     "a": 4,
+     "i": 5
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 7,
+    "rt": 8,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 21,
+    "pm": 17
+   },
+   {
+    "idJugador": "2813351",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "CAMPBELL, SOLOMON",
+    "seg": 944,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 2,
+    "pm": 10
+   },
+   {
+    "idJugador": "1660664",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "NOGUES JARNE, JOSE IGNACIO",
+    "seg": 1305,
+    "pt": 10,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 8
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 5,
+    "rt": 7,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 13,
+    "pm": 4
+   },
+   {
+    "idJugador": "2819069",
+    "titular": true,
+    "dorsal": "33",
+    "nombre": "SMALLWOOD, THOMAS BRIAN MAX",
+    "seg": 801,
+    "pt": 11,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 11,
+    "pm": 0
+   },
+   {
+    "idJugador": "2883176",
+    "titular": false,
+    "dorsal": "60",
+    "nombre": "KELIKI EBENGO, KEVIN",
+    "seg": 416,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": -1,
+    "pm": 5
+   },
+   {
+    "idJugador": "1920853",
+    "titular": true,
+    "dorsal": "70",
+    "nombre": "CODINACHS PITA, ADRIA",
+    "seg": 1333,
+    "pt": 14,
+    "t2": {
+     "a": 7,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 7,
+     "i": 11
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 6,
+    "rd": 2,
+    "rt": 8,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 13,
+    "pm": 1
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 18,
+    "visitante": 26
+   },
+   {
+    "periodo": "2º C",
+    "local": 14,
+    "visitante": 16
+   },
+   {
+    "periodo": "3º C",
+    "local": 14,
+    "visitante": 19
+   },
+   {
+    "periodo": "4º C",
+    "local": 17,
+    "visitante": 20
+   }
+  ]
+ }
+}

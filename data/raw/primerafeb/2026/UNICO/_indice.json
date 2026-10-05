@@ -145,7 +145,7 @@
    "id": "1009713",
    "nombre": "PALMER BASKET MALLORCA PALMA"
   },
-  "resultado": "*-*",
+  "resultado": "81-72",
   "fecha": "02/10/2026",
   "hora": "20:30"
  },
@@ -160,7 +160,7 @@
    "id": "1009716",
    "nombre": "BUENO ARENAS ALBACETE BASKET"
   },
-  "resultado": "*-*",
+  "resultado": "92-104",
   "fecha": "02/10/2026",
   "hora": "20:45"
  },
@@ -175,7 +175,7 @@
    "id": "1009110",
    "nombre": "CAJASOL COTO CÓRDOBA"
   },
-  "resultado": "*-*",
+  "resultado": "70-67",
   "fecha": "02/10/2026",
   "hora": "21:00"
  },
@@ -190,7 +190,7 @@
    "id": "1009109",
    "nombre": "COVIRAN GRANADA"
   },
-  "resultado": "*-*",
+  "resultado": "67-77",
   "fecha": "03/10/2026",
   "hora": "17:30"
  },
@@ -205,7 +205,7 @@
    "id": "1008797",
    "nombre": "CAJASIETE GRAN CANARIA"
   },
-  "resultado": "*-*",
+  "resultado": "68-79",
   "fecha": "03/10/2026",
   "hora": "18:30"
  },
@@ -220,7 +220,7 @@
    "id": "1010493",
    "nombre": "MOVISTAR ESTUDIANTES"
   },
-  "resultado": "*-*",
+  "resultado": "73-80",
   "fecha": "03/10/2026",
   "hora": "19:30"
  },
@@ -235,7 +235,7 @@
    "id": "1008687",
    "nombre": "HLA ALICANTE"
   },
-  "resultado": "*-*",
+  "resultado": "64-81",
   "fecha": "03/10/2026",
   "hora": "19:30"
  },
@@ -250,7 +250,7 @@
    "id": "1009584",
    "nombre": "GRUPO ALEGA CANTABRIA"
   },
-  "resultado": "*-*",
+  "resultado": "76-88",
   "fecha": "04/10/2026",
   "hora": "12:00"
  },
@@ -265,7 +265,7 @@
    "id": "1009095",
    "nombre": "CLUB OURENSE BALONCESTO"
   },
-  "resultado": "*-*",
+  "resultado": "86-90",
   "fecha": "04/10/2026",
   "hora": "18:00"
  },
@@ -2386,6 +2386,21 @@
  },
  {
   "jornada": "Jornada 18(29/01/2027)",
+  "id": "2535881",
+  "local": {
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
+  },
+  "visitante": {
+   "id": "1009713",
+   "nombre": "PALMER BASKET MALLORCA PALMA"
+  },
+  "resultado": "*-*",
+  "fecha": "31/01/2027",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 18(29/01/2027)",
   "id": "2535885",
   "local": {
    "id": "1010324",
@@ -2413,21 +2428,6 @@
   "resultado": "*-*",
   "fecha": "31/01/2027",
   "hora": "18:00"
- },
- {
-  "jornada": "Jornada 18(29/01/2027)",
-  "id": "2535881",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009713",
-   "nombre": "PALMER BASKET MALLORCA PALMA"
-  },
-  "resultado": "*-*",
-  "fecha": "31/01/2027",
-  "hora": "18:30"
  },
  {
   "jornada": "Jornada 19(05/02/2027)",
@@ -2566,21 +2566,6 @@
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
-  "id": "2535901",
-  "local": {
-   "id": "1010493",
-   "nombre": "MOVISTAR ESTUDIANTES"
-  },
-  "visitante": {
-   "id": "1009929",
-   "nombre": "BÀSQUET MENORCA"
-  },
-  "resultado": "*-*",
-  "fecha": "09/02/2027",
-  "hora": "00:00"
- },
- {
-  "jornada": "Jornada 20(09/02/2027)",
   "id": "2535896",
   "local": {
    "id": "1009713",
@@ -2641,18 +2626,18 @@
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
-  "id": "2535899",
+  "id": "2535901",
   "local": {
-   "id": "1009109",
-   "nombre": "COVIRAN GRANADA"
+   "id": "1010493",
+   "nombre": "MOVISTAR ESTUDIANTES"
   },
   "visitante": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+   "id": "1009929",
+   "nombre": "BÀSQUET MENORCA"
   },
   "resultado": "*-*",
   "fecha": "10/02/2027",
-  "hora": "20:30"
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 20(09/02/2027)",
@@ -2694,6 +2679,21 @@
   "visitante": {
    "id": "1009072",
    "nombre": "FIBWI MALLORCA BASQUET PALMA"
+  },
+  "resultado": "*-*",
+  "fecha": "10/02/2027",
+  "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 20(09/02/2027)",
+  "id": "2535899",
+  "local": {
+   "id": "1009109",
+   "nombre": "COVIRAN GRANADA"
+  },
+  "visitante": {
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
   },
   "resultado": "*-*",
   "fecha": "10/02/2027",
