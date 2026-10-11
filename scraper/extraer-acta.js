@@ -231,7 +231,7 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
   }
 }
 
-async function extraerActaPorCuartos(partido, nCuartos = null) {
+async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = true } = {}) {
   const pausa = () => new Promise(r => setTimeout(r, CFG.PAUSA_MS || 1200));
   // Descubrir cuántos cortes válidos tiene el partido probando c=1,2,3,... hasta
   // que uno falle. Normal llega a 4; prórroga a 5+; un acta incompleta se corta
@@ -344,7 +344,11 @@ async function extraerActaPorCuartos(partido, nCuartos = null) {
 
   const validos = cortes.filter(c => c !== null);
   const final = validos[validos.length - 1] || null;
-  if (final) verificarActa(final, partido); // solo el corte final es un partido completo; los parciales nunca suman 200:00
+  // solo el corte final es un partido completo; los parciales nunca suman 200:00.
+  // verificar:false es para quien necesita los datos crudos para COMPARARLOS
+  // (p.ej. la reparacion en paralelo: una nueva extraccion que no verifica no
+  // sirve de nada si no se puede ni mirar por que no verifica).
+  if (final && verificar) verificarActa(final, partido);
   return {
     final,  // acta completa (= extraerActa)
     cortes,                                        // los N cortes acumulados
