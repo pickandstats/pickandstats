@@ -67,17 +67,16 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
     [...sel].filter(g => !srsListo(srsPestillo, g)).sort((a, b) => a.localeCompare(b, 'es')),
     [sel, srsPestillo]);
 
-  // Pendiente, en su propio commit ("con qué se ordena", no "cuándo se enseña"):
-  // con más de un grupo seleccionado, ordenar por SRS mezcla grupos que el propio
-  // recentrado de calcular.js calibra sobre medias distintas -- comparar sus
-  // valores es exactamente lo que la guía advierte que no se puede hacer, asentados
-  // o no. De momento se mantiene el criterio global de antes (si algún grupo
-  // seleccionado está listo, se ordena por SRS) a propósito, para no mezclar los
-  // dos arreglos en el mismo commit.
-  const algunGrupoListo = [...sel].some(g => srsListo(srsPestillo, g));
+  // El recentrado de calcular.js calibra el SRS de cada grupo sobre la media de
+  // net de ESE grupo, no sobre una referencia comun -- dos grupos nunca son
+  // comparables en SRS, asentados o no (ver _informe-confirmacion-recentrado.md).
+  // Con más de un grupo seleccionado se ordena siempre por Net. Con uno solo, por
+  // SRS cuando ese grupo este asentado.
+  const unSoloGrupoSel = sel.size === 1;
+  const srsOrdenable = unSoloGrupoSel && srsListo(srsPestillo, [...sel][0]);
   const dominantes = useMemo(() =>
-    [...equiposF].sort((a, b) => (algunGrupoListo ? b.srs - a.srs : b.netrtg - a.netrtg)).slice(0, 8),
-    [equiposF, algunGrupoListo]);
+    [...equiposF].sort((a, b) => (srsOrdenable ? b.srs - a.srs : b.netrtg - a.netrtg)).slice(0, 8),
+    [equiposF, srsOrdenable]);
 
   const enRacha = useMemo(() => {
     const victorias = e => parseInt((e.forma5 || '0-0').split('-')[0], 10);
