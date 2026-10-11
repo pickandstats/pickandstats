@@ -71,7 +71,7 @@ const MODOS = [
   ['factores',   'Four Factors',  FACTORES],
 ];
 
-export default function Equipos({ equipos, grupos, onVerEquipo }) {
+export default function Equipos({ equipos, grupos, srsPestillo, onVerEquipo }) {
   const [grupo, setGrupo] = useState(null);
 
   useEffect(() => {
@@ -84,7 +84,7 @@ export default function Equipos({ equipos, grupos, onVerEquipo }) {
   const columnas = (MODOS.find(m => m[0] === modo) || MODOS[0])[2];
 
   const equiposGrupo = useMemo(() => equipos.filter(e => e.grupo === grupo), [equipos, grupo]);
-  const srsOk = srsListo(equiposGrupo);
+  const srsOk = srsListo(srsPestillo, grupo);
 
   const filas = useMemo(() => {
     const f = [...equiposGrupo];

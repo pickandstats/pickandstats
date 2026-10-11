@@ -8,7 +8,7 @@ const fecha = j => {
   return m ? new Date(+m[3], +m[2] - 1, +m[1]) : new Date(0);
 };
 
-export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVerJugador, onVerPartido, temporada, competicionNombre }) {
+export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVerEquipo, onVerJugador, onVerPartido, temporada, competicionNombre }) {
   const etiquetaTemp = `${temporada}/${(+temporada + 1).toString().slice(2)}`;
 
   // Grupos disponibles, derivados de los equipos de la competición
@@ -61,13 +61,23 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
     { titulo: 'Producción por 40', clave: 'per40pt', sufijo: 'pts/40' },
   ];
 
-  // Antes de que el SRS tenga sentido (ver srsUtil.js), "dominantes" ordena
-  // por net: es el mismo número que se enseña en la columna de al lado, así
-  // que el orden siempre coincide con algo visible.
-  const srsOk = srsListo(equiposF);
+  // El criterio de "SRS listo" es por grupo (ver srsUtil.js): un grupo puede
+  // estar asentado y otro no dentro de la misma vista multigrupo.
+  const gruposNoListos = useMemo(() =>
+    [...sel].filter(g => !srsListo(srsPestillo, g)).sort((a, b) => a.localeCompare(b, 'es')),
+    [sel, srsPestillo]);
+
+  // Pendiente, en su propio commit ("con qué se ordena", no "cuándo se enseña"):
+  // con más de un grupo seleccionado, ordenar por SRS mezcla grupos que el propio
+  // recentrado de calcular.js calibra sobre medias distintas -- comparar sus
+  // valores es exactamente lo que la guía advierte que no se puede hacer, asentados
+  // o no. De momento se mantiene el criterio global de antes (si algún grupo
+  // seleccionado está listo, se ordena por SRS) a propósito, para no mezclar los
+  // dos arreglos en el mismo commit.
+  const algunGrupoListo = [...sel].some(g => srsListo(srsPestillo, g));
   const dominantes = useMemo(() =>
-    [...equiposF].sort((a, b) => (srsOk ? b.srs - a.srs : b.netrtg - a.netrtg)).slice(0, 8),
-    [equiposF, srsOk]);
+    [...equiposF].sort((a, b) => (algunGrupoListo ? b.srs - a.srs : b.netrtg - a.netrtg)).slice(0, 8),
+    [equiposF, algunGrupoListo]);
 
   const enRacha = useMemo(() => {
     const victorias = e => parseInt((e.forma5 || '0-0').split('-')[0], 10);
@@ -163,7 +173,7 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                         <td className="izq"><span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span></td>
                         <td>{e.grupo}</td>
                         <td>{bal.pg}-{bal.pp}</td>
-                        <td>{srsOk ? e.srs : '—'}</td>
+                        <td>{srsListo(srsPestillo, e.grupo) ? e.srs : '—'}</td>
                         <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{e.netrtg}</td>
                       </tr>
                       );
@@ -171,7 +181,13 @@ export default function Inicio({ equipos, jugadores, partidos, onVerEquipo, onVe
                   </tbody>
                 </table>
               </div>
-              {!srsOk && <p className="nota-tabla">{notaSrs(equiposF)}</p>}
+              {gruposNoListos.length > 0 && (
+                <p className="nota-tabla">
+                  {gruposNoListos
+                    .map(g => notaSrs(equiposF.filter(e => e.grupo === g), g))
+                    .join(' ')}
+                </p>
+              )}
             </div>
 
             <div>

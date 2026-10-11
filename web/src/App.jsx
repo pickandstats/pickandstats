@@ -34,14 +34,14 @@ const ordenarGrupos = grupos => [...grupos].sort((a, b) => a.localeCompare(b, 'e
 
 
 // Resuelve la ficha de equipo desde la URL: lee :idClub y busca el equipo ya cargado.
-function RutaEquipo({ equipos, jugadores, partidos, datosClub, equiposCuartos, cargando, onVolver, onVerEquipo, onVerJugador, onVerPartido }) {
+function RutaEquipo({ equipos, jugadores, partidos, datosClub, equiposCuartos, srsPestillo, cargando, onVolver, onVerEquipo, onVerJugador, onVerPartido }) {
   const { idClub } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
   const equipo = equipos.find(e => e.idClub === idClub);
   if (!equipo) return <p className="cargando">Equipo no encontrado en esta temporada.</p>;
   return (
     <Equipo equipo={equipo} jugadores={jugadores} partidos={partidos}
-      equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} onVolver={onVolver}
+      equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} srsPestillo={srsPestillo} onVolver={onVolver}
       onVerEquipo={onVerEquipo} onVerJugador={onVerJugador} onVerPartido={onVerPartido} />
   );
 }
@@ -121,6 +121,7 @@ export default function App() {
   const [estadoDatos, setEstadoDatos] = useState(null);
   const [datosClub, setDatosClub] = useState({});
   const [equiposCuartos, setEquiposCuartos] = useState([]);
+  const [srsPestillo, setSrsPestillo] = useState({});
   const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
   const [cargando, setCargando] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
@@ -169,7 +170,7 @@ export default function App() {
     setCargando(true);
     setSinDatos(false);
     setProximaFecha(null);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]); setSrsPestillo({});
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -193,9 +194,10 @@ export default function App() {
       cargar(`${base}/partidos.json`),
       cargar(`${base}/jugadores-cuartos.json`).catch(() => null),
       cargar(`${base}/equipos-cuartos.json`).catch(() => null),
-      cargar(`${base}/fases.json`).catch(() => null)
+      cargar(`${base}/fases.json`).catch(() => null),
+      cargar(`${base}/srs-pestillo.json`).catch(() => null)
     ])
-      .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData]) => {
+      .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData, pestillo]) => {
         if (eq.length === 0) {
           setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
           setSinDatos(true); setCargando(false);
@@ -206,6 +208,7 @@ export default function App() {
         setJugadoresCuartos(cuartos || []);
         setEquiposCuartos(eqCuartos || []);
         setFases(fasesData || []);
+        setSrsPestillo(pestillo || {});
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -395,7 +398,7 @@ export default function App() {
         <Route path="/:comp/:temp/equipo/:idClub" element={
           <RutaEquipo
             equipos={equipos} jugadores={jugadores} partidos={partidos}
-            datosClub={datosClub} equiposCuartos={equiposCuartos}
+            datosClub={datosClub} equiposCuartos={equiposCuartos} srsPestillo={srsPestillo}
             cargando={cargando}
             onVolver={() => navigate('/')}
             onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
@@ -450,10 +453,10 @@ export default function App() {
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
       ) : equipoSel ? (
         <Equipo equipo={equipoSel} jugadores={jugadores} partidos={partidos}
-          equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} onVolver={() => setEquipoSel(null)}
+          equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} srsPestillo={srsPestillo} onVolver={() => setEquipoSel(null)}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'inicio' ? (
-        <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos}
+        <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos} srsPestillo={srsPestillo}
           temporada={temporada} competicionNombre={compActual.nombre}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'clasificacion' ? (
@@ -465,7 +468,7 @@ export default function App() {
           competicionNombre={compActual.nombre}
           onVerEquipo={verEquipo} onVerPartido={verPartido} />
       ) : vista === 'equipos' ? (
-        <Equipos equipos={equipos} grupos={grupos} onVerEquipo={verEquipo} />
+        <Equipos equipos={equipos} grupos={grupos} srsPestillo={srsPestillo} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (
         <Jugadores jugadores={jugadores} grupos={grupos} equipos={equipos}
           onVerEquipo={verEquipo} onVerJugador={verJugador} />

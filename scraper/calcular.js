@@ -231,6 +231,41 @@ for (let iter = 0; iter < 50; iter++) {
   srs = nuevo;
 }
 
+// ---------- pestillo de SRS listo (S17.8) ----------
+// El criterio de "SRS fiable" es que ningun equipo del grupo tenga |srs-net| > 3
+// (ver web/src/srsUtil.js): un umbral fijo por jornada no sirve porque el calendario
+// de cada grupo se asienta a ritmos distintos (Tercera cruza entre la jornada 7 y la
+// 22 segun el grupo, ver _informe-alcance-verificador-y-tercera.md). Pero medido sobre
+// 26 combinaciones grupo-temporada, 9 "rebotan" tras asentarse (7 en Tercera, ver
+// _informe-rebotes-y-dominantes.md) -- una columna que aparece, desaparece y reaparece
+// es peor que una ausente. Por eso el flag, una vez encendido, no se apaga en la misma
+// temporada: cada ejecucion hace un OR del criterio del corte actual contra el valor ya
+// guardado. La app no puede reconstruir esto sola porque solo tiene el corte de hoy, no
+// la serie por jornada -- por eso lo persiste el pipeline, igual que cuartos-cobertura.json.
+// Limite anotado: si un grupo quedo limpio justo en una semana sin ejecucion, el pestillo
+// llega con el retraso de esa semana, no con un error -- la misma clase de deuda que el
+// canario.
+//
+// La jornada 1 queda excluida del criterio: con un partido cada uno, el reparto de
+// rivales de la jornada 1 es un emparejamiento perfecto (cada equipo con un solo
+// rival), y en ese caso concreto net[A] = -net[B] para cada pareja, lo que hace que
+// srs converja exactamente a net sin que el calendario se haya asentado en absoluto
+// -- |srs-net| = 0 para TODOS los equipos de TODOS los grupos en la jornada 1, un
+// artefacto, no una senal (es el mismo caso que se descarto al contar rebotes, ver
+// _informe-rebotes-y-dominantes.md). Sin esta exclusion, el pestillo se encenderia
+// para toda competicion en su primera semana, justo lo que el criterio existe para
+// evitar.
+const FICHERO_PESTILLO = path.join(DIR_OUT, 'srs-pestillo.json');
+let pestillo = {};
+try { pestillo = JSON.parse(fs.readFileSync(FICHERO_PESTILLO, 'utf8')); } catch {}
+for (const [g, ids] of Object.entries(idsPorGrupo)) {
+  const jornadaGrupo = Math.max(...ids.map(id => equipos[id].pj));
+  const maxDif = Math.max(...ids.map(id => Math.abs(srs[id] - net[id])));
+  const limpioAhora = jornadaGrupo >= 2 && maxDif <= 3;
+  pestillo[g] = Boolean(pestillo[g]) || limpioAhora;
+}
+fs.writeFileSync(FICHERO_PESTILLO, JSON.stringify(pestillo, null, 1));
+
 // ---------- salida equipos ----------
 const salidaEquipos = Object.values(equipos).map(e => {
   const t = e.t, r = e.r;

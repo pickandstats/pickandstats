@@ -15,7 +15,7 @@ const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 // un entrenador que revisa varios equipos no quiere pulsar 'Análisis' cada vez.
 let modoRecordado = 'resumen';
 
-export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, equiposCuartos, rivalInicial }) {
+export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEquipo, onVerJugador, onVerPartido, equipos, datosClub, equiposCuartos, srsPestillo, rivalInicial }) {
   // Los datos viven en una URL estable y el bundle no: un navegador puede servir un
   // equipos.json anterior a que existiera `balance`. Sin esto, eso es pantalla en blanco.
   const bal = equipo.balance ?? equipo;
@@ -73,9 +73,8 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   // Con un solo grupo, el SRS converge al Net multiplicado por (n-1)/n:
   // es el mismo dato encogido, así que no se muestra.
   const unGrupo = new Set(equipos.map(x => x.grupo)).size <= 1;
-  // Y antes de la jornada 15 (ver srsUtil.js) es ruido de muestra, con
-  // independencia de cuántos grupos haya.
-  const srsOk = srsListo(equipos.filter(e => e.grupo === equipo.grupo));
+  // Y mientras el grupo no esté asentado (ver srsUtil.js) es ruido de muestra.
+  const srsOk = srsListo(srsPestillo, equipo.grupo);
 
   const fourFactors = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);

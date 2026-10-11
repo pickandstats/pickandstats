@@ -1,30 +1,35 @@
-// El SRS recentra el net de cada equipo sobre el calendario que ha jugado
-// hasta ahora. Con pocos partidos el ajuste es ruido, no señal: medido sobre
-// dos temporadas completas de Primera (2024/25 y 2025/26), el |SRS-net| se
-// dispara en la jornada 2 (media de 16 puntos, el peor momento de toda la
-// temporada) y no se asienta en un rango estable hasta la jornada 15, donde
-// el % de equipos con más de 3 puntos de diferencia cae a 0% y se queda ahí
-// el resto de temporada. Ver _informe-umbral-srs.md para la curva completa.
+// El SRS recentra el net de cada equipo sobre el calendario que ha jugado hasta
+// ahora (ver el comentario en scraper/calcular.js). Con pocos partidos el ajuste
+// es ruido, no señal -- pero el ruido se asienta a ritmos distintos segun el
+// grupo, no segun una jornada fija: medido grupo a grupo, Tercera cruza entre
+// la jornada 7 y la 22 segun el grupo (ver
+// _informe-alcance-verificador-y-tercera.md). El criterio real nunca fue una
+// jornada: es que ningun equipo del grupo tenga |srs - net| > 3.
 //
-// Mismo umbral para las tres competiciones por ahora: Segunda y Tercera
-// arrancan con el mismo problema (SRS idéntico a net en la jornada 1), y la
-// medición propia de cada una queda pendiente (Tercera cruza en la jornada
-// 13 de 26, Primera en la 15 de 34 -- apunta a que lo que importa es la
-// fracción de calendario del grupo jugada, no un número de jornada fijo,
-// pero dos puntos no son una regla todavía).
-export const UMBRAL_SRS_JORNADA = 15;
+// El SRS es un calculo del GRUPO ENTERO (punto fijo sobre los rivales del
+// grupo a la vez): si un solo equipo tiene el ajuste desbocado, la solucion
+// del grupo entero esta sin asentar, asi que el criterio se evalua con el
+// maximo del grupo, nunca equipo a equipo.
+export const UMBRAL_SRS_DIF = 3;
 
-// Proxy de "jornada actual": el máximo de partidos jugados entre los equipos
-// dados. En liga regular todos juegan ~1 partido por jornada, así que el
-// máximo (no la media) es robusto a que algún equipo tenga un partido
-// aplazado por detrás del resto.
-export const jornadaActual = equipos =>
-  equipos.length ? Math.max(...equipos.map(e => e.pj || 0)) : 0;
+export const maxDifSrsGrupo = equiposDelGrupo =>
+  equiposDelGrupo.length
+    ? Math.max(...equiposDelGrupo.map(e => Math.abs((e.srs ?? 0) - (e.netrtg ?? 0))))
+    : 0;
 
-export const srsListo = equipos => jornadaActual(equipos) >= UMBRAL_SRS_JORNADA;
+// Una vez que un grupo queda limpio no vuelve a ocultarse en la misma
+// temporada aunque un resultado puntual lo desordene despues: medido sobre 26
+// combinaciones grupo-temporada, 9 rebotan tras asentarse (ver
+// _informe-rebotes-y-dominantes.md), y una columna intermitente es peor que
+// una ausente. La app no puede calcular esto sola -- solo tiene el corte de
+// hoy, no la serie por jornada -- asi que el pipeline persiste el flag por
+// grupo en srs-pestillo.json (lo escribe calcular.js con un OR contra el
+// valor anterior en cada ejecucion).
+export const srsListo = (pestillo, grupo) => Boolean(pestillo && pestillo[grupo]);
 
-export const notaSrs = equipos => {
-  const j = jornadaActual(equipos);
-  return `El SRS aparece a partir de la jornada ${UMBRAL_SRS_JORNADA}, cuando el ajuste ` +
-    `por calendario deja de ser ruido de muestra` + (j ? ` (vamos por la ${j}).` : '.');
+export const notaSrs = (equiposDelGrupo, etiquetaGrupo) => {
+  const d = maxDifSrsGrupo(equiposDelGrupo);
+  const sujeto = etiquetaGrupo ? `del grupo ${etiquetaGrupo}` : 'de este grupo';
+  return `El SRS ${sujeto} aparecerá cuando el ajuste por calendario deje de ser ` +
+    `ruido de muestra; ahora el mayor del grupo es de ${d.toFixed(1)} puntos.`;
 };
