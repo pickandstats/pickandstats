@@ -246,20 +246,29 @@ for (let iter = 0; iter < 50; iter++) {
 // llega con el retraso de esa semana, no con un error -- la misma clase de deuda que el
 // canario.
 //
-// La jornada 1 queda excluida del criterio: con un partido cada uno, el reparto de
-// rivales de la jornada 1 es un emparejamiento perfecto (cada equipo con un solo
-// rival), y en ese caso concreto net[A] = -net[B] para cada pareja, lo que hace que
-// srs converja exactamente a net sin que el calendario se haya asentado en absoluto
-// -- |srs-net| = 0 para TODOS los equipos de TODOS los grupos en la jornada 1, un
-// artefacto, no una senal (es el mismo caso que se descarto al contar rebotes, ver
-// _informe-rebotes-y-dominantes.md). Sin esta exclusion, el pestillo se encenderia
-// para toda competicion en su primera semana, justo lo que el criterio existe para
-// evitar.
+// El suelo exige que TODOS los equipos del grupo hayan jugado al menos 2 partidos
+// con acta, no que el mas avanzado los haya jugado: con max(), un grupo con trece
+// equipos en su segundo partido y uno todavia en el primero (una jornada aplazada
+// en bloque, por ejemplo) pasaba el suelo con la estructura casi antisimetrica de
+// la jornada 1 todavia intacta para ese equipo -- exactamente el artefacto que el
+// suelo existe para evitar (con un solo rival, net[A] = -net[B] para cada pareja,
+// y srs converge a net sin que el calendario se haya asentado en absoluto; es el
+// mismo caso que se descarto al contar rebotes, ver _informe-rebotes-y-dominantes.md).
+// Con min(), el suelo exige que CADA equipo haya cruzado al menos dos rivales, que
+// es la condicion que de verdad mata esa antisimetria.
+//
+// Sobre `pj` (partidos con acta), no sobre `balance.pj` (todo partido con
+// resultado, tenga acta o no): `pj` es exactamente el campo que alimenta
+// `rivalesDe`, el grafo que usa la iteracion de srs. Usar `balance.pj` abriria el
+// mismo hueco que min() cierra -- hay actas que faltan en la propia jornada 1
+// (2 en tercerafeb 2023, 2 en tercerafeb 2024, 1 en tercerafeb 2025), asi que un
+// equipo podria tener balance.pj >= 2 con un solo partido real en el grafo de srs,
+// y el suelo dejaria de garantizar lo que promete.
 const FICHERO_PESTILLO = path.join(DIR_OUT, 'srs-pestillo.json');
 let pestillo = {};
 try { pestillo = JSON.parse(fs.readFileSync(FICHERO_PESTILLO, 'utf8')); } catch {}
 for (const [g, ids] of Object.entries(idsPorGrupo)) {
-  const jornadaGrupo = Math.max(...ids.map(id => equipos[id].pj));
+  const jornadaGrupo = Math.min(...ids.map(id => equipos[id].pj));
   const maxDif = Math.max(...ids.map(id => Math.abs(srs[id] - net[id])));
   const limpioAhora = jornadaGrupo >= 2 && maxDif <= 3;
   pestillo[g] = Boolean(pestillo[g]) || limpioAhora;
