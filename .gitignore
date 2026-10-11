@@ -145,6 +145,9 @@ _publish/
 .DS_Store
 data/actas/
 data/raw/*/*/actas/
+# Resultado intermedio de la reparacion en paralelo (S17.7): comparacion, no
+# producto. La promocion real se copia a mano sobre data/raw/.../actas/.
+data/raw-reparado/
 
 # Reporte efimero por ejecucion de actas-cuartos (lo lee el resumen de salud)
 data/processed/cuartos-run-*.json
