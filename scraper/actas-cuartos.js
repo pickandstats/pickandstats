@@ -31,7 +31,12 @@ if (!compNombre) { console.error('Competicion no valida:', comp); process.exit(1
 
 // Fuente de la lista de partidos: partidos.json (liga regular) o fases.json (--fases)
 const nombreFuente = soloFases ? 'fases.json' : 'partidos.json';
-const rutaPartidos = path.join('web', 'public', 'data', compNombre, temp, nombreFuente);
+// data/processed, NO web/public/data (S17.7): ese espejo solo se refresca
+// con un deploy que salga bien, y generar cuartos es precisamente lo que un
+// deploy necesita para poder salir bien -- leer de ahi cierra un
+// interbloqueo. data/processed lo acaba de escribir calcular.js en esta
+// misma ejecucion, siempre al dia.
+const rutaPartidos = path.join('data', 'processed', compNombre, temp, nombreFuente);
 if (!fs.existsSync(rutaPartidos)) { console.error('No existe', rutaPartidos); process.exit(1); }
 const raw = JSON.parse(fs.readFileSync(rutaPartidos, 'utf8'));
 let arr;

@@ -65,13 +65,21 @@ function issueAbierta(titulo) {
   return lista.find(i => i.title === titulo) || null;
 }
 
+// Abrir una issue no notifica a quien no esta mirando (visto de verdad: #5 y
+// #6 estuvieron 4 dias sin que nadie las viera, pese al comentario con la
+// cifra que empeora que esta funcion ya hacia). Asignarla SI notifica siempre
+// -- aparece en "Assigned to you", que es una lista que se mira -- y el
+// @-mention en el cuerpo es la segunda vía, independiente de la primera.
+const ASIGNAR_A = 'pickandstats';
+
 function abrirOActualizar(titulo, cuerpo, mensajeRepetido) {
   const existente = issueAbierta(titulo);
   if (existente) {
     gh(['issue', 'comment', String(existente.number), '--body', `${mensajeRepetido}\n\n${cuerpo}`]);
     console.log(`⚠ Alarma ya abierta (issue #${existente.number}), actualizada en vez de duplicada.`);
   } else {
-    const salida = gh(['issue', 'create', '--title', titulo, '--body', cuerpo]);
+    const cuerpoConMencion = `@${ASIGNAR_A}\n\n${cuerpo}`;
+    const salida = gh(['issue', 'create', '--title', titulo, '--body', cuerpoConMencion, '--assignee', ASIGNAR_A]);
     console.log(`⚠ Alarma nueva: ${salida.trim()}`);
   }
 }

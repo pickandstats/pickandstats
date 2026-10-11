@@ -22,7 +22,8 @@ const UMBRAL_AJUSTADO = 8; // diferencia maxima al inicio del ultimo cuarto
 const baseRaw = path.join('data', 'raw', compNombre, temp);
 // Mapa idFeb -> slug (idClub) para dar a cada equipo su identificador estable,
 // ya que el id de la FEB cambia cada temporada y el nombre lleva patrocinador.
-const rutaEquipos = path.join('web', 'public', 'data', compNombre, temp, 'equipos.json');
+// data/processed, no web/public/data: ver S17.7, mismo motivo que en actas-cuartos.js.
+const rutaEquipos = path.join('data', 'processed', compNombre, temp, 'equipos.json');
 const mapaSlug = {};
 if (fs.existsSync(rutaEquipos)) {
   const eqs = JSON.parse(fs.readFileSync(rutaEquipos, 'utf8'));
@@ -56,7 +57,7 @@ const contextoPartidos = {}; // idPartido -> contextoPorCuarto (para la ficha de
 // Ids de liga regular: los agregados (medias por cuarto, clutch) se calculan SOLO
 // con estos. Las actas de fase (playoffs) estan en el mismo directorio y se usan
 // para el contexto por partido, pero NO deben entrar en las medias de temporada.
-const rutaLiga = path.join("web", "public", "data", compNombre, temp, "partidos.json");
+const rutaLiga = path.join("data", "processed", compNombre, temp, "partidos.json"); // ver S17.7
 const idsLiga = new Set(
   (fs.existsSync(rutaLiga) ? JSON.parse(fs.readFileSync(rutaLiga, "utf8")) : [])
     .map(p => String(p.id))

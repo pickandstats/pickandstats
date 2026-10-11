@@ -58,7 +58,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   // nominal (0-2, 20-0...) que parece "jugado" pero no tienen boxscore ni acta, y
   // nunca la tendran. Se excluyen del check de actas que faltan usando la lista
   // autoritativa que ya genera calcular.js.
-  const excl = leerJSON(path.join('web', 'public', 'data', nombre, sel, 'excluidos.json'));
+  const excl = leerJSON(path.join('data', 'processed', nombre, sel, 'excluidos.json')); // ver S17.7
   const excluidos = new Set((Array.isArray(excl) ? excl : []).map(x => String(x.id != null ? x.id : x)));
   if (fs.existsSync(dirSel)) {
     const cuenta = new Map();
@@ -158,6 +158,43 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       criticos.push(`${nombre} ${sel}: faltan ficheros de cuartos generados en data/processed: ${faltan.join(', ')} (¿fallo la generacion?)`);
     else
       lineas.push(`${nombre} ${sel}: cuartos generados en data/processed`);
+  }
+
+  // 3c) Cobertura real de cuartos: partidos JUGADOS contra partidos con
+  // porCuarto con jugadores dentro. El check 3b de arriba solo mira si los
+  // ficheros existen y no estan vacios -- no dice si cubren TODOS los
+  // partidos jugados, que es justo el agujero que dejo invisible el
+  // interbloqueo de S17.7 (el 5/10 esto habria dicho "segundafeb 2026: 13
+  // jugados | 0 con cuartos" antes de que el despliegue fallara, en vez de
+  // aparecer disfrazado de despliegue roto). Compara contra la cobertura de
+  // la semana pasada (persistida en data/processed, committeada como el
+  // resto) y FALLA si empeora -- un aviso que no toca el veredicto es
+  // decoracion.
+  const fPartidosSel = path.join('data', 'processed', nombre, sel, 'partidos.json');
+  const partidosSel = leerJSON(fPartidosSel);
+  if (Array.isArray(partidosSel)) {
+    const jugados = partidosSel.filter(p => /\d+\s*-\s*\d+/.test(p.resultado || '')).length;
+    let conCuartos = 0;
+    if (fs.existsSync(dirActasSel)) {
+      for (const f of fs.readdirSync(dirActasSel)) {
+        if (!f.endsWith('.json')) continue;
+        const a = leerJSON(path.join(dirActasSel, f));
+        if (a && (a.porCuarto || []).some(c => c && c.some(eq => eq && (eq.jugadores || []).length))) conCuartos++;
+      }
+    }
+    lineas.push(`${nombre} ${sel}: ${jugados} jugados | ${conCuartos} con cuartos` +
+      (jugados ? ` (${(100 * conCuartos / jugados).toFixed(0)}%)` : ''));
+
+    const fCobertura = path.join('data', 'processed', nombre, sel, 'cuartos-cobertura.json');
+    const anterior = leerJSON(fCobertura);
+    if (anterior && typeof anterior.jugados === 'number' && typeof anterior.conCuartos === 'number') {
+      const faltabanAntes = anterior.jugados - anterior.conCuartos;
+      const faltanAhora = jugados - conCuartos;
+      if (faltanAhora > faltabanAntes) {
+        criticos.push(`${nombre} ${sel}: la cobertura de cuartos EMPEORA (faltaban ${faltabanAntes} partido(s) la semana pasada, faltan ${faltanAhora} ahora) -> ¿generacion rota?`);
+      }
+    }
+    fs.writeFileSync(fCobertura, JSON.stringify({ jugados, conCuartos, fecha: new Date().toISOString().slice(0, 10) }, null, 1));
   }
 }
 

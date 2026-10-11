@@ -15,7 +15,7 @@ const compNombre = COMPS[comp];
 if (!compNombre) { console.error('Competicion no valida'); process.exit(1); }
 
 const dirActas = path.join('data', 'raw', compNombre, temp, 'actas');
-const fPartidos = path.join('web', 'public', 'data', compNombre, temp, 'partidos.json');
+const fPartidos = path.join('data', 'processed', compNombre, temp, 'partidos.json'); // ver S17.7
 if (!fs.existsSync(dirActas)) { console.error('No hay actas en', dirActas); process.exit(1); }
 if (!fs.existsSync(fPartidos)) { console.error('No hay partidos.json en', fPartidos); process.exit(1); }
 
