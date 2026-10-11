@@ -43,36 +43,36 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
+    "asMedia": 0.5,
+    "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 1,
     "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": -1
+    "asMedia": 1.5,
+    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -81,28 +81,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 7
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 1
    }
   ],
   "clutch": {
@@ -111,6 +111,44 @@
    "as": 0,
    "ptMasAs": 3,
    "ptMasAsPorPartido": 3
+  }
+ },
+ {
+  "idJugador": "1072760",
+  "nombre": "FRANCH DE PABLO, JOSEP",
+  "equipo": "INSOLAC CAJA 87",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": -1
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
   }
  },
  {
@@ -195,32 +233,32 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -309,32 +347,32 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 4,
     "asMedia": 0,
-    "valMedia": 12
+    "valMedia": 5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -347,32 +385,32 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 9,
+    "pj": 2,
+    "ptMedia": 7.5,
+    "asMedia": 0.5,
+    "valMedia": 10.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 1,
-    "valMedia": 14
+    "valMedia": 7.5
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 2,
-    "valMedia": 15
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 5
+    "asMedia": 0.5,
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -385,36 +423,36 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 8
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 6.5
    },
    {
-    "pj": 1,
-    "ptMedia": 11,
+    "pj": 2,
+    "ptMedia": 9,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": 9
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 4,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
+    "asMedia": 0.5,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 1,
    "ptMasAs": 1,
-   "ptMasAsPorPartido": 1
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -423,32 +461,32 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -4
+    "valMedia": -2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -499,32 +537,32 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 1.5,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -537,36 +575,36 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -575,36 +613,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 1,
-    "valMedia": 7
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 1,
-    "valMedia": 6
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 4,
+   "partidosAjustados": 2,
+   "pt": 7,
    "as": 1,
-   "ptMasAs": 5,
-   "ptMasAsPorPartido": 5
+   "ptMasAs": 8,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -613,36 +651,36 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 8
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
     "valMedia": 4
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -651,32 +689,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 10,
-    "asMedia": 2,
-    "valMedia": 12
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 1,
+    "valMedia": 4
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": -1.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -689,36 +727,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 1.5,
+    "valMedia": 3
+   },
+   {
+    "pj": 2,
     "ptMedia": 5,
-    "asMedia": 2,
-    "valMedia": 7
-   },
-   {
-    "pj": 1,
-    "ptMedia": 8,
-    "asMedia": 0,
-    "valMedia": 8
+    "asMedia": 1,
+    "valMedia": 6
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 2,
+   "as": 2,
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -727,36 +765,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 3
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 7
+    "asMedia": 0.5,
+    "valMedia": 5
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": -2
+    "asMedia": 0.5,
+    "valMedia": 3
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 7,
+   "as": 1,
+   "ptMasAs": 8,
+   "ptMasAsPorPartido": 8
   }
  },
  {
@@ -765,32 +803,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "asMedia": 0.5,
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": -1
+    "asMedia": 1,
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -803,25 +841,25 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
@@ -841,36 +879,36 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
     "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 4,
     "asMedia": 1,
-    "valMedia": 11
+    "valMedia": 8
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 3
+    "asMedia": 1,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -879,28 +917,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 6.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 4.5
    }
   ],
   "clutch": {
@@ -955,17 +993,43 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
+    "asMedia": 0.5,
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 3
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 2
    },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 4
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 6,
+   "as": 1,
+   "ptMasAs": 7,
+   "ptMasAsPorPartido": 3.5
+  }
+ },
+ {
+  "idJugador": "1688669",
+  "nombre": "FELIU ESPEJO, JOAN",
+  "equipo": "PALMER BASKET MALLORCA PALMA",
+  "porCuarto": [
    {
     "pj": 1,
     "ptMedia": 0,
@@ -974,17 +1038,29 @@
    },
    {
     "pj": 1,
-    "ptMedia": 5,
+    "ptMedia": 0,
     "asMedia": 1,
-    "valMedia": 7
+    "valMedia": 2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -1
    }
   ],
   "clutch": {
    "partidosAjustados": 1,
-   "pt": 5,
-   "as": 1,
-   "ptMasAs": 6,
-   "ptMasAsPorPartido": 6
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
   }
  },
  {
@@ -1031,36 +1107,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 10,
-    "asMedia": 1,
-    "valMedia": 12
+    "pj": 2,
+    "ptMedia": 5.5,
+    "asMedia": 0.5,
+    "valMedia": 5.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 5,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": 6
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 0,
+   "partidosAjustados": 2,
+   "pt": 10,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 10,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -1069,36 +1145,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 1,
-    "valMedia": 5
+    "valMedia": 4
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 1,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 1,
-    "valMedia": 3
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -1145,32 +1221,32 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 12,
+    "pj": 2,
+    "ptMedia": 6,
     "asMedia": 0,
-    "valMedia": 11
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 7,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": 5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -1183,25 +1259,25 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
@@ -1221,28 +1297,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 1,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 6
+    "valMedia": 3.5
    }
   ],
   "clutch": {
@@ -1335,36 +1411,36 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 5,
     "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 1,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -5
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": -2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -1373,36 +1449,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 6
+    "valMedia": 3.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 4,
+   "partidosAjustados": 2,
+   "pt": 6,
    "as": 0,
-   "ptMasAs": 4,
-   "ptMasAsPorPartido": 4
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -1449,35 +1525,35 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 4,
     "asMedia": 0,
-    "valMedia": 7
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 3,
+   "partidosAjustados": 2,
+   "pt": 6,
    "as": 0,
-   "ptMasAs": 3,
+   "ptMasAs": 6,
    "ptMasAsPorPartido": 3
   }
  },
@@ -1487,28 +1563,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1
    }
   ],
   "clutch": {
@@ -1525,28 +1601,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 4
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 1,
     "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    }
   ],
   "clutch": {
@@ -1563,36 +1639,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 4,
+    "pj": 2,
+    "ptMedia": 5,
+    "asMedia": 2.5,
     "valMedia": 7
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 2,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 1,
-    "valMedia": 9
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 0.5,
+    "valMedia": 5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 8,
+   "partidosAjustados": 2,
+   "pt": 12,
    "as": 1,
-   "ptMasAs": 9,
-   "ptMasAsPorPartido": 9
+   "ptMasAs": 13,
+   "ptMasAsPorPartido": 6.5
   }
  },
  {
@@ -1601,36 +1677,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -1677,25 +1753,25 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 2
+    "asMedia": 2,
+    "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
@@ -1715,36 +1791,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 3
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -1753,32 +1829,32 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 5.5,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 6
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -1829,36 +1905,36 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 1.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 1,
-    "valMedia": -1
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
-    "asMedia": 0,
-    "valMedia": 9
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 1,
+    "valMedia": 5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 2,
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -1867,36 +1943,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 9
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 7
    },
    {
-    "pj": 1,
-    "ptMedia": 10,
+    "pj": 2,
+    "ptMedia": 11,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": 12
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 4,
     "asMedia": 0,
-    "valMedia": 6
+    "valMedia": 5.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 4,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -1905,36 +1981,74 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
    "ptMasAsPorPartido": 0
+  }
+ },
+ {
+  "idJugador": "1923853",
+  "nombre": "DOMENECH ANTE, ELOY",
+  "equipo": "PARTIZÁN DE FUENLABRADA",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 3,
+   "as": 0,
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -1943,32 +2057,32 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -1981,28 +2095,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 7,
+    "pj": 2,
+    "ptMedia": 6.5,
     "asMedia": 1,
-    "valMedia": 9
+    "valMedia": 8
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
-    "asMedia": 1,
-    "valMedia": 9
+    "pj": 2,
+    "ptMedia": 7,
+    "asMedia": 0.5,
+    "valMedia": 5
    }
   ],
   "clutch": {
@@ -2057,28 +2171,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 7,
-    "asMedia": 1,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0.5,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 2,
-    "valMedia": 7
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
@@ -2095,36 +2209,36 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 7,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 7,
+   "ptMasAsPorPartido": 7
   }
  },
  {
@@ -2133,32 +2247,32 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2247,32 +2361,32 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2285,32 +2399,32 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2323,36 +2437,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -2
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 1,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -2361,32 +2475,32 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 2,
-    "valMedia": 1
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
     "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
+    "asMedia": 0.5,
+    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2399,36 +2513,36 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 1,
-    "valMedia": 3
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 6
+    "asMedia": 1.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 0,
+   "partidosAjustados": 2,
+   "pt": 1,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -2437,28 +2551,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
     "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "asMedia": 0.5,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 1,
+    "valMedia": -2
    }
   ],
   "clutch": {
@@ -2475,36 +2589,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 2
+    "asMedia": 1.5,
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 1,
-    "valMedia": 5
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -2513,32 +2627,32 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 4
+    "asMedia": 0.5,
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2551,32 +2665,70 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 1,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 1,
-    "valMedia": 4
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 1,
+    "valMedia": 2.5
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 5,
+   "as": 1,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 6
+  }
+ },
+ {
+  "idJugador": "2094445",
+  "nombre": "GONZÁLEZ PÉREZ, ASIER",
+  "equipo": "CAJA RURAL CB ZAMORA",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 2
    },
    {
     "pj": 1,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
+    "asMedia": 0,
+    "valMedia": 0
    },
    {
     "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 2
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2589,32 +2741,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1.5,
+    "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 3
+    "asMedia": 1,
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2627,35 +2779,35 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 5.5,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
-    "asMedia": 1,
+    "asMedia": 0.5,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 3,
-   "as": 0,
-   "ptMasAs": 3,
+   "partidosAjustados": 2,
+   "pt": 5,
+   "as": 1,
+   "ptMasAs": 6,
    "ptMasAsPorPartido": 3
   }
  },
@@ -2698,9 +2850,9 @@
   }
  },
  {
-  "idJugador": "2185034",
-  "nombre": "HERNANDEZ GALLARDO, RUBEN",
-  "equipo": "CAJA RURAL CB ZAMORA",
+  "idJugador": "2162563",
+  "nombre": "LASO CAREAGA, AKSEL",
+  "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
     "pj": 1,
@@ -2728,7 +2880,45 @@
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
+  }
+ },
+ {
+  "idJugador": "2185034",
+  "nombre": "HERNANDEZ GALLARDO, RUBEN",
+  "equipo": "CAJA RURAL CB ZAMORA",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2741,32 +2931,32 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": -1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 4
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2779,36 +2969,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -2817,32 +3007,32 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -2855,36 +3045,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 2,
+   "pt": 4,
+   "as": 2,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -2893,28 +3083,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
     "asMedia": 1,
-    "valMedia": 7
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 2,
+    "valMedia": 6.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 1.5
    }
   ],
   "clutch": {
@@ -2969,32 +3159,32 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -3083,36 +3273,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 4
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 4
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 5,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 5,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -3121,36 +3311,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1.5,
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 4.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 1,
-   "as": 0,
-   "ptMasAs": 1,
-   "ptMasAsPorPartido": 1
+   "partidosAjustados": 2,
+   "pt": 5,
+   "as": 1,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -3159,36 +3349,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 1,
-    "valMedia": 8
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 4,
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
     "valMedia": 6
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 3,
+    "valMedia": 6
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1,
+    "valMedia": 4.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -3197,36 +3387,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
+    "asMedia": 1.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 2.5,
+    "valMedia": 7
+   },
+   {
+    "pj": 2,
+    "ptMedia": 7.5,
     "asMedia": 1,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 4,
-    "valMedia": 13
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 2,
-    "valMedia": 6
+    "valMedia": 11
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 2,
+   "partidosAjustados": 2,
+   "pt": 15,
    "as": 2,
-   "ptMasAs": 4,
-   "ptMasAsPorPartido": 4
+   "ptMasAs": 17,
+   "ptMasAsPorPartido": 8.5
   }
  },
  {
@@ -3235,22 +3425,60 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -1
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
+  }
+ },
+ {
+  "idJugador": "2436780",
+  "nombre": "WESTERMANN, LEO JOSEPH PAUL",
+  "equipo": "MOVISTAR ESTUDIANTES",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
     "asMedia": 1,
-    "valMedia": 4
+    "valMedia": -1
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 1,
+    "valMedia": 1
    },
    {
     "pj": 1,
@@ -3311,28 +3539,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 5.5,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 7.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1.5
    }
   ],
   "clutch": {
@@ -3349,32 +3577,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 1,
-    "valMedia": 11
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
     "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 4
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -3387,36 +3615,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 9
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 4,
     "asMedia": 0,
-    "valMedia": 8
+    "valMedia": 5.5
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": 5.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 5.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 4.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 8,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 8,
+   "ptMasAsPorPartido": 8
   }
  },
  {
@@ -3425,36 +3653,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 5.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
     "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -5
+    "valMedia": -2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -3501,28 +3729,66 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 1.5,
+    "valMedia": 5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
     "asMedia": 2,
-    "valMedia": 8
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 5.5,
+    "asMedia": 2,
+    "valMedia": 9.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 7,
+    "asMedia": 1,
+    "valMedia": 8.5
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 11,
+   "as": 1,
+   "ptMasAs": 12,
+   "ptMasAsPorPartido": 12
+  }
+ },
+ {
+  "idJugador": "2558613",
+  "nombre": "CERDÁ FREIRE, OSARETIN",
+  "equipo": "FIBWI MALLORCA BASQUET PALMA",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 2
    },
    {
     "pj": 1,
     "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 2
+    "asMedia": 0,
+    "valMedia": -3
    },
    {
     "pj": 1,
-    "ptMedia": 7,
-    "asMedia": 2,
-    "valMedia": 13
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
    },
    {
     "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 2
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
    }
   ],
   "clutch": {
@@ -3539,28 +3805,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 1,
-    "valMedia": -2
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 7.5,
     "asMedia": 0,
-    "valMedia": 6
+    "valMedia": 9.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 1,
+    "valMedia": 6.5
    }
   ],
   "clutch": {
@@ -3577,32 +3843,32 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
     "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -3615,36 +3881,36 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 5,
+    "asMedia": 0.5,
+    "valMedia": 5.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 7,
     "asMedia": 0,
-    "valMedia": 7
+    "valMedia": 8.5
    },
    {
-    "pj": 1,
-    "ptMedia": 9,
-    "asMedia": 0,
-    "valMedia": 14
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -1
+    "asMedia": 0.5,
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 3,
+   "as": 1,
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -3653,32 +3919,32 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
     "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
-    "valMedia": 4
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -3691,36 +3957,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -3729,22 +3995,60 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
+  }
+ },
+ {
+  "idJugador": "2642904",
+  "nombre": "ARTMAN NAHMIAS, GUY",
+  "equipo": "PALMER BASKET MALLORCA PALMA",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0
    },
    {
     "pj": 1,
@@ -3767,28 +4071,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 7
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 4.5,
     "asMedia": 0,
-    "valMedia": 7
+    "valMedia": 6
    }
   ],
   "clutch": {
@@ -3805,36 +4109,36 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 5,
+    "asMedia": 0.5,
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 0,
+    "valMedia": 6
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 1,
     "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 2,
+   "as": 1,
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -3881,36 +4185,36 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 11,
+    "pj": 2,
+    "ptMedia": 6.5,
     "asMedia": 0,
-    "valMedia": 10
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 6
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 1,
+    "valMedia": 6.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -3957,36 +4261,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 4,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -3995,36 +4299,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 1.5,
+    "valMedia": 7
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 6.5,
+    "asMedia": 0.5,
+    "valMedia": 7.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 3.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 4,
+   "partidosAjustados": 2,
+   "pt": 9,
    "as": 0,
-   "ptMasAs": 4,
-   "ptMasAsPorPartido": 4
+   "ptMasAs": 9,
+   "ptMasAsPorPartido": 4.5
   }
  },
  {
@@ -4033,36 +4337,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 4,
     "asMedia": 1,
-    "valMedia": 6
+    "valMedia": 6.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 3,
+   "as": 1,
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -4071,36 +4375,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 11
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 6.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 8,
    "as": 0,
    "ptMasAs": 8,
-   "ptMasAsPorPartido": 8
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -4109,36 +4413,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
+    "pj": 2,
+    "ptMedia": 5,
+    "asMedia": 0.5,
+    "valMedia": 7.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 1,
-    "valMedia": 3
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 2,
+   "as": 1,
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -4147,36 +4451,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -3
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 0,
+   "partidosAjustados": 2,
+   "pt": 1,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -4223,36 +4527,36 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 5,
-    "asMedia": 4,
+    "asMedia": 2,
     "valMedia": 6
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 2,
-    "valMedia": 1
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 7,
-    "asMedia": 1,
-    "valMedia": 9
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 5.5,
+    "asMedia": 1.5,
+    "valMedia": 7.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 7,
-   "as": 1,
-   "ptMasAs": 8,
-   "ptMasAsPorPartido": 8
+   "partidosAjustados": 2,
+   "pt": 11,
+   "as": 3,
+   "ptMasAs": 14,
+   "ptMasAsPorPartido": 7
   }
  },
  {
@@ -4261,36 +4565,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -4337,36 +4641,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 6
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
     "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -4375,25 +4679,63 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 1,
-    "valMedia": -2
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 3,
+   "as": 1,
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 2
+  }
+ },
+ {
+  "idJugador": "2785180",
+  "nombre": "CONE, JALEN CHRISTOPHER",
+  "equipo": "CAJASOL COTO CÓRDOBA",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
     "valMedia": 3
@@ -4408,41 +4750,41 @@
   }
  },
  {
-  "idJugador": "2785180",
-  "nombre": "CONE, JALEN CHRISTOPHER",
-  "equipo": "CAJASOL COTO CÓRDOBA",
+  "idJugador": "2787126",
+  "nombre": "CECCARDI, SEBASTIAN ARIS",
+  "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
     "pj": 1,
     "ptMedia": 3,
     "asMedia": 1,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 3
+    "valMedia": 2
    },
    {
     "pj": 1,
     "ptMedia": 3,
     "asMedia": 0,
     "valMedia": 2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 1,
+    "valMedia": -2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 5,
+    "asMedia": 0,
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 5,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 5,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -4451,36 +4793,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 6,
     "asMedia": 1,
-    "valMedia": 7
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 5
+    "valMedia": -3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 8.5,
+    "asMedia": 0.5,
+    "valMedia": 9
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0,
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 4,
+   "partidosAjustados": 2,
+   "pt": 7,
    "as": 0,
-   "ptMasAs": 4,
-   "ptMasAsPorPartido": 4
+   "ptMasAs": 7,
+   "ptMasAsPorPartido": 3.5
   }
  },
  {
@@ -4527,32 +4869,32 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -2
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -4565,36 +4907,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 1,
-    "valMedia": 1
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -4679,32 +5021,32 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 7,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -4717,36 +5059,36 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
     "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 9
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 6.5,
+    "asMedia": 0,
+    "valMedia": 9.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 4,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -4755,32 +5097,32 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": -1
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -4793,36 +5135,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 0,
+   "partidosAjustados": 2,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -4831,28 +5173,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 10
-   },
-   {
-    "pj": 1,
-    "ptMedia": 9,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 1,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0,
     "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": 0
    }
   ],
   "clutch": {
@@ -4869,36 +5211,36 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 7,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 7.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -4907,36 +5249,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 1,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 2,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
     "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 1,
+   "partidosAjustados": 2,
+   "pt": 6,
    "as": 0,
-   "ptMasAs": 1,
-   "ptMasAsPorPartido": 1
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -4945,64 +5287,26 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 1
-   }
-  ],
-  "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
-  }
- },
- {
-  "idJugador": "2818741",
-  "nombre": "VAULET, JUAN PABLO",
-  "equipo": "MOVISTAR ESTUDIANTES",
-  "porCuarto": [
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 7
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 2
    }
@@ -5016,16 +5320,48 @@
   }
  },
  {
-  "idJugador": "2819218",
-  "nombre": "KRISTENSEN, DAVID",
-  "equipo": "CAJA RURAL CB ZAMORA",
+  "idJugador": "2818741",
+  "nombre": "VAULET, JUAN PABLO",
+  "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 4
    },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 3
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 3,
+   "as": 0,
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 1.5
+  }
+ },
+ {
+  "idJugador": "2818901",
+  "nombre": "RUSSELL, OLUWASESAN BENJAMIN MICHAEL",
+  "equipo": "CLUB OURENSE BALONCESTO",
+  "porCuarto": [
    {
     "pj": 1,
     "ptMedia": 0,
@@ -5034,19 +5370,63 @@
    },
    {
     "pj": 1,
-    "ptMedia": 4,
+    "ptMedia": 6,
+    "asMedia": 1,
+    "valMedia": 7
+   },
+   {
+    "pj": 1,
+    "ptMedia": 7,
     "asMedia": 0,
     "valMedia": 5
    },
    {
     "pj": 1,
-    "ptMedia": 2,
+    "ptMedia": 3,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
+   "as": 0,
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
+  }
+ },
+ {
+  "idJugador": "2819218",
+  "nombre": "KRISTENSEN, DAVID",
+  "equipo": "CAJA RURAL CB ZAMORA",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 1.5
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5059,36 +5439,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -1
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
     "asMedia": 0,
     "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 3,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 3,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -5130,21 +5510,15 @@
   }
  },
  {
-  "idJugador": "2820728",
-  "nombre": "BELEMENE-DZABATOU, JUDICAËL ROMARIC",
-  "equipo": "PARTIZÁN DE FUENLABRADA",
+  "idJugador": "2819701",
+  "nombre": "SAGNIA, NUHA",
+  "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
-   {
-    "pj": 1,
-    "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 5
-   },
    {
     "pj": 1,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
    },
    {
     "pj": 1,
@@ -5154,9 +5528,15 @@
    },
    {
     "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -1
+   },
+   {
+    "pj": 1,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 2
    }
   ],
   "clutch": {
@@ -5164,6 +5544,44 @@
    "pt": 2,
    "as": 0,
    "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
+  }
+ },
+ {
+  "idJugador": "2820728",
+  "nombre": "BELEMENE-DZABATOU, JUDICAËL ROMARIC",
+  "equipo": "PARTIZÁN DE FUENLABRADA",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0,
+    "valMedia": 3
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 4,
+   "as": 0,
+   "ptMasAs": 4,
    "ptMasAsPorPartido": 2
   }
  },
@@ -5249,66 +5667,28 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
-   }
-  ],
-  "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
-  }
- },
- {
-  "idJugador": "2862296",
-  "nombre": "WEBSTER, KOBE THOMAS",
-  "equipo": "INSOLAC CAJA 87",
-  "porCuarto": [
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": -2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 2,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 4.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    }
   ],
   "clutch": {
@@ -5317,6 +5697,44 @@
    "as": 0,
    "ptMasAs": 2,
    "ptMasAsPorPartido": 2
+  }
+ },
+ {
+  "idJugador": "2862296",
+  "nombre": "WEBSTER, KOBE THOMAS",
+  "equipo": "INSOLAC CAJA 87",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": -1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 1,
+    "valMedia": -1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 2,
+   "pt": 6,
+   "as": 1,
+   "ptMasAs": 7,
+   "ptMasAsPorPartido": 3.5
   }
  },
  {
@@ -5358,33 +5776,71 @@
   }
  },
  {
+  "idJugador": "2862573",
+  "nombre": "TATE, JALEN JAMAL",
+  "equipo": "GRUPO URETA TIZONA BURGOS",
+  "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 4,
+    "asMedia": 3,
+    "valMedia": 8
+   },
+   {
+    "pj": 1,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 3
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 8,
+    "asMedia": 1,
+    "valMedia": 8
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 8,
+   "as": 1,
+   "ptMasAs": 9,
+   "ptMasAsPorPartido": 9
+  }
+ },
+ {
   "idJugador": "2864604",
   "nombre": "LAPORNIK, MIHA",
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 2,
     "asMedia": 1,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 1.5,
     "valMedia": 6
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 3
+    "asMedia": 0.5,
+    "valMedia": 4.5
    }
   ],
   "clutch": {
@@ -5401,36 +5857,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 4
+    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 3,
    "as": 0,
    "ptMasAs": 3,
-   "ptMasAsPorPartido": 3
+   "ptMasAsPorPartido": 1.5
   }
  },
  {
@@ -5439,36 +5895,36 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 8.5,
+    "asMedia": 0.5,
+    "valMedia": 8.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 6,
-    "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 8,
-    "asMedia": 0,
-    "valMedia": 7
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 1
+    "asMedia": 0.5,
+    "valMedia": 6
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 10,
+   "as": 1,
+   "ptMasAs": 11,
+   "ptMasAsPorPartido": 11
   }
  },
  {
@@ -5477,36 +5933,36 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 5.5,
     "asMedia": 0,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 7,
-    "asMedia": 0,
-    "valMedia": 9
+    "valMedia": 7
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 4,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -5515,32 +5971,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 6
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": -2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5553,32 +6009,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5591,32 +6047,32 @@
   "equipo": "GRUPO URETA TIZONA BURGOS",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -3
+    "valMedia": -2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 8
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5629,36 +6085,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 6,
+    "pj": 2,
+    "ptMedia": 5,
     "asMedia": 0,
-    "valMedia": 8
+    "valMedia": 6.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0.5,
+    "asMedia": 0,
+    "valMedia": 0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 1,
    "as": 0,
    "ptMasAs": 1,
-   "ptMasAsPorPartido": 1
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -5667,36 +6123,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 4,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 4,
+   "ptMasAsPorPartido": 4
   }
  },
  {
@@ -5705,36 +6161,36 @@
   "equipo": "BUENO ARENAS ALBACETE BASKET",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
     "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 5.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 5,
+   "as": 1,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 6
   }
  },
  {
@@ -5743,32 +6199,32 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5781,36 +6237,36 @@
   "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -5819,36 +6275,36 @@
   "equipo": "CAJASOL COTO CÓRDOBA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
     "valMedia": 1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 2
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -5857,32 +6313,32 @@
   "equipo": "IBEROLEA PALENCIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -5933,36 +6389,36 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 1,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 6.5,
+    "asMedia": 0.5,
+    "valMedia": 7.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -5971,32 +6427,32 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 2
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1.5,
+    "valMedia": 4
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": -1
+    "asMedia": 0.5,
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -6009,28 +6465,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
-    "valMedia": 3
+    "valMedia": 2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 3
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    }
   ],
   "clutch": {
@@ -6085,28 +6541,28 @@
   "equipo": "GRUPO ALEGA CANTABRIA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 2.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 1,
-    "valMedia": 2
-   },
-   {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 0.5
    }
   ],
   "clutch": {
@@ -6237,36 +6693,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 1,
-    "valMedia": 7
+    "pj": 2,
+    "ptMedia": 6.5,
+    "asMedia": 0.5,
+    "valMedia": 10
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 2,
+    "asMedia": 1,
     "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 1,
     "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": -1
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -6275,32 +6731,32 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -6313,36 +6769,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 0,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
+    "valMedia": 3
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "as": 1,
+   "ptMasAs": 1,
+   "ptMasAsPorPartido": 1
   }
  },
  {
@@ -6351,36 +6807,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 6,
     "asMedia": 1,
-    "valMedia": 6
+    "valMedia": 7
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 2,
-    "valMedia": 6
-   },
-   {
-    "pj": 1,
-    "ptMedia": 9,
+    "pj": 2,
+    "ptMedia": 3,
     "asMedia": 1,
-    "valMedia": 9
+    "valMedia": 3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 2,
+    "asMedia": 2,
+    "valMedia": 3.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 1.5,
+    "valMedia": 6.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 3,
+   "as": 2,
+   "ptMasAs": 5,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -6389,32 +6845,32 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 7
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -6427,36 +6883,36 @@
   "equipo": "INVEREADY ASKATUAK GIPUZKOA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 4
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 0
-   },
-   {
-    "pj": 1,
-    "ptMedia": 5,
+    "pj": 2,
+    "ptMedia": 4.5,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 7,
-    "asMedia": 0,
-    "valMedia": 10
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 1,
+    "valMedia": 1
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 3
+   },
+   {
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 6.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 7,
-   "as": 0,
-   "ptMasAs": 7,
-   "ptMasAsPorPartido": 7
+   "partidosAjustados": 2,
+   "pt": 9,
+   "as": 1,
+   "ptMasAs": 10,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -6465,36 +6921,36 @@
   "equipo": "PALMER BASKET MALLORCA PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 1,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 4.5,
+    "asMedia": 0.5,
+    "valMedia": 3
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 9,
+    "pj": 2,
+    "ptMedia": 6,
     "asMedia": 0,
-    "valMedia": 8
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 4,
+    "asMedia": 0.5,
+    "valMedia": 2.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
-   "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "partidosAjustados": 1,
+   "pt": 5,
+   "as": 1,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 6
   }
  },
  {
@@ -6503,36 +6959,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 2
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0,
+    "valMedia": 5
+   },
+   {
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
-    "ptMedia": 4,
     "asMedia": 1,
-    "valMedia": 6
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 1,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 1,
    "as": 0,
    "ptMasAs": 1,
-   "ptMasAsPorPartido": 1
+   "ptMasAsPorPartido": 0.5
   }
  },
  {
@@ -6541,36 +6997,36 @@
   "equipo": "CLUB OURENSE BALONCESTO",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 0
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -3
+    "asMedia": 0.5,
+    "valMedia": -2.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
-    "asMedia": 0,
+    "asMedia": 0.5,
     "valMedia": 2
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 1,
-    "valMedia": 3
+    "pj": 2,
+    "ptMedia": 3.5,
+    "asMedia": 0.5,
+    "valMedia": 3.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 5,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 5,
+   "ptMasAsPorPartido": 5
   }
  },
  {
@@ -6579,36 +7035,36 @@
   "equipo": "PARTIZÁN DE FUENLABRADA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 0
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 3
+    "asMedia": 0.5,
+    "valMedia": 3.5
    },
    {
-    "pj": 1,
-    "ptMedia": 1,
-    "asMedia": 1,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 4
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
-   "pt": 1,
+   "partidosAjustados": 2,
+   "pt": 5,
    "as": 1,
-   "ptMasAs": 2,
-   "ptMasAsPorPartido": 2
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -6617,28 +7073,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 6
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 1.5,
+    "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 2,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 1
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 2,
+    "asMedia": 1.5,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 1,
-    "valMedia": 1
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0.5,
+    "valMedia": 3
    }
   ],
   "clutch": {
@@ -6655,28 +7111,28 @@
   "equipo": "FIBWI MALLORCA BASQUET PALMA",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -4
+    "valMedia": -2
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
-    "valMedia": 2
+    "valMedia": 1.5
    },
    {
-    "pj": 1,
-    "ptMedia": 8,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 13
+    "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 6,
+    "asMedia": 0,
+    "valMedia": 8.5
    }
   ],
   "clutch": {
@@ -6883,36 +7339,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 2,
-    "asMedia": 0,
-    "valMedia": 0
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 4
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 1,
+    "valMedia": 4.5
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 1,
     "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 2,
-    "valMedia": 5
+    "pj": 2,
+    "ptMedia": 5,
+    "asMedia": 1,
+    "valMedia": 5.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 7,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 7,
+   "ptMasAsPorPartido": 7
   }
  },
  {
@@ -6921,36 +7377,36 @@
   "equipo": "CAJASIETE GRAN CANARIA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 3,
+    "pj": 2,
+    "ptMedia": 1.5,
     "asMedia": 1,
+    "valMedia": 1.5
+   },
+   {
+    "pj": 2,
+    "ptMedia": 3,
+    "asMedia": 0,
     "valMedia": 4
    },
    {
-    "pj": 1,
-    "ptMedia": 4,
-    "asMedia": 0,
-    "valMedia": 5
-   },
-   {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 6,
-    "asMedia": 3,
-    "valMedia": 12
+    "asMedia": 1.5,
+    "valMedia": 10
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": 1
+    "valMedia": 1.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
-   "pt": 0,
+   "partidosAjustados": 1,
+   "pt": 2,
    "as": 0,
-   "ptMasAs": 0,
-   "ptMasAsPorPartido": 0
+   "ptMasAs": 2,
+   "ptMasAsPorPartido": 2
   }
  },
  {
@@ -7035,36 +7491,36 @@
   "equipo": "INSOLAC CAJA 87",
   "porCuarto": [
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 2,
     "asMedia": 0,
     "valMedia": 3
    },
    {
-    "pj": 1,
+    "pj": 2,
     "ptMedia": 0,
-    "asMedia": 3,
-    "valMedia": 3
+    "asMedia": 1.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -2
+    "pj": 2,
+    "ptMedia": 1,
+    "asMedia": 0.5,
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 5,
-    "asMedia": 0,
-    "valMedia": 2
+    "pj": 2,
+    "ptMedia": 2.5,
+    "asMedia": 0.5,
+    "valMedia": 0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 1,
+   "partidosAjustados": 2,
    "pt": 5,
-   "as": 0,
-   "ptMasAs": 5,
-   "ptMasAsPorPartido": 5
+   "as": 1,
+   "ptMasAs": 6,
+   "ptMasAsPorPartido": 3
   }
  },
  {
@@ -7225,32 +7681,32 @@
   "equipo": "CAJA RURAL CB ZAMORA",
   "porCuarto": [
    {
-    "pj": 1,
-    "ptMedia": 0,
-    "asMedia": 0,
-    "valMedia": -1
-   },
-   {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 0.5,
     "asMedia": 0,
     "valMedia": 0
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
-    "valMedia": -2
+    "valMedia": 1
    },
    {
-    "pj": 1,
-    "ptMedia": 0,
+    "pj": 2,
+    "ptMedia": 1,
     "asMedia": 0,
     "valMedia": 0
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,
@@ -7296,10 +7752,22 @@
   }
  },
  {
-  "idJugador": "2898218",
-  "nombre": "BIESHAAR, TERRENCE",
-  "equipo": "IBEROLEA PALENCIA",
+  "idJugador": "2896091",
+  "nombre": "TISMA, BORIS",
+  "equipo": "MOVISTAR ESTUDIANTES",
   "porCuarto": [
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 1,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": 1
+   },
    {
     "pj": 1,
     "ptMedia": 0,
@@ -7308,25 +7776,51 @@
    },
    {
     "pj": 1,
-    "ptMedia": 3,
-    "asMedia": 0,
-    "valMedia": 3
-   },
-   {
-    "pj": 1,
     "ptMedia": 0,
     "asMedia": 0,
-    "valMedia": -1
+    "valMedia": 1
+   }
+  ],
+  "clutch": {
+   "partidosAjustados": 1,
+   "pt": 0,
+   "as": 0,
+   "ptMasAs": 0,
+   "ptMasAsPorPartido": 0
+  }
+ },
+ {
+  "idJugador": "2898218",
+  "nombre": "BIESHAAR, TERRENCE",
+  "equipo": "IBEROLEA PALENCIA",
+  "porCuarto": [
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
    },
    {
-    "pj": 1,
+    "pj": 2,
+    "ptMedia": 1.5,
+    "asMedia": 0,
+    "valMedia": 2
+   },
+   {
+    "pj": 2,
+    "ptMedia": 0,
+    "asMedia": 0,
+    "valMedia": -0.5
+   },
+   {
+    "pj": 2,
     "ptMedia": 0,
     "asMedia": 0,
     "valMedia": 0
    }
   ],
   "clutch": {
-   "partidosAjustados": 0,
+   "partidosAjustados": 1,
    "pt": 0,
    "as": 0,
    "ptMasAs": 0,

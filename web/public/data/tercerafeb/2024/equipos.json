@@ -17,6 +17,19 @@
    "pj": 13,
    "pg": 9
   },
+  "balance": {
+   "pj": 26,
+   "pg": 20,
+   "pp": 6,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 9
+   }
+  },
   "pfPartido": 78.7,
   "pcPartido": 69.2,
   "difPartido": 9.5,
@@ -37,7 +50,7 @@
   "ortg": 104.8,
   "drtg": 91.23,
   "netrtg": 13.57,
-  "srs": 16.84,
+  "srs": 12.6,
   "efg": 49.3,
   "tovPct": 17.71,
   "orbPct": 35.6,
@@ -57,7 +70,51 @@
   "forma5": "4-1",
   "forma5Dif": 9.6,
   "victoriasEsperadas": 20.5,
-  "suerte": -0.5
+  "suerte": -0.5,
+  "percentiles": {
+   "pace": {
+    "nac": 7
+   },
+   "ortg": {
+    "nac": 95
+   },
+   "drtg": {
+    "nac": 26
+   },
+   "pfPartido": {
+    "nac": 74
+   },
+   "pcPartido": {
+    "nac": 13
+   },
+   "t2PctEq": {
+    "nac": 64
+   },
+   "t3PctEq": {
+    "nac": 93
+   },
+   "roPartido": {
+    "nac": 83
+   },
+   "rdPartido": {
+    "nac": 97
+   },
+   "rebPartido": {
+    "nac": 96
+   },
+   "asPartido": {
+    "nac": 72
+   },
+   "brPartido": {
+    "nac": 4
+   },
+   "bpPartido": {
+    "nac": 16
+   },
+   "fcPartido": {
+    "nac": 2
+   }
+  }
  },
  {
   "id": "950648",
@@ -76,6 +133,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 20,
+   "pp": 6,
+   "casa": {
+    "pj": 13,
+    "pg": 13
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 81.2,
   "pcPartido": 71.1,
@@ -97,7 +167,7 @@
   "ortg": 104.66,
   "drtg": 92.44,
   "netrtg": 12.22,
-  "srs": 15.59,
+  "srs": 11.35,
   "efg": 50.18,
   "tovPct": 17.91,
   "orbPct": 33.23,
@@ -117,7 +187,51 @@
   "forma5": "2-3",
   "forma5Dif": 4.4,
   "victoriasEsperadas": 20.7,
-  "suerte": -0.7
+  "suerte": -0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 24
+   },
+   "ortg": {
+    "nac": 94
+   },
+   "drtg": {
+    "nac": 34
+   },
+   "pfPartido": {
+    "nac": 88
+   },
+   "pcPartido": {
+    "nac": 23
+   },
+   "t2PctEq": {
+    "nac": 90
+   },
+   "t3PctEq": {
+    "nac": 80
+   },
+   "roPartido": {
+    "nac": 74
+   },
+   "rdPartido": {
+    "nac": 56
+   },
+   "rebPartido": {
+    "nac": 69
+   },
+   "asPartido": {
+    "nac": 91
+   },
+   "brPartido": {
+    "nac": 75
+   },
+   "bpPartido": {
+    "nac": 28
+   },
+   "fcPartido": {
+    "nac": 34
+   }
+  }
  },
  {
   "id": "950741",
@@ -136,6 +250,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 17,
+   "pp": 9,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 78.7,
   "pcPartido": 73.2,
@@ -157,7 +284,7 @@
   "ortg": 99.13,
   "drtg": 93.06,
   "netrtg": 6.07,
-  "srs": 9.88,
+  "srs": 5.64,
   "efg": 48.91,
   "tovPct": 18.37,
   "orbPct": 29.5,
@@ -177,7 +304,51 @@
   "forma5": "2-3",
   "forma5Dif": 1,
   "victoriasEsperadas": 17.6,
-  "suerte": -0.6
+  "suerte": -0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 51
+   },
+   "ortg": {
+    "nac": 78
+   },
+   "drtg": {
+    "nac": 42
+   },
+   "pfPartido": {
+    "nac": 74
+   },
+   "pcPartido": {
+    "nac": 39
+   },
+   "t2PctEq": {
+    "nac": 74
+   },
+   "t3PctEq": {
+    "nac": 82
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 51
+   },
+   "rebPartido": {
+    "nac": 52
+   },
+   "asPartido": {
+    "nac": 36
+   },
+   "brPartido": {
+    "nac": 73
+   },
+   "bpPartido": {
+    "nac": 41
+   },
+   "fcPartido": {
+    "nac": 81
+   }
+  }
  },
  {
   "id": "950927",
@@ -196,6 +367,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 75.1,
   "pcPartido": 72.2,
@@ -217,7 +401,7 @@
   "ortg": 96.73,
   "drtg": 92.34,
   "netrtg": 4.38,
-  "srs": 8.31,
+  "srs": 4.08,
   "efg": 49.23,
   "tovPct": 17.83,
   "orbPct": 24.23,
@@ -237,7 +421,51 @@
   "forma5": "4-1",
   "forma5Dif": 7.8,
   "victoriasEsperadas": 15.6,
-  "suerte": -0.6
+  "suerte": -0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 27
+   },
+   "ortg": {
+    "nac": 62
+   },
+   "drtg": {
+    "nac": 33
+   },
+   "pfPartido": {
+    "nac": 48
+   },
+   "pcPartido": {
+    "nac": 33
+   },
+   "t2PctEq": {
+    "nac": 82
+   },
+   "t3PctEq": {
+    "nac": 84
+   },
+   "roPartido": {
+    "nac": 9
+   },
+   "rdPartido": {
+    "nac": 80
+   },
+   "rebPartido": {
+    "nac": 52
+   },
+   "asPartido": {
+    "nac": 42
+   },
+   "brPartido": {
+    "nac": 20
+   },
+   "bpPartido": {
+    "nac": 27
+   },
+   "fcPartido": {
+    "nac": 7
+   }
+  }
  },
  {
   "id": "951787",
@@ -256,6 +484,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 73,
   "pcPartido": 68.9,
@@ -277,7 +518,7 @@
   "ortg": 95.21,
   "drtg": 91.15,
   "netrtg": 4.06,
-  "srs": 8.02,
+  "srs": 3.78,
   "efg": 48.84,
   "tovPct": 19.47,
   "orbPct": 29.15,
@@ -297,7 +538,51 @@
   "forma5": "4-1",
   "forma5Dif": 15.2,
   "victoriasEsperadas": 16.7,
-  "suerte": -2.7
+  "suerte": -2.7,
+  "percentiles": {
+   "pace": {
+    "nac": 16
+   },
+   "ortg": {
+    "nac": 53
+   },
+   "drtg": {
+    "nac": 24
+   },
+   "pfPartido": {
+    "nac": 35
+   },
+   "pcPartido": {
+    "nac": 12
+   },
+   "t2PctEq": {
+    "nac": 72
+   },
+   "t3PctEq": {
+    "nac": 81
+   },
+   "roPartido": {
+    "nac": 28
+   },
+   "rdPartido": {
+    "nac": 6
+   },
+   "rebPartido": {
+    "nac": 8
+   },
+   "asPartido": {
+    "nac": 25
+   },
+   "brPartido": {
+    "nac": 84
+   },
+   "bpPartido": {
+    "nac": 47
+   },
+   "fcPartido": {
+    "nac": 99
+   }
+  }
  },
  {
   "id": "950655",
@@ -316,6 +601,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 13,
+   "pp": 13,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 75.3,
   "pcPartido": 72.7,
@@ -337,7 +635,7 @@
   "ortg": 94.03,
   "drtg": 90.73,
   "netrtg": 3.3,
-  "srs": 7.3,
+  "srs": 3.07,
   "efg": 46.17,
   "tovPct": 21.56,
   "orbPct": 35.21,
@@ -357,7 +655,51 @@
   "forma5": "3-2",
   "forma5Dif": 7.6,
   "victoriasEsperadas": 15.3,
-  "suerte": -2.3
+  "suerte": -2.3,
+  "percentiles": {
+   "pace": {
+    "nac": 60
+   },
+   "ortg": {
+    "nac": 45
+   },
+   "drtg": {
+    "nac": 21
+   },
+   "pfPartido": {
+    "nac": 50
+   },
+   "pcPartido": {
+    "nac": 36
+   },
+   "t2PctEq": {
+    "nac": 62
+   },
+   "t3PctEq": {
+    "nac": 26
+   },
+   "roPartido": {
+    "nac": 88
+   },
+   "rdPartido": {
+    "nac": 82
+   },
+   "rebPartido": {
+    "nac": 90
+   },
+   "asPartido": {
+    "nac": 15
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 91
+   },
+   "fcPartido": {
+    "nac": 42
+   }
+  }
  },
  {
   "id": "951499",
@@ -376,6 +718,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 78,
   "pcPartido": 75.2,
@@ -397,7 +752,7 @@
   "ortg": 94.51,
   "drtg": 91.93,
   "netrtg": 2.59,
-  "srs": 6.65,
+  "srs": 2.41,
   "efg": 47.15,
   "tovPct": 21.17,
   "orbPct": 32.38,
@@ -417,7 +772,51 @@
   "forma5": "5-0",
   "forma5Dif": 13,
   "victoriasEsperadas": 15.4,
-  "suerte": -1.4
+  "suerte": -1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 82
+   },
+   "ortg": {
+    "nac": 49
+   },
+   "drtg": {
+    "nac": 31
+   },
+   "pfPartido": {
+    "nac": 69
+   },
+   "pcPartido": {
+    "nac": 50
+   },
+   "t2PctEq": {
+    "nac": 76
+   },
+   "t3PctEq": {
+    "nac": 28
+   },
+   "roPartido": {
+    "nac": 74
+   },
+   "rdPartido": {
+    "nac": 61
+   },
+   "rebPartido": {
+    "nac": 73
+   },
+   "asPartido": {
+    "nac": 36
+   },
+   "brPartido": {
+    "nac": 96
+   },
+   "bpPartido": {
+    "nac": 92
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "951796",
@@ -436,6 +835,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 13,
+   "pp": 13,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 69.6,
   "pcPartido": 69.9,
@@ -457,7 +869,7 @@
   "ortg": 90.93,
   "drtg": 90.58,
   "netrtg": 0.35,
-  "srs": 4.57,
+  "srs": 0.33,
   "efg": 46.55,
   "tovPct": 21.72,
   "orbPct": 28.23,
@@ -477,7 +889,51 @@
   "forma5": "3-2",
   "forma5Dif": -5,
   "victoriasEsperadas": 12.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 14
+   },
+   "ortg": {
+    "nac": 32
+   },
+   "drtg": {
+    "nac": 20
+   },
+   "pfPartido": {
+    "nac": 18
+   },
+   "pcPartido": {
+    "nac": 15
+   },
+   "t2PctEq": {
+    "nac": 36
+   },
+   "t3PctEq": {
+    "nac": 71
+   },
+   "roPartido": {
+    "nac": 23
+   },
+   "rdPartido": {
+    "nac": 76
+   },
+   "rebPartido": {
+    "nac": 57
+   },
+   "asPartido": {
+    "nac": 20
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 84
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "950667",
@@ -496,6 +952,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 73.7,
   "pcPartido": 75.5,
@@ -517,7 +986,7 @@
   "ortg": 87.93,
   "drtg": 91.22,
   "netrtg": -3.29,
-  "srs": 1.19,
+  "srs": -3.05,
   "efg": 44.01,
   "tovPct": 18.27,
   "orbPct": 24.67,
@@ -537,7 +1006,51 @@
   "forma5": "3-2",
   "forma5Dif": -2.8,
   "victoriasEsperadas": 11.4,
-  "suerte": 2.6
+  "suerte": 2.6,
+  "percentiles": {
+   "pace": {
+    "nac": 88
+   },
+   "ortg": {
+    "nac": 15
+   },
+   "drtg": {
+    "nac": 25
+   },
+   "pfPartido": {
+    "nac": 39
+   },
+   "pcPartido": {
+    "nac": 53
+   },
+   "t2PctEq": {
+    "nac": 12
+   },
+   "t3PctEq": {
+    "nac": 36
+   },
+   "roPartido": {
+    "nac": 34
+   },
+   "rdPartido": {
+    "nac": 56
+   },
+   "rebPartido": {
+    "nac": 47
+   },
+   "asPartido": {
+    "nac": 21
+   },
+   "brPartido": {
+    "nac": 92
+   },
+   "bpPartido": {
+    "nac": 61
+   },
+   "fcPartido": {
+    "nac": 47
+   }
+  }
  },
  {
   "id": "951279",
@@ -556,6 +1069,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 13,
+   "pp": 13,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 71.9,
   "pcPartido": 76,
@@ -577,7 +1103,7 @@
   "ortg": 96.34,
   "drtg": 100.64,
   "netrtg": -4.3,
-  "srs": 0.25,
+  "srs": -3.98,
   "efg": 46.11,
   "tovPct": 16.38,
   "orbPct": 28.22,
@@ -597,7 +1123,51 @@
   "forma5": "3-2",
   "forma5Dif": 1.8,
   "victoriasEsperadas": 9.4,
-  "suerte": 3.6
+  "suerte": 3.6,
+  "percentiles": {
+   "pace": {
+    "nac": 6
+   },
+   "ortg": {
+    "nac": 59
+   },
+   "drtg": {
+    "nac": 88
+   },
+   "pfPartido": {
+    "nac": 28
+   },
+   "pcPartido": {
+    "nac": 57
+   },
+   "t2PctEq": {
+    "nac": 51
+   },
+   "t3PctEq": {
+    "nac": 53
+   },
+   "roPartido": {
+    "nac": 51
+   },
+   "rdPartido": {
+    "nac": 39
+   },
+   "rebPartido": {
+    "nac": 45
+   },
+   "asPartido": {
+    "nac": 29
+   },
+   "brPartido": {
+    "nac": 7
+   },
+   "bpPartido": {
+    "nac": 4
+   },
+   "fcPartido": {
+    "nac": 53
+   }
+  }
  },
  {
   "id": "952551",
@@ -616,6 +1186,19 @@
   "fuera": {
    "pj": 13,
    "pg": 1
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 1
+   }
   },
   "pfPartido": 77.2,
   "pcPartido": 82.3,
@@ -637,7 +1220,7 @@
   "ortg": 96.95,
   "drtg": 101.98,
   "netrtg": -5.04,
-  "srs": -0.44,
+  "srs": -4.67,
   "efg": 48.19,
   "tovPct": 18.94,
   "orbPct": 27.62,
@@ -657,7 +1240,51 @@
   "forma5": "1-4",
   "forma5Dif": -11.6,
   "victoriasEsperadas": 8.8,
-  "suerte": 1.2
+  "suerte": 1.2,
+  "percentiles": {
+   "pace": {
+    "nac": 55
+   },
+   "ortg": {
+    "nac": 64
+   },
+   "drtg": {
+    "nac": 91
+   },
+   "pfPartido": {
+    "nac": 64
+   },
+   "pcPartido": {
+    "nac": 90
+   },
+   "t2PctEq": {
+    "nac": 63
+   },
+   "t3PctEq": {
+    "nac": 80
+   },
+   "roPartido": {
+    "nac": 36
+   },
+   "rdPartido": {
+    "nac": 27
+   },
+   "rebPartido": {
+    "nac": 24
+   },
+   "asPartido": {
+    "nac": 11
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 43
+   }
+  }
  },
  {
   "id": "952037",
@@ -676,6 +1303,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 8,
+   "pp": 18,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 70.1,
   "pcPartido": 74.2,
@@ -697,7 +1337,7 @@
   "ortg": 90.24,
   "drtg": 96.01,
   "netrtg": -5.77,
-  "srs": -1.12,
+  "srs": -5.35,
   "efg": 42.73,
   "tovPct": 16.63,
   "orbPct": 26.43,
@@ -717,7 +1357,51 @@
   "forma5": "1-4",
   "forma5Dif": -9.2,
   "victoriasEsperadas": 9.3,
-  "suerte": -1.3
+  "suerte": -1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 28
+   },
+   "ortg": {
+    "nac": 27
+   },
+   "drtg": {
+    "nac": 60
+   },
+   "pfPartido": {
+    "nac": 18
+   },
+   "pcPartido": {
+    "nac": 45
+   },
+   "t2PctEq": {
+    "nac": 1
+   },
+   "t3PctEq": {
+    "nac": 48
+   },
+   "roPartido": {
+    "nac": 42
+   },
+   "rdPartido": {
+    "nac": 1
+   },
+   "rebPartido": {
+    "nac": 3
+   },
+   "asPartido": {
+    "nac": 2
+   },
+   "brPartido": {
+    "nac": 84
+   },
+   "bpPartido": {
+    "nac": 12
+   },
+   "fcPartido": {
+    "nac": 69
+   }
+  }
  },
  {
   "id": "950727",
@@ -736,6 +1420,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 76.4,
   "pcPartido": 83,
@@ -757,7 +1454,7 @@
   "ortg": 94.33,
   "drtg": 101.87,
   "netrtg": -7.55,
-  "srs": -2.76,
+  "srs": -7,
   "efg": 45.65,
   "tovPct": 18.52,
   "orbPct": 28.79,
@@ -777,7 +1474,51 @@
   "forma5": "0-5",
   "forma5Dif": -14.6,
   "victoriasEsperadas": 7.8,
-  "suerte": 1.2
+  "suerte": 1.2,
+  "percentiles": {
+   "pace": {
+    "nac": 66
+   },
+   "ortg": {
+    "nac": 47
+   },
+   "drtg": {
+    "nac": 90
+   },
+   "pfPartido": {
+    "nac": 58
+   },
+   "pcPartido": {
+    "nac": 91
+   },
+   "t2PctEq": {
+    "nac": 32
+   },
+   "t3PctEq": {
+    "nac": 54
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 31
+   },
+   "rebPartido": {
+    "nac": 35
+   },
+   "asPartido": {
+    "nac": 18
+   },
+   "brPartido": {
+    "nac": 32
+   },
+   "bpPartido": {
+    "nac": 50
+   },
+   "fcPartido": {
+    "nac": 91
+   }
+  }
  },
  {
   "id": "950858",
@@ -796,6 +1537,19 @@
   "fuera": {
    "pj": 13,
    "pg": 0
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 2,
+   "pp": 24,
+   "casa": {
+    "pj": 13,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 0
+   }
   },
   "pfPartido": 65.8,
   "pcPartido": 81.2,
@@ -817,7 +1571,7 @@
   "ortg": 83.82,
   "drtg": 103.24,
   "netrtg": -19.42,
-  "srs": -13.79,
+  "srs": -18.02,
   "efg": 41.88,
   "tovPct": 20.42,
   "orbPct": 24.45,
@@ -837,7 +1591,51 @@
   "forma5": "0-5",
   "forma5Dif": -17.2,
   "victoriasEsperadas": 2.7,
-  "suerte": -0.7
+  "suerte": -0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 42
+   },
+   "ortg": {
+    "nac": 5
+   },
+   "drtg": {
+    "nac": 93
+   },
+   "pfPartido": {
+    "nac": 5
+   },
+   "pcPartido": {
+    "nac": 85
+   },
+   "t2PctEq": {
+    "nac": 3
+   },
+   "t3PctEq": {
+    "nac": 20
+   },
+   "roPartido": {
+    "nac": 21
+   },
+   "rdPartido": {
+    "nac": 9
+   },
+   "rebPartido": {
+    "nac": 6
+   },
+   "asPartido": {
+    "nac": 1
+   },
+   "brPartido": {
+    "nac": 12
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "950872",
@@ -856,6 +1654,19 @@
   "fuera": {
    "pj": 13,
    "pg": 13
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 24,
+   "pp": 2,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 13
+   }
   },
   "pfPartido": 92.4,
   "pcPartido": 78,
@@ -877,7 +1688,7 @@
   "ortg": 109.74,
   "drtg": 93.58,
   "netrtg": 16.16,
-  "srs": 12.07,
+  "srs": 15,
   "efg": 51.97,
   "tovPct": 15.9,
   "orbPct": 32.28,
@@ -897,11 +1708,55 @@
   "forma5": "5-0",
   "forma5Dif": 19,
   "victoriasEsperadas": 22.1,
-  "suerte": 1.9
+  "suerte": 1.9,
+  "percentiles": {
+   "pace": {
+    "nac": 91
+   },
+   "ortg": {
+    "nac": 100
+   },
+   "drtg": {
+    "nac": 45
+   },
+   "pfPartido": {
+    "nac": 100
+   },
+   "pcPartido": {
+    "nac": 66
+   },
+   "t2PctEq": {
+    "nac": 91
+   },
+   "t3PctEq": {
+    "nac": 96
+   },
+   "roPartido": {
+    "nac": 74
+   },
+   "rdPartido": {
+    "nac": 96
+   },
+   "rebPartido": {
+    "nac": 93
+   },
+   "asPartido": {
+    "nac": 92
+   },
+   "brPartido": {
+    "nac": 56
+   },
+   "bpPartido": {
+    "nac": 18
+   },
+   "fcPartido": {
+    "nac": 4
+   }
+  }
  },
  {
   "id": "951405",
-  "idClub": "marin-ence-peixegalego",
+  "idClub": "marin",
   "nombre": "OPOSITA MARÍN ENCE PEIXEGALEGO",
   "grupo": "A-B",
   "pj": 26,
@@ -916,6 +1771,19 @@
   "fuera": {
    "pj": 13,
    "pg": 10
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 21,
+   "pp": 5,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 10
+   }
   },
   "pfPartido": 83.4,
   "pcPartido": 71,
@@ -937,7 +1805,7 @@
   "ortg": 108.21,
   "drtg": 92.17,
   "netrtg": 16.04,
-  "srs": 11.97,
+  "srs": 14.89,
   "efg": 51.82,
   "tovPct": 16.37,
   "orbPct": 31.97,
@@ -957,7 +1825,51 @@
   "forma5": "5-0",
   "forma5Dif": 16.4,
   "victoriasEsperadas": 21.8,
-  "suerte": -0.8
+  "suerte": -0.8,
+  "percentiles": {
+   "pace": {
+    "nac": 18
+   },
+   "ortg": {
+    "nac": 99
+   },
+   "drtg": {
+    "nac": 31
+   },
+   "pfPartido": {
+    "nac": 93
+   },
+   "pcPartido": {
+    "nac": 20
+   },
+   "t2PctEq": {
+    "nac": 99
+   },
+   "t3PctEq": {
+    "nac": 88
+   },
+   "roPartido": {
+    "nac": 60
+   },
+   "rdPartido": {
+    "nac": 74
+   },
+   "rebPartido": {
+    "nac": 75
+   },
+   "asPartido": {
+    "nac": 89
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 8
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "952216",
@@ -976,6 +1888,19 @@
   "fuera": {
    "pj": 13,
    "pg": 9
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 19,
+   "pp": 7,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 9
+   }
   },
   "pfPartido": 87,
   "pcPartido": 74.2,
@@ -997,7 +1922,7 @@
   "ortg": 102.48,
   "drtg": 89.93,
   "netrtg": 12.55,
-  "srs": 8.72,
+  "srs": 11.65,
   "efg": 50.99,
   "tovPct": 17.99,
   "orbPct": 31.87,
@@ -1017,7 +1942,51 @@
   "forma5": "4-1",
   "forma5Dif": 11.6,
   "victoriasEsperadas": 21.7,
-  "suerte": -2.7
+  "suerte": -2.7,
+  "percentiles": {
+   "pace": {
+    "nac": 92
+   },
+   "ortg": {
+    "nac": 88
+   },
+   "drtg": {
+    "nac": 17
+   },
+   "pfPartido": {
+    "nac": 97
+   },
+   "pcPartido": {
+    "nac": 45
+   },
+   "t2PctEq": {
+    "nac": 79
+   },
+   "t3PctEq": {
+    "nac": 99
+   },
+   "roPartido": {
+    "nac": 68
+   },
+   "rdPartido": {
+    "nac": 91
+   },
+   "rebPartido": {
+    "nac": 88
+   },
+   "asPartido": {
+    "nac": 74
+   },
+   "brPartido": {
+    "nac": 68
+   },
+   "bpPartido": {
+    "nac": 61
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "951748",
@@ -1036,6 +2005,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 17,
+   "pp": 9,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 83.8,
   "pcPartido": 77.2,
@@ -1057,7 +2039,7 @@
   "ortg": 103,
   "drtg": 95.01,
   "netrtg": 7.99,
-  "srs": 4.49,
+  "srs": 7.42,
   "efg": 50.47,
   "tovPct": 16.69,
   "orbPct": 29.2,
@@ -1077,7 +2059,51 @@
   "forma5": "5-0",
   "forma5Dif": 20,
   "victoriasEsperadas": 18.2,
-  "suerte": -1.2
+  "suerte": -1.2,
+  "percentiles": {
+   "pace": {
+    "nac": 72
+   },
+   "ortg": {
+    "nac": 91
+   },
+   "drtg": {
+    "nac": 54
+   },
+   "pfPartido": {
+    "nac": 95
+   },
+   "pcPartido": {
+    "nac": 64
+   },
+   "t2PctEq": {
+    "nac": 75
+   },
+   "t3PctEq": {
+    "nac": 96
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 58
+   },
+   "rebPartido": {
+    "nac": 59
+   },
+   "asPartido": {
+    "nac": 77
+   },
+   "brPartido": {
+    "nac": 66
+   },
+   "bpPartido": {
+    "nac": 23
+   },
+   "fcPartido": {
+    "nac": 31
+   }
+  }
  },
  {
   "id": "951441",
@@ -1096,6 +2122,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 74.7,
   "pcPartido": 71.1,
@@ -1117,7 +2156,7 @@
   "ortg": 94.64,
   "drtg": 89.78,
   "netrtg": 4.86,
-  "srs": 1.58,
+  "srs": 4.5,
   "efg": 47.61,
   "tovPct": 19.1,
   "orbPct": 30.05,
@@ -1137,7 +2176,51 @@
   "forma5": "2-3",
   "forma5Dif": -5,
   "victoriasEsperadas": 16.2,
-  "suerte": -1.2
+  "suerte": -1.2,
+  "percentiles": {
+   "pace": {
+    "nac": 45
+   },
+   "ortg": {
+    "nac": 50
+   },
+   "drtg": {
+    "nac": 15
+   },
+   "pfPartido": {
+    "nac": 44
+   },
+   "pcPartido": {
+    "nac": 23
+   },
+   "t2PctEq": {
+    "nac": 59
+   },
+   "t3PctEq": {
+    "nac": 74
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 86
+   },
+   "rebPartido": {
+    "nac": 82
+   },
+   "asPartido": {
+    "nac": 83
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 31
+   }
+  }
  },
  {
   "id": "952318",
@@ -1156,6 +2239,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 82.3,
   "pcPartido": 77.5,
@@ -1177,7 +2273,7 @@
   "ortg": 97.95,
   "drtg": 94.65,
   "netrtg": 3.31,
-  "srs": 0.14,
+  "srs": 3.07,
   "efg": 47.96,
   "tovPct": 17.89,
   "orbPct": 30.72,
@@ -1197,7 +2293,51 @@
   "forma5": "3-2",
   "forma5Dif": 7.4,
   "victoriasEsperadas": 16.9,
-  "suerte": -2.9
+  "suerte": -2.9,
+  "percentiles": {
+   "pace": {
+    "nac": 90
+   },
+   "ortg": {
+    "nac": 68
+   },
+   "drtg": {
+    "nac": 51
+   },
+   "pfPartido": {
+    "nac": 90
+   },
+   "pcPartido": {
+    "nac": 65
+   },
+   "t2PctEq": {
+    "nac": 77
+   },
+   "t3PctEq": {
+    "nac": 50
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 7
+   },
+   "rebPartido": {
+    "nac": 31
+   },
+   "asPartido": {
+    "nac": 69
+   },
+   "brPartido": {
+    "nac": 97
+   },
+   "bpPartido": {
+    "nac": 50
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "952038",
@@ -1216,6 +2356,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 78.5,
   "pcPartido": 77.3,
@@ -1237,7 +2390,7 @@
   "ortg": 92.13,
   "drtg": 92.84,
   "netrtg": -0.7,
-  "srs": -3.59,
+  "srs": -0.66,
   "efg": 45.64,
   "tovPct": 17.97,
   "orbPct": 27.4,
@@ -1257,7 +2410,51 @@
   "forma5": "1-4",
   "forma5Dif": -0.4,
   "victoriasEsperadas": 14.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 93
+   },
+   "ortg": {
+    "nac": 39
+   },
+   "drtg": {
+    "nac": 39
+   },
+   "pfPartido": {
+    "nac": 72
+   },
+   "pcPartido": {
+    "nac": 64
+   },
+   "t2PctEq": {
+    "nac": 25
+   },
+   "t3PctEq": {
+    "nac": 70
+   },
+   "roPartido": {
+    "nac": 63
+   },
+   "rdPartido": {
+    "nac": 40
+   },
+   "rebPartido": {
+    "nac": 53
+   },
+   "asPartido": {
+    "nac": 66
+   },
+   "brPartido": {
+    "nac": 91
+   },
+   "bpPartido": {
+    "nac": 61
+   },
+   "fcPartido": {
+    "nac": 42
+   }
+  }
  },
  {
   "id": "952552",
@@ -1276,6 +2473,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 75.7,
   "pcPartido": 76.5,
@@ -1297,7 +2507,7 @@
   "ortg": 95.09,
   "drtg": 96.01,
   "netrtg": -0.92,
-  "srs": -3.79,
+  "srs": -0.86,
   "efg": 45.72,
   "tovPct": 17.01,
   "orbPct": 29.45,
@@ -1317,7 +2527,51 @@
   "forma5": "3-2",
   "forma5Dif": 4,
   "victoriasEsperadas": 12.3,
-  "suerte": -1.3
+  "suerte": -1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 55
+   },
+   "ortg": {
+    "nac": 51
+   },
+   "drtg": {
+    "nac": 60
+   },
+   "pfPartido": {
+    "nac": 54
+   },
+   "pcPartido": {
+    "nac": 60
+   },
+   "t2PctEq": {
+    "nac": 41
+   },
+   "t3PctEq": {
+    "nac": 43
+   },
+   "roPartido": {
+    "nac": 68
+   },
+   "rdPartido": {
+    "nac": 69
+   },
+   "rebPartido": {
+    "nac": 73
+   },
+   "asPartido": {
+    "nac": 6
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 21
+   },
+   "fcPartido": {
+    "nac": 39
+   }
+  }
  },
  {
   "id": "952017",
@@ -1336,6 +2590,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 77.4,
   "pcPartido": 79,
@@ -1357,7 +2624,7 @@
   "ortg": 97.72,
   "drtg": 99.84,
   "netrtg": -2.11,
-  "srs": -4.9,
+  "srs": -1.97,
   "efg": 47.32,
   "tovPct": 17.87,
   "orbPct": 28.15,
@@ -1377,7 +2644,51 @@
   "forma5": "2-3",
   "forma5Dif": -1.2,
   "victoriasEsperadas": 11.6,
-  "suerte": -1.6
+  "suerte": -1.6,
+  "percentiles": {
+   "pace": {
+    "nac": 49
+   },
+   "ortg": {
+    "nac": 66
+   },
+   "drtg": {
+    "nac": 85
+   },
+   "pfPartido": {
+    "nac": 66
+   },
+   "pcPartido": {
+    "nac": 75
+   },
+   "t2PctEq": {
+    "nac": 45
+   },
+   "t3PctEq": {
+    "nac": 78
+   },
+   "roPartido": {
+    "nac": 39
+   },
+   "rdPartido": {
+    "nac": 36
+   },
+   "rebPartido": {
+    "nac": 34
+   },
+   "asPartido": {
+    "nac": 70
+   },
+   "brPartido": {
+    "nac": 23
+   },
+   "bpPartido": {
+    "nac": 34
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "952317",
@@ -1396,6 +2707,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 74.6,
   "pcPartido": 78.6,
@@ -1417,7 +2741,7 @@
   "ortg": 93.77,
   "drtg": 98.46,
   "netrtg": -4.69,
-  "srs": -7.29,
+  "srs": -4.36,
   "efg": 46.42,
   "tovPct": 18.71,
   "orbPct": 24.48,
@@ -1437,7 +2761,51 @@
   "forma5": "1-4",
   "forma5Dif": -7.8,
   "victoriasEsperadas": 9.6,
-  "suerte": -0.6
+  "suerte": -0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 54
+   },
+   "ortg": {
+    "nac": 43
+   },
+   "drtg": {
+    "nac": 77
+   },
+   "pfPartido": {
+    "nac": 43
+   },
+   "pcPartido": {
+    "nac": 71
+   },
+   "t2PctEq": {
+    "nac": 70
+   },
+   "t3PctEq": {
+    "nac": 34
+   },
+   "roPartido": {
+    "nac": 8
+   },
+   "rdPartido": {
+    "nac": 67
+   },
+   "rebPartido": {
+    "nac": 34
+   },
+   "asPartido": {
+    "nac": 58
+   },
+   "brPartido": {
+    "nac": 8
+   },
+   "bpPartido": {
+    "nac": 47
+   },
+   "fcPartido": {
+    "nac": 50
+   }
+  }
  },
  {
   "id": "950684",
@@ -1456,6 +2824,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 7,
+   "pp": 19,
+   "casa": {
+    "pj": 13,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 67,
   "pcPartido": 80,
@@ -1477,7 +2858,7 @@
   "ortg": 89.32,
   "drtg": 96.98,
   "netrtg": -7.66,
-  "srs": -10.05,
+  "srs": -7.12,
   "efg": 45.2,
   "tovPct": 20.55,
   "orbPct": 26.2,
@@ -1497,7 +2878,51 @@
   "forma5": "1-4",
   "forma5Dif": -9.8,
   "victoriasEsperadas": 3.6,
-  "suerte": 3.4
+  "suerte": 3.4,
+  "percentiles": {
+   "pace": {
+    "nac": 7
+   },
+   "ortg": {
+    "nac": 22
+   },
+   "drtg": {
+    "nac": 68
+   },
+   "pfPartido": {
+    "nac": 7
+   },
+   "pcPartido": {
+    "nac": 80
+   },
+   "t2PctEq": {
+    "nac": 31
+   },
+   "t3PctEq": {
+    "nac": 39
+   },
+   "roPartido": {
+    "nac": 32
+   },
+   "rdPartido": {
+    "nac": 35
+   },
+   "rebPartido": {
+    "nac": 28
+   },
+   "asPartido": {
+    "nac": 11
+   },
+   "brPartido": {
+    "nac": 6
+   },
+   "bpPartido": {
+    "nac": 64
+   },
+   "fcPartido": {
+    "nac": 19
+   }
+  }
  },
  {
   "id": "951746",
@@ -1516,6 +2941,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 79.7,
   "pcPartido": 86.7,
@@ -1537,7 +2975,7 @@
   "ortg": 93.79,
   "drtg": 103.32,
   "netrtg": -9.53,
-  "srs": -11.78,
+  "srs": -8.85,
   "efg": 46.28,
   "tovPct": 18.88,
   "orbPct": 31.79,
@@ -1557,7 +2995,51 @@
   "forma5": "1-4",
   "forma5Dif": -8.8,
   "victoriasEsperadas": 7.7,
-  "suerte": 1.3
+  "suerte": 1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 93
+   },
+   "ortg": {
+    "nac": 44
+   },
+   "drtg": {
+    "nac": 94
+   },
+   "pfPartido": {
+    "nac": 81
+   },
+   "pcPartido": {
+    "nac": 99
+   },
+   "t2PctEq": {
+    "nac": 54
+   },
+   "t3PctEq": {
+    "nac": 39
+   },
+   "roPartido": {
+    "nac": 91
+   },
+   "rdPartido": {
+    "nac": 63
+   },
+   "rebPartido": {
+    "nac": 85
+   },
+   "asPartido": {
+    "nac": 45
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 72
+   }
+  }
  },
  {
   "id": "951004",
@@ -1576,6 +3058,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 7,
+   "pp": 19,
+   "casa": {
+    "pj": 13,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 68,
   "pcPartido": 79.5,
@@ -1597,7 +3092,7 @@
   "ortg": 83.26,
   "drtg": 96.8,
   "netrtg": -13.53,
-  "srs": -15.5,
+  "srs": -12.57,
   "efg": 42.98,
   "tovPct": 21.13,
   "orbPct": 24.17,
@@ -1617,7 +3112,51 @@
   "forma5": "2-3",
   "forma5Dif": -14.6,
   "victoriasEsperadas": 4.4,
-  "suerte": 2.6
+  "suerte": 2.6,
+  "percentiles": {
+   "pace": {
+    "nac": 75
+   },
+   "ortg": {
+    "nac": 4
+   },
+   "drtg": {
+    "nac": 66
+   },
+   "pfPartido": {
+    "nac": 11
+   },
+   "pcPartido": {
+    "nac": 78
+   },
+   "t2PctEq": {
+    "nac": 8
+   },
+   "t3PctEq": {
+    "nac": 23
+   },
+   "roPartido": {
+    "nac": 12
+   },
+   "rdPartido": {
+    "nac": 63
+   },
+   "rebPartido": {
+    "nac": 38
+   },
+   "asPartido": {
+    "nac": 20
+   },
+   "brPartido": {
+    "nac": 53
+   },
+   "bpPartido": {
+    "nac": 91
+   },
+   "fcPartido": {
+    "nac": 4
+   }
+  }
  },
  {
   "id": "951013",
@@ -1636,6 +3175,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 5,
+   "pp": 21,
+   "casa": {
+    "pj": 13,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 64.3,
   "pcPartido": 82.3,
@@ -1657,7 +3209,7 @@
   "ortg": 81.47,
   "drtg": 104.04,
   "netrtg": -22.56,
-  "srs": -23.89,
+  "srs": -20.96,
   "efg": 40.12,
   "tovPct": 20.21,
   "orbPct": 27.38,
@@ -1677,7 +3229,51 @@
   "forma5": "0-5",
   "forma5Dif": -30.8,
   "victoriasEsperadas": 1.9,
-  "suerte": 3.1
+  "suerte": 3.1,
+  "percentiles": {
+   "pace": {
+    "nac": 46
+   },
+   "ortg": {
+    "nac": 2
+   },
+   "drtg": {
+    "nac": 96
+   },
+   "pfPartido": {
+    "nac": 2
+   },
+   "pcPartido": {
+    "nac": 90
+   },
+   "t2PctEq": {
+    "nac": 1
+   },
+   "t3PctEq": {
+    "nac": 41
+   },
+   "roPartido": {
+    "nac": 49
+   },
+   "rdPartido": {
+    "nac": 11
+   },
+   "rebPartido": {
+    "nac": 20
+   },
+   "asPartido": {
+    "nac": 12
+   },
+   "brPartido": {
+    "nac": 32
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 58
+   }
+  }
  },
  {
   "id": "951498",
@@ -1696,6 +3292,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 21,
+   "pp": 5,
+   "casa": {
+    "pj": 13,
+    "pg": 13
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 79.8,
   "pcPartido": 65.4,
@@ -1717,7 +3326,7 @@
   "ortg": 103.46,
   "drtg": 85.73,
   "netrtg": 17.73,
-  "srs": 15.12,
+  "srs": 16.46,
   "efg": 50.17,
   "tovPct": 16,
   "orbPct": 31.05,
@@ -1737,7 +3346,51 @@
   "forma5": "5-0",
   "forma5Dif": 18.4,
   "victoriasEsperadas": 23,
-  "suerte": -2
+  "suerte": -2,
+  "percentiles": {
+   "pace": {
+    "nac": 20
+   },
+   "ortg": {
+    "nac": 92
+   },
+   "drtg": {
+    "nac": 6
+   },
+   "pfPartido": {
+    "nac": 82
+   },
+   "pcPartido": {
+    "nac": 3
+   },
+   "t2PctEq": {
+    "nac": 89
+   },
+   "t3PctEq": {
+    "nac": 82
+   },
+   "roPartido": {
+    "nac": 63
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 57
+   },
+   "asPartido": {
+    "nac": 93
+   },
+   "brPartido": {
+    "nac": 88
+   },
+   "bpPartido": {
+    "nac": 5
+   },
+   "fcPartido": {
+    "nac": 19
+   }
+  }
  },
  {
   "id": "951467",
@@ -1756,6 +3409,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 20,
+   "pp": 6,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 79.8,
   "pcPartido": 70.1,
@@ -1777,7 +3443,7 @@
   "ortg": 102.68,
   "drtg": 90.3,
   "netrtg": 12.38,
-  "srs": 10.15,
+  "srs": 11.49,
   "efg": 48.97,
   "tovPct": 18.07,
   "orbPct": 32.61,
@@ -1797,7 +3463,51 @@
   "forma5": "4-1",
   "forma5Dif": 15.4,
   "victoriasEsperadas": 20.6,
-  "suerte": -0.6
+  "suerte": -0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 28
+   },
+   "ortg": {
+    "nac": 89
+   },
+   "drtg": {
+    "nac": 18
+   },
+   "pfPartido": {
+    "nac": 82
+   },
+   "pcPartido": {
+    "nac": 16
+   },
+   "t2PctEq": {
+    "nac": 36
+   },
+   "t3PctEq": {
+    "nac": 97
+   },
+   "roPartido": {
+    "nac": 70
+   },
+   "rdPartido": {
+    "nac": 69
+   },
+   "rebPartido": {
+    "nac": 77
+   },
+   "asPartido": {
+    "nac": 77
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 31
+   },
+   "fcPartido": {
+    "nac": 14
+   }
+  }
  },
  {
   "id": "952234",
@@ -1816,6 +3526,19 @@
   "fuera": {
    "pj": 13,
    "pg": 10
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 19,
+   "pp": 7,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 10
+   }
   },
   "pfPartido": 80.9,
   "pcPartido": 71.8,
@@ -1837,7 +3560,7 @@
   "ortg": 100.83,
   "drtg": 90.09,
   "netrtg": 10.73,
-  "srs": 8.62,
+  "srs": 9.97,
   "efg": 50.59,
   "tovPct": 19.37,
   "orbPct": 30.3,
@@ -1857,7 +3580,51 @@
   "forma5": "5-0",
   "forma5Dif": 21.2,
   "victoriasEsperadas": 20,
-  "suerte": -1
+  "suerte": -1,
+  "percentiles": {
+   "pace": {
+    "nac": 61
+   },
+   "ortg": {
+    "nac": 85
+   },
+   "drtg": {
+    "nac": 18
+   },
+   "pfPartido": {
+    "nac": 86
+   },
+   "pcPartido": {
+    "nac": 27
+   },
+   "t2PctEq": {
+    "nac": 95
+   },
+   "t3PctEq": {
+    "nac": 79
+   },
+   "roPartido": {
+    "nac": 51
+   },
+   "rdPartido": {
+    "nac": 84
+   },
+   "rebPartido": {
+    "nac": 80
+   },
+   "asPartido": {
+    "nac": 95
+   },
+   "brPartido": {
+    "nac": 70
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 31
+   }
+  }
  },
  {
   "id": "951496",
@@ -1876,6 +3643,19 @@
   "fuera": {
    "pj": 13,
    "pg": 9
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 9
+   }
   },
   "pfPartido": 71.6,
   "pcPartido": 66.3,
@@ -1897,7 +3677,7 @@
   "ortg": 95.1,
   "drtg": 88.23,
   "netrtg": 6.87,
-  "srs": 5.03,
+  "srs": 6.37,
   "efg": 43.56,
   "tovPct": 15.78,
   "orbPct": 33.01,
@@ -1917,7 +3697,51 @@
   "forma5": "3-2",
   "forma5Dif": 12.8,
   "victoriasEsperadas": 17.8,
-  "suerte": 0.2
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 8
+   },
+   "ortg": {
+    "nac": 52
+   },
+   "drtg": {
+    "nac": 12
+   },
+   "pfPartido": {
+    "nac": 26
+   },
+   "pcPartido": {
+    "nac": 4
+   },
+   "t2PctEq": {
+    "nac": 12
+   },
+   "t3PctEq": {
+    "nac": 31
+   },
+   "roPartido": {
+    "nac": 93
+   },
+   "rdPartido": {
+    "nac": 23
+   },
+   "rebPartido": {
+    "nac": 58
+   },
+   "asPartido": {
+    "nac": 55
+   },
+   "brPartido": {
+    "nac": 73
+   },
+   "bpPartido": {
+    "nac": 2
+   },
+   "fcPartido": {
+    "nac": 70
+   }
+  }
  },
  {
   "id": "951780",
@@ -1936,6 +3760,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 16,
+   "pp": 10,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 79.4,
   "pcPartido": 75.7,
@@ -1957,7 +3794,7 @@
   "ortg": 98.87,
   "drtg": 94.08,
   "netrtg": 4.79,
-  "srs": 3.1,
+  "srs": 4.45,
   "efg": 49.59,
   "tovPct": 18.05,
   "orbPct": 25.73,
@@ -1977,7 +3814,51 @@
   "forma5": "3-2",
   "forma5Dif": -2.4,
   "victoriasEsperadas": 16.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 62
+   },
+   "ortg": {
+    "nac": 76
+   },
+   "drtg": {
+    "nac": 50
+   },
+   "pfPartido": {
+    "nac": 78
+   },
+   "pcPartido": {
+    "nac": 54
+   },
+   "t2PctEq": {
+    "nac": 87
+   },
+   "t3PctEq": {
+    "nac": 72
+   },
+   "roPartido": {
+    "nac": 15
+   },
+   "rdPartido": {
+    "nac": 66
+   },
+   "rebPartido": {
+    "nac": 41
+   },
+   "asPartido": {
+    "nac": 85
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 38
+   },
+   "fcPartido": {
+    "nac": 40
+   }
+  }
  },
  {
   "id": "950953",
@@ -1996,6 +3877,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 76.5,
   "pcPartido": 75.1,
@@ -2017,7 +3911,7 @@
   "ortg": 95.61,
   "drtg": 93.98,
   "netrtg": 1.63,
-  "srs": 0.17,
+  "srs": 1.51,
   "efg": 46.07,
   "tovPct": 17.2,
   "orbPct": 28.33,
@@ -2037,7 +3931,51 @@
   "forma5": "2-3",
   "forma5Dif": -2.2,
   "victoriasEsperadas": 14.3,
-  "suerte": 0.7
+  "suerte": 0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 59
+   },
+   "ortg": {
+    "nac": 55
+   },
+   "drtg": {
+    "nac": 47
+   },
+   "pfPartido": {
+    "nac": 60
+   },
+   "pcPartido": {
+    "nac": 50
+   },
+   "t2PctEq": {
+    "nac": 47
+   },
+   "t3PctEq": {
+    "nac": 35
+   },
+   "roPartido": {
+    "nac": 49
+   },
+   "rdPartido": {
+    "nac": 81
+   },
+   "rebPartido": {
+    "nac": 78
+   },
+   "asPartido": {
+    "nac": 80
+   },
+   "brPartido": {
+    "nac": 53
+   },
+   "bpPartido": {
+    "nac": 27
+   },
+   "fcPartido": {
+    "nac": 12
+   }
+  }
  },
  {
   "id": "952191",
@@ -2056,6 +3994,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 13,
+   "pp": 13,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 74.4,
   "pcPartido": 74.1,
@@ -2077,7 +4028,7 @@
   "ortg": 97.92,
   "drtg": 97.73,
   "netrtg": 0.18,
-  "srs": -1.18,
+  "srs": 0.17,
   "efg": 45.3,
   "tovPct": 17.26,
   "orbPct": 34.57,
@@ -2097,7 +4048,51 @@
   "forma5": "4-1",
   "forma5Dif": 4.6,
   "victoriasEsperadas": 13.3,
-  "suerte": -0.3
+  "suerte": -0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 11
+   },
+   "ortg": {
+    "nac": 67
+   },
+   "drtg": {
+    "nac": 73
+   },
+   "pfPartido": {
+    "nac": 42
+   },
+   "pcPartido": {
+    "nac": 44
+   },
+   "t2PctEq": {
+    "nac": 30
+   },
+   "t3PctEq": {
+    "nac": 45
+   },
+   "roPartido": {
+    "nac": 93
+   },
+   "rdPartido": {
+    "nac": 9
+   },
+   "rebPartido": {
+    "nac": 52
+   },
+   "asPartido": {
+    "nac": 25
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 13
+   },
+   "fcPartido": {
+    "nac": 85
+   }
+  }
  },
  {
   "id": "951806",
@@ -2116,6 +4111,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 71.5,
   "pcPartido": 71.1,
@@ -2137,7 +4145,7 @@
   "ortg": 90.86,
   "drtg": 91.79,
   "netrtg": -0.92,
-  "srs": -2.2,
+  "srs": -0.86,
   "efg": 42.83,
   "tovPct": 19.31,
   "orbPct": 34.77,
@@ -2157,7 +4165,51 @@
   "forma5": "2-3",
   "forma5Dif": -1.2,
   "victoriasEsperadas": 13.4,
-  "suerte": -2.4
+  "suerte": -2.4,
+  "percentiles": {
+   "pace": {
+    "nac": 44
+   },
+   "ortg": {
+    "nac": 31
+   },
+   "drtg": {
+    "nac": 29
+   },
+   "pfPartido": {
+    "nac": 24
+   },
+   "pcPartido": {
+    "nac": 23
+   },
+   "t2PctEq": {
+    "nac": 21
+   },
+   "t3PctEq": {
+    "nac": 10
+   },
+   "roPartido": {
+    "nac": 95
+   },
+   "rdPartido": {
+    "nac": 74
+   },
+   "rebPartido": {
+    "nac": 91
+   },
+   "asPartido": {
+    "nac": 45
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 57
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "950926",
@@ -2176,6 +4228,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 12,
+   "pp": 14,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 75.2,
   "pcPartido": 77.1,
@@ -2197,7 +4262,7 @@
   "ortg": 99.58,
   "drtg": 102.05,
   "netrtg": -2.47,
-  "srs": -3.64,
+  "srs": -2.29,
   "efg": 49.87,
   "tovPct": 20.27,
   "orbPct": 31.14,
@@ -2217,7 +4282,51 @@
   "forma5": "0-5",
   "forma5Dif": -12.4,
   "victoriasEsperadas": 11.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 9
+   },
+   "ortg": {
+    "nac": 79
+   },
+   "drtg": {
+    "nac": 91
+   },
+   "pfPartido": {
+    "nac": 49
+   },
+   "pcPartido": {
+    "nac": 63
+   },
+   "t2PctEq": {
+    "nac": 58
+   },
+   "t3PctEq": {
+    "nac": 98
+   },
+   "roPartido": {
+    "nac": 34
+   },
+   "rdPartido": {
+    "nac": 12
+   },
+   "rebPartido": {
+    "nac": 15
+   },
+   "asPartido": {
+    "nac": 42
+   },
+   "brPartido": {
+    "nac": 20
+   },
+   "bpPartido": {
+    "nac": 61
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "952152",
@@ -2236,6 +4345,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 68.1,
   "pcPartido": 70.5,
@@ -2257,7 +4379,7 @@
   "ortg": 89.67,
   "drtg": 92.7,
   "netrtg": -3.04,
-  "srs": -4.17,
+  "srs": -2.82,
   "efg": 43.35,
   "tovPct": 19.3,
   "orbPct": 32.17,
@@ -2277,7 +4399,51 @@
   "forma5": "1-4",
   "forma5Dif": -7,
   "victoriasEsperadas": 10.7,
-  "suerte": -0.7
+  "suerte": -0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 10
+   },
+   "ortg": {
+    "nac": 24
+   },
+   "drtg": {
+    "nac": 37
+   },
+   "pfPartido": {
+    "nac": 12
+   },
+   "pcPartido": {
+    "nac": 18
+   },
+   "t2PctEq": {
+    "nac": 10
+   },
+   "t3PctEq": {
+    "nac": 26
+   },
+   "roPartido": {
+    "nac": 86
+   },
+   "rdPartido": {
+    "nac": 11
+   },
+   "rebPartido": {
+    "nac": 39
+   },
+   "asPartido": {
+    "nac": 49
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 19
+   }
+  }
  },
  {
   "id": "952431",
@@ -2296,6 +4462,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 8,
+   "pp": 18,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 67.5,
   "pcPartido": 73,
@@ -2317,7 +4496,7 @@
   "ortg": 91.88,
   "drtg": 98.03,
   "netrtg": -6.15,
-  "srs": -7.05,
+  "srs": -5.71,
   "efg": 46.06,
   "tovPct": 17.6,
   "orbPct": 24.11,
@@ -2337,7 +4516,51 @@
   "forma5": "3-2",
   "forma5Dif": -0.2,
   "victoriasEsperadas": 8,
-  "suerte": 0
+  "suerte": 0,
+  "percentiles": {
+   "pace": {
+    "nac": 3
+   },
+   "ortg": {
+    "nac": 36
+   },
+   "drtg": {
+    "nac": 74
+   },
+   "pfPartido": {
+    "nac": 9
+   },
+   "pcPartido": {
+    "nac": 37
+   },
+   "t2PctEq": {
+    "nac": 49
+   },
+   "t3PctEq": {
+    "nac": 36
+   },
+   "roPartido": {
+    "nac": 8
+   },
+   "rdPartido": {
+    "nac": 19
+   },
+   "rebPartido": {
+    "nac": 6
+   },
+   "asPartido": {
+    "nac": 27
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 12
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "952150",
@@ -2356,6 +4579,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 65.8,
   "pcPartido": 74.6,
@@ -2377,7 +4613,7 @@
   "ortg": 86.41,
   "drtg": 97.55,
   "netrtg": -11.15,
-  "srs": -11.7,
+  "srs": -10.35,
   "efg": 42.45,
   "tovPct": 19.75,
   "orbPct": 25.96,
@@ -2397,7 +4633,51 @@
   "forma5": "2-3",
   "forma5Dif": -17,
   "victoriasEsperadas": 5.6,
-  "suerte": 5.4
+  "suerte": 5.4,
+  "percentiles": {
+   "pace": {
+    "nac": 12
+   },
+   "ortg": {
+    "nac": 9
+   },
+   "drtg": {
+    "nac": 72
+   },
+   "pfPartido": {
+    "nac": 5
+   },
+   "pcPartido": {
+    "nac": 48
+   },
+   "t2PctEq": {
+    "nac": 6
+   },
+   "t3PctEq": {
+    "nac": 12
+   },
+   "roPartido": {
+    "nac": 15
+   },
+   "rdPartido": {
+    "nac": 53
+   },
+   "rebPartido": {
+    "nac": 30
+   },
+   "asPartido": {
+    "nac": 9
+   },
+   "brPartido": {
+    "nac": 2
+   },
+   "bpPartido": {
+    "nac": 50
+   },
+   "fcPartido": {
+    "nac": 19
+   }
+  }
  },
  {
   "id": "952232",
@@ -2416,6 +4696,19 @@
   "fuera": {
    "pj": 13,
    "pg": 1
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 5,
+   "pp": 21,
+   "casa": {
+    "pj": 13,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 1
+   }
   },
   "pfPartido": 64.9,
   "pcPartido": 75.5,
@@ -2437,7 +4730,7 @@
   "ortg": 83.51,
   "drtg": 96.03,
   "netrtg": -12.52,
-  "srs": -12.97,
+  "srs": -11.63,
   "efg": 41.53,
   "tovPct": 20.19,
   "orbPct": 29.88,
@@ -2457,7 +4750,51 @@
   "forma5": "0-5",
   "forma5Dif": -12.2,
   "victoriasEsperadas": 4.5,
-  "suerte": 0.5
+  "suerte": 0.5,
+  "percentiles": {
+   "pace": {
+    "nac": 30
+   },
+   "ortg": {
+    "nac": 4
+   },
+   "drtg": {
+    "nac": 61
+   },
+   "pfPartido": {
+    "nac": 4
+   },
+   "pcPartido": {
+    "nac": 53
+   },
+   "t2PctEq": {
+    "nac": 9
+   },
+   "t3PctEq": {
+    "nac": 4
+   },
+   "roPartido": {
+    "nac": 74
+   },
+   "rdPartido": {
+    "nac": 23
+   },
+   "rebPartido": {
+    "nac": 44
+   },
+   "asPartido": {
+    "nac": 21
+   },
+   "brPartido": {
+    "nac": 59
+   },
+   "bpPartido": {
+    "nac": 72
+   },
+   "fcPartido": {
+    "nac": 31
+   }
+  }
  },
  {
   "id": "952028",
@@ -2476,6 +4813,19 @@
   "fuera": {
    "pj": 13,
    "pg": 0
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 3,
+   "pp": 23,
+   "casa": {
+    "pj": 13,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 0
+   }
   },
   "pfPartido": 69,
   "pcPartido": 84,
@@ -2497,7 +4847,7 @@
   "ortg": 87.82,
   "drtg": 106.26,
   "netrtg": -18.45,
-  "srs": -18.48,
+  "srs": -17.13,
   "efg": 45.35,
   "tovPct": 21.35,
   "orbPct": 27.52,
@@ -2517,7 +4867,51 @@
   "forma5": "1-4",
   "forma5Dif": -17.8,
   "victoriasEsperadas": 3.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 41
+   },
+   "ortg": {
+    "nac": 13
+   },
+   "drtg": {
+    "nac": 99
+   },
+   "pfPartido": {
+    "nac": 15
+   },
+   "pcPartido": {
+    "nac": 93
+   },
+   "t2PctEq": {
+    "nac": 18
+   },
+   "t3PctEq": {
+    "nac": 69
+   },
+   "roPartido": {
+    "nac": 39
+   },
+   "rdPartido": {
+    "nac": 16
+   },
+   "rebPartido": {
+    "nac": 20
+   },
+   "asPartido": {
+    "nac": 31
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 88
+   },
+   "fcPartido": {
+    "nac": 45
+   }
+  }
  },
  {
   "id": "951077",
@@ -2536,6 +4930,19 @@
   "fuera": {
    "pj": 13,
    "pg": 9
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 22,
+   "pp": 4,
+   "casa": {
+    "pj": 13,
+    "pg": 13
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 9
+   }
   },
   "pfPartido": 75.1,
   "pcPartido": 62.2,
@@ -2557,7 +4964,7 @@
   "ortg": 98.4,
   "drtg": 83.89,
   "netrtg": 14.51,
-  "srs": 21.98,
+  "srs": 13.69,
   "efg": 47.07,
   "tovPct": 18.19,
   "orbPct": 31.01,
@@ -2577,7 +4984,51 @@
   "forma5": "4-1",
   "forma5Dif": 24.4,
   "victoriasEsperadas": 21.8,
-  "suerte": -0.8
+  "suerte": -0.8,
+  "percentiles": {
+   "pace": {
+    "nac": 13
+   },
+   "ortg": {
+    "nac": 70
+   },
+   "drtg": {
+    "nac": 4
+   },
+   "pfPartido": {
+    "nac": 48
+   },
+   "pcPartido": {
+    "nac": 1
+   },
+   "t2PctEq": {
+    "nac": 69
+   },
+   "t3PctEq": {
+    "nac": 50
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 94
+   },
+   "rebPartido": {
+    "nac": 87
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 12
+   },
+   "bpPartido": {
+    "nac": 28
+   },
+   "fcPartido": {
+    "nac": 14
+   }
+  }
  },
  {
   "id": "951062",
@@ -2596,6 +5047,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 76.9,
   "pcPartido": 68.6,
@@ -2617,7 +5081,7 @@
   "ortg": 104.95,
   "drtg": 94.29,
   "netrtg": 10.66,
-  "srs": 18.22,
+  "srs": 9.93,
   "efg": 52.37,
   "tovPct": 17.38,
   "orbPct": 26.81,
@@ -2637,7 +5101,51 @@
   "forma5": "5-0",
   "forma5Dif": 20.8,
   "victoriasEsperadas": 19.8,
-  "suerte": -1.8
+  "suerte": -1.8,
+  "percentiles": {
+   "pace": {
+    "nac": 2
+   },
+   "ortg": {
+    "nac": 96
+   },
+   "drtg": {
+    "nac": 50
+   },
+   "pfPartido": {
+    "nac": 63
+   },
+   "pcPartido": {
+    "nac": 9
+   },
+   "t2PctEq": {
+    "nac": 98
+   },
+   "t3PctEq": {
+    "nac": 90
+   },
+   "roPartido": {
+    "nac": 4
+   },
+   "rdPartido": {
+    "nac": 43
+   },
+   "rebPartido": {
+    "nac": 13
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 12
+   },
+   "bpPartido": {
+    "nac": 9
+   },
+   "fcPartido": {
+    "nac": 15
+   }
+  }
  },
  {
   "id": "951794",
@@ -2656,6 +5164,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 80.2,
   "pcPartido": 72.3,
@@ -2677,7 +5198,7 @@
   "ortg": 105.15,
   "drtg": 95.71,
   "netrtg": 9.44,
-  "srs": 17.09,
+  "srs": 8.8,
   "efg": 51.71,
   "tovPct": 17.65,
   "orbPct": 32.87,
@@ -2697,11 +5218,55 @@
   "forma5": "4-1",
   "forma5Dif": 10,
   "victoriasEsperadas": 19.3,
-  "suerte": -1.3
+  "suerte": -1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 12
+   },
+   "ortg": {
+    "nac": 96
+   },
+   "drtg": {
+    "nac": 58
+   },
+   "pfPartido": {
+    "nac": 83
+   },
+   "pcPartido": {
+    "nac": 34
+   },
+   "t2PctEq": {
+    "nac": 69
+   },
+   "t3PctEq": {
+    "nac": 100
+   },
+   "roPartido": {
+    "nac": 76
+   },
+   "rdPartido": {
+    "nac": 69
+   },
+   "rebPartido": {
+    "nac": 80
+   },
+   "asPartido": {
+    "nac": 96
+   },
+   "brPartido": {
+    "nac": 13
+   },
+   "bpPartido": {
+    "nac": 21
+   },
+   "fcPartido": {
+    "nac": 6
+   }
+  }
  },
  {
   "id": "952159",
-  "idClub": "globalcaja-quintanar",
+  "idClub": "quintanar",
   "nombre": "C.D. BASKET GLOBALCAJA QUINTANAR",
   "grupo": "B-B",
   "pj": 26,
@@ -2716,6 +5281,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 17,
+   "pp": 9,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 76.5,
   "pcPartido": 69.7,
@@ -2737,7 +5315,7 @@
   "ortg": 98.67,
   "drtg": 91.46,
   "netrtg": 7.21,
-  "srs": 15.02,
+  "srs": 6.73,
   "efg": 47.74,
   "tovPct": 20.34,
   "orbPct": 34.32,
@@ -2757,7 +5335,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.2,
   "victoriasEsperadas": 18.8,
-  "suerte": -1.8
+  "suerte": -1.8,
+  "percentiles": {
+   "pace": {
+    "nac": 23
+   },
+   "ortg": {
+    "nac": 74
+   },
+   "drtg": {
+    "nac": 28
+   },
+   "pfPartido": {
+    "nac": 60
+   },
+   "pcPartido": {
+    "nac": 14
+   },
+   "t2PctEq": {
+    "nac": 73
+   },
+   "t3PctEq": {
+    "nac": 46
+   },
+   "roPartido": {
+    "nac": 70
+   },
+   "rdPartido": {
+    "nac": 80
+   },
+   "rebPartido": {
+    "nac": 82
+   },
+   "asPartido": {
+    "nac": 45
+   },
+   "brPartido": {
+    "nac": 53
+   },
+   "bpPartido": {
+    "nac": 74
+   },
+   "fcPartido": {
+    "nac": 57
+   }
+  }
  },
  {
   "id": "952228",
@@ -2776,6 +5398,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 75.6,
   "pcPartido": 71.8,
@@ -2797,7 +5432,7 @@
   "ortg": 97.02,
   "drtg": 92.85,
   "netrtg": 4.17,
-  "srs": 12.2,
+  "srs": 3.91,
   "efg": 47.15,
   "tovPct": 17.17,
   "orbPct": 26.4,
@@ -2817,7 +5452,51 @@
   "forma5": "2-3",
   "forma5Dif": -1.8,
   "victoriasEsperadas": 16.4,
-  "suerte": -1.4
+  "suerte": -1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 32
+   },
+   "ortg": {
+    "nac": 65
+   },
+   "drtg": {
+    "nac": 40
+   },
+   "pfPartido": {
+    "nac": 53
+   },
+   "pcPartido": {
+    "nac": 27
+   },
+   "t2PctEq": {
+    "nac": 43
+   },
+   "t3PctEq": {
+    "nac": 73
+   },
+   "roPartido": {
+    "nac": 18
+   },
+   "rdPartido": {
+    "nac": 66
+   },
+   "rebPartido": {
+    "nac": 42
+   },
+   "asPartido": {
+    "nac": 15
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 18
+   },
+   "fcPartido": {
+    "nac": 69
+   }
+  }
  },
  {
   "id": "951397",
@@ -2836,6 +5515,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 76.6,
   "pcPartido": 72.8,
@@ -2857,7 +5549,7 @@
   "ortg": 98.63,
   "drtg": 95.23,
   "netrtg": 3.41,
-  "srs": 11.49,
+  "srs": 3.2,
   "efg": 46.94,
   "tovPct": 18.13,
   "orbPct": 36.01,
@@ -2877,7 +5569,51 @@
   "forma5": "3-2",
   "forma5Dif": 1.4,
   "victoriasEsperadas": 16.3,
-  "suerte": -2.3
+  "suerte": -2.3,
+  "percentiles": {
+   "pace": {
+    "nac": 26
+   },
+   "ortg": {
+    "nac": 72
+   },
+   "drtg": {
+    "nac": 56
+   },
+   "pfPartido": {
+    "nac": 61
+   },
+   "pcPartido": {
+    "nac": 36
+   },
+   "t2PctEq": {
+    "nac": 71
+   },
+   "t3PctEq": {
+    "nac": 28
+   },
+   "roPartido": {
+    "nac": 91
+   },
+   "rdPartido": {
+    "nac": 7
+   },
+   "rebPartido": {
+    "nac": 42
+   },
+   "asPartido": {
+    "nac": 25
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 31
+   },
+   "fcPartido": {
+    "nac": 57
+   }
+  }
  },
  {
   "id": "952343",
@@ -2896,6 +5632,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 13,
+   "pp": 13,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 70.5,
   "pcPartido": 68.7,
@@ -2917,7 +5666,7 @@
   "ortg": 96.49,
   "drtg": 94.01,
   "netrtg": 2.48,
-  "srs": 10.63,
+  "srs": 2.34,
   "efg": 47.76,
   "tovPct": 18.42,
   "orbPct": 25.8,
@@ -2937,7 +5686,51 @@
   "forma5": "3-2",
   "forma5Dif": 5.2,
   "victoriasEsperadas": 14.7,
-  "suerte": -1.7
+  "suerte": -1.7,
+  "percentiles": {
+   "pace": {
+    "nac": 1
+   },
+   "ortg": {
+    "nac": 61
+   },
+   "drtg": {
+    "nac": 48
+   },
+   "pfPartido": {
+    "nac": 19
+   },
+   "pcPartido": {
+    "nac": 9
+   },
+   "t2PctEq": {
+    "nac": 74
+   },
+   "t3PctEq": {
+    "nac": 55
+   },
+   "roPartido": {
+    "nac": 9
+   },
+   "rdPartido": {
+    "nac": 27
+   },
+   "rebPartido": {
+    "nac": 11
+   },
+   "asPartido": {
+    "nac": 58
+   },
+   "brPartido": {
+    "nac": 56
+   },
+   "bpPartido": {
+    "nac": 21
+   },
+   "fcPartido": {
+    "nac": 94
+   }
+  }
  },
  {
   "id": "952029",
@@ -2956,6 +5749,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 78.8,
   "pcPartido": 79.7,
@@ -2977,7 +5783,7 @@
   "ortg": 96.93,
   "drtg": 98.98,
   "netrtg": -2.05,
-  "srs": 6.42,
+  "srs": -1.87,
   "efg": 49.8,
   "tovPct": 19.49,
   "orbPct": 25.95,
@@ -2997,7 +5803,51 @@
   "forma5": "2-3",
   "forma5Dif": 0.6,
   "victoriasEsperadas": 12.2,
-  "suerte": -3.2
+  "suerte": -3.2,
+  "percentiles": {
+   "pace": {
+    "nac": 71
+   },
+   "ortg": {
+    "nac": 63
+   },
+   "drtg": {
+    "nac": 81
+   },
+   "pfPartido": {
+    "nac": 76
+   },
+   "pcPartido": {
+    "nac": 79
+   },
+   "t2PctEq": {
+    "nac": 80
+   },
+   "t3PctEq": {
+    "nac": 89
+   },
+   "roPartido": {
+    "nac": 23
+   },
+   "rdPartido": {
+    "nac": 43
+   },
+   "rebPartido": {
+    "nac": 27
+   },
+   "asPartido": {
+    "nac": 26
+   },
+   "brPartido": {
+    "nac": 63
+   },
+   "bpPartido": {
+    "nac": 74
+   },
+   "fcPartido": {
+    "nac": 91
+   }
+  }
  },
  {
   "id": "951278",
@@ -3016,6 +5866,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 74.9,
   "pcPartido": 77.1,
@@ -3037,7 +5900,7 @@
   "ortg": 95.24,
   "drtg": 99.7,
   "netrtg": -4.45,
-  "srs": 4.19,
+  "srs": -4.1,
   "efg": 45.63,
   "tovPct": 18.2,
   "orbPct": 30.37,
@@ -3057,7 +5920,51 @@
   "forma5": "2-3",
   "forma5Dif": 2.2,
   "victoriasEsperadas": 11.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 42
+   },
+   "ortg": {
+    "nac": 53
+   },
+   "drtg": {
+    "nac": 84
+   },
+   "pfPartido": {
+    "nac": 45
+   },
+   "pcPartido": {
+    "nac": 63
+   },
+   "t2PctEq": {
+    "nac": 34
+   },
+   "t3PctEq": {
+    "nac": 53
+   },
+   "roPartido": {
+    "nac": 63
+   },
+   "rdPartido": {
+    "nac": 48
+   },
+   "rebPartido": {
+    "nac": 55
+   },
+   "asPartido": {
+    "nac": 49
+   },
+   "brPartido": {
+    "nac": 15
+   },
+   "bpPartido": {
+    "nac": 34
+   },
+   "fcPartido": {
+    "nac": 88
+   }
+  }
  },
  {
   "id": "952233",
@@ -3076,6 +5983,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 77.8,
   "pcPartido": 80.5,
@@ -3097,7 +6017,7 @@
   "ortg": 94.72,
   "drtg": 99.88,
   "netrtg": -5.16,
-  "srs": 3.53,
+  "srs": -4.76,
   "efg": 46.27,
   "tovPct": 19.19,
   "orbPct": 30.78,
@@ -3117,7 +6037,51 @@
   "forma5": "1-4",
   "forma5Dif": -9.6,
   "victoriasEsperadas": 10.8,
-  "suerte": 0.2
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 79
+   },
+   "ortg": {
+    "nac": 50
+   },
+   "drtg": {
+    "nac": 86
+   },
+   "pfPartido": {
+    "nac": 66
+   },
+   "pcPartido": {
+    "nac": 82
+   },
+   "t2PctEq": {
+    "nac": 55
+   },
+   "t3PctEq": {
+    "nac": 37
+   },
+   "roPartido": {
+    "nac": 76
+   },
+   "rdPartido": {
+    "nac": 3
+   },
+   "rebPartido": {
+    "nac": 15
+   },
+   "asPartido": {
+    "nac": 29
+   },
+   "brPartido": {
+    "nac": 85
+   },
+   "bpPartido": {
+    "nac": 74
+   },
+   "fcPartido": {
+    "nac": 92
+   }
+  }
  },
  {
   "id": "951349",
@@ -3136,6 +6100,19 @@
   "fuera": {
    "pj": 12,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 78.4,
   "pcPartido": 81.8,
@@ -3157,7 +6134,7 @@
   "ortg": 96.48,
   "drtg": 102.06,
   "netrtg": -5.58,
-  "srs": 2.66,
+  "srs": -5.63,
   "efg": 48.66,
   "tovPct": 18.62,
   "orbPct": 27.06,
@@ -3177,7 +6154,51 @@
   "forma5": "4-1",
   "forma5Dif": 5,
   "victoriasEsperadas": 9.8,
-  "suerte": 0.2
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 70
+   },
+   "ortg": {
+    "nac": 60
+   },
+   "drtg": {
+    "nac": 92
+   },
+   "pfPartido": {
+    "nac": 71
+   },
+   "pcPartido": {
+    "nac": 88
+   },
+   "t2PctEq": {
+    "nac": 85
+   },
+   "t3PctEq": {
+    "nac": 40
+   },
+   "roPartido": {
+    "nac": 26
+   },
+   "rdPartido": {
+    "nac": 11
+   },
+   "rebPartido": {
+    "nac": 11
+   },
+   "asPartido": {
+    "nac": 46
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 66
+   }
+  }
  },
  {
   "id": "952151",
@@ -3196,6 +6217,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 12,
+   "pp": 14,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 75.7,
   "pcPartido": 80.6,
@@ -3217,7 +6251,7 @@
   "ortg": 91.22,
   "drtg": 99.14,
   "netrtg": -7.92,
-  "srs": 0.97,
+  "srs": -7.32,
   "efg": 45.84,
   "tovPct": 16.45,
   "orbPct": 22.92,
@@ -3237,7 +6271,51 @@
   "forma5": "1-4",
   "forma5Dif": -13.4,
   "victoriasEsperadas": 9,
-  "suerte": 3
+  "suerte": 3,
+  "percentiles": {
+   "pace": {
+    "nac": 85
+   },
+   "ortg": {
+    "nac": 34
+   },
+   "drtg": {
+    "nac": 83
+   },
+   "pfPartido": {
+    "nac": 54
+   },
+   "pcPartido": {
+    "nac": 83
+   },
+   "t2PctEq": {
+    "nac": 40
+   },
+   "t3PctEq": {
+    "nac": 42
+   },
+   "roPartido": {
+    "nac": 18
+   },
+   "rdPartido": {
+    "nac": 34
+   },
+   "rebPartido": {
+    "nac": 17
+   },
+   "asPartido": {
+    "nac": 51
+   },
+   "brPartido": {
+    "nac": 64
+   },
+   "bpPartido": {
+    "nac": 23
+   },
+   "fcPartido": {
+    "nac": 82
+   }
+  }
  },
  {
   "id": "951084",
@@ -3256,6 +6334,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 7,
+   "pp": 19,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 71.3,
   "pcPartido": 78.9,
@@ -3277,7 +6368,7 @@
   "ortg": 91.47,
   "drtg": 103.01,
   "netrtg": -11.54,
-  "srs": -2.39,
+  "srs": -10.68,
   "efg": 45.2,
   "tovPct": 18.71,
   "orbPct": 29.07,
@@ -3297,7 +6388,51 @@
   "forma5": "1-4",
   "forma5Dif": -15.2,
   "victoriasEsperadas": 6.8,
-  "suerte": 0.2
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 31
+   },
+   "ortg": {
+    "nac": 35
+   },
+   "drtg": {
+    "nac": 93
+   },
+   "pfPartido": {
+    "nac": 22
+   },
+   "pcPartido": {
+    "nac": 74
+   },
+   "t2PctEq": {
+    "nac": 35
+   },
+   "t3PctEq": {
+    "nac": 31
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 16
+   },
+   "rebPartido": {
+    "nac": 26
+   },
+   "asPartido": {
+    "nac": 9
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 41
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "950668",
@@ -3316,6 +6451,19 @@
   "fuera": {
    "pj": 13,
    "pg": 1
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 5,
+   "pp": 21,
+   "casa": {
+    "pj": 13,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 1
+   }
   },
   "pfPartido": 61.5,
   "pcPartido": 84.7,
@@ -3337,7 +6485,7 @@
   "ortg": 92.54,
   "drtg": 105.04,
   "netrtg": -12.51,
-  "srs": -3.29,
+  "srs": -11.58,
   "efg": 47.05,
   "tovPct": 21.28,
   "orbPct": 23.16,
@@ -3357,7 +6505,51 @@
   "forma5": "0-5",
   "forma5Dif": -33.8,
   "victoriasEsperadas": 1,
-  "suerte": 4
+  "suerte": 4,
+  "percentiles": {
+   "pace": {
+    "nac": 1
+   },
+   "ortg": {
+    "nac": 39
+   },
+   "drtg": {
+    "nac": 97
+   },
+   "pfPartido": {
+    "nac": 1
+   },
+   "pcPartido": {
+    "nac": 95
+   },
+   "t2PctEq": {
+    "nac": 84
+   },
+   "t3PctEq": {
+    "nac": 16
+   },
+   "roPartido": {
+    "nac": 3
+   },
+   "rdPartido": {
+    "nac": 1
+   },
+   "rebPartido": {
+    "nac": 1
+   },
+   "asPartido": {
+    "nac": 3
+   },
+   "brPartido": {
+    "nac": 5
+   },
+   "bpPartido": {
+    "nac": 34
+   },
+   "fcPartido": {
+    "nac": 1
+   }
+  }
  },
  {
   "id": "950647",
@@ -3376,6 +6568,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 20,
+   "pp": 6,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 78.6,
   "pcPartido": 70.5,
@@ -3397,7 +6602,7 @@
   "ortg": 100.82,
   "drtg": 90.83,
   "netrtg": 9.98,
-  "srs": 12.19,
+  "srs": 9.27,
   "efg": 49.33,
   "tovPct": 15.49,
   "orbPct": 25.55,
@@ -3417,7 +6622,51 @@
   "forma5": "5-0",
   "forma5Dif": 15.4,
   "victoriasEsperadas": 19.6,
-  "suerte": 0.4
+  "suerte": 0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 33
+   },
+   "ortg": {
+    "nac": 85
+   },
+   "drtg": {
+    "nac": 23
+   },
+   "pfPartido": {
+    "nac": 73
+   },
+   "pcPartido": {
+    "nac": 18
+   },
+   "t2PctEq": {
+    "nac": 92
+   },
+   "t3PctEq": {
+    "nac": 62
+   },
+   "roPartido": {
+    "nac": 12
+   },
+   "rdPartido": {
+    "nac": 34
+   },
+   "rebPartido": {
+    "nac": 15
+   },
+   "asPartido": {
+    "nac": 58
+   },
+   "brPartido": {
+    "nac": 86
+   },
+   "bpPartido": {
+    "nac": 3
+   },
+   "fcPartido": {
+    "nac": 50
+   }
+  }
  },
  {
   "id": "952556",
@@ -3436,6 +6685,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 20,
+   "pp": 6,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 73.5,
   "pcPartido": 66.8,
@@ -3457,7 +6719,7 @@
   "ortg": 96.01,
   "drtg": 86.42,
   "netrtg": 9.58,
-  "srs": 11.81,
+  "srs": 8.9,
   "efg": 47.73,
   "tovPct": 19.8,
   "orbPct": 30.98,
@@ -3477,7 +6739,51 @@
   "forma5": "4-1",
   "forma5Dif": 12.4,
   "victoriasEsperadas": 18.9,
-  "suerte": 1.1
+  "suerte": 1.1,
+  "percentiles": {
+   "pace": {
+    "nac": 15
+   },
+   "ortg": {
+    "nac": 57
+   },
+   "drtg": {
+    "nac": 9
+   },
+   "pfPartido": {
+    "nac": 38
+   },
+   "pcPartido": {
+    "nac": 5
+   },
+   "t2PctEq": {
+    "nac": 57
+   },
+   "t3PctEq": {
+    "nac": 77
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 80
+   },
+   "rebPartido": {
+    "nac": 73
+   },
+   "asPartido": {
+    "nac": 87
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 57
+   },
+   "fcPartido": {
+    "nac": 34
+   }
+  }
  },
  {
   "id": "950736",
@@ -3496,6 +6802,19 @@
   "fuera": {
    "pj": 13,
    "pg": 9
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 21,
+   "pp": 5,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 9
+   }
   },
   "pfPartido": 73.8,
   "pcPartido": 73.3,
@@ -3517,7 +6836,7 @@
   "ortg": 99.85,
   "drtg": 91.62,
   "netrtg": 8.23,
-  "srs": 10.55,
+  "srs": 7.64,
   "efg": 48.68,
   "tovPct": 17.68,
   "orbPct": 25.88,
@@ -3537,7 +6856,51 @@
   "forma5": "4-1",
   "forma5Dif": 12.8,
   "victoriasEsperadas": 13.5,
-  "suerte": 7.5
+  "suerte": 7.5,
+  "percentiles": {
+   "pace": {
+    "nac": 4
+   },
+   "ortg": {
+    "nac": 80
+   },
+   "drtg": {
+    "nac": 28
+   },
+   "pfPartido": {
+    "nac": 39
+   },
+   "pcPartido": {
+    "nac": 39
+   },
+   "t2PctEq": {
+    "nac": 48
+   },
+   "t3PctEq": {
+    "nac": 93
+   },
+   "roPartido": {
+    "nac": 12
+   },
+   "rdPartido": {
+    "nac": 4
+   },
+   "rebPartido": {
+    "nac": 2
+   },
+   "asPartido": {
+    "nac": 95
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 13
+   },
+   "fcPartido": {
+    "nac": 40
+   }
+  }
  },
  {
   "id": "952327",
@@ -3556,6 +6919,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 80.5,
   "pcPartido": 75.3,
@@ -3577,7 +6953,7 @@
   "ortg": 98.25,
   "drtg": 93.36,
   "netrtg": 4.89,
-  "srs": 7.46,
+  "srs": 4.54,
   "efg": 47.31,
   "tovPct": 17.89,
   "orbPct": 32.08,
@@ -3597,7 +6973,51 @@
   "forma5": "1-4",
   "forma5Dif": -5.8,
   "victoriasEsperadas": 17.2,
-  "suerte": -2.2
+  "suerte": -2.2,
+  "percentiles": {
+   "pace": {
+    "nac": 76
+   },
+   "ortg": {
+    "nac": 69
+   },
+   "drtg": {
+    "nac": 42
+   },
+   "pfPartido": {
+    "nac": 85
+   },
+   "pcPartido": {
+    "nac": 51
+   },
+   "t2PctEq": {
+    "nac": 45
+   },
+   "t3PctEq": {
+    "nac": 75
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 66
+   },
+   "asPartido": {
+    "nac": 34
+   },
+   "brPartido": {
+    "nac": 69
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 84
+   }
+  }
  },
  {
   "id": "950924",
@@ -3616,6 +7036,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 17,
+   "pp": 9,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 74.4,
   "pcPartido": 68.8,
@@ -3637,7 +7070,7 @@
   "ortg": 93.17,
   "drtg": 88.7,
   "netrtg": 4.48,
-  "srs": 7.07,
+  "srs": 4.16,
   "efg": 45.94,
   "tovPct": 19.32,
   "orbPct": 34.79,
@@ -3657,7 +7090,51 @@
   "forma5": "4-1",
   "forma5Dif": 11,
   "victoriasEsperadas": 18,
-  "suerte": -1
+  "suerte": -1,
+  "percentiles": {
+   "pace": {
+    "nac": 58
+   },
+   "ortg": {
+    "nac": 40
+   },
+   "drtg": {
+    "nac": 13
+   },
+   "pfPartido": {
+    "nac": 42
+   },
+   "pcPartido": {
+    "nac": 10
+   },
+   "t2PctEq": {
+    "nac": 65
+   },
+   "t3PctEq": {
+    "nac": 20
+   },
+   "roPartido": {
+    "nac": 87
+   },
+   "rdPartido": {
+    "nac": 36
+   },
+   "rebPartido": {
+    "nac": 61
+   },
+   "asPartido": {
+    "nac": 77
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 64
+   },
+   "fcPartido": {
+    "nac": 95
+   }
+  }
  },
  {
   "id": "951057",
@@ -3676,6 +7153,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 75.3,
   "pcPartido": 73.7,
@@ -3697,7 +7187,7 @@
   "ortg": 96.94,
   "drtg": 94.8,
   "netrtg": 2.14,
-  "srs": 4.91,
+  "srs": 1.99,
   "efg": 46.67,
   "tovPct": 17.73,
   "orbPct": 29.17,
@@ -3717,7 +7207,51 @@
   "forma5": "3-2",
   "forma5Dif": 10.2,
   "victoriasEsperadas": 14.4,
-  "suerte": -3.4
+  "suerte": -3.4,
+  "percentiles": {
+   "pace": {
+    "nac": 26
+   },
+   "ortg": {
+    "nac": 64
+   },
+   "drtg": {
+    "nac": 53
+   },
+   "pfPartido": {
+    "nac": 50
+   },
+   "pcPartido": {
+    "nac": 42
+   },
+   "t2PctEq": {
+    "nac": 38
+   },
+   "t3PctEq": {
+    "nac": 69
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 14
+   },
+   "rebPartido": {
+    "nac": 23
+   },
+   "asPartido": {
+    "nac": 66
+   },
+   "brPartido": {
+    "nac": 50
+   },
+   "bpPartido": {
+    "nac": 27
+   },
+   "fcPartido": {
+    "nac": 57
+   }
+  }
  },
  {
   "id": "951776",
@@ -3736,6 +7270,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 72.9,
   "pcPartido": 71.1,
@@ -3757,7 +7304,7 @@
   "ortg": 96.11,
   "drtg": 94.06,
   "netrtg": 2.05,
-  "srs": 4.82,
+  "srs": 1.91,
   "efg": 47.95,
   "tovPct": 20.68,
   "orbPct": 32,
@@ -3777,7 +7324,51 @@
   "forma5": "3-2",
   "forma5Dif": -1.4,
   "victoriasEsperadas": 14.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 9
+   },
+   "ortg": {
+    "nac": 58
+   },
+   "drtg": {
+    "nac": 49
+   },
+   "pfPartido": {
+    "nac": 34
+   },
+   "pcPartido": {
+    "nac": 23
+   },
+   "t2PctEq": {
+    "nac": 42
+   },
+   "t3PctEq": {
+    "nac": 88
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 54
+   },
+   "rebPartido": {
+    "nac": 54
+   },
+   "asPartido": {
+    "nac": 54
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 72
+   },
+   "fcPartido": {
+    "nac": 50
+   }
+  }
  },
  {
   "id": "950826",
@@ -3796,6 +7387,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 75,
   "pcPartido": 74.5,
@@ -3817,7 +7421,7 @@
   "ortg": 95.65,
   "drtg": 96.44,
   "netrtg": -0.8,
-  "srs": 2.18,
+  "srs": -0.74,
   "efg": 47.53,
   "tovPct": 19.29,
   "orbPct": 32.37,
@@ -3837,7 +7441,51 @@
   "forma5": "1-4",
   "forma5Dif": -0.8,
   "victoriasEsperadas": 13.4,
-  "suerte": -4.4
+  "suerte": -4.4,
+  "percentiles": {
+   "pace": {
+    "nac": 38
+   },
+   "ortg": {
+    "nac": 56
+   },
+   "drtg": {
+    "nac": 64
+   },
+   "pfPartido": {
+    "nac": 46
+   },
+   "pcPartido": {
+    "nac": 47
+   },
+   "t2PctEq": {
+    "nac": 61
+   },
+   "t3PctEq": {
+    "nac": 64
+   },
+   "roPartido": {
+    "nac": 70
+   },
+   "rdPartido": {
+    "nac": 34
+   },
+   "rebPartido": {
+    "nac": 49
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 59
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 51
+   }
+  }
  },
  {
   "id": "950929",
@@ -3856,6 +7504,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 12,
+   "pp": 14,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 72.1,
   "pcPartido": 72,
@@ -3877,7 +7538,7 @@
   "ortg": 88.57,
   "drtg": 89.83,
   "netrtg": -1.27,
-  "srs": 1.74,
+  "srs": -1.17,
   "efg": 45.91,
   "tovPct": 21.82,
   "orbPct": 27.66,
@@ -3897,7 +7558,51 @@
   "forma5": "3-2",
   "forma5Dif": -1.8,
   "victoriasEsperadas": 13.1,
-  "suerte": -1.1
+  "suerte": -1.1,
+  "percentiles": {
+   "pace": {
+    "nac": 73
+   },
+   "ortg": {
+    "nac": 17
+   },
+   "drtg": {
+    "nac": 16
+   },
+   "pfPartido": {
+    "nac": 28
+   },
+   "pcPartido": {
+    "nac": 28
+   },
+   "t2PctEq": {
+    "nac": 62
+   },
+   "t3PctEq": {
+    "nac": 11
+   },
+   "roPartido": {
+    "nac": 26
+   },
+   "rdPartido": {
+    "nac": 52
+   },
+   "rebPartido": {
+    "nac": 38
+   },
+   "asPartido": {
+    "nac": 55
+   },
+   "brPartido": {
+    "nac": 73
+   },
+   "bpPartido": {
+    "nac": 94
+   },
+   "fcPartido": {
+    "nac": 54
+   }
+  }
  },
  {
   "id": "951320",
@@ -3916,6 +7621,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 72.7,
   "pcPartido": 74.1,
@@ -3937,7 +7655,7 @@
   "ortg": 94.18,
   "drtg": 96.65,
   "netrtg": -2.47,
-  "srs": 0.62,
+  "srs": -2.29,
   "efg": 47.22,
   "tovPct": 15.84,
   "orbPct": 21.53,
@@ -3957,7 +7675,51 @@
   "forma5": "1-4",
   "forma5Dif": -14.2,
   "victoriasEsperadas": 11.7,
-  "suerte": -0.7
+  "suerte": -0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 20
+   },
+   "ortg": {
+    "nac": 47
+   },
+   "drtg": {
+    "nac": 64
+   },
+   "pfPartido": {
+    "nac": 31
+   },
+   "pcPartido": {
+    "nac": 44
+   },
+   "t2PctEq": {
+    "nac": 51
+   },
+   "t3PctEq": {
+    "nac": 69
+   },
+   "roPartido": {
+    "nac": 1
+   },
+   "rdPartido": {
+    "nac": 4
+   },
+   "rebPartido": {
+    "nac": 1
+   },
+   "asPartido": {
+    "nac": 32
+   },
+   "brPartido": {
+    "nac": 61
+   },
+   "bpPartido": {
+    "nac": 4
+   },
+   "fcPartido": {
+    "nac": 7
+   }
+  }
  },
  {
   "id": "950689",
@@ -3976,6 +7738,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 72.7,
   "pcPartido": 75,
@@ -3997,7 +7772,7 @@
   "ortg": 91.4,
   "drtg": 94.77,
   "netrtg": -3.36,
-  "srs": -0.21,
+  "srs": -3.12,
   "efg": 45.31,
   "tovPct": 19.5,
   "orbPct": 29.21,
@@ -4017,7 +7792,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.8,
   "victoriasEsperadas": 10.9,
-  "suerte": -0.9
+  "suerte": -0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 53
+   },
+   "ortg": {
+    "nac": 34
+   },
+   "drtg": {
+    "nac": 52
+   },
+   "pfPartido": {
+    "nac": 31
+   },
+   "pcPartido": {
+    "nac": 49
+   },
+   "t2PctEq": {
+    "nac": 80
+   },
+   "t3PctEq": {
+    "nac": 1
+   },
+   "roPartido": {
+    "nac": 58
+   },
+   "rdPartido": {
+    "nac": 43
+   },
+   "rebPartido": {
+    "nac": 52
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 39
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 57
+   }
+  }
  },
  {
   "id": "951799",
@@ -4036,6 +7855,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 72.3,
   "pcPartido": 77,
@@ -4057,7 +7889,7 @@
   "ortg": 94.44,
   "drtg": 98.7,
   "netrtg": -4.26,
-  "srs": -1.04,
+  "srs": -3.95,
   "efg": 46.23,
   "tovPct": 17.33,
   "orbPct": 26.46,
@@ -4077,7 +7909,51 @@
   "forma5": "3-2",
   "forma5Dif": -2.8,
   "victoriasEsperadas": 9,
-  "suerte": 0
+  "suerte": 0,
+  "percentiles": {
+   "pace": {
+    "nac": 15
+   },
+   "ortg": {
+    "nac": 48
+   },
+   "drtg": {
+    "nac": 80
+   },
+   "pfPartido": {
+    "nac": 30
+   },
+   "pcPartido": {
+    "nac": 61
+   },
+   "t2PctEq": {
+    "nac": 44
+   },
+   "t3PctEq": {
+    "nac": 38
+   },
+   "roPartido": {
+    "nac": 23
+   },
+   "rdPartido": {
+    "nac": 45
+   },
+   "rebPartido": {
+    "nac": 30
+   },
+   "asPartido": {
+    "nac": 54
+   },
+   "brPartido": {
+    "nac": 32
+   },
+   "bpPartido": {
+    "nac": 16
+   },
+   "fcPartido": {
+    "nac": 36
+   }
+  }
  },
  {
   "id": "950687",
@@ -4096,6 +7972,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 70.8,
   "pcPartido": 76.1,
@@ -4117,7 +8006,7 @@
   "ortg": 90.18,
   "drtg": 98.33,
   "netrtg": -8.15,
-  "srs": -4.65,
+  "srs": -7.56,
   "efg": 44.8,
   "tovPct": 19.61,
   "orbPct": 29.87,
@@ -4137,7 +8026,51 @@
   "forma5": "0-5",
   "forma5Dif": -14.6,
   "victoriasEsperadas": 8.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 39
+   },
+   "ortg": {
+    "nac": 26
+   },
+   "drtg": {
+    "nac": 76
+   },
+   "pfPartido": {
+    "nac": 21
+   },
+   "pcPartido": {
+    "nac": 58
+   },
+   "t2PctEq": {
+    "nac": 20
+   },
+   "t3PctEq": {
+    "nac": 51
+   },
+   "roPartido": {
+    "nac": 66
+   },
+   "rdPartido": {
+    "nac": 61
+   },
+   "rebPartido": {
+    "nac": 66
+   },
+   "asPartido": {
+    "nac": 36
+   },
+   "brPartido": {
+    "nac": 23
+   },
+   "bpPartido": {
+    "nac": 64
+   },
+   "fcPartido": {
+    "nac": 66
+   }
+  }
  },
  {
   "id": "950764",
@@ -4156,6 +8089,19 @@
   "fuera": {
    "pj": 13,
    "pg": 1
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 3,
+   "pp": 23,
+   "casa": {
+    "pj": 13,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 1
+   }
   },
   "pfPartido": 64.5,
   "pcPartido": 80.8,
@@ -4177,7 +8123,7 @@
   "ortg": 80.92,
   "drtg": 101.15,
   "netrtg": -20.23,
-  "srs": -15.87,
+  "srs": -18.78,
   "efg": 41.91,
   "tovPct": 23.79,
   "orbPct": 25.72,
@@ -4197,7 +8143,51 @@
   "forma5": "0-5",
   "forma5Dif": -25.2,
   "victoriasEsperadas": 2.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 57
+   },
+   "ortg": {
+    "nac": 1
+   },
+   "drtg": {
+    "nac": 89
+   },
+   "pfPartido": {
+    "nac": 3
+   },
+   "pcPartido": {
+    "nac": 84
+   },
+   "t2PctEq": {
+    "nac": 13
+   },
+   "t3PctEq": {
+    "nac": 2
+   },
+   "roPartido": {
+    "nac": 20
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 28
+   },
+   "asPartido": {
+    "nac": 25
+   },
+   "brPartido": {
+    "nac": 50
+   },
+   "bpPartido": {
+    "nac": 99
+   },
+   "fcPartido": {
+    "nac": 66
+   }
+  }
  },
  {
   "id": "950874",
@@ -4216,6 +8206,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 79,
   "pcPartido": 70.2,
@@ -4237,7 +8240,7 @@
   "ortg": 99.67,
   "drtg": 87.2,
   "netrtg": 12.47,
-  "srs": 11.94,
+  "srs": 11.58,
   "efg": 50.47,
   "tovPct": 22.84,
   "orbPct": 38.58,
@@ -4257,7 +8260,51 @@
   "forma5": "3-2",
   "forma5Dif": -6.2,
   "victoriasEsperadas": 20.1,
-  "suerte": -2.1
+  "suerte": -2.1,
+  "percentiles": {
+   "pace": {
+    "nac": 50
+   },
+   "ortg": {
+    "nac": 80
+   },
+   "drtg": {
+    "nac": 11
+   },
+   "pfPartido": {
+    "nac": 77
+   },
+   "pcPartido": {
+    "nac": 17
+   },
+   "t2PctEq": {
+    "nac": 96
+   },
+   "t3PctEq": {
+    "nac": 67
+   },
+   "roPartido": {
+    "nac": 93
+   },
+   "rdPartido": {
+    "nac": 89
+   },
+   "rebPartido": {
+    "nac": 91
+   },
+   "asPartido": {
+    "nac": 77
+   },
+   "brPartido": {
+    "nac": 56
+   },
+   "bpPartido": {
+    "nac": 96
+   },
+   "fcPartido": {
+    "nac": 73
+   }
+  }
  },
  {
   "id": "950728",
@@ -4276,6 +8323,19 @@
   "fuera": {
    "pj": 13,
    "pg": 11
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 21,
+   "pp": 5,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 11
+   }
   },
   "pfPartido": 79.7,
   "pcPartido": 72.1,
@@ -4297,7 +8357,7 @@
   "ortg": 102.86,
   "drtg": 92.77,
   "netrtg": 10.09,
-  "srs": 9.73,
+  "srs": 9.37,
   "efg": 51.22,
   "tovPct": 17.37,
   "orbPct": 28.62,
@@ -4317,7 +8377,51 @@
   "forma5": "4-1",
   "forma5Dif": 9.6,
   "victoriasEsperadas": 19.2,
-  "suerte": 1.8
+  "suerte": 1.8,
+  "percentiles": {
+   "pace": {
+    "nac": 23
+   },
+   "ortg": {
+    "nac": 90
+   },
+   "drtg": {
+    "nac": 39
+   },
+   "pfPartido": {
+    "nac": 81
+   },
+   "pcPartido": {
+    "nac": 30
+   },
+   "t2PctEq": {
+    "nac": 99
+   },
+   "t3PctEq": {
+    "nac": 42
+   },
+   "roPartido": {
+    "nac": 20
+   },
+   "rdPartido": {
+    "nac": 66
+   },
+   "rebPartido": {
+    "nac": 44
+   },
+   "asPartido": {
+    "nac": 83
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 21
+   },
+   "fcPartido": {
+    "nac": 36
+   }
+  }
  },
  {
   "id": "950688",
@@ -4336,6 +8440,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 19,
+   "pp": 7,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 78.1,
   "pcPartido": 71.3,
@@ -4357,7 +8474,7 @@
   "ortg": 100.06,
   "drtg": 91.04,
   "netrtg": 9.02,
-  "srs": 8.74,
+  "srs": 8.38,
   "efg": 48.6,
   "tovPct": 17.3,
   "orbPct": 29.36,
@@ -4377,7 +8494,51 @@
   "forma5": "3-2",
   "forma5Dif": 16.6,
   "victoriasEsperadas": 18.6,
-  "suerte": 0.4
+  "suerte": 0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 34
+   },
+   "ortg": {
+    "nac": 82
+   },
+   "drtg": {
+    "nac": 23
+   },
+   "pfPartido": {
+    "nac": 69
+   },
+   "pcPartido": {
+    "nac": 25
+   },
+   "t2PctEq": {
+    "nac": 53
+   },
+   "t3PctEq": {
+    "nac": 92
+   },
+   "roPartido": {
+    "nac": 43
+   },
+   "rdPartido": {
+    "nac": 92
+   },
+   "rebPartido": {
+    "nac": 85
+   },
+   "asPartido": {
+    "nac": 80
+   },
+   "brPartido": {
+    "nac": 7
+   },
+   "bpPartido": {
+    "nac": 21
+   },
+   "fcPartido": {
+    "nac": 51
+   }
+  }
  },
  {
   "id": "952192",
@@ -4396,6 +8557,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 19,
+   "pp": 7,
+   "casa": {
+    "pj": 13,
+    "pg": 13
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 78.9,
   "pcPartido": 71.9,
@@ -4417,7 +8591,7 @@
   "ortg": 98.38,
   "drtg": 90.55,
   "netrtg": 7.83,
-  "srs": 7.63,
+  "srs": 7.27,
   "efg": 48.16,
   "tovPct": 19.81,
   "orbPct": 32.51,
@@ -4437,7 +8611,51 @@
   "forma5": "4-1",
   "forma5Dif": 8,
   "victoriasEsperadas": 18.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 61
+   },
+   "ortg": {
+    "nac": 69
+   },
+   "drtg": {
+    "nac": 19
+   },
+   "pfPartido": {
+    "nac": 77
+   },
+   "pcPartido": {
+    "nac": 28
+   },
+   "t2PctEq": {
+    "nac": 85
+   },
+   "t3PctEq": {
+    "nac": 63
+   },
+   "roPartido": {
+    "nac": 82
+   },
+   "rdPartido": {
+    "nac": 19
+   },
+   "rebPartido": {
+    "nac": 47
+   },
+   "asPartido": {
+    "nac": 90
+   },
+   "brPartido": {
+    "nac": 66
+   },
+   "bpPartido": {
+    "nac": 74
+   },
+   "fcPartido": {
+    "nac": 93
+   }
+  }
  },
  {
   "id": "950734",
@@ -4456,6 +8674,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 81.4,
   "pcPartido": 78.3,
@@ -4477,7 +8708,7 @@
   "ortg": 100.3,
   "drtg": 96.97,
   "netrtg": 3.33,
-  "srs": 3.46,
+  "srs": 3.1,
   "efg": 49.97,
   "tovPct": 17.82,
   "orbPct": 25.3,
@@ -4497,7 +8728,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.4,
   "victoriasEsperadas": 15.5,
-  "suerte": -1.5
+  "suerte": -1.5,
+  "percentiles": {
+   "pace": {
+    "nac": 69
+   },
+   "ortg": {
+    "nac": 83
+   },
+   "drtg": {
+    "nac": 67
+   },
+   "pfPartido": {
+    "nac": 88
+   },
+   "pcPartido": {
+    "nac": 69
+   },
+   "t2PctEq": {
+    "nac": 93
+   },
+   "t3PctEq": {
+    "nac": 65
+   },
+   "roPartido": {
+    "nac": 10
+   },
+   "rdPartido": {
+    "nac": 28
+   },
+   "rebPartido": {
+    "nac": 12
+   },
+   "asPartido": {
+    "nac": 80
+   },
+   "brPartido": {
+    "nac": 77
+   },
+   "bpPartido": {
+    "nac": 38
+   },
+   "fcPartido": {
+    "nac": 64
+   }
+  }
  },
  {
   "id": "950925",
@@ -4516,6 +8791,19 @@
   "fuera": {
    "pj": 13,
    "pg": 4
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 73.2,
   "pcPartido": 72.4,
@@ -4537,7 +8825,7 @@
   "ortg": 98.68,
   "drtg": 96.73,
   "netrtg": 1.95,
-  "srs": 2.17,
+  "srs": 1.81,
   "efg": 46.79,
   "tovPct": 14.73,
   "orbPct": 28.31,
@@ -4557,7 +8845,51 @@
   "forma5": "3-2",
   "forma5Dif": 1.6,
   "victoriasEsperadas": 13.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 5
+   },
+   "ortg": {
+    "nac": 74
+   },
+   "drtg": {
+    "nac": 65
+   },
+   "pfPartido": {
+    "nac": 36
+   },
+   "pcPartido": {
+    "nac": 34
+   },
+   "t2PctEq": {
+    "nac": 66
+   },
+   "t3PctEq": {
+    "nac": 29
+   },
+   "roPartido": {
+    "nac": 31
+   },
+   "rdPartido": {
+    "nac": 18
+   },
+   "rebPartido": {
+    "nac": 16
+   },
+   "asPartido": {
+    "nac": 20
+   },
+   "brPartido": {
+    "nac": 56
+   },
+   "bpPartido": {
+    "nac": 1
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "950827",
@@ -4576,6 +8908,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 14,
+   "pp": 12,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 72.9,
   "pcPartido": 71.2,
@@ -4597,7 +8942,7 @@
   "ortg": 94.1,
   "drtg": 92.61,
   "netrtg": 1.49,
-  "srs": 1.74,
+  "srs": 1.38,
   "efg": 43.81,
   "tovPct": 15.34,
   "orbPct": 30.95,
@@ -4617,7 +8962,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.6,
   "victoriasEsperadas": 14.6,
-  "suerte": -0.6
+  "suerte": -0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 22
+   },
+   "ortg": {
+    "nac": 46
+   },
+   "drtg": {
+    "nac": 36
+   },
+   "pfPartido": {
+    "nac": 34
+   },
+   "pcPartido": {
+    "nac": 23
+   },
+   "t2PctEq": {
+    "nac": 30
+   },
+   "t3PctEq": {
+    "nac": 15
+   },
+   "roPartido": {
+    "nac": 86
+   },
+   "rdPartido": {
+    "nac": 6
+   },
+   "rebPartido": {
+    "nac": 33
+   },
+   "asPartido": {
+    "nac": 54
+   },
+   "brPartido": {
+    "nac": 96
+   },
+   "bpPartido": {
+    "nac": 2
+   },
+   "fcPartido": {
+    "nac": 90
+   }
+  }
  },
  {
   "id": "952555",
@@ -4636,6 +9025,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 8,
+   "pp": 18,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 76.8,
   "pcPartido": 78.3,
@@ -4657,7 +9059,7 @@
   "ortg": 93.64,
   "drtg": 96.13,
   "netrtg": -2.49,
-  "srs": -1.95,
+  "srs": -2.31,
   "efg": 47.15,
   "tovPct": 20.34,
   "orbPct": 31.75,
@@ -4677,7 +9079,51 @@
   "forma5": "2-3",
   "forma5Dif": 2.8,
   "victoriasEsperadas": 11.8,
-  "suerte": -3.8
+  "suerte": -3.8,
+  "percentiles": {
+   "pace": {
+    "nac": 78
+   },
+   "ortg": {
+    "nac": 42
+   },
+   "drtg": {
+    "nac": 61
+   },
+   "pfPartido": {
+    "nac": 61
+   },
+   "pcPartido": {
+    "nac": 69
+   },
+   "t2PctEq": {
+    "nac": 18
+   },
+   "t3PctEq": {
+    "nac": 94
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 20
+   },
+   "rebPartido": {
+    "nac": 47
+   },
+   "asPartido": {
+    "nac": 18
+   },
+   "brPartido": {
+    "nac": 84
+   },
+   "bpPartido": {
+    "nac": 87
+   },
+   "fcPartido": {
+    "nac": 77
+   }
+  }
  },
  {
   "id": "950808",
@@ -4696,6 +9142,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 72.8,
   "pcPartido": 75.6,
@@ -4717,7 +9176,7 @@
   "ortg": 93.49,
   "drtg": 96.95,
   "netrtg": -3.46,
-  "srs": -2.85,
+  "srs": -3.21,
   "efg": 46.57,
   "tovPct": 21.53,
   "orbPct": 34.84,
@@ -4737,7 +9196,51 @@
   "forma5": "2-3",
   "forma5Dif": 1.6,
   "victoriasEsperadas": 10.5,
-  "suerte": -0.5
+  "suerte": -0.5,
+  "percentiles": {
+   "pace": {
+    "nac": 31
+   },
+   "ortg": {
+    "nac": 42
+   },
+   "drtg": {
+    "nac": 66
+   },
+   "pfPartido": {
+    "nac": 32
+   },
+   "pcPartido": {
+    "nac": 53
+   },
+   "t2PctEq": {
+    "nac": 58
+   },
+   "t3PctEq": {
+    "nac": 45
+   },
+   "roPartido": {
+    "nac": 93
+   },
+   "rdPartido": {
+    "nac": 23
+   },
+   "rebPartido": {
+    "nac": 59
+   },
+   "asPartido": {
+    "nac": 74
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 88
+   },
+   "fcPartido": {
+    "nac": 84
+   }
+  }
  },
  {
   "id": "950867",
@@ -4756,6 +9259,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 8,
+   "pp": 18,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 68.3,
   "pcPartido": 71.3,
@@ -4777,7 +9293,7 @@
   "ortg": 88.63,
   "drtg": 92.76,
   "netrtg": -4.13,
-  "srs": -3.47,
+  "srs": -3.83,
   "efg": 45.92,
   "tovPct": 20.75,
   "orbPct": 26.7,
@@ -4797,7 +9313,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.4,
   "victoriasEsperadas": 10.3,
-  "suerte": -2.3
+  "suerte": -2.3,
+  "percentiles": {
+   "pace": {
+    "nac": 18
+   },
+   "ortg": {
+    "nac": 18
+   },
+   "drtg": {
+    "nac": 38
+   },
+   "pfPartido": {
+    "nac": 12
+   },
+   "pcPartido": {
+    "nac": 25
+   },
+   "t2PctEq": {
+    "nac": 56
+   },
+   "t3PctEq": {
+    "nac": 19
+   },
+   "roPartido": {
+    "nac": 21
+   },
+   "rdPartido": {
+    "nac": 72
+   },
+   "rebPartido": {
+    "nac": 49
+   },
+   "asPartido": {
+    "nac": 83
+   },
+   "brPartido": {
+    "nac": 12
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 6
+   }
+  }
  },
  {
   "id": "951297",
@@ -4816,6 +9376,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 71.8,
   "pcPartido": 75.8,
@@ -4837,7 +9410,7 @@
   "ortg": 90.69,
   "drtg": 96.38,
   "netrtg": -5.69,
-  "srs": -4.92,
+  "srs": -5.28,
   "efg": 42.6,
   "tovPct": 16.81,
   "orbPct": 28.56,
@@ -4857,7 +9430,51 @@
   "forma5": "2-3",
   "forma5Dif": -4.2,
   "victoriasEsperadas": 9.5,
-  "suerte": 1.5
+  "suerte": 1.5,
+  "percentiles": {
+   "pace": {
+    "nac": 48
+   },
+   "ortg": {
+    "nac": 30
+   },
+   "drtg": {
+    "nac": 63
+   },
+   "pfPartido": {
+    "nac": 27
+   },
+   "pcPartido": {
+    "nac": 55
+   },
+   "t2PctEq": {
+    "nac": 19
+   },
+   "t3PctEq": {
+    "nac": 9
+   },
+   "roPartido": {
+    "nac": 58
+   },
+   "rdPartido": {
+    "nac": 3
+   },
+   "rebPartido": {
+    "nac": 9
+   },
+   "asPartido": {
+    "nac": 15
+   },
+   "brPartido": {
+    "nac": 85
+   },
+   "bpPartido": {
+    "nac": 16
+   },
+   "fcPartido": {
+    "nac": 88
+   }
+  }
  },
  {
   "id": "951963",
@@ -4876,6 +9493,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 78.6,
   "pcPartido": 83.4,
@@ -4897,7 +9527,7 @@
   "ortg": 101.57,
   "drtg": 108.11,
   "netrtg": -6.54,
-  "srs": -5.71,
+  "srs": -6.07,
   "efg": 52.47,
   "tovPct": 19.29,
   "orbPct": 26.19,
@@ -4917,7 +9547,51 @@
   "forma5": "1-4",
   "forma5Dif": -10.8,
   "victoriasEsperadas": 9.1,
-  "suerte": 0.9
+  "suerte": 0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 21
+   },
+   "ortg": {
+    "nac": 87
+   },
+   "drtg": {
+    "nac": 100
+   },
+   "pfPartido": {
+    "nac": 73
+   },
+   "pcPartido": {
+    "nac": 92
+   },
+   "t2PctEq": {
+    "nac": 91
+   },
+   "t3PctEq": {
+    "nac": 99
+   },
+   "roPartido": {
+    "nac": 6
+   },
+   "rdPartido": {
+    "nac": 12
+   },
+   "rebPartido": {
+    "nac": 4
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 47
+   },
+   "fcPartido": {
+    "nac": 90
+   }
+  }
  },
  {
   "id": "951389",
@@ -4936,6 +9610,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 11,
+   "pp": 15,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 70.6,
   "pcPartido": 76.5,
@@ -4957,7 +9644,7 @@
   "ortg": 90.18,
   "drtg": 98.44,
   "netrtg": -8.26,
-  "srs": -7.31,
+  "srs": -7.67,
   "efg": 46.03,
   "tovPct": 20.64,
   "orbPct": 28.68,
@@ -4977,7 +9664,51 @@
   "forma5": "1-4",
   "forma5Dif": -11.8,
   "victoriasEsperadas": 7.9,
-  "suerte": 3.1
+  "suerte": 3.1,
+  "percentiles": {
+   "pace": {
+    "nac": 36
+   },
+   "ortg": {
+    "nac": 26
+   },
+   "drtg": {
+    "nac": 77
+   },
+   "pfPartido": {
+    "nac": 20
+   },
+   "pcPartido": {
+    "nac": 60
+   },
+   "t2PctEq": {
+    "nac": 28
+   },
+   "t3PctEq": {
+    "nac": 72
+   },
+   "roPartido": {
+    "nac": 39
+   },
+   "rdPartido": {
+    "nac": 28
+   },
+   "rebPartido": {
+    "nac": 26
+   },
+   "asPartido": {
+    "nac": 31
+   },
+   "brPartido": {
+    "nac": 51
+   },
+   "bpPartido": {
+    "nac": 81
+   },
+   "fcPartido": {
+    "nac": 69
+   }
+  }
  },
  {
   "id": "952326",
@@ -4996,6 +9727,19 @@
   "fuera": {
    "pj": 13,
    "pg": 0
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 5,
+   "pp": 21,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 0
+   }
   },
   "pfPartido": 71.8,
   "pcPartido": 85.8,
@@ -5017,7 +9761,7 @@
   "ortg": 90.44,
   "drtg": 105.94,
   "netrtg": -15.51,
-  "srs": -14.04,
+  "srs": -14.4,
   "efg": 46.23,
   "tovPct": 18.17,
   "orbPct": 21.88,
@@ -5037,7 +9781,51 @@
   "forma5": "1-4",
   "forma5Dif": -20.6,
   "victoriasEsperadas": 3.6,
-  "suerte": 1.4
+  "suerte": 1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 52
+   },
+   "ortg": {
+    "nac": 29
+   },
+   "drtg": {
+    "nac": 99
+   },
+   "pfPartido": {
+    "nac": 27
+   },
+   "pcPartido": {
+    "nac": 96
+   },
+   "t2PctEq": {
+    "nac": 35
+   },
+   "t3PctEq": {
+    "nac": 66
+   },
+   "roPartido": {
+    "nac": 6
+   },
+   "rdPartido": {
+    "nac": 39
+   },
+   "rebPartido": {
+    "nac": 12
+   },
+   "asPartido": {
+    "nac": 42
+   },
+   "brPartido": {
+    "nac": 12
+   },
+   "bpPartido": {
+    "nac": 36
+   },
+   "fcPartido": {
+    "nac": 19
+   }
+  }
  },
  {
   "id": "950943",
@@ -5056,6 +9844,19 @@
   "fuera": {
    "pj": 12,
    "pg": 10
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 22,
+   "pp": 2,
+   "casa": {
+    "pj": 12,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 10
+   }
   },
   "pfPartido": 82.5,
   "pcPartido": 67.1,
@@ -5077,7 +9878,7 @@
   "ortg": 105.32,
   "drtg": 85.91,
   "netrtg": 19.41,
-  "srs": 14.54,
+  "srs": 17.91,
   "efg": 50.13,
   "tovPct": 16.48,
   "orbPct": 34,
@@ -5097,7 +9898,51 @@
   "forma5": "5-0",
   "forma5Dif": 10.2,
   "victoriasEsperadas": 21.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 38
+   },
+   "ortg": {
+    "nac": 97
+   },
+   "drtg": {
+    "nac": 7
+   },
+   "pfPartido": {
+    "nac": 91
+   },
+   "pcPartido": {
+    "nac": 7
+   },
+   "t2PctEq": {
+    "nac": 96
+   },
+   "t3PctEq": {
+    "nac": 76
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 96
+   },
+   "rebPartido": {
+    "nac": 93
+   },
+   "asPartido": {
+    "nac": 77
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 12
+   },
+   "fcPartido": {
+    "nac": 12
+   }
+  }
  },
  {
   "id": "951750",
@@ -5116,6 +9961,19 @@
   "fuera": {
    "pj": 12,
    "pg": 10
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 22,
+   "pp": 2,
+   "casa": {
+    "pj": 12,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 10
+   }
   },
   "pfPartido": 90.6,
   "pcPartido": 73.7,
@@ -5137,7 +9995,7 @@
   "ortg": 103.22,
   "drtg": 86.27,
   "netrtg": 16.96,
-  "srs": 12.28,
+  "srs": 15.65,
   "efg": 46.96,
   "tovPct": 18.22,
   "orbPct": 38.79,
@@ -5157,7 +10015,51 @@
   "forma5": "4-1",
   "forma5Dif": 9,
   "victoriasEsperadas": 21.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 99
+   },
+   "ortg": {
+    "nac": 91
+   },
+   "drtg": {
+    "nac": 8
+   },
+   "pfPartido": {
+    "nac": 99
+   },
+   "pcPartido": {
+    "nac": 42
+   },
+   "t2PctEq": {
+    "nac": 67
+   },
+   "t3PctEq": {
+    "nac": 53
+   },
+   "roPartido": {
+    "nac": 100
+   },
+   "rdPartido": {
+    "nac": 100
+   },
+   "rebPartido": {
+    "nac": 100
+   },
+   "asPartido": {
+    "nac": 69
+   },
+   "brPartido": {
+    "nac": 89
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 53
+   }
+  }
  },
  {
   "id": "950945",
@@ -5176,6 +10078,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 17,
+   "pp": 7,
+   "casa": {
+    "pj": 12,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 81,
   "pcPartido": 72.7,
@@ -5197,7 +10112,7 @@
   "ortg": 103.8,
   "drtg": 93.53,
   "netrtg": 10.27,
-  "srs": 6.11,
+  "srs": 9.48,
   "efg": 48.68,
   "tovPct": 17.62,
   "orbPct": 31.19,
@@ -5217,7 +10132,51 @@
   "forma5": "4-1",
   "forma5Dif": 10,
   "victoriasEsperadas": 18.1,
-  "suerte": -1.1
+  "suerte": -1.1,
+  "percentiles": {
+   "pace": {
+    "nac": 34
+   },
+   "ortg": {
+    "nac": 93
+   },
+   "drtg": {
+    "nac": 45
+   },
+   "pfPartido": {
+    "nac": 87
+   },
+   "pcPartido": {
+    "nac": 36
+   },
+   "t2PctEq": {
+    "nac": 82
+   },
+   "t3PctEq": {
+    "nac": 47
+   },
+   "roPartido": {
+    "nac": 42
+   },
+   "rdPartido": {
+    "nac": 34
+   },
+   "rebPartido": {
+    "nac": 33
+   },
+   "asPartido": {
+    "nac": 45
+   },
+   "brPartido": {
+    "nac": 51
+   },
+   "bpPartido": {
+    "nac": 27
+   },
+   "fcPartido": {
+    "nac": 54
+   }
+  }
  },
  {
   "id": "952016",
@@ -5236,6 +10195,19 @@
   "fuera": {
    "pj": 12,
    "pg": 6
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 14,
+   "pp": 10,
+   "casa": {
+    "pj": 12,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 6
+   }
   },
   "pfPartido": 80.6,
   "pcPartido": 73.4,
@@ -5257,7 +10229,7 @@
   "ortg": 99.97,
   "drtg": 92.68,
   "netrtg": 7.28,
-  "srs": 3.35,
+  "srs": 6.72,
   "efg": 47.82,
   "tovPct": 18.24,
   "orbPct": 35.53,
@@ -5277,7 +10249,51 @@
   "forma5": "2-3",
   "forma5Dif": 11,
   "victoriasEsperadas": 17.4,
-  "suerte": -3.4
+  "suerte": -3.4,
+  "percentiles": {
+   "pace": {
+    "nac": 63
+   },
+   "ortg": {
+    "nac": 81
+   },
+   "drtg": {
+    "nac": 36
+   },
+   "pfPartido": {
+    "nac": 85
+   },
+   "pcPartido": {
+    "nac": 40
+   },
+   "t2PctEq": {
+    "nac": 66
+   },
+   "t3PctEq": {
+    "nac": 61
+   },
+   "roPartido": {
+    "nac": 97
+   },
+   "rdPartido": {
+    "nac": 39
+   },
+   "rebPartido": {
+    "nac": 83
+   },
+   "asPartido": {
+    "nac": 49
+   },
+   "brPartido": {
+    "nac": 94
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 69
+   }
+  }
  },
  {
   "id": "951751",
@@ -5296,6 +10312,19 @@
   "fuera": {
    "pj": 12,
    "pg": 6
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 12,
+   "pp": 12,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 6
+   }
   },
   "pfPartido": 79.6,
   "pcPartido": 79.1,
@@ -5317,7 +10346,7 @@
   "ortg": 98.67,
   "drtg": 97.4,
   "netrtg": 1.27,
-  "srs": -2.2,
+  "srs": 1.17,
   "efg": 48.67,
   "tovPct": 18.13,
   "orbPct": 29.5,
@@ -5337,7 +10366,51 @@
   "forma5": "2-3",
   "forma5Dif": -1.8,
   "victoriasEsperadas": 12.4,
-  "suerte": -0.4
+  "suerte": -0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 64
+   },
+   "ortg": {
+    "nac": 74
+   },
+   "drtg": {
+    "nac": 70
+   },
+   "pfPartido": {
+    "nac": 80
+   },
+   "pcPartido": {
+    "nac": 76
+   },
+   "t2PctEq": {
+    "nac": 83
+   },
+   "t3PctEq": {
+    "nac": 64
+   },
+   "roPartido": {
+    "nac": 58
+   },
+   "rdPartido": {
+    "nac": 66
+   },
+   "rebPartido": {
+    "nac": 66
+   },
+   "asPartido": {
+    "nac": 39
+   },
+   "brPartido": {
+    "nac": 50
+   },
+   "bpPartido": {
+    "nac": 41
+   },
+   "fcPartido": {
+    "nac": 82
+   }
+  }
  },
  {
   "id": "951021",
@@ -5356,6 +10429,19 @@
   "fuera": {
    "pj": 12,
    "pg": 4
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 12,
+   "pp": 12,
+   "casa": {
+    "pj": 12,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 4
+   }
   },
   "pfPartido": 71.5,
   "pcPartido": 72.2,
@@ -5377,7 +10463,7 @@
   "ortg": 90.33,
   "drtg": 90.72,
   "netrtg": -0.4,
-  "srs": -3.74,
+  "srs": -0.37,
   "efg": 45.32,
   "tovPct": 20.32,
   "orbPct": 28.82,
@@ -5397,7 +10483,51 @@
   "forma5": "2-3",
   "forma5Dif": -9.4,
   "victoriasEsperadas": 11.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 47
+   },
+   "ortg": {
+    "nac": 28
+   },
+   "drtg": {
+    "nac": 20
+   },
+   "pfPartido": {
+    "nac": 24
+   },
+   "pcPartido": {
+    "nac": 33
+   },
+   "t2PctEq": {
+    "nac": 34
+   },
+   "t3PctEq": {
+    "nac": 44
+   },
+   "roPartido": {
+    "nac": 60
+   },
+   "rdPartido": {
+    "nac": 72
+   },
+   "rebPartido": {
+    "nac": 70
+   },
+   "asPartido": {
+    "nac": 34
+   },
+   "brPartido": {
+    "nac": 46
+   },
+   "bpPartido": {
+    "nac": 80
+   },
+   "fcPartido": {
+    "nac": 80
+   }
+  }
  },
  {
   "id": "950948",
@@ -5416,6 +10546,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 7,
+   "pp": 17,
+   "casa": {
+    "pj": 12,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 73.5,
   "pcPartido": 78.6,
@@ -5437,7 +10580,7 @@
   "ortg": 90.75,
   "drtg": 95.14,
   "netrtg": -4.4,
-  "srs": -7.43,
+  "srs": -4.06,
   "efg": 44.88,
   "tovPct": 20.42,
   "orbPct": 31.94,
@@ -5457,7 +10600,51 @@
   "forma5": "0-5",
   "forma5Dif": -10.8,
   "victoriasEsperadas": 8,
-  "suerte": -1
+  "suerte": -1,
+  "percentiles": {
+   "pace": {
+    "nac": 67
+   },
+   "ortg": {
+    "nac": 31
+   },
+   "drtg": {
+    "nac": 55
+   },
+   "pfPartido": {
+    "nac": 38
+   },
+   "pcPartido": {
+    "nac": 71
+   },
+   "t2PctEq": {
+    "nac": 17
+   },
+   "t3PctEq": {
+    "nac": 55
+   },
+   "roPartido": {
+    "nac": 85
+   },
+   "rdPartido": {
+    "nac": 48
+   },
+   "rebPartido": {
+    "nac": 69
+   },
+   "asPartido": {
+    "nac": 42
+   },
+   "brPartido": {
+    "nac": 63
+   },
+   "bpPartido": {
+    "nac": 82
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "951291",
@@ -5476,6 +10663,19 @@
   "fuera": {
    "pj": 12,
    "pg": 2
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 8,
+   "pp": 16,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 2
+   }
   },
   "pfPartido": 63.5,
   "pcPartido": 67.9,
@@ -5497,7 +10697,7 @@
   "ortg": 85.77,
   "drtg": 91.35,
   "netrtg": -5.58,
-  "srs": -8.53,
+  "srs": -5.16,
   "efg": 43,
   "tovPct": 20.7,
   "orbPct": 28.52,
@@ -5517,7 +10717,51 @@
   "forma5": "2-3",
   "forma5Dif": -0.2,
   "victoriasEsperadas": 8.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 4
+   },
+   "ortg": {
+    "nac": 8
+   },
+   "drtg": {
+    "nac": 27
+   },
+   "pfPartido": {
+    "nac": 1
+   },
+   "pcPartido": {
+    "nac": 8
+   },
+   "t2PctEq": {
+    "nac": 24
+   },
+   "t3PctEq": {
+    "nac": 7
+   },
+   "roPartido": {
+    "nac": 31
+   },
+   "rdPartido": {
+    "nac": 45
+   },
+   "rebPartido": {
+    "nac": 38
+   },
+   "asPartido": {
+    "nac": 9
+   },
+   "brPartido": {
+    "nac": 32
+   },
+   "bpPartido": {
+    "nac": 61
+   },
+   "fcPartido": {
+    "nac": 31
+   }
+  }
  },
  {
   "id": "951281",
@@ -5536,6 +10780,19 @@
   "fuera": {
    "pj": 12,
    "pg": 4
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 10,
+   "pp": 14,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 4
+   }
   },
   "pfPartido": 66.8,
   "pcPartido": 71.5,
@@ -5557,7 +10814,7 @@
   "ortg": 86.14,
   "drtg": 92.6,
   "netrtg": -6.46,
-  "srs": -9.34,
+  "srs": -5.97,
   "efg": 44.89,
   "tovPct": 18.8,
   "orbPct": 18.18,
@@ -5577,7 +10834,51 @@
   "forma5": "3-2",
   "forma5Dif": -1,
   "victoriasEsperadas": 8,
-  "suerte": 2
+  "suerte": 2,
+  "percentiles": {
+   "pace": {
+    "nac": 25
+   },
+   "ortg": {
+    "nac": 9
+   },
+   "drtg": {
+    "nac": 35
+   },
+   "pfPartido": {
+    "nac": 7
+   },
+   "pcPartido": {
+    "nac": 26
+   },
+   "t2PctEq": {
+    "nac": 47
+   },
+   "t3PctEq": {
+    "nac": 27
+   },
+   "roPartido": {
+    "nac": 1
+   },
+   "rdPartido": {
+    "nac": 56
+   },
+   "rebPartido": {
+    "nac": 8
+   },
+   "asPartido": {
+    "nac": 51
+   },
+   "brPartido": {
+    "nac": 73
+   },
+   "bpPartido": {
+    "nac": 41
+   },
+   "fcPartido": {
+    "nac": 9
+   }
+  }
  },
  {
   "id": "952020",
@@ -5596,6 +10897,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 8,
+   "pp": 16,
+   "casa": {
+    "pj": 12,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 69.4,
   "pcPartido": 76.4,
@@ -5617,7 +10931,7 @@
   "ortg": 88.4,
   "drtg": 95.61,
   "netrtg": -7.21,
-  "srs": -10.03,
+  "srs": -6.66,
   "efg": 45.86,
   "tovPct": 20,
   "orbPct": 21.73,
@@ -5637,7 +10951,51 @@
   "forma5": "2-3",
   "forma5Dif": -2.2,
   "victoriasEsperadas": 6.6,
-  "suerte": 1.4
+  "suerte": 1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 40
+   },
+   "ortg": {
+    "nac": 15
+   },
+   "drtg": {
+    "nac": 58
+   },
+   "pfPartido": {
+    "nac": 17
+   },
+   "pcPartido": {
+    "nac": 58
+   },
+   "t2PctEq": {
+    "nac": 53
+   },
+   "t3PctEq": {
+    "nac": 34
+   },
+   "roPartido": {
+    "nac": 2
+   },
+   "rdPartido": {
+    "nac": 58
+   },
+   "rebPartido": {
+    "nac": 18
+   },
+   "asPartido": {
+    "nac": 4
+   },
+   "brPartido": {
+    "nac": 33
+   },
+   "bpPartido": {
+    "nac": 72
+   },
+   "fcPartido": {
+    "nac": 11
+   }
+  }
  },
  {
   "id": "951089",
@@ -5656,6 +11014,19 @@
   "fuera": {
    "pj": 12,
    "pg": 2
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 10,
+   "pp": 14,
+   "casa": {
+    "pj": 12,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 2
+   }
   },
   "pfPartido": 76.4,
   "pcPartido": 82.4,
@@ -5677,7 +11048,7 @@
   "ortg": 88.99,
   "drtg": 97.02,
   "netrtg": -8.04,
-  "srs": -10.79,
+  "srs": -7.42,
   "efg": 45.26,
   "tovPct": 21.01,
   "orbPct": 26.33,
@@ -5697,7 +11068,51 @@
   "forma5": "2-3",
   "forma5Dif": -2.8,
   "victoriasEsperadas": 7.6,
-  "suerte": 2.4
+  "suerte": 2.4,
+  "percentiles": {
+   "pace": {
+    "nac": 95
+   },
+   "ortg": {
+    "nac": 20
+   },
+   "drtg": {
+    "nac": 69
+   },
+   "pfPartido": {
+    "nac": 58
+   },
+   "pcPartido": {
+    "nac": 91
+   },
+   "t2PctEq": {
+    "nac": 42
+   },
+   "t3PctEq": {
+    "nac": 25
+   },
+   "roPartido": {
+    "nac": 42
+   },
+   "rdPartido": {
+    "nac": 23
+   },
+   "rebPartido": {
+    "nac": 24
+   },
+   "asPartido": {
+    "nac": 26
+   },
+   "brPartido": {
+    "nac": 100
+   },
+   "bpPartido": {
+    "nac": 95
+   },
+   "fcPartido": {
+    "nac": 77
+   }
+  }
  },
  {
   "id": "950944",
@@ -5716,6 +11131,19 @@
   "fuera": {
    "pj": 12,
    "pg": 5
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 8,
+   "pp": 16,
+   "casa": {
+    "pj": 12,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 5
+   }
   },
   "pfPartido": 73,
   "pcPartido": 80.3,
@@ -5737,7 +11165,7 @@
   "ortg": 89.69,
   "drtg": 99.01,
   "netrtg": -9.31,
-  "srs": -11.97,
+  "srs": -8.6,
   "efg": 42.28,
   "tovPct": 18.69,
   "orbPct": 28.19,
@@ -5757,7 +11185,51 @@
   "forma5": "2-3",
   "forma5Dif": -14.2,
   "victoriasEsperadas": 6.6,
-  "suerte": 1.4
+  "suerte": 1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 72
+   },
+   "ortg": {
+    "nac": 25
+   },
+   "drtg": {
+    "nac": 82
+   },
+   "pfPartido": {
+    "nac": 35
+   },
+   "pcPartido": {
+    "nac": 81
+   },
+   "t2PctEq": {
+    "nac": 4
+   },
+   "t3PctEq": {
+    "nac": 15
+   },
+   "roPartido": {
+    "nac": 66
+   },
+   "rdPartido": {
+    "nac": 45
+   },
+   "rebPartido": {
+    "nac": 55
+   },
+   "asPartido": {
+    "nac": 9
+   },
+   "brPartido": {
+    "nac": 20
+   },
+   "bpPartido": {
+    "nac": 57
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "952553",
@@ -5776,6 +11248,19 @@
   "fuera": {
    "pj": 12,
    "pg": 1
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 6,
+   "pp": 18,
+   "casa": {
+    "pj": 12,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 1
+   }
   },
   "pfPartido": 70.8,
   "pcPartido": 84.2,
@@ -5797,7 +11282,7 @@
   "ortg": 91.11,
   "drtg": 105.79,
   "netrtg": -14.68,
-  "srs": -16.93,
+  "srs": -13.56,
   "efg": 47.39,
   "tovPct": 19.56,
   "orbPct": 24.72,
@@ -5817,7 +11302,51 @@
   "forma5": "2-3",
   "forma5Dif": -4.8,
   "victoriasEsperadas": 3.5,
-  "suerte": 2.5
+  "suerte": 2.5,
+  "percentiles": {
+   "pace": {
+    "nac": 30
+   },
+   "ortg": {
+    "nac": 33
+   },
+   "drtg": {
+    "nac": 98
+   },
+   "pfPartido": {
+    "nac": 21
+   },
+   "pcPartido": {
+    "nac": 94
+   },
+   "t2PctEq": {
+    "nac": 39
+   },
+   "t3PctEq": {
+    "nac": 83
+   },
+   "roPartido": {
+    "nac": 15
+   },
+   "rdPartido": {
+    "nac": 14
+   },
+   "rebPartido": {
+    "nac": 7
+   },
+   "asPartido": {
+    "nac": 32
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 57
+   },
+   "fcPartido": {
+    "nac": 96
+   }
+  }
  },
  {
   "id": "952322",
@@ -5836,6 +11365,19 @@
   "fuera": {
    "pj": 12,
    "pg": 11
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 23,
+   "pp": 1,
+   "casa": {
+    "pj": 12,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 11
+   }
   },
   "pfPartido": 82.7,
   "pcPartido": 64.4,
@@ -5857,7 +11399,7 @@
   "ortg": 105.37,
   "drtg": 84.34,
   "netrtg": 21.02,
-  "srs": 22.86,
+  "srs": 19.35,
   "efg": 50.9,
   "tovPct": 15.92,
   "orbPct": 32.03,
@@ -5877,7 +11419,51 @@
   "forma5": "5-0",
   "forma5Dif": 19.2,
   "victoriasEsperadas": 22.3,
-  "suerte": 0.7
+  "suerte": 0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 39
+   },
+   "ortg": {
+    "nac": 98
+   },
+   "drtg": {
+    "nac": 5
+   },
+   "pfPartido": {
+    "nac": 92
+   },
+   "pcPartido": {
+    "nac": 2
+   },
+   "t2PctEq": {
+    "nac": 94
+   },
+   "t3PctEq": {
+    "nac": 87
+   },
+   "roPartido": {
+    "nac": 63
+   },
+   "rdPartido": {
+    "nac": 72
+   },
+   "rebPartido": {
+    "nac": 73
+   },
+   "asPartido": {
+    "nac": 72
+   },
+   "brPartido": {
+    "nac": 77
+   },
+   "bpPartido": {
+    "nac": 7
+   },
+   "fcPartido": {
+    "nac": 63
+   }
+  }
  },
  {
   "id": "950949",
@@ -5896,6 +11482,19 @@
   "fuera": {
    "pj": 12,
    "pg": 10
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 19,
+   "pp": 5,
+   "casa": {
+    "pj": 12,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 10
+   }
   },
   "pfPartido": 76.5,
   "pcPartido": 61.2,
@@ -5917,7 +11516,7 @@
   "ortg": 96.23,
   "drtg": 78.49,
   "netrtg": 17.74,
-  "srs": 19.83,
+  "srs": 16.32,
   "efg": 46.38,
   "tovPct": 19.45,
   "orbPct": 34.31,
@@ -5937,11 +11536,55 @@
   "forma5": "4-1",
   "forma5Dif": 13.6,
   "victoriasEsperadas": 21.8,
-  "suerte": -2.8
+  "suerte": -2.8,
+  "percentiles": {
+   "pace": {
+    "nac": 53
+   },
+   "ortg": {
+    "nac": 58
+   },
+   "drtg": {
+    "nac": 1
+   },
+   "pfPartido": {
+    "nac": 60
+   },
+   "pcPartido": {
+    "nac": 1
+   },
+   "t2PctEq": {
+    "nac": 72
+   },
+   "t3PctEq": {
+    "nac": 23
+   },
+   "roPartido": {
+    "nac": 82
+   },
+   "rdPartido": {
+    "nac": 48
+   },
+   "rebPartido": {
+    "nac": 66
+   },
+   "asPartido": {
+    "nac": 42
+   },
+   "brPartido": {
+    "nac": 99
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 34
+   }
+  }
  },
  {
   "id": "951838",
-  "idClub": "vitaly-mar-bcbadajoz",
+  "idClub": "bcbadajoz",
   "nombre": "VÍTALY LA MAR BCBADAJOZ",
   "grupo": "D-B",
   "pj": 24,
@@ -5956,6 +11599,19 @@
   "fuera": {
    "pj": 12,
    "pg": 9
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 18,
+   "pp": 6,
+   "casa": {
+    "pj": 12,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 9
+   }
   },
   "pfPartido": 77,
   "pcPartido": 70,
@@ -5977,7 +11633,7 @@
   "ortg": 98.55,
   "drtg": 91.32,
   "netrtg": 7.23,
-  "srs": 10.13,
+  "srs": 6.62,
   "efg": 46.82,
   "tovPct": 17.66,
   "orbPct": 29.47,
@@ -5997,7 +11653,51 @@
   "forma5": "4-1",
   "forma5Dif": 6.2,
   "victoriasEsperadas": 17.4,
-  "suerte": 0.6
+  "suerte": 0.6,
+  "percentiles": {
+   "pace": {
+    "nac": 35
+   },
+   "ortg": {
+    "nac": 71
+   },
+   "drtg": {
+    "nac": 26
+   },
+   "pfPartido": {
+    "nac": 64
+   },
+   "pcPartido": {
+    "nac": 15
+   },
+   "t2PctEq": {
+    "nac": 46
+   },
+   "t3PctEq": {
+    "nac": 66
+   },
+   "roPartido": {
+    "nac": 36
+   },
+   "rdPartido": {
+    "nac": 18
+   },
+   "rebPartido": {
+    "nac": 20
+   },
+   "asPartido": {
+    "nac": 22
+   },
+   "brPartido": {
+    "nac": 89
+   },
+   "bpPartido": {
+    "nac": 27
+   },
+   "fcPartido": {
+    "nac": 28
+   }
+  }
  },
  {
   "id": "950947",
@@ -6016,6 +11716,19 @@
   "fuera": {
    "pj": 12,
    "pg": 5
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 12,
+   "pp": 12,
+   "casa": {
+    "pj": 12,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 5
+   }
   },
   "pfPartido": 85.5,
   "pcPartido": 78.3,
@@ -6037,7 +11750,7 @@
   "ortg": 100.22,
   "drtg": 93.01,
   "netrtg": 7.2,
-  "srs": 10.11,
+  "srs": 6.59,
   "efg": 49.01,
   "tovPct": 19.11,
   "orbPct": 34.14,
@@ -6057,7 +11770,51 @@
   "forma5": "3-2",
   "forma5Dif": 13,
   "victoriasEsperadas": 17,
-  "suerte": -5
+  "suerte": -5,
+  "percentiles": {
+   "pace": {
+    "nac": 94
+   },
+   "ortg": {
+    "nac": 82
+   },
+   "drtg": {
+    "nac": 41
+   },
+   "pfPartido": {
+    "nac": 96
+   },
+   "pcPartido": {
+    "nac": 69
+   },
+   "t2PctEq": {
+    "nac": 88
+   },
+   "t3PctEq": {
+    "nac": 56
+   },
+   "roPartido": {
+    "nac": 91
+   },
+   "rdPartido": {
+    "nac": 91
+   },
+   "rebPartido": {
+    "nac": 92
+   },
+   "asPartido": {
+    "nac": 99
+   },
+   "brPartido": {
+    "nac": 68
+   },
+   "bpPartido": {
+    "nac": 82
+   },
+   "fcPartido": {
+    "nac": 77
+   }
+  }
  },
  {
   "id": "950950",
@@ -6076,6 +11833,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 15,
+   "pp": 9,
+   "casa": {
+    "pj": 12,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 78,
   "pcPartido": 73.8,
@@ -6097,7 +11867,7 @@
   "ortg": 96.64,
   "drtg": 92.31,
   "netrtg": 4.33,
-  "srs": 7.45,
+  "srs": 3.94,
   "efg": 46.88,
   "tovPct": 18.69,
   "orbPct": 32.44,
@@ -6117,7 +11887,51 @@
   "forma5": "1-4",
   "forma5Dif": -9,
   "victoriasEsperadas": 15.3,
-  "suerte": -0.3
+  "suerte": -0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 65
+   },
+   "ortg": {
+    "nac": 61
+   },
+   "drtg": {
+    "nac": 32
+   },
+   "pfPartido": {
+    "nac": 69
+   },
+   "pcPartido": {
+    "nac": 42
+   },
+   "t2PctEq": {
+    "nac": 86
+   },
+   "t3PctEq": {
+    "nac": 25
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 61
+   },
+   "rebPartido": {
+    "nac": 77
+   },
+   "asPartido": {
+    "nac": 4
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 73
+   }
+  }
  },
  {
   "id": "951365",
@@ -6136,6 +11950,19 @@
   "fuera": {
    "pj": 12,
    "pg": 9
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 15,
+   "pp": 9,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 9
+   }
   },
   "pfPartido": 73.3,
   "pcPartido": 72.2,
@@ -6157,7 +11984,7 @@
   "ortg": 90.31,
   "drtg": 89.78,
   "netrtg": 0.52,
-  "srs": 3.94,
+  "srs": 0.43,
   "efg": 42.2,
   "tovPct": 18.27,
   "orbPct": 31.5,
@@ -6177,7 +12004,51 @@
   "forma5": "4-1",
   "forma5Dif": 8.6,
   "victoriasEsperadas": 12.9,
-  "suerte": 2.1
+  "suerte": 2.1,
+  "percentiles": {
+   "pace": {
+    "nac": 69
+   },
+   "ortg": {
+    "nac": 28
+   },
+   "drtg": {
+    "nac": 15
+   },
+   "pfPartido": {
+    "nac": 36
+   },
+   "pcPartido": {
+    "nac": 33
+   },
+   "t2PctEq": {
+    "nac": 4
+   },
+   "t3PctEq": {
+    "nac": 14
+   },
+   "roPartido": {
+    "nac": 88
+   },
+   "rdPartido": {
+    "nac": 58
+   },
+   "rebPartido": {
+    "nac": 81
+   },
+   "asPartido": {
+    "nac": 64
+   },
+   "brPartido": {
+    "nac": 84
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 77
+   }
+  }
  },
  {
   "id": "950946",
@@ -6196,6 +12067,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 10,
+   "pp": 14,
+   "casa": {
+    "pj": 12,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 75.8,
   "pcPartido": 77,
@@ -6217,7 +12101,7 @@
   "ortg": 91.78,
   "drtg": 93.43,
   "netrtg": -1.65,
-  "srs": 1.93,
+  "srs": -1.58,
   "efg": 43.77,
   "tovPct": 16.15,
   "orbPct": 28.6,
@@ -6237,7 +12121,51 @@
   "forma5": "2-3",
   "forma5Dif": -2.2,
   "victoriasEsperadas": 11,
-  "suerte": -1
+  "suerte": -1,
+  "percentiles": {
+   "pace": {
+    "nac": 82
+   },
+   "ortg": {
+    "nac": 36
+   },
+   "drtg": {
+    "nac": 43
+   },
+   "pfPartido": {
+    "nac": 55
+   },
+   "pcPartido": {
+    "nac": 61
+   },
+   "t2PctEq": {
+    "nac": 11
+   },
+   "t3PctEq": {
+    "nac": 33
+   },
+   "roPartido": {
+    "nac": 81
+   },
+   "rdPartido": {
+    "nac": 48
+   },
+   "rebPartido": {
+    "nac": 63
+   },
+   "asPartido": {
+    "nac": 15
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 16
+   },
+   "fcPartido": {
+    "nac": 100
+   }
+  }
  },
  {
   "id": "952859",
@@ -6256,6 +12184,19 @@
   "fuera": {
    "pj": 12,
    "pg": 5
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 11,
+   "pp": 13,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 5
+   }
   },
   "pfPartido": 76.2,
   "pcPartido": 78.6,
@@ -6277,7 +12218,7 @@
   "ortg": 95.64,
   "drtg": 98.21,
   "netrtg": -2.57,
-  "srs": 1.08,
+  "srs": -2.43,
   "efg": 45.01,
   "tovPct": 15.74,
   "orbPct": 27.91,
@@ -6297,7 +12238,51 @@
   "forma5": "0-5",
   "forma5Dif": -11.6,
   "victoriasEsperadas": 10.1,
-  "suerte": 0.9
+  "suerte": 0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 56
+   },
+   "ortg": {
+    "nac": 55
+   },
+   "drtg": {
+    "nac": 75
+   },
+   "pfPartido": {
+    "nac": 56
+   },
+   "pcPartido": {
+    "nac": 71
+   },
+   "t2PctEq": {
+    "nac": 15
+   },
+   "t3PctEq": {
+    "nac": 61
+   },
+   "roPartido": {
+    "nac": 49
+   },
+   "rdPartido": {
+    "nac": 30
+   },
+   "rebPartido": {
+    "nac": 33
+   },
+   "asPartido": {
+    "nac": 1
+   },
+   "brPartido": {
+    "nac": 23
+   },
+   "bpPartido": {
+    "nac": 7
+   },
+   "fcPartido": {
+    "nac": 3
+   }
+  }
  },
  {
   "id": "951366",
@@ -6316,6 +12301,19 @@
   "fuera": {
    "pj": 11,
    "pg": 2
+  },
+  "balance": {
+   "pj": 23,
+   "pg": 6,
+   "pp": 17,
+   "casa": {
+    "pj": 12,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 11,
+    "pg": 2
+   }
   },
   "pfPartido": 71.6,
   "pcPartido": 76,
@@ -6337,7 +12335,7 @@
   "ortg": 88.47,
   "drtg": 93.9,
   "netrtg": -5.42,
-  "srs": -1.03,
+  "srs": -4.54,
   "efg": 43.29,
   "tovPct": 20.04,
   "orbPct": 29.25,
@@ -6357,7 +12355,51 @@
   "forma5": "2-3",
   "forma5Dif": 1.4,
   "victoriasEsperadas": 8.1,
-  "suerte": -2.1
+  "suerte": -2.1,
+  "percentiles": {
+   "pace": {
+    "nac": 66
+   },
+   "ortg": {
+    "nac": 16
+   },
+   "drtg": {
+    "nac": 46
+   },
+   "pfPartido": {
+    "nac": 26
+   },
+   "pcPartido": {
+    "nac": 57
+   },
+   "t2PctEq": {
+    "nac": 37
+   },
+   "t3PctEq": {
+    "nac": 4
+   },
+   "roPartido": {
+    "nac": 51
+   },
+   "rdPartido": {
+    "nac": 39
+   },
+   "rebPartido": {
+    "nac": 45
+   },
+   "asPartido": {
+    "nac": 33
+   },
+   "brPartido": {
+    "nac": 59
+   },
+   "bpPartido": {
+    "nac": 81
+   },
+   "fcPartido": {
+    "nac": 88
+   }
+  }
  },
  {
   "id": "952872",
@@ -6376,6 +12418,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 9,
+   "pp": 15,
+   "casa": {
+    "pj": 12,
+    "pg": 6
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 78.3,
   "pcPartido": 86.4,
@@ -6397,7 +12452,7 @@
   "ortg": 95.56,
   "drtg": 104.02,
   "netrtg": -8.46,
-  "srs": -4.36,
+  "srs": -7.87,
   "efg": 49.11,
   "tovPct": 19.52,
   "orbPct": 27.61,
@@ -6417,7 +12472,51 @@
   "forma5": "3-2",
   "forma5Dif": -1.4,
   "victoriasEsperadas": 6.4,
-  "suerte": 2.6
+  "suerte": 2.6,
+  "percentiles": {
+   "pace": {
+    "nac": 77
+   },
+   "ortg": {
+    "nac": 54
+   },
+   "drtg": {
+    "nac": 96
+   },
+   "pfPartido": {
+    "nac": 70
+   },
+   "pcPartido": {
+    "nac": 99
+   },
+   "t2PctEq": {
+    "nac": 77
+   },
+   "t3PctEq": {
+    "nac": 85
+   },
+   "roPartido": {
+    "nac": 31
+   },
+   "rdPartido": {
+    "nac": 27
+   },
+   "rebPartido": {
+    "nac": 20
+   },
+   "asPartido": {
+    "nac": 18
+   },
+   "brPartido": {
+    "nac": 50
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 47
+   }
+  }
  },
  {
   "id": "950653",
@@ -6436,6 +12535,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 8,
+   "pp": 16,
+   "casa": {
+    "pj": 12,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 67.8,
   "pcPartido": 81.3,
@@ -6457,7 +12569,7 @@
   "ortg": 87.91,
   "drtg": 98.68,
   "netrtg": -10.77,
-  "srs": -6.49,
+  "srs": -10,
   "efg": 46.3,
   "tovPct": 21.67,
   "orbPct": 23.9,
@@ -6477,7 +12589,51 @@
   "forma5": "0-5",
   "forma5Dif": -16.8,
   "victoriasEsperadas": 3.2,
-  "suerte": 4.8
+  "suerte": 4.8,
+  "percentiles": {
+   "pace": {
+    "nac": 19
+   },
+   "ortg": {
+    "nac": 14
+   },
+   "drtg": {
+    "nac": 79
+   },
+   "pfPartido": {
+    "nac": 10
+   },
+   "pcPartido": {
+    "nac": 86
+   },
+   "t2PctEq": {
+    "nac": 20
+   },
+   "t3PctEq": {
+    "nac": 86
+   },
+   "roPartido": {
+    "nac": 6
+   },
+   "rdPartido": {
+    "nac": 27
+   },
+   "rebPartido": {
+    "nac": 4
+   },
+   "asPartido": {
+    "nac": 6
+   },
+   "brPartido": {
+    "nac": 2
+   },
+   "bpPartido": {
+    "nac": 87
+   },
+   "fcPartido": {
+    "nac": 36
+   }
+  }
  },
  {
   "id": "951847",
@@ -6496,6 +12652,19 @@
   "fuera": {
    "pj": 12,
    "pg": 1
+  },
+  "balance": {
+   "pj": 23,
+   "pg": 4,
+   "pp": 19,
+   "casa": {
+    "pj": 11,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 1
+   }
   },
   "pfPartido": 67.4,
   "pcPartido": 78.7,
@@ -6517,7 +12686,7 @@
   "ortg": 85.22,
   "drtg": 98.98,
   "netrtg": -13.76,
-  "srs": -9.02,
+  "srs": -12.53,
   "efg": 42.38,
   "tovPct": 22.49,
   "orbPct": 31.72,
@@ -6537,7 +12706,51 @@
   "forma5": "2-3",
   "forma5Dif": -10.8,
   "victoriasEsperadas": 3.9,
-  "suerte": 0.1
+  "suerte": 0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 47
+   },
+   "ortg": {
+    "nac": 7
+   },
+   "drtg": {
+    "nac": 81
+   },
+   "pfPartido": {
+    "nac": 8
+   },
+   "pcPartido": {
+    "nac": 72
+   },
+   "t2PctEq": {
+    "nac": 31
+   },
+   "t3PctEq": {
+    "nac": 3
+   },
+   "roPartido": {
+    "nac": 66
+   },
+   "rdPartido": {
+    "nac": 43
+   },
+   "rebPartido": {
+    "nac": 54
+   },
+   "asPartido": {
+    "nac": 7
+   },
+   "brPartido": {
+    "nac": 3
+   },
+   "bpPartido": {
+    "nac": 94
+   },
+   "fcPartido": {
+    "nac": 38
+   }
+  }
  },
  {
   "id": "952554",
@@ -6556,6 +12769,19 @@
   "fuera": {
    "pj": 12,
    "pg": 0
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 5,
+   "pp": 19,
+   "casa": {
+    "pj": 12,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 0
+   }
   },
   "pfPartido": 66.5,
   "pcPartido": 79.3,
@@ -6577,7 +12803,7 @@
   "ortg": 84.47,
   "drtg": 99.78,
   "netrtg": -15.31,
-  "srs": -10.68,
+  "srs": -14.19,
   "efg": 43.17,
   "tovPct": 21.18,
   "orbPct": 25.72,
@@ -6597,7 +12823,51 @@
   "forma5": "1-4",
   "forma5Dif": -18,
   "victoriasEsperadas": 3.4,
-  "suerte": 1.6
+  "suerte": 1.6,
+  "percentiles": {
+   "pace": {
+    "nac": 43
+   },
+   "ortg": {
+    "nac": 7
+   },
+   "drtg": {
+    "nac": 85
+   },
+   "pfPartido": {
+    "nac": 6
+   },
+   "pcPartido": {
+    "nac": 77
+   },
+   "t2PctEq": {
+    "nac": 14
+   },
+   "t3PctEq": {
+    "nac": 22
+   },
+   "roPartido": {
+    "nac": 20
+   },
+   "rdPartido": {
+    "nac": 15
+   },
+   "rebPartido": {
+    "nac": 9
+   },
+   "asPartido": {
+    "nac": 15
+   },
+   "brPartido": {
+    "nac": 50
+   },
+   "bpPartido": {
+    "nac": 87
+   },
+   "fcPartido": {
+    "nac": 80
+   }
+  }
  },
  {
   "id": "951964",
@@ -6616,6 +12886,19 @@
   "fuera": {
    "pj": 13,
    "pg": 11
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 23,
+   "pp": 3,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 11
+   }
   },
   "pfPartido": 79.6,
   "pcPartido": 66.1,
@@ -6637,7 +12920,7 @@
   "ortg": 98.59,
   "drtg": 81.94,
   "netrtg": 16.65,
-  "srs": 20.21,
+  "srs": 15.44,
   "efg": 45.45,
   "tovPct": 15.44,
   "orbPct": 32.08,
@@ -6657,7 +12940,51 @@
   "forma5": "5-0",
   "forma5Dif": 7.4,
   "victoriasEsperadas": 22.6,
-  "suerte": 0.4
+  "suerte": 0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 65
+   },
+   "ortg": {
+    "nac": 72
+   },
+   "drtg": {
+    "nac": 1
+   },
+   "pfPartido": {
+    "nac": 80
+   },
+   "pcPartido": {
+    "nac": 4
+   },
+   "t2PctEq": {
+    "nac": 64
+   },
+   "t3PctEq": {
+    "nac": 21
+   },
+   "roPartido": {
+    "nac": 94
+   },
+   "rdPartido": {
+    "nac": 99
+   },
+   "rebPartido": {
+    "nac": 99
+   },
+   "asPartido": {
+    "nac": 84
+   },
+   "brPartido": {
+    "nac": 70
+   },
+   "bpPartido": {
+    "nac": 7
+   },
+   "fcPartido": {
+    "nac": 1
+   }
+  }
  },
  {
   "id": "950922",
@@ -6676,6 +13003,19 @@
   "fuera": {
    "pj": 13,
    "pg": 11
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 23,
+   "pp": 3,
+   "casa": {
+    "pj": 13,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 11
+   }
   },
   "pfPartido": 83.8,
   "pcPartido": 69.1,
@@ -6697,7 +13037,7 @@
   "ortg": 98.81,
   "drtg": 82.99,
   "netrtg": 15.82,
-  "srs": 19.44,
+  "srs": 14.66,
   "efg": 48.89,
   "tovPct": 21.77,
   "orbPct": 37.94,
@@ -6717,7 +13057,51 @@
   "forma5": "4-1",
   "forma5Dif": 9.6,
   "victoriasEsperadas": 22.8,
-  "suerte": 0.2
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 91
+   },
+   "ortg": {
+    "nac": 75
+   },
+   "drtg": {
+    "nac": 3
+   },
+   "pfPartido": {
+    "nac": 95
+   },
+   "pcPartido": {
+    "nac": 12
+   },
+   "t2PctEq": {
+    "nac": 60
+   },
+   "t3PctEq": {
+    "nac": 91
+   },
+   "roPartido": {
+    "nac": 99
+   },
+   "rdPartido": {
+    "nac": 99
+   },
+   "rebPartido": {
+    "nac": 99
+   },
+   "asPartido": {
+    "nac": 100
+   },
+   "brPartido": {
+    "nac": 80
+   },
+   "bpPartido": {
+    "nac": 99
+   },
+   "fcPartido": {
+    "nac": 9
+   }
+  }
  },
  {
   "id": "952558",
@@ -6736,6 +13120,19 @@
   "fuera": {
    "pj": 13,
    "pg": 8
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 8
+   }
   },
   "pfPartido": 91.5,
   "pcPartido": 80.6,
@@ -6757,7 +13154,7 @@
   "ortg": 101.9,
   "drtg": 89.74,
   "netrtg": 12.15,
-  "srs": 16.04,
+  "srs": 11.26,
   "efg": 51.31,
   "tovPct": 18.51,
   "orbPct": 24.98,
@@ -6777,7 +13174,51 @@
   "forma5": "3-2",
   "forma5Dif": 8.6,
   "victoriasEsperadas": 20.4,
-  "suerte": -2.4
+  "suerte": -2.4,
+  "percentiles": {
+   "pace": {
+    "nac": 100
+   },
+   "ortg": {
+    "nac": 88
+   },
+   "drtg": {
+    "nac": 14
+   },
+   "pfPartido": {
+    "nac": 99
+   },
+   "pcPartido": {
+    "nac": 83
+   },
+   "t2PctEq": {
+    "nac": 88
+   },
+   "t3PctEq": {
+    "nac": 95
+   },
+   "roPartido": {
+    "nac": 27
+   },
+   "rdPartido": {
+    "nac": 95
+   },
+   "rebPartido": {
+    "nac": 85
+   },
+   "asPartido": {
+    "nac": 99
+   },
+   "brPartido": {
+    "nac": 99
+   },
+   "bpPartido": {
+    "nac": 84
+   },
+   "fcPartido": {
+    "nac": 38
+   }
+  }
  },
  {
   "id": "951820",
@@ -6796,6 +13237,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 76.2,
   "pcPartido": 72.2,
@@ -6817,7 +13271,7 @@
   "ortg": 92.11,
   "drtg": 86.44,
   "netrtg": 5.67,
-  "srs": 10.02,
+  "srs": 5.24,
   "efg": 46.62,
   "tovPct": 21.26,
   "orbPct": 28.36,
@@ -6837,7 +13291,51 @@
   "forma5": "2-3",
   "forma5Dif": 4.6,
   "victoriasEsperadas": 16.4,
-  "suerte": -1.4
+  "suerte": -1.4,
+  "percentiles": {
+   "pace": {
+    "nac": 83
+   },
+   "ortg": {
+    "nac": 38
+   },
+   "drtg": {
+    "nac": 9
+   },
+   "pfPartido": {
+    "nac": 56
+   },
+   "pcPartido": {
+    "nac": 33
+   },
+   "t2PctEq": {
+    "nac": 39
+   },
+   "t3PctEq": {
+    "nac": 61
+   },
+   "roPartido": {
+    "nac": 49
+   },
+   "rdPartido": {
+    "nac": 77
+   },
+   "rebPartido": {
+    "nac": 75
+   },
+   "asPartido": {
+    "nac": 88
+   },
+   "brPartido": {
+    "nac": 91
+   },
+   "bpPartido": {
+    "nac": 93
+   },
+   "fcPartido": {
+    "nac": 93
+   }
+  }
  },
  {
   "id": "950859",
@@ -6856,6 +13354,19 @@
   "fuera": {
    "pj": 13,
    "pg": 7
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 18,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 7
+   }
   },
   "pfPartido": 72.3,
   "pcPartido": 67.1,
@@ -6877,7 +13388,7 @@
   "ortg": 89.13,
   "drtg": 83.7,
   "netrtg": 5.44,
-  "srs": 9.8,
+  "srs": 5.02,
   "efg": 42.19,
   "tovPct": 17.79,
   "orbPct": 29.76,
@@ -6897,7 +13408,51 @@
   "forma5": "3-2",
   "forma5Dif": 4.8,
   "victoriasEsperadas": 17.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 68
+   },
+   "ortg": {
+    "nac": 21
+   },
+   "drtg": {
+    "nac": 4
+   },
+   "pfPartido": {
+    "nac": 30
+   },
+   "pcPartido": {
+    "nac": 7
+   },
+   "t2PctEq": {
+    "nac": 2
+   },
+   "t3PctEq": {
+    "nac": 32
+   },
+   "roPartido": {
+    "nac": 85
+   },
+   "rdPartido": {
+    "nac": 82
+   },
+   "rebPartido": {
+    "nac": 89
+   },
+   "asPartido": {
+    "nac": 80
+   },
+   "brPartido": {
+    "nac": 93
+   },
+   "bpPartido": {
+    "nac": 36
+   },
+   "fcPartido": {
+    "nac": 70
+   }
+  }
  },
  {
   "id": "952035",
@@ -6916,6 +13471,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 15,
+   "pp": 11,
+   "casa": {
+    "pj": 13,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 84.9,
   "pcPartido": 79.9,
@@ -6937,7 +13505,7 @@
   "ortg": 97.6,
   "drtg": 92.53,
   "netrtg": 5.07,
-  "srs": 9.73,
+  "srs": 4.96,
   "efg": 46.6,
   "tovPct": 21.2,
   "orbPct": 36.18,
@@ -6957,7 +13525,51 @@
   "forma5": "2-3",
   "forma5Dif": -2.6,
   "victoriasEsperadas": 16.2,
-  "suerte": -1.2
+  "suerte": -1.2,
+  "percentiles": {
+   "pace": {
+    "nac": 96
+   },
+   "ortg": {
+    "nac": 66
+   },
+   "drtg": {
+    "nac": 34
+   },
+   "pfPartido": {
+    "nac": 96
+   },
+   "pcPartido": {
+    "nac": 80
+   },
+   "t2PctEq": {
+    "nac": 52
+   },
+   "t3PctEq": {
+    "nac": 47
+   },
+   "roPartido": {
+    "nac": 98
+   },
+   "rdPartido": {
+    "nac": 84
+   },
+   "rebPartido": {
+    "nac": 96
+   },
+   "asPartido": {
+    "nac": 66
+   },
+   "brPartido": {
+    "nac": 92
+   },
+   "bpPartido": {
+    "nac": 97
+   },
+   "fcPartido": {
+    "nac": 45
+   }
+  }
  },
  {
   "id": "951844",
@@ -6976,6 +13588,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 25,
+   "pg": 17,
+   "pp": 8,
+   "casa": {
+    "pj": 13,
+    "pg": 10
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 74.1,
   "pcPartido": 70.9,
@@ -6997,7 +13622,7 @@
   "ortg": 88.68,
   "drtg": 85.99,
   "netrtg": 2.69,
-  "srs": 7.62,
+  "srs": 2.85,
   "efg": 42.93,
   "tovPct": 20.78,
   "orbPct": 33.65,
@@ -7017,7 +13642,51 @@
   "forma5": "4-1",
   "forma5Dif": 7.2,
   "victoriasEsperadas": 15.3,
-  "suerte": 1.7
+  "suerte": 1.7,
+  "percentiles": {
+   "pace": {
+    "nac": 86
+   },
+   "ortg": {
+    "nac": 18
+   },
+   "drtg": {
+    "nac": 7
+   },
+   "pfPartido": {
+    "nac": 40
+   },
+   "pcPartido": {
+    "nac": 19
+   },
+   "t2PctEq": {
+    "nac": 26
+   },
+   "t3PctEq": {
+    "nac": 12
+   },
+   "roPartido": {
+    "nac": 96
+   },
+   "rdPartido": {
+    "nac": 89
+   },
+   "rebPartido": {
+    "nac": 97
+   },
+   "asPartido": {
+    "nac": 93
+   },
+   "brPartido": {
+    "nac": 96
+   },
+   "bpPartido": {
+    "nac": 91
+   },
+   "fcPartido": {
+    "nac": 88
+   }
+  }
  },
  {
   "id": "951361",
@@ -7036,6 +13705,19 @@
   "fuera": {
    "pj": 13,
    "pg": 5
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 5
+   }
   },
   "pfPartido": 74.3,
   "pcPartido": 75.8,
@@ -7057,7 +13739,7 @@
   "ortg": 88.85,
   "drtg": 90.83,
   "netrtg": -1.98,
-  "srs": 2.91,
+  "srs": -1.86,
   "efg": 43.27,
   "tovPct": 18.5,
   "orbPct": 26.6,
@@ -7077,7 +13759,51 @@
   "forma5": "2-3",
   "forma5Dif": 7.8,
   "victoriasEsperadas": 11.6,
-  "suerte": -1.6
+  "suerte": -1.6,
+  "percentiles": {
+   "pace": {
+    "nac": 87
+   },
+   "ortg": {
+    "nac": 19
+   },
+   "drtg": {
+    "nac": 23
+   },
+   "pfPartido": {
+    "nac": 41
+   },
+   "pcPartido": {
+    "nac": 55
+   },
+   "t2PctEq": {
+    "nac": 23
+   },
+   "t3PctEq": {
+    "nac": 17
+   },
+   "roPartido": {
+    "nac": 55
+   },
+   "rdPartido": {
+    "nac": 75
+   },
+   "rebPartido": {
+    "nac": 75
+   },
+   "asPartido": {
+    "nac": 54
+   },
+   "brPartido": {
+    "nac": 59
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 78
+   }
+  }
  },
  {
   "id": "951319",
@@ -7096,6 +13822,19 @@
   "fuera": {
    "pj": 13,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 3
+   }
   },
   "pfPartido": 75.1,
   "pcPartido": 78.8,
@@ -7117,7 +13856,7 @@
   "ortg": 89.54,
   "drtg": 93.52,
   "netrtg": -3.98,
-  "srs": 1.05,
+  "srs": -3.72,
   "efg": 42.62,
   "tovPct": 20.31,
   "orbPct": 33.24,
@@ -7137,7 +13876,51 @@
   "forma5": "4-1",
   "forma5Dif": 4.8,
   "victoriasEsperadas": 9.9,
-  "suerte": 0.1
+  "suerte": 0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 89
+   },
+   "ortg": {
+    "nac": 23
+   },
+   "drtg": {
+    "nac": 44
+   },
+   "pfPartido": {
+    "nac": 48
+   },
+   "pcPartido": {
+    "nac": 73
+   },
+   "t2PctEq": {
+    "nac": 22
+   },
+   "t3PctEq": {
+    "nac": 7
+   },
+   "roPartido": {
+    "nac": 96
+   },
+   "rdPartido": {
+    "nac": 88
+   },
+   "rebPartido": {
+    "nac": 94
+   },
+   "asPartido": {
+    "nac": 49
+   },
+   "brPartido": {
+    "nac": 75
+   },
+   "bpPartido": {
+    "nac": 89
+   },
+   "fcPartido": {
+    "nac": 97
+   }
+  }
  },
  {
   "id": "952557",
@@ -7156,6 +13939,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 10,
+   "pp": 16,
+   "casa": {
+    "pj": 13,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 76.9,
   "pcPartido": 81.6,
@@ -7177,7 +13973,7 @@
   "ortg": 93.43,
   "drtg": 98.47,
   "netrtg": -5.04,
-  "srs": 0.07,
+  "srs": -4.71,
   "efg": 45.41,
   "tovPct": 18.74,
   "orbPct": 26.67,
@@ -7197,7 +13993,51 @@
   "forma5": "1-4",
   "forma5Dif": -7.8,
   "victoriasEsperadas": 9.1,
-  "suerte": 0.9
+  "suerte": 0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 80
+   },
+   "ortg": {
+    "nac": 41
+   },
+   "drtg": {
+    "nac": 78
+   },
+   "pfPartido": {
+    "nac": 63
+   },
+   "pcPartido": {
+    "nac": 87
+   },
+   "t2PctEq": {
+    "nac": 15
+   },
+   "t3PctEq": {
+    "nac": 74
+   },
+   "roPartido": {
+    "nac": 36
+   },
+   "rdPartido": {
+    "nac": 31
+   },
+   "rebPartido": {
+    "nac": 27
+   },
+   "asPartido": {
+    "nac": 87
+   },
+   "brPartido": {
+    "nac": 66
+   },
+   "bpPartido": {
+    "nac": 64
+   },
+   "fcPartido": {
+    "nac": 45
+   }
+  }
  },
  {
   "id": "950774",
@@ -7216,6 +14056,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 9,
+   "pp": 17,
+   "casa": {
+    "pj": 13,
+    "pg": 5
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 4
+   }
   },
   "pfPartido": 78,
   "pcPartido": 86,
@@ -7237,7 +14090,7 @@
   "ortg": 89.07,
   "drtg": 97.32,
   "netrtg": -8.26,
-  "srs": -3.08,
+  "srs": -7.85,
   "efg": 44.54,
   "tovPct": 20.69,
   "orbPct": 29.11,
@@ -7257,7 +14110,51 @@
   "forma5": "1-4",
   "forma5Dif": -8.8,
   "victoriasEsperadas": 6.7,
-  "suerte": 1.3
+  "suerte": 1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 99
+   },
+   "ortg": {
+    "nac": 20
+   },
+   "drtg": {
+    "nac": 69
+   },
+   "pfPartido": {
+    "nac": 69
+   },
+   "pcPartido": {
+    "nac": 97
+   },
+   "t2PctEq": {
+    "nac": 50
+   },
+   "t3PctEq": {
+    "nac": 6
+   },
+   "roPartido": {
+    "nac": 77
+   },
+   "rdPartido": {
+    "nac": 81
+   },
+   "rebPartido": {
+    "nac": 86
+   },
+   "asPartido": {
+    "nac": 59
+   },
+   "brPartido": {
+    "nac": 88
+   },
+   "bpPartido": {
+    "nac": 96
+   },
+   "fcPartido": {
+    "nac": 96
+   }
+  }
  },
  {
   "id": "950775",
@@ -7276,6 +14173,19 @@
   "fuera": {
    "pj": 13,
    "pg": 6
+  },
+  "balance": {
+   "pj": 25,
+   "pg": 10,
+   "pp": 15,
+   "casa": {
+    "pj": 12,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 6
+   }
   },
   "pfPartido": 68.7,
   "pcPartido": 78.9,
@@ -7297,7 +14207,7 @@
   "ortg": 84.3,
   "drtg": 95.22,
   "netrtg": -10.92,
-  "srs": -5.47,
+  "srs": -10.24,
   "efg": 43.04,
   "tovPct": 22.73,
   "orbPct": 27.32,
@@ -7317,7 +14227,51 @@
   "forma5": "2-3",
   "forma5Dif": -8.2,
   "victoriasEsperadas": 4.8,
-  "suerte": 5.2
+  "suerte": 5.2,
+  "percentiles": {
+   "pace": {
+    "nac": 74
+   },
+   "ortg": {
+    "nac": 6
+   },
+   "drtg": {
+    "nac": 55
+   },
+   "pfPartido": {
+    "nac": 14
+   },
+   "pcPartido": {
+    "nac": 74
+   },
+   "t2PctEq": {
+    "nac": 9
+   },
+   "t3PctEq": {
+    "nac": 18
+   },
+   "roPartido": {
+    "nac": 43
+   },
+   "rdPartido": {
+    "nac": 75
+   },
+   "rebPartido": {
+    "nac": 69
+   },
+   "asPartido": {
+    "nac": 37
+   },
+   "brPartido": {
+    "nac": 75
+   },
+   "bpPartido": {
+    "nac": 99
+   },
+   "fcPartido": {
+    "nac": 72
+   }
+  }
  },
  {
   "id": "952560",
@@ -7336,6 +14290,19 @@
   "fuera": {
    "pj": 13,
    "pg": 2
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 3,
+   "pp": 23,
+   "casa": {
+    "pj": 13,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 2
+   }
   },
   "pfPartido": 75,
   "pcPartido": 85,
@@ -7357,7 +14324,7 @@
   "ortg": 86.77,
   "drtg": 97.69,
   "netrtg": -10.92,
-  "srs": -5.39,
+  "srs": -10.17,
   "efg": 42.55,
   "tovPct": 19.36,
   "orbPct": 26.57,
@@ -7377,7 +14344,51 @@
   "forma5": "2-3",
   "forma5Dif": -7.2,
   "victoriasEsperadas": 5.6,
-  "suerte": -2.6
+  "suerte": -2.6,
+  "percentiles": {
+   "pace": {
+    "nac": 96
+   },
+   "ortg": {
+    "nac": 12
+   },
+   "drtg": {
+    "nac": 72
+   },
+   "pfPartido": {
+    "nac": 46
+   },
+   "pcPartido": {
+    "nac": 96
+   },
+   "t2PctEq": {
+    "nac": 7
+   },
+   "t3PctEq": {
+    "nac": 18
+   },
+   "roPartido": {
+    "nac": 66
+   },
+   "rdPartido": {
+    "nac": 72
+   },
+   "rebPartido": {
+    "nac": 77
+   },
+   "asPartido": {
+    "nac": 51
+   },
+   "brPartido": {
+    "nac": 84
+   },
+   "bpPartido": {
+    "nac": 87
+   },
+   "fcPartido": {
+    "nac": 99
+   }
+  }
  },
  {
   "id": "952154",
@@ -7396,6 +14407,19 @@
   "fuera": {
    "pj": 13,
    "pg": 0
+  },
+  "balance": {
+   "pj": 26,
+   "pg": 0,
+   "pp": 26,
+   "casa": {
+    "pj": 13,
+    "pg": 0
+   },
+   "fuera": {
+    "pj": 13,
+    "pg": 0
+   }
   },
   "pfPartido": 67.8,
   "pcPartido": 86.3,
@@ -7417,7 +14441,7 @@
   "ortg": 77.54,
   "drtg": 99.05,
   "netrtg": -21.51,
-  "srs": -15.22,
+  "srs": -20,
   "efg": 41.71,
   "tovPct": 23.93,
   "orbPct": 23.18,
@@ -7437,7 +14461,51 @@
   "forma5": "0-5",
   "forma5Dif": -19.4,
   "victoriasEsperadas": 2,
-  "suerte": -2
+  "suerte": -2,
+  "percentiles": {
+   "pace": {
+    "nac": 98
+   },
+   "ortg": {
+    "nac": 1
+   },
+   "drtg": {
+    "nac": 82
+   },
+   "pfPartido": {
+    "nac": 10
+   },
+   "pcPartido": {
+    "nac": 98
+   },
+   "t2PctEq": {
+    "nac": 5
+   },
+   "t3PctEq": {
+    "nac": 8
+   },
+   "roPartido": {
+    "nac": 26
+   },
+   "rdPartido": {
+    "nac": 53
+   },
+   "rebPartido": {
+    "nac": 39
+   },
+   "asPartido": {
+    "nac": 28
+   },
+   "brPartido": {
+    "nac": 80
+   },
+   "bpPartido": {
+    "nac": 100
+   },
+   "fcPartido": {
+    "nac": 81
+   }
+  }
  },
  {
   "id": "952153",
@@ -7456,6 +14524,19 @@
   "fuera": {
    "pj": 12,
    "pg": 9
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 20,
+   "pp": 4,
+   "casa": {
+    "pj": 12,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 9
+   }
   },
   "pfPartido": 89.9,
   "pcPartido": 67.4,
@@ -7477,7 +14558,7 @@
   "ortg": 108.97,
   "drtg": 82.74,
   "netrtg": 26.22,
-  "srs": 29.35,
+  "srs": 24.22,
   "efg": 51.66,
   "tovPct": 17.78,
   "orbPct": 40.25,
@@ -7497,7 +14578,51 @@
   "forma5": "5-0",
   "forma5Dif": 28.4,
   "victoriasEsperadas": 22.8,
-  "suerte": -2.8
+  "suerte": -2.8,
+  "percentiles": {
+   "pace": {
+    "nac": 81
+   },
+   "ortg": {
+    "nac": 99
+   },
+   "drtg": {
+    "nac": 2
+   },
+   "pfPartido": {
+    "nac": 98
+   },
+   "pcPartido": {
+    "nac": 7
+   },
+   "t2PctEq": {
+    "nac": 97
+   },
+   "t3PctEq": {
+    "nac": 77
+   },
+   "roPartido": {
+    "nac": 99
+   },
+   "rdPartido": {
+    "nac": 93
+   },
+   "rebPartido": {
+    "nac": 98
+   },
+   "asPartido": {
+    "nac": 96
+   },
+   "brPartido": {
+    "nac": 99
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 47
+   }
+  }
  },
  {
   "id": "951375",
@@ -7516,6 +14641,19 @@
   "fuera": {
    "pj": 12,
    "pg": 8
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 19,
+   "pp": 5,
+   "casa": {
+    "pj": 12,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 8
+   }
   },
   "pfPartido": 81.6,
   "pcPartido": 72.1,
@@ -7537,7 +14675,7 @@
   "ortg": 99.08,
   "drtg": 86.96,
   "netrtg": 12.12,
-  "srs": 16.33,
+  "srs": 11.19,
   "efg": 48,
   "tovPct": 17.2,
   "orbPct": 26.6,
@@ -7557,7 +14695,51 @@
   "forma5": "5-0",
   "forma5Dif": 11.4,
   "victoriasEsperadas": 18.7,
-  "suerte": 0.3
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 80
+   },
+   "ortg": {
+    "nac": 77
+   },
+   "drtg": {
+    "nac": 10
+   },
+   "pfPartido": {
+    "nac": 89
+   },
+   "pcPartido": {
+    "nac": 30
+   },
+   "t2PctEq": {
+    "nac": 81
+   },
+   "t3PctEq": {
+    "nac": 61
+   },
+   "roPartido": {
+    "nac": 39
+   },
+   "rdPartido": {
+    "nac": 80
+   },
+   "rebPartido": {
+    "nac": 69
+   },
+   "asPartido": {
+    "nac": 83
+   },
+   "brPartido": {
+    "nac": 93
+   },
+   "bpPartido": {
+    "nac": 34
+   },
+   "fcPartido": {
+    "nac": 11
+   }
+  }
  },
  {
   "id": "950773",
@@ -7576,6 +14758,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 16,
+   "pp": 8,
+   "casa": {
+    "pj": 12,
+    "pg": 9
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 77.4,
   "pcPartido": 68.9,
@@ -7597,7 +14792,7 @@
   "ortg": 98.99,
   "drtg": 87.79,
   "netrtg": 11.2,
-  "srs": 15.48,
+  "srs": 10.35,
   "efg": 48.18,
   "tovPct": 17.37,
   "orbPct": 29.05,
@@ -7617,7 +14812,51 @@
   "forma5": "2-3",
   "forma5Dif": -1,
   "victoriasEsperadas": 18.4,
-  "suerte": -2.4
+  "suerte": -2.4,
+  "percentiles": {
+   "pace": {
+    "nac": 36
+   },
+   "ortg": {
+    "nac": 77
+   },
+   "drtg": {
+    "nac": 12
+   },
+   "pfPartido": {
+    "nac": 66
+   },
+   "pcPartido": {
+    "nac": 12
+   },
+   "t2PctEq": {
+    "nac": 55
+   },
+   "t3PctEq": {
+    "nac": 85
+   },
+   "roPartido": {
+    "nac": 42
+   },
+   "rdPartido": {
+    "nac": 86
+   },
+   "rebPartido": {
+    "nac": 80
+   },
+   "asPartido": {
+    "nac": 98
+   },
+   "brPartido": {
+    "nac": 14
+   },
+   "bpPartido": {
+    "nac": 23
+   },
+   "fcPartido": {
+    "nac": 42
+   }
+  }
  },
  {
   "id": "950777",
@@ -7636,6 +14875,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 19,
+   "pp": 5,
+   "casa": {
+    "pj": 12,
+    "pg": 12
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 82.5,
   "pcPartido": 74.6,
@@ -7657,7 +14909,7 @@
   "ortg": 104.08,
   "drtg": 94.93,
   "netrtg": 9.15,
-  "srs": 13.59,
+  "srs": 8.45,
   "efg": 50.46,
   "tovPct": 16.02,
   "orbPct": 26.94,
@@ -7677,7 +14929,51 @@
   "forma5": "4-1",
   "forma5Dif": 9.8,
   "victoriasEsperadas": 17.7,
-  "suerte": 1.3
+  "suerte": 1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 50
+   },
+   "ortg": {
+    "nac": 93
+   },
+   "drtg": {
+    "nac": 53
+   },
+   "pfPartido": {
+    "nac": 91
+   },
+   "pcPartido": {
+    "nac": 48
+   },
+   "t2PctEq": {
+    "nac": 100
+   },
+   "t3PctEq": {
+    "nac": 58
+   },
+   "roPartido": {
+    "nac": 27
+   },
+   "rdPartido": {
+    "nac": 85
+   },
+   "rebPartido": {
+    "nac": 66
+   },
+   "asPartido": {
+    "nac": 89
+   },
+   "brPartido": {
+    "nac": 13
+   },
+   "bpPartido": {
+    "nac": 9
+   },
+   "fcPartido": {
+    "nac": 15
+   }
+  }
  },
  {
   "id": "951421",
@@ -7696,6 +14992,19 @@
   "fuera": {
    "pj": 12,
    "pg": 9
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 20,
+   "pp": 4,
+   "casa": {
+    "pj": 12,
+    "pg": 11
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 9
+   }
   },
   "pfPartido": 80.3,
   "pcPartido": 73.2,
@@ -7717,7 +15026,7 @@
   "ortg": 100.55,
   "drtg": 91.86,
   "netrtg": 8.68,
-  "srs": 13.16,
+  "srs": 8.02,
   "efg": 49.36,
   "tovPct": 17.58,
   "orbPct": 31.89,
@@ -7737,7 +15046,51 @@
   "forma5": "4-1",
   "forma5Dif": 8.6,
   "victoriasEsperadas": 17.3,
-  "suerte": 2.7
+  "suerte": 2.7,
+  "percentiles": {
+   "pace": {
+    "nac": 58
+   },
+   "ortg": {
+    "nac": 84
+   },
+   "drtg": {
+    "nac": 30
+   },
+   "pfPartido": {
+    "nac": 84
+   },
+   "pcPartido": {
+    "nac": 39
+   },
+   "t2PctEq": {
+    "nac": 93
+   },
+   "t3PctEq": {
+    "nac": 51
+   },
+   "roPartido": {
+    "nac": 71
+   },
+   "rdPartido": {
+    "nac": 90
+   },
+   "rebPartido": {
+    "nac": 89
+   },
+   "asPartido": {
+    "nac": 69
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 31
+   },
+   "fcPartido": {
+    "nac": 36
+   }
+  }
  },
  {
   "id": "950876",
@@ -7756,6 +15109,19 @@
   "fuera": {
    "pj": 12,
    "pg": 6
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 14,
+   "pp": 10,
+   "casa": {
+    "pj": 12,
+    "pg": 8
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 6
+   }
   },
   "pfPartido": 83.7,
   "pcPartido": 79.3,
@@ -7777,7 +15143,7 @@
   "ortg": 101,
   "drtg": 93.98,
   "netrtg": 7.02,
-  "srs": 11.62,
+  "srs": 6.49,
   "efg": 49.82,
   "tovPct": 18.55,
   "orbPct": 30.79,
@@ -7797,7 +15163,51 @@
   "forma5": "2-3",
   "forma5Dif": 3.6,
   "victoriasEsperadas": 15.3,
-  "suerte": -1.3
+  "suerte": -1.3,
+  "percentiles": {
+   "pace": {
+    "nac": 84
+   },
+   "ortg": {
+    "nac": 86
+   },
+   "drtg": {
+    "nac": 47
+   },
+   "pfPartido": {
+    "nac": 93
+   },
+   "pcPartido": {
+    "nac": 77
+   },
+   "t2PctEq": {
+    "nac": 78
+   },
+   "t3PctEq": {
+    "nac": 91
+   },
+   "roPartido": {
+    "nac": 74
+   },
+   "rdPartido": {
+    "nac": 99
+   },
+   "rebPartido": {
+    "nac": 95
+   },
+   "asPartido": {
+    "nac": 97
+   },
+   "brPartido": {
+    "nac": 5
+   },
+   "bpPartido": {
+    "nac": 64
+   },
+   "fcPartido": {
+    "nac": 9
+   }
+  }
  },
  {
   "id": "951085",
@@ -7816,6 +15226,19 @@
   "fuera": {
    "pj": 12,
    "pg": 7
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 14,
+   "pp": 10,
+   "casa": {
+    "pj": 12,
+    "pg": 7
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 7
+   }
   },
   "pfPartido": 78.8,
   "pcPartido": 78.8,
@@ -7837,7 +15260,7 @@
   "ortg": 94.01,
   "drtg": 95.51,
   "netrtg": -1.5,
-  "srs": 3.75,
+  "srs": -1.38,
   "efg": 47.52,
   "tovPct": 18.45,
   "orbPct": 24.18,
@@ -7857,7 +15280,51 @@
   "forma5": "2-3",
   "forma5Dif": -13.6,
   "victoriasEsperadas": 12,
-  "suerte": 2
+  "suerte": 2,
+  "percentiles": {
+   "pace": {
+    "nac": 88
+   },
+   "ortg": {
+    "nac": 45
+   },
+   "drtg": {
+    "nac": 57
+   },
+   "pfPartido": {
+    "nac": 76
+   },
+   "pcPartido": {
+    "nac": 73
+   },
+   "t2PctEq": {
+    "nac": 69
+   },
+   "t3PctEq": {
+    "nac": 58
+   },
+   "roPartido": {
+    "nac": 18
+   },
+   "rdPartido": {
+    "nac": 88
+   },
+   "rebPartido": {
+    "nac": 60
+   },
+   "asPartido": {
+    "nac": 72
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "950835",
@@ -7876,6 +15343,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 7,
+   "pp": 17,
+   "casa": {
+    "pj": 12,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 68.8,
   "pcPartido": 74.3,
@@ -7897,7 +15377,7 @@
   "ortg": 89.4,
   "drtg": 96.29,
   "netrtg": -6.89,
-  "srs": -1.22,
+  "srs": -6.35,
   "efg": 42.78,
   "tovPct": 18.69,
   "orbPct": 30.11,
@@ -7917,7 +15397,51 @@
   "forma5": "0-5",
   "forma5Dif": -12,
   "victoriasEsperadas": 7.5,
-  "suerte": -0.5
+  "suerte": -0.5,
+  "percentiles": {
+   "pace": {
+    "nac": 17
+   },
+   "ortg": {
+    "nac": 23
+   },
+   "drtg": {
+    "nac": 62
+   },
+   "pfPartido": {
+    "nac": 15
+   },
+   "pcPartido": {
+    "nac": 46
+   },
+   "t2PctEq": {
+    "nac": 16
+   },
+   "t3PctEq": {
+    "nac": 9
+   },
+   "roPartido": {
+    "nac": 68
+   },
+   "rdPartido": {
+    "nac": 20
+   },
+   "rebPartido": {
+    "nac": 38
+   },
+   "asPartido": {
+    "nac": 66
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 36
+   },
+   "fcPartido": {
+    "nac": 77
+   }
+  }
  },
  {
   "id": "952561",
@@ -7936,6 +15460,19 @@
   "fuera": {
    "pj": 12,
    "pg": 3
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 7,
+   "pp": 17,
+   "casa": {
+    "pj": 12,
+    "pg": 4
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 3
+   }
   },
   "pfPartido": 75.5,
   "pcPartido": 83.8,
@@ -7957,7 +15494,7 @@
   "ortg": 92.09,
   "drtg": 101,
   "netrtg": -8.91,
-  "srs": -3.08,
+  "srs": -8.22,
   "efg": 44.53,
   "tovPct": 17.03,
   "orbPct": 22.19,
@@ -7977,7 +15514,51 @@
   "forma5": "2-3",
   "forma5Dif": -6,
   "victoriasEsperadas": 6.1,
-  "suerte": 0.9
+  "suerte": 0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 77
+   },
+   "ortg": {
+    "nac": 37
+   },
+   "drtg": {
+    "nac": 88
+   },
+   "pfPartido": {
+    "nac": 52
+   },
+   "pcPartido": {
+    "nac": 93
+   },
+   "t2PctEq": {
+    "nac": 7
+   },
+   "t3PctEq": {
+    "nac": 58
+   },
+   "roPartido": {
+    "nac": 8
+   },
+   "rdPartido": {
+    "nac": 93
+   },
+   "rebPartido": {
+    "nac": 63
+   },
+   "asPartido": {
+    "nac": 58
+   },
+   "brPartido": {
+    "nac": 2
+   },
+   "bpPartido": {
+    "nac": 31
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "950873",
@@ -7996,6 +15577,19 @@
   "fuera": {
    "pj": 12,
    "pg": 4
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 6,
+   "pp": 18,
+   "casa": {
+    "pj": 12,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 4
+   }
   },
   "pfPartido": 68.5,
   "pcPartido": 77.8,
@@ -8017,7 +15611,7 @@
   "ortg": 86.74,
   "drtg": 98.18,
   "netrtg": -11.44,
-  "srs": -5.42,
+  "srs": -10.55,
   "efg": 44.35,
   "tovPct": 19.73,
   "orbPct": 25.37,
@@ -8037,7 +15631,51 @@
   "forma5": "2-3",
   "forma5Dif": -1.8,
   "victoriasEsperadas": 5.1,
-  "suerte": 0.9
+  "suerte": 0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 45
+   },
+   "ortg": {
+    "nac": 11
+   },
+   "drtg": {
+    "nac": 74
+   },
+   "pfPartido": {
+    "nac": 13
+   },
+   "pcPartido": {
+    "nac": 66
+   },
+   "t2PctEq": {
+    "nac": 27
+   },
+   "t3PctEq": {
+    "nac": 31
+   },
+   "roPartido": {
+    "nac": 28
+   },
+   "rdPartido": {
+    "nac": 30
+   },
+   "rebPartido": {
+    "nac": 23
+   },
+   "asPartido": {
+    "nac": 91
+   },
+   "brPartido": {
+    "nac": 38
+   },
+   "bpPartido": {
+    "nac": 69
+   },
+   "fcPartido": {
+    "nac": 23
+   }
+  }
  },
  {
   "id": "952559",
@@ -8056,6 +15694,19 @@
   "fuera": {
    "pj": 12,
    "pg": 4
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 7,
+   "pp": 17,
+   "casa": {
+    "pj": 12,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 4
+   }
   },
   "pfPartido": 71.4,
   "pcPartido": 82.1,
@@ -8077,7 +15728,7 @@
   "ortg": 87.69,
   "drtg": 100.23,
   "netrtg": -12.54,
-  "srs": -6.44,
+  "srs": -11.57,
   "efg": 42.94,
   "tovPct": 18.01,
   "orbPct": 24.79,
@@ -8097,7 +15748,51 @@
   "forma5": "1-4",
   "forma5Dif": -15.6,
   "victoriasEsperadas": 4.6,
-  "suerte": 2.4
+  "suerte": 2.4,
+  "percentiles": {
+   "pace": {
+    "nac": 74
+   },
+   "ortg": {
+    "nac": 12
+   },
+   "drtg": {
+    "nac": 87
+   },
+   "pfPartido": {
+    "nac": 23
+   },
+   "pcPartido": {
+    "nac": 88
+   },
+   "t2PctEq": {
+    "nac": 26
+   },
+   "t3PctEq": {
+    "nac": 13
+   },
+   "roPartido": {
+    "nac": 31
+   },
+   "rdPartido": {
+    "nac": 27
+   },
+   "rebPartido": {
+    "nac": 21
+   },
+   "asPartido": {
+    "nac": 85
+   },
+   "brPartido": {
+    "nac": 61
+   },
+   "bpPartido": {
+    "nac": 45
+   },
+   "fcPartido": {
+    "nac": 78
+   }
+  }
  },
  {
   "id": "950772",
@@ -8116,6 +15811,19 @@
   "fuera": {
    "pj": 12,
    "pg": 1
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 4,
+   "pp": 20,
+   "casa": {
+    "pj": 12,
+    "pg": 3
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 1
+   }
   },
   "pfPartido": 69.3,
   "pcPartido": 80.9,
@@ -8137,7 +15845,7 @@
   "ortg": 83.07,
   "drtg": 97.54,
   "netrtg": -14.47,
-  "srs": -8.22,
+  "srs": -13.35,
   "efg": 42.26,
   "tovPct": 18.67,
   "orbPct": 22.97,
@@ -8157,7 +15865,51 @@
   "forma5": "1-4",
   "forma5Dif": -8.4,
   "victoriasEsperadas": 4.1,
-  "suerte": -0.1
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 85
+   },
+   "ortg": {
+    "nac": 3
+   },
+   "drtg": {
+    "nac": 71
+   },
+   "pfPartido": {
+    "nac": 16
+   },
+   "pcPartido": {
+    "nac": 85
+   },
+   "t2PctEq": {
+    "nac": 28
+   },
+   "t3PctEq": {
+    "nac": 1
+   },
+   "roPartido": {
+    "nac": 15
+   },
+   "rdPartido": {
+    "nac": 66
+   },
+   "rebPartido": {
+    "nac": 41
+   },
+   "asPartido": {
+    "nac": 39
+   },
+   "brPartido": {
+    "nac": 63
+   },
+   "bpPartido": {
+    "nac": 69
+   },
+   "fcPartido": {
+    "nac": 99
+   }
+  }
  },
  {
   "id": "950778",
@@ -8176,6 +15928,19 @@
   "fuera": {
    "pj": 12,
    "pg": 2
+  },
+  "balance": {
+   "pj": 24,
+   "pg": 3,
+   "pp": 21,
+   "casa": {
+    "pj": 12,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 12,
+    "pg": 2
+   }
   },
   "pfPartido": 75.5,
   "pcPartido": 90.1,
@@ -8197,7 +15962,7 @@
   "ortg": 86.5,
   "drtg": 103.81,
   "netrtg": -17.3,
-  "srs": -10.83,
+  "srs": -15.96,
   "efg": 41.97,
   "tovPct": 17.27,
   "orbPct": 25.53,
@@ -8217,6 +15982,50 @@
   "forma5": "2-3",
   "forma5Dif": -10.4,
   "victoriasEsperadas": 3.4,
-  "suerte": -0.4
+  "suerte": -0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 97
+   },
+   "ortg": {
+    "nac": 10
+   },
+   "drtg": {
+    "nac": 95
+   },
+   "pfPartido": {
+    "nac": 52
+   },
+   "pcPartido": {
+    "nac": 100
+   },
+   "t2PctEq": {
+    "nac": 23
+   },
+   "t3PctEq": {
+    "nac": 5
+   },
+   "roPartido": {
+    "nac": 58
+   },
+   "rdPartido": {
+    "nac": 61
+   },
+   "rebPartido": {
+    "nac": 61
+   },
+   "asPartido": {
+    "nac": 69
+   },
+   "brPartido": {
+    "nac": 66
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 85
+   }
+  }
  }
 ]
