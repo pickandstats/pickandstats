@@ -931,3 +931,74 @@ Disco: ~200 MB de pico (100 MB actuales + 100 MB de la copia nueva). Tiempo:
 Detalle completo, con lo verificado separado de lo deducido en cada paso:
 `_informe-jugador-perdido.md`, `_informe-alcance-real.md`, `_informe-dos-fallos.md`,
 `_informe-homoglifos-y-guardian.md`.
+
+### 17.7 El sitio congelado doce días: el interbloqueo de `web/public/data` *(11/10/2026)*
+
+El 5/10 el despliegue empezó a fallar en "Verificar que el build lleva los
+cuartos" (`verificar-cuartos-desplegados.js`, §17.4) y **siguió fallando doce
+días**: `pickandstats.es` sirvió datos del 29/9 hasta el 11/10, con dos issues
+abiertas por el vigilante (§17.6) — la primera vez que esa alarma mordía, y
+mordió en lo correcto. Diagnóstico leyendo el log real (`conclusion` vía
+`gh run view --json`, nunca el listado web — ver más abajo por qué) antes de
+tocar nada: el guardián **tenía razón**, no era un falso positivo. Medido
+contra `data/raw/.../actas` directamente, no contra ningún resumen de script:
+Primera llevaba congelada en 9 de 18 partidos desde un arreglo manual del
+29/9; Segunda y Tercera estaban en **cero** cuartos pese a 13 y 56 partidos
+jugados.
+
+**La causa de la causa es un interbloqueo real**, no una coincidencia de mal
+momento: `actas-cuartos.js` lee la lista de partidos de
+`web/public/data/<comp>/<temp>/partidos.json`, que solo se refresca cuando un
+deploy termina bien (su `cp -r data/processed/. web/public/data/`). Sin ese
+refresco no hay cuartos nuevos que generar; sin cuartos nuevos el guardián
+bloquea el deploy; sin deploy no se refresca `partidos.json`. El círculo se
+cierra solo y **no se abre por sí mismo** — por eso "esperar al lunes" no
+sirve: cada semana sin intervención el agujero crece, no se cierra. Nunca se
+había visto porque hasta esta racha siempre había un deploy reciente de por
+medio manteniendo `web/public/data` al día. De propina, el mismo patrón tenía
+`jugadores-comparador.json` ausente del build en las **nueve** combinaciones
+de temporada cerrada (las tres competiciones × 2023/24/25): se añadió al
+pipeline después de la última sincronización completa de `web/public/data`.
+
+**Arreglo, sin tocar el guardián** (deliberado: una decisión de producto —qué
+es peor, publicar sin cuartos de la jornada nueva o tener el sitio congelado—
+no le toca a quien solo estaba de guardia): generar los cuartos que faltaban
+para las tres competiciones 2026 (18/18, 13/13, 53/56 — los 3 restantes son
+errores de extracción puntuales que se reintentan solos) y sincronizar
+`web/public/data` entero desde `data/processed`, no solo 2026 (2762 ficheros).
+Verificado con el guardián real reconstruyendo `web/dist` y corriendo
+`verificar-cuartos-desplegados.js` a mano, no leyendo código. Deploy verde,
+confirmado por el campo `conclusion`, no por el texto del listado. Vigilante
+corrido a mano para cerrar las dos issues en vez de esperar a su ejecución
+programada.
+
+**El interbloqueo en sí sigue sin resolver estructuralmente** — esto fue un
+desatasco manual, igual que el del 29/9, no un arreglo de raíz. La raíz
+(`actas-cuartos.js` debería leer de `data/processed`, que siempre está al
+día, no de `web/public/data`, que solo lo está si el deploy anterior salió
+bien) queda pendiente. Si el deploy vuelve a fallar una semana o más por
+cualquier otro motivo, el mismo círculo puede repetirse.
+
+**Dos afirmaciones propias que resultaron falsas, por la misma causa raíz —
+leer un listado en vez del campo `conclusion`:** "el estreno del 28/9 salió
+bien" (el run #18 estaba en rojo; se leyó la duración del listado HTML, que
+no lleva el estado al texto) y "cero ejecuciones fallidas en la historia del
+repo" (un filtro `is:failure` devolvió 0 un día y 13 tres días después, sin
+que hubiera cambiado nada salvo la vista). **Regla fijada: para saber si un
+run fue bien, se lee `conclusion` — `gh run list --json conclusion,status,...`
+o el run por API — nunca un listado ni un filtro de la web.**
+
+**La reparación en paralelo, aprobada el 27/9, construida y lanzada hoy**:
+`scraper/reparar-cuartos-historicos.js` re-extrae cada partido de las tres
+temporadas cerradas a `data/raw-reparado/` (nunca sobre `data/raw/.../actas`
+directamente), decide con la regla ya validada contra el caso que la motivó
+(2486858: `verificarActa` primero, empate → gana `parciales.length` mayor,
+empate total → se queda la vieja) y es reanudable por partido. Requirió un
+cambio mínimo y retrocompatible en `extraerActaPorCuartos`: acepta
+`{ verificar: false }` (por defecto sigue en `true` en todo el resto del
+pipeline) para poder comparar una extracción nueva que no pasa `verificarActa`
+en vez de perderla en una excepción. Promover de verdad (copiar la carpeta
+paralela sobre `data/raw`) queda como paso aparte, tras revisar el reparto —
+no se promociona a ciegas ni con la regla ya aprobada.
+
+Detalle completo: `_informe-doce-dias.md`.
