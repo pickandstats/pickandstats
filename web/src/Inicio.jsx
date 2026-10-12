@@ -1,14 +1,12 @@
 import { useEffect, useMemo, useState } from 'react';
 import { srsListo, notaSrs } from './srsUtil';
 
-const MIN_PJ = 12;
-
 const fecha = j => {
   const m = String(j).match(/\((\d{2})\/(\d{2})\/(\d{4})\)/);
   return m ? new Date(+m[3], +m[2] - 1, +m[1]) : new Date(0);
 };
 
-export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVerEquipo, onVerJugador, onVerPartido, temporada, competicionNombre }) {
+export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minPj, onVerEquipo, onVerJugador, onVerPartido, temporada, competicionNombre }) {
   const etiquetaTemp = `${temporada}/${(+temporada + 1).toString().slice(2)}`;
 
   // Grupos disponibles, derivados de los equipos de la competición
@@ -38,7 +36,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
   const jugadoresF = useMemo(() => jugadores.filter(j => sel.has(j.grupo)), [jugadores, sel]);
   const partidosF = useMemo(() => partidos.filter(p => sel.has(p.grupo)), [partidos, sel]);
 
-  const elegibles = useMemo(() => jugadoresF.filter(j => j.pj >= MIN_PJ), [jugadoresF]);
+  const elegibles = useMemo(() => jugadoresF.filter(j => j.pj >= minPj), [jugadoresF, minPj]);
   // El pipeline guarda la producción por 36 minutos; se muestra por 40, que es
   // la duración del partido en Europa.
   const fmtLider = v => Number.isFinite(+v) ? (+v).toFixed(1) : '—';
@@ -48,6 +46,8 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
     .filter(j => Number.isFinite(+valorDe(j, clave)))
     .sort((a, b) => valorDe(b, clave) - valorDe(a, clave))
     .slice(0, 5);
+
+  const algunaTarjetaVacia = elegibles.length === 0;
 
   const cardsLideres = [
     { titulo: 'Anotación', clave: 'ptPorPartido', sufijo: 'pts' },
@@ -120,6 +120,9 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
       ) : (
         <>
           <h3 className="seccion">Líderes {hayFiltro ? `· ${alcance}` : 'de la temporada'}</h3>
+          {algunaTarjetaVacia && (
+            <p className="nota-tabla">Entran en estas listas a partir de {minPj} partidos jugados.</p>
+          )}
           <div className="cards-lideres">
             {cardsLideres.map(card => {
               const top = lider(card.clave);
@@ -146,7 +149,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
                       </ol>
                     </>
                   ) : (
-                    <p className="card-vacio">Entra en el ranking a partir de {MIN_PJ} partidos jugados.</p>
+                    <p className="card-vacio">—</p>
                   )}
                 </div>
               );

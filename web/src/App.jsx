@@ -23,6 +23,10 @@ const COMPETICIONES = [
 
 const etiquetaTemporada = t => `${t}/${(+t + 1).toString().slice(2)}`;
 
+// Respaldo si `parametros.json` no llega (temporada vieja regenerada antes de
+// S17.9, o la petición falla): el mismo 12 que llevaba calcular.js hasta ahora.
+const MIN_PJ_DEFECTO = 12;
+
 const fechaLarga = f => {
   if (!f) return '';
   const d = new Date(f + 'T12:00:00');
@@ -122,6 +126,9 @@ export default function App() {
   const [datosClub, setDatosClub] = useState({});
   const [equiposCuartos, setEquiposCuartos] = useState([]);
   const [srsPestillo, setSrsPestillo] = useState({});
+  // El valor real viene de parametros.json (lo calcula calcular.js); este es solo
+  // el respaldo mientras carga o si una temporada vieja no tiene el fichero.
+  const [minPj, setMinPj] = useState(MIN_PJ_DEFECTO);
   const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
   const [cargando, setCargando] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
@@ -170,7 +177,7 @@ export default function App() {
     setCargando(true);
     setSinDatos(false);
     setProximaFecha(null);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]); setSrsPestillo({});
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]); setSrsPestillo({}); setMinPj(MIN_PJ_DEFECTO);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -195,9 +202,9 @@ export default function App() {
       cargar(`${base}/jugadores-cuartos.json`).catch(() => null),
       cargar(`${base}/equipos-cuartos.json`).catch(() => null),
       cargar(`${base}/fases.json`).catch(() => null),
-      cargar(`${base}/srs-pestillo.json`).catch(() => null)
+      cargar(`${base}/parametros.json`).catch(() => null)
     ])
-      .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData, pestillo]) => {
+      .then(([eq, jug, car, par, cuartos, eqCuartos, fasesData, parametros]) => {
         if (eq.length === 0) {
           setEquipoSel(null); setJugadorSel(null); setPartidoSel(null);
           setSinDatos(true); setCargando(false);
@@ -208,7 +215,8 @@ export default function App() {
         setJugadoresCuartos(cuartos || []);
         setEquiposCuartos(eqCuartos || []);
         setFases(fasesData || []);
-        setSrsPestillo(pestillo || {});
+        setSrsPestillo((parametros && parametros.srsPestillo) || {});
+        setMinPj((parametros && parametros.minPj) || MIN_PJ_DEFECTO);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -456,7 +464,7 @@ export default function App() {
           equipos={equipos} datosClub={datosClub} equiposCuartos={equiposCuartos} srsPestillo={srsPestillo} onVolver={() => setEquipoSel(null)}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'inicio' ? (
-        <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos} srsPestillo={srsPestillo}
+        <Inicio equipos={equipos} jugadores={jugadores} partidos={partidos} srsPestillo={srsPestillo} minPj={minPj}
           temporada={temporada} competicionNombre={compActual.nombre}
           onVerEquipo={verEquipo} onVerJugador={verJugador} onVerPartido={verPartido} />
       ) : vista === 'clasificacion' ? (

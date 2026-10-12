@@ -264,16 +264,21 @@ for (let iter = 0; iter < 50; iter++) {
 // (2 en tercerafeb 2023, 2 en tercerafeb 2024, 1 en tercerafeb 2025), asi que un
 // equipo podria tener balance.pj >= 2 con un solo partido real en el grafo de srs,
 // y el suelo dejaria de garantizar lo que promete.
-const FICHERO_PESTILLO = path.join(DIR_OUT, 'srs-pestillo.json');
+// Se lee y escribe en parametros.json (ver mas abajo, S17.9): el pestillo no es el
+// unico valor calculado por temporada que la app necesita, asi que comparte el
+// fichero con minPj en vez de tener uno cada uno -- misma petición, un sitio.
+const FICHERO_PARAMETROS = path.join(DIR_OUT, 'parametros.json');
 let pestillo = {};
-try { pestillo = JSON.parse(fs.readFileSync(FICHERO_PESTILLO, 'utf8')); } catch {}
+try { pestillo = JSON.parse(fs.readFileSync(FICHERO_PARAMETROS, 'utf8')).srsPestillo || {}; } catch {}
 for (const [g, ids] of Object.entries(idsPorGrupo)) {
   const jornadaGrupo = Math.min(...ids.map(id => equipos[id].pj));
   const maxDif = Math.max(...ids.map(id => Math.abs(srs[id] - net[id])));
   const limpioAhora = jornadaGrupo >= 2 && maxDif <= 3;
   pestillo[g] = Boolean(pestillo[g]) || limpioAhora;
 }
-fs.writeFileSync(FICHERO_PESTILLO, JSON.stringify(pestillo, null, 1));
+// La escritura de verdad, junto con minPj, esta al final del fichero con el resto
+// de la salida -- MIN_PJ se declara mas abajo (seccion de percentiles) y hace falta
+// tenerlo ya para escribir parametros.json de una vez.
 
 // ---------- salida equipos ----------
 const salidaEquipos = Object.values(equipos).map(e => {
@@ -385,7 +390,13 @@ const salidaJugadores = Object.values(jugadores).map(filaJugador)
   .sort((a, b) => b.vaPorPartido - a.vaPorPartido);
 
 // ---------- percentiles (nacional y por grupo) ----------
-const MIN_PJ_PCT = 12;
+// El _PCT del nombre viejo (MIN_PJ_PCT) sugeria un porcentaje y no lo era: se
+// compara directo contra el entero `pj`, igual que el MIN_PJ que ya usaba
+// Inicio.jsx para las tarjetas de lideres -- es el mismo concepto (cuantos
+// partidos hacen falta para confiar en una media por partido), nombrado dos veces
+// de formas distintas (ver _informe-min-pj-duplicado.md). Un nombre solo, y la app
+// deja de llevar su propia copia: lee el valor de parametros.json.
+const MIN_PJ = 12;
 const METRICAS_PCT = ['ptPorPartido','rtPorPartido','asPorPartido','brPorPartido','vaPorPartido','ts','efg','t3Pct'];
 
 function percentilEn(valoresOrdenados, v) {
@@ -395,7 +406,7 @@ function percentilEn(valoresOrdenados, v) {
   return Math.round(100 * n / valoresOrdenados.length);
 }
 
-const elegiblesPct = salidaJugadores.filter(j => j.pj >= MIN_PJ_PCT);
+const elegiblesPct = salidaJugadores.filter(j => j.pj >= MIN_PJ);
 const ordNacional = {};
 const ordGrupo = {};
 for (const m of METRICAS_PCT) {
@@ -412,7 +423,7 @@ for (const g of Object.keys(ordGrupo)) {
 }
 
 for (const j of salidaJugadores) {
-  if (j.pj < MIN_PJ_PCT) { j.percentiles = null; continue; }
+  if (j.pj < MIN_PJ) { j.percentiles = null; continue; }
   const pct = {};
   for (const m of METRICAS_PCT) {
     pct[m] = {
@@ -512,6 +523,14 @@ const METRICAS_EQ_PCT = [
 
 fs.writeFileSync(path.join(DIR_OUT, 'equipos.json'), JSON.stringify(salidaEquipos, null, 1));
 fs.writeFileSync(path.join(DIR_OUT, 'jugadores.json'), JSON.stringify(salidaJugadores, null, 1));
+
+// parametros.json (S17.9): valores calculados por temporada que la app necesita y
+// antes llevaba escritos a mano (MIN_PJ) o en un fichero dedicado solo a ellos
+// (srs-pestillo.json). Un sitio por temporada, y la app lo lee en vez de llevar su
+// propia copia -- si el 12 cambia algun dia, las temporadas ya calculadas siguen
+// describiendo el valor con el que de verdad se calcularon, no el de hoy.
+fs.writeFileSync(path.join(DIR_OUT, 'parametros.json'),
+  JSON.stringify({ minPj: MIN_PJ, srsPestillo: pestillo }, null, 1));
 
 // Fichero ligero para el comparador: solo lo que Comparador.jsx usa (identidad,
 // filtros, 8 metricas y sus percentiles nac). ~88% mas pequeno que jugadores.json,
