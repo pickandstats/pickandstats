@@ -221,9 +221,9 @@ Tres consecuencias, y las tres son deliberadas:
 - **Una vez que un grupo queda limpio, no vuelve a ocultarse** en esa temporada. Son los
   nueve rebotes de arriba: una columna que aparece, desaparece y vuelve es peor que una
   columna ausente.
-- **Mientras no se ve, la nota dice por qué y cuánto falta**, con la cifra del momento: «el
-  mayor del grupo es de 7.4 puntos». Preferimos un hueco con su número a un número que
-  parece información y es ruido de muestra.
+- **Mientras no se ve, la nota dice por qué y cuánto falta**, nombrando el grupo y con la
+  cifra del momento: cuánto vale el mayor ajuste de ese grupo ahora mismo. Preferimos un
+  hueco con su número a un número que parece información y es ruido de muestra.
 
 **La ventana útil del SRS es, entonces, de ahí en adelante y antes del final**: cuando el
 calendario ya ha generado diferencias reales pero todavía no se ha equilibrado del todo.
