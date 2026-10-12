@@ -23,6 +23,17 @@
 // este script lee TAMBIEN el estado.json desplegado y lo compara con el del
 // repo — lo que le importa a un lector es lo que ve, no lo que hay en git.
 //
+// Y hay un caso que NINGUNA de esas dos lecturas ve: si `desplegar.yml` falla
+// pero el repo no ha cambiado desde el ultimo despliegue bueno, el desfase es
+// cero y el latido sigue fresco -- todo verde, y es verdad, hasta que lleguen
+// datos nuevos y no tengan donde publicarse (S17.10: era el agujero que tapaba
+// el correo de notificacion de Actions, antes de que veinte avisos identicos
+// por el mismo fallo repetido lo volvieran ruido y las issues reales de este
+// vigilante se perdieran debajo). Por eso la primera comprobacion de `main()`
+// lee la `conclusion` de la ultima ejecucion COMPLETADA de `desplegar.yml`
+// directamente por la API de GitHub -- nunca el listado ni la duracion
+// renderizada, que ya nos engañaron antes (ver ARQUITECTURA.md S17.7).
+//
 // Uso: node scraper/vigilante.js [--simular-retraso N]
 //   --simular-retraso N   resta N dias al latido real, SOLO para poder probar la
 //                         alarma de punta a punta (incluida la notificacion) sin
@@ -40,6 +51,7 @@ const UMBRAL_HORAS_DESPLIEGUE = 48; // margen para que un despliegue que falle u
 const URL_DESPLEGADO = 'https://pickandstats.es/app/data/estado.json';
 const TITULO_ALARMA_LATIDO = '🔴 Vigilante: el pipeline de datos no se ha ejecutado';
 const TITULO_ALARMA_DESPLIEGUE = '🔴 Vigilante: el sitio desplegado no recibe los datos';
+const TITULO_ALARMA_PUBLICACION = '🔴 Vigilante: el sitio no puede publicar cambios nuevos';
 
 const args = process.argv.slice(2);
 const iDelay = args.indexOf('--simular-retraso');
@@ -58,6 +70,18 @@ if (!estado.actualizado) {
 
 function gh(ghArgs) {
   return execFileSync('gh', ghArgs, { encoding: 'utf8' });
+}
+
+// La ultima ejecucion COMPLETADA de desplegar.yml, leida por `conclusion` del
+// campo que GitHub ya calcula -- nunca por el listado ni por la duracion
+// renderizada: esa lectura ya nos engaño dos veces este mes (ver ARQUITECTURA.md
+// S17.7, "el estreno del 28/9 salio bien" era falso leido asi). `--status
+// completed` descarta ejecuciones en curso, que no tienen conclusion todavia.
+function ultimoDespliegueCompletado() {
+  const salida = gh(['run', 'list', '--workflow=desplegar.yml', '--status', 'completed',
+    '--limit', '1', '--json', 'databaseId,conclusion,createdAt']);
+  const lista = JSON.parse(salida);
+  return lista[0] || null;
 }
 
 function issueAbierta(titulo) {
@@ -95,6 +119,52 @@ function cerrarSiExiste(titulo, mensaje) {
 
 async function main() {
   let huboFallo = false;
+
+  // --- Requisito previo a apagar el correo de Actions: el caso que ese correo veia
+  // y el latido no ve. Si desplegar.yml falla pero el repo no ha cambiado desde el
+  // ultimo despliegue bueno, el desfase repo<->desplegado es cero y el latido sigue
+  // fresco: las dos comprobaciones de abajo dicen que todo esta bien, y es verdad...
+  // hasta que lleguen datos nuevos y no tengan donde publicarse. Es la misma mina
+  // armada del 5 de octubre, un instante antes de explotar.
+  try {
+    const ultimoDespliegue = ultimoDespliegueCompletado();
+    if (!ultimoDespliegue) {
+      console.log('⚠ No se encontro ninguna ejecucion completada de desplegar.yml.');
+    } else if (ultimoDespliegue.conclusion !== 'success') {
+      huboFallo = true;
+      abrirOActualizar(
+        TITULO_ALARMA_PUBLICACION,
+        [
+          `El sitio no puede publicar: el proximo dato que llegue no saldra.`,
+          '',
+          `La ultima ejecucion completada de \`desplegar.yml\` (#${ultimoDespliegue.databaseId}, ` +
+            `${ultimoDespliegue.createdAt}) termino con conclusion **${ultimoDespliegue.conclusion}**, ` +
+            'no `success`.',
+          '',
+          `Comprueba \`gh run view ${ultimoDespliegue.databaseId} --log-failed\` para ver por que, ` +
+            'y relanzalo con `gh run rerun ' + ultimoDespliegue.databaseId + '` si el fallo ya esta arreglado.',
+        ].join('\n'),
+        'Sigue sin resolverse: la ultima ejecucion completada de `desplegar.yml` sigue sin `success`.'
+      );
+    } else {
+      cerrarSiExiste(
+        TITULO_ALARMA_PUBLICACION,
+        `Resuelto: la ultima ejecucion completada de \`desplegar.yml\` (#${ultimoDespliegue.databaseId}) ` +
+          'termino con `success`.'
+      );
+      console.log(`✓ Ultimo despliegue completado (#${ultimoDespliegue.databaseId}) con conclusion success.`);
+    }
+  } catch (e) {
+    // Un fallo al preguntar no es lo mismo que "todo va bien" -- misma regla que el
+    // fetch del desplegado, de abajo.
+    huboFallo = true;
+    console.error(`❌ No se pudo leer el historial de desplegar.yml: ${e.message}`);
+    abrirOActualizar(
+      TITULO_ALARMA_PUBLICACION,
+      `No se ha podido consultar el historial de \`desplegar.yml\` via \`gh run list\`: **${e.message}**.`,
+      'Sigue sin poder consultarse.'
+    );
+  }
 
   // --- Segunda lectura: el estado.json desplegado, comparado con el del repo ---
   let desplegado = null;

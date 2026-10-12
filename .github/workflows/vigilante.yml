@@ -17,19 +17,29 @@ name: Vigilante del pipeline de datos
 # en cada semana en blanco.
 #
 # Limite conocido, dejado escrito a proposito: este workflow es TAMBIEN
-# programado, y GitHub puede descartarlo igual que al de datos. Dos dias
-# independientes (miercoles y sabado) hacen improbable perder los dos, no
-# imposible. Lo unico que elimina el riesgo del todo es un dead-man's switch
-# externo — un tercero que espera un ping semanal y avisa si no llega. No se
-# monta aqui a proposito: mete una dependencia externa y un secreto en un
+# programado, y GitHub puede descartarlo igual que al de datos (ocurre, esta
+# documentado). Diario hace improbable perder la ejecucion de un dia Y la del
+# siguiente, no imposible. Lo unico que elimina el riesgo del todo es un
+# dead-man's switch externo — un tercero que espera un ping y avisa si no llega.
+# No se monta aqui a proposito: mete una dependencia externa y un secreto en un
 # proyecto de una persona. Queda como via de mejora si el riesgo residual deja
 # de ser aceptable.
+#
+# Diario, no dos veces por semana (S17.10): el job tarda segundos y solo habla
+# cuando hay algo que decir, asi que correr mas a menudo no añade ruido -- baja
+# el peor caso de deteccion de tres dias y medio a uno. Es ademas el paso previo
+# a apagar el correo de ejecucion de Actions como canal aparte: veinte avisos
+# identicos de ese correo (uno por despliegue fallido cada 6h) sepultaron las dos
+# issues que de verdad decian algo, el 5/10. Este workflow pasa a ser el unico
+# canal cuando cubra lo que ese correo veia y el latido no (la comprobacion de
+# abajo, sobre la conclusion del ultimo despliegue) -- hasta entonces, los dos
+# canales siguen activos a la vez.
 on:
   schedule:
-    # Miercoles y sabado a las 09:23 UTC: dias distintos del lunes del cron de
-    # datos (07:00 UTC) y fuera del minuto 0, para no compartir ni el dia ni el
-    # instante de carga de GitHub con el.
-    - cron: '23 9 * * 3,6'
+    # Las 09:23 UTC todos los dias: fuera del minuto 0 y de la hora 07:00 del
+    # cron de datos, para no compartir ni el minuto ni el instante de carga de
+    # GitHub con el.
+    - cron: '23 9 * * *'
   workflow_dispatch:
     inputs:
       simular_retraso:
@@ -40,6 +50,7 @@ on:
 permissions:
   contents: read
   issues: write   # para abrir/actualizar/cerrar la issue de alarma
+  actions: read   # para leer la conclusion del ultimo despliegue completado
 
 jobs:
   vigilar:
