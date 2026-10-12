@@ -1,11 +1,11 @@
 ---
 titulo: El SRS, qué añade ajustar el rating por la dificultad del calendario
-descripcion: Qué es el rating ajustado, por qué el mejor equipo de la liga sale perdiendo al aplicarlo, y por qué con la temporada terminada no cambia absolutamente nada. Con la medición completa de la Primera FEB.
+descripcion: Qué es el rating ajustado, por qué el mejor equipo de la liga sale perdiendo al aplicarlo, y por qué con la temporada terminada no cambia absolutamente nada. Con la medición completa de las tres categorías.
 descripcionSeo: Qué es el SRS o rating ajustado, cómo corrige la dificultad del calendario y por qué con la liga terminada no altera el orden del rating neto.
 familia: metricas
 orden: 5
 fecha: 2026-09-09
-actualizado: 2026-10-04
+actualizado: 2026-10-11
 temporada: "2025/26"
 ---
 
@@ -135,9 +135,11 @@ rango** —la distancia entre el ajuste mayor y el menor de la liga—; aquí, *
 cuánto se mueve cada equipo. Por eso la jornada 4 aparece como 39,8 en una y como 7,13 en
 la otra.)
 
-**En la jornada 1 el ajuste es exactamente cero.** Con un partido jugado, cada equipo se ha
-cruzado con un solo rival y la corrección no tiene sobre qué trabajar: el SRS *es* el rating
-neto, dígito a dígito, para todos los equipos de la tabla.
+**En la jornada 1 el ajuste es exactamente cero**, y ese cero no significa lo que parece.
+Con un partido jugado cada equipo se ha cruzado con un solo rival, así que los ratings
+netos de cada pareja son exactamente opuestos y la corrección **no tiene sobre qué
+trabajar**: el SRS *es* el rating neto, dígito a dígito, para todos los equipos de la
+tabla. Es un cero por falta de información, no por acuerdo.
 
 **Y en la jornada 2 se dispara a dieciséis puntos de media**, con el cien por cien de los
 equipos por encima de 3. Para situarlo: el mejor SRS de una temporada completa que hemos
@@ -152,15 +154,79 @@ puesto.
 Y resuelve la aparente contradicción con la tabla anterior: el SRS **sí** reordena mucho en
 la jornada 4, pero reordena mucho **porque es ruido**, no a pesar de serlo.
 
-El ajuste se asienta en la **jornada 15** —la 14 en 2024/25; las dos temporadas coinciden
-dentro de una jornada— y a partir de ahí ningún equipo vuelve a superar los 3 puntos. Por
-eso **en Pick&Stats la columna del SRS aparece en guiones hasta la jornada 15**, con una
-nota que dice desde cuándo se verá. Preferimos un hueco explicado a un número que parece
-información y es ruido de muestra.
+En la Primera FEB el ajuste se asienta en la **jornada 15** —la 14 en 2024/25; las dos
+temporadas coinciden dentro de una jornada— y a partir de ahí ningún equipo vuelve a
+superar los 3 puntos.
 
-**La ventana útil del SRS es, entonces, de la jornada 15 en adelante y antes del final**:
-cuando el calendario ya ha generado diferencias reales pero todavía no se ha equilibrado del
-todo.
+## Pero no se asienta a la misma hora en todas partes
+
+Esa frase —«la jornada 15»— es la que teníamos y es la que hemos tenido que tirar, porque
+al medir las otras dos categorías **grupo a grupo** resulta que no hay una jornada. Hay
+una por grupo, y se parecen poco.
+
+En la Segunda FEB, con dos grupos de 14 equipos y 26 jornadas, la jornada en que ningún
+equipo vuelve a pasar de 3 puntos:
+
+| Grupo | 2025/26 | 2024/25 |
+|---|---|---|
+| Este | 10 | 9 |
+| Oeste | 10 | 8 |
+
+Razonable, consistente, y ya distinta de Primera. Pero la Tercera FEB tiene diez grupos, y
+ahí el dato deja de parecerse a sí mismo:
+
+| Grupo | 2025/26 | 2024/25 |
+|---|---|---|
+| A-A | 12 | 7 |
+| A-B | 12 | 11 |
+| B-A | **18** | **18** |
+| B-B | 10 | 11 |
+| C-A | 11 | 10 |
+| C-B | 13 | 9 |
+| D-A | **22** | 12 |
+| D-B | 12 | 10 |
+| E-A | 10 | **21** |
+| E-B | **19** | 11 |
+
+**De la jornada 7 a la 22, entre grupos del mismo tamaño y la misma categoría.** Más del
+doble entre el más rápido y el más lento, sobre una liga de 26 jornadas. Y no es ruido de
+un año: el B-A sale 18 en las dos temporadas medidas.
+
+Esto dice algo que no esperábamos y que merece quedarse: **lo desigual que es un calendario
+no depende de la categoría, depende del grupo.** Diez grupos con el mismo número de
+equipos, el mismo número de jornadas y el mismo formato tardan entre siete y veintidós
+jornadas en dejar de ser un reparto de rivales afortunado. El promedio de los diez —la
+jornada 13— no describe a ninguno.
+
+Hay un detalle más que obliga a desconfiar de cualquier fecha: **el ajuste no se asienta y
+se queda quieto, a veces vuelve.** Sobre las 26 combinaciones de grupo y temporada que
+hemos medido, en **nueve** el ajuste baja de los 3 puntos y luego algún equipo vuelve a
+pasarlos, durante una, dos o tres jornadas. Cero veces en Primera, una en Segunda y siete
+en Tercera, repartidas en cinco de sus diez grupos.
+
+## Qué hace Pick&Stats con todo esto
+
+Dejamos de usar una jornada y usamos **la condición que la jornada estaba aproximando**:
+
+> La columna del SRS de un grupo aparece cuando **ningún equipo de ese grupo** tiene un
+> ajuste mayor de 3 puntos.
+
+Tres consecuencias, y las tres son deliberadas:
+
+- **Se decide por grupo, no por categoría ni por equipo.** No por categoría, porque ya has
+  visto los diez grupos de Tercera. Y no por equipo, porque el SRS es un cálculo del grupo
+  entero: si a un solo equipo se le va el ajuste, la solución de todo el grupo está sin
+  asentar, incluidos los equipos cuyo propio ajuste parece pequeño. Un número pequeño
+  dentro de un grupo inestable no es fiable, es tranquilizador.
+- **Una vez que un grupo queda limpio, no vuelve a ocultarse** en esa temporada. Son los
+  nueve rebotes de arriba: una columna que aparece, desaparece y vuelve es peor que una
+  columna ausente.
+- **Mientras no se ve, la nota dice por qué y cuánto falta**, con la cifra del momento: «el
+  mayor del grupo es de 7.4 puntos». Preferimos un hueco con su número a un número que
+  parece información y es ruido de muestra.
+
+**La ventana útil del SRS es, entonces, de ahí en adelante y antes del final**: cuando el
+calendario ya ha generado diferencias reales pero todavía no se ha equilibrado del todo.
 
 ## El otro límite, y no es pequeño
 
@@ -170,13 +236,19 @@ diez y dos universos separados que no se tocan. Un SRS de +12 en un grupo y otro
 otro no dicen que los equipos sean equivalentes, porque las dos escalas se han calibrado
 sobre poblaciones distintas que nunca se han medido entre sí.
 
+Y esto **no se arregla esperando**: no es un problema de muestra pequeña que se corrija con
+más jornadas. Cada grupo se recentra sobre su propia media, así que las escalas siguen
+siendo distintas con la liga terminada. Por eso, cuando en la app hay más de un grupo
+seleccionado, los rankings que mezclan grupos se ordenan por **rating neto** y no por SRS.
+
 Para comparar entre grupos no hay atajo estadístico: hacen falta partidos entre ellos, y
 esos solo llegan en las fases de ascenso.
 
 ## Dónde verlo
 
 En [Pick&Stats](/app/), el SRS está en la vista **Equipos**, junto al ritmo y a los
-ratings, y en la ficha de cada equipo. Léelo como lo que es: durante la temporada, una
+ratings, y en la ficha de cada equipo. Si el grupo todavía no ha asentado su ajuste verás
+un guion y la nota con la cifra que falta. Léelo como lo que es: durante la temporada, una
 corrección útil de quién ha tenido el camino más duro; al terminarla, una nota a pie de
 página del rating neto.
 
