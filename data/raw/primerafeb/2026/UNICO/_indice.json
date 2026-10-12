@@ -280,7 +280,7 @@
    "id": "1009929",
    "nombre": "BÀSQUET MENORCA"
   },
-  "resultado": "*-*",
+  "resultado": "91-76",
   "fecha": "09/10/2026",
   "hora": "21:00"
  },
@@ -295,7 +295,7 @@
    "id": "1008400",
    "nombre": "GRUPO URETA TIZONA BURGOS"
   },
-  "resultado": "*-*",
+  "resultado": "91-88",
   "fecha": "10/10/2026",
   "hora": "18:00"
  },
@@ -310,7 +310,7 @@
    "id": "1008797",
    "nombre": "CAJASIETE GRAN CANARIA"
   },
-  "resultado": "*-*",
+  "resultado": "84-74",
   "fecha": "10/10/2026",
   "hora": "18:30"
  },
@@ -325,7 +325,7 @@
    "id": "1009584",
    "nombre": "GRUPO ALEGA CANTABRIA"
   },
-  "resultado": "*-*",
+  "resultado": "86-101",
   "fecha": "10/10/2026",
   "hora": "19:00"
  },
@@ -340,7 +340,7 @@
    "id": "1009110",
    "nombre": "CAJASOL COTO CÓRDOBA"
   },
-  "resultado": "*-*",
+  "resultado": "81-71",
   "fecha": "10/10/2026",
   "hora": "19:00"
  },
@@ -355,7 +355,7 @@
    "id": "1009072",
    "nombre": "FIBWI MALLORCA BASQUET PALMA"
   },
-  "resultado": "*-*",
+  "resultado": "99-86",
   "fecha": "10/10/2026",
   "hora": "20:00"
  },
@@ -370,7 +370,7 @@
    "id": "1008900",
    "nombre": "CAJA RURAL CB ZAMORA"
   },
-  "resultado": "*-*",
+  "resultado": "84-69",
   "fecha": "11/10/2026",
   "hora": "12:00"
  },
@@ -385,7 +385,7 @@
    "id": "1010494",
    "nombre": "PARTIZÁN DE FUENLABRADA"
   },
-  "resultado": "*-*",
+  "resultado": "77-74",
   "fecha": "11/10/2026",
   "hora": "12:30"
  },
@@ -400,7 +400,7 @@
    "id": "1008378",
    "nombre": "INVEREADY ASKATUAK GIPUZKOA"
   },
-  "resultado": "*-*",
+  "resultado": "106-76",
   "fecha": "11/10/2026",
   "hora": "18:30"
  },
@@ -1141,6 +1141,21 @@
  },
  {
   "jornada": "Jornada 9(20/11/2026)",
+  "id": "2535801",
+  "local": {
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+  },
+  "visitante": {
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
+  },
+  "resultado": "*-*",
+  "fecha": "22/11/2026",
+  "hora": "12:30"
+ },
+ {
+  "jornada": "Jornada 9(20/11/2026)",
   "id": "2535804",
   "local": {
    "id": "1009584",
@@ -1183,21 +1198,6 @@
   "resultado": "*-*",
   "fecha": "22/11/2026",
   "hora": "13:00"
- },
- {
-  "jornada": "Jornada 9(20/11/2026)",
-  "id": "2535801",
-  "local": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
-  },
-  "visitante": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
-  },
-  "resultado": "*-*",
-  "fecha": "22/11/2026",
-  "hora": "17:00"
  },
  {
   "jornada": "Jornada 9(20/11/2026)",
@@ -1531,6 +1531,21 @@
  },
  {
   "jornada": "Jornada 12(18/12/2026)",
+  "id": "2535831",
+  "local": {
+   "id": "1009837",
+   "nombre": "ALIMERKA OVIEDO BALONCESTO"
+  },
+  "visitante": {
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
+  },
+  "resultado": "*-*",
+  "fecha": "19/12/2026",
+  "hora": "19:00"
+ },
+ {
+  "jornada": "Jornada 12(18/12/2026)",
   "id": "2535824",
   "local": {
    "id": "1008687",
@@ -1573,21 +1588,6 @@
   "resultado": "*-*",
   "fecha": "20/12/2026",
   "hora": "12:30"
- },
- {
-  "jornada": "Jornada 12(18/12/2026)",
-  "id": "2535831",
-  "local": {
-   "id": "1009837",
-   "nombre": "ALIMERKA OVIEDO BALONCESTO"
-  },
-  "visitante": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
-  },
-  "resultado": "*-*",
-  "fecha": "20/12/2026",
-  "hora": "17:00"
  },
  {
   "jornada": "Jornada 12(18/12/2026)",
@@ -2431,18 +2431,18 @@
  },
  {
   "jornada": "Jornada 19(05/02/2027)",
-  "id": "2535888",
+  "id": "2535895",
   "local": {
-   "id": "1008687",
-   "nombre": "HLA ALICANTE"
+   "id": "1010324",
+   "nombre": "INSOLAC CAJA 87"
   },
   "visitante": {
-   "id": "1009095",
-   "nombre": "CLUB OURENSE BALONCESTO"
+   "id": "1008378",
+   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
   },
   "resultado": "*-*",
   "fecha": "05/02/2027",
-  "hora": "20:45"
+  "hora": "20:30"
  },
  {
   "jornada": "Jornada 19(05/02/2027)",
@@ -2454,6 +2454,21 @@
   "visitante": {
    "id": "1009110",
    "nombre": "CAJASOL COTO CÓRDOBA"
+  },
+  "resultado": "*-*",
+  "fecha": "05/02/2027",
+  "hora": "20:45"
+ },
+ {
+  "jornada": "Jornada 19(05/02/2027)",
+  "id": "2535888",
+  "local": {
+   "id": "1008687",
+   "nombre": "HLA ALICANTE"
+  },
+  "visitante": {
+   "id": "1009095",
+   "nombre": "CLUB OURENSE BALONCESTO"
   },
   "resultado": "*-*",
   "fecha": "05/02/2027",
@@ -2533,21 +2548,6 @@
   "resultado": "*-*",
   "fecha": "06/02/2027",
   "hora": "20:00"
- },
- {
-  "jornada": "Jornada 19(05/02/2027)",
-  "id": "2535895",
-  "local": {
-   "id": "1010324",
-   "nombre": "INSOLAC CAJA 87"
-  },
-  "visitante": {
-   "id": "1008378",
-   "nombre": "INVEREADY ASKATUAK GIPUZKOA"
-  },
-  "resultado": "*-*",
-  "fecha": "07/02/2027",
-  "hora": "12:30"
  },
  {
   "jornada": "Jornada 19(05/02/2027)",

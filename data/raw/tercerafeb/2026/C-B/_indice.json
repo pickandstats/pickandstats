@@ -115,7 +115,7 @@
    "id": "1009701",
    "nombre": "CB ARTÉS"
   },
-  "resultado": "*-*",
+  "resultado": "90-88",
   "fecha": "10/10/2026",
   "hora": "18:00"
  },
@@ -130,7 +130,7 @@
    "id": "1009146",
    "nombre": "SA TINTINA CB ES CASTELL MENORCA"
   },
-  "resultado": "*-*",
+  "resultado": "90-82",
   "fecha": "10/10/2026",
   "hora": "18:15"
  },
@@ -145,24 +145,9 @@
    "id": "1008966",
    "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
   },
-  "resultado": "*-*",
+  "resultado": "79-66",
   "fecha": "10/10/2026",
   "hora": "18:30"
- },
- {
-  "jornada": "Jornada 2(11/10/2026)",
-  "id": "2528260",
-  "local": {
-   "id": "1009144",
-   "nombre": "CB NAVÀS VISCOLA"
-  },
-  "visitante": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "resultado": "*-*",
-  "fecha": "10/10/2026",
-  "hora": "19:30"
  },
  {
   "jornada": "Jornada 2(11/10/2026)",
@@ -175,7 +160,7 @@
    "id": "1008699",
    "nombre": "MONBUS - CB IGUALADA"
   },
-  "resultado": "*-*",
+  "resultado": "60-72",
   "fecha": "10/10/2026",
   "hora": "20:15"
  },
@@ -190,7 +175,7 @@
    "id": "1008800",
    "nombre": "C.B.VALLS.TALLERS PABLO MARTÍNEZ"
   },
-  "resultado": "*-*",
+  "resultado": "71-63",
   "fecha": "11/10/2026",
   "hora": "17:00"
  },
@@ -205,8 +190,23 @@
    "id": "1010576",
    "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
   },
-  "resultado": "*-*",
+  "resultado": "82-72",
   "fecha": "11/10/2026",
+  "hora": "17:30"
+ },
+ {
+  "jornada": "Jornada 2(11/10/2026)",
+  "id": "2528260",
+  "local": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "visitante": {
+   "id": "1009144",
+   "nombre": "CB NAVÀS VISCOLA"
+  },
+  "resultado": "*-*",
+  "fecha": "08/12/2026",
   "hora": "17:30"
  },
  {
@@ -376,21 +376,6 @@
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
-  "id": "2528270",
-  "local": {
-   "id": "1009815",
-   "nombre": "C.B.ROSER"
-  },
-  "visitante": {
-   "id": "1010576",
-   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
-  },
-  "resultado": "*-*",
-  "fecha": "24/10/2026",
-  "hora": "20:15"
- },
- {
-  "jornada": "Jornada 4(25/10/2026)",
   "id": "2528273",
   "local": {
    "id": "1009144",
@@ -403,6 +388,21 @@
   "resultado": "*-*",
   "fecha": "25/10/2026",
   "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 4(25/10/2026)",
+  "id": "2528270",
+  "local": {
+   "id": "1009815",
+   "nombre": "C.B.ROSER"
+  },
+  "visitante": {
+   "id": "1010576",
+   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "resultado": "*-*",
+  "fecha": "25/10/2026",
+  "hora": "12:15"
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
@@ -541,21 +541,6 @@
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
-  "id": "2528285",
-  "local": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "visitante": {
-   "id": "1010576",
-   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
-  },
-  "resultado": "*-*",
-  "fecha": "07/11/2026",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 6(08/11/2026)",
   "id": "2528287",
   "local": {
    "id": "1008693",
@@ -568,6 +553,21 @@
   "resultado": "*-*",
   "fecha": "07/11/2026",
   "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 6(08/11/2026)",
+  "id": "2528285",
+  "local": {
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
+  },
+  "visitante": {
+   "id": "1010576",
+   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "resultado": "*-*",
+  "fecha": "07/11/2026",
+  "hora": "19:15"
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
@@ -766,6 +766,21 @@
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
+  "id": "2528302",
+  "local": {
+   "id": "1009146",
+   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
+  },
+  "visitante": {
+   "id": "1008699",
+   "nombre": "MONBUS - CB IGUALADA"
+  },
+  "resultado": "*-*",
+  "fecha": "21/11/2026",
+  "hora": "19:30"
+ },
+ {
+  "jornada": "Jornada 8(22/11/2026)",
   "id": "2528299",
   "local": {
    "id": "1009144",
@@ -811,21 +826,6 @@
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
-  "id": "2528302",
-  "local": {
-   "id": "1009146",
-   "nombre": "SA TINTINA CB ES CASTELL MENORCA"
-  },
-  "visitante": {
-   "id": "1008699",
-   "nombre": "MONBUS - CB IGUALADA"
-  },
-  "resultado": "*-*",
-  "fecha": "22/11/2026",
-  "hora": "12:30"
- },
- {
-  "jornada": "Jornada 8(22/11/2026)",
   "id": "2528297",
   "local": {
    "id": "1009816",
@@ -838,6 +838,21 @@
   "resultado": "*-*",
   "fecha": "22/11/2026",
   "hora": "13:00"
+ },
+ {
+  "jornada": "Jornada 9(29/11/2026)",
+  "id": "2528308",
+  "local": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "visitante": {
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
+  },
+  "resultado": "*-*",
+  "fecha": "28/11/2026",
+  "hora": "16:30"
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
@@ -898,21 +913,6 @@
   "resultado": "*-*",
   "fecha": "28/11/2026",
   "hora": "20:15"
- },
- {
-  "jornada": "Jornada 9(29/11/2026)",
-  "id": "2528308",
-  "local": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "visitante": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "resultado": "*-*",
-  "fecha": "29/11/2026",
-  "hora": "12:00"
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
@@ -1241,8 +1241,8 @@
    "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
   },
   "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "19:45"
+  "fecha": "20/12/2026",
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 12(20/12/2026)",
@@ -1501,21 +1501,6 @@
  },
  {
   "jornada": "Jornada 15(24/01/2027)",
-  "id": "2528351",
-  "local": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "visitante": {
-   "id": "1009144",
-   "nombre": "CB NAVÀS VISCOLA"
-  },
-  "resultado": "*-*",
-  "fecha": "23/01/2027",
-  "hora": "18:30"
- },
- {
-  "jornada": "Jornada 15(24/01/2027)",
   "id": "2528346",
   "local": {
    "id": "1010576",
@@ -1528,6 +1513,21 @@
   "resultado": "*-*",
   "fecha": "23/01/2027",
   "hora": "19:00"
+ },
+ {
+  "jornada": "Jornada 15(24/01/2027)",
+  "id": "2528351",
+  "local": {
+   "id": "1009144",
+   "nombre": "CB NAVÀS VISCOLA"
+  },
+  "visitante": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "resultado": "*-*",
+  "fecha": "23/01/2027",
+  "hora": "19:30"
  },
  {
   "jornada": "Jornada 15(24/01/2027)",
