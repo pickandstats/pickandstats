@@ -146,7 +146,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, onVe
                       </ol>
                     </>
                   ) : (
-                    <p className="card-vacio">Sin datos suficientes</p>
+                    <p className="card-vacio">Entra en el ranking a partir de {MIN_PJ} partidos jugados.</p>
                   )}
                 </div>
               );
