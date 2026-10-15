@@ -1,0 +1,410 @@
+{
+ "_comentario": "Partidos de la temporada 2025 (cerrada) que la reparacion en paralelo marco `gana_vieja`: ni la extraccion nueva ni la vieja pasan verificarActa. Generado desde data/raw-reparado/*/2025/_informe-parcial.json por scraper/generar-registro-irreparables.js -- no se edita a mano, se regenera.",
+ "generado": "2026-10-15T14:01:13.573Z",
+ "progresoReparacionAlGenerar": {
+  "primerafeb": 290,
+  "segundafeb": 394,
+  "tercerafeb": 954
+ },
+ "provisional": true,
+ "avisoSiProvisional": "Tercera no habia terminado de compararse cuando se genero este registro. Las cifras -- sobre todo las de Tercera, donde se concentra lo malo -- se van a mover. Regenerar cuando termine, antes de usarlo para decidir la promocion.",
+ "porCausa": {
+  "empate_total": 25,
+  "vieja_mas_parciales": 6,
+  "acta_no_disponible": 18
+ },
+ "entradas": [
+  {
+   "partido": "2486333",
+   "competicion": "primerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2513268",
+   "competicion": "primerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 1,
+   "parcialesNuevo": 1
+  },
+  {
+   "partido": "2486854",
+   "competicion": "segundafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2486864",
+   "competicion": "segundafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2487898",
+   "competicion": "segundafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2487905",
+   "competicion": "segundafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2487909",
+   "competicion": "segundafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2487912",
+   "competicion": "segundafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 2
+  },
+  {
+   "partido": "2484049",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484096",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484112",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484257",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484299",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484572",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484601",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 2,
+   "parcialesNuevo": 2
+  },
+  {
+   "partido": "2484653",
+   "competicion": "tercerafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 2
+  },
+  {
+   "partido": "2484657",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484667",
+   "competicion": "tercerafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484669",
+   "competicion": "tercerafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484670",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484671",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484672",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 5,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484673",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484674",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484675",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484678",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484682",
+   "competicion": "tercerafeb",
+   "causa": "vieja_mas_parciales",
+   "motivo": "empate en verificarActa, la vieja trae mas parciales (5 > 3)",
+   "parcialesViejo": 5,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484683",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2484720",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2484729",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484742",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484781",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2484837",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2486693",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2486707",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2486712",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 4
+  },
+  {
+   "partido": "2486744",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2486748",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 2,
+   "parcialesNuevo": 2
+  },
+  {
+   "partido": "2486768",
+   "competicion": "tercerafeb",
+   "causa": "empate_total",
+   "motivo": "empate total (verificarActa y parciales): no se toca",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 3
+  },
+  {
+   "partido": "2486772",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486773",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486774",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486775",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486776",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486777",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486778",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486779",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486780",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 4,
+   "parcialesNuevo": 0
+  },
+  {
+   "partido": "2486781",
+   "competicion": "tercerafeb",
+   "causa": "acta_no_disponible",
+   "motivo": "la nueva extraccion fallo: Sin cortes válidos (acta no disponible)",
+   "parcialesViejo": 3,
+   "parcialesNuevo": 0
+  }
+ ]
+}

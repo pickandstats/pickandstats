@@ -10,36 +10,49 @@
 //
 // Uso: node test/verificar-reparacion-cuartos.js
 //
-// Criterio de aceptación para cuando se repare (semana del 5 de octubre):
-// correr este script sobre los datos reparados tiene que dejar EXACTAMENTE
-// UN partido sin cuadrar -- 2484716 -- y NINGÚN otro de los 534 que hoy están
-// en partidos-cuartos-incompletos.json.
+// CRITERIO DE ACEPTACIÓN (reescrito el 15/10, ver _instrucciones.md de ese
+// lote): el del 27/9 —"tras la reparación no debe fallar ninguno de los
+// 534"— dejó de cumplirse en cuanto la propia reparación midió que 49 de los
+// 534 no pasan NI con la extracción nueva NI con la vieja: no es que falte
+// repararlos mejor, es que no se pueden reparar desde lo que la FEB sirve hoy.
+// El criterio nuevo es el mismo idiom que partidos-cuartos-incompletos.json:
 //
-// Por qué solo uno y no "los 41 sin-Q1" que se pensaba al escribir el encargo:
-// se investigó 2484716 (ver _informe de esta tanda) y es un fallo DISTINTO al
-// del nombre envuelto -- el PDF de ese partido usa el carácter Unicode "∶"
-// (RATIO, U+2236) en vez de ":" (U+003A) en todos los MM:SS, así que
-// parseJugador no reconoce NINGUNA fila y el acta queda vacía de jugadores de
-// principio a fin. Unir líneas no arregla eso (no hay ':' que encontrar por
-// mucho que se junten líneas). Verificado independientemente contra las 2537
-// actas cacheadas: es el ÚNICO caso así en toda la base, no 41 -- los otros 40
-// del grupo "solo puntos" de partidos-cuartos-incompletos.json tienen el
-// cuarto 1 sano de verdad (el jugador perdido entra a partir del cuarto 2), y
-// el arreglo del nombre envuelto sí los cubre.
+//   Tras la reparación, NINGÚN partido de los 534 falla, SALVO los que estén
+//   en el registro de irreparables en origen (test/actas-irreparables-origen.json,
+//   generado por scraper/generar-registro-irreparables.js desde los
+//   _informe-parcial.json de la reparación -- no se edita a mano).
 //
-// Si al repasar esto tras la reparación quedan MÁS de 1, el arreglo no cubre
-// todo lo que se creía. Si queda MENOS de 1 (es decir, 0 -- si hasta 2484716
-// queda resuelto), significa que se ha tocado también el caso del carácter
-// "∶", que no estaba en el alcance de esta reparación: hay que confirmar que
-// fue intencional antes de darlo por bueno.
+// Y el registro no puede acumular polvo: si una entrada del registro YA PASA
+// el invariante (por ejemplo porque la FEB republicó el acta), este script
+// también falla -- un registro que no se limpia se convierte en una alfombra
+// bajo la que esconder cosas.
 const fs = require('fs');
 const path = require('path');
 
 const COMPS = { 1: 'primerafeb', 2: 'segundafeb', 3: 'tercerafeb' };
 const segMinuto = mmss => { const [m, s] = String(mmss || '00:00').split(':').map(Number); return (m || 0) * 60 + (s || 0); };
 
+const F_REGISTRO = path.join('test', 'actas-irreparables-origen.json');
+let registro = { entradas: [], provisional: true };
+if (fs.existsSync(F_REGISTRO)) {
+  registro = JSON.parse(fs.readFileSync(F_REGISTRO, 'utf8'));
+} else {
+  console.log(`(no existe ${F_REGISTRO} todavía -- regenéralo con scraper/generar-registro-irreparables.js. ` +
+    'Sin él, cualquier fallo cuenta como inesperado.)');
+}
+const clave = (comp, partido) => `${comp}|${partido}`;
+const registroPorClave = new Map(registro.entradas.map(e => [clave(e.competicion, e.partido), e]));
+// Dos cosas distintas que un registroPorClave.get() puede dejar sin marcar, y
+// no pueden confundirse: "ya lo comprobe y NO falla" (alfombra de verdad, hay
+// que quitarlo del registro) frente a "no he podido comprobarlo todavia" (acta
+// sin regenerar con --forzar, o ni siquiera cacheada) -- lo segundo no dice
+// nada sobre si la entrada sigue siendo valida.
+const registroFalloConfirmado = new Set();
+const registroVistoSinFallar = new Set();
+
 let totalMedibles = 0, sinReparar = 0;
-const fallos = [];
+const fallosInesperados = [];
+const fallosConocidos = [];
 
 for (const comp of [1, 2, 3]) {
   const dir = path.join('data', 'raw', COMPS[comp], '2025', 'actas');
@@ -61,6 +74,8 @@ for (const comp of [1, 2, 3]) {
     // hace falta volver a generarlos con actas-cuartos.js --forzar primero.
     // Sin este filtro, un "min" ausente se leeria como 0 y el script marcaria
     // CASI TODO como descuadrado, no por el bug, sino por el formato viejo.
+    // No contar esto como "ya paso": un registro no se limpia por una entrada
+    // que no se ha podido comprobar todavia.
     const yaReparado = d.porCuarto.slice(1).every(cuarto =>
       !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
     if (!yaReparado) { sinReparar++; continue; }
@@ -72,9 +87,8 @@ for (const comp of [1, 2, 3]) {
 
     for (let ei = 0; ei < 2; ei++) {
       // Sin "continue" si un cuarto no trae datos de este equipo: eso tiene
-      // que CONTAR como 0 minutos, no saltarse la comprobacion -- es
-      // exactamente el caso de 2484716 (porCuarto vacio en las 4 entradas):
-      // si se salta por "no medible", el peor caso pasa la prueba sin querer.
+      // que CONTAR como 0 minutos, no saltarse la comprobacion -- un porCuarto
+      // vacio en las 4 entradas tiene que descuadrar, no pasar sin querer.
       let suma = 0;
       for (const cuarto of d.porCuarto) {
         if (!cuarto || !cuarto[ei]) continue;
@@ -83,18 +97,58 @@ for (const comp of [1, 2, 3]) {
       if (suma !== esperado) ladoMal.push(ei === 0 ? 'local' : 'visitante');
     }
 
-    if (ladoMal.length) fallos.push({ partido: d.partido, competicion: COMPS[comp], ladoMal });
+    const k = clave(COMPS[comp], d.partido);
+    const enRegistro = registroPorClave.get(k);
+
+    if (!ladoMal.length) {
+      // Medible, y cuadra: si el registro dice que este partido es
+      // irreparable, aqui es donde se demuestra que ya no lo es.
+      if (enRegistro) registroVistoSinFallar.add(k);
+      continue;
+    }
+
+    if (enRegistro) {
+      registroFalloConfirmado.add(k);
+      fallosConocidos.push({ partido: d.partido, competicion: COMPS[comp], ladoMal, causa: enRegistro.causa });
+    } else {
+      fallosInesperados.push({ partido: d.partido, competicion: COMPS[comp], ladoMal });
+    }
   }
 }
 
+// Alfombra de verdad: el registro dice irreparable y el invariante, medido,
+// dice que cuadra. Distinto de "no comprobable todavia" (acta sin regenerar
+// con --forzar, o ni siquiera cacheada) -- eso no dice nada sobre si la
+// entrada sigue siendo valida, asi que no cuenta como alfombra.
+const alfombra = registro.entradas.filter(e => registroVistoSinFallar.has(clave(e.competicion, e.partido)));
+const noComprobadasTodavia = registro.entradas.filter(e => {
+  const k = clave(e.competicion, e.partido);
+  return !registroFalloConfirmado.has(k) && !registroVistoSinFallar.has(k);
+});
+
 if (sinReparar) console.log(`(${sinReparar} actas cacheadas de antes de este arreglo, sin "min" en los cuartos 2-4: no medibles todavia, hace falta re-extraerlas)`);
 console.log(`Medibles: ${totalMedibles}`);
-console.log(`Con el invariante de 4 cuartos descuadrado: ${fallos.length}`);
-if (fallos.length) console.log(fallos.map(f => `${f.partido} (${f.competicion}, ${f.ladoMal.join('+')})`).join('\n'));
+console.log(`Fallos conocidos (en el registro de irreparables): ${fallosConocidos.length}`);
+console.log(`Fallos inesperados (fuera del registro): ${fallosInesperados.length}`);
+if (fallosInesperados.length) {
+  console.log(fallosInesperados.map(f => `  ✗ ${f.partido} (${f.competicion}, ${f.ladoMal.join('+')})`).join('\n'));
+}
+if (alfombra.length) {
+  console.log(`Entradas del registro que YA CUADRAN (alfombra, hay que quitarlas): ${alfombra.length}`);
+  console.log(alfombra.map(e => `  ✗ ${e.partido} (${e.competicion}, causa: ${e.causa})`).join('\n'));
+}
+if (noComprobadasTodavia.length) {
+  console.log(`(${noComprobadasTodavia.length} entrada(s) del registro sin comprobar todavia: su acta en data/raw ` +
+    'no esta en formato medible -- necesita actas-cuartos.js --forzar, o la promocion de la reparacion. ' +
+    'No cuentan como alfombra.)');
+}
+if (registro.provisional) {
+  console.log(`\n⚠ El registro está marcado como provisional (${registro.avisoSiProvisional || 'reparación incompleta al generarlo'}).`);
+}
 
-const soloEsperado = fallos.length === 1 && fallos[0].partido === '2484716';
+const aceptado = fallosInesperados.length === 0 && alfombra.length === 0;
 console.log('');
-console.log(soloEsperado
-  ? '✓ Criterio de aceptacion cumplido: solo 2484716 sigue descuadrado.'
-  : `✗ Criterio de aceptacion NO cumplido (se esperaba exactamente 2484716, ha salido: ${fallos.map(f=>f.partido).join(', ') || 'ninguno'}).`);
-process.exit(soloEsperado ? 0 : 1);
+console.log(aceptado
+  ? `✓ Criterio de aceptación cumplido: solo fallan los ${fallosConocidos.length} del registro de irreparables, y ninguna entrada del registro sobra.`
+  : '✗ Criterio de aceptación NO cumplido (ver fallos inesperados y/o entradas de registro que ya pasan, arriba).');
+process.exit(aceptado ? 0 : 1);
