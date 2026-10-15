@@ -14,7 +14,7 @@
 // Uso: node scraper/resumen-salud.js
 const fs = require('fs');
 const path = require('path');
-const { execFileSync } = require('child_process');
+const { execFileSync, execSync } = require('child_process');
 const CFG = require('./config');
 
 const MAX_DIAS_INDICES = 14;   // >2 refrescos semanales perdidos: el canario esta ciego
@@ -227,6 +227,43 @@ if (process.env.GITHUB_STEP_SUMMARY) {
   if (avisos.length) { md.push('', '### Avisos'); avisos.forEach(a => md.push('- ⚠ ' + a)); }
   if (criticos.length) { md.push('', '### Críticos'); criticos.forEach(c => md.push('- ❌ ' + c)); }
   try { fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md.join('\n') + '\n'); } catch (e) {}
+}
+
+// Persistir la nueva base de comparacion de la cobertura de cuartos (3c, arriba).
+// Bug encontrado el 15/10: este script corre DESPUES del "Commit y push" del
+// workflow a proposito (es una alarma, no un guardian, ver cabecera) -- pero eso
+// significaba que el fs.writeFileSync de cuartos-cobertura.json de cada
+// competicion nunca llegaba al repo: ese commit ya habia pasado. La base se
+// quedaba fosilizada en la primera semana que se escribio a mano, y cualquier
+// hueco por encima de ESA cifra se marcaba "EMPEORA" para siempre, aunque no
+// hubiera crecido desde la semana anterior de verdad (paso el 12/10: critico
+// contra una base del 11/10, de antes de que este guardian corriera nunca en
+// produccion). Arreglo: este script hace su PROPIO commit, pequeno y aparte,
+// solo con los ficheros de cobertura -- se hace siempre, haya criticos o no,
+// porque la base tiene que avanzar independientemente de si algo esta mal esta
+// semana. Solo en CI (GITHUB_ACTIONS): correr esto en local no debe tocar git.
+if (process.env.GITHUB_ACTIONS === 'true') {
+  try {
+    execSync('git add data/processed/*/*/cuartos-cobertura.json', { stdio: 'pipe' });
+    const hayCambios = execSync('git diff --staged --quiet; echo $?').toString().trim() !== '0';
+    if (hayCambios) {
+      execSync('git commit -m "Cobertura de cuartos: actualizar la base de comparacion"', { stdio: 'pipe' });
+      let empujado = false;
+      for (let intento = 1; intento <= 3 && !empujado; intento++) {
+        try { execSync('git push', { stdio: 'pipe' }); empujado = true; }
+        catch (e) {
+          console.error(`  (push de la base de cobertura rechazado, intento ${intento}; rebase y reintento)`);
+          execSync('git pull --rebase origin main', { stdio: 'pipe' });
+        }
+      }
+      if (!empujado) console.error('  ⚠ No se pudo publicar la base nueva de cuartos-cobertura.json tras 3 intentos -- la proxima comparacion seguira usando la de hoy.');
+      else console.log('  (base de cuartos-cobertura.json actualizada y publicada)');
+    }
+  } catch (e) {
+    // avisos/criticos ya se imprimieron arriba -- un aviso empujado aqui no lo
+    // veria nadie. Directo a consola, que SI queda en el log del job.
+    console.error(`  ⚠ No se pudo commitear cuartos-cobertura.json: ${e.message}`);
+  }
 }
 
 if (criticos.length) {
