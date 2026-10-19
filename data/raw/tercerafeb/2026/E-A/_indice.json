@@ -220,7 +220,7 @@
    "id": "1010319",
    "nombre": "THE FITZGERALD EL PILAR"
   },
-  "resultado": "*-*",
+  "resultado": "76-101",
   "fecha": "17/10/2026",
   "hora": "18:30"
  },
@@ -235,7 +235,7 @@
    "id": "1008915",
    "nombre": "BURJASSOT CB"
   },
-  "resultado": "*-*",
+  "resultado": "102-54",
   "fecha": "17/10/2026",
   "hora": "19:15"
  },
@@ -250,7 +250,7 @@
    "id": "1009719",
    "nombre": "BAUHAUS GODELLA"
   },
-  "resultado": "*-*",
+  "resultado": "80-94",
   "fecha": "17/10/2026",
   "hora": "19:30"
  },
@@ -265,7 +265,7 @@
    "id": "1008692",
    "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
   },
-  "resultado": "*-*",
+  "resultado": "67-83",
   "fecha": "17/10/2026",
   "hora": "19:30"
  },
@@ -280,9 +280,24 @@
    "id": "1010203",
    "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
   },
-  "resultado": "*-*",
+  "resultado": "76-96",
   "fecha": "18/10/2026",
   "hora": "12:15"
+ },
+ {
+  "jornada": "Jornada 3(18/10/2026)",
+  "id": "2537587",
+  "local": {
+   "id": "1010899",
+   "nombre": "AMICS CASTELLÓ B"
+  },
+  "visitante": {
+   "id": "1008694",
+   "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+  },
+  "resultado": "73-68",
+  "fecha": "18/10/2026",
+  "hora": "18:45"
  },
  {
   "jornada": "Jornada 3(18/10/2026)",
@@ -296,23 +311,8 @@
    "nombre": "CB JOVENS ALMÀSSERA"
   },
   "resultado": "*-*",
-  "fecha": "18/10/2026",
-  "hora": "17:30"
- },
- {
-  "jornada": "Jornada 3(18/10/2026)",
-  "id": "2537587",
-  "local": {
-   "id": "1010899",
-   "nombre": "AMICS CASTELLÓ B"
-  },
-  "visitante": {
-   "id": "1008694",
-   "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
-  },
-  "resultado": "*-*",
-  "fecha": "18/10/2026",
-  "hora": "18:45"
+  "fecha": "27/11/2026",
+  "hora": "21:00"
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
@@ -841,21 +841,6 @@
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
-  "id": "2537631",
-  "local": {
-   "id": "1010203",
-   "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
-  },
-  "visitante": {
-   "id": "1010319",
-   "nombre": "THE FITZGERALD EL PILAR"
-  },
-  "resultado": "*-*",
-  "fecha": "28/11/2026",
-  "hora": "18:00"
- },
- {
-  "jornada": "Jornada 9(29/11/2026)",
   "id": "2537633",
   "local": {
    "id": "1009719",
@@ -916,14 +901,14 @@
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
-  "id": "2537628",
+  "id": "2537631",
   "local": {
-   "id": "1010204",
-   "nombre": "ECOSIONA JOVENS L’ELIANA"
+   "id": "1010319",
+   "nombre": "THE FITZGERALD EL PILAR"
   },
   "visitante": {
-   "id": "1010899",
-   "nombre": "AMICS CASTELLÓ B"
+   "id": "1010203",
+   "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
   },
   "resultado": "*-*",
   "fecha": "29/11/2026",
@@ -939,6 +924,21 @@
   "visitante": {
    "id": "1008694",
    "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+  },
+  "resultado": "*-*",
+  "fecha": "29/11/2026",
+  "hora": "19:00"
+ },
+ {
+  "jornada": "Jornada 9(29/11/2026)",
+  "id": "2537628",
+  "local": {
+   "id": "1010204",
+   "nombre": "ECOSIONA JOVENS L’ELIANA"
+  },
+  "visitante": {
+   "id": "1010899",
+   "nombre": "AMICS CASTELLÓ B"
   },
   "resultado": "*-*",
   "fecha": "29/11/2026",
@@ -2206,6 +2206,21 @@
  },
  {
   "jornada": "Jornada 22(14/03/2027)",
+  "id": "2537722",
+  "local": {
+   "id": "1010203",
+   "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+  },
+  "visitante": {
+   "id": "1010319",
+   "nombre": "THE FITZGERALD EL PILAR"
+  },
+  "resultado": "*-*",
+  "fecha": "13/03/2027",
+  "hora": "18:00"
+ },
+ {
+  "jornada": "Jornada 22(14/03/2027)",
   "id": "2537721",
   "local": {
    "id": "1008692",
@@ -2293,21 +2308,6 @@
   "resultado": "*-*",
   "fecha": "14/03/2027",
   "hora": "18:45"
- },
- {
-  "jornada": "Jornada 22(14/03/2027)",
-  "id": "2537722",
-  "local": {
-   "id": "1010319",
-   "nombre": "THE FITZGERALD EL PILAR"
-  },
-  "visitante": {
-   "id": "1010203",
-   "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
-  },
-  "resultado": "*-*",
-  "fecha": "14/03/2027",
-  "hora": "19:00"
  },
  {
   "jornada": "Jornada 23(21/03/2027)",

@@ -46,6 +46,21 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
+  "id": "2528247",
+  "local": {
+   "id": "1009701",
+   "nombre": "CB ARTÉS"
+  },
+  "visitante": {
+   "id": "1009144",
+   "nombre": "CB NAVÀS VISCOLA"
+  },
+  "resultado": "*-*",
+  "fecha": "23/10/2026",
+  "hora": "21:15"
+ },
+ {
+  "jornada": "Jornada 1(04/10/2026)",
   "id": "2528251",
   "local": {
    "id": "1008699",
@@ -61,21 +76,6 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
-  "id": "2528249",
-  "local": {
-   "id": "1008966",
-   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
-  },
-  "visitante": {
-   "id": "1009816",
-   "nombre": "SANDÁ C.B. L´HOSPITALET"
-  },
-  "resultado": "*-*",
-  "fecha": null,
-  "hora": null
- },
- {
-  "jornada": "Jornada 1(04/10/2026)",
   "id": "2528253",
   "local": {
    "id": "1010576",
@@ -86,23 +86,23 @@
    "nombre": "FUNDACION GRUPO JORGE BALONCESTO ZUERA"
   },
   "resultado": "*-*",
-  "fecha": null,
-  "hora": null
+  "fecha": "08/12/2026",
+  "hora": "13:00"
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
-  "id": "2528247",
+  "id": "2528249",
   "local": {
-   "id": "1009701",
-   "nombre": "CB ARTÉS"
+   "id": "1008966",
+   "nombre": "LA PARRÓQUIA - BÁSQUET SAMÁ"
   },
   "visitante": {
-   "id": "1009144",
-   "nombre": "CB NAVÀS VISCOLA"
+   "id": "1009816",
+   "nombre": "SANDÁ C.B. L´HOSPITALET"
   },
   "resultado": "*-*",
-  "fecha": null,
-  "hora": null
+  "fecha": "08/12/2026",
+  "hora": "19:00"
  },
  {
   "jornada": "Jornada 2(11/10/2026)",
@@ -220,7 +220,7 @@
    "id": "1008936",
    "nombre": "PUJOL MOLLERUSSA"
   },
-  "resultado": "*-*",
+  "resultado": "97-93",
   "fecha": "17/10/2026",
   "hora": "17:00"
  },
@@ -235,7 +235,7 @@
    "id": "1009928",
    "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
   },
-  "resultado": "*-*",
+  "resultado": "78-62",
   "fecha": "17/10/2026",
   "hora": "17:30"
  },
@@ -250,7 +250,7 @@
    "id": "1009932",
    "nombre": "OCA GLOBAL C.B. SALOU"
   },
-  "resultado": "*-*",
+  "resultado": "72-97",
   "fecha": "17/10/2026",
   "hora": "18:00"
  },
@@ -265,7 +265,7 @@
    "id": "1009815",
    "nombre": "C.B.ROSER"
   },
-  "resultado": "*-*",
+  "resultado": "80-74",
   "fecha": "17/10/2026",
   "hora": "18:00"
  },
@@ -280,7 +280,7 @@
    "id": "1008693",
    "nombre": "LETRA CORPOREA BARBASTRO"
   },
-  "resultado": "*-*",
+  "resultado": "72-59",
   "fecha": "17/10/2026",
   "hora": "18:15"
  },
@@ -295,7 +295,7 @@
    "id": "1009816",
    "nombre": "SANDÁ C.B. L´HOSPITALET"
   },
-  "resultado": "*-*",
+  "resultado": "73-68",
   "fecha": "17/10/2026",
   "hora": "18:30"
  },
@@ -310,7 +310,7 @@
    "id": "1009144",
    "nombre": "CB NAVÀS VISCOLA"
   },
-  "resultado": "*-*",
+  "resultado": "89-95",
   "fecha": "17/10/2026",
   "hora": "19:45"
  },
@@ -753,12 +753,12 @@
   "jornada": "Jornada 8(22/11/2026)",
   "id": "2528300",
   "local": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "visitante": {
    "id": "1010576",
    "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "visitante": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
   },
   "resultado": "*-*",
   "fecha": "21/11/2026",
@@ -2146,6 +2146,21 @@
  },
  {
   "jornada": "Jornada 21(07/03/2027)",
+  "id": "2528391",
+  "local": {
+   "id": "1008693",
+   "nombre": "LETRA CORPOREA BARBASTRO"
+  },
+  "visitante": {
+   "id": "1010576",
+   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
+  },
+  "resultado": "*-*",
+  "fecha": "06/03/2027",
+  "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 21(07/03/2027)",
   "id": "2528393",
   "local": {
    "id": "1008699",
@@ -2158,21 +2173,6 @@
   "resultado": "*-*",
   "fecha": "06/03/2027",
   "hora": "18:30"
- },
- {
-  "jornada": "Jornada 21(07/03/2027)",
-  "id": "2528391",
-  "local": {
-   "id": "1010576",
-   "nombre": "SD ESPANYOL BÀSQUET CORNELLÀ"
-  },
-  "visitante": {
-   "id": "1008693",
-   "nombre": "LETRA CORPOREA BARBASTRO"
-  },
-  "resultado": "*-*",
-  "fecha": "06/03/2027",
-  "hora": "19:00"
  },
  {
   "jornada": "Jornada 21(07/03/2027)",
@@ -2218,21 +2218,6 @@
   "resultado": "*-*",
   "fecha": "13/03/2027",
   "hora": "18:15"
- },
- {
-  "jornada": "Jornada 22(14/03/2027)",
-  "id": "2528399",
-  "local": {
-   "id": "1008936",
-   "nombre": "PUJOL MOLLERUSSA"
-  },
-  "visitante": {
-   "id": "1009928",
-   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
-  },
-  "resultado": "*-*",
-  "fecha": "13/03/2027",
-  "hora": "18:30"
  },
  {
   "jornada": "Jornada 22(14/03/2027)",
@@ -2293,6 +2278,21 @@
   "resultado": "*-*",
   "fecha": "13/03/2027",
   "hora": "19:45"
+ },
+ {
+  "jornada": "Jornada 22(14/03/2027)",
+  "id": "2528399",
+  "local": {
+   "id": "1008936",
+   "nombre": "PUJOL MOLLERUSSA"
+  },
+  "visitante": {
+   "id": "1009928",
+   "nombre": "SUPERMERCADOS DISKONT - CB CIUTADELLA PONENT"
+  },
+  "resultado": "*-*",
+  "fecha": "14/03/2027",
+  "hora": "13:00"
  },
  {
   "jornada": "Jornada 22(14/03/2027)",

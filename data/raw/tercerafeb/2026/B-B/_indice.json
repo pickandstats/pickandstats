@@ -220,7 +220,7 @@
    "id": "1009931",
    "nombre": "LUJISA GUADALAJARA BASKET"
   },
-  "resultado": "*-*",
+  "resultado": "58-63",
   "fecha": "16/10/2026",
   "hora": "20:45"
  },
@@ -235,7 +235,7 @@
    "id": "1009120",
    "nombre": "FUNDAL ALCOBENDAS"
   },
-  "resultado": "*-*",
+  "resultado": "75-89",
   "fecha": "17/10/2026",
   "hora": "17:00"
  },
@@ -250,7 +250,7 @@
    "id": "1010580",
    "nombre": "BALONCESTO TALAVERA"
   },
-  "resultado": "*-*",
+  "resultado": "80-86",
   "fecha": "17/10/2026",
   "hora": "19:00"
  },
@@ -265,24 +265,9 @@
    "id": "1008935",
    "nombre": "RECUCYM BAZU"
   },
-  "resultado": "*-*",
+  "resultado": "81-73",
   "fecha": "17/10/2026",
   "hora": "19:30"
- },
- {
-  "jornada": "Jornada 3(18/10/2026)",
-  "id": "2537223",
-  "local": {
-   "id": "1008409",
-   "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
-  },
-  "visitante": {
-   "id": "1008707",
-   "nombre": "CB 7 PALMAS"
-  },
-  "resultado": "*-*",
-  "fecha": "18/10/2026",
-  "hora": "13:00"
  },
  {
   "jornada": "Jornada 3(18/10/2026)",
@@ -295,7 +280,7 @@
    "id": "1008946",
    "nombre": "BASKET CERVANTES CIUDAD REAL"
   },
-  "resultado": "*-*",
+  "resultado": "95-67",
   "fecha": "18/10/2026",
   "hora": "13:30"
  },
@@ -310,9 +295,24 @@
    "id": "1009178",
    "nombre": "GRUPO EGIDO PINTOBASKET"
   },
-  "resultado": "*-*",
+  "resultado": "71-86",
   "fecha": "18/10/2026",
   "hora": "13:30"
+ },
+ {
+  "jornada": "Jornada 3(18/10/2026)",
+  "id": "2537223",
+  "local": {
+   "id": "1008409",
+   "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+  },
+  "visitante": {
+   "id": "1008707",
+   "nombre": "CB 7 PALMAS"
+  },
+  "resultado": "109-111",
+  "fecha": "18/10/2026",
+  "hora": "17:00"
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
@@ -361,6 +361,21 @@
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
+  "id": "2537232",
+  "local": {
+   "id": "1009825",
+   "nombre": "GRAN CANARIA"
+  },
+  "visitante": {
+   "id": "1008707",
+   "nombre": "CB 7 PALMAS"
+  },
+  "resultado": "*-*",
+  "fecha": "24/10/2026",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 4(25/10/2026)",
   "id": "2537230",
   "local": {
    "id": "1010580",
@@ -391,21 +406,6 @@
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
-  "id": "2537232",
-  "local": {
-   "id": "1008707",
-   "nombre": "CB 7 PALMAS"
-  },
-  "visitante": {
-   "id": "1009825",
-   "nombre": "GRAN CANARIA"
-  },
-  "resultado": "*-*",
-  "fecha": "25/10/2026",
-  "hora": "17:00"
- },
- {
-  "jornada": "Jornada 4(25/10/2026)",
   "id": "2537229",
   "local": {
    "id": "1009931",
@@ -430,7 +430,7 @@
    "id": "1009178",
    "nombre": "GRUPO EGIDO PINTOBASKET"
   },
-  "resultado": "*-*",
+  "resultado": "80-82",
   "fecha": "16/10/2026",
   "hora": "22:00"
  },
@@ -1773,16 +1773,16 @@
   "jornada": "Jornada 17(07/02/2027)",
   "id": "2537323",
   "local": {
-   "id": "1009825",
-   "nombre": "GRAN CANARIA"
-  },
-  "visitante": {
    "id": "1008707",
    "nombre": "CB 7 PALMAS"
   },
+  "visitante": {
+   "id": "1009825",
+   "nombre": "GRAN CANARIA"
+  },
   "resultado": "*-*",
   "fecha": "07/02/2027",
-  "hora": "13:30"
+  "hora": "17:00"
  },
  {
   "jornada": "Jornada 18(14/02/2027)",

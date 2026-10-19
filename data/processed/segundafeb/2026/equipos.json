@@ -1,13 +1,1768 @@
 [
  {
+  "id": "1009588",
+  "idClub": "uemc-valladolid",
+  "nombre": "UEMC BALONCESTO VALLADOLID",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 256,
+  "pc": 204,
+  "casa": {
+   "pj": 2,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 1
+   }
+  },
+  "pfPartido": 85.3,
+  "pcPartido": 68,
+  "difPartido": 17.3,
+  "t2PctEq": 52.85,
+  "t3PctEq": 28.4,
+  "tlPctEq": 72.15,
+  "roPartido": 13,
+  "rdPartido": 28.3,
+  "rebPartido": 41.3,
+  "asPartido": 14.3,
+  "brPartido": 9,
+  "bpPartido": 15,
+  "fcPartido": 23.3,
+  "frPartido": 25,
+  "tapFavor": 2.3,
+  "tapContra": 4,
+  "pace": 81.59,
+  "ortg": 104.59,
+  "drtg": 83.57,
+  "netrtg": 21.03,
+  "srs": 16.85,
+  "efg": 48.77,
+  "tovPct": 18.39,
+  "orbPct": 36.45,
+  "ftRate": 38.73,
+  "ts": 53.61,
+  "t3Pct": 28.4,
+  "t3ar": 39.71,
+  "astPct": 48.86,
+  "asPorBp": 0.96,
+  "pct2": 50.8,
+  "pct3": 27,
+  "pctTl": 22.3,
+  "efgRival": 40.05,
+  "tovForzadas": 19.66,
+  "drbPct": 75.89,
+  "ftrRival": 38.22,
+  "forma5": "2-1",
+  "forma5Dif": 17.3,
+  "victoriasEsperadas": 2.7,
+  "suerte": -0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 71
+   },
+   "ortg": {
+    "nac": 79
+   },
+   "drtg": {
+    "nac": 4
+   },
+   "pfPartido": {
+    "nac": 93
+   },
+   "pcPartido": {
+    "nac": 4
+   },
+   "t2PctEq": {
+    "nac": 82
+   },
+   "t3PctEq": {
+    "nac": 29
+   },
+   "roPartido": {
+    "nac": 89
+   },
+   "rdPartido": {
+    "nac": 86
+   },
+   "rebPartido": {
+    "nac": 96
+   },
+   "asPartido": {
+    "nac": 36
+   },
+   "brPartido": {
+    "nac": 89
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 71
+   }
+  }
+ },
+ {
   "id": "1010321",
   "idClub": "caceres",
   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD",
   "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 250,
+  "pc": 221,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 1
+   }
+  },
+  "pfPartido": 83.3,
+  "pcPartido": 73.7,
+  "difPartido": 9.7,
+  "t2PctEq": 57.14,
+  "t3PctEq": 37.5,
+  "tlPctEq": 70,
+  "roPartido": 7.7,
+  "rdPartido": 33,
+  "rebPartido": 40.7,
+  "asPartido": 13.3,
+  "brPartido": 6.3,
+  "bpPartido": 18.3,
+  "fcPartido": 23,
+  "frPartido": 23.3,
+  "tapFavor": 2.3,
+  "tapContra": 2,
+  "pace": 79.4,
+  "ortg": 104.95,
+  "drtg": 91.55,
+  "netrtg": 13.4,
+  "srs": 6.8,
+  "efg": 56.73,
+  "tovPct": 23.09,
+  "orbPct": 26.74,
+  "ftRate": 46.78,
+  "ts": 60.62,
+  "t3Pct": 37.5,
+  "t3ar": 46.78,
+  "astPct": 48.78,
+  "asPorBp": 0.73,
+  "pct2": 41.6,
+  "pct3": 36,
+  "pctTl": 22.4,
+  "efgRival": 42.06,
+  "tovForzadas": 12.84,
+  "drbPct": 76.74,
+  "ftrRival": 28.04,
+  "forma5": "2-1",
+  "forma5Dif": 9.7,
+  "victoriasEsperadas": 2.3,
+  "suerte": -0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 54
+   },
+   "ortg": {
+    "nac": 82
+   },
+   "drtg": {
+    "nac": 18
+   },
+   "pfPartido": {
+    "nac": 75
+   },
+   "pcPartido": {
+    "nac": 29
+   },
+   "t2PctEq": {
+    "nac": 96
+   },
+   "t3PctEq": {
+    "nac": 89
+   },
+   "roPartido": {
+    "nac": 11
+   },
+   "rdPartido": {
+    "nac": 100
+   },
+   "rebPartido": {
+    "nac": 89
+   },
+   "asPartido": {
+    "nac": 21
+   },
+   "brPartido": {
+    "nac": 29
+   },
+   "bpPartido": {
+    "nac": 96
+   },
+   "fcPartido": {
+    "nac": 61
+   }
+  }
+ },
+ {
+  "id": "1010352",
+  "idClub": "melilla",
+  "nombre": "MELILLA CIUDAD DEL DEPORTE",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 3,
+  "pp": 0,
+  "pf": 248,
+  "pc": 220,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 2
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 3,
+   "pp": 0,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 2
+   }
+  },
+  "pfPartido": 82.7,
+  "pcPartido": 73.3,
+  "difPartido": 9.3,
+  "t2PctEq": 47.47,
+  "t3PctEq": 30.68,
+  "tlPctEq": 67.59,
+  "roPartido": 9.7,
+  "rdPartido": 29.3,
+  "rebPartido": 39,
+  "asPartido": 15.3,
+  "brPartido": 7.7,
+  "bpPartido": 18.3,
+  "fcPartido": 24.3,
+  "frPartido": 29.7,
+  "tapFavor": 2.3,
+  "tapContra": 2.7,
+  "pace": 86.84,
+  "ortg": 95.19,
+  "drtg": 85.83,
+  "netrtg": 9.36,
+  "srs": 21.71,
+  "efg": 46.79,
+  "tovPct": 21.11,
+  "orbPct": 27.1,
+  "ftRate": 57.75,
+  "ts": 52.87,
+  "t3Pct": 30.68,
+  "t3ar": 47.06,
+  "astPct": 62.16,
+  "asPorBp": 0.84,
+  "pct2": 37.9,
+  "pct3": 32.7,
+  "pctTl": 29.4,
+  "efgRival": 37.62,
+  "tovForzadas": 20.29,
+  "drbPct": 68.75,
+  "ftrRival": 37.14,
+  "forma5": "3-0",
+  "forma5Dif": 9.3,
+  "victoriasEsperadas": 2.3,
+  "suerte": 0.7,
+  "percentiles": {
+   "pace": {
+    "nac": 100
+   },
+   "ortg": {
+    "nac": 32
+   },
+   "drtg": {
+    "nac": 7
+   },
+   "pfPartido": {
+    "nac": 71
+   },
+   "pcPartido": {
+    "nac": 25
+   },
+   "t2PctEq": {
+    "nac": 43
+   },
+   "t3PctEq": {
+    "nac": 54
+   },
+   "roPartido": {
+    "nac": 32
+   },
+   "rdPartido": {
+    "nac": 93
+   },
+   "rebPartido": {
+    "nac": 79
+   },
+   "asPartido": {
+    "nac": 50
+   },
+   "brPartido": {
+    "nac": 57
+   },
+   "bpPartido": {
+    "nac": 96
+   },
+   "fcPartido": {
+    "nac": 75
+   }
+  }
+ },
+ {
+  "id": "1008643",
+  "idClub": "clinica-ponferrada",
+  "nombre": "CLÍNICA PONFERRADA SDP",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 246,
+  "pc": 228,
+  "casa": {
+   "pj": 2,
+   "pg": 2
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 0
+   }
+  },
+  "pfPartido": 82,
+  "pcPartido": 76,
+  "difPartido": 6,
+  "t2PctEq": 46.55,
+  "t3PctEq": 30,
+  "tlPctEq": 85.07,
+  "roPartido": 11,
+  "rdPartido": 27.7,
+  "rebPartido": 38.7,
+  "asPartido": 10,
+  "brPartido": 8,
+  "bpPartido": 14.3,
+  "fcPartido": 23.3,
+  "frPartido": 22,
+  "tapFavor": 3,
+  "tapContra": 3,
+  "pace": 81.83,
+  "ortg": 100.21,
+  "drtg": 91.11,
+  "netrtg": 9.1,
+  "srs": 11.41,
+  "efg": 45.87,
+  "tovPct": 17.52,
+  "orbPct": 28.45,
+  "ftRate": 32.52,
+  "ts": 52.23,
+  "t3Pct": 30,
+  "t3ar": 43.69,
+  "astPct": 37.04,
+  "asPorBp": 0.7,
+  "pct2": 43.9,
+  "pct3": 32.9,
+  "pctTl": 23.2,
+  "efgRival": 44.8,
+  "tovForzadas": 18.38,
+  "drbPct": 74.11,
+  "ftrRival": 35.15,
+  "forma5": "2-1",
+  "forma5Dif": 6,
+  "victoriasEsperadas": 2.1,
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 79
+   },
+   "ortg": {
+    "nac": 61
+   },
+   "drtg": {
+    "nac": 14
+   },
+   "pfPartido": {
+    "nac": 68
+   },
+   "pcPartido": {
+    "nac": 39
+   },
+   "t2PctEq": {
+    "nac": 29
+   },
+   "t3PctEq": {
+    "nac": 46
+   },
+   "roPartido": {
+    "nac": 71
+   },
+   "rdPartido": {
+    "nac": 75
+   },
+   "rebPartido": {
+    "nac": 71
+   },
+   "asPartido": {
+    "nac": 7
+   },
+   "brPartido": {
+    "nac": 64
+   },
+   "bpPartido": {
+    "nac": 54
+   },
+   "fcPartido": {
+    "nac": 71
+   }
+  }
+ },
+ {
+  "id": "1010318",
+  "idClub": "toledo",
+  "nombre": "CLUB BALONCESTO TOLEDO BASKET",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 252,
+  "pc": 239,
+  "casa": {
+   "pj": 2,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 1
+   }
+  },
+  "pfPartido": 84,
+  "pcPartido": 79.7,
+  "difPartido": 4.3,
+  "t2PctEq": 49.24,
+  "t3PctEq": 29.55,
+  "tlPctEq": 60.27,
+  "roPartido": 12.7,
+  "rdPartido": 27.3,
+  "rebPartido": 40,
+  "asPartido": 19.7,
+  "brPartido": 9,
+  "bpPartido": 12.7,
+  "fcPartido": 25.7,
+  "frPartido": 23.7,
+  "tapFavor": 4,
+  "tapContra": 1.7,
+  "pace": 84.04,
+  "ortg": 99.95,
+  "drtg": 95.07,
+  "netrtg": 4.88,
+  "srs": 0.98,
+  "efg": 47.27,
+  "tovPct": 15.07,
+  "orbPct": 29.69,
+  "ftRate": 33.18,
+  "ts": 49.98,
+  "t3Pct": 29.55,
+  "t3ar": 40,
+  "astPct": 64.84,
+  "asPorBp": 1.55,
+  "pct2": 51.6,
+  "pct3": 31,
+  "pctTl": 17.5,
+  "efgRival": 47.42,
+  "tovForzadas": 20.68,
+  "drbPct": 71.93,
+  "ftrRival": 43.81,
+  "forma5": "2-1",
+  "forma5Dif": 4.3,
+  "victoriasEsperadas": 1.9,
+  "suerte": 0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 89
+   },
+   "ortg": {
+    "nac": 57
+   },
+   "drtg": {
+    "nac": 39
+   },
+   "pfPartido": {
+    "nac": 82
+   },
+   "pcPartido": {
+    "nac": 50
+   },
+   "t2PctEq": {
+    "nac": 54
+   },
+   "t3PctEq": {
+    "nac": 39
+   },
+   "roPartido": {
+    "nac": 82
+   },
+   "rdPartido": {
+    "nac": 68
+   },
+   "rebPartido": {
+    "nac": 86
+   },
+   "asPartido": {
+    "nac": 93
+   },
+   "brPartido": {
+    "nac": 89
+   },
+   "bpPartido": {
+    "nac": 29
+   },
+   "fcPartido": {
+    "nac": 96
+   }
+  }
+ },
+ {
+  "id": "1008857",
+  "idClub": "cultural-leonesa",
+  "nombre": "CULTURAL Y DEPORTIVA LEONESA",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 259,
+  "pc": 246,
+  "casa": {
+   "pj": 2,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 1
+   }
+  },
+  "pfPartido": 86.3,
+  "pcPartido": 82,
+  "difPartido": 4.3,
+  "t2PctEq": 50.3,
+  "t3PctEq": 26.92,
+  "tlPctEq": 68.92,
+  "roPartido": 11.7,
+  "rdPartido": 29.3,
+  "rebPartido": 41,
+  "asPartido": 17.7,
+  "brPartido": 7.7,
+  "bpPartido": 15,
+  "fcPartido": 25.3,
+  "frPartido": 22.7,
+  "tapFavor": 2.7,
+  "tapContra": 2,
+  "pace": 86.52,
+  "ortg": 99.78,
+  "drtg": 96.65,
+  "netrtg": 3.13,
+  "srs": 9.56,
+  "efg": 47.93,
+  "tovPct": 17.34,
+  "orbPct": 31.25,
+  "ftRate": 34.1,
+  "ts": 51.89,
+  "t3Pct": 26.92,
+  "t3ar": 23.96,
+  "astPct": 54.64,
+  "asPorBp": 1.18,
+  "pct2": 64.1,
+  "pct3": 16.2,
+  "pctTl": 19.7,
+  "efgRival": 44.76,
+  "tovForzadas": 17.68,
+  "drbPct": 70.4,
+  "ftrRival": 39.52,
+  "forma5": "2-1",
+  "forma5Dif": 4.3,
+  "victoriasEsperadas": 1.9,
+  "suerte": 0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 96
+   },
+   "ortg": {
+    "nac": 50
+   },
+   "drtg": {
+    "nac": 54
+   },
+   "pfPartido": {
+    "nac": 96
+   },
+   "pcPartido": {
+    "nac": 75
+   },
+   "t2PctEq": {
+    "nac": 61
+   },
+   "t3PctEq": {
+    "nac": 18
+   },
+   "roPartido": {
+    "nac": 75
+   },
+   "rdPartido": {
+    "nac": 93
+   },
+   "rebPartido": {
+    "nac": 93
+   },
+   "asPartido": {
+    "nac": 82
+   },
+   "brPartido": {
+    "nac": 57
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 93
+   }
+  }
+ },
+ {
+  "id": "1009723",
+  "idClub": "tres-cantos",
+  "nombre": "C.B. TRES CANTOS",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 242,
+  "pc": 234,
+  "casa": {
+   "pj": 2,
+   "pg": 2
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 0
+   }
+  },
+  "pfPartido": 80.7,
+  "pcPartido": 78,
+  "difPartido": 2.7,
+  "t2PctEq": 46.67,
+  "t3PctEq": 29.79,
+  "tlPctEq": 68.66,
+  "roPartido": 13.7,
+  "rdPartido": 24.3,
+  "rebPartido": 38,
+  "asPartido": 16,
+  "brPartido": 8.3,
+  "bpPartido": 11.3,
+  "fcPartido": 24.7,
+  "frPartido": 22.7,
+  "tapFavor": 1.7,
+  "tapContra": 1.3,
+  "pace": 78.83,
+  "ortg": 102.33,
+  "drtg": 100.52,
+  "netrtg": 1.82,
+  "srs": -1.5,
+  "efg": 45.79,
+  "tovPct": 14.38,
+  "orbPct": 33.88,
+  "ftRate": 31.31,
+  "ts": 49.7,
+  "t3Pct": 29.79,
+  "t3ar": 43.93,
+  "astPct": 57.14,
+  "asPorBp": 1.41,
+  "pct2": 46.3,
+  "pct3": 34.7,
+  "pctTl": 19,
+  "efgRival": 48.12,
+  "tovForzadas": 18.04,
+  "drbPct": 66.36,
+  "ftrRival": 51.08,
+  "forma5": "2-1",
+  "forma5Dif": 2.7,
+  "victoriasEsperadas": 1.8,
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 36
+   },
+   "ortg": {
+    "nac": 64
+   },
+   "drtg": {
+    "nac": 64
+   },
+   "pfPartido": {
+    "nac": 57
+   },
+   "pcPartido": {
+    "nac": 46
+   },
+   "t2PctEq": {
+    "nac": 36
+   },
+   "t3PctEq": {
+    "nac": 43
+   },
+   "roPartido": {
+    "nac": 96
+   },
+   "rdPartido": {
+    "nac": 36
+   },
+   "rebPartido": {
+    "nac": 68
+   },
+   "asPartido": {
+    "nac": 61
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 11
+   },
+   "fcPartido": {
+    "nac": 79
+   }
+  }
+ },
+ {
+  "id": "1010194",
+  "idClub": "jaen-paraiso-interior-fs",
+  "nombre": "JAEN PARAISO INTERIOR FS",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 244,
+  "pc": 241,
+  "casa": {
+   "pj": 2,
+   "pg": 2
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 0
+   }
+  },
+  "pfPartido": 81.3,
+  "pcPartido": 80.3,
+  "difPartido": 1,
+  "t2PctEq": 52.94,
+  "t3PctEq": 25.84,
+  "tlPctEq": 79.03,
+  "roPartido": 9,
+  "rdPartido": 24,
+  "rebPartido": 33,
+  "asPartido": 12.7,
+  "brPartido": 8.3,
+  "bpPartido": 17,
+  "fcPartido": 23.3,
+  "frPartido": 24,
+  "tapFavor": 1,
+  "tapContra": 2.3,
+  "pace": 86.43,
+  "ortg": 94.11,
+  "drtg": 94.11,
+  "netrtg": 0,
+  "srs": -9.2,
+  "efg": 46.88,
+  "tovPct": 19.67,
+  "orbPct": 25.23,
+  "ftRate": 29.81,
+  "ts": 51.85,
+  "t3Pct": 25.84,
+  "t3ar": 42.79,
+  "astPct": 44.19,
+  "asPorBp": 0.75,
+  "pct2": 51.6,
+  "pct3": 28.3,
+  "pctTl": 20.1,
+  "efgRival": 46.97,
+  "tovForzadas": 21.87,
+  "drbPct": 67.92,
+  "ftrRival": 41.41,
+  "forma5": "2-1",
+  "forma5Dif": 1,
+  "victoriasEsperadas": 1.6,
+  "suerte": 0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 93
+   },
+   "ortg": {
+    "nac": 29
+   },
+   "drtg": {
+    "nac": 29
+   },
+   "pfPartido": {
+    "nac": 64
+   },
+   "pcPartido": {
+    "nac": 61
+   },
+   "t2PctEq": {
+    "nac": 86
+   },
+   "t3PctEq": {
+    "nac": 7
+   },
+   "roPartido": {
+    "nac": 18
+   },
+   "rdPartido": {
+    "nac": 29
+   },
+   "rebPartido": {
+    "nac": 21
+   },
+   "asPartido": {
+    "nac": 14
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 89
+   },
+   "fcPartido": {
+    "nac": 71
+   }
+  }
+ },
+ {
+  "id": "1010193",
+  "idClub": "starlabs-moron",
+  "nombre": "C.B. STARLABS MORÓN",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 1,
+  "pp": 2,
+  "pf": 233,
+  "pc": 241,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 1,
+   "pp": 2,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 0
+   }
+  },
+  "pfPartido": 77.7,
+  "pcPartido": 80.3,
+  "difPartido": -2.7,
+  "t2PctEq": 41.67,
+  "t3PctEq": 30.3,
+  "tlPctEq": 70.49,
+  "roPartido": 15.3,
+  "rdPartido": 27.3,
+  "rebPartido": 42.7,
+  "asPartido": 14,
+  "brPartido": 8.3,
+  "bpPartido": 12,
+  "fcPartido": 21.7,
+  "frPartido": 21,
+  "tapFavor": 2.3,
+  "tapContra": 3.7,
+  "pace": 78.61,
+  "ortg": 98.8,
+  "drtg": 98.98,
+  "netrtg": -0.19,
+  "srs": -0.05,
+  "efg": 43.38,
+  "tovPct": 15.26,
+  "orbPct": 35.94,
+  "ftRate": 27.85,
+  "ts": 47.39,
+  "t3Pct": 30.3,
+  "t3ar": 45.21,
+  "astPct": 52.5,
+  "asPorBp": 1.17,
+  "pct2": 42.9,
+  "pct3": 38.6,
+  "pctTl": 18.5,
+  "efgRival": 45.83,
+  "tovForzadas": 15.61,
+  "drbPct": 67.21,
+  "ftrRival": 31.02,
+  "forma5": "1-2",
+  "forma5Dif": -2.7,
+  "victoriasEsperadas": 1.2,
+  "suerte": -0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 29
+   },
+   "ortg": {
+    "nac": 46
+   },
+   "drtg": {
+    "nac": 57
+   },
+   "pfPartido": {
+    "nac": 39
+   },
+   "pcPartido": {
+    "nac": 61
+   },
+   "t2PctEq": {
+    "nac": 7
+   },
+   "t3PctEq": {
+    "nac": 50
+   },
+   "roPartido": {
+    "nac": 100
+   },
+   "rdPartido": {
+    "nac": 68
+   },
+   "rebPartido": {
+    "nac": 100
+   },
+   "asPartido": {
+    "nac": 32
+   },
+   "brPartido": {
+    "nac": 79
+   },
+   "bpPartido": {
+    "nac": 18
+   },
+   "fcPartido": {
+    "nac": 50
+   }
+  }
+ },
+ {
+  "id": "1010192",
+  "idClub": "algeciras",
+  "nombre": "CB ALGECIRAS",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 1,
+  "pp": 2,
+  "pf": 237,
+  "pc": 255,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 1,
+   "pp": 2,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 0
+   }
+  },
+  "pfPartido": 79,
+  "pcPartido": 85,
+  "difPartido": -6,
+  "t2PctEq": 44.44,
+  "t3PctEq": 32.04,
+  "tlPctEq": 60.98,
+  "roPartido": 10.3,
+  "rdPartido": 24.7,
+  "rebPartido": 35,
+  "asPartido": 17.7,
+  "brPartido": 7,
+  "bpPartido": 12,
+  "fcPartido": 22.3,
+  "frPartido": 25.7,
+  "tapFavor": 0.3,
+  "tapContra": 2.3,
+  "pace": 81.03,
+  "ortg": 97.5,
+  "drtg": 103.93,
+  "netrtg": -6.43,
+  "srs": -11.21,
+  "efg": 46.29,
+  "tovPct": 14.81,
+  "orbPct": 24.41,
+  "ftRate": 40.59,
+  "ts": 49.77,
+  "t3Pct": 32.04,
+  "t3ar": 50.99,
+  "astPct": 68.83,
+  "asPorBp": 1.47,
+  "pct2": 37.1,
+  "pct3": 41.8,
+  "pctTl": 21.1,
+  "efgRival": 54.08,
+  "tovForzadas": 19.56,
+  "drbPct": 71.84,
+  "ftrRival": 35.2,
+  "forma5": "1-2",
+  "forma5Dif": -6,
+  "victoriasEsperadas": 1,
+  "suerte": 0,
+  "percentiles": {
+   "pace": {
+    "nac": 61
+   },
+   "ortg": {
+    "nac": 43
+   },
+   "drtg": {
+    "nac": 79
+   },
+   "pfPartido": {
+    "nac": 46
+   },
+   "pcPartido": {
+    "nac": 89
+   },
+   "t2PctEq": {
+    "nac": 21
+   },
+   "t3PctEq": {
+    "nac": 64
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 36
+   },
+   "asPartido": {
+    "nac": 82
+   },
+   "brPartido": {
+    "nac": 43
+   },
+   "bpPartido": {
+    "nac": 18
+   },
+   "fcPartido": {
+    "nac": 57
+   }
+  }
+ },
+ {
+  "id": "1010496",
+  "idClub": "movistar-estudiantes",
+  "nombre": "MOVISTAR ESTUDIANTES",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 1,
+  "pp": 2,
+  "pf": 217,
+  "pc": 230,
+  "casa": {
+   "pj": 2,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 1,
+   "pp": 2,
+   "casa": {
+    "pj": 2,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 0
+   }
+  },
+  "pfPartido": 72.3,
+  "pcPartido": 76.7,
+  "difPartido": -4.3,
+  "t2PctEq": 40.52,
+  "t3PctEq": 34.21,
+  "tlPctEq": 56.96,
+  "roPartido": 11,
+  "rdPartido": 24.7,
+  "rebPartido": 35.7,
+  "asPartido": 13.7,
+  "brPartido": 7.7,
+  "bpPartido": 16.7,
+  "fcPartido": 21,
+  "frPartido": 23,
+  "tapFavor": 3.3,
+  "tapContra": 3,
+  "pace": 81.25,
+  "ortg": 89.02,
+  "drtg": 96.07,
+  "netrtg": -7.05,
+  "srs": -7.26,
+  "efg": 44.79,
+  "tovPct": 20.51,
+  "orbPct": 29.46,
+  "ftRate": 41.15,
+  "ts": 47.85,
+  "t3Pct": 34.21,
+  "t3ar": 39.58,
+  "astPct": 56.16,
+  "asPorBp": 0.82,
+  "pct2": 43.3,
+  "pct3": 35.9,
+  "pctTl": 20.7,
+  "efgRival": 45.83,
+  "tovForzadas": 18.38,
+  "drbPct": 67.89,
+  "ftrRival": 29.41,
+  "forma5": "1-2",
+  "forma5Dif": -4.3,
+  "victoriasEsperadas": 1.1,
+  "suerte": -0.1,
+  "percentiles": {
+   "pace": {
+    "nac": 64
+   },
+   "ortg": {
+    "nac": 11
+   },
+   "drtg": {
+    "nac": 43
+   },
+   "pfPartido": {
+    "nac": 18
+   },
+   "pcPartido": {
+    "nac": 43
+   },
+   "t2PctEq": {
+    "nac": 4
+   },
+   "t3PctEq": {
+    "nac": 75
+   },
+   "roPartido": {
+    "nac": 71
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 43
+   },
+   "asPartido": {
+    "nac": 25
+   },
+   "brPartido": {
+    "nac": 57
+   },
+   "bpPartido": {
+    "nac": 86
+   },
+   "fcPartido": {
+    "nac": 39
+   }
+  }
+ },
+ {
+  "id": "1010495",
+  "idClub": "spanish-basketball-academy",
+  "nombre": "SPANISH BASKETBALL ACADEMY",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 0,
+  "pp": 3,
+  "pf": 233,
+  "pc": 253,
+  "casa": {
+   "pj": 1,
+   "pg": 0
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 0,
+   "pp": 3,
+   "casa": {
+    "pj": 1,
+    "pg": 0
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 0
+   }
+  },
+  "pfPartido": 77.7,
+  "pcPartido": 84.3,
+  "difPartido": -6.7,
+  "t2PctEq": 50,
+  "t3PctEq": 27.71,
+  "tlPctEq": 56.72,
+  "roPartido": 9.7,
+  "rdPartido": 28.3,
+  "rebPartido": 38,
+  "asPartido": 13,
+  "brPartido": 6,
+  "bpPartido": 13,
+  "fcPartido": 21.7,
+  "frPartido": 21,
+  "tapFavor": 2.7,
+  "tapContra": 1.3,
+  "pace": 82.83,
+  "ortg": 93.77,
+  "drtg": 102.96,
+  "netrtg": -9.19,
+  "srs": -2.92,
+  "efg": 46.65,
+  "tovPct": 15.7,
+  "orbPct": 24.58,
+  "ftRate": 32.06,
+  "ts": 48.85,
+  "t3Pct": 27.71,
+  "t3ar": 39.71,
+  "astPct": 45.35,
+  "asPorBp": 1,
+  "pct2": 54.1,
+  "pct3": 29.6,
+  "pctTl": 16.3,
+  "efgRival": 49.28,
+  "tovForzadas": 15.06,
+  "drbPct": 75.22,
+  "ftrRival": 30.14,
+  "forma5": "0-3",
+  "forma5Dif": -6.7,
+  "victoriasEsperadas": 0.9,
+  "suerte": -0.9,
+  "percentiles": {
+   "pace": {
+    "nac": 82
+   },
+   "ortg": {
+    "nac": 25
+   },
+   "drtg": {
+    "nac": 75
+   },
+   "pfPartido": {
+    "nac": 39
+   },
+   "pcPartido": {
+    "nac": 86
+   },
+   "t2PctEq": {
+    "nac": 57
+   },
+   "t3PctEq": {
+    "nac": 21
+   },
+   "roPartido": {
+    "nac": 32
+   },
+   "rdPartido": {
+    "nac": 86
+   },
+   "rebPartido": {
+    "nac": 68
+   },
+   "asPartido": {
+    "nac": 18
+   },
+   "brPartido": {
+    "nac": 21
+   },
+   "bpPartido": {
+    "nac": 39
+   },
+   "fcPartido": {
+    "nac": 50
+   }
+  }
+ },
+ {
+  "id": "1009073",
+  "idClub": "getafe",
+  "nombre": "C.B. GETAFE",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 0,
+  "pp": 3,
+  "pf": 205,
+  "pc": 249,
+  "casa": {
+   "pj": 1,
+   "pg": 0
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 0,
+   "pp": 3,
+   "casa": {
+    "pj": 1,
+    "pg": 0
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 0
+   }
+  },
+  "pfPartido": 68.3,
+  "pcPartido": 83,
+  "difPartido": -14.7,
+  "t2PctEq": 43.52,
+  "t3PctEq": 22.09,
+  "tlPctEq": 72.97,
+  "roPartido": 10.7,
+  "rdPartido": 24,
+  "rebPartido": 34.7,
+  "asPartido": 11.7,
+  "brPartido": 12.3,
+  "bpPartido": 18.7,
+  "fcPartido": 25,
+  "frPartido": 24,
+  "tapFavor": 3,
+  "tapContra": 3,
+  "pace": 83.52,
+  "ortg": 81.82,
+  "drtg": 100.44,
+  "netrtg": -18.62,
+  "srs": -12.53,
+  "efg": 38.92,
+  "tovPct": 22.35,
+  "orbPct": 28.83,
+  "ftRate": 38.14,
+  "ts": 45.24,
+  "t3Pct": 22.09,
+  "t3ar": 44.33,
+  "astPct": 53.03,
+  "asPorBp": 0.63,
+  "pct2": 45.9,
+  "pct3": 27.8,
+  "pctTl": 26.3,
+  "efgRival": 48.29,
+  "tovForzadas": 20.57,
+  "drbPct": 65.45,
+  "ftrRival": 33.17,
+  "forma5": "0-3",
+  "forma5Dif": -14.7,
+  "victoriasEsperadas": 0.4,
+  "suerte": -0.4,
+  "percentiles": {
+   "pace": {
+    "nac": 86
+   },
+   "ortg": {
+    "nac": 4
+   },
+   "drtg": {
+    "nac": 61
+   },
+   "pfPartido": {
+    "nac": 7
+   },
+   "pcPartido": {
+    "nac": 82
+   },
+   "t2PctEq": {
+    "nac": 11
+   },
+   "t3PctEq": {
+    "nac": 4
+   },
+   "roPartido": {
+    "nac": 50
+   },
+   "rdPartido": {
+    "nac": 29
+   },
+   "rebPartido": {
+    "nac": 29
+   },
+   "asPartido": {
+    "nac": 11
+   },
+   "brPartido": {
+    "nac": 100
+   },
+   "bpPartido": {
+    "nac": 100
+   },
+   "fcPartido": {
+    "nac": 89
+   }
+  }
+ },
+ {
+  "id": "1010320",
+  "idClub": null,
+  "nombre": "IREN BCBADAJOZ",
+  "grupo": "A",
+  "pj": 3,
+  "pg": 1,
+  "pp": 2,
+  "pf": 217,
+  "pc": 278,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 0
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 1,
+   "pp": 2,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 0
+   }
+  },
+  "pfPartido": 72.3,
+  "pcPartido": 92.7,
+  "difPartido": -20.3,
+  "t2PctEq": 44.03,
+  "t3PctEq": 29.23,
+  "tlPctEq": 65.63,
+  "roPartido": 10.3,
+  "rdPartido": 24.7,
+  "rebPartido": 35,
+  "asPartido": 9.3,
+  "brPartido": 5.7,
+  "bpPartido": 15,
+  "fcPartido": 25,
+  "frPartido": 22,
+  "tapFavor": 2.3,
+  "tapContra": 1,
+  "pace": 80.39,
+  "ortg": 89.98,
+  "drtg": 110.97,
+  "netrtg": -20.99,
+  "srs": -22.39,
+  "efg": 43.97,
+  "tovPct": 18.66,
+  "orbPct": 26.27,
+  "ftRate": 32.16,
+  "ts": 47.76,
+  "t3Pct": 29.23,
+  "t3ar": 32.66,
+  "astPct": 35.9,
+  "asPorBp": 0.62,
+  "pct2": 54.4,
+  "pct3": 26.3,
+  "pctTl": 19.4,
+  "efgRival": 54.11,
+  "tovForzadas": 15.17,
+  "drbPct": 70.48,
+  "ftrRival": 40.1,
+  "forma5": "1-2",
+  "forma5Dif": -20.3,
+  "victoriasEsperadas": 0.2,
+  "suerte": 0.8,
+  "percentiles": {
+   "pace": {
+    "nac": 57
+   },
+   "ortg": {
+    "nac": 14
+   },
+   "drtg": {
+    "nac": 93
+   },
+   "pfPartido": {
+    "nac": 18
+   },
+   "pcPartido": {
+    "nac": 100
+   },
+   "t2PctEq": {
+    "nac": 18
+   },
+   "t3PctEq": {
+    "nac": 36
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 50
+   },
+   "rebPartido": {
+    "nac": 36
+   },
+   "asPartido": {
+    "nac": 4
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 68
+   },
+   "fcPartido": {
+    "nac": 89
+   }
+  }
+ },
+ {
+  "id": "1009133",
+  "idClub": "zaragoza",
+  "nombre": "C.B. ZARAGOZA",
+  "grupo": "B",
+  "pj": 3,
+  "pg": 3,
+  "pp": 0,
+  "pf": 260,
+  "pc": 209,
+  "casa": {
+   "pj": 2,
+   "pg": 2
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 3,
+   "pp": 0,
+   "casa": {
+    "pj": 2,
+    "pg": 2
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 1
+   }
+  },
+  "pfPartido": 86.7,
+  "pcPartido": 69.7,
+  "difPartido": 17,
+  "t2PctEq": 55.74,
+  "t3PctEq": 41.54,
+  "tlPctEq": 62.32,
+  "roPartido": 9.3,
+  "rdPartido": 28.3,
+  "rebPartido": 37.7,
+  "asPartido": 18.3,
+  "brPartido": 5.7,
+  "bpPartido": 16,
+  "fcPartido": 20,
+  "frPartido": 22.3,
+  "tapFavor": 3,
+  "tapContra": 1,
+  "pace": 79.12,
+  "ortg": 109.54,
+  "drtg": 91.84,
+  "netrtg": 17.69,
+  "srs": 7.52,
+  "efg": 58.02,
+  "tovPct": 20.22,
+  "orbPct": 33.73,
+  "ftRate": 36.9,
+  "ts": 59.81,
+  "t3Pct": 41.54,
+  "t3ar": 34.76,
+  "astPct": 57.89,
+  "asPorBp": 1.15,
+  "pct2": 52.3,
+  "pct3": 31.2,
+  "pctTl": 16.5,
+  "efgRival": 45.41,
+  "tovForzadas": 18.02,
+  "drbPct": 73.28,
+  "ftrRival": 25,
+  "forma5": "3-0",
+  "forma5Dif": 17,
+  "victoriasEsperadas": 2.7,
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 46
+   },
+   "ortg": {
+    "nac": 96
+   },
+   "drtg": {
+    "nac": 21
+   },
+   "pfPartido": {
+    "nac": 100
+   },
+   "pcPartido": {
+    "nac": 11
+   },
+   "t2PctEq": {
+    "nac": 89
+   },
+   "t3PctEq": {
+    "nac": 100
+   },
+   "roPartido": {
+    "nac": 25
+   },
+   "rdPartido": {
+    "nac": 86
+   },
+   "rebPartido": {
+    "nac": 61
+   },
+   "asPartido": {
+    "nac": 86
+   },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 79
+   },
+   "fcPartido": {
+    "nac": 29
+   }
+  }
+ },
+ {
+  "id": "1010200",
+  "idClub": "benicarlo",
+  "nombre": "INTERMAQUINAS BENICARLO",
+  "grupo": "B",
   "pj": 2,
   "pg": 2,
   "pp": 0,
-  "pf": 168,
+  "pf": 162,
   "pc": 137,
   "casa": {
    "pj": 1,
@@ -30,1727 +1785,89 @@
     "pg": 1
    }
   },
-  "pfPartido": 84,
+  "pfPartido": 81,
   "pcPartido": 68.5,
-  "difPartido": 15.5,
-  "t2PctEq": 54.84,
-  "t3PctEq": 44.44,
-  "tlPctEq": 71.43,
-  "roPartido": 6.5,
-  "rdPartido": 36,
-  "rebPartido": 42.5,
-  "asPartido": 13.5,
-  "brPartido": 5.5,
-  "bpPartido": 18,
-  "fcPartido": 22.5,
-  "frPartido": 25,
-  "tapFavor": 2,
-  "tapContra": 2.5,
-  "pace": 77.32,
-  "ortg": 108.64,
-  "drtg": 87.17,
-  "netrtg": 21.47,
-  "srs": 29.79,
-  "efg": 59.81,
-  "tovPct": 23.28,
-  "orbPct": 24.07,
-  "ftRate": 52.34,
-  "ts": 63.81,
-  "t3Pct": 44.44,
-  "t3ar": 42.06,
-  "astPct": 50,
-  "asPorBp": 0.75,
-  "pct2": 40.5,
-  "pct3": 35.7,
-  "pctTl": 23.8,
-  "efgRival": 40.43,
-  "tovForzadas": 11.45,
-  "drbPct": 79.12,
-  "ftrRival": 27.66,
+  "difPartido": 12.5,
+  "t2PctEq": 44,
+  "t3PctEq": 34.62,
+  "tlPctEq": 71.19,
+  "roPartido": 13,
+  "rdPartido": 24.5,
+  "rebPartido": 37.5,
+  "asPartido": 17.5,
+  "brPartido": 7.5,
+  "bpPartido": 15.5,
+  "fcPartido": 25,
+  "frPartido": 28,
+  "tapFavor": 5.5,
+  "tapContra": 3.5,
+  "pace": 78.98,
+  "ortg": 102.56,
+  "drtg": 88.41,
+  "netrtg": 14.15,
+  "srs": 13.43,
+  "efg": 47.24,
+  "tovPct": 19.63,
+  "orbPct": 37.14,
+  "ftRate": 46.46,
+  "ts": 52.96,
+  "t3Pct": 34.62,
+  "t3ar": 40.94,
+  "astPct": 68.63,
+  "asPorBp": 1.13,
+  "pct2": 40.7,
+  "pct3": 33.3,
+  "pctTl": 25.9,
+  "efgRival": 40.16,
+  "tovForzadas": 19.36,
+  "drbPct": 68.06,
+  "ftrRival": 48.36,
   "forma5": "2-0",
-  "forma5Dif": 15.5,
-  "victoriasEsperadas": 1.8,
-  "suerte": 0.2,
-  "percentiles": {
-   "pace": {
-    "nac": 32
-   },
-   "ortg": {
-    "nac": 89
-   },
-   "drtg": {
-    "nac": 14
-   },
-   "pfPartido": {
-    "nac": 86
-   },
-   "pcPartido": {
-    "nac": 21
-   },
-   "t2PctEq": {
-    "nac": 82
-   },
-   "t3PctEq": {
-    "nac": 96
-   },
-   "roPartido": {
-    "nac": 7
-   },
-   "rdPartido": {
-    "nac": 100
-   },
-   "rebPartido": {
-    "nac": 100
-   },
-   "asPartido": {
-    "nac": 32
-   },
-   "brPartido": {
-    "nac": 25
-   },
-   "bpPartido": {
-    "nac": 89
-   },
-   "fcPartido": {
-    "nac": 61
-   }
-  }
- },
- {
-  "id": "1010352",
-  "idClub": "melilla",
-  "nombre": "MELILLA CIUDAD DEL DEPORTE",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 2,
-  "pp": 0,
-  "pf": 152,
-  "pc": 128,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 2,
-   "pp": 0,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 76,
-  "pcPartido": 64,
-  "difPartido": 12,
-  "t2PctEq": 43.28,
-  "t3PctEq": 32.14,
-  "tlPctEq": 64.52,
-  "roPartido": 9,
-  "rdPartido": 31.5,
-  "rebPartido": 40.5,
-  "asPartido": 15,
-  "brPartido": 9,
-  "bpPartido": 20,
-  "fcPartido": 21.5,
-  "frPartido": 27.5,
-  "tapFavor": 3,
-  "tapContra": 3,
-  "pace": 86.14,
-  "ortg": 88.23,
-  "drtg": 76.94,
-  "netrtg": 11.29,
-  "srs": 13.18,
-  "efg": 45.53,
-  "tovPct": 23.22,
-  "orbPct": 26.09,
-  "ftRate": 50.41,
-  "ts": 50.57,
-  "t3Pct": 32.14,
-  "t3ar": 45.53,
-  "astPct": 63.83,
-  "asPorBp": 0.75,
-  "pct2": 38.2,
-  "pct3": 35.5,
-  "pctTl": 26.3,
-  "efgRival": 34.21,
-  "tovForzadas": 22.24,
-  "drbPct": 73.26,
-  "ftrRival": 33.08,
-  "forma5": "2-0",
-  "forma5Dif": 12,
+  "forma5Dif": 12.5,
   "victoriasEsperadas": 1.7,
   "suerte": 0.3,
   "percentiles": {
    "pace": {
-    "nac": 93
+    "nac": 39
    },
    "ortg": {
-    "nac": 7
+    "nac": 68
    },
    "drtg": {
-    "nac": 4
+    "nac": 11
    },
    "pfPartido": {
-    "nac": 36
+    "nac": 61
    },
    "pcPartido": {
-    "nac": 11
+    "nac": 7
    },
    "t2PctEq": {
     "nac": 14
    },
    "t3PctEq": {
-    "nac": 50
+    "nac": 79
    },
    "roPartido": {
-    "nac": 36
-   },
-   "rdPartido": {
-    "nac": 96
-   },
-   "rebPartido": {
     "nac": 89
    },
-   "asPartido": {
-    "nac": 43
-   },
-   "brPartido": {
-    "nac": 79
-   },
-   "bpPartido": {
-    "nac": 100
-   },
-   "fcPartido": {
-    "nac": 46
-   }
-  }
- },
- {
-  "id": "1008857",
-  "idClub": "cultural-leonesa",
-  "nombre": "CULTURAL Y DEPORTIVA LEONESA",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 2,
-  "pp": 0,
-  "pf": 167,
-  "pc": 150,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 2,
-   "pp": 0,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 83.5,
-  "pcPartido": 75,
-  "difPartido": 8.5,
-  "t2PctEq": 50.89,
-  "t3PctEq": 32.14,
-  "tlPctEq": 65,
-  "roPartido": 9,
-  "rdPartido": 30.5,
-  "rebPartido": 39.5,
-  "asPartido": 18,
-  "brPartido": 8.5,
-  "bpPartido": 15,
-  "fcPartido": 21,
-  "frPartido": 19,
-  "tapFavor": 3,
-  "tapContra": 2.5,
-  "pace": 84.8,
-  "ortg": 98.47,
-  "drtg": 90.21,
-  "netrtg": 8.26,
-  "srs": 3.05,
-  "efg": 50.36,
-  "tovPct": 17.69,
-  "orbPct": 25.71,
-  "ftRate": 28.57,
-  "ts": 52.98,
-  "t3Pct": 32.14,
-  "t3ar": 20,
-  "astPct": 54.55,
-  "asPorBp": 1.2,
-  "pct2": 68.3,
-  "pct3": 16.2,
-  "pctTl": 15.6,
-  "efgRival": 42.81,
-  "tovForzadas": 18.04,
-  "drbPct": 70.11,
-  "ftrRival": 25.34,
-  "forma5": "2-0",
-  "forma5Dif": 8.5,
-  "victoriasEsperadas": 1.5,
-  "suerte": 0.5,
-  "percentiles": {
-   "pace": {
-    "nac": 86
-   },
-   "ortg": {
-    "nac": 50
-   },
-   "drtg": {
-    "nac": 25
-   },
-   "pfPartido": {
-    "nac": 79
-   },
-   "pcPartido": {
-    "nac": 32
-   },
-   "t2PctEq": {
-    "nac": 68
-   },
-   "t3PctEq": {
-    "nac": 50
-   },
-   "roPartido": {
-    "nac": 36
-   },
    "rdPartido": {
-    "nac": 93
-   },
-   "rebPartido": {
-    "nac": 82
-   },
-   "asPartido": {
-    "nac": 79
-   },
-   "brPartido": {
-    "nac": 75
-   },
-   "bpPartido": {
-    "nac": 57
-   },
-   "fcPartido": {
-    "nac": 43
-   }
-  }
- },
- {
-  "id": "1009588",
-  "idClub": "uemc-valladolid",
-  "nombre": "UEMC BALONCESTO VALLADOLID",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 150,
-  "pc": 145,
-  "casa": {
-   "pj": 1,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 75,
-  "pcPartido": 72.5,
-  "difPartido": 2.5,
-  "t2PctEq": 44.87,
-  "t3PctEq": 24.53,
-  "tlPctEq": 75.93,
-  "roPartido": 13,
-  "rdPartido": 26,
-  "rebPartido": 39,
-  "asPartido": 11.5,
-  "brPartido": 8.5,
-  "bpPartido": 16.5,
-  "fcPartido": 25,
-  "frPartido": 27.5,
-  "tapFavor": 2.5,
-  "tapContra": 4,
-  "pace": 80.88,
-  "ortg": 92.73,
-  "drtg": 86.43,
-  "netrtg": 6.3,
-  "srs": 5.4,
-  "efg": 41.6,
-  "tovPct": 20.4,
-  "orbPct": 33.77,
-  "ftRate": 41.22,
-  "ts": 48.46,
-  "t3Pct": 24.53,
-  "t3ar": 40.46,
-  "astPct": 47.92,
-  "asPorBp": 0.7,
-  "pct2": 46.7,
-  "pct3": 26,
-  "pctTl": 27.3,
-  "efgRival": 42.46,
-  "tovForzadas": 21.46,
-  "drbPct": 74.29,
-  "ftrRival": 42.86,
-  "forma5": "1-1",
-  "forma5Dif": 2.5,
-  "victoriasEsperadas": 1.2,
-  "suerte": -0.2,
-  "percentiles": {
-   "pace": {
-    "nac": 57
-   },
-   "ortg": {
-    "nac": 32
-   },
-   "drtg": {
-    "nac": 11
-   },
-   "pfPartido": {
-    "nac": 29
-   },
-   "pcPartido": {
-    "nac": 29
-   },
-   "t2PctEq": {
-    "nac": 36
-   },
-   "t3PctEq": {
-    "nac": 4
-   },
-   "roPartido": {
-    "nac": 82
-   },
-   "rdPartido": {
-    "nac": 57
-   },
-   "rebPartido": {
-    "nac": 75
-   },
-   "asPartido": {
-    "nac": 11
-   },
-   "brPartido": {
-    "nac": 75
-   },
-   "bpPartido": {
-    "nac": 82
-   },
-   "fcPartido": {
-    "nac": 86
-   }
-  }
- },
- {
-  "id": "1010192",
-  "idClub": "algeciras",
-  "nombre": "CB ALGECIRAS",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 158,
-  "pc": 155,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 79,
-  "pcPartido": 77.5,
-  "difPartido": 1.5,
-  "t2PctEq": 43.33,
-  "t3PctEq": 32.47,
-  "tlPctEq": 62,
-  "roPartido": 10,
-  "rdPartido": 24,
-  "rebPartido": 34,
-  "asPartido": 19.5,
-  "brPartido": 8,
-  "bpPartido": 9.5,
-  "fcPartido": 21,
-  "frPartido": 25,
-  "tapFavor": 0.5,
-  "tapContra": 2,
-  "pace": 79,
-  "ortg": 100,
-  "drtg": 96.85,
-  "netrtg": 3.15,
-  "srs": 16.38,
-  "efg": 46.35,
-  "tovPct": 12.03,
-  "orbPct": 23.26,
-  "ftRate": 36.5,
-  "ts": 49.69,
-  "t3Pct": 32.47,
-  "t3ar": 56.2,
-  "astPct": 76.47,
-  "asPorBp": 2.05,
-  "pct2": 32.9,
-  "pct3": 47.5,
-  "pctTl": 19.6,
-  "efgRival": 55.17,
-  "tovForzadas": 23.74,
-  "drbPct": 80,
-  "ftrRival": 35.34,
-  "forma5": "1-1",
-  "forma5Dif": 1.5,
-  "victoriasEsperadas": 1.1,
-  "suerte": -0.1,
-  "percentiles": {
-   "pace": {
-    "nac": 36
-   },
-   "ortg": {
-    "nac": 61
-   },
-   "drtg": {
-    "nac": 43
-   },
-   "pfPartido": {
-    "nac": 50
-   },
-   "pcPartido": {
     "nac": 39
    },
-   "t2PctEq": {
-    "nac": 18
-   },
-   "t3PctEq": {
-    "nac": 61
-   },
-   "roPartido": {
-    "nac": 50
-   },
-   "rdPartido": {
-    "nac": 36
-   },
    "rebPartido": {
-    "nac": 29
+    "nac": 57
    },
    "asPartido": {
-    "nac": 96
-   },
-   "brPartido": {
-    "nac": 61
-   },
-   "bpPartido": {
-    "nac": 7
-   },
-   "fcPartido": {
-    "nac": 43
-   }
-  }
- },
- {
-  "id": "1010193",
-  "idClub": "starlabs-moron",
-  "nombre": "C.B. STARLABS MORÓN",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 166,
-  "pc": 173,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 83,
-  "pcPartido": 86.5,
-  "difPartido": -3.5,
-  "t2PctEq": 43.53,
-  "t3PctEq": 32.2,
-  "tlPctEq": 72.92,
-  "roPartido": 15.5,
-  "rdPartido": 27,
-  "rebPartido": 42.5,
-  "asPartido": 16,
-  "brPartido": 8,
-  "bpPartido": 12,
-  "fcPartido": 22,
-  "frPartido": 22,
-  "tapFavor": 2,
-  "tapContra": 3,
-  "pace": 79.06,
-  "ortg": 104.98,
-  "drtg": 103.72,
-  "netrtg": 1.27,
-  "srs": -2.64,
-  "efg": 45.49,
-  "tovPct": 15.18,
-  "orbPct": 36.47,
-  "ftRate": 33.33,
-  "ts": 50.27,
-  "t3Pct": 32.2,
-  "t3ar": 40.97,
-  "astPct": 57.14,
-  "asPorBp": 1.33,
-  "pct2": 44.6,
-  "pct3": 34.3,
-  "pctTl": 21.1,
-  "efgRival": 47.37,
-  "tovForzadas": 14.39,
-  "drbPct": 65.06,
-  "ftrRival": 29.61,
-  "forma5": "1-1",
-  "forma5Dif": -3.5,
-  "victoriasEsperadas": 0.8,
-  "suerte": 0.2,
-  "percentiles": {
-   "pace": {
-    "nac": 39
-   },
-   "ortg": {
-    "nac": 79
-   },
-   "drtg": {
-    "nac": 75
-   },
-   "pfPartido": {
     "nac": 71
-   },
-   "pcPartido": {
-    "nac": 89
-   },
-   "t2PctEq": {
-    "nac": 21
-   },
-   "t3PctEq": {
-    "nac": 54
-   },
-   "roPartido": {
-    "nac": 96
-   },
-   "rdPartido": {
-    "nac": 68
-   },
-   "rebPartido": {
-    "nac": 100
-   },
-   "asPartido": {
-    "nac": 57
-   },
-   "brPartido": {
-    "nac": 61
-   },
-   "bpPartido": {
-    "nac": 21
-   },
-   "fcPartido": {
-    "nac": 57
-   }
-  }
- },
- {
-  "id": "1009723",
-  "idClub": "tres-cantos",
-  "nombre": "C.B. TRES CANTOS",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 167,
-  "pc": 164,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 83.5,
-  "pcPartido": 82,
-  "difPartido": 1.5,
-  "t2PctEq": 49.37,
-  "t3PctEq": 28.57,
-  "tlPctEq": 67.31,
-  "roPartido": 14,
-  "rdPartido": 23.5,
-  "rebPartido": 37.5,
-  "asPartido": 16,
-  "brPartido": 7.5,
-  "bpPartido": 11.5,
-  "fcPartido": 26,
-  "frPartido": 24.5,
-  "tapFavor": 2,
-  "tapContra": 1.5,
-  "pace": 79.94,
-  "ortg": 104.45,
-  "drtg": 104.43,
-  "netrtg": 0.02,
-  "srs": -7.83,
-  "efg": 46.48,
-  "tovPct": 14.39,
-  "orbPct": 36.36,
-  "ftRate": 36.62,
-  "ts": 50.64,
-  "t3Pct": 28.57,
-  "t3ar": 44.37,
-  "astPct": 56.14,
-  "asPorBp": 1.39,
-  "pct2": 46.7,
-  "pct3": 32.3,
-  "pctTl": 21,
-  "efgRival": 48.82,
-  "tovForzadas": 17.83,
-  "drbPct": 63.51,
-  "ftrRival": 51.97,
-  "forma5": "1-1",
-  "forma5Dif": 1.5,
-  "victoriasEsperadas": 1.1,
-  "suerte": -0.1,
-  "percentiles": {
-   "pace": {
-    "nac": 46
-   },
-   "ortg": {
-    "nac": 71
-   },
-   "drtg": {
-    "nac": 79
-   },
-   "pfPartido": {
-    "nac": 79
-   },
-   "pcPartido": {
-    "nac": 61
-   },
-   "t2PctEq": {
-    "nac": 57
-   },
-   "t3PctEq": {
-    "nac": 21
-   },
-   "roPartido": {
-    "nac": 93
-   },
-   "rdPartido": {
-    "nac": 32
-   },
-   "rebPartido": {
-    "nac": 68
-   },
-   "asPartido": {
-    "nac": 57
-   },
-   "brPartido": {
-    "nac": 50
-   },
-   "bpPartido": {
-    "nac": 11
-   },
-   "fcPartido": {
-    "nac": 89
-   }
-  }
- },
- {
-  "id": "1010194",
-  "idClub": "jaen-paraiso-interior-fs",
-  "nombre": "JAEN PARAISO INTERIOR FS",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 160,
-  "pc": 159,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 80,
-  "pcPartido": 79.5,
-  "difPartido": 0.5,
-  "t2PctEq": 56,
-  "t3PctEq": 25,
-  "tlPctEq": 75.61,
-  "roPartido": 8,
-  "rdPartido": 25,
-  "rebPartido": 33,
-  "asPartido": 11,
-  "brPartido": 8,
-  "bpPartido": 19,
-  "fcPartido": 25,
-  "frPartido": 24,
-  "tapFavor": 1,
-  "tapContra": 2,
-  "pace": 87.52,
-  "ortg": 91.41,
-  "drtg": 92.16,
-  "netrtg": -0.76,
-  "srs": -11.1,
-  "efg": 47.78,
-  "tovPct": 21.71,
-  "orbPct": 23.19,
-  "ftRate": 30.37,
-  "ts": 52.27,
-  "t3Pct": 25,
-  "t3ar": 44.44,
-  "astPct": 38.6,
-  "asPorBp": 0.58,
-  "pct2": 52.5,
-  "pct3": 28.1,
-  "pctTl": 19.4,
-  "efgRival": 44.78,
-  "tovForzadas": 21.45,
-  "drbPct": 67.57,
-  "ftrRival": 43.28,
-  "forma5": "1-1",
-  "forma5Dif": 0.5,
-  "victoriasEsperadas": 1,
-  "suerte": 0,
-  "percentiles": {
-   "pace": {
-    "nac": 100
-   },
-   "ortg": {
-    "nac": 21
-   },
-   "drtg": {
-    "nac": 32
-   },
-   "pfPartido": {
-    "nac": 57
-   },
-   "pcPartido": {
-    "nac": 50
-   },
-   "t2PctEq": {
-    "nac": 86
-   },
-   "t3PctEq": {
-    "nac": 11
-   },
-   "roPartido": {
-    "nac": 18
-   },
-   "rdPartido": {
-    "nac": 46
-   },
-   "rebPartido": {
-    "nac": 18
-   },
-   "asPartido": {
-    "nac": 7
-   },
-   "brPartido": {
-    "nac": 61
-   },
-   "bpPartido": {
-    "nac": 96
-   },
-   "fcPartido": {
-    "nac": 86
-   }
-  }
- },
- {
-  "id": "1008643",
-  "idClub": "clinica-ponferrada",
-  "nombre": "CLÍNICA PONFERRADA SDP",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 163,
-  "pc": 168,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 81.5,
-  "pcPartido": 84,
-  "difPartido": -2.5,
-  "t2PctEq": 44.05,
-  "t3PctEq": 29.41,
-  "tlPctEq": 86.27,
-  "roPartido": 10,
-  "rdPartido": 27.5,
-  "rebPartido": 37.5,
-  "asPartido": 9,
-  "brPartido": 6.5,
-  "bpPartido": 13.5,
-  "fcPartido": 22,
-  "frPartido": 22.5,
-  "tapFavor": 2,
-  "tapContra": 3.5,
-  "pace": 82.22,
-  "ortg": 99.12,
-  "drtg": 100.38,
-  "netrtg": -1.26,
-  "srs": 1.46,
-  "efg": 44.07,
-  "tovPct": 16.42,
-  "orbPct": 25.64,
-  "ftRate": 37.78,
-  "ts": 51.77,
-  "t3Pct": 29.41,
-  "t3ar": 37.78,
-  "astPct": 34.62,
-  "asPorBp": 0.67,
-  "pct2": 45.4,
-  "pct3": 27.6,
-  "pctTl": 27,
-  "efgRival": 51.45,
-  "tovForzadas": 16.13,
-  "drbPct": 76.39,
-  "ftrRival": 31.88,
-  "forma5": "1-1",
-  "forma5Dif": -2.5,
-  "victoriasEsperadas": 0.8,
-  "suerte": 0.2,
-  "percentiles": {
-   "pace": {
-    "nac": 64
-   },
-   "ortg": {
-    "nac": 54
-   },
-   "drtg": {
-    "nac": 57
-   },
-   "pfPartido": {
-    "nac": 68
-   },
-   "pcPartido": {
-    "nac": 71
-   },
-   "t2PctEq": {
-    "nac": 25
-   },
-   "t3PctEq": {
-    "nac": 32
-   },
-   "roPartido": {
-    "nac": 50
-   },
-   "rdPartido": {
-    "nac": 71
-   },
-   "rebPartido": {
-    "nac": 68
-   },
-   "asPartido": {
-    "nac": 4
-   },
-   "brPartido": {
-    "nac": 39
-   },
-   "bpPartido": {
-    "nac": 36
-   },
-   "fcPartido": {
-    "nac": 57
-   }
-  }
- },
- {
-  "id": "1010318",
-  "idClub": "toledo",
-  "nombre": "CLUB BALONCESTO TOLEDO BASKET",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 152,
-  "pc": 160,
-  "casa": {
-   "pj": 1,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 76,
-  "pcPartido": 80,
-  "difPartido": -4,
-  "t2PctEq": 42.68,
-  "t3PctEq": 31.03,
-  "tlPctEq": 62.22,
-  "roPartido": 10.5,
-  "rdPartido": 26,
-  "rebPartido": 36.5,
-  "asPartido": 16,
-  "brPartido": 8.5,
-  "bpPartido": 14,
-  "fcPartido": 25,
-  "frPartido": 23,
-  "tapFavor": 4.5,
-  "tapContra": 2.5,
-  "pace": 83.4,
-  "ortg": 91.13,
-  "drtg": 96.2,
-  "netrtg": -5.07,
-  "srs": 3.28,
-  "efg": 44.29,
-  "tovPct": 16.79,
-  "orbPct": 24.71,
-  "ftRate": 32.14,
-  "ts": 47.56,
-  "t3Pct": 31.03,
-  "t3ar": 41.43,
-  "astPct": 60.38,
-  "asPorBp": 1.14,
-  "pct2": 46.1,
-  "pct3": 35.5,
-  "pctTl": 18.4,
-  "efgRival": 48.06,
-  "tovForzadas": 21.04,
-  "drbPct": 71.23,
-  "ftrRival": 41.09,
-  "forma5": "1-1",
-  "forma5Dif": -4,
-  "victoriasEsperadas": 0.7,
-  "suerte": 0.3,
-  "percentiles": {
-   "pace": {
-    "nac": 75
-   },
-   "ortg": {
-    "nac": 14
-   },
-   "drtg": {
-    "nac": 39
-   },
-   "pfPartido": {
-    "nac": 36
-   },
-   "pcPartido": {
-    "nac": 54
-   },
-   "t2PctEq": {
-    "nac": 11
-   },
-   "t3PctEq": {
-    "nac": 43
-   },
-   "roPartido": {
-    "nac": 54
-   },
-   "rdPartido": {
-    "nac": 57
-   },
-   "rebPartido": {
-    "nac": 50
-   },
-   "asPartido": {
-    "nac": 57
-   },
-   "brPartido": {
-    "nac": 75
-   },
-   "bpPartido": {
-    "nac": 50
-   },
-   "fcPartido": {
-    "nac": 86
-   }
-  }
- },
- {
-  "id": "1010320",
-  "idClub": null,
-  "nombre": "IREN BCBADAJOZ",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 158,
-  "pc": 172,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 79,
-  "pcPartido": 86,
-  "difPartido": -7,
-  "t2PctEq": 47.73,
-  "t3PctEq": 32.61,
-  "tlPctEq": 64.44,
-  "roPartido": 11,
-  "rdPartido": 28.5,
-  "rebPartido": 39.5,
-  "asPartido": 12.5,
-  "brPartido": 4.5,
-  "bpPartido": 16.5,
-  "fcPartido": 27.5,
-  "frPartido": 23,
-  "tapFavor": 1.5,
-  "tapContra": 0.5,
-  "pace": 82.4,
-  "ortg": 95.87,
-  "drtg": 102.67,
-  "netrtg": -6.8,
-  "srs": -5.67,
-  "efg": 48.13,
-  "tovPct": 20.02,
-  "orbPct": 28.95,
-  "ftRate": 33.58,
-  "ts": 51.37,
-  "t3Pct": 32.61,
-  "t3ar": 34.33,
-  "astPct": 43.86,
-  "asPorBp": 0.76,
-  "pct2": 53.2,
-  "pct3": 28.5,
-  "pctTl": 18.4,
-  "efgRival": 50,
-  "tovForzadas": 15.52,
-  "drbPct": 76,
-  "ftrRival": 43.28,
-  "forma5": "1-1",
-  "forma5Dif": -7,
-  "victoriasEsperadas": 0.6,
-  "suerte": 0.4,
-  "percentiles": {
-   "pace": {
-    "nac": 68
-   },
-   "ortg": {
-    "nac": 43
-   },
-   "drtg": {
-    "nac": 68
-   },
-   "pfPartido": {
-    "nac": 50
-   },
-   "pcPartido": {
-    "nac": 86
-   },
-   "t2PctEq": {
-    "nac": 54
-   },
-   "t3PctEq": {
-    "nac": 64
-   },
-   "roPartido": {
-    "nac": 71
-   },
-   "rdPartido": {
-    "nac": 82
-   },
-   "rebPartido": {
-    "nac": 82
-   },
-   "asPartido": {
-    "nac": 21
-   },
-   "brPartido": {
-    "nac": 11
-   },
-   "bpPartido": {
-    "nac": 82
-   },
-   "fcPartido": {
-    "nac": 100
-   }
-  }
- },
- {
-  "id": "1010495",
-  "idClub": "spanish-basketball-academy",
-  "nombre": "SPANISH BASKETBALL ACADEMY",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 0,
-  "pp": 2,
-  "pf": 163,
-  "pc": 178,
-  "casa": {
-   "pj": 1,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 0,
-   "pp": 2,
-   "casa": {
-    "pj": 1,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 81.5,
-  "pcPartido": 89,
-  "difPartido": -7.5,
-  "t2PctEq": 51.19,
-  "t3PctEq": 27.27,
-  "tlPctEq": 60.53,
-  "roPartido": 9.5,
-  "rdPartido": 27,
-  "rebPartido": 36.5,
-  "asPartido": 14.5,
-  "brPartido": 5.5,
-  "bpPartido": 12.5,
-  "fcPartido": 23,
-  "frPartido": 20.5,
-  "tapFavor": 3.5,
-  "tapContra": 1.5,
-  "pace": 86.36,
-  "ortg": 94.37,
-  "drtg": 105.25,
-  "netrtg": -10.88,
-  "srs": -10.15,
-  "efg": 46.67,
-  "tovPct": 14.47,
-  "orbPct": 23.17,
-  "ftRate": 25.33,
-  "ts": 48.88,
-  "t3Pct": 27.27,
-  "t3ar": 44,
-  "astPct": 47.54,
-  "asPorBp": 1.16,
-  "pct2": 52.8,
-  "pct3": 33.1,
-  "pctTl": 14.1,
-  "efgRival": 51.82,
-  "tovForzadas": 15.37,
-  "drbPct": 78.26,
-  "ftrRival": 35.04,
-  "forma5": "0-2",
-  "forma5Dif": -7.5,
-  "victoriasEsperadas": 0.6,
-  "suerte": -0.6,
-  "percentiles": {
-   "pace": {
-    "nac": 96
-   },
-   "ortg": {
-    "nac": 36
-   },
-   "drtg": {
-    "nac": 86
-   },
-   "pfPartido": {
-    "nac": 68
-   },
-   "pcPartido": {
-    "nac": 96
-   },
-   "t2PctEq": {
-    "nac": 71
-   },
-   "t3PctEq": {
-    "nac": 18
-   },
-   "roPartido": {
-    "nac": 39
-   },
-   "rdPartido": {
-    "nac": 68
-   },
-   "rebPartido": {
-    "nac": 50
-   },
-   "asPartido": {
-    "nac": 39
-   },
-   "brPartido": {
-    "nac": 25
-   },
-   "bpPartido": {
-    "nac": 25
-   },
-   "fcPartido": {
-    "nac": 71
-   }
-  }
- },
- {
-  "id": "1010496",
-  "idClub": "movistar-estudiantes",
-  "nombre": "MOVISTAR ESTUDIANTES",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 0,
-  "pp": 2,
-  "pf": 149,
-  "pc": 163,
-  "casa": {
-   "pj": 1,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 0,
-   "pp": 2,
-   "casa": {
-    "pj": 1,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 74.5,
-  "pcPartido": 81.5,
-  "difPartido": -7,
-  "t2PctEq": 36.71,
-  "t3PctEq": 40.82,
-  "tlPctEq": 54.39,
-  "roPartido": 11,
-  "rdPartido": 23,
-  "rebPartido": 34,
-  "asPartido": 12.5,
-  "brPartido": 8.5,
-  "bpPartido": 18,
-  "fcPartido": 22,
-  "frPartido": 24,
-  "tapFavor": 2.5,
-  "tapContra": 3,
-  "pace": 83.54,
-  "ortg": 89.18,
-  "drtg": 100.82,
-  "netrtg": -11.64,
-  "srs": -15.42,
-  "efg": 46.09,
-  "tovPct": 21.55,
-  "orbPct": 30.14,
-  "ftRate": 44.53,
-  "ts": 48.67,
-  "t3Pct": 40.82,
-  "t3ar": 38.28,
-  "astPct": 51.02,
-  "asPorBp": 0.69,
-  "pct2": 38.9,
-  "pct3": 40.3,
-  "pctTl": 20.8,
-  "efgRival": 49.61,
-  "tovForzadas": 19.79,
-  "drbPct": 69.7,
-  "ftrRival": 36.43,
-  "forma5": "0-2",
-  "forma5Dif": -7,
-  "victoriasEsperadas": 0.6,
-  "suerte": -0.6,
-  "percentiles": {
-   "pace": {
-    "nac": 79
-   },
-   "ortg": {
-    "nac": 11
-   },
-   "drtg": {
-    "nac": 61
-   },
-   "pfPartido": {
-    "nac": 21
-   },
-   "pcPartido": {
-    "nac": 57
-   },
-   "t2PctEq": {
-    "nac": 4
-   },
-   "t3PctEq": {
-    "nac": 93
-   },
-   "roPartido": {
-    "nac": 71
-   },
-   "rdPartido": {
-    "nac": 21
-   },
-   "rebPartido": {
-    "nac": 29
-   },
-   "asPartido": {
-    "nac": 21
-   },
-   "brPartido": {
-    "nac": 75
-   },
-   "bpPartido": {
-    "nac": 89
-   },
-   "fcPartido": {
-    "nac": 57
-   }
-  }
- },
- {
-  "id": "1009073",
-  "idClub": "getafe",
-  "nombre": "C.B. GETAFE",
-  "grupo": "A",
-  "pj": 2,
-  "pg": 0,
-  "pp": 2,
-  "pf": 145,
-  "pc": 166,
-  "casa": {
-   "pj": 1,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 0,
-   "pp": 2,
-   "casa": {
-    "pj": 1,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 72.5,
-  "pcPartido": 83,
-  "difPartido": -10.5,
-  "t2PctEq": 42.67,
-  "t3PctEq": 29.09,
-  "tlPctEq": 70.21,
-  "roPartido": 10,
-  "rdPartido": 23.5,
-  "rebPartido": 33.5,
-  "asPartido": 12.5,
-  "brPartido": 11,
-  "bpPartido": 18.5,
-  "fcPartido": 27,
-  "frPartido": 23,
-  "tapFavor": 3.5,
-  "tapContra": 2,
-  "pace": 83.84,
-  "ortg": 86.47,
-  "drtg": 99.47,
-  "netrtg": -13,
-  "srs": -17.37,
-  "efg": 43.08,
-  "tovPct": 22.07,
-  "orbPct": 28.17,
-  "ftRate": 36.15,
-  "ts": 48.12,
-  "t3Pct": 29.09,
-  "t3ar": 42.31,
-  "astPct": 52.08,
-  "asPorBp": 0.68,
-  "pct2": 44.1,
-  "pct3": 33.1,
-  "pctTl": 22.8,
-  "efgRival": 47.76,
-  "tovForzadas": 20.97,
-  "drbPct": 65.28,
-  "ftrRival": 38.81,
-  "forma5": "0-2",
-  "forma5Dif": -10.5,
-  "victoriasEsperadas": 0.4,
-  "suerte": -0.4,
-  "percentiles": {
-   "pace": {
-    "nac": 82
-   },
-   "ortg": {
-    "nac": 4
-   },
-   "drtg": {
-    "nac": 50
-   },
-   "pfPartido": {
-    "nac": 14
-   },
-   "pcPartido": {
-    "nac": 68
-   },
-   "t2PctEq": {
-    "nac": 7
-   },
-   "t3PctEq": {
-    "nac": 29
-   },
-   "roPartido": {
-    "nac": 50
-   },
-   "rdPartido": {
-    "nac": 32
-   },
-   "rebPartido": {
-    "nac": 21
-   },
-   "asPartido": {
-    "nac": 21
-   },
-   "brPartido": {
-    "nac": 93
-   },
-   "bpPartido": {
-    "nac": 93
-   },
-   "fcPartido": {
-    "nac": 96
-   }
-  }
- },
- {
-  "id": "1008706",
-  "idClub": "class-sant-antoni",
-  "nombre": "CLASS BASQUET SANT ANTONI",
-  "grupo": "B",
-  "pj": 1,
-  "pg": 1,
-  "pp": 0,
-  "pf": 88,
-  "pc": 64,
-  "casa": {
-   "pj": 0,
-   "pg": 0
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 1,
-   "pg": 1,
-   "pp": 0,
-   "casa": {
-    "pj": 0,
-    "pg": 0
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 88,
-  "pcPartido": 64,
-  "difPartido": 24,
-  "t2PctEq": 63.89,
-  "t3PctEq": 31.03,
-  "tlPctEq": 68.18,
-  "roPartido": 9,
-  "rdPartido": 30,
-  "rebPartido": 39,
-  "asPartido": 17,
-  "brPartido": 7,
-  "bpPartido": 14,
-  "fcPartido": 19,
-  "frPartido": 22,
-  "tapFavor": 1,
-  "tapContra": 1,
-  "pace": 79.68,
-  "ortg": 110.44,
-  "drtg": 85.79,
-  "netrtg": 24.65,
-  "srs": 15.81,
-  "efg": 56.15,
-  "tovPct": 17.57,
-  "orbPct": 30,
-  "ftRate": 33.85,
-  "ts": 58.92,
-  "t3Pct": 31.03,
-  "t3ar": 44.62,
-  "astPct": 53.13,
-  "asPorBp": 1.21,
-  "pct2": 52.3,
-  "pct3": 30.7,
-  "pctTl": 17,
-  "efgRival": 46.67,
-  "tovForzadas": 17.43,
-  "drbPct": 85.71,
-  "ftrRival": 25,
-  "forma5": "1-0",
-  "forma5Dif": 24,
-  "victoriasEsperadas": 1,
-  "suerte": 0,
-  "percentiles": {
-   "pace": {
-    "nac": 43
-   },
-   "ortg": {
-    "nac": 93
-   },
-   "drtg": {
-    "nac": 7
-   },
-   "pfPartido": {
-    "nac": 100
-   },
-   "pcPartido": {
-    "nac": 11
-   },
-   "t2PctEq": {
-    "nac": 100
-   },
-   "t3PctEq": {
-    "nac": 43
-   },
-   "roPartido": {
-    "nac": 36
-   },
-   "rdPartido": {
-    "nac": 89
-   },
-   "rebPartido": {
-    "nac": 75
-   },
-   "asPartido": {
-    "nac": 61
    },
    "brPartido": {
     "nac": 46
    },
    "bpPartido": {
-    "nac": 50
+    "nac": 75
    },
    "fcPartido": {
-    "nac": 18
+    "nac": 89
    }
   }
  },
@@ -1759,245 +1876,128 @@
   "idClub": "tq-prat",
   "nombre": "TQ-CB PRAT",
   "grupo": "B",
-  "pj": 2,
+  "pj": 3,
   "pg": 2,
-  "pp": 0,
-  "pf": 159,
-  "pc": 135,
+  "pp": 1,
+  "pf": 241,
+  "pc": 220,
   "casa": {
    "pj": 1,
    "pg": 1
   },
   "fuera": {
-   "pj": 1,
+   "pj": 2,
    "pg": 1
   },
   "balance": {
-   "pj": 2,
+   "pj": 3,
    "pg": 2,
-   "pp": 0,
+   "pp": 1,
    "casa": {
     "pj": 1,
     "pg": 1
    },
    "fuera": {
-    "pj": 1,
+    "pj": 2,
     "pg": 1
    }
   },
-  "pfPartido": 79.5,
-  "pcPartido": 67.5,
-  "difPartido": 12,
-  "t2PctEq": 53.85,
-  "t3PctEq": 35.14,
-  "tlPctEq": 68.75,
-  "roPartido": 14,
-  "rdPartido": 26.5,
-  "rebPartido": 40.5,
-  "asPartido": 17.5,
-  "brPartido": 7,
-  "bpPartido": 14.5,
-  "fcPartido": 19,
-  "frPartido": 19,
+  "pfPartido": 80.3,
+  "pcPartido": 73.3,
+  "difPartido": 7,
+  "t2PctEq": 50.86,
+  "t3PctEq": 38.81,
+  "tlPctEq": 66.18,
+  "roPartido": 11,
+  "rdPartido": 26.3,
+  "rebPartido": 37.3,
+  "asPartido": 17.7,
+  "brPartido": 5.7,
+  "bpPartido": 13,
+  "fcPartido": 19.7,
+  "frPartido": 21.3,
   "tapFavor": 1,
-  "tapContra": 4,
-  "pace": 71.54,
-  "ortg": 111.13,
-  "drtg": 91.49,
-  "netrtg": 19.64,
-  "srs": 7.85,
-  "efg": 53.52,
-  "tovPct": 20.27,
-  "orbPct": 42.42,
-  "ftRate": 25,
-  "ts": 55.95,
-  "t3Pct": 35.14,
-  "t3ar": 28.91,
-  "astPct": 56.45,
-  "asPorBp": 1.21,
-  "pct2": 61.6,
-  "pct3": 24.5,
-  "pctTl": 13.8,
-  "efgRival": 45.76,
-  "tovForzadas": 18.98,
-  "drbPct": 72.6,
-  "ftrRival": 41.53,
-  "forma5": "2-0",
-  "forma5Dif": 12,
-  "victoriasEsperadas": 1.7,
-  "suerte": 0.3,
+  "tapContra": 3.3,
+  "pace": 72.97,
+  "ortg": 110.09,
+  "drtg": 96.53,
+  "netrtg": 13.56,
+  "srs": 9.49,
+  "efg": 53.55,
+  "tovPct": 17.81,
+  "orbPct": 33.67,
+  "ftRate": 37.16,
+  "ts": 56.59,
+  "t3Pct": 38.81,
+  "t3ar": 36.61,
+  "astPct": 62.35,
+  "asPorBp": 1.36,
+  "pct2": 49,
+  "pct3": 32.4,
+  "pctTl": 18.7,
+  "efgRival": 47.35,
+  "tovForzadas": 15.8,
+  "drbPct": 74.53,
+  "ftrRival": 35.98,
+  "forma5": "2-1",
+  "forma5Dif": 7,
+  "victoriasEsperadas": 2.2,
+  "suerte": -0.2,
   "percentiles": {
    "pace": {
-    "nac": 7
+    "nac": 11
    },
    "ortg": {
     "nac": 100
    },
    "drtg": {
-    "nac": 29
-   },
-   "pfPartido": {
-    "nac": 54
-   },
-   "pcPartido": {
-    "nac": 14
-   },
-   "t2PctEq": {
-    "nac": 79
-   },
-   "t3PctEq": {
-    "nac": 79
-   },
-   "roPartido": {
-    "nac": 93
-   },
-   "rdPartido": {
-    "nac": 61
-   },
-   "rebPartido": {
-    "nac": 89
-   },
-   "asPartido": {
-    "nac": 71
-   },
-   "brPartido": {
     "nac": 46
    },
-   "bpPartido": {
+   "pfPartido": {
     "nac": 54
    },
-   "fcPartido": {
-    "nac": 18
-   }
-  }
- },
- {
-  "id": "1009133",
-  "idClub": "zaragoza",
-  "nombre": "C.B. ZARAGOZA",
-  "grupo": "B",
-  "pj": 2,
-  "pg": 2,
-  "pp": 0,
-  "pf": 168,
-  "pc": 136,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 2,
-   "pp": 0,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 84,
-  "pcPartido": 68,
-  "difPartido": 16,
-  "t2PctEq": 57.83,
-  "t3PctEq": 35,
-  "tlPctEq": 58.82,
-  "roPartido": 9,
-  "rdPartido": 28,
-  "rebPartido": 37,
-  "asPartido": 19,
-  "brPartido": 6.5,
-  "bpPartido": 16.5,
-  "fcPartido": 21,
-  "frPartido": 23,
-  "tapFavor": 4.5,
-  "tapContra": 0.5,
-  "pace": 80.22,
-  "ortg": 104.71,
-  "drtg": 89.05,
-  "netrtg": 15.66,
-  "srs": 12.69,
-  "efg": 56.1,
-  "tovPct": 20.57,
-  "orbPct": 32.73,
-  "ftRate": 41.46,
-  "ts": 57.76,
-  "t3Pct": 35,
-  "t3ar": 32.52,
-  "astPct": 61.29,
-  "asPorBp": 1.15,
-  "pct2": 57.1,
-  "pct3": 25,
-  "pctTl": 17.9,
-  "efgRival": 46.4,
-  "tovForzadas": 20.3,
-  "drbPct": 73.68,
-  "ftrRival": 30.4,
-  "forma5": "2-0",
-  "forma5Dif": 16,
-  "victoriasEsperadas": 1.8,
-  "suerte": 0.2,
-  "percentiles": {
-   "pace": {
-    "nac": 50
-   },
-   "ortg": {
-    "nac": 75
-   },
-   "drtg": {
-    "nac": 18
-   },
-   "pfPartido": {
-    "nac": 86
-   },
    "pcPartido": {
-    "nac": 18
+    "nac": 25
    },
    "t2PctEq": {
-    "nac": 93
-   },
-   "t3PctEq": {
     "nac": 75
    },
+   "t3PctEq": {
+    "nac": 96
+   },
    "roPartido": {
-    "nac": 36
+    "nac": 71
    },
    "rdPartido": {
-    "nac": 79
-   },
-   "rebPartido": {
     "nac": 57
    },
+   "rebPartido": {
+    "nac": 50
+   },
    "asPartido": {
-    "nac": 89
-   },
-   "brPartido": {
-    "nac": 39
-   },
-   "bpPartido": {
     "nac": 82
    },
+   "brPartido": {
+    "nac": 18
+   },
+   "bpPartido": {
+    "nac": 39
+   },
    "fcPartido": {
-    "nac": 43
+    "nac": 18
    }
   }
  },
  {
-  "id": "1008985",
-  "idClub": "logrobasket-logi7",
-  "nombre": "LOGROBASKET LOGI7",
+  "id": "1008706",
+  "idClub": "class-sant-antoni",
+  "nombre": "CLASS BASQUET SANT ANTONI",
   "grupo": "B",
   "pj": 2,
   "pg": 1,
   "pp": 1,
-  "pf": 153,
-  "pc": 144,
+  "pf": 160,
+  "pc": 141,
   "casa": {
    "pj": 1,
    "pg": 0
@@ -2019,203 +2019,86 @@
     "pg": 1
    }
   },
-  "pfPartido": 76.5,
-  "pcPartido": 72,
-  "difPartido": 4.5,
-  "t2PctEq": 46.27,
-  "t3PctEq": 48.15,
-  "tlPctEq": 50,
-  "roPartido": 8,
-  "rdPartido": 29.5,
+  "pfPartido": 80,
+  "pcPartido": 70.5,
+  "difPartido": 9.5,
+  "t2PctEq": 56.58,
+  "t3PctEq": 28,
+  "tlPctEq": 65.31,
+  "roPartido": 11,
+  "rdPartido": 26.5,
   "rebPartido": 37.5,
-  "asPartido": 18.5,
-  "brPartido": 5,
-  "bpPartido": 13,
-  "fcPartido": 16.5,
-  "frPartido": 14.5,
-  "tapFavor": 0.5,
-  "tapContra": 0,
-  "pace": 71.22,
-  "ortg": 107.41,
-  "drtg": 96.93,
-  "netrtg": 10.48,
-  "srs": 12.16,
-  "efg": 57.85,
-  "tovPct": 18.25,
-  "orbPct": 26.23,
-  "ftRate": 21.49,
-  "ts": 57.76,
-  "t3Pct": 48.15,
-  "t3ar": 44.63,
-  "astPct": 64.91,
-  "asPorBp": 1.42,
-  "pct2": 40.5,
-  "pct3": 51,
-  "pctTl": 8.5,
-  "efgRival": 48.51,
-  "tovForzadas": 11.44,
-  "drbPct": 81.94,
-  "ftrRival": 17.91,
+  "asPartido": 14.5,
+  "brPartido": 7,
+  "bpPartido": 12.5,
+  "fcPartido": 19.5,
+  "frPartido": 23,
+  "tapFavor": 2,
+  "tapContra": 2,
+  "pace": 75.28,
+  "ortg": 106.27,
+  "drtg": 92.86,
+  "netrtg": 13.41,
+  "srs": 8.15,
+  "efg": 50.79,
+  "tovPct": 16.6,
+  "orbPct": 33.85,
+  "ftRate": 38.89,
+  "ts": 54.22,
+  "t3Pct": 28,
+  "t3ar": 39.68,
+  "astPct": 50.88,
+  "asPorBp": 1.16,
+  "pct2": 53.8,
+  "pct3": 26.3,
+  "pctTl": 20,
+  "efgRival": 47.24,
+  "tovForzadas": 16.46,
+  "drbPct": 76.81,
+  "ftrRival": 28.35,
   "forma5": "1-1",
-  "forma5Dif": 4.5,
-  "victoriasEsperadas": 1.3,
-  "suerte": -0.3,
+  "forma5Dif": 9.5,
+  "victoriasEsperadas": 1.6,
+  "suerte": -0.6,
   "percentiles": {
    "pace": {
-    "nac": 4
-   },
-   "ortg": {
-    "nac": 82
-   },
-   "drtg": {
-    "nac": 46
-   },
-   "pfPartido": {
-    "nac": 43
-   },
-   "pcPartido": {
-    "nac": 25
-   },
-   "t2PctEq": {
-    "nac": 46
-   },
-   "t3PctEq": {
-    "nac": 100
-   },
-   "roPartido": {
-    "nac": 18
-   },
-   "rdPartido": {
-    "nac": 86
-   },
-   "rebPartido": {
-    "nac": 68
-   },
-   "asPartido": {
-    "nac": 82
-   },
-   "brPartido": {
     "nac": 14
    },
-   "bpPartido": {
-    "nac": 29
-   },
-   "fcPartido": {
-    "nac": 4
-   }
-  }
- },
- {
-  "id": "1010351",
-  "idClub": "proinbeni-upb-gandia",
-  "nombre": "PROINBENI UPB GANDIA",
-  "grupo": "B",
-  "pj": 2,
-  "pg": 2,
-  "pp": 0,
-  "pf": 176,
-  "pc": 165,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 1
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 2,
-   "pp": 0,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 1
-   }
-  },
-  "pfPartido": 88,
-  "pcPartido": 82.5,
-  "difPartido": 5.5,
-  "t2PctEq": 57.14,
-  "t3PctEq": 36.96,
-  "tlPctEq": 53.85,
-  "roPartido": 11.5,
-  "rdPartido": 23.5,
-  "rebPartido": 35,
-  "asPartido": 19,
-  "brPartido": 10.5,
-  "bpPartido": 15.5,
-  "fcPartido": 18,
-  "frPartido": 21,
-  "tapFavor": 3,
-  "tapContra": 1.5,
-  "pace": 81.08,
-  "ortg": 108.53,
-  "drtg": 99.64,
-  "netrtg": 8.9,
-  "srs": 11.81,
-  "efg": 56.57,
-  "tovPct": 19.12,
-  "orbPct": 34.85,
-  "ftRate": 28.47,
-  "ts": 57.08,
-  "t3Pct": 36.96,
-  "t3ar": 33.58,
-  "astPct": 55.07,
-  "asPorBp": 1.23,
-  "pct2": 59.1,
-  "pct3": 29,
-  "pctTl": 11.9,
-  "efgRival": 52.19,
-  "tovForzadas": 20.53,
-  "drbPct": 67.14,
-  "ftrRival": 29.2,
-  "forma5": "2-0",
-  "forma5Dif": 5.5,
-  "victoriasEsperadas": 1.3,
-  "suerte": 0.7,
-  "percentiles": {
-   "pace": {
-    "nac": 61
-   },
    "ortg": {
-    "nac": 86
+    "nac": 89
    },
    "drtg": {
-    "nac": 54
+    "nac": 25
    },
    "pfPartido": {
-    "nac": 100
+    "nac": 50
    },
    "pcPartido": {
-    "nac": 64
+    "nac": 14
    },
    "t2PctEq": {
-    "nac": 89
+    "nac": 93
    },
    "t3PctEq": {
-    "nac": 86
+    "nac": 25
    },
    "roPartido": {
-    "nac": 75
+    "nac": 71
    },
    "rdPartido": {
-    "nac": 32
+    "nac": 61
    },
    "rebPartido": {
-    "nac": 32
+    "nac": 57
    },
    "asPartido": {
-    "nac": 89
+    "nac": 39
    },
    "brPartido": {
-    "nac": 89
+    "nac": 43
    },
    "bpPartido": {
-    "nac": 64
+    "nac": 25
    },
    "fcPartido": {
     "nac": 11
@@ -2223,119 +2106,236 @@
   }
  },
  {
-  "id": "1010200",
-  "idClub": "benicarlo",
-  "nombre": "INTERMAQUINAS BENICARLO",
+  "id": "1008985",
+  "idClub": "logrobasket-logi7",
+  "nombre": "LOGROBASKET LOGI7",
   "grupo": "B",
-  "pj": 1,
-  "pg": 1,
-  "pp": 0,
-  "pf": 73,
-  "pc": 61,
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 232,
+  "pc": 219,
   "casa": {
    "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 0,
    "pg": 0
   },
+  "fuera": {
+   "pj": 2,
+   "pg": 2
+  },
   "balance": {
-   "pj": 1,
-   "pg": 1,
-   "pp": 0,
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
    "casa": {
     "pj": 1,
-    "pg": 1
+    "pg": 0
    },
    "fuera": {
-    "pj": 0,
-    "pg": 0
+    "pj": 2,
+    "pg": 2
    }
   },
-  "pfPartido": 73,
-  "pcPartido": 61,
-  "difPartido": 12,
-  "t2PctEq": 44.74,
-  "t3PctEq": 25,
-  "tlPctEq": 66.67,
-  "roPartido": 16,
-  "rdPartido": 25,
-  "rebPartido": 41,
-  "asPartido": 13,
-  "brPartido": 4,
-  "bpPartido": 14,
-  "fcPartido": 23,
-  "frPartido": 30,
-  "tapFavor": 3,
-  "tapContra": 5,
-  "pace": 75.88,
-  "ortg": 96.2,
-  "drtg": 89.29,
-  "netrtg": 6.92,
-  "srs": 1.28,
-  "efg": 41.67,
-  "tovPct": 18.45,
-  "orbPct": 42.11,
-  "ftRate": 40.91,
-  "ts": 46.87,
-  "t3Pct": 25,
-  "t3ar": 42.42,
-  "astPct": 54.17,
-  "asPorBp": 0.93,
-  "pct2": 46.6,
-  "pct3": 28.8,
-  "pctTl": 24.7,
-  "efgRival": 41.67,
-  "tovForzadas": 19.03,
-  "drbPct": 69.44,
-  "ftrRival": 51.85,
-  "forma5": "1-0",
-  "forma5Dif": 12,
-  "victoriasEsperadas": 0.9,
+  "pfPartido": 77.3,
+  "pcPartido": 73,
+  "difPartido": 4.3,
+  "t2PctEq": 50.93,
+  "t3PctEq": 38.75,
+  "tlPctEq": 64.44,
+  "roPartido": 10,
+  "rdPartido": 29.7,
+  "rebPartido": 39.7,
+  "asPartido": 16.7,
+  "brPartido": 5.3,
+  "bpPartido": 13.7,
+  "fcPartido": 16.7,
+  "frPartido": 16.7,
+  "tapFavor": 1.7,
+  "tapContra": 1,
+  "pace": 72.93,
+  "ortg": 106.03,
+  "drtg": 95.05,
+  "netrtg": 10.98,
+  "srs": 10.17,
+  "efg": 53.99,
+  "tovPct": 18.74,
+  "orbPct": 31.58,
+  "ftRate": 23.94,
+  "ts": 55.82,
+  "t3Pct": 38.75,
+  "t3ar": 42.55,
+  "astPct": 58.14,
+  "asPorBp": 1.22,
+  "pct2": 47.4,
+  "pct3": 40.1,
+  "pctTl": 12.5,
+  "efgRival": 48.77,
+  "tovForzadas": 12.59,
+  "drbPct": 83.18,
+  "ftrRival": 17.16,
+  "forma5": "2-1",
+  "forma5Dif": 4.3,
+  "victoriasEsperadas": 1.9,
   "suerte": 0.1,
   "percentiles": {
    "pace": {
-    "nac": 18
+    "nac": 7
    },
    "ortg": {
-    "nac": 46
+    "nac": 86
    },
    "drtg": {
-    "nac": 21
+    "nac": 36
    },
    "pfPartido": {
-    "nac": 18
+    "nac": 32
    },
    "pcPartido": {
-    "nac": 4
+    "nac": 18
    },
    "t2PctEq": {
-    "nac": 29
+    "nac": 79
    },
    "t3PctEq": {
-    "nac": 11
-   },
-   "roPartido": {
-    "nac": 100
-   },
-   "rdPartido": {
-    "nac": 46
-   },
-   "rebPartido": {
     "nac": 93
    },
+   "roPartido": {
+    "nac": 36
+   },
+   "rdPartido": {
+    "nac": 96
+   },
+   "rebPartido": {
+    "nac": 82
+   },
    "asPartido": {
-    "nac": 29
+    "nac": 64
    },
    "brPartido": {
-    "nac": 4
+    "nac": 7
    },
    "bpPartido": {
-    "nac": 50
+    "nac": 43
    },
    "fcPartido": {
+    "nac": 4
+   }
+  }
+ },
+ {
+  "id": "1008899",
+  "idClub": "huesca",
+  "nombre": "LOBE TU PROVINCIA HUESCA LA MAGIA",
+  "grupo": "B",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 255,
+  "pc": 245,
+  "casa": {
+   "pj": 1,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 2,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 1,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 2,
+    "pg": 1
+   }
+  },
+  "pfPartido": 85,
+  "pcPartido": 81.7,
+  "difPartido": 3.3,
+  "t2PctEq": 46.76,
+  "t3PctEq": 37.5,
+  "tlPctEq": 62.86,
+  "roPartido": 10.3,
+  "rdPartido": 22.3,
+  "rebPartido": 32.7,
+  "asPartido": 17,
+  "brPartido": 12.3,
+  "bpPartido": 11.3,
+  "fcPartido": 21.7,
+  "frPartido": 23,
+  "tapFavor": 2,
+  "tapContra": 3.3,
+  "pace": 81.6,
+  "ortg": 104.17,
+  "drtg": 100.69,
+  "netrtg": 3.48,
+  "srs": -0.6,
+  "efg": 50,
+  "tovPct": 13.89,
+  "orbPct": 29.52,
+  "ftRate": 33.18,
+  "ts": 52.73,
+  "t3Pct": 37.5,
+  "t3ar": 34.12,
+  "astPct": 55.43,
+  "asPorBp": 1.5,
+  "pct2": 51,
+  "pct3": 31.8,
+  "pctTl": 17.3,
+  "efgRival": 53.32,
+  "tovForzadas": 21.78,
+  "drbPct": 69.79,
+  "ftrRival": 27.04,
+  "forma5": "2-1",
+  "forma5Dif": 3.3,
+  "victoriasEsperadas": 1.8,
+  "suerte": 0.2,
+  "percentiles": {
+   "pace": {
+    "nac": 75
+   },
+   "ortg": {
+    "nac": 75
+   },
+   "drtg": {
+    "nac": 68
+   },
+   "pfPartido": {
+    "nac": 89
+   },
+   "pcPartido": {
     "nac": 71
+   },
+   "t2PctEq": {
+    "nac": 39
+   },
+   "t3PctEq": {
+    "nac": 89
+   },
+   "roPartido": {
+    "nac": 46
+   },
+   "rdPartido": {
+    "nac": 18
+   },
+   "rebPartido": {
+    "nac": 18
+   },
+   "asPartido": {
+    "nac": 68
+   },
+   "brPartido": {
+    "nac": 100
+   },
+   "bpPartido": {
+    "nac": 11
+   },
+   "fcPartido": {
+    "nac": 50
    }
   }
  },
@@ -2344,26 +2344,26 @@
   "idClub": null,
   "nombre": "LA SALUD CARTAGENA C.B.",
   "grupo": "B",
-  "pj": 2,
-  "pg": 2,
+  "pj": 3,
+  "pg": 3,
   "pp": 0,
-  "pf": 170,
-  "pc": 158,
+  "pf": 255,
+  "pc": 240,
   "casa": {
-   "pj": 1,
-   "pg": 1
+   "pj": 2,
+   "pg": 2
   },
   "fuera": {
    "pj": 1,
    "pg": 1
   },
   "balance": {
-   "pj": 2,
-   "pg": 2,
+   "pj": 3,
+   "pg": 3,
    "pp": 0,
    "casa": {
-    "pj": 1,
-    "pg": 1
+    "pj": 2,
+    "pg": 2
    },
    "fuera": {
     "pj": 1,
@@ -2371,52 +2371,52 @@
    }
   },
   "pfPartido": 85,
-  "pcPartido": 79,
-  "difPartido": 6,
-  "t2PctEq": 50,
-  "t3PctEq": 34.29,
-  "tlPctEq": 70.97,
-  "roPartido": 9,
-  "rdPartido": 28,
-  "rebPartido": 37,
-  "asPartido": 19.5,
-  "brPartido": 4.5,
-  "bpPartido": 6,
-  "fcPartido": 17,
-  "frPartido": 18,
-  "tapFavor": 1,
-  "tapContra": 0.5,
-  "pace": 76.82,
-  "ortg": 110.65,
-  "drtg": 105.05,
-  "netrtg": 5.6,
-  "srs": 13.71,
-  "efg": 50.68,
-  "tovPct": 7.81,
-  "orbPct": 22.78,
-  "ftRate": 21.23,
-  "ts": 53.24,
-  "t3Pct": 34.29,
-  "t3ar": 47.95,
-  "astPct": 62.9,
-  "asPorBp": 3.25,
+  "pcPartido": 80,
+  "difPartido": 5,
+  "t2PctEq": 49.14,
+  "t3PctEq": 34.65,
+  "tlPctEq": 72,
+  "roPartido": 8.3,
+  "rdPartido": 27.7,
+  "rebPartido": 36,
+  "asPartido": 22,
+  "brPartido": 5,
+  "bpPartido": 6.7,
+  "fcPartido": 20,
+  "frPartido": 19,
+  "tapFavor": 1.3,
+  "tapContra": 0.7,
+  "pace": 78,
+  "ortg": 108.97,
+  "drtg": 106.08,
+  "netrtg": 2.89,
+  "srs": 5.69,
+  "efg": 50.46,
+  "tovPct": 8.55,
+  "orbPct": 22.32,
+  "ftRate": 23.04,
+  "ts": 53.35,
+  "t3Pct": 34.65,
+  "t3ar": 46.54,
+  "astPct": 71.74,
+  "asPorBp": 3.3,
   "pct2": 44.7,
-  "pct3": 42.4,
-  "pctTl": 12.9,
-  "efgRival": 48.9,
-  "tovForzadas": 13.3,
-  "drbPct": 72.73,
-  "ftrRival": 25.74,
-  "forma5": "2-0",
-  "forma5Dif": 6,
-  "victoriasEsperadas": 1.4,
-  "suerte": 0.6,
+  "pct3": 41.2,
+  "pctTl": 14.1,
+  "efgRival": 50.26,
+  "tovForzadas": 13.26,
+  "drbPct": 76.15,
+  "ftrRival": 37.17,
+  "forma5": "3-0",
+  "forma5Dif": 5,
+  "victoriasEsperadas": 2,
+  "suerte": 1,
   "percentiles": {
    "pace": {
-    "nac": 29
+    "nac": 25
    },
    "ortg": {
-    "nac": 96
+    "nac": 93
    },
    "drtg": {
     "nac": 82
@@ -2425,31 +2425,148 @@
     "nac": 89
    },
    "pcPartido": {
-    "nac": 43
+    "nac": 54
    },
    "t2PctEq": {
-    "nac": 61
+    "nac": 50
    },
    "t3PctEq": {
-    "nac": 71
+    "nac": 82
    },
    "roPartido": {
-    "nac": 36
+    "nac": 14
    },
    "rdPartido": {
-    "nac": 79
+    "nac": 75
    },
    "rebPartido": {
-    "nac": 57
+    "nac": 46
    },
    "asPartido": {
-    "nac": 96
+    "nac": 100
    },
    "brPartido": {
-    "nac": 11
+    "nac": 4
    },
    "bpPartido": {
     "nac": 4
+   },
+   "fcPartido": {
+    "nac": 29
+   }
+  }
+ },
+ {
+  "id": "1010351",
+  "idClub": "proinbeni-upb-gandia",
+  "nombre": "PROINBENI UPB GANDIA",
+  "grupo": "B",
+  "pj": 3,
+  "pg": 2,
+  "pp": 1,
+  "pf": 251,
+  "pc": 244,
+  "casa": {
+   "pj": 2,
+   "pg": 1
+  },
+  "fuera": {
+   "pj": 1,
+   "pg": 1
+  },
+  "balance": {
+   "pj": 3,
+   "pg": 2,
+   "pp": 1,
+   "casa": {
+    "pj": 2,
+    "pg": 1
+   },
+   "fuera": {
+    "pj": 1,
+    "pg": 1
+   }
+  },
+  "pfPartido": 83.7,
+  "pcPartido": 81.3,
+  "difPartido": 2.3,
+  "t2PctEq": 58.91,
+  "t3PctEq": 30.77,
+  "tlPctEq": 54,
+  "roPartido": 9.3,
+  "rdPartido": 22.3,
+  "rebPartido": 31.7,
+  "asPartido": 15.7,
+  "brPartido": 10.3,
+  "bpPartido": 14.3,
+  "fcPartido": 19,
+  "frPartido": 19.7,
+  "tapFavor": 3,
+  "tapContra": 2.3,
+  "pace": 81.33,
+  "ortg": 102.87,
+  "drtg": 100.84,
+  "netrtg": 2.03,
+  "srs": 0.65,
+  "efg": 54.11,
+  "tovPct": 17.62,
+  "orbPct": 27.72,
+  "ftRate": 24.15,
+  "ts": 54.8,
+  "t3Pct": 30.77,
+  "t3ar": 37.68,
+  "astPct": 47,
+  "asPorBp": 1.09,
+  "pct2": 60.6,
+  "pct3": 28.7,
+  "pctTl": 10.8,
+  "efgRival": 50.49,
+  "tovForzadas": 20.25,
+  "drbPct": 64.42,
+  "ftrRival": 28.92,
+  "forma5": "2-1",
+  "forma5Dif": 2.3,
+  "victoriasEsperadas": 1.7,
+  "suerte": 0.3,
+  "percentiles": {
+   "pace": {
+    "nac": 68
+   },
+   "ortg": {
+    "nac": 71
+   },
+   "drtg": {
+    "nac": 71
+   },
+   "pfPartido": {
+    "nac": 79
+   },
+   "pcPartido": {
+    "nac": 68
+   },
+   "t2PctEq": {
+    "nac": 100
+   },
+   "t3PctEq": {
+    "nac": 57
+   },
+   "roPartido": {
+    "nac": 25
+   },
+   "rdPartido": {
+    "nac": 18
+   },
+   "rebPartido": {
+    "nac": 11
+   },
+   "asPartido": {
+    "nac": 57
+   },
+   "brPartido": {
+    "nac": 93
+   },
+   "bpPartido": {
+    "nac": 54
    },
    "fcPartido": {
     "nac": 7
@@ -2461,232 +2578,115 @@
   "idClub": "lliria",
   "nombre": "CLUB ESPORTIU BÀSQUET LLÍRIA",
   "grupo": "B",
-  "pj": 2,
-  "pg": 1,
+  "pj": 3,
+  "pg": 2,
   "pp": 1,
-  "pf": 145,
-  "pc": 155,
+  "pf": 222,
+  "pc": 227,
   "casa": {
    "pj": 1,
    "pg": 1
   },
   "fuera": {
-   "pj": 1,
-   "pg": 0
+   "pj": 2,
+   "pg": 1
   },
   "balance": {
-   "pj": 2,
-   "pg": 1,
+   "pj": 3,
+   "pg": 2,
    "pp": 1,
    "casa": {
     "pj": 1,
     "pg": 1
    },
    "fuera": {
-    "pj": 1,
-    "pg": 0
+    "pj": 2,
+    "pg": 1
    }
   },
-  "pfPartido": 72.5,
-  "pcPartido": 77.5,
-  "difPartido": -5,
-  "t2PctEq": 47.17,
-  "t3PctEq": 32.86,
-  "tlPctEq": 56.52,
+  "pfPartido": 74,
+  "pcPartido": 75.7,
+  "difPartido": -1.7,
+  "t2PctEq": 46.67,
+  "t3PctEq": 33,
+  "tlPctEq": 58.21,
   "roPartido": 11,
-  "rdPartido": 25.5,
-  "rebPartido": 36.5,
-  "asPartido": 18,
-  "brPartido": 6.5,
-  "bpPartido": 16,
-  "fcPartido": 27,
-  "frPartido": 22.5,
-  "tapFavor": 5.5,
+  "rdPartido": 24.3,
+  "rebPartido": 35.3,
+  "asPartido": 18.7,
+  "brPartido": 6.7,
+  "bpPartido": 14.7,
+  "fcPartido": 26,
+  "frPartido": 21.7,
+  "tapFavor": 4.7,
   "tapContra": 3,
-  "pace": 76.62,
-  "ortg": 94.62,
-  "drtg": 94.51,
-  "netrtg": 0.11,
-  "srs": -7.1,
-  "efg": 48.37,
-  "tovPct": 20.88,
-  "orbPct": 30.99,
-  "ftRate": 37.4,
-  "ts": 50.61,
-  "t3Pct": 32.86,
-  "t3ar": 56.91,
-  "astPct": 75,
-  "asPorBp": 1.13,
-  "pct2": 34.5,
-  "pct3": 47.6,
-  "pctTl": 17.9,
-  "efgRival": 41.84,
-  "tovForzadas": 15.85,
-  "drbPct": 62.2,
-  "ftrRival": 34.01,
-  "forma5": "1-1",
-  "forma5Dif": -5,
-  "victoriasEsperadas": 0.7,
-  "suerte": 0.3,
+  "pace": 76.83,
+  "ortg": 96.32,
+  "drtg": 96.65,
+  "netrtg": -0.32,
+  "srs": 5.57,
+  "efg": 48.16,
+  "tovPct": 19.09,
+  "orbPct": 31.43,
+  "ftRate": 35.26,
+  "ts": 50.57,
+  "t3Pct": 33,
+  "t3ar": 52.63,
+  "astPct": 74.67,
+  "asPorBp": 1.27,
+  "pct2": 37.8,
+  "pct3": 44.6,
+  "pctTl": 17.6,
+  "efgRival": 42.79,
+  "tovForzadas": 15.75,
+  "drbPct": 62.39,
+  "ftrRival": 37.02,
+  "forma5": "2-1",
+  "forma5Dif": -1.7,
+  "victoriasEsperadas": 1.3,
+  "suerte": 0.7,
   "percentiles": {
    "pace": {
-    "nac": 25
-   },
-   "ortg": {
-    "nac": 39
-   },
-   "drtg": {
-    "nac": 36
-   },
-   "pfPartido": {
-    "nac": 14
-   },
-   "pcPartido": {
-    "nac": 39
-   },
-   "t2PctEq": {
-    "nac": 50
-   },
-   "t3PctEq": {
-    "nac": 68
-   },
-   "roPartido": {
-    "nac": 71
-   },
-   "rdPartido": {
-    "nac": 50
-   },
-   "rebPartido": {
-    "nac": 50
-   },
-   "asPartido": {
-    "nac": 79
-   },
-   "brPartido": {
-    "nac": 39
-   },
-   "bpPartido": {
-    "nac": 68
-   },
-   "fcPartido": {
-    "nac": 96
-   }
-  }
- },
- {
-  "id": "1008899",
-  "idClub": "huesca",
-  "nombre": "LOBE TU PROVINCIA HUESCA LA MAGIA",
-  "grupo": "B",
-  "pj": 2,
-  "pg": 1,
-  "pp": 1,
-  "pf": 172,
-  "pc": 171,
-  "casa": {
-   "pj": 1,
-   "pg": 1
-  },
-  "fuera": {
-   "pj": 1,
-   "pg": 0
-  },
-  "balance": {
-   "pj": 2,
-   "pg": 1,
-   "pp": 1,
-   "casa": {
-    "pj": 1,
-    "pg": 1
-   },
-   "fuera": {
-    "pj": 1,
-    "pg": 0
-   }
-  },
-  "pfPartido": 86,
-  "pcPartido": 85.5,
-  "difPartido": 0.5,
-  "t2PctEq": 44.79,
-  "t3PctEq": 37.25,
-  "tlPctEq": 60.42,
-  "roPartido": 11,
-  "rdPartido": 21.5,
-  "rebPartido": 32.5,
-  "asPartido": 17.5,
-  "brPartido": 13,
-  "bpPartido": 12,
-  "fcPartido": 23,
-  "frPartido": 24.5,
-  "tapFavor": 3,
-  "tapContra": 4,
-  "pace": 85.06,
-  "ortg": 101.11,
-  "drtg": 103.26,
-  "netrtg": -2.16,
-  "srs": -12.68,
-  "efg": 48.64,
-  "tovPct": 14.11,
-  "orbPct": 29.33,
-  "ftRate": 32.65,
-  "ts": 51.15,
-  "t3Pct": 37.25,
-  "t3ar": 34.69,
-  "astPct": 56.45,
-  "asPorBp": 1.46,
-  "pct2": 50,
-  "pct3": 33.1,
-  "pctTl": 16.9,
-  "efgRival": 54.1,
-  "tovForzadas": 21.14,
-  "drbPct": 67.19,
-  "ftrRival": 29.85,
-  "forma5": "1-1",
-  "forma5Dif": 0.5,
-  "victoriasEsperadas": 1,
-  "suerte": 0,
-  "percentiles": {
-   "pace": {
-    "nac": 89
-   },
-   "ortg": {
-    "nac": 68
-   },
-   "drtg": {
-    "nac": 71
-   },
-   "pfPartido": {
-    "nac": 93
-   },
-   "pcPartido": {
-    "nac": 82
-   },
-   "t2PctEq": {
-    "nac": 32
-   },
-   "t3PctEq": {
-    "nac": 89
-   },
-   "roPartido": {
-    "nac": 71
-   },
-   "rdPartido": {
-    "nac": 14
-   },
-   "rebPartido": {
-    "nac": 14
-   },
-   "asPartido": {
-    "nac": 71
-   },
-   "brPartido": {
-    "nac": 100
-   },
-   "bpPartido": {
     "nac": 21
    },
-   "fcPartido": {
+   "ortg": {
+    "nac": 39
+   },
+   "drtg": {
+    "nac": 54
+   },
+   "pfPartido": {
+    "nac": 25
+   },
+   "pcPartido": {
+    "nac": 36
+   },
+   "t2PctEq": {
+    "nac": 36
+   },
+   "t3PctEq": {
     "nac": 71
+   },
+   "roPartido": {
+    "nac": 71
+   },
+   "rdPartido": {
+    "nac": 36
+   },
+   "rebPartido": {
+    "nac": 39
+   },
+   "asPartido": {
+    "nac": 89
+   },
+   "brPartido": {
+    "nac": 32
+   },
+   "bpPartido": {
+    "nac": 57
+   },
+   "fcPartido": {
+    "nac": 100
    }
   }
  },
@@ -2695,115 +2695,115 @@
   "idClub": "amics-castello",
   "nombre": "AMICS CASTELLÓ",
   "grupo": "B",
-  "pj": 2,
-  "pg": 0,
+  "pj": 3,
+  "pg": 1,
   "pp": 2,
-  "pf": 153,
-  "pc": 169,
+  "pf": 221,
+  "pc": 224,
   "casa": {
    "pj": 1,
    "pg": 0
   },
   "fuera": {
-   "pj": 1,
-   "pg": 0
+   "pj": 2,
+   "pg": 1
   },
   "balance": {
-   "pj": 2,
-   "pg": 0,
+   "pj": 3,
+   "pg": 1,
    "pp": 2,
    "casa": {
     "pj": 1,
     "pg": 0
    },
    "fuera": {
-    "pj": 1,
-    "pg": 0
+    "pj": 2,
+    "pg": 1
    }
   },
-  "pfPartido": 76.5,
-  "pcPartido": 84.5,
-  "difPartido": -8,
-  "t2PctEq": 45.78,
-  "t3PctEq": 28.81,
-  "tlPctEq": 54.17,
-  "roPartido": 14,
-  "rdPartido": 22.5,
-  "rebPartido": 36.5,
-  "asPartido": 21.5,
-  "brPartido": 12,
-  "bpPartido": 15.5,
-  "fcPartido": 23.5,
-  "frPartido": 22,
-  "tapFavor": 1,
-  "tapContra": 4,
-  "pace": 83.06,
-  "ortg": 92.1,
-  "drtg": 101.2,
-  "netrtg": -9.1,
-  "srs": -1.09,
-  "efg": 44.72,
-  "tovPct": 18.66,
-  "orbPct": 35,
-  "ftRate": 33.8,
-  "ts": 46.9,
-  "t3Pct": 28.81,
-  "t3ar": 41.55,
-  "astPct": 78.18,
-  "asPorBp": 1.39,
-  "pct2": 49.7,
-  "pct3": 33.3,
-  "pctTl": 17,
-  "efgRival": 56.25,
-  "tovForzadas": 22.16,
-  "drbPct": 69.23,
-  "ftrRival": 39.06,
-  "forma5": "0-2",
-  "forma5Dif": -8,
-  "victoriasEsperadas": 0.5,
-  "suerte": -0.5,
+  "pfPartido": 73.7,
+  "pcPartido": 74.7,
+  "difPartido": -1,
+  "t2PctEq": 50.42,
+  "t3PctEq": 25.88,
+  "tlPctEq": 53.85,
+  "roPartido": 13.7,
+  "rdPartido": 25.3,
+  "rebPartido": 39,
+  "asPartido": 20,
+  "brPartido": 9,
+  "bpPartido": 15.3,
+  "fcPartido": 20.7,
+  "frPartido": 21.3,
+  "tapFavor": 1.3,
+  "tapContra": 3,
+  "pace": 79.2,
+  "ortg": 93.01,
+  "drtg": 94.18,
+  "netrtg": -1.17,
+  "srs": -3.8,
+  "efg": 45.59,
+  "tovPct": 19.36,
+  "orbPct": 34.45,
+  "ftRate": 31.86,
+  "ts": 47.51,
+  "t3Pct": 25.88,
+  "t3ar": 41.67,
+  "astPct": 73.17,
+  "asPorBp": 1.3,
+  "pct2": 54.3,
+  "pct3": 29.9,
+  "pctTl": 15.8,
+  "efgRival": 49.74,
+  "tovForzadas": 20.18,
+  "drbPct": 71.7,
+  "ftrRival": 31.61,
+  "forma5": "1-2",
+  "forma5Dif": -1,
+  "victoriasEsperadas": 1.4,
+  "suerte": -0.4,
   "percentiles": {
    "pace": {
-    "nac": 71
-   },
-   "ortg": {
-    "nac": 25
-   },
-   "drtg": {
-    "nac": 64
-   },
-   "pfPartido": {
-    "nac": 43
-   },
-   "pcPartido": {
-    "nac": 75
-   },
-   "t2PctEq": {
-    "nac": 39
-   },
-   "t3PctEq": {
-    "nac": 25
-   },
-   "roPartido": {
-    "nac": 93
-   },
-   "rdPartido": {
-    "nac": 18
-   },
-   "rebPartido": {
     "nac": 50
    },
-   "asPartido": {
-    "nac": 100
+   "ortg": {
+    "nac": 21
    },
-   "brPartido": {
+   "drtg": {
+    "nac": 32
+   },
+   "pfPartido": {
+    "nac": 21
+   },
+   "pcPartido": {
+    "nac": 32
+   },
+   "t2PctEq": {
+    "nac": 68
+   },
+   "t3PctEq": {
+    "nac": 11
+   },
+   "roPartido": {
     "nac": 96
    },
+   "rdPartido": {
+    "nac": 54
+   },
+   "rebPartido": {
+    "nac": 79
+   },
+   "asPartido": {
+    "nac": 96
+   },
+   "brPartido": {
+    "nac": 89
+   },
    "bpPartido": {
-    "nac": 64
+    "nac": 71
    },
    "fcPartido": {
-    "nac": 75
+    "nac": 36
    }
   }
  },
@@ -2812,115 +2812,115 @@
   "idClub": "biele-isb",
   "nombre": "BIELE ISB",
   "grupo": "B",
-  "pj": 2,
+  "pj": 3,
   "pg": 0,
-  "pp": 2,
-  "pf": 163,
-  "pc": 175,
+  "pp": 3,
+  "pf": 236,
+  "pc": 267,
   "casa": {
    "pj": 1,
    "pg": 0
   },
   "fuera": {
-   "pj": 1,
+   "pj": 2,
    "pg": 0
   },
   "balance": {
-   "pj": 2,
+   "pj": 3,
    "pg": 0,
-   "pp": 2,
+   "pp": 3,
    "casa": {
     "pj": 1,
     "pg": 0
    },
    "fuera": {
-    "pj": 1,
+    "pj": 2,
     "pg": 0
    }
   },
-  "pfPartido": 81.5,
-  "pcPartido": 87.5,
-  "difPartido": -6,
-  "t2PctEq": 52.38,
-  "t3PctEq": 30.36,
-  "tlPctEq": 64.86,
+  "pfPartido": 78.7,
+  "pcPartido": 89,
+  "difPartido": -10.3,
+  "t2PctEq": 50.38,
+  "t3PctEq": 28.75,
+  "tlPctEq": 72.92,
   "roPartido": 11,
-  "rdPartido": 25,
-  "rebPartido": 36,
-  "asPartido": 16,
-  "brPartido": 6.5,
-  "bpPartido": 13.5,
-  "fcPartido": 19.5,
-  "frPartido": 18.5,
-  "tapFavor": 1.5,
-  "tapContra": 3,
-  "pace": 80.64,
-  "ortg": 101.07,
-  "drtg": 110.65,
-  "netrtg": -9.58,
-  "srs": 0.23,
-  "efg": 49.64,
-  "tovPct": 16.74,
-  "orbPct": 27.85,
-  "ftRate": 26.43,
-  "ts": 52.15,
-  "t3Pct": 30.36,
-  "t3ar": 40,
-  "astPct": 52.46,
-  "asPorBp": 1.19,
-  "pct2": 54,
-  "pct3": 31.3,
-  "pctTl": 14.7,
-  "efgRival": 51.75,
-  "tovForzadas": 13.28,
-  "drbPct": 68.49,
-  "ftrRival": 27.27,
-  "forma5": "0-2",
-  "forma5Dif": -6,
+  "rdPartido": 22.7,
+  "rebPartido": 33.7,
+  "asPartido": 15.7,
+  "brPartido": 6.3,
+  "bpPartido": 12.3,
+  "fcPartido": 20,
+  "frPartido": 18.3,
+  "tapFavor": 1.7,
+  "tapContra": 2,
+  "pace": 78.71,
+  "ortg": 99.95,
+  "drtg": 113.58,
+  "netrtg": -13.63,
+  "srs": -8.21,
+  "efg": 47.63,
+  "tovPct": 15.67,
+  "orbPct": 27.73,
+  "ftRate": 22.75,
+  "ts": 50.84,
+  "t3Pct": 28.75,
+  "t3ar": 37.91,
+  "astPct": 52.81,
+  "asPorBp": 1.27,
+  "pct2": 55.9,
+  "pct3": 29.2,
+  "pctTl": 14.8,
+  "efgRival": 54.83,
+  "tovForzadas": 15.31,
+  "drbPct": 67.33,
+  "ftrRival": 27.54,
+  "forma5": "0-3",
+  "forma5Dif": -10.3,
   "victoriasEsperadas": 0.7,
   "suerte": -0.7,
   "percentiles": {
    "pace": {
-    "nac": 54
+    "nac": 32
    },
    "ortg": {
-    "nac": 64
+    "nac": 57
    },
    "drtg": {
-    "nac": 93
+    "nac": 100
    },
    "pfPartido": {
-    "nac": 68
+    "nac": 43
    },
    "pcPartido": {
-    "nac": 93
+    "nac": 96
    },
    "t2PctEq": {
-    "nac": 75
+    "nac": 64
    },
    "t3PctEq": {
-    "nac": 36
+    "nac": 32
    },
    "roPartido": {
     "nac": 71
    },
    "rdPartido": {
-    "nac": 46
+    "nac": 21
    },
    "rebPartido": {
-    "nac": 36
+    "nac": 25
    },
    "asPartido": {
     "nac": 57
    },
    "brPartido": {
-    "nac": 39
+    "nac": 29
    },
    "bpPartido": {
-    "nac": 36
+    "nac": 21
    },
    "fcPartido": {
-    "nac": 25
+    "nac": 29
    }
   }
  },
@@ -2929,13 +2929,13 @@
   "idClub": "clavijo",
   "nombre": "REINA PROTEÍNAS CLAVIJO",
   "grupo": "B",
-  "pj": 2,
+  "pj": 3,
   "pg": 0,
-  "pp": 2,
-  "pf": 150,
-  "pc": 171,
+  "pp": 3,
+  "pf": 226,
+  "pc": 260,
   "casa": {
-   "pj": 1,
+   "pj": 2,
    "pg": 0
   },
   "fuera": {
@@ -2943,11 +2943,11 @@
    "pg": 0
   },
   "balance": {
-   "pj": 2,
+   "pj": 3,
    "pg": 0,
-   "pp": 2,
+   "pp": 3,
    "casa": {
-    "pj": 1,
+    "pj": 2,
     "pg": 0
    },
    "fuera": {
@@ -2955,53 +2955,53 @@
     "pg": 0
    }
   },
-  "pfPartido": 75,
-  "pcPartido": 85.5,
-  "difPartido": -10.5,
-  "t2PctEq": 58.06,
-  "t3PctEq": 27.12,
-  "tlPctEq": 63.83,
+  "pfPartido": 75.3,
+  "pcPartido": 86.7,
+  "difPartido": -11.3,
+  "t2PctEq": 50.49,
+  "t3PctEq": 26.74,
+  "tlPctEq": 67.95,
   "roPartido": 12,
-  "rdPartido": 20,
-  "rebPartido": 32,
-  "asPartido": 14.5,
-  "brPartido": 5.5,
-  "bpPartido": 16.5,
-  "fcPartido": 20,
-  "frPartido": 21.5,
-  "tapFavor": 2.5,
-  "tapContra": 1.5,
-  "pace": 75.34,
-  "ortg": 99.55,
-  "drtg": 112.44,
-  "netrtg": -12.89,
-  "srs": -16.12,
-  "efg": 49.59,
-  "tovPct": 21.9,
-  "orbPct": 35.82,
-  "ftRate": 38.84,
-  "ts": 52.94,
-  "t3Pct": 27.12,
-  "t3ar": 48.76,
-  "astPct": 55.77,
-  "asPorBp": 0.88,
-  "pct2": 48,
-  "pct3": 32,
-  "pctTl": 20,
-  "efgRival": 56.39,
-  "tovForzadas": 17.1,
-  "drbPct": 65.57,
-  "ftrRival": 24.06,
-  "forma5": "0-2",
-  "forma5Dif": -10.5,
-  "victoriasEsperadas": 0.4,
-  "suerte": -0.4,
+  "rdPartido": 20.7,
+  "rebPartido": 32.7,
+  "asPartido": 14,
+  "brPartido": 7,
+  "bpPartido": 16.7,
+  "fcPartido": 22,
+  "frPartido": 23.3,
+  "tapFavor": 2.3,
+  "tapContra": 3.7,
+  "pace": 79.11,
+  "ortg": 95.23,
+  "drtg": 111.04,
+  "netrtg": -15.81,
+  "srs": -9.63,
+  "efg": 45.77,
+  "tovPct": 21.07,
+  "orbPct": 34.95,
+  "ftRate": 41.27,
+  "ts": 50.6,
+  "t3Pct": 26.74,
+  "t3ar": 45.5,
+  "astPct": 56,
+  "asPorBp": 0.84,
+  "pct2": 46,
+  "pct3": 30.5,
+  "pctTl": 23.5,
+  "efgRival": 55.41,
+  "tovForzadas": 18.36,
+  "drbPct": 66.67,
+  "ftrRival": 32.99,
+  "forma5": "0-3",
+  "forma5Dif": -11.3,
+  "victoriasEsperadas": 0.6,
+  "suerte": -0.6,
   "percentiles": {
    "pace": {
-    "nac": 14
+    "nac": 43
    },
    "ortg": {
-    "nac": 57
+    "nac": 36
    },
    "drtg": {
     "nac": 96
@@ -3010,10 +3010,10 @@
     "nac": 29
    },
    "pcPartido": {
-    "nac": 82
+    "nac": 93
    },
    "t2PctEq": {
-    "nac": 96
+    "nac": 71
    },
    "t3PctEq": {
     "nac": 14
@@ -3025,19 +3025,19 @@
     "nac": 7
    },
    "rebPartido": {
-    "nac": 11
+    "nac": 18
    },
    "asPartido": {
-    "nac": 39
+    "nac": 32
    },
    "brPartido": {
-    "nac": 25
+    "nac": 43
    },
    "bpPartido": {
-    "nac": 82
+    "nac": 86
    },
    "fcPartido": {
-    "nac": 29
+    "nac": 54
    }
   }
  },
@@ -3046,13 +3046,13 @@
   "idClub": null,
   "nombre": "VIDAL GOLOSINAS CIUDAD MOLINA BASKET",
   "grupo": "B",
-  "pj": 2,
+  "pj": 3,
   "pg": 0,
-  "pp": 2,
-  "pf": 139,
-  "pc": 159,
+  "pp": 3,
+  "pf": 213,
+  "pc": 242,
   "casa": {
-   "pj": 1,
+   "pj": 2,
    "pg": 0
   },
   "fuera": {
@@ -3060,11 +3060,11 @@
    "pg": 0
   },
   "balance": {
-   "pj": 2,
+   "pj": 3,
    "pg": 0,
-   "pp": 2,
+   "pp": 3,
    "casa": {
-    "pj": 1,
+    "pj": 2,
     "pg": 0
    },
    "fuera": {
@@ -3072,50 +3072,50 @@
     "pg": 0
    }
   },
-  "pfPartido": 69.5,
-  "pcPartido": 79.5,
-  "difPartido": -10,
-  "t2PctEq": 46.15,
-  "t3PctEq": 32.26,
-  "tlPctEq": 54.29,
-  "roPartido": 7,
+  "pfPartido": 71,
+  "pcPartido": 80.7,
+  "difPartido": -9.7,
+  "t2PctEq": 47.83,
+  "t3PctEq": 32.99,
+  "tlPctEq": 60.42,
+  "roPartido": 7.3,
   "rdPartido": 21,
-  "rebPartido": 28,
-  "asPartido": 13,
-  "brPartido": 10,
-  "bpPartido": 12,
-  "fcPartido": 19.5,
-  "frPartido": 16.5,
-  "tapFavor": 2.5,
-  "tapContra": 1.5,
-  "pace": 76.2,
-  "ortg": 91.21,
-  "drtg": 109.2,
-  "netrtg": -18,
-  "srs": -7.57,
-  "efg": 47.24,
-  "tovPct": 15.75,
-  "orbPct": 20,
-  "ftRate": 27.56,
-  "ts": 48.81,
-  "t3Pct": 32.26,
-  "t3ar": 48.82,
-  "astPct": 52,
-  "asPorBp": 1.08,
-  "pct2": 43.2,
-  "pct3": 43.2,
-  "pctTl": 13.7,
-  "efgRival": 57.5,
-  "tovForzadas": 19.92,
-  "drbPct": 66.67,
-  "ftrRival": 33.33,
-  "forma5": "0-2",
-  "forma5Dif": -10,
-  "victoriasEsperadas": 0.4,
-  "suerte": -0.4,
+  "rebPartido": 28.3,
+  "asPartido": 15.3,
+  "brPartido": 8,
+  "bpPartido": 14,
+  "fcPartido": 19.7,
+  "frPartido": 17.3,
+  "tapFavor": 2.3,
+  "tapContra": 1,
+  "pace": 76.71,
+  "ortg": 92.56,
+  "drtg": 109.86,
+  "netrtg": -17.3,
+  "srs": -12.15,
+  "efg": 48.68,
+  "tovPct": 18.25,
+  "orbPct": 21.57,
+  "ftRate": 25.4,
+  "ts": 50.69,
+  "t3Pct": 32.99,
+  "t3ar": 51.32,
+  "astPct": 60.53,
+  "asPorBp": 1.1,
+  "pct2": 41.3,
+  "pct3": 45.1,
+  "pctTl": 13.6,
+  "efgRival": 55.98,
+  "tovForzadas": 17.7,
+  "drbPct": 67.74,
+  "ftrRival": 33.7,
+  "forma5": "0-3",
+  "forma5Dif": -9.7,
+  "victoriasEsperadas": 0.6,
+  "suerte": -0.6,
   "percentiles": {
    "pace": {
-    "nac": 21
+    "nac": 18
    },
    "ortg": {
     "nac": 18
@@ -3124,19 +3124,19 @@
     "nac": 89
    },
    "pfPartido": {
-    "nac": 7
+    "nac": 11
    },
    "pcPartido": {
-    "nac": 50
+    "nac": 64
    },
    "t2PctEq": {
-    "nac": 43
+    "nac": 46
    },
    "t3PctEq": {
-    "nac": 57
+    "nac": 68
    },
    "roPartido": {
-    "nac": 11
+    "nac": 7
    },
    "rdPartido": {
     "nac": 11
@@ -3145,16 +3145,16 @@
     "nac": 7
    },
    "asPartido": {
-    "nac": 29
+    "nac": 50
    },
    "brPartido": {
-    "nac": 86
+    "nac": 64
    },
    "bpPartido": {
-    "nac": 21
+    "nac": 46
    },
    "fcPartido": {
-    "nac": 25
+    "nac": 18
    }
   }
  },
@@ -3163,13 +3163,13 @@
   "idClub": "sol-girones-bisbal",
   "nombre": "SOL GIRONÈS BISBAL BÀSQUET",
   "grupo": "B",
-  "pj": 2,
+  "pj": 3,
   "pg": 0,
-  "pp": 2,
-  "pf": 135,
-  "pc": 181,
+  "pp": 3,
+  "pf": 190,
+  "pc": 249,
   "casa": {
-   "pj": 1,
+   "pj": 2,
    "pg": 0
   },
   "fuera": {
@@ -3177,11 +3177,11 @@
    "pg": 0
   },
   "balance": {
-   "pj": 2,
+   "pj": 3,
    "pg": 0,
-   "pp": 2,
+   "pp": 3,
    "casa": {
-    "pj": 1,
+    "pj": 2,
     "pg": 0
    },
    "fuera": {
@@ -3189,68 +3189,68 @@
     "pg": 0
    }
   },
-  "pfPartido": 67.5,
-  "pcPartido": 90.5,
-  "difPartido": -23,
-  "t2PctEq": 50.79,
-  "t3PctEq": 35.29,
-  "tlPctEq": 53.13,
-  "roPartido": 5,
-  "rdPartido": 17.5,
-  "rebPartido": 22.5,
-  "asPartido": 17.5,
-  "brPartido": 9.5,
-  "bpPartido": 14,
-  "fcPartido": 20.5,
-  "frPartido": 18.5,
-  "tapFavor": 0.5,
+  "pfPartido": 63.3,
+  "pcPartido": 83,
+  "difPartido": -19.7,
+  "t2PctEq": 45.19,
+  "t3PctEq": 32,
+  "tlPctEq": 55.81,
+  "roPartido": 6.7,
+  "rdPartido": 20.3,
+  "rebPartido": 27,
+  "asPartido": 15,
+  "brPartido": 8.3,
+  "bpPartido": 13,
+  "fcPartido": 20.3,
+  "frPartido": 17.3,
+  "tapFavor": 0.7,
   "tapContra": 2,
-  "pace": 73.04,
-  "ortg": 92.42,
-  "drtg": 115.26,
-  "netrtg": -22.84,
-  "srs": -13.58,
-  "efg": 51.75,
-  "tovPct": 19.17,
-  "orbPct": 15.38,
-  "ftRate": 28.07,
-  "ts": 52.7,
-  "t3Pct": 35.29,
-  "t3ar": 44.74,
-  "astPct": 70,
-  "asPorBp": 1.25,
-  "pct2": 47.4,
-  "pct3": 40,
+  "pace": 72.31,
+  "ortg": 87.59,
+  "drtg": 108.96,
+  "netrtg": -21.37,
+  "srs": -17.69,
+  "efg": 46.37,
+  "tovPct": 17.98,
+  "orbPct": 18.87,
+  "ftRate": 24.02,
+  "ts": 48,
+  "t3Pct": 32,
+  "t3ar": 41.9,
+  "astPct": 63.38,
+  "asPorBp": 1.15,
+  "pct2": 49.5,
+  "pct3": 37.9,
   "pctTl": 12.6,
-  "efgRival": 58.4,
-  "tovForzadas": 17.83,
-  "drbPct": 63.64,
-  "ftrRival": 31.3,
-  "forma5": "0-2",
-  "forma5Dif": -23,
-  "victoriasEsperadas": 0.1,
-  "suerte": -0.1,
+  "efgRival": 54.92,
+  "tovForzadas": 18.82,
+  "drbPct": 64.89,
+  "ftrRival": 30.05,
+  "forma5": "0-3",
+  "forma5Dif": -19.7,
+  "victoriasEsperadas": 0.2,
+  "suerte": -0.2,
   "percentiles": {
    "pace": {
-    "nac": 11
+    "nac": 4
    },
    "ortg": {
-    "nac": 29
+    "nac": 7
    },
    "drtg": {
-    "nac": 100
+    "nac": 86
    },
    "pfPartido": {
     "nac": 4
    },
    "pcPartido": {
-    "nac": 100
+    "nac": 82
    },
    "t2PctEq": {
-    "nac": 64
+    "nac": 25
    },
    "t3PctEq": {
-    "nac": 82
+    "nac": 61
    },
    "roPartido": {
     "nac": 4
@@ -3262,13 +3262,13 @@
     "nac": 4
    },
    "asPartido": {
-    "nac": 71
+    "nac": 43
    },
    "brPartido": {
-    "nac": 82
+    "nac": 79
    },
    "bpPartido": {
-    "nac": 50
+    "nac": 39
    },
    "fcPartido": {
     "nac": 32

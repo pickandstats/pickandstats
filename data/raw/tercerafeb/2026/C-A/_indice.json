@@ -16,6 +16,51 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
+  "id": "2525756",
+  "local": {
+   "id": "1009587",
+   "nombre": "EGLOBE TECLA SALA"
+  },
+  "visitante": {
+   "id": "1010575",
+   "nombre": "IBERSOL CB TARRAGONA"
+  },
+  "resultado": "*-*",
+  "fecha": "27/10/2026",
+  "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 1(04/10/2026)",
+  "id": "2525753",
+  "local": {
+   "id": "1009074",
+   "nombre": "SHAD MOLLET"
+  },
+  "visitante": {
+   "id": "1008701",
+   "nombre": "UE.MONTGAT"
+  },
+  "resultado": "*-*",
+  "fecha": "03/11/2026",
+  "hora": "21:00"
+ },
+ {
+  "jornada": "Jornada 1(04/10/2026)",
+  "id": "2525755",
+  "local": {
+   "id": "1010191",
+   "nombre": "C.B. GRANOLLERS"
+  },
+  "visitante": {
+   "id": "1009170",
+   "nombre": "SESE A"
+  },
+  "resultado": "*-*",
+  "fecha": "08/12/2026",
+  "hora": "18:45"
+ },
+ {
+  "jornada": "Jornada 1(04/10/2026)",
   "id": "2525752",
   "local": {
    "id": "1008788",
@@ -31,14 +76,14 @@
  },
  {
   "jornada": "Jornada 1(04/10/2026)",
-  "id": "2525753",
+  "id": "2525751",
   "local": {
-   "id": "1009074",
-   "nombre": "SHAD MOLLET"
+   "id": "1008948",
+   "nombre": "FLORANGE U.E.MATARÓ"
   },
   "visitante": {
-   "id": "1008701",
-   "nombre": "UE.MONTGAT"
+   "id": "1009062",
+   "nombre": "CB QUART FAI BERTI"
   },
   "resultado": "*-*",
   "fecha": null,
@@ -54,51 +99,6 @@
   "visitante": {
    "id": "1009918",
    "nombre": "C.B. VIC - UNIVERSITAT DE VIC"
-  },
-  "resultado": "*-*",
-  "fecha": null,
-  "hora": null
- },
- {
-  "jornada": "Jornada 1(04/10/2026)",
-  "id": "2525755",
-  "local": {
-   "id": "1010191",
-   "nombre": "C.B. GRANOLLERS"
-  },
-  "visitante": {
-   "id": "1009170",
-   "nombre": "SESE A"
-  },
-  "resultado": "*-*",
-  "fecha": null,
-  "hora": null
- },
- {
-  "jornada": "Jornada 1(04/10/2026)",
-  "id": "2525756",
-  "local": {
-   "id": "1009587",
-   "nombre": "EGLOBE TECLA SALA"
-  },
-  "visitante": {
-   "id": "1010575",
-   "nombre": "IBERSOL CB TARRAGONA"
-  },
-  "resultado": "*-*",
-  "fecha": null,
-  "hora": null
- },
- {
-  "jornada": "Jornada 1(04/10/2026)",
-  "id": "2525751",
-  "local": {
-   "id": "1008948",
-   "nombre": "FLORANGE U.E.MATARÓ"
-  },
-  "visitante": {
-   "id": "1009062",
-   "nombre": "CB QUART FAI BERTI"
   },
   "resultado": "*-*",
   "fecha": null,
@@ -220,7 +220,7 @@
    "id": "1010575",
    "nombre": "IBERSOL CB TARRAGONA"
   },
-  "resultado": "*-*",
+  "resultado": "84-89",
   "fecha": "17/10/2026",
   "hora": "17:00"
  },
@@ -235,24 +235,9 @@
    "id": "1008788",
    "nombre": "BÀSQUET CALVIÀ"
   },
-  "resultado": "*-*",
+  "resultado": "75-80",
   "fecha": "17/10/2026",
   "hora": "17:30"
- },
- {
-  "jornada": "Jornada 3(18/10/2026)",
-  "id": "2525766",
-  "local": {
-   "id": "1009074",
-   "nombre": "SHAD MOLLET"
-  },
-  "visitante": {
-   "id": "1009062",
-   "nombre": "CB QUART FAI BERTI"
-  },
-  "resultado": "*-*",
-  "fecha": "17/10/2026",
-  "hora": "18:30"
  },
  {
   "jornada": "Jornada 3(18/10/2026)",
@@ -265,7 +250,7 @@
    "id": "1008701",
    "nombre": "UE.MONTGAT"
   },
-  "resultado": "*-*",
+  "resultado": "58-64",
   "fecha": "17/10/2026",
   "hora": "18:30"
  },
@@ -280,7 +265,7 @@
    "id": "1009170",
    "nombre": "SESE A"
   },
-  "resultado": "*-*",
+  "resultado": "45-85",
   "fecha": "17/10/2026",
   "hora": "18:30"
  },
@@ -295,7 +280,7 @@
    "id": "1009918",
    "nombre": "C.B. VIC - UNIVERSITAT DE VIC"
   },
-  "resultado": "*-*",
+  "resultado": "61-95",
   "fecha": "18/10/2026",
   "hora": "18:00"
  },
@@ -310,9 +295,24 @@
    "id": "1008403",
    "nombre": "TENEA-C.B. ESPARREGUERA"
   },
-  "resultado": "*-*",
+  "resultado": "64-69",
   "fecha": "18/10/2026",
   "hora": "18:15"
+ },
+ {
+  "jornada": "Jornada 3(18/10/2026)",
+  "id": "2525766",
+  "local": {
+   "id": "1009074",
+   "nombre": "SHAD MOLLET"
+  },
+  "visitante": {
+   "id": "1009062",
+   "nombre": "CB QUART FAI BERTI"
+  },
+  "resultado": "*-*",
+  "fecha": "24/11/2026",
+  "hora": "21:00"
  },
  {
   "jornada": "Jornada 4(25/10/2026)",
@@ -436,6 +436,21 @@
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
+  "id": "2525782",
+  "local": {
+   "id": "1009587",
+   "nombre": "EGLOBE TECLA SALA"
+  },
+  "visitante": {
+   "id": "1008403",
+   "nombre": "TENEA-C.B. ESPARREGUERA"
+  },
+  "resultado": "*-*",
+  "fecha": "31/10/2026",
+  "hora": "18:15"
+ },
+ {
+  "jornada": "Jornada 5(01/11/2026)",
   "id": "2525783",
   "local": {
    "id": "1009154",
@@ -466,21 +481,6 @@
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
-  "id": "2525779",
-  "local": {
-   "id": "1008948",
-   "nombre": "FLORANGE U.E.MATARÓ"
-  },
-  "visitante": {
-   "id": "1009074",
-   "nombre": "SHAD MOLLET"
-  },
-  "resultado": "*-*",
-  "fecha": "31/10/2026",
-  "hora": "19:00"
- },
- {
-  "jornada": "Jornada 5(01/11/2026)",
   "id": "2525785",
   "local": {
    "id": "1010575",
@@ -496,18 +496,18 @@
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
-  "id": "2525782",
+  "id": "2525779",
   "local": {
-   "id": "1009587",
-   "nombre": "EGLOBE TECLA SALA"
+   "id": "1008948",
+   "nombre": "FLORANGE U.E.MATARÓ"
   },
   "visitante": {
-   "id": "1008403",
-   "nombre": "TENEA-C.B. ESPARREGUERA"
+   "id": "1009074",
+   "nombre": "SHAD MOLLET"
   },
   "resultado": "*-*",
-  "fecha": "01/11/2026",
-  "hora": "18:00"
+  "fecha": "31/10/2026",
+  "hora": "19:00"
  },
  {
   "jornada": "Jornada 5(01/11/2026)",
@@ -541,6 +541,21 @@
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
+  "id": "2525791",
+  "local": {
+   "id": "1008788",
+   "nombre": "BÀSQUET CALVIÀ"
+  },
+  "visitante": {
+   "id": "1010191",
+   "nombre": "C.B. GRANOLLERS"
+  },
+  "resultado": "*-*",
+  "fecha": "07/11/2026",
+  "hora": "17:00"
+ },
+ {
+  "jornada": "Jornada 6(08/11/2026)",
   "id": "2525786",
   "local": {
    "id": "1009170",
@@ -553,21 +568,6 @@
   "resultado": "*-*",
   "fecha": "07/11/2026",
   "hora": "17:45"
- },
- {
-  "jornada": "Jornada 6(08/11/2026)",
-  "id": "2525791",
-  "local": {
-   "id": "1008788",
-   "nombre": "BÀSQUET CALVIÀ"
-  },
-  "visitante": {
-   "id": "1010191",
-   "nombre": "C.B. GRANOLLERS"
-  },
-  "resultado": "*-*",
-  "fecha": "07/11/2026",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 6(08/11/2026)",
@@ -691,21 +691,6 @@
  },
  {
   "jornada": "Jornada 7(15/11/2026)",
-  "id": "2525793",
-  "local": {
-   "id": "1008948",
-   "nombre": "FLORANGE U.E.MATARÓ"
-  },
-  "visitante": {
-   "id": "1008680",
-   "nombre": "TIBU-RON CASTELLDEFELS"
-  },
-  "resultado": "*-*",
-  "fecha": "14/11/2026",
-  "hora": "19:00"
- },
- {
-  "jornada": "Jornada 7(15/11/2026)",
   "id": "2525798",
   "local": {
    "id": "1010575",
@@ -733,6 +718,21 @@
   "resultado": "*-*",
   "fecha": "15/11/2026",
   "hora": "18:00"
+ },
+ {
+  "jornada": "Jornada 7(15/11/2026)",
+  "id": "2525793",
+  "local": {
+   "id": "1008948",
+   "nombre": "FLORANGE U.E.MATARÓ"
+  },
+  "visitante": {
+   "id": "1008680",
+   "nombre": "TIBU-RON CASTELLDEFELS"
+  },
+  "resultado": "*-*",
+  "fecha": "15/11/2026",
+  "hora": "19:00"
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
@@ -841,21 +841,6 @@
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
-  "id": "2525812",
-  "local": {
-   "id": "1009170",
-   "nombre": "SESE A"
-  },
-  "visitante": {
-   "id": "1008403",
-   "nombre": "TENEA-C.B. ESPARREGUERA"
-  },
-  "resultado": "*-*",
-  "fecha": "28/11/2026",
-  "hora": "17:45"
- },
- {
-  "jornada": "Jornada 9(29/11/2026)",
   "id": "2525810",
   "local": {
    "id": "1008789",
@@ -883,6 +868,21 @@
   "resultado": "*-*",
   "fecha": "28/11/2026",
   "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 9(29/11/2026)",
+  "id": "2525812",
+  "local": {
+   "id": "1009170",
+   "nombre": "SESE A"
+  },
+  "visitante": {
+   "id": "1008403",
+   "nombre": "TENEA-C.B. ESPARREGUERA"
+  },
+  "resultado": "*-*",
+  "fecha": "28/11/2026",
+  "hora": "18:45"
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
