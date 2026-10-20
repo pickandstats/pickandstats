@@ -37,11 +37,13 @@ const idsIncompletosOrigen = new Set(
 
 // 1) Cobertura: actas presentes vs partidos esperados
 const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
+const resultadoOficial = new Map(partidos.map(p => [String(p.id), p.resultado]));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
 let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0;
-const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [];
+let puntosNoCuadran = 0, puntosSanos = 0;
+const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
 // campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
 const concentrados = {};
@@ -61,7 +63,36 @@ for (const f of ficheros) {
   }
 
   if (a.contextoPorCuarto) conContexto++; else { sinContexto++; if (sinContextoIds.length < 8) sinContextoIds.push(a.partido); }
-  if (a.completo && a.verificado !== false) completas++; else { truncadas++; if (truncadasIds.length < 8) truncadasIds.push(a.partido); }
+  const actaCompleta = a.completo && a.verificado !== false;
+  if (actaCompleta) completas++; else { truncadas++; if (truncadasIds.length < 8) truncadasIds.push(a.partido); }
+
+  // Auditoria de actas truncadas (S17.13, 20/10): cruza los puntos del acta
+  // (suma de parciales) contra el resultado OFICIAL de partidos.json. Guardian
+  // aparte del invariante de minutos de verificarActa, que no puede ver este
+  // bug -- si el corte que queda etiquetado "final" esta truncado, parciales y
+  // minutos se truncan juntos y de forma coherente, y el invariante de minutos
+  // da verde sobre un partido con una prorroga entera desaparecida (ver
+  // 2487440 y 2537028, _informe-auditoria-truncadas.md). Los puntos, en
+  // cambio, vienen de una fuente DISTINTA (el resultado que ya trae
+  // partidos.json desde el listado de la FEB, no del PDF del acta), asi que
+  // una truncacion que pasa inadvertida al invariante de minutos no pasa
+  // inadvertida aqui. Solo se exige en actas que el pipeline ya da por
+  // COMPLETAS (actaCompleta): una truncada/incompleta en origen ya esta
+  // marcada en otro sitio y un desajuste ahi es esperado, no nuevo.
+  if (actaCompleta && !idsIncompletosOrigen.has(String(a.partido)) && a.parciales && a.parciales.length) {
+    const oficial = resultadoOficial.get(String(a.partido));
+    const m = oficial ? /^(\d+)\s*-\s*(\d+)$/.exec(oficial.trim()) : null;
+    if (m) {
+      const sumaLocal = a.parciales.reduce((acc, q) => acc + (q.local || 0), 0);
+      const sumaVisitante = a.parciales.reduce((acc, q) => acc + (q.visitante || 0), 0);
+      if (sumaLocal !== Number(m[1]) || sumaVisitante !== Number(m[2])) {
+        puntosNoCuadran++;
+        if (puntosNoCuadranIds.length < 8) puntosNoCuadranIds.push(`${a.partido} (acta ${sumaLocal}-${sumaVisitante}, oficial ${oficial})`);
+      } else {
+        puntosSanos++;
+      }
+    }
+  }
 
   // Guardian real (S17.6, reusado): que haya jugadores dentro, no solo que la
   // coleccion exista. Un acta con porCuarto vacio de principio a fin (visto de
@@ -146,6 +177,11 @@ console.log(`  Medibles con el guardian:            ${sinJugadores + sinJugadore
 console.log(`    Sanas:                             ${sinJugadoresSanas}`);
 console.log(`    FALLAN (min descuadrado o sin fila): ${sinJugadores}${sinJugadores ? ' -> ' + sinJugadoresIds.join('; ') : ''}`);
 console.log('');
+console.log(`Auditoria de puntos vs resultado oficial (S17.13):`);
+console.log(`  Comprobadas (completas, no declaradas incompletas en origen): ${puntosSanos + puntosNoCuadran}`);
+console.log(`  Cuadran:                             ${puntosSanos}`);
+console.log(`  NO CUADRAN con partidos.json:        ${puntosNoCuadran}${puntosNoCuadran ? ' -> ' + puntosNoCuadranIds.join('; ') : ''}`);
+console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
 console.log('');
@@ -180,6 +216,13 @@ if (valoresRaros > 0) problemas.push(`${valoresRaros} valores raros`);
 // -- cero falsos positivos -- y las que nunca van a cuadrar (origen truncado)
 // se declaran en cuartos-incompletos-origen.json para no bloquear para siempre.
 if (sinJugadores > 0) problemas.push(`${sinJugadores} actas con jugadores perdidos o minutos descuadrados`);
+// Bloquea (20/10/2026, S17.13): una acta "completa" cuyos puntos no cuadran
+// con el resultado oficial esta MINTIENDO, no solo incompleta -- verificarActa
+// ya le dio el visto bueno (ver cabecera del chequeo de arriba), asi que nada
+// mas la para antes de entrar en agregados. Mejor un acta que falta (el
+// guardian de huecos de resumen-salud.js la ve) que un acta que miente (no la
+// ve nadie).
+if (puntosNoCuadran > 0) problemas.push(`${puntosNoCuadran} actas completas cuyos puntos no cuadran con el resultado oficial`);
 
 if (problemas.length === 0) {
   console.log('VEREDICTO: LISTO para generar agregados y boxscore.');
@@ -188,6 +231,7 @@ if (problemas.length === 0) {
   console.log('VEREDICTO: NO generar todavia. Problemas: ' + problemas.join('; ') + '.');
   if (sinContexto > 0) console.log('  -> Borra las actas sin contexto y re-extrae (sin --forzar) antes de generar.');
   if (sinJugadores > 0) console.log('  -> Re-extrae (sin --forzar) ' + sinJugadoresIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, declaralo en cuartos-incompletos-origen.json.');
+  if (puntosNoCuadran > 0) console.log('  -> Re-extrae (sin --forzar) ' + puntosNoCuadranIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, investigar a mano (no declarar en cuartos-incompletos-origen.json sin mirar antes: un acta que miente no es lo mismo que una truncada en origen).');
 }
 console.log('');
 // Codigo de salida: 1 si hay problemas (util en CI para que el paso quede marcado)
