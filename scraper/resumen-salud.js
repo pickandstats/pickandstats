@@ -170,31 +170,48 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   // la semana pasada (persistida en data/processed, committeada como el
   // resto) y FALLA si empeora -- un aviso que no toca el veredicto es
   // decoracion.
+  //
+  // Comparacion por CONJUNTO DE IDS, no por recuento absoluto (bugfix 20/10,
+  // S17.11): el recuento compara huecos absolutos sobre un denominador que
+  // crece toda la temporada. Con calidad de extraccion constante, 185
+  // partidos con el 97% dan mas huecos absolutos que 124 con el 96% --el
+  // guardian diria "EMPEORA" sin que nada hubiera empeorado de verdad. Lo que
+  // SI es una regresion real es que un partido que tenia cuartos la semana
+  // pasada ya no los tenga: eso es inmune al crecimiento del denominador y es
+  // exactamente lo que este guardian existe para cazar.
   const fPartidosSel = path.join('data', 'processed', nombre, sel, 'partidos.json');
   const partidosSel = leerJSON(fPartidosSel);
   if (Array.isArray(partidosSel)) {
     const jugados = partidosSel.filter(p => /\d+\s*-\s*\d+/.test(p.resultado || '')).length;
-    let conCuartos = 0;
+    const idsConCuartos = new Set();
     if (fs.existsSync(dirActasSel)) {
       for (const f of fs.readdirSync(dirActasSel)) {
         if (!f.endsWith('.json')) continue;
         const a = leerJSON(path.join(dirActasSel, f));
-        if (a && (a.porCuarto || []).some(c => c && c.some(eq => eq && (eq.jugadores || []).length))) conCuartos++;
+        if (a && (a.porCuarto || []).some(c => c && c.some(eq => eq && (eq.jugadores || []).length))) idsConCuartos.add(f.replace('.json', ''));
       }
     }
+    const conCuartos = idsConCuartos.size;
     lineas.push(`${nombre} ${sel}: ${jugados} jugados | ${conCuartos} con cuartos` +
       (jugados ? ` (${(100 * conCuartos / jugados).toFixed(0)}%)` : ''));
 
     const fCobertura = path.join('data', 'processed', nombre, sel, 'cuartos-cobertura.json');
     const anterior = leerJSON(fCobertura);
-    if (anterior && typeof anterior.jugados === 'number' && typeof anterior.conCuartos === 'number') {
-      const faltabanAntes = anterior.jugados - anterior.conCuartos;
-      const faltanAhora = jugados - conCuartos;
-      if (faltanAhora > faltabanAntes) {
-        criticos.push(`${nombre} ${sel}: la cobertura de cuartos EMPEORA (faltaban ${faltabanAntes} partido(s) la semana pasada, faltan ${faltanAhora} ahora) -> ¿generacion rota?`);
+    if (anterior && Array.isArray(anterior.idsConCuartos)) {
+      const perdidos = anterior.idsConCuartos.filter(id => !idsConCuartos.has(id));
+      if (perdidos.length) {
+        const muestra = perdidos.slice(0, 8).join(', ') + (perdidos.length > 8 ? ', ...' : '');
+        criticos.push(`${nombre} ${sel}: ${perdidos.length} partido(s) que la semana pasada tenian cuartos ya no los tienen -> ${muestra} (¿regresion real?)`);
       }
+    } else if (anterior) {
+      // Formato viejo (solo recuento, sin la lista de ids): no hay con que
+      // comparar conjunto a conjunto esta vez. Se salta sin avisar -- el
+      // fichero nuevo de abajo ya deja la lista para la semana que viene.
+      console.log(`  (${nombre} ${sel}: base de cobertura en formato antiguo, sin lista de ids; se regenera esta semana)`);
     }
-    fs.writeFileSync(fCobertura, JSON.stringify({ jugados, conCuartos, fecha: new Date().toISOString().slice(0, 10) }, null, 1));
+    fs.writeFileSync(fCobertura, JSON.stringify(
+      { jugados, conCuartos, idsConCuartos: [...idsConCuartos].sort(), fecha: new Date().toISOString().slice(0, 10) },
+      null, 1));
   }
 }
 
