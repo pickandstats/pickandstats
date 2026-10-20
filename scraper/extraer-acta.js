@@ -364,8 +364,20 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
     return out;
   });
 
-  const validos = cortes.filter(c => c !== null);
-  const final = validos[validos.length - 1] || null;
+  // El "final" solo puede ser el corte de la ULTIMA POSICION ESPERADA (la del
+  // partido completo, o la de nCuartos si se pidio un corte parcial a
+  // proposito) -- nunca el ultimo que simplemente respondio bien. Bug
+  // encontrado el 20/10 (ver 2487440 y 2537028, _informe-auditoria-truncadas.md):
+  // "validos[validos.length-1]" tomaba el ULTIMO QUE RESPONDIO, sin comprobar
+  // si era ESE. Si el corte del partido completo (c=periodos) fallaba pero el
+  // penultimo (c=periodos-1) iba bien, ese penultimo quedaba etiquetado
+  // "final" sin serlo -- y como los parciales y los minutos se truncan juntos
+  // y de forma coherente, verificarActa no lo detecta (4 parciales y 200:00
+  // cuadran perfectamente para un partido que en realidad tuvo prorroga: la
+  // prorroga desaparece sin dejar rastro). Mejor un acta que falta
+  // (completo:false, final:null) que un acta que miente: la que falta la ve
+  // el guardian de huecos de 10-60 dias; la que miente no la ve nadie.
+  const final = (cortes.length ? cortes[cortes.length - 1] : null) || null;
   // solo el corte final es un partido completo; los parciales nunca suman 200:00.
   // verificar:false es para quien necesita los datos crudos para COMPARARLOS
   // (p.ej. la reparacion en paralelo: una nueva extraccion que no verifica no
