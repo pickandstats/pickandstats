@@ -58,6 +58,14 @@ fs.mkdirSync(dirActas, { recursive: true });
 const esSana = a => !!(a && a.completo && a.verificado !== false && a.contextoPorCuarto);
 const LIMITE_INTENTOS = 4;
 
+// Version de la regla que produce `verificado` (_instrucciones.md 20/10, punto 1.3).
+// Subela cuando cambie que comprueba `cuadra` de abajo -- quien lee `verificado`
+// (boxscore-cuartos.js) compara esta version contra la que tiene guardada el acta, y
+// si no coincide (o no hay ninguna, actas de antes de que esto existiera) no se fia
+// del veredicto cacheado. Un veredicto sin la version de su regla es indistinguible
+// de un veredicto al dia -- este campo es lo que los distingue.
+const VERSION_VERIFICACION = 1;
+
 (async () => {
   let procesados = 0, saltados = 0, errores = 0, reparadas = 0;
   const rotaIds = new Set();   // actas presentes en disco que NO estan sanas
@@ -110,6 +118,7 @@ const LIMITE_INTENTOS = 4;
         nCuartos: acta.cortes.length,
         completo: acta.completo,
         verificado: cuadra,
+        verificadoCon: VERSION_VERIFICACION,
         porCuarto: acta.porCuarto,   // [cuarto][equipo].jugadores[]
         contextoPorCuarto: acta.contextoPorCuarto, // [cuarto] contraataque, pintura, 2a op, tras perdida, banquillo
         generado: new Date().toISOString().slice(0, 10),

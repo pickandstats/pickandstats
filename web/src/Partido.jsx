@@ -60,7 +60,14 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
 
   // Boxscore sumado de los cuartos seleccionados, mapeado al formato de partido.boxscore.
   // Cruza jugadores por dorsal (uno puede no jugar todos los cuartos).
-  const mins = txt => { const m = String(txt || "0:0").split(":"); return (+m[0] || 0) * 60 + (+m[1] || 0); };
+  // Las actas en formato viejo solo traen min/fc/fr/tap/tapRec reales en el Cuarto 1 --
+  // ausente no es "jugo cero" ni "cero faltas": es que no hay dato. `sumar` propaga null
+  // en cuanto un cuarto seleccionado no trae el campo, para esa columna de ese jugador, y
+  // se queda en null aunque otro cuarto si lo traiga (la suma ya es incompleta). El resto
+  // de columnas -- puntos, tiros, rebotes -- no tiene este agujero: en los partidos donde
+  // se midio, cuadran cuarto a cuarto con la fuente oficial.
+  const mins = txt => { if (txt == null) return null; const m = String(txt).split(":"); return (+m[0] || 0) * 60 + (+m[1] || 0); };
+  const sumar = (actual, valor) => (actual === null || valor == null) ? null : actual + valor;
   const boxDeCuartos = useMemo(() => {
     if (!hayDesglose) return null;
     const porEquipo = [0, 1].map(ei => {
@@ -73,12 +80,13 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
           if (!a) a = acc[j.dorsal] = { dorsal: j.dorsal, nombre: j.nombre, idJugador: j.idJugador || null,
             seg: 0, pt: 0, t2: {a:0,i:0}, t3: {a:0,i:0}, tl: {a:0,i:0},
             ro: 0, rd: 0, rt: 0, as: 0, br: 0, bp: 0, tf: 0, tco: 0, fc: 0, fr: 0, va: 0 };
-          a.seg += mins(j.min);
+          a.seg = sumar(a.seg, mins(j.min));
           a.pt += j.pts || 0;
           a.t2.a += j.t2.a; a.t2.i += j.t2.i; a.t3.a += j.t3.a; a.t3.i += j.t3.i; a.tl.a += j.tl.a; a.tl.i += j.tl.i;
           a.ro += j.ro; a.rd += j.rd; a.rt += j.rt; a.as += j.as;
-          a.br += j.rec || 0; a.bp += j.per || 0; a.tf += j.tap || 0; a.tco += j.tapRec || 0;
-          a.fc += j.fc; a.fr += j.fr; a.va += j.val || 0;
+          a.br += j.rec || 0; a.bp += j.per || 0;
+          a.tf = sumar(a.tf, j.tap); a.tco = sumar(a.tco, j.tapRec);
+          a.fc = sumar(a.fc, j.fc); a.fr = sumar(a.fr, j.fr); a.va += j.val || 0;
         });
       });
       return Object.values(acc);
@@ -113,6 +121,11 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
   };
 
   const total = (box, fn) => box.reduce((a, j) => a + fn(j), 0);
+  // Como `total`, pero si algun jugador tiene la columna en null (dato ausente en
+  // ese cuarto) el total tambien es null -- sumar nulls como si fueran cero daria
+  // un numero plausible y falso en la fila TOTAL, el mismo error que se corrige
+  // por jugador.
+  const totalOpt = (box, fn) => box.reduce((a, j) => { const v = fn(j); return (a === null || v == null) ? null : a + v; }, 0);
 
   // Barras divergentes del partido (estilo FEB): tiros por % de acierto,
   // conteos por valor. Cada barra = cuota del equipo sobre el total de ambos.
@@ -165,8 +178,8 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
       tla: total(box, j => j.tl.a), tli: total(box, j => j.tl.i),
       ro: total(box, j => j.ro), rd: total(box, j => j.rd), rt: total(box, j => j.rt),
       as: total(box, j => j.as), br: total(box, j => j.br), bp: total(box, j => j.bp),
-      tf: total(box, j => j.tf), tco: total(box, j => j.tco),
-      fc: total(box, j => j.fc), fr: total(box, j => j.fr), va: total(box, j => j.va)
+      tf: totalOpt(box, j => j.tf), tco: totalOpt(box, j => j.tco),
+      fc: totalOpt(box, j => j.fc), fr: totalOpt(box, j => j.fr), va: total(box, j => j.va)
     };
     return (
       <>
@@ -190,14 +203,15 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
                       ? <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                       : j.nombre}
                   </td>
-                  <td>{Math.round(j.seg / 60)}</td>
+                  <td>{j.seg == null ? '—' : Math.round(j.seg / 60)}</td>
                   <td>{j.pt}</td>
                   <td>{j.t2.a}/{j.t2.i}</td>
                   <td>{j.t3.a}/{j.t3.i}</td>
                   <td>{j.tl.a}/{j.tl.i}</td>
                   <td>{j.ro}</td><td>{j.rd}</td><td>{j.rt}</td><td>{j.as}</td>
-                  <td>{j.br}</td><td>{j.bp}</td><td>{j.tf}</td><td>{j.tco}</td>
-                  <td>{j.fc}</td><td>{j.fr}</td><td>{j.va}</td>
+                  <td>{j.br}</td><td>{j.bp}</td>
+                  <td>{j.tf == null ? '—' : j.tf}</td><td>{j.tco == null ? '—' : j.tco}</td>
+                  <td>{j.fc == null ? '—' : j.fc}</td><td>{j.fr == null ? '—' : j.fr}</td><td>{j.va}</td>
                 </tr>
               ))}
             </tbody>
@@ -210,8 +224,9 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
                 <td>{t.t3a}/{t.t3i}</td>
                 <td>{t.tla}/{t.tli}</td>
                 <td>{t.ro}</td><td>{t.rd}</td><td>{t.rt}</td><td>{t.as}</td>
-                <td>{t.br}</td><td>{t.bp}</td><td>{t.tf}</td><td>{t.tco}</td>
-                <td>{t.fc}</td><td>{t.fr}</td><td>{t.va}</td>
+                <td>{t.br}</td><td>{t.bp}</td>
+                <td>{t.tf == null ? '—' : t.tf}</td><td>{t.tco == null ? '—' : t.tco}</td>
+                <td>{t.fc == null ? '—' : t.fc}</td><td>{t.fr == null ? '—' : t.fr}</td><td>{t.va}</td>
               </tr>
             </tfoot>
           </table>
