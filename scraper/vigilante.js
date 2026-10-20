@@ -46,8 +46,12 @@ const UMBRAL_DIAS = 8; // el cron de datos es semanal y puede llegar con horas d
                         // retraso (el 7/9 llego con 6h20m y estaba sano); 7 daria
                         // falsos positivos. A 8, un lunes perdido se ve el miercoles.
                         // Se mide contra el LATIDO DESPLEGADO, no contra el del repo.
-const UMBRAL_HORAS_DESPLIEGUE = 48; // margen para que un despliegue que falle una
-                                     // vez y se recupere al dia siguiente no abra issue.
+const UMBRAL_HORAS_DESPLIEGUE = 12; // el despliegue corre cada 6h; con 12h de margen,
+                                     // un ciclo perdido no abre issue pero dos si.
+                                     // Antes era 48h sobre una metrica rota (ver mas
+                                     // abajo, issue #9): con esa metrica nunca hacia
+                                     // nada, porque el numero nunca pasaba por valores
+                                     // pequenos.
 const URL_DESPLEGADO = 'https://pickandstats.es/app/data/estado.json';
 const TITULO_ALARMA_LATIDO = '🔴 Vigilante: el pipeline de datos no se ha ejecutado';
 const TITULO_ALARMA_DESPLIEGUE = '🔴 Vigilante: el sitio desplegado no recibe los datos';
@@ -82,6 +86,23 @@ function ultimoDespliegueCompletado() {
     '--limit', '1', '--json', 'databaseId,conclusion,createdAt']);
   const lista = JSON.parse(salida);
   return lista[0] || null;
+}
+
+// Bug encontrado el 20/10 (issue #9, falso positivo real: "165.9 horas" sobre una
+// publicacion pendiente de verdad de 1h48m). La version vieja media la DISTANCIA
+// ENTRE DOS LATIDOS (actualizadoRepo - actualizadoDesplegado), no cuanto llevaba sin
+// publicarse. Y como el latido del repo se reescribe una vez por semana "haya datos
+// nuevos o no" (ver cabecera de resumen-salud.js), en cuanto entra el commit del
+// lunes ese numero salta de 0 a ~168h de golpe y se queda ahi hasta que un despliegue
+// publique -- nunca pasa por valores pequenos, asi que ningun umbral servia. Esta
+// version usa reloj de pared (ahora, que por defecto es Date.now() pero se puede fijar
+// en la prueba), igual que la comprobacion de frescura de mas abajo: solo cuenta si
+// hay algo pendiente de publicar, y mide desde cuando -- no la distancia entre dos
+// marcas que avanzan a ritmos distintos.
+function publicacionPendiente(actualizadoRepo, actualizadoDesplegado, ahora = Date.now()) {
+  const pendiente = actualizadoDesplegado < actualizadoRepo;
+  const horasPendiente = pendiente ? (ahora - actualizadoRepo.getTime()) / 3600000 : 0;
+  return { pendiente, horasPendiente };
 }
 
 function issueAbierta(titulo) {
@@ -196,32 +217,35 @@ async function main() {
   } else {
     const actualizadoRepo = new Date(estado.actualizado);
     const actualizadoDesplegado = new Date(desplegado.actualizado);
-    const horasDesfase = (actualizadoRepo.getTime() - actualizadoDesplegado.getTime()) / 3600000;
+    const { pendiente, horasPendiente } = publicacionPendiente(actualizadoRepo, actualizadoDesplegado);
 
     console.log(`Latido del repo: ${estado.actualizado}`);
-    console.log(`Latido desplegado: ${desplegado.actualizado} (desfase de ${horasDesfase.toFixed(1)}h sobre el repo)`);
+    console.log(`Latido desplegado: ${desplegado.actualizado}` +
+      (pendiente ? ` (pendiente de publicar desde hace ${horasPendiente.toFixed(1)}h)` : ' (al dia)'));
 
-    if (horasDesfase > UMBRAL_HORAS_DESPLIEGUE) {
+    if (horasPendiente > UMBRAL_HORAS_DESPLIEGUE) {
       huboFallo = true;
       abrirOActualizar(
         TITULO_ALARMA_DESPLIEGUE,
         [
-          `El sitio desplegado va **${horasDesfase.toFixed(1)} horas** por detras del repo, ` +
-            `por encima del umbral de ${UMBRAL_HORAS_DESPLIEGUE}h.`,
+          `El sitio desplegado lleva **${horasPendiente.toFixed(1)} horas** con una publicacion ` +
+            `pendiente, por encima del umbral de ${UMBRAL_HORAS_DESPLIEGUE}h.`,
           '',
-          `- Repo: ${estado.actualizado}`,
+          `- Repo (dato mas nuevo): ${estado.actualizado}`,
           `- Desplegado: ${desplegado.actualizado}`,
           '',
-          'Probablemente `desplegar.yml` no ha corrido tras el ultimo commit de datos.',
-          'Comprueba `gh run list --workflow=desplegar.yml --limit 5`, y si falta la',
-          'ejecucion, lanzala a mano con `gh workflow run desplegar.yml`.',
+          'Probablemente `desplegar.yml` no ha corrido tras el ultimo commit de datos, o ha',
+          'fallado varias veces seguidas. Comprueba `gh run list --workflow=desplegar.yml',
+          '--limit 5`, y si falta la ejecucion, lanzala a mano con `gh workflow run desplegar.yml`.',
         ].join('\n'),
-        `Sigue sin resolverse: el desplegado ya lleva **${horasDesfase.toFixed(1)} horas** por detras.`
+        `Sigue sin resolverse: la publicacion lleva pendiente **${horasPendiente.toFixed(1)} horas**.`
       );
     } else {
       cerrarSiExiste(
         TITULO_ALARMA_DESPLIEGUE,
-        `Resuelto: el desplegado va ${horasDesfase.toFixed(1)}h por detras del repo, por debajo del umbral de ${UMBRAL_HORAS_DESPLIEGUE}h.`
+        pendiente
+          ? `Resuelto: la publicacion estaba pendiente ${horasPendiente.toFixed(1)}h, por debajo del umbral de ${UMBRAL_HORAS_DESPLIEGUE}h.`
+          : 'Resuelto: el desplegado esta al dia con el repo.'
       );
     }
   }
@@ -273,4 +297,9 @@ async function main() {
   process.exit(huboFallo ? 1 : 0);
 }
 
-main();
+module.exports = { publicacionPendiente };
+
+// Permite requerir publicacionPendiente() desde una prueba (ver
+// test/verificar-vigilante-publicacion.js) sin disparar main(), que hace
+// peticiones reales a GitHub y a la web desplegada.
+if (require.main === module) main();
