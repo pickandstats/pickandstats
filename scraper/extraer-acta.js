@@ -226,6 +226,14 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
         await new Promise(r => setTimeout(r, 3000 * intento)); // espera creciente
         continue;
       }
+      // Evidencia para diagnosticar "sin cortes validos", no solo el mensaje: un
+      // 404 de 1 KB y un 200 de 180 KB que no parsea son dos mundos distintos, y
+      // antes se escribian con la misma frase (ver _informe del 20/10: 100 casos
+      // de Tercera marcados "acta no disponible" en la reparacion que en realidad
+      // eran una ventana de throttling -- confirmado re-pidiendolos despacio dias
+      // despues, todos volvieron con 4 parciales validos).
+      if (e.response) { e.http = e.response.status; e.bytes = e.response.data ? e.response.data.length : null; }
+      else { e.http = null; e.bytes = null; }
       throw e;
     }
   }
@@ -244,10 +252,16 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
   // Probamos qd de 4 a 8: el primero que devuelva un PDF válido con c=qd es el
   // nº real de periodos (4 normal, 5+ prórroga). Un acta truncada no dará ninguno
   // completo, así que caemos a descubrir por cortes crecientes.
+  // Evidencia de cada intento fallido (codigo HTTP, bytes), para que "sin
+  // cortes validos" diga por que, no solo que paso -- ver el comentario de
+  // pedirCorte().
+  const diagnostico = [];
+  const anotar = (c, qd, e) => diagnostico.push({ c, qd, http: e.http ?? null, bytes: e.bytes ?? null, error: e.message });
+
   let periodos = null;
   for (const n of [4, 5, 6, 7, 8]) {
     try { const t = await pedirCorte(partido, n, n); periodos = t.parciales.length; await pausa(); break; }
-    catch (e) { await pausa(); }
+    catch (e) { anotar(n, n, e); await pausa(); }
   }
 
   const cortes = [];
@@ -255,7 +269,7 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
     // Partido completo detectado: pedir c=1..periodos con qd=periodos
     for (let c = 1; c <= periodos; c++) {
       let corte = null;
-      try { corte = await pedirCorte(partido, c, periodos); } catch (e) { corte = null; }
+      try { corte = await pedirCorte(partido, c, periodos); } catch (e) { anotar(c, periodos, e); corte = null; }
       cortes.push(corte);
       await pausa();
       if (nCuartos && cortes.length >= nCuartos) break;
@@ -266,14 +280,22 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
     let c = 1;
     while (c <= 4) {
       let corte = null;
-      try { corte = await pedirCorte(partido, c, 4); } catch (e) { corte = null; }
+      try { corte = await pedirCorte(partido, c, 4); } catch (e) { anotar(c, 4, e); corte = null; }
       await pausa();
       if (!corte) break;
       cortes.push(corte);
       c++;
     }
   }
-  if (!cortes.filter(Boolean).length) throw new Error("Sin cortes válidos (acta no disponible)");
+  if (!cortes.filter(Boolean).length) {
+    // 404 de 1 KB y 200 de 180 KB que no parsea son dos mundos distintos (ver
+    // comentario en pedirCorte): el resumen de abajo es la diferencia entre un
+    // "acta no disponible" que se puede afirmar y uno que es una suposicion.
+    const resumen = diagnostico.length
+      ? ' [' + diagnostico.map(d => `c${d.c}/qd${d.qd}: http=${d.http ?? 'red'} bytes=${d.bytes ?? '?'}`).join(', ') + ']'
+      : '';
+    throw new Error('Sin cortes válidos (acta no disponible)' + resumen);
+  }
 
   // Campos numericos acumulables a diferenciar por cuarto
   //
