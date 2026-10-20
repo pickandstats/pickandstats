@@ -1,6 +1,6 @@
 {
  "_comentario": "Partidos de la temporada 2025 (cerrada) que la reparacion en paralelo marco `gana_vieja`: ni la extraccion nueva ni la vieja pasan verificarActa. Generado desde data/raw-reparado/*/2025/_informe-parcial.json por scraper/generar-registro-irreparables.js -- no se edita a mano, se regenera.",
- "generado": "2026-10-20T07:55:18.855Z",
+ "generado": "2026-10-20T12:39:58.791Z",
  "progresoReparacionAlGenerar": {
   "primerafeb": 290,
   "segundafeb": 394,
@@ -11,6 +11,11 @@
   "empate_total": 55,
   "vieja_mas_parciales": 20
  },
+ "porPuntosPorCuarto": {
+  "correctos": 37,
+  "no_legible": 4,
+  "incorrectos": 34
+ },
  "entradas": [
   {
    "partido": "2486333",
@@ -18,7 +23,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2513268",
@@ -26,7 +32,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 1,
-   "parcialesNuevo": 1
+   "parcialesNuevo": 1,
+   "puntosPorCuarto": "no_legible"
   },
   {
    "partido": "2486854",
@@ -34,7 +41,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2486864",
@@ -42,7 +50,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487898",
@@ -50,7 +59,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487905",
@@ -58,7 +68,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487912",
@@ -66,7 +77,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484049",
@@ -74,7 +86,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484096",
@@ -82,7 +95,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484112",
@@ -90,7 +104,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484257",
@@ -98,7 +113,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484299",
@@ -106,7 +122,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484572",
@@ -114,7 +131,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484601",
@@ -122,7 +140,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 2,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484653",
@@ -130,7 +149,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484657",
@@ -138,7 +158,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484667",
@@ -146,7 +167,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484669",
@@ -154,7 +176,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484678",
@@ -162,7 +185,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484682",
@@ -170,7 +194,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (5 > 3)",
    "parcialesViejo": 5,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484720",
@@ -178,7 +203,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484729",
@@ -186,7 +212,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484742",
@@ -194,7 +221,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484781",
@@ -202,7 +230,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484837",
@@ -210,7 +239,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2486693",
@@ -218,7 +248,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2486707",
@@ -226,7 +257,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2486712",
@@ -234,7 +266,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2486744",
@@ -242,7 +275,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2486748",
@@ -250,7 +284,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 2,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2486768",
@@ -258,7 +293,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487130",
@@ -266,7 +302,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487398",
@@ -274,7 +311,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (5 > 2)",
    "parcialesViejo": 5,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487408",
@@ -282,7 +320,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487410",
@@ -290,7 +329,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487439",
@@ -298,7 +338,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487441",
@@ -306,7 +347,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 1)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 1
+   "parcialesNuevo": 1,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487443",
@@ -314,7 +356,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487447",
@@ -322,7 +365,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487461",
@@ -330,7 +374,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 5,
-   "parcialesNuevo": 5
+   "parcialesNuevo": 5,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487589",
@@ -338,7 +383,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487592",
@@ -346,7 +392,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487615",
@@ -354,7 +401,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487623",
@@ -362,7 +410,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487636",
@@ -370,7 +419,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487674",
@@ -378,7 +428,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2487693",
@@ -386,7 +437,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2487959",
@@ -394,7 +446,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488036",
@@ -402,7 +455,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488132",
@@ -410,7 +464,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488169",
@@ -418,7 +473,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488185",
@@ -426,7 +482,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488205",
@@ -434,7 +491,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488223",
@@ -442,7 +500,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488227",
@@ -450,7 +509,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488228",
@@ -458,7 +518,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488229",
@@ -466,7 +527,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488232",
@@ -474,7 +536,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488233",
@@ -482,7 +545,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488234",
@@ -490,7 +554,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488241",
@@ -498,7 +563,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488249",
@@ -506,7 +572,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488257",
@@ -514,7 +581,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488260",
@@ -522,7 +590,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488262",
@@ -530,7 +599,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488269",
@@ -538,7 +608,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488270",
@@ -546,7 +617,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488291",
@@ -554,7 +626,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488298",
@@ -562,7 +635,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488302",
@@ -570,7 +644,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488303",
@@ -578,7 +653,8 @@
    "causa": "vieja_mas_parciales",
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
-   "parcialesNuevo": 2
+   "parcialesNuevo": 2,
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2486781",
@@ -586,7 +662,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 3,
-   "parcialesNuevo": 3
+   "parcialesNuevo": 3,
+   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2512441",
@@ -594,7 +671,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "no_legible"
   },
   {
    "partido": "2512445",
@@ -602,7 +680,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "no_legible"
   },
   {
    "partido": "2513654",
@@ -610,7 +689,8 @@
    "causa": "empate_total",
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
-   "parcialesNuevo": 4
+   "parcialesNuevo": 4,
+   "puntosPorCuarto": "no_legible"
   }
  ]
 }
