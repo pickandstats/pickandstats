@@ -420,4 +420,12 @@ async function main() {
 
 // Salir con codigo 1 ante cualquier excepcion no capturada: antes salia 0 y un
 // fallo (HTML de la FEB cambiado, etc.) pasaba desapercibido en CI (S17.3).
-main().catch(err => { console.error('Error general:', err.message); process.exit(1); });
+// Guardia (20/10/2026, S17.14): solo corre el scraping completo si se invoca
+// como CLI (`node scraper/scrape.js`). verificar-cuartos.js importa
+// `scrapePartido` para re-raspar UN partido puntual cuando discrepa contra el
+// acta -- sin la guardia, ese require dispararia la pasada semanal entera.
+if (require.main === module) {
+  main().catch(err => { console.error('Error general:', err.message); process.exit(1); });
+}
+
+module.exports = { scrapePartido, parsearCuartos };

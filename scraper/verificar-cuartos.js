@@ -5,6 +5,8 @@
 const fs = require('fs');
 const path = require('path');
 const { verificarActa, equiposDesdePorCuarto } = require('./extraer-acta');
+const { scrapePartido } = require('./scrape');
+const CFG = require('./config');
 
 const args = process.argv.slice(2);
 const val = f => { const i = args.indexOf(f); return i >= 0 ? args[i + 1] : null; };
@@ -47,6 +49,10 @@ let puntosNoCuadran = 0, puntosSanos = 0;
 let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
 const cuartosNoCuadranIds = [], periodosImposiblesIds = [];
+// Lista SIN tope (cuartosNoCuadranIds de abajo se corta en 8 para no inundar la
+// consola): la politica de re-raspado de mas abajo tiene que intentarlo con
+// todos los discrepantes, no solo con los primeros 8.
+const cuartosNoCuadranTodos = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
 // campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
 const concentrados = {};
@@ -136,6 +142,7 @@ for (const f of ficheros) {
       if (difiere) {
         cuartosNoCuadran++;
         if (cuartosNoCuadranIds.length < 8) cuartosNoCuadranIds.push(a.partido);
+        cuartosNoCuadranTodos.push(String(a.partido));
       } else {
         cuartosSanos++;
       }
@@ -227,6 +234,66 @@ for (const f of ficheros) {
 
 const mediaPintura = nPintura ? (sumPintura / nPintura).toFixed(1) : '?';
 
+(async () => {
+
+// Politica de discrepancia (S17.14, _instrucciones.md 20/10 punto 2.1): una
+// discrepancia cuarto a cuarto contra partidos.json.cuartos NO significa por
+// si sola que el acta mienta. `cuartos` es una foto nuestra del HTML,
+// raspada una vez, y la FEB corrige marcadores despues -- visto de verdad en
+// 2525764 (temporada VIVA): el acta tenia razon, lo desactualizado era
+// nuestro propio `cuartos`. "Un acta imposible y dos fuentes que discrepan no
+// son el mismo hallazgo. Lo primero se arregla; lo segundo se investiga."
+// Asi que antes de bloquear se re-raspa el HTML fresco de cada discrepante:
+//   - si el fresco coincide con el acta -> el desactualizado somos nosotros:
+//     se actualiza partidos.json.cuartos y no bloquea.
+//   - si el fresco TAMBIEN discrepa del acta -> dos fuentes vivas en
+//     desacuerdo de verdad, eso si es una alarma.
+// El invariante de periodo 0-0 (ya calculado arriba) no entra en esta
+// politica a proposito: no necesita segunda fuente, bloquea siempre.
+if (cuartosNoCuadranTodos.length) {
+  console.log(`\nResolviendo ${cuartosNoCuadranTodos.length} discrepancia(s) cuarto a cuarto contra el HTML en vivo...`);
+  let partidosActualizado = false;
+  for (const id of cuartosNoCuadranTodos) {
+    const p = partidos.find(x => String(x.id) === id);
+    let a;
+    try { a = JSON.parse(fs.readFileSync(path.join(dirActas, id + '.json'), 'utf8')); } catch (e) { continue; }
+    let fresco;
+    try {
+      fresco = (await scrapePartido(id)).cuartos;
+    } catch (e) {
+      console.log(`  ⚠ No se pudo re-raspar ${id} (${e.message}); se mantiene como discrepancia.`);
+      await new Promise(r => setTimeout(r, CFG.PAUSA_MS));
+      continue;
+    }
+    await new Promise(r => setTimeout(r, CFG.PAUSA_MS));
+
+    const n = Math.min((a.porCuarto || []).length, fresco.length);
+    let coincideConActa = n > 0 && a.porCuarto.length === fresco.length;
+    for (let i = 0; i < n && coincideConActa; i++) {
+      const cuarto = a.porCuarto[i], of = fresco[i];
+      if (!cuarto || !of) { coincideConActa = false; break; }
+      const sumaLocalQ = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+      const sumaVisitanteQ = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+      if (sumaLocalQ !== (of.local || 0) || sumaVisitanteQ !== (of.visitante || 0)) coincideConActa = false;
+    }
+
+    if (coincideConActa && p) {
+      console.log(`  ✓ ${id}: el HTML fresco coincide con el acta -- partidos.json.cuartos estaba desactualizado. Actualizado, no bloquea.`);
+      p.cuartos = fresco;
+      partidosActualizado = true;
+      cuartosNoCuadran--; cuartosSanos++;
+      const idx = cuartosNoCuadranIds.indexOf(id);
+      if (idx >= 0) cuartosNoCuadranIds.splice(idx, 1);
+    } else {
+      console.log(`  ✗ ${id}: el HTML fresco TAMBIEN discrepa del acta -- dos fuentes vivas en desacuerdo. Bloquea.`);
+    }
+  }
+  if (partidosActualizado) {
+    fs.writeFileSync(fPartidos, JSON.stringify(partidos, null, 1));
+    console.log(`  partidos.json actualizado con los cuartos recien raspados.`);
+  }
+}
+
 console.log(`\n=== VERIFICACION DE CUARTOS · ${compNombre} ${temp} ===\n`);
 console.log(`Partidos esperados (partidos.json): ${idsEsperados.size}`);
 console.log(`Actas presentes:                    ${ficheros.length}`);
@@ -317,4 +384,5 @@ if (problemas.length === 0) {
 console.log('');
 // Codigo de salida: 1 si hay problemas (util en CI para que el paso quede marcado)
 process.exit(problemas.length ? 1 : 0);
-console.log('');
+
+})().catch(err => { console.error('Error al verificar cuartos:', err.message); process.exit(1); });
