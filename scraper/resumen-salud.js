@@ -230,6 +230,29 @@ if (!Object.keys(cals).length) {
     lineas.push(`Indices de ${nombre} ${info.temporada}: frescos (hace ${Math.round(edad)}d)`);
 }
 
+// 5) El veredicto de test/regresion.cjs, leido de disco (S17.12, 20/10). Ese
+// paso del workflow lleva `continue-on-error: true` A PROPOSITO (los datos
+// nuevos son validos aunque la referencia este desactualizada, no hay que
+// retenerlos) -- pero eso significa que cuando el script sale con 1, el paso
+// aparece VERDE en la API (`conclusion: success`) y el ❌ solo vive en el
+// texto del log. Paso asi 6 semanas sin que nadie lo viera (del 9/9 al 20/10,
+// ver _informe-auditoria-truncadas.md): un continue-on-error sin canal audible
+// no es tolerancia, es un interruptor de apagado. Aqui SI es critico (no
+// aviso): no se repite semana a semana como el ruido del despliegue, porque
+// arreglarlo es regenerar la referencia a conciencia (dos minutos), no un
+// apaño recurrente.
+const fRegresion = path.join('data', 'processed', 'regresion-ultimo-resultado.json');
+const regresion = leerJSON(fRegresion);
+if (!regresion) {
+  avisos.push('No existe data/processed/regresion-ultimo-resultado.json: test/regresion.cjs no ha corrido todavia, o no en esta rama.');
+} else if (regresion.fallosTotal > 0) {
+  criticos.push(`test/regresion.cjs: ${regresion.fallosTotal} diferencia(s) contra la referencia congelada, ` +
+    `en ${regresion.camposAfectados.join(', ')} -> revisa si test/referencia.json esta desactualizada ` +
+    `(regenerar con test/generar-referencia.cjs) o si es una regresion de verdad.`);
+} else {
+  lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
+}
+
 // --- Salida ---
 console.log('\n=== RESUMEN DE SALUD DEL PIPELINE ===\n');
 lineas.forEach(l => console.log('  · ' + l));
