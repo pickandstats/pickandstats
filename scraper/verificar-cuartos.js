@@ -38,12 +38,15 @@ const idsIncompletosOrigen = new Set(
 // 1) Cobertura: actas presentes vs partidos esperados
 const faltan = [...idsEsperados].filter(id => !idsPresentes.has(id));
 const resultadoOficial = new Map(partidos.map(p => [String(p.id), p.resultado]));
+const cuartosOficiales = new Map(partidos.map(p => [String(p.id), p.cuartos]));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
 let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0;
 let puntosNoCuadran = 0, puntosSanos = 0;
+let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
+const cuartosNoCuadranIds = [], periodosImposiblesIds = [];
 let sumPintura = 0, nPintura = 0, valoresRaros = 0;
 // campo -> { q1solo, conDatos }: detecta campos que llegan enteros en Q1 (ver abajo)
 const concentrados = {};
@@ -90,6 +93,72 @@ for (const f of ficheros) {
         if (puntosNoCuadranIds.length < 8) puntosNoCuadranIds.push(`${a.partido} (acta ${sumaLocal}-${sumaVisitante}, oficial ${oficial})`);
       } else {
         puntosSanos++;
+      }
+    }
+  }
+
+  // Cuarto a cuarto, no solo el total (S17.14, 20/10). El total es un
+  // invariante CONSERVADO POR CONSTRUCCION: los cuartos salen de restar
+  // cortes acumulados, asi que si un corte intermedio falla, la resta
+  // reparte mal el dato entre DOS cuartos consecutivos pero la suma
+  // telescopica (el total) sigue dando el corte final sano -- comparar el
+  // total no puede detectar una frontera mal puesta ni en principio.
+  //
+  // Y OJO: se compara la suma de puntos de JUGADOR en `porCuarto`, no
+  // `a.parciales`. `a.parciales` es una tabla que trae el propio PDF del
+  // corte final tal cual, ajena a la resta de cortes -- es inmune a este
+  // bug y por eso no sirve para cazarlo. `porCuarto` es el desglose POR
+  // JUGADOR que sale de diferenciar cortes consecutivos (difJug), y es lo
+  // que la app usa de verdad para pintar el marcador por cuarto (lo suma en
+  // el cliente): si el corte de Q1 falla, porCuarto[0] es null y todo lo
+  // acumulado hasta Q2 se le atribuye entero a Q2 -- confirmado asi en
+  // 2488235 (Q1 null, Q2 suma 28-34 cuando el oficial de Q1+Q2 es 9-14 +
+  // 19-20 = 28-34: el Q1 entero esta metido dentro de Q2).
+  //
+  // SIN el gate de `actaCompleta` a proposito, al reves que el chequeo de
+  // arriba: el bug ocurre PRECISAMENTE cuando un corte intermedio es null,
+  // que es justo lo que hace que `completo` ya sea false -- si este chequeo
+  // exigiera actaCompleta, se saltaria a si mismo en el caso que existe para
+  // cazar (visto de verdad: 2488235 tiene completo:false y el chequeo de
+  // arriba lo ignora sin querer).
+  if (!idsIncompletosOrigen.has(String(a.partido)) && a.porCuarto) {
+    const cuartosOf = cuartosOficiales.get(String(a.partido));
+    if (Array.isArray(cuartosOf) && cuartosOf.length) {
+      const n = Math.min(a.porCuarto.length, cuartosOf.length);
+      let difiere = false;
+      for (let i = 0; i < n; i++) {
+        const cuarto = a.porCuarto[i], of = cuartosOf[i];
+        if (!cuarto || !of) continue;
+        const sumaLocalQ = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+        const sumaVisitanteQ = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+        if (sumaLocalQ !== (of.local || 0) || sumaVisitanteQ !== (of.visitante || 0)) { difiere = true; break; }
+      }
+      if (difiere) {
+        cuartosNoCuadran++;
+        if (cuartosNoCuadranIds.length < 8) cuartosNoCuadranIds.push(a.partido);
+      } else {
+        cuartosSanos++;
+      }
+    }
+  }
+
+  // Invariante barato (S17.14): un periodo 0-0 para los dos equipos es
+  // baloncesto imposible, pase lo que pase con el total o con verificarActa.
+  // No hace falta ni la segunda fuente para verlo. Sobre `porCuarto` (suma de
+  // puntos de jugador), por la misma razon que el chequeo de arriba: un
+  // `a.parciales` 0-0 no se ha visto nunca (viene de la tabla del PDF), pero
+  // un `porCuarto` que suma 0-0 por un corte perdido si es real. Se comprueba
+  // en CUALQUIER acta con porCuarto, no solo las "completas".
+  if (a.porCuarto) {
+    for (let i = 0; i < a.porCuarto.length; i++) {
+      const cuarto = a.porCuarto[i];
+      if (!cuarto) continue; // null = corte perdido, ya contado en "truncadas"; no es un 0-0 real
+      const sumaLocalQ = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+      const sumaVisitanteQ = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+      if (sumaLocalQ === 0 && sumaVisitanteQ === 0) {
+        periodosImposibles++;
+        if (periodosImposiblesIds.length < 8) periodosImposiblesIds.push(`${a.partido} (periodo ${i + 1})`);
+        break;
       }
     }
   }
@@ -181,6 +250,10 @@ console.log(`Auditoria de puntos vs resultado oficial (S17.13):`);
 console.log(`  Comprobadas (completas, no declaradas incompletas en origen): ${puntosSanos + puntosNoCuadran}`);
 console.log(`  Cuadran:                             ${puntosSanos}`);
 console.log(`  NO CUADRAN con partidos.json:        ${puntosNoCuadran}${puntosNoCuadran ? ' -> ' + puntosNoCuadranIds.join('; ') : ''}`);
+console.log(`  Cuarto a cuarto, comprobadas:        ${cuartosSanos + cuartosNoCuadran}`);
+console.log(`  Cuadran:                             ${cuartosSanos}`);
+console.log(`  NO CUADRAN cuarto a cuarto:           ${cuartosNoCuadran}${cuartosNoCuadran ? ' -> ' + cuartosNoCuadranIds.join(', ') : ''}`);
+console.log(`  Periodos 0-0 (baloncesto imposible):  ${periodosImposibles}${periodosImposibles ? ' -> ' + periodosImposiblesIds.join('; ') : ''}`);
 console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
@@ -223,6 +296,13 @@ if (sinJugadores > 0) problemas.push(`${sinJugadores} actas con jugadores perdid
 // guardian de huecos de resumen-salud.js la ve) que un acta que miente (no la
 // ve nadie).
 if (puntosNoCuadran > 0) problemas.push(`${puntosNoCuadran} actas completas cuyos puntos no cuadran con el resultado oficial`);
+// Bloquea (20/10/2026, S17.14): el total puede cuadrar por construccion
+// aunque una frontera entre cuartos este mal puesta (ver cabecera del
+// chequeo de arriba) -- asi que esto bloquea aparte, con su propio mensaje,
+// no fundido con el de arriba: son dos formas distintas de que un acta
+// mienta, con dos causas distintas que arreglar.
+if (cuartosNoCuadran > 0) problemas.push(`${cuartosNoCuadran} actas cuyo reparto cuarto a cuarto no cuadra con partidos.json (el total si cuadra)`);
+if (periodosImposibles > 0) problemas.push(`${periodosImposibles} actas con un periodo 0-0 para los dos equipos (imposible)`);
 
 if (problemas.length === 0) {
   console.log('VEREDICTO: LISTO para generar agregados y boxscore.');
@@ -232,6 +312,7 @@ if (problemas.length === 0) {
   if (sinContexto > 0) console.log('  -> Borra las actas sin contexto y re-extrae (sin --forzar) antes de generar.');
   if (sinJugadores > 0) console.log('  -> Re-extrae (sin --forzar) ' + sinJugadoresIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, declaralo en cuartos-incompletos-origen.json.');
   if (puntosNoCuadran > 0) console.log('  -> Re-extrae (sin --forzar) ' + puntosNoCuadranIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, investigar a mano (no declarar en cuartos-incompletos-origen.json sin mirar antes: un acta que miente no es lo mismo que una truncada en origen).');
+  if (cuartosNoCuadran > 0 || periodosImposibles > 0) console.log('  -> Re-extrae (sin --forzar) ' + [...new Set([...cuartosNoCuadranIds, ...periodosImposiblesIds.map(s => s.split(' ')[0])])].join(', ') + '; si se concentra en un grupo, busca la causa antes de re-extraer uno a uno.');
 }
 console.log('');
 // Codigo de salida: 1 si hay problemas (util en CI para que el paso quede marcado)
