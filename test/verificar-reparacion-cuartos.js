@@ -147,8 +147,19 @@ if (registro.provisional) {
 }
 
 const aceptado = fallosInesperados.length === 0 && alfombra.length === 0;
+// La linea final tiene que decir cuanto del registro se ha medido de verdad
+// (S17.13, 20/10): un "✓" que no toca ninguna entrada del registro -- porque
+// todas estan "sin comprobar todavia" -- no significa "el registro es
+// correcto", significa "no he podido comprobar nada de lo que este fichero
+// afirma". Las dos cosas se ven igual en un solo caracter si no se dice la
+// cifra.
+const medidas = fallosConocidos.length + alfombra.length;
+const totalRegistro = registro.entradas.length;
 console.log('');
+console.log(`Entradas del registro medidas: ${medidas} de ${totalRegistro}` +
+  (noComprobadasTodavia.length ? ` (${noComprobadasTodavia.length} sin comprobar todavia)` : ''));
 console.log(aceptado
-  ? `✓ Criterio de aceptación cumplido: solo fallan los ${fallosConocidos.length} del registro de irreparables, y ninguna entrada del registro sobra.`
+  ? `✓ Criterio de aceptación cumplido: de las ${medidas} entradas del registro que se pudieron medir, las ${fallosConocidos.length} que fallan son las esperadas y ninguna sobra.` +
+    (totalRegistro - medidas > 0 ? ` (${totalRegistro - medidas} entradas del registro siguen sin medirse -- este "✓" no dice nada sobre ellas.)` : '')
   : '✗ Criterio de aceptación NO cumplido (ver fallos inesperados y/o entradas de registro que ya pasan, arriba).');
 process.exit(aceptado ? 0 : 1);
