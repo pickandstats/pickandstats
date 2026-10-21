@@ -4,8 +4,21 @@
 // Lee las actas (data/raw/<comp>/<temp>/actas/<id>.json) y escribe
 // web/public/data/<comp>/<temp>/boxscore-cuartos/<id>.json
 //
-// Marca 'completo' si el partido tiene todos los cuartos sin huecos: solo
-// entonces la app permitira el desglose (sumar cuartos == total del partido).
+// DOS banderas, no una (_instrucciones.md 21/10, punto 2 -- correccion sobre
+// el `completo` unico de ayer, que junto otra vez dos preguntas distintas y
+// dejo sin desglose las actas con los puntos perfectos, formato viejo solo en
+// `min`/`fc`/`fr`/`tap`):
+//   - `puntosCompletos`: los cuatro cuartos tienen puntos que cuadran cuarto
+//     a cuarto contra la fuente oficial (partidos.json.cuartos). Decide si la
+//     app OFRECE el desglose. Un acta con un cuarto en 0-0 o con el
+//     acumulado del partido metido en un cuarto (visto de verdad: 2484720,
+//     Q3=0-0 y Q4=57-80) nunca pasa esto, pase lo que pase con `verificado`.
+//   - `camposCompletosQ2a4`: los campos que el formato viejo solo trae en el
+//     Cuarto 1 (min/fc/fr/tap/tapRec) estan de verdad en TODOS los cuartos.
+//     Decide QUE COLUMNAS se pintan -- las que falten, `—` (web/src/Partido.jsx).
+// Antes `completo` mezclaba las dos: una acta con puntos perfectos pero
+// formato viejo dejaba de ofrecer desglose aunque lo unico que le faltara
+// fuera la columna de minutos.
 //
 // Uso: node scraper/boxscore-cuartos.js --competicion 1 --temporada 2025
 const fs = require('fs');
@@ -20,48 +33,76 @@ const compNombre = COMPS[comp];
 if (!compNombre) { console.error('Competicion no valida'); process.exit(1); }
 
 const dirActas = path.join('data', 'raw', compNombre, temp, 'actas');
+const fPartidos = path.join('data', 'processed', compNombre, temp, 'partidos.json');
+const fFases = path.join('data', 'processed', compNombre, temp, 'fases.json');
 if (!fs.existsSync(dirActas)) { console.error('No hay actas en', dirActas); process.exit(1); }
+if (!fs.existsSync(fPartidos)) { console.error('No hay partidos.json en', fPartidos); process.exit(1); }
+
+// partidos.json es la liga regular; los partidos de playoffs/ascensos viven
+// en fases.json, anidados por fase, con el mismo campo `cuartos` -- sin esto,
+// cualquier partido de fases se queda sin fuente oficial que consultar y
+// `puntosCompletosDe` lo marca "no cuadra" por falta de dato, no porque el
+// acta mienta (visto de verdad al medir: 18 partidos de Primera 2025, todos
+// de Play-offs, perdian el desglose por este motivo antes de este arreglo).
+const cuartosOficiales = new Map(
+  JSON.parse(fs.readFileSync(fPartidos, 'utf8')).map(p => [String(p.id), p.cuartos])
+);
+if (fs.existsSync(fFases)) {
+  for (const fase of JSON.parse(fs.readFileSync(fFases, 'utf8'))) {
+    for (const p of fase.partidos || []) {
+      if (p.cuartos) cuartosOficiales.set(String(p.id), p.cuartos);
+    }
+  }
+}
 
 // En data/processed como el resto (S17.4); el cp del deploy lo lleva a public.
 const dirOut = path.join('data', 'processed', compNombre, temp, 'boxscore-cuartos');
 fs.mkdirSync(dirOut, { recursive: true });
 
+// Puntos de JUGADOR en `porCuarto` contra la fuente oficial, cuarto a cuarto
+// -- mismo chequeo que el guardian de verificar-cuartos.js (S17.14) y
+// `puntosPorCuartoDe` de generar-registro-irreparables.js, aqui por tercera
+// vez porque es la pregunta que de verdad decide si se puede ofrecer desglose.
+function puntosCompletosDe(porCuarto, of) {
+  if (!Array.isArray(of) || !of.length || porCuarto.length !== of.length) return false;
+  for (let i = 0; i < of.length; i++) {
+    const cuarto = porCuarto[i], oficial = of[i];
+    if (!cuarto) return false;
+    const sumaLocal = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+    const sumaVisitante = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+    if (sumaLocal !== (oficial.local || 0) || sumaVisitante !== (oficial.visitante || 0)) return false;
+  }
+  return true;
+}
+
 // Formato viejo de acta (S17.6): min/fc/fr/tap/tapRec solo llegan reales en el
 // Cuarto 1 -- fuera de el, esas claves no existen en absoluto en la fila de
-// jugador (no es que valgan 0). `completo` ya exigia que `verificado` (puntos
-// por jugador cuadrando con el total) no fuera false, pero ese chequeo nunca
-// miro estos campos -- asi que servia el desglose igual, con un hueco que la
-// app convertia en columnas falsas (_informe-irreparables-min.md, 20/10).
-// Mismo idioma que `minEnQ2a4` de verificar-cuartos.js: barato, sobre datos ya
-// en memoria, se recalcula cada vez -- no hace falta cachear nada aqui.
+// jugador (no es que valgan 0). Barato, sobre datos ya en memoria, se
+// recalcula cada vez -- no hace falta cachear nada aqui.
 const camposCompletosQ2a4 = porCuarto => porCuarto.slice(1).every(cuarto =>
   !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
 
-let generados = 0, incompletos = 0, porFormatoViejo = 0;
+let generados = 0, sinDesglose = 0, soloFormatoViejo = 0;
 for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json'))) {
   const acta = JSON.parse(fs.readFileSync(path.join(dirActas, fichero), 'utf8'));
   if (!acta.porCuarto || !acta.porCuarto.length) continue;
 
-  // completo: ningun cuarto null, al menos 4, verificado, y con los campos
-  // reales en todos los cuartos (no solo en Q1). Los truncados, con hueco
-  // intermedio, sin verificar o en formato viejo se marcan incompletos -> la
-  // app no ofrecera el desglose.
-  const sinHuecos = acta.porCuarto.every(c => c !== null);
-  const formatoViejo = !camposCompletosQ2a4(acta.porCuarto);
-  const completo = sinHuecos && acta.porCuarto.length >= 4 && acta.verificado !== false && !formatoViejo;
-  if (formatoViejo && sinHuecos && acta.porCuarto.length >= 4 && acta.verificado !== false) porFormatoViejo++;
+  const puntosCompletos = puntosCompletosDe(acta.porCuarto, cuartosOficiales.get(String(acta.partido)));
+  const camposCompletos = camposCompletosQ2a4(acta.porCuarto);
+  if (puntosCompletos && !camposCompletos) soloFormatoViejo++;
 
   const salida = {
     partido: acta.partido,
-    completo,
+    puntosCompletos,
+    camposCompletosQ2a4: camposCompletos,
     nCuartos: acta.porCuarto.length,
     porCuarto: acta.porCuarto, // [cuarto][equipo].jugadores[] con los 20 campos
   };
   fs.writeFileSync(path.join(dirOut, acta.partido + '.json'), JSON.stringify(salida));
   generados++;
-  if (!completo) incompletos++;
+  if (!puntosCompletos) sinDesglose++;
 }
 
 console.log(`${compNombre} ${temp}: ${generados} ficheros de boxscore por cuarto` +
-  (incompletos ? ` (${incompletos} incompletos, sin desglose en la app)` : '') +
-  (porFormatoViejo ? ` [${porFormatoViejo} de ellos solo por formato viejo sin min/fc/fr/tap fuera de Q1]` : ''));
+  (sinDesglose ? ` (${sinDesglose} sin desglose en la app: puntos no cuadran cuarto a cuarto)` : '') +
+  (soloFormatoViejo ? ` [${soloFormatoViejo} con desglose pero en formato viejo: min/fc/fr/tap se pintaran como "—" fuera de Q1]` : ''));

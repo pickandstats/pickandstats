@@ -40,21 +40,25 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
     return acc;
   }, [ctxPartido, cuartosSel]);
 
-  // Carga diferida del boxscore por cuarto (fichero por partido). Solo permite
-  // desglose si el partido tiene todos los cuartos (completo); si falta alguno,
-  // se muestran los totales del partido sin desglose.
+  // Carga diferida del boxscore por cuarto (fichero por partido). El permiso
+  // para ofrecer desglose es `puntosCompletos` (puntos cuadrando cuarto a
+  // cuarto contra la fuente oficial), no `camposCompletosQ2a4` -- esa segunda
+  // bandera solo decide que columnas se pintan (ver `sumar`/`mins` mas abajo),
+  // no si se ofrece el desglose. Juntar las dos en un `completo` unico (como
+  // estaba hasta ayer) dejaba sin desglose actas con los puntos perfectos solo
+  // porque les faltaba la columna de minutos (_instrucciones.md 21/10, punto 2).
   const [boxCuartos, setBoxCuartos] = useState(null);
   useEffect(() => {
     let vivo = true;
     const url = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}/boxscore-cuartos/${partido.id}.json`;
     fetch(url)
       .then(r => r.ok ? r.json() : null)
-      .then(data => { if (vivo) setBoxCuartos(data && data.completo ? data : null); })
+      .then(data => { if (vivo) setBoxCuartos(data && data.puntosCompletos ? data : null); })
       .catch(() => { if (vivo) setBoxCuartos(null); });
     return () => { vivo = false; };
   }, [competicion, temporada, partido.id]);
 
-  const hayDesglose = !!boxCuartos; // solo si el fichero existe y esta completo
+  const hayDesglose = !!boxCuartos; // solo si el fichero existe y los puntos cuadran cuarto a cuarto
   const parcial = hayDesglose && cuartosSel.length < boxCuartos.porCuarto.length;
   const etiquetaCuartos = cuartosSel.map(i => `Q${i + 1}`).join(' + ');
 
