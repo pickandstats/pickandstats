@@ -18,6 +18,9 @@
 //   - vieja_mas_parciales: la vieja trae mas parciales que la nueva y las dos
 //     fallan -- el re-fetch degrado y el desempate protegio la copia
 //     buena-pero-insuficiente.
+//   - corte_no_servido_feb: un corte CONCRETO que la FEB no sirve (confirmado
+//     con evidencia HTTP, no inferido) -- ver CAUSAS_MANUALES mas abajo. Caso
+//     unico investigado a mano, no derivable de `motivo`.
 //
 // Una entrada puede dejar de ser irreparable DESPUES de que se genero este
 // informe: una repromocion posterior (como la del 21/10, S17.14, sobre el
@@ -53,6 +56,42 @@ function causaDe(motivo) {
   // en el registro -- el test de aceptacion asume que solo hay estas tres.
   throw new Error(`Motivo de gana_vieja sin causa reconocida: "${motivo}"`);
 }
+
+// Casos donde la causa real no es ninguna de las tres de arriba -- descubierta
+// investigando a mano, con evidencia HTTP concreta, no derivable de `motivo`
+// (reparar-cuartos-historicos.js no sabe nada de esto: comparo dos
+// extracciones, no interrogo el servidor cuarto a cuarto). Mapa chico y
+// documentado, no un fichero aparte como cuartos-incompletos-origen.json:
+// son casos unicos investigados uno a uno, no una categoria sistematica.
+// _instrucciones.md 21/10 punto 3.
+const CAUSAS_MANUALES = {
+  '2484720': {
+    causa: 'corte_no_servido_feb',
+    evidencia: 'BoxScore.aspx?p=2484720&c=3&qd=4&t=FINAL (el corte de su Cuarto 3) ' +
+      'responde 200 con 587 bytes de postback ASP.NET vacio -- sin PDF dentro, no un ' +
+      'error de red ni un 404/500. Confirmado tres veces el 21/10/2026, con pausas de ' +
+      '20s o mas entre intentos: mismo resultado exacto las tres, descarta throttling.',
+  },
+  // 2486744 y 2487636 llegaron como "mismo bug de frontera que los 7" (el
+  // re-raspado en vivo solo confirma que acta y fuente oficial discrepan, no
+  // POR QUE) -- al re-extraer, las dos se truncan en el mismo corte (su
+  // Cuarto 4) con la misma firma exacta que 2484720: 200 y 587 bytes de
+  // postback vacio, dos veces, con 25s de pausa entre intentos. No es el bug
+  // de frontera (eso habria dado un porCuarto completo con puntos movidos,
+  // no un porCuarto truncado a 3 cuartos); es el mismo hueco de la FEB.
+  '2486744': {
+    causa: 'corte_no_servido_feb',
+    evidencia: 'BoxScore.aspx?p=2486744&c=4&qd=4&t=FINAL (su Cuarto 4) responde 200 con ' +
+      '587 bytes de postback ASP.NET vacio. Confirmado dos veces el 21/10/2026, 25s de ' +
+      'pausa entre intentos, mismo resultado exacto -- misma firma que 2484720.',
+  },
+  '2487636': {
+    causa: 'corte_no_servido_feb',
+    evidencia: 'BoxScore.aspx?p=2487636&c=4&qd=4&t=FINAL (su Cuarto 4) responde 200 con ' +
+      '587 bytes de postback ASP.NET vacio. Confirmado dos veces el 21/10/2026, 25s de ' +
+      'pausa entre intentos, mismo resultado exacto -- misma firma que 2484720.',
+  },
+};
 
 // `causa` dice por que gana_vieja. `puntosPorCuarto` dice algo distinto y
 // ortogonal (_instrucciones.md 20/10, punto 4.1): si los PUNTOS de la copia
@@ -135,8 +174,10 @@ for (const comp of COMPS) {
   for (const c of comparados) {
     if (c.decision !== 'gana_vieja') continue;
     if (yaReparada(comp, c.partido)) { reparadas.push({ partido: c.partido, competicion: comp }); continue; }
+    const manual = CAUSAS_MANUALES[c.partido];
     entradas.push({
-      partido: c.partido, competicion: comp, causa: causaDe(c.motivo), motivo: c.motivo,
+      partido: c.partido, competicion: comp, causa: manual ? manual.causa : causaDe(c.motivo), motivo: c.motivo,
+      ...(manual ? { evidencia: manual.evidencia } : {}),
       parcialesViejo: c.parcialesViejo, parcialesNuevo: c.parcialesNuevo,
       puntosPorCuarto: puntosPorCuartoDe(comp, c.partido, cuartosOficiales),
     });

@@ -1,6 +1,6 @@
 {
  "_comentario": "Partidos de la temporada 2025 (cerrada) que la reparacion en paralelo marco `gana_vieja`: ni la extraccion nueva ni la vieja pasan verificarActa. Generado desde data/raw-reparado/*/2025/_informe-parcial.json por scraper/generar-registro-irreparables.js -- no se edita a mano, se regenera.",
- "generado": "2026-10-21T12:59:20.556Z",
+ "generado": "2026-10-21T13:50:34.062Z",
  "progresoReparacionAlGenerar": {
   "primerafeb": 290,
   "segundafeb": 394,
@@ -8,8 +8,9 @@
  },
  "provisional": false,
  "porCausa": {
-  "empate_total": 54,
-  "vieja_mas_parciales": 18
+  "empate_total": 51,
+  "vieja_mas_parciales": 18,
+  "corte_no_servido_feb": 3
  },
  "porPuntosPorCuarto": {
   "correctos": 40,
@@ -205,8 +206,9 @@
   {
    "partido": "2484720",
    "competicion": "tercerafeb",
-   "causa": "empate_total",
+   "causa": "corte_no_servido_feb",
    "motivo": "empate total (verificarActa y parciales): no se toca",
+   "evidencia": "BoxScore.aspx?p=2484720&c=3&qd=4&t=FINAL (el corte de su Cuarto 3) responde 200 con 587 bytes de postback ASP.NET vacio -- sin PDF dentro, no un error de red ni un 404/500. Confirmado tres veces el 21/10/2026, con pausas de 20s o mas entre intentos: mismo resultado exacto las tres, descarta throttling.",
    "parcialesViejo": 4,
    "parcialesNuevo": 4,
    "puntosPorCuarto": "incorrectos"
@@ -277,8 +279,9 @@
   {
    "partido": "2486744",
    "competicion": "tercerafeb",
-   "causa": "empate_total",
+   "causa": "corte_no_servido_feb",
    "motivo": "empate total (verificarActa y parciales): no se toca",
+   "evidencia": "BoxScore.aspx?p=2486744&c=4&qd=4&t=FINAL (su Cuarto 4) responde 200 con 587 bytes de postback ASP.NET vacio. Confirmado dos veces el 21/10/2026, 25s de pausa entre intentos, mismo resultado exacto -- misma firma que 2484720.",
    "parcialesViejo": 3,
    "parcialesNuevo": 3,
    "puntosPorCuarto": "incorrectos"
@@ -421,8 +424,9 @@
   {
    "partido": "2487636",
    "competicion": "tercerafeb",
-   "causa": "empate_total",
+   "causa": "corte_no_servido_feb",
    "motivo": "empate total (verificarActa y parciales): no se toca",
+   "evidencia": "BoxScore.aspx?p=2487636&c=4&qd=4&t=FINAL (su Cuarto 4) responde 200 con 587 bytes de postback ASP.NET vacio. Confirmado dos veces el 21/10/2026, 25s de pausa entre intentos, mismo resultado exacto -- misma firma que 2484720.",
    "parcialesViejo": 3,
    "parcialesNuevo": 3,
    "puntosPorCuarto": "incorrectos"
