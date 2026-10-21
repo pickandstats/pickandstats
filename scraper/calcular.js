@@ -4,6 +4,7 @@
 const fs = require('fs');
 const path = require('path');
 const CFG = require('./config');
+const { minPjDe, mediana } = require('./umbral-min-pj');
 
 const args = process.argv.slice(2);
 const leerArg = flag => { const i = args.indexOf(flag); return i >= 0 ? args[i + 1] : null; };
@@ -396,7 +397,14 @@ const salidaJugadores = Object.values(jugadores).map(filaJugador)
 // partidos hacen falta para confiar en una media por partido), nombrado dos veces
 // de formas distintas (ver _informe-min-pj-duplicado.md). Un nombre solo, y la app
 // deja de llevar su propia copia: lee el valor de parametros.json.
-const MIN_PJ = 12;
+//
+// Umbral movil (_instrucciones.md 21/10, punto 1), no 12 fijo: 12 exigia
+// asistencia practicamente perfecta el dia en que la lista aparece por
+// primera vez. "Jornadas jugadas" es la mediana de partidos jugados por los
+// equipos (no el maximo: se adelanta en cuanto el calendario se
+// desequilibra). Formula y razonamiento en scraper/umbral-min-pj.js.
+const jornadasJugadas = mediana(Object.values(equipos).map(e => e.pj));
+const MIN_PJ = minPjDe(jornadasJugadas);
 const METRICAS_PCT = ['ptPorPartido','rtPorPartido','asPorPartido','brPorPartido','vaPorPartido','ts','efg','t3Pct'];
 
 function percentilEn(valoresOrdenados, v) {
