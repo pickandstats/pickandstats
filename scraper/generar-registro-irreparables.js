@@ -19,6 +19,16 @@
 //     fallan -- el re-fetch degrado y el desempate protegio la copia
 //     buena-pero-insuficiente.
 //
+// Una entrada puede dejar de ser irreparable DESPUES de que se genero este
+// informe: una repromocion posterior (como la del 21/10, S17.14, sobre el
+// bug de frontera de corte) puede arreglar la copia activa de verdad. Como
+// `_informe-parcial.json` es una foto fija que nunca se entera de eso,
+// `yaReparada()` comprueba la copia activa de HOY contra verificarActa antes
+// de admitir cada entrada, y la excluye (en `reparadasExcluidas`, no
+// silenciosamente) si ya pasa. Sin esto el registro acumularia entradas
+// zombi que test/verificar-reparacion-cuartos.js marcaria "alfombra" para
+// siempre.
+//
 // `puntosPorCuarto` (anadido 20/10/2026, _instrucciones.md punto 4.1) es un
 // eje distinto: si los PUNTOS de la copia activa cuadran cuarto a cuarto con
 // partidos.json. Muchas entradas `empate_total`/`vieja_mas_parciales` fallan
@@ -30,6 +40,7 @@
 // Uso: node scraper/generar-registro-irreparables.js
 const fs = require('fs');
 const path = require('path');
+const { verificarActa, equiposDesdePorCuarto } = require('./extraer-acta');
 
 const COMPS = ['primerafeb', 'segundafeb', 'tercerafeb'];
 const F_SALIDA = path.join('test', 'actas-irreparables-origen.json');
@@ -81,7 +92,25 @@ function puntosPorCuartoDe(comp, partido, cuartosOficialesPorComp) {
   return 'correctos';
 }
 
+// _informe-parcial.json es una foto fija de la comparacion original (vieja vs.
+// la nueva de entonces); una repromocion posterior (como la de hoy, S17.14)
+// puede dejar la copia activa pasando verificarActa de verdad sin que esa
+// foto se entere nunca. Sin esto, un partido reparado se queda en el registro
+// para siempre (test/verificar-reparacion-cuartos.js lo marca "alfombra" y
+// rompe el test de aceptacion) -- igual que `puntosPorCuarto`, se comprueba
+// contra la copia activa de hoy, no se edita el registro a mano.
+function yaReparada(comp, partido) {
+  const fActa = path.join('data', 'raw', comp, '2025', 'actas', `${partido}.json`);
+  if (!fs.existsSync(fActa)) return false;
+  let a;
+  try { a = JSON.parse(fs.readFileSync(fActa, 'utf8')); } catch (e) { return false; }
+  if (!a.porCuarto) return false;
+  try { verificarActa({ parciales: a.parciales, equipos: equiposDesdePorCuarto(a.porCuarto) }, partido); return true; }
+  catch (e) { return false; }
+}
+
 const entradas = [];
+const reparadas = [];
 const progreso = {};
 let tercerCompleta = true;
 
@@ -105,6 +134,7 @@ for (const comp of COMPS) {
 
   for (const c of comparados) {
     if (c.decision !== 'gana_vieja') continue;
+    if (yaReparada(comp, c.partido)) { reparadas.push({ partido: c.partido, competicion: comp }); continue; }
     entradas.push({
       partido: c.partido, competicion: comp, causa: causaDe(c.motivo), motivo: c.motivo,
       parcialesViejo: c.parcialesViejo, parcialesNuevo: c.parcialesNuevo,
@@ -134,6 +164,7 @@ const salida = {
     'termine, antes de usarlo para decidir la promocion.',
   porCausa,
   porPuntosPorCuarto,
+  reparadasExcluidas: reparadas,
   entradas,
 };
 if (salida.avisoSiProvisional === undefined) delete salida.avisoSiProvisional;
@@ -141,6 +172,10 @@ if (salida.avisoSiProvisional === undefined) delete salida.avisoSiProvisional;
 fs.writeFileSync(F_SALIDA, JSON.stringify(salida, null, 1));
 console.log(`Escrito ${F_SALIDA}: ${entradas.length} entrada(s) (${JSON.stringify(porCausa)}).`);
 console.log(`Puntos por cuarto vs fuente oficial: ${JSON.stringify(porPuntosPorCuarto)}`);
+if (reparadas.length) {
+  console.log(`Excluidas del registro (ya pasan verificarActa tras una repromocion posterior): ` +
+    `${reparadas.length} -> ${reparadas.map(r => r.partido).join(', ')}`);
+}
 if (!tercerCompleta) {
   console.log(`⚠ Provisional: Tercera sigue comparando (${progreso.tercerafeb} comparados). Regenerar al terminar.`);
 }

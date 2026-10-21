@@ -1,6 +1,6 @@
 {
  "_comentario": "Partidos de la temporada 2025 (cerrada) que la reparacion en paralelo marco `gana_vieja`: ni la extraccion nueva ni la vieja pasan verificarActa. Generado desde data/raw-reparado/*/2025/_informe-parcial.json por scraper/generar-registro-irreparables.js -- no se edita a mano, se regenera.",
- "generado": "2026-10-20T12:39:58.791Z",
+ "generado": "2026-10-21T12:59:20.556Z",
  "progresoReparacionAlGenerar": {
   "primerafeb": 290,
   "segundafeb": 394,
@@ -8,14 +8,28 @@
  },
  "provisional": false,
  "porCausa": {
-  "empate_total": 55,
-  "vieja_mas_parciales": 20
+  "empate_total": 54,
+  "vieja_mas_parciales": 18
  },
  "porPuntosPorCuarto": {
-  "correctos": 37,
+  "correctos": 40,
   "no_legible": 4,
-  "incorrectos": 34
+  "incorrectos": 28
  },
+ "reparadasExcluidas": [
+  {
+   "partido": "2484678",
+   "competicion": "tercerafeb"
+  },
+  {
+   "partido": "2488227",
+   "competicion": "tercerafeb"
+  },
+  {
+   "partido": "2488302",
+   "competicion": "tercerafeb"
+  }
+ ],
  "entradas": [
   {
    "partido": "2486333",
@@ -132,7 +146,7 @@
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
    "parcialesNuevo": 4,
-   "puntosPorCuarto": "incorrectos"
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2484601",
@@ -178,15 +192,6 @@
    "parcialesViejo": 4,
    "parcialesNuevo": 3,
    "puntosPorCuarto": "correctos"
-  },
-  {
-   "partido": "2484678",
-   "competicion": "tercerafeb",
-   "causa": "empate_total",
-   "motivo": "empate total (verificarActa y parciales): no se toca",
-   "parcialesViejo": 4,
-   "parcialesNuevo": 4,
-   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2484682",
@@ -504,15 +509,6 @@
    "puntosPorCuarto": "correctos"
   },
   {
-   "partido": "2488227",
-   "competicion": "tercerafeb",
-   "causa": "vieja_mas_parciales",
-   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
-   "parcialesViejo": 4,
-   "parcialesNuevo": 3,
-   "puntosPorCuarto": "incorrectos"
-  },
-  {
    "partido": "2488228",
    "competicion": "tercerafeb",
    "causa": "empate_total",
@@ -528,7 +524,7 @@
    "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 2)",
    "parcialesViejo": 4,
    "parcialesNuevo": 2,
-   "puntosPorCuarto": "incorrectos"
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488232",
@@ -564,7 +560,7 @@
    "motivo": "empate total (verificarActa y parciales): no se toca",
    "parcialesViejo": 4,
    "parcialesNuevo": 4,
-   "puntosPorCuarto": "incorrectos"
+   "puntosPorCuarto": "correctos"
   },
   {
    "partido": "2488249",
@@ -637,15 +633,6 @@
    "parcialesViejo": 4,
    "parcialesNuevo": 3,
    "puntosPorCuarto": "correctos"
-  },
-  {
-   "partido": "2488302",
-   "competicion": "tercerafeb",
-   "causa": "vieja_mas_parciales",
-   "motivo": "empate en verificarActa, la vieja trae mas parciales (4 > 3)",
-   "parcialesViejo": 4,
-   "parcialesNuevo": 3,
-   "puntosPorCuarto": "incorrectos"
   },
   {
    "partido": "2488303",
