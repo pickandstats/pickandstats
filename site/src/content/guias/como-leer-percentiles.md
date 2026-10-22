@@ -2,6 +2,7 @@
 titulo: Cómo leer los percentiles, la forma más rápida de valorar a un jugador
 descripcion: Qué es un percentil, por qué compara mejor que las medias, cómo se leen las dos referencias (nacional y grupo) y qué límites tiene, con ejemplos reales de la Tercera FEB.
 descripcionSeo: Qué es un percentil, por qué compara mejor que las medias y cómo leer las dos referencias, nacional y grupo, con ejemplos de la Tercera FEB.
+actualizado: 2026-10-22
 familia: metricas
 orden: 10
 fecha: 2026-08-03
@@ -68,16 +69,31 @@ localizar de un vistazo dónde destaca alguien, no un juicio sobre el jugador.
 
 ## Un límite importante: el mínimo de partidos
 
-Los percentiles solo se calculan para jugadores con **12 partidos o más**. En la
-Tercera FEB 2025/26, eso dejó fuera a 880 de los 2.402 jugadores registrados.
+Los percentiles solo se calculan para quien ha jugado el **60% de los partidos de su
+equipo**, con un suelo de tres. Es un listón que se mueve con la temporada: en la
+Tercera FEB 2025/26, de 26 jornadas, fueron **16 partidos**, y eso dejó fuera a 1.087
+de los 2.402 jugadores registrados. En una temporada recién empezada son tres.
 
-El motivo es que con pocos partidos un promedio no describe el nivel de un jugador,
-sino lo que le pasó en esos encuentros. Alguien que jugó dos partidos y anotó bien en
-ambos aparecería en el percentil 95, compitiendo con jugadores que han sostenido su
-rendimiento durante toda la temporada. Sería engañoso.
+El motivo de que sea una proporción y no un número fijo es que un número fijo
+significa cosas distintas según cuándo se mire. Doce partidos son casi la mitad de una
+temporada de Tercera y poco más de un tercio de una de Primera. Y en noviembre, cuando
+los equipos llevan doce jornadas, exigir doce partidos no filtra muestras pequeñas:
+filtra a quien no se ha perdido ninguno. En la Primera FEB 2025/26 ese criterio dejaba,
+en la jornada 12, a **34 jugadores de los 235** que habían jugado algún partido — y el
+máximo anotador de esa lista acabó la temporada noveno.
 
-Si abres la ficha de un jugador y no ves barras de percentil, es por esto: no ha
-jugado lo suficiente para que la comparación tenga sentido.
+El fondo del límite no cambia: con pocos partidos un promedio no describe el nivel de
+un jugador, sino lo que le pasó en esos encuentros. Alguien que jugó dos partidos y
+anotó bien en ambos aparecería en el percentil 95, compitiendo con jugadores que han
+sostenido su rendimiento durante toda la temporada.
+
+Lo que conviene saber es que **en las primeras jornadas los percentiles se mueven
+mucho**. Con tres o cuatro partidos la distribución es ancha y una buena noche cambia
+de sitio a mucha gente: el percentil de octubre describe lo que ha pasado, no lo que
+cabe esperar. Se va asentando a medida que el listón sube.
+
+Si abres la ficha de un jugador y no ves barras de percentil, es por esto: no ha jugado
+lo suficiente **para el momento de temporada en que estamos**.
 
 ## Qué no hacen los percentiles
 

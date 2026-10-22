@@ -5,6 +5,7 @@ descripcionSeo: "Guía práctica de Pick&Stats: clasificación por jornada, aná
 familia: app
 orden: 1
 fecha: 2026-09-13
+actualizado: 2026-10-22
 ---
 
 La aplicación tiene siete pestañas y la mayoría de la gente usa dos: la clasificación y la
@@ -92,9 +93,12 @@ preparar la jornada, la del grupo.
 Y puedes **superponer a otro jugador** en el mismo radar, que es la forma rápida de ver si
 dos perfiles se parecen o se complementan.
 
-**La trampa:** los percentiles necesitan **al menos 12 partidos jugados**. Quien no llegue
-no tiene percentiles calculados y no aparece en estas comparaciones. No es un olvido: con
-seis partidos, un percentil dice más del azar que del jugador.
+**La trampa:** los percentiles necesitan el **60% de los partidos que ha jugado el equipo**,
+con un suelo de tres — en una temporada cerrada de Tercera son 16; en octubre, tres. Quien no
+llegue no tiene percentiles calculados y no aparece en estas comparaciones. No es un olvido:
+con pocos partidos, un percentil dice más del azar que del jugador. Y el listón se mueve a
+propósito, porque un número fijo sería en noviembre un filtro de asistencia perfecta — está
+explicado en [la guía de percentiles](/guias/como-leer-percentiles/).
 
 ## 5. «Quiero comparar a estos dos (o cuatro)»
 
@@ -138,7 +142,9 @@ pronto y la está aprovechando.
 
 **Inicio** resume la temporada: los líderes en siete categorías, los equipos dominantes,
 quién está en racha en los últimos cinco partidos y los últimos resultados. Todo se puede
-filtrar por grupo.
+filtrar por grupo. Cada líder lleva al lado los partidos que ha jugado, y conviene mirarlo
+en octubre: el listón para entrar en esas listas es el mismo que el de los percentiles, así
+que en las primeras jornadas son tres partidos y las cifras son altas por eso.
 
 **Leyenda** es el diccionario: qué significa cada abreviatura y cada métrica, con enlaces
 a las guías que las explican a fondo.
