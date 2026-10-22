@@ -2,7 +2,8 @@
 // la ficha de partido (carga diferida). Producto final servido a la app.
 //
 // Lee las actas (data/raw/<comp>/<temp>/actas/<id>.json) y escribe
-// web/public/data/<comp>/<temp>/boxscore-cuartos/<id>.json
+// data/processed/<comp>/<temp>/boxscore-cuartos/<id>.json (el deploy lo
+// copia a web/public/data -- ver S17.4/S17.7, no se escribe ahi directamente)
 //
 // DOS banderas, no una (_instrucciones.md 21/10, punto 2 -- correccion sobre
 // el `completo` unico de ayer, que junto otra vez dos preguntas distintas y
