@@ -294,6 +294,7 @@ th.col-a { color: #ffd9c4; }
 }
 .card-lista li::before { content: counter(r) "."; color: var(--tinta-suave); margin-right: 6px; }
 .card-mini-val { font-variant-numeric: tabular-nums; color: var(--tinta-suave); }
+.card-mini-pj { font-size: 12px; }
 
 .inicio-dos-col {
   display: grid;

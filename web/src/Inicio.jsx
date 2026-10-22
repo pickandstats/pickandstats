@@ -47,8 +47,6 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
     .sort((a, b) => valorDe(b, clave) - valorDe(a, clave))
     .slice(0, 5);
 
-  const algunaTarjetaVacia = elegibles.length === 0;
-
   const cardsLideres = [
     { titulo: 'Anotación', clave: 'ptPorPartido', sufijo: 'pts' },
     { titulo: 'Valoración', clave: 'vaPorPartido', sufijo: 'val' },
@@ -120,9 +118,14 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
       ) : (
         <>
           <h3 className="seccion">Líderes {hayFiltro ? `· ${alcance}` : 'de la temporada'}</h3>
-          {algunaTarjetaVacia && (
-            <p className="nota-tabla">Entran en estas listas a partir de {minPj} partidos jugados.</p>
-          )}
+          {/* Siempre visible, no solo cuando una tarjeta queda vacia (21/10/2026):
+              con minPj=12 el numero era tranquilizador y daba igual no verlo; con
+              minPj moviendose semana a semana (ahora {minPj}) es la informacion mas
+              importante de la tarjeta. Describe lo que la lista es -- un corte de
+              la temporada hasta ahora -- sin prometer que el orden se sostenga. */}
+          <p className="nota-tabla">Mínimo {minPj} partidos jugados para entrar en estas listas
+            {' '}— el listón sube con la temporada. Es lo que ha pasado hasta ahora, no una
+            {' '}previsión de cómo va a acabar.</p>
           <div className="cards-lideres">
             {cardsLideres.map(card => {
               const top = lider(card.clave);
@@ -137,13 +140,14 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                           <span className="card-sufijo"> {card.sufijo}</span></div>
                         <div className="card-nombre enlace"
                           onClick={() => onVerJugador(cabeza.idJugador)}>{cabeza.nombre}</div>
-                        <div className="card-equipo">{cabeza.equipo} · {cabeza.grupo}</div>
+                        <div className="card-equipo">{cabeza.equipo} · {cabeza.grupo} · {cabeza.pj} PJ</div>
                       </div>
                       <ol className="card-lista">
                         {top.slice(1).map(j => (
                           <li key={`${j.equipoId}|${j.nombre}`}>
                             <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                            <span className="card-mini-val">{fmtLider(valorDe(j, card.clave))}</span>
+                            <span className="card-mini-val">{fmtLider(valorDe(j, card.clave))}
+                              <span className="card-mini-pj"> · {j.pj} PJ</span></span>
                           </li>
                         ))}
                       </ol>
