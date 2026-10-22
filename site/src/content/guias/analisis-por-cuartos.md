@@ -5,6 +5,7 @@ descripcionSeo: Cómo leer el rendimiento por cuarto de equipos y jugadores, qu�
 familia: metricas
 orden: 6
 fecha: 2026-09-04
+actualizado: 2026-10-22
 temporada: "2025/26"
 ---
 
@@ -17,8 +18,8 @@ el primer cuarto y prácticamente nada en el último. Oviedo hacía justo lo con
 
 | Neto por cada 100 posesiones | Q1 | Q2 | Q3 | Q4 |
 |---|---|---|---|---|
-| **Inveready Gipuzkoa** | **+12,5** | +9,8 | +6,4 | +0,6 |
-| **Alimerka Oviedo** | +3,2 | +0,9 | +6,0 | **+15,1** |
+| **Inveready Gipuzkoa** | **+12,7** | +9,6 | +6,2 | +0,6 |
+| **Alimerka Oviedo** | +3,4 | +1,1 | +5,8 | **+14,9** |
 
 Dos equipos idénticos en la clasificación y opuestos en la forma de llegar ahí. Eso es
 lo que añade el análisis por cuartos: no *cuánto* rinde un equipo, sino **cuándo**.
@@ -42,8 +43,8 @@ Antes de leer a un equipo conviene saber contra qué se le compara. En la Primer
 
 | | Q1 | Q2 | Q3 | Q4 |
 |---|---|---|---|---|
-| Rating ofensivo | 107,3 | 107,4 | 107,0 | 107,0 |
-| Ritmo (posesiones) | 18,8 | 18,8 | 18,6 | 18,6 |
+| Rating ofensivo | 107,4 | 107,5 | 107,0 | 107,1 |
+| Ritmo (posesiones) | 18,9 | 18,9 | 18,6 | 18,7 |
 
 **No existe un cuarto donde se anote más.** La eficiencia media es prácticamente la
 misma en los cuatro, y el ritmo apenas se mueve. La idea de que los partidos "se abren"
@@ -60,18 +61,18 @@ cuartos. En toda la temporada 2025/26 solo lo dispararon cuatro de diecisiete:
 
 | Equipo | Q1 | Q2 | Q3 | Q4 | Diferencia |
 |---|---|---|---|---|---|
-| Caja Rural CB Zamora | −9,7 | −13,4 | +2,7 | +6,1 | **+9,7** |
-| Alimerka Oviedo | +3,2 | +0,9 | +6,0 | +15,1 | **+8,8** |
-| Flexicar Fuenlabrada | −1,9 | −4,4 | +8,8 | −8,4 | **−6,9** |
-| Inveready Gipuzkoa | +12,5 | +9,8 | +6,4 | +0,6 | **−6,7** |
+| Caja Rural CB Zamora | −9,4 | −13,3 | +3,1 | +6,3 | **+9,6** |
+| Alimerka Oviedo | +3,4 | +1,1 | +5,8 | +14,9 | **+8,6** |
+| Inveready Gipuzkoa | +12,7 | +9,6 | +6,2 | +0,6 | **−6,7** |
+| Flexicar Fuenlabrada | −1,7 | −4,2 | +8,9 | −8,3 | **−7,0** |
 
 Los otros trece son razonablemente los mismos en los cuatro cuartos, **y eso también es
-información**: el Monbus Obradoiro, campeón con 28-4, dominó de principio a fin (+16,7,
-+23,0, +17,4 y +25,0) sin ningún tramo débil. Un equipo plano y muy bueno no tiene un
+información**: el Monbus Obradoiro, campeón con 28-4, dominó de principio a fin (+16,5,
++23,1, +17,4 y +24,8) sin ningún tramo débil. Un equipo plano y muy bueno no tiene un
 problema de cierre que arreglar.
 
-El caso del Fuenlabrada merece una mirada aparte: un tercer cuarto excelente (+8,8) y un
-último cuarto de los peores de la liga (−8,4). Un perfil así apunta a algo concreto
+El caso del Fuenlabrada merece una mirada aparte: un tercer cuarto excelente (+8,9) y un
+último cuarto de los peores de la liga (−8,3). Un perfil así apunta a algo concreto
 —rotaciones, físico, gestión de las últimas posesiones— que la cifra de temporada,
 −0,9 de neto, escondía por completo.
 
@@ -110,7 +111,7 @@ una casualidad.
 ## Y el filtro tiene su propio límite
 
 Filtrar por partidos ajustados deja muy pocos partidos. La mediana de la categoría fueron
-**10 partidos ajustados por jugador**, y solo 183 de 275 jugadores llegaron a ocho.
+**10 partidos ajustados por jugador**, y solo 184 de 277 jugadores llegaron a ocho.
 
 Eso obliga a leer las cifras altas con cuidado. **Jordan Walker**, del HLA Alicante,
 aparece con 6,6 puntos y asistencias por partido decisivo, casi al nivel de Townes —
@@ -127,16 +128,23 @@ igualdad de tiempo están las
 
 **El marcador también condiciona al equipo, aunque menos de lo que parece.** Es habitual
 oír que los equipos que van por detrás disparan el ritmo del último cuarto, entre faltas
-y reloj parado. En la Primera FEB 2025/26 el efecto existe pero es pequeño: **ningún
-equipo varía más de 0,7 posesiones** entre su último cuarto y la media de los tres
-primeros, y el que más acelera —Hestia Menorca— acabó en mitad de tabla, no colista.
-Conviene no leer un ritmo alto en el último cuarto como prueba de que se va perdiendo.
+y reloj parado. En la Primera FEB 2025/26 el efecto existe pero es pequeño: el que más
+acelera —Hestia Menorca— gana **0,7 posesiones** entre su último cuarto y la media de los
+tres primeros, y el que más frena —Movistar Estudiantes— pierde **0,9**. Nadie sale de ese
+margen, y el que más acelera acabó en mitad de tabla, no colista. Conviene no leer un
+ritmo alto en el último cuarto como prueba de que se va perdiendo.
 
 **No ajusta por rival.** Un cuarto se juega contra quien toca, y ni el rendimiento por
 cuarto ni los momentos decisivos corrigen la calidad del oponente.
 
 **Los partidos de fases no cuentan.** Como en el resto de la aplicación, las fases de
 ascenso van aparte y no entran en estos promedios.
+
+**Y no hay histórico que comparar.** El desglose por cuartos sale del acta oficial en PDF, y
+esa extracción empieza en la temporada 2025/26: las anteriores están en la aplicación con sus
+estadísticas de temporada, pero sin cuartos. Así que de momento no se puede decir si un perfil
+de cierre se repite año a año; con la 2026/27 habrá dos temporadas que poner una al lado de la
+otra.
 
 ## Dónde verlo
 
