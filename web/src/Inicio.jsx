@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { srsListo, notaSrs } from './srsUtil';
-import { n1 } from './formato';
+import { n1, s1 } from './formato';
 
 const fecha = j => {
   const m = String(j).match(/\((\d{2})\/(\d{2})\/(\d{4})\)/);
@@ -179,8 +179,8 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                         <td className="izq"><span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span></td>
                         <td>{e.grupo}</td>
                         <td>{bal.pg}-{bal.pp}</td>
-                        <td>{srsListo(srsPestillo, e.grupo) ? e.srs : '—'}</td>
-                        <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{e.netrtg}</td>
+                        <td>{srsListo(srsPestillo, e.grupo) ? s1(e.srs) : '—'}</td>
+                        <td className={e.netrtg > 0 ? 'net-pos' : 'net-neg'}>{s1(e.netrtg)}</td>
                       </tr>
                       );
                     })}
@@ -210,7 +210,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                         <td>{e.grupo}</td>
                         <td>{e.forma5}</td>
                         <td className={e.forma5Dif > 0 ? 'net-pos' : 'net-neg'}>
-                          {e.forma5Dif > 0 ? '+' : ''}{e.forma5Dif}</td>
+                          {s1(e.forma5Dif)}</td>
                       </tr>
                     ))}
                   </tbody>

@@ -79,10 +79,10 @@ export default function DispersionJugadores({ jugadores, onVerJugador }) {
           <ScatterChart margin={{ top: 12, right: 20, bottom: 16, left: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" />
             <XAxis type="number" dataKey="x" name={tX.titulo}
-              domain={['dataMin - 2', 'dataMax + 2']} tick={{ fontSize: 12 }}
+              domain={['dataMin - 2', 'dataMax + 2']} tick={{ fontSize: 12 }} tickFormatter={n1}
               label={{ value: tX.titulo, position: 'insideBottom', offset: -8, fontSize: 12 }} />
             <YAxis type="number" dataKey="y" name={tY.titulo}
-              domain={['dataMin - 2', 'dataMax + 2']} tick={{ fontSize: 12 }}
+              domain={['dataMin - 2', 'dataMax + 2']} tick={{ fontSize: 12 }} tickFormatter={n1}
               label={{ value: tY.titulo, angle: -90, position: 'insideLeft', fontSize: 12 }} />
             <ZAxis type="number" dataKey="min" range={rango} name="Minutos" />
             <ReferenceLine x={medias.x} stroke={COLOR.suave} strokeDasharray="4 4" />

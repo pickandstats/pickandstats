@@ -6,7 +6,7 @@ import {
 import AnalisisEquipo from './AnalisisEquipo';
 import DossierPartido from './DossierPartido';
 import { srsListo, notaSrs } from './srsUtil';
-import { n1, s1 } from './formato';
+import { n0, n1, n2, s1 } from './formato';
 
 const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
@@ -207,8 +207,8 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
               }))} margin={{ top: 8, right: 12, left: -8, bottom: 4 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e4e7ee" />
                 <XAxis dataKey="cuarto" tick={{ fontSize: 13, fill: COLOR.tinta }} />
-                <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} />
-                <Tooltip />
+                <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} tickFormatter={n1} />
+                <Tooltip formatter={v => n1(v)} />
                 <Legend wrapperStyle={{ fontSize: 13 }} />
                 <Line type="monotone" dataKey="Ataque" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 4 }} />
                 <Line type="monotone" dataKey="Defensa" stroke="#7d93b2" strokeWidth={2.5} dot={{ r: 4 }} />
@@ -226,12 +226,12 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
               {cuartos.porCuarto.map((q, i) => (
                 <div className="dato" key={i}>
                   <div className="dato-etiqueta">{`Q${i + 1}`}</div>
-                  <div className="dato-valor">{q.pace}</div>
+                  <div className="dato-valor">{n1(q.pace)}</div>
                 </div>
               ))}
               <div className="dato" key="total">
                 <div className="dato-etiqueta">Total</div>
-                <div className="dato-valor" style={{ color: COLOR.acento }}>{equipo.pace}</div>
+                <div className="dato-valor" style={{ color: COLOR.acento }}>{n1(equipo.pace)}</div>
               </div>
             </div>
             <p className="pie" style={{ marginTop: 8 }}>
@@ -380,8 +380,8 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
               <BarChart data={fourFactors} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
                 <XAxis dataKey="factor" tick={{ fontSize: 13 }} />
-                <YAxis tick={{ fontSize: 12 }} />
-                <Tooltip formatter={(v, nombre) => [v, nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
+                <YAxis tick={{ fontSize: 12 }} tickFormatter={n2} />
+                <Tooltip formatter={(v, nombre) => [n2(v), nombre === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`]} />
                 <Legend formatter={v => v === 'equipo' ? equipo.nombre : `Media grupo ${equipo.grupo}`} />
                 <Bar dataKey="equipo" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
                 <Bar dataKey="grupo" fill={COLOR.suave} radius={[3, 3, 0, 0]} />
@@ -436,11 +436,11 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
                     <td className="izq">
                       <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                     </td>
-                    <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
-                    <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td>
-                    <td>{j.brPorPartido}</td><td>{j.bpPorPartido}</td><td>{j.tpPorPartido}</td>
-                    <td>{j.t2Pct}</td><td>{j.t3Pct}</td><td>{j.tlPct}</td>
-                    <td>{j.vaPorPartido}</td><td>{j.ts}</td><td>{j.usg}</td>
+                    <td>{n0(j.pj)}</td><td>{n1(j.minPorPartido)}</td><td>{n1(j.ptPorPartido)}</td>
+                    <td>{n1(j.rtPorPartido)}</td><td>{n1(j.asPorPartido)}</td>
+                    <td>{n1(j.brPorPartido)}</td><td>{n1(j.bpPorPartido)}</td><td>{n1(j.tpPorPartido)}</td>
+                    <td>{n1(j.t2Pct)}</td><td>{n1(j.t3Pct)}</td><td>{n1(j.tlPct)}</td>
+                    <td>{n1(j.vaPorPartido)}</td><td>{n1(j.ts)}</td><td>{n1(j.usg)}</td>
                   </tr>
                 ))}
               </tbody>

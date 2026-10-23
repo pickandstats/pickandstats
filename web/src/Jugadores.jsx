@@ -1,56 +1,60 @@
 import { useMemo, useState, useEffect } from 'react';
 import DispersionJugadores from './DispersionJugadores';
+import { FORMATOS } from './formato';
 
+// `fmt` por columna (_instrucciones.md 23/10, punto 4). `pm` (+/-) en n0, no
+// s1: mismo criterio que `dato('+/-', carrera.pm, true)` en la ficha del
+// jugador (Jugador.jsx) -- no lleva signo explicito ahi tampoco.
 const COMUNES = [
   { clave: 'nombre', titulo: 'Jugador', izq: true },
   { clave: 'equipo', titulo: 'Equipo',  izq: true },
   { clave: 'grupo',  titulo: 'Grupo',   izq: true },
-  { clave: 'pj',     titulo: 'PJ' },
-  { clave: 'minPorPartido', titulo: 'MIN', tip: 'Minutos por partido' },
+  { clave: 'pj',     titulo: 'PJ', fmt: 'n0' },
+  { clave: 'minPorPartido', titulo: 'MIN', tip: 'Minutos por partido', fmt: 'n1' },
 ];
 
 const MODOS = {
   basica: [
     ...COMUNES,
-    { clave: 'ptPorPartido', titulo: 'PTS' },
-    { clave: 'roPorPartido', titulo: 'RO',  tip: 'Rebotes ofensivos' },
-    { clave: 'rdPorPartido', titulo: 'RD',  tip: 'Rebotes defensivos' },
-    { clave: 'rtPorPartido', titulo: 'REB', tip: 'Rebotes totales' },
-    { clave: 'asPorPartido', titulo: 'AST' },
-    { clave: 'brPorPartido', titulo: 'ROB' },
-    { clave: 'bpPorPartido', titulo: 'BP',  tip: 'Pérdidas' },
-    { clave: 't2Pct',        titulo: 'T2%' },
-    { clave: 't3Pct',        titulo: 'T3%' },
-    { clave: 'tlPct',        titulo: 'TL%' },
-    { clave: 'vaPorPartido', titulo: 'VAL' },
+    { clave: 'ptPorPartido', titulo: 'PTS', fmt: 'n1' },
+    { clave: 'roPorPartido', titulo: 'RO',  tip: 'Rebotes ofensivos', fmt: 'n1' },
+    { clave: 'rdPorPartido', titulo: 'RD',  tip: 'Rebotes defensivos', fmt: 'n1' },
+    { clave: 'rtPorPartido', titulo: 'REB', tip: 'Rebotes totales', fmt: 'n1' },
+    { clave: 'asPorPartido', titulo: 'AST', fmt: 'n1' },
+    { clave: 'brPorPartido', titulo: 'ROB', fmt: 'n1' },
+    { clave: 'bpPorPartido', titulo: 'BP',  tip: 'Pérdidas', fmt: 'n1' },
+    { clave: 't2Pct',        titulo: 'T2%', fmt: 'n1' },
+    { clave: 't3Pct',        titulo: 'T3%', fmt: 'n1' },
+    { clave: 'tlPct',        titulo: 'TL%', fmt: 'n1' },
+    { clave: 'vaPorPartido', titulo: 'VAL', fmt: 'n1' },
   ],
   avanzada: [
     ...COMUNES,
-    { clave: 'ptPorPartido', titulo: 'PTS' },
-    { clave: 'vaPorPartido', titulo: 'VAL' },
-    { clave: 'ts',  titulo: 'TS%',  tip: 'True Shooting' },
-    { clave: 'efg', titulo: 'eFG%', tip: 'Tiro de campo efectivo' },
-    { clave: 'usg', titulo: 'USG%', tip: 'Posesiones usadas' },
-    { clave: 'pm',  titulo: '+/-',  tip: 'Acumulado en pista' },
+    { clave: 'ptPorPartido', titulo: 'PTS', fmt: 'n1' },
+    { clave: 'vaPorPartido', titulo: 'VAL', fmt: 'n1' },
+    { clave: 'ts',  titulo: 'TS%',  tip: 'True Shooting', fmt: 'n1' },
+    { clave: 'efg', titulo: 'eFG%', tip: 'Tiro de campo efectivo', fmt: 'n1' },
+    { clave: 'usg', titulo: 'USG%', tip: 'Posesiones usadas', fmt: 'n1' },
+    { clave: 'pm',  titulo: '+/-',  tip: 'Acumulado en pista', fmt: 'n0' },
   ],
   per36: [
     ...COMUNES,
-    { clave: 'per36.pt', titulo: 'PTS/40' },
-    { clave: 'per36.rt', titulo: 'REB/40' },
-    { clave: 'per36.as', titulo: 'AST/40' },
-    { clave: 'per36.br', titulo: 'ROB/40' },
-    { clave: 'per36.va', titulo: 'VAL/40' },
-    { clave: 'ts',  titulo: 'TS%' },
-    { clave: 'usg', titulo: 'USG%' },
+    { clave: 'per36.pt', titulo: 'PTS/40', fmt: 'n1' },
+    { clave: 'per36.rt', titulo: 'REB/40', fmt: 'n1' },
+    { clave: 'per36.as', titulo: 'AST/40', fmt: 'n1' },
+    { clave: 'per36.br', titulo: 'ROB/40', fmt: 'n1' },
+    { clave: 'per36.va', titulo: 'VAL/40', fmt: 'n1' },
+    { clave: 'ts',  titulo: 'TS%', fmt: 'n1' },
+    { clave: 'usg', titulo: 'USG%', fmt: 'n1' },
   ],
   detalle: [
     ...COMUNES,
-    { clave: 'tpPorPartido',  titulo: 'TAP', tip: 'Tapones a favor por partido' },
-    { clave: 'tcoPorPartido', titulo: 'TR',  tip: 'Tapones recibidos por partido' },
-    { clave: 'fcPorPartido',  titulo: 'FC',  tip: 'Faltas cometidas por partido' },
-    { clave: 'frPorPartido',  titulo: 'FR',  tip: 'Faltas recibidas por partido' },
-    { clave: 'bpPorPartido',  titulo: 'BP',  tip: 'Pérdidas por partido' },
-    { clave: 'brPorPartido',  titulo: 'ROB', tip: 'Robos por partido' },
+    { clave: 'tpPorPartido',  titulo: 'TAP', tip: 'Tapones a favor por partido', fmt: 'n1' },
+    { clave: 'tcoPorPartido', titulo: 'TR',  tip: 'Tapones recibidos por partido', fmt: 'n1' },
+    { clave: 'fcPorPartido',  titulo: 'FC',  tip: 'Faltas cometidas por partido', fmt: 'n1' },
+    { clave: 'frPorPartido',  titulo: 'FR',  tip: 'Faltas recibidas por partido', fmt: 'n1' },
+    { clave: 'bpPorPartido',  titulo: 'BP',  tip: 'Pérdidas por partido', fmt: 'n1' },
+    { clave: 'brPorPartido',  titulo: 'ROB', tip: 'Robos por partido', fmt: 'n1' },
   ],
 };
 
@@ -230,7 +234,7 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
                         }}>{j.equipo}</span>
                       : c.clave === 'nombre'
                       ? <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                      : valor(j, c.clave)}
+                      : c.fmt ? FORMATOS[c.fmt](valor(j, c.clave)) : valor(j, c.clave)}
                   </td>
                 ))}
               </tr>

@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import RadarJugador from './RadarJugador';
-import { n0, n1 } from './formato';
+import { n0, n1, pct1 } from './formato';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
   BarChart, Bar
@@ -99,6 +99,20 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
   }, [carrera, soloHistorico]);
 
   const fmt = (v, ent) => ent ? n0(v) : n1(v);
+
+  // Las 17 columnas numericas de la tabla de trayectoria (tbody y tfoot
+  // comparten exactamente los mismos campos en el mismo orden) -- una
+  // funcion, no 34 celdas repetidas a mano.
+  const filaTrayectoria = t => <>
+    <td>{n0(t.pj)}</td>
+    <td>{n1(t.minPorPartido)}</td><td>{n1(t.ptPorPartido)}</td>
+    <td>{n1(t.roPorPartido)}</td><td>{n1(t.rdPorPartido)}</td><td>{n1(t.rtPorPartido)}</td>
+    <td>{n1(t.asPorPartido)}</td><td>{n1(t.brPorPartido)}</td><td>{n1(t.bpPorPartido)}</td>
+    <td>{n1(t.tpPorPartido)}</td><td>{n1(t.tcoPorPartido)}</td>
+    <td>{n1(t.fcPorPartido)}</td><td>{n1(t.frPorPartido)}</td>
+    <td>{n1(t.t2Pct)}</td><td>{n1(t.t3Pct)}</td><td>{n1(t.tlPct)}</td>
+    <td>{n1(t.vaPorPartido)}</td><td>{n1(t.ts)}</td>
+  </>;
 
   const dato = (etiqueta, valor, ent) => (
     <div className="dato" key={etiqueta}>
@@ -236,13 +250,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
                     <tr key={t.temp}>
                       <td className="izq">{etiquetaTemp(t.temp)}</td>
                       <td className="izq">{t.equipos.join(', ')}</td>
-                      <td>{t.pj}</td><td>{t.minPorPartido}</td><td>{t.ptPorPartido}</td>
-                      <td>{t.roPorPartido}</td><td>{t.rdPorPartido}</td><td>{t.rtPorPartido}</td>
-                      <td>{t.asPorPartido}</td><td>{t.brPorPartido}</td><td>{t.bpPorPartido}</td>
-                      <td>{t.tpPorPartido}</td><td>{t.tcoPorPartido}</td>
-                      <td>{t.fcPorPartido}</td><td>{t.frPorPartido}</td>
-                      <td>{t.t2Pct}</td><td>{t.t3Pct}</td><td>{t.tlPct}</td>
-                      <td>{t.vaPorPartido}</td><td>{t.ts}</td>
+                      {filaTrayectoria(t)}
                     </tr>
                   ))}
                 </tbody>
@@ -250,24 +258,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
                   <tr className="fila-total">
                     <td className="izq">CARRERA</td>
                     <td className="izq">{historico.carrera.nTemporadas} temporadas</td>
-                    <td>{historico.carrera.pj}</td>
-                    <td>{historico.carrera.minPorPartido}</td>
-                    <td>{historico.carrera.ptPorPartido}</td>
-                    <td>{historico.carrera.roPorPartido}</td>
-                    <td>{historico.carrera.rdPorPartido}</td>
-                    <td>{historico.carrera.rtPorPartido}</td>
-                    <td>{historico.carrera.asPorPartido}</td>
-                    <td>{historico.carrera.brPorPartido}</td>
-                    <td>{historico.carrera.bpPorPartido}</td>
-                    <td>{historico.carrera.tpPorPartido}</td>
-                    <td>{historico.carrera.tcoPorPartido}</td>
-                    <td>{historico.carrera.fcPorPartido}</td>
-                    <td>{historico.carrera.frPorPartido}</td>
-                    <td>{historico.carrera.t2Pct}</td>
-                    <td>{historico.carrera.t3Pct}</td>
-                    <td>{historico.carrera.tlPct}</td>
-                    <td>{historico.carrera.vaPorPartido}</td>
-                    <td>{historico.carrera.ts}</td>
+                    {filaTrayectoria(historico.carrera)}
                   </tr>
                 </tfoot>
               </table>
@@ -281,8 +272,8 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
                 }))} margin={{ top: 8, right: 12, left: -14, bottom: 0 }}>
                   <CartesianGrid strokeDasharray="3 3" stroke="#e3e6eb" vertical={false} />
                   <XAxis dataKey="temporada" tick={{ fontSize: 13 }} />
-                  <YAxis tick={{ fontSize: 12 }} />
-                  <Tooltip />
+                  <YAxis tick={{ fontSize: 12 }} tickFormatter={n1} />
+                  <Tooltip formatter={v => n1(v)} />
                   <Legend />
                   <Bar dataKey="Puntos" fill={COLOR.acento} radius={[3, 3, 0, 0]} />
                   <Bar dataKey="Valoración" fill={COLOR.tinta} radius={[3, 3, 0, 0]} />
@@ -359,12 +350,12 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
                 <tr key={e.equipoId}>
                   <td className="izq">{enlaceEquipo(e)}</td>
                   <td className="izq">{e.grupo}</td>
-                  <td>{e.pj}</td><td>{e.minPorPartido}</td><td>{e.ptPorPartido}</td>
-                  <td>{e.roPorPartido}</td><td>{e.rdPorPartido}</td><td>{e.rtPorPartido}</td>
-                  <td>{e.asPorPartido}</td><td>{e.brPorPartido}</td><td>{e.bpPorPartido}</td>
-                  <td>{e.tpPorPartido}</td><td>{e.fcPorPartido}</td><td>{e.frPorPartido}</td>
-                  <td>{e.t2} ({e.t2Pct}%)</td><td>{e.t3} ({e.t3Pct}%)</td><td>{e.tl} ({e.tlPct}%)</td>
-                  <td>{e.vaPorPartido}</td><td>{e.ts}</td><td>{e.efg}</td><td>{e.usg}</td><td>{e.pm}</td>
+                  <td>{n0(e.pj)}</td><td>{n1(e.minPorPartido)}</td><td>{n1(e.ptPorPartido)}</td>
+                  <td>{n1(e.roPorPartido)}</td><td>{n1(e.rdPorPartido)}</td><td>{n1(e.rtPorPartido)}</td>
+                  <td>{n1(e.asPorPartido)}</td><td>{n1(e.brPorPartido)}</td><td>{n1(e.bpPorPartido)}</td>
+                  <td>{n1(e.tpPorPartido)}</td><td>{n1(e.fcPorPartido)}</td><td>{n1(e.frPorPartido)}</td>
+                  <td>{e.t2} ({pct1(e.t2Pct)})</td><td>{e.t3} ({pct1(e.t3Pct)})</td><td>{e.tl} ({pct1(e.tlPct)})</td>
+                  <td>{n1(e.vaPorPartido)}</td><td>{n1(e.ts)}</td><td>{n1(e.efg)}</td><td>{n1(e.usg)}</td><td>{n0(e.pm)}</td>
                 </tr>
               ))}
             </tbody>
@@ -436,8 +427,8 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
             }))} margin={{ top: 8, right: 12, left: -8, bottom: 4 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e4e7ee" />
               <XAxis dataKey="cuarto" tick={{ fontSize: 13, fill: COLOR.tinta }} />
-              <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} />
-              <Tooltip />
+              <YAxis tick={{ fontSize: 12, fill: COLOR.tinta }} tickFormatter={n1} />
+              <Tooltip formatter={v => n1(v)} />
               <Legend wrapperStyle={{ fontSize: 13 }} />
               <Line type="monotone" dataKey="Puntos" stroke={COLOR.acento} strokeWidth={2.5} dot={{ r: 4 }} />
               <Line type="monotone" dataKey="Valoración" stroke="#7d93b2" strokeWidth={2.5} dot={{ r: 4 }} />

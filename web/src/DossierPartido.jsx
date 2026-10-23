@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import AnalisisEquipo from './AnalisisEquipo';
-import { n1 } from './formato';
+import { n0, n1, pct1, s1, FORMATOS } from './formato';
 
 function nivelVs(valor, media, menosEsMejor = false, u1 = 0.06, u2 = 0.15) {
   if (!media) return 0;
@@ -56,25 +56,28 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
     const facetasDe = (at, def) => ([
       {
         nombre: 'Acierto de tiro',
-        detalle: `eFG% ${at.efg} vs defensa que permite ${def.efgRival}`,
+        detalle: `eFG% ${n1(at.efg)} vs defensa que permite ${n1(def.efgRival)}`,
         nAt: nivelVs(at.efg, m.efg),
         nDef: nivelVs(def.efgRival, m.efgRival, true),
       },
       {
         nombre: 'Cuidado del balón vs presión',
-        detalle: `pierde ${at.tovPct}% vs defensa que fuerza ${def.tovForzadas}%`,
+        // pct1, no n1 + "%" a mano: aqui no hay una etiqueta "TOV%" delante
+        // del numero (a diferencia de eFG%/ORB%/FTr de abajo), asi que la
+        // frase necesita el "%" explicito para que se entienda sola.
+        detalle: `pierde ${pct1(at.tovPct)} vs defensa que fuerza ${pct1(def.tovForzadas)}`,
         nAt: nivelVs(at.tovPct, m.tovPct, true),
         nDef: nivelVs(def.tovForzadas, m.tovForzadas),
       },
       {
         nombre: 'Rebote ofensivo vs cierre',
-        detalle: `ORB% ${at.orbPct} vs DRB% rival ${def.drbPct}`,
+        detalle: `ORB% ${n1(at.orbPct)} vs DRB% rival ${n1(def.drbPct)}`,
         nAt: nivelVs(at.orbPct, m.orbPct),
         nDef: nivelVs(def.drbPct, m.drbPct),
       },
       {
         nombre: 'Generar faltas vs disciplina',
-        detalle: `FTr ${at.ftRate} vs rival que concede ${def.ftrRival}`,
+        detalle: `FTr ${n1(at.ftRate)} vs rival que concede ${n1(def.ftrRival)}`,
         nAt: nivelVs(at.ftRate, m.ftRate),
         nDef: nivelVs(def.ftrRival, m.ftrRival, true),
       },
@@ -144,21 +147,24 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
     </div>
   );
 
-  // Comparativa directa métrica a métrica
+  // Comparativa directa métrica a métrica. `fmt` por columna (punto 4,
+  // _instrucciones.md 23/10): encontrada interpolando el JSON crudo igual
+  // que las tablas de la lista explicita, arreglada de paso -- mismo
+  // formato por configuracion, no celda a celda.
   const METRICAS_COMPARATIVA = [
-    { clave: 'pfPartido', titulo: 'Puntos a favor / partido' },
-    { clave: 'pcPartido', titulo: 'Puntos en contra / partido', menosEsMejor: true },
-    { clave: 'pace', titulo: 'Pace (posesiones)' , neutra: true },
-    { clave: 'ortg', titulo: 'Rating ofensivo' },
-    { clave: 'drtg', titulo: 'Rating defensivo', menosEsMejor: true },
-    { clave: 'netrtg', titulo: 'Net Rating' },
-    { clave: 'efg', titulo: 'eFG%' },
-    { clave: 'ts', titulo: 'TS%' },
-    { clave: 'tovPct', titulo: 'Pérdidas %', menosEsMejor: true },
-    { clave: 'orbPct', titulo: 'Rebote ofensivo %' },
-    { clave: 'drbPct', titulo: 'Rebote defensivo %' },
-    { clave: 'efgRival', titulo: 'eFG% permitido', menosEsMejor: true },
-    { clave: 'tovForzadas', titulo: 'Pérdidas forzadas %' },
+    { clave: 'pfPartido', titulo: 'Puntos a favor / partido', fmt: 'n1' },
+    { clave: 'pcPartido', titulo: 'Puntos en contra / partido', menosEsMejor: true, fmt: 'n1' },
+    { clave: 'pace', titulo: 'Pace (posesiones)' , neutra: true, fmt: 'n1' },
+    { clave: 'ortg', titulo: 'Rating ofensivo', fmt: 'n1' },
+    { clave: 'drtg', titulo: 'Rating defensivo', menosEsMejor: true, fmt: 'n1' },
+    { clave: 'netrtg', titulo: 'Net Rating', fmt: 's1' },
+    { clave: 'efg', titulo: 'eFG%', fmt: 'n1' },
+    { clave: 'ts', titulo: 'TS%', fmt: 'n1' },
+    { clave: 'tovPct', titulo: 'Pérdidas %', menosEsMejor: true, fmt: 'n1' },
+    { clave: 'orbPct', titulo: 'Rebote ofensivo %', fmt: 'n1' },
+    { clave: 'drbPct', titulo: 'Rebote defensivo %', fmt: 'n1' },
+    { clave: 'efgRival', titulo: 'eFG% permitido', menosEsMejor: true, fmt: 'n1' },
+    { clave: 'tovForzadas', titulo: 'Pérdidas forzadas %', fmt: 'n1' },
     { clave: 'forma5', titulo: 'Últimos 5', texto: true },
   ];
 
@@ -185,12 +191,12 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
           <div className="duelo-cabecera">
             <div className="duelo-equipo">
               <div className="duelo-nombre">{equipo.nombre}</div>
-              <div className="duelo-record">{equipo.pg}-{equipo.pp} · Net {equipo.netrtg > 0 ? '+' : ''}{equipo.netrtg} · Últ.5 {equipo.forma5}</div>
+              <div className="duelo-record">{equipo.pg}-{equipo.pp} · Net {s1(equipo.netrtg)} · Últ.5 {equipo.forma5}</div>
             </div>
             <div className="duelo-vs">VS</div>
             <div className="duelo-equipo">
               <div className="duelo-nombre">{rival.nombre}</div>
-              <div className="duelo-record">{rival.pg}-{rival.pp} · Net {rival.netrtg > 0 ? '+' : ''}{rival.netrtg} · Últ.5 {rival.forma5}</div>
+              <div className="duelo-record">{rival.pg}-{rival.pp} · Net {s1(rival.netrtg)} · Últ.5 {rival.forma5}</div>
             </div>
           </div>
 
@@ -233,9 +239,9 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
                             <td className="izq">
                               <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                             </td>
-                            <td>{j.pj}</td><td>{j.minPorPartido}</td><td>{j.ptPorPartido}</td>
-                            <td>{j.rtPorPartido}</td><td>{j.asPorPartido}</td><td>{j.vaPorPartido}</td>
-                            <td>{j.ts}</td><td>{j.usg}</td>
+                            <td>{n0(j.pj)}</td><td>{n1(j.minPorPartido)}</td><td>{n1(j.ptPorPartido)}</td>
+                            <td>{n1(j.rtPorPartido)}</td><td>{n1(j.asPorPartido)}</td><td>{n1(j.vaPorPartido)}</td>
+                            <td>{n1(j.ts)}</td><td>{n1(j.usg)}</td>
                           </tr>
                           {perfil.length > 0 && (
                             <tr key={j.nombre + '-perfil'} className="fila-jug-perfil">
@@ -283,11 +289,12 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
                     ganaA = mc.menosEsMejor ? va < vb : va > vb;
                     ganaB = mc.menosEsMejor ? vb < va : vb > va;
                   }
+                  const fmt = mc.fmt ? FORMATOS[mc.fmt] : (v => v);
                   return (
                     <tr key={mc.clave}>
-                      <td className={ganaA ? 'domina-a' : ''} style={{ textAlign: 'right' }}>{va}</td>
+                      <td className={ganaA ? 'domina-a' : ''} style={{ textAlign: 'right' }}>{fmt(va)}</td>
                       <td className="metrica">{mc.titulo}</td>
-                      <td className={`izq ${ganaB ? 'domina-b' : ''}`}>{vb}</td>
+                      <td className={`izq ${ganaB ? 'domina-b' : ''}`}>{fmt(vb)}</td>
                     </tr>
                   );
                 })}

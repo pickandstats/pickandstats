@@ -1,59 +1,63 @@
 import { useEffect, useMemo, useState } from 'react';
 import { srsListo, notaSrs } from './srsUtil';
+import { FORMATOS } from './formato';
 
+// `fmt` por columna (_instrucciones.md 23/10, punto 4): un campo en la
+// configuracion de columnas, no un formateo celda a celda. Las columnas sin
+// `fmt` son texto (nombre, forma5) y se pintan tal cual.
 const COMUNES = [
   { clave: 'nombre', titulo: 'Equipo', izq: true },
-  { clave: 'pj',     titulo: 'PJ' },
-  { clave: 'pg',     titulo: 'PG' },
-  { clave: 'pp',     titulo: 'PP' },
+  { clave: 'pj',     titulo: 'PJ', fmt: 'n0' },
+  { clave: 'pg',     titulo: 'PG', fmt: 'n0' },
+  { clave: 'pp',     titulo: 'PP', fmt: 'n0' },
 ];
 
 const BASICA = [
   ...COMUNES,
-  { clave: 'pfPartido',  titulo: 'PF',   tip: 'Puntos a favor por partido' },
-  { clave: 'pcPartido',  titulo: 'PC',   tip: 'Puntos en contra por partido' },
-  { clave: 'difPartido', titulo: 'Dif.', tip: 'Diferencia media por partido' },
-  { clave: 't2PctEq',    titulo: 'T2%' },
-  { clave: 't3PctEq',    titulo: 'T3%' },
-  { clave: 'tlPctEq',    titulo: 'TL%' },
-  { clave: 'rebPartido', titulo: 'REB',  tip: 'Rebotes totales por partido' },
-  { clave: 'asPartido',  titulo: 'AST',  tip: 'Asistencias por partido' },
+  { clave: 'pfPartido',  titulo: 'PF',   tip: 'Puntos a favor por partido', fmt: 'n1' },
+  { clave: 'pcPartido',  titulo: 'PC',   tip: 'Puntos en contra por partido', fmt: 'n1' },
+  { clave: 'difPartido', titulo: 'Dif.', tip: 'Diferencia media por partido', fmt: 's1' },
+  { clave: 't2PctEq',    titulo: 'T2%', fmt: 'n1' },
+  { clave: 't3PctEq',    titulo: 'T3%', fmt: 'n1' },
+  { clave: 'tlPctEq',    titulo: 'TL%', fmt: 'n1' },
+  { clave: 'rebPartido', titulo: 'REB',  tip: 'Rebotes totales por partido', fmt: 'n1' },
+  { clave: 'asPartido',  titulo: 'AST',  tip: 'Asistencias por partido', fmt: 'n1' },
 ];
 
 const DETALLE = [
   ...COMUNES,
-  { clave: 'roPartido', titulo: 'RO',  tip: 'Rebotes ofensivos por partido' },
-  { clave: 'rdPartido', titulo: 'RD',  tip: 'Rebotes defensivos por partido' },
-  { clave: 'brPartido', titulo: 'ROB', tip: 'Robos por partido' },
-  { clave: 'bpPartido', titulo: 'BP',  tip: 'Pérdidas por partido' },
-  { clave: 'fcPartido', titulo: 'FC',  tip: 'Faltas cometidas por partido' },
-  { clave: 'frPartido', titulo: 'FR',  tip: 'Faltas recibidas por partido' },
-  { clave: 'tapFavor',  titulo: 'TAP', tip: 'Tapones a favor por partido' },
-  { clave: 'tapContra', titulo: 'TR',  tip: 'Tapones recibidos por partido' },
+  { clave: 'roPartido', titulo: 'RO',  tip: 'Rebotes ofensivos por partido', fmt: 'n1' },
+  { clave: 'rdPartido', titulo: 'RD',  tip: 'Rebotes defensivos por partido', fmt: 'n1' },
+  { clave: 'brPartido', titulo: 'ROB', tip: 'Robos por partido', fmt: 'n1' },
+  { clave: 'bpPartido', titulo: 'BP',  tip: 'Pérdidas por partido', fmt: 'n1' },
+  { clave: 'fcPartido', titulo: 'FC',  tip: 'Faltas cometidas por partido', fmt: 'n1' },
+  { clave: 'frPartido', titulo: 'FR',  tip: 'Faltas recibidas por partido', fmt: 'n1' },
+  { clave: 'tapFavor',  titulo: 'TAP', tip: 'Tapones a favor por partido', fmt: 'n1' },
+  { clave: 'tapContra', titulo: 'TR',  tip: 'Tapones recibidos por partido', fmt: 'n1' },
 ];
 
 const EFICIENCIA = [
   ...COMUNES,
-  { clave: 'pace',   titulo: 'Pace',  tip: 'Posesiones por partido' },
-  { clave: 'ortg',   titulo: 'ORtg',  tip: 'Puntos por 100 posesiones' },
-  { clave: 'drtg',   titulo: 'DRtg',  tip: 'Puntos encajados por 100 posesiones' },
-  { clave: 'netrtg', titulo: 'Net',   tip: 'ORtg - DRtg' },
-  { clave: 'srs',    titulo: 'SRS',   tip: 'Net ajustado por la dificultad del calendario. Solo comparable entre equipos del mismo grupo: los grupos no se cruzan en liga regular' },
-  { clave: 'victoriasEsperadas', titulo: 'VE', tip: 'Victorias esperadas segun la diferencia de puntos' },
-  { clave: 'suerte', titulo: 'Suerte', tip: 'Victorias reales menos esperadas' },
+  { clave: 'pace',   titulo: 'Pace',  tip: 'Posesiones por partido', fmt: 'n1' },
+  { clave: 'ortg',   titulo: 'ORtg',  tip: 'Puntos por 100 posesiones', fmt: 'n1' },
+  { clave: 'drtg',   titulo: 'DRtg',  tip: 'Puntos encajados por 100 posesiones', fmt: 'n1' },
+  { clave: 'netrtg', titulo: 'Net',   tip: 'ORtg - DRtg', fmt: 's1' },
+  { clave: 'srs',    titulo: 'SRS',   tip: 'Net ajustado por la dificultad del calendario. Solo comparable entre equipos del mismo grupo: los grupos no se cruzan en liga regular', fmt: 's1' },
+  { clave: 'victoriasEsperadas', titulo: 'VE', tip: 'Victorias esperadas segun la diferencia de puntos', fmt: 'n1' },
+  { clave: 'suerte', titulo: 'Suerte', tip: 'Victorias reales menos esperadas', fmt: 's1' },
   { clave: 'forma5', titulo: 'Últ.5', tip: 'Récord últimos 5 partidos' },
 ];
 
 const FACTORES = [
   ...COMUNES,
-  { clave: 'efg',          titulo: 'eFG%',     tip: 'Tiro de campo efectivo' },
-  { clave: 'tovPct',       titulo: 'TOV%',     tip: 'Pérdidas por 100 posesiones (menos es mejor)' },
-  { clave: 'orbPct',       titulo: 'ORB%',     tip: '% de rebote ofensivo capturado' },
-  { clave: 'ftRate',       titulo: 'FTr',      tip: 'TL intentados por 100 tiros de campo' },
-  { clave: 'efgRival',     titulo: 'eFG% riv', tip: 'Tiro efectivo que permites al rival (menos es mejor)' },
-  { clave: 'tovForzadas',  titulo: 'TOV forz', tip: 'Pérdidas forzadas por 100 posesiones del rival' },
-  { clave: 'drbPct',       titulo: 'DRB%',     tip: '% de rebote defensivo asegurado' },
-  { clave: 'ftrRival',     titulo: 'FTr riv',  tip: 'TL que concede el rival por 100 tiros suyos (menos es mejor)' },
+  { clave: 'efg',          titulo: 'eFG%',     tip: 'Tiro de campo efectivo', fmt: 'n1' },
+  { clave: 'tovPct',       titulo: 'TOV%',     tip: 'Pérdidas por 100 posesiones (menos es mejor)', fmt: 'n1' },
+  { clave: 'orbPct',       titulo: 'ORB%',     tip: '% de rebote ofensivo capturado', fmt: 'n1' },
+  { clave: 'ftRate',       titulo: 'FTr',      tip: 'TL intentados por 100 tiros de campo', fmt: 'n1' },
+  { clave: 'efgRival',     titulo: 'eFG% riv', tip: 'Tiro efectivo que permites al rival (menos es mejor)', fmt: 'n1' },
+  { clave: 'tovForzadas',  titulo: 'TOV forz', tip: 'Pérdidas forzadas por 100 posesiones del rival', fmt: 'n1' },
+  { clave: 'drbPct',       titulo: 'DRB%',     tip: '% de rebote defensivo asegurado', fmt: 'n1' },
+  { clave: 'ftrRival',     titulo: 'FTr riv',  tip: 'TL que concede el rival por 100 tiros suyos (menos es mejor)', fmt: 'n1' },
 ];
 
 // Al cambiar de modo, ordenar por la métrica más relevante de ese modo
@@ -140,7 +144,8 @@ export default function Equipos({ equipos, grupos, srsPestillo, onVerEquipo }) {
                     ].join(' ').trim()}>
                     {c.clave === 'nombre'
                       ? <span className="enlace" onClick={() => onVerEquipo(e)}>{e.nombre}</span>
-                      : c.clave === 'srs' && !srsOk ? '—' : e[c.clave]}
+                      : c.clave === 'srs' && !srsOk ? '—'
+                      : c.fmt ? FORMATOS[c.fmt](e[c.clave]) : e[c.clave]}
                   </td>
                 ))}
               </tr>
