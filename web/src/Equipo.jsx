@@ -79,11 +79,18 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   const fourFactors = useMemo(() => {
     const delGrupo = equipos.filter(e => e.grupo === equipo.grupo);
     const media = clave => delGrupo.reduce((a, e) => a + e[clave], 0) / delGrupo.length;
+    // Redondea sin pasar por string (_instrucciones.md 23/10, punto 1): un
+    // numero que vuelve de toFixed() a Number() con `+` se re-parsea con
+    // Number(), y Number('3,14') es NaN -- aqui no mordia porque toFixed()
+    // siempre usa punto, pero es el mismo patron peligroso que abre la
+    // puerta a ese bug en cuanto algo en la cadena pase por formato local.
+    // Mismo idiom que `r2` en el scraper.
+    const r2 = x => Math.sign(x) * Math.round(Math.abs(x) * 100) / 100;
     return [
-      { factor: 'eFG%', equipo: equipo.efg,    grupo: +media('efg').toFixed(2) },
-      { factor: 'TOV%', equipo: equipo.tovPct, grupo: +media('tovPct').toFixed(2) },
-      { factor: 'ORB%', equipo: equipo.orbPct, grupo: +media('orbPct').toFixed(2) },
-      { factor: 'FTr',  equipo: equipo.ftRate, grupo: +media('ftRate').toFixed(2) },
+      { factor: 'eFG%', equipo: equipo.efg,    grupo: r2(media('efg')) },
+      { factor: 'TOV%', equipo: equipo.tovPct, grupo: r2(media('tovPct')) },
+      { factor: 'ORB%', equipo: equipo.orbPct, grupo: r2(media('orbPct')) },
+      { factor: 'FTr',  equipo: equipo.ftRate, grupo: r2(media('ftRate')) },
     ];
   }, [equipos, equipo]);
 
