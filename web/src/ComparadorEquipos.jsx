@@ -3,6 +3,7 @@ import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   ResponsiveContainer, Legend, Tooltip
 } from 'recharts';
+import { FORMATOS } from './formato';
 
 // Comparador de equipos de cualquier categoría (datos de temporada). Selección
 // simple (categoría → equipo, hay pocos equipos), tabla crudo + percentil y
@@ -165,7 +166,7 @@ export default function ComparadorEquipos({ temporada = '2025' }) {
                         const v = e[m.k]; const p = pctDe(e, m.k);
                         return (
                           <td key={e.id} className={i === mejor ? 'comparador-mejor' : ''}>
-                            <span className="comparador-crudo">{v != null ? v.toFixed(m.dec) : '—'}</span>
+                            <span className="comparador-crudo">{FORMATOS['n' + m.dec](v)}</span>
                             {p != null && <span className="comparador-pct">P{p}</span>}
                           </td>
                         );

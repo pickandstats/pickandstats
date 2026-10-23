@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import RadarJugador from './RadarJugador';
+import { n0, n1 } from './formato';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
   BarChart, Bar
@@ -97,11 +98,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
     };
   }, [carrera, soloHistorico]);
 
-  const fmt = (v, ent) => {
-    if (v === null || v === undefined || v === '') return '—';
-    if (typeof v === 'string' || !Number.isFinite(+v)) return v;
-    return ent ? String(Math.round(+v)) : (+v).toFixed(1);
-  };
+  const fmt = (v, ent) => ent ? n0(v) : n1(v);
 
   const dato = (etiqueta, valor, ent) => (
     <div className="dato" key={etiqueta}>

@@ -6,6 +6,7 @@ import {
 import AnalisisEquipo from './AnalisisEquipo';
 import DossierPartido from './DossierPartido';
 import { srsListo, notaSrs } from './srsUtil';
+import { n1, s1 } from './formato';
 
 const numJornada = j => parseInt((j.match(/\d+/) || [0])[0], 10);
 
@@ -116,8 +117,6 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
   const NEUTRAS = new Set(['pace', 't3ar', 'forma5', 'suerte']);
   const CON_SIGNO = new Set(['difPartido', 'netrtg', 'suerte']);
 
-  const fmt = v => (typeof v === 'string' || !Number.isFinite(+v)) ? v : (+v).toFixed(1);
-
   // Puesto dentro del grupo: da más contexto que el valor suelto.
   const puestoDe = clave => {
     const vals = delGrupo
@@ -138,11 +137,10 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
       if (p.puesto <= tercio) clase = 'val-bien';
       else if (p.puesto > p.total - tercio) clase = 'val-mal';
     }
-    const signo = CON_SIGNO.has(clave) && +v > 0 ? '+' : '';
     return (
       <div className="dato" key={etiqueta}>
         <div className="dato-etiqueta">{etiqueta}</div>
-        <div className={`dato-valor ${clase}`}>{signo}{fmt(v)}</div>
+        <div className={`dato-valor ${clase}`}>{CON_SIGNO.has(clave) ? s1(v) : n1(v)}</div>
         <div className="dato-puesto">{p ? `${p.puesto}º de ${p.total}` : ''}</div>
       </div>
     );

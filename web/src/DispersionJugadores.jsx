@@ -3,6 +3,7 @@ import {
   ScatterChart, Scatter, XAxis, YAxis, ZAxis, CartesianGrid,
   Tooltip, ReferenceLine, ResponsiveContainer, Cell
 } from 'recharts';
+import { n1 } from './formato';
 
 const COLOR = { tinta: '#16233a', acento: '#e8622c', suave: '#9aa1ac' };
 
@@ -93,9 +94,9 @@ export default function DispersionJugadores({ jugadores, onVerJugador }) {
                 return (
                   <div className="tooltip-dispersion">
                     <strong>{d.nombre}</strong>
-                    <div>{d.equipo} · {d.pj} partidos · {d.min.toFixed(1)} min</div>
-                    <div>{tX.titulo}: {d.x.toFixed(1)}</div>
-                    <div>{tY.titulo}: {d.y.toFixed(1)}</div>
+                    <div>{d.equipo} · {d.pj} partidos · {n1(d.min)} min</div>
+                    <div>{tX.titulo}: {n1(d.x)}</div>
+                    <div>{tY.titulo}: {n1(d.y)}</div>
                   </div>
                 );
               }} />

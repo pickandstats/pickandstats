@@ -10,6 +10,8 @@
 // grupo a la vez): si un solo equipo tiene el ajuste desbocado, la solucion
 // del grupo entero esta sin asentar, asi que el criterio se evalua con el
 // maximo del grupo, nunca equipo a equipo.
+import { n1 } from './formato';
+
 export const UMBRAL_SRS_DIF = 3;
 
 export const maxDifSrsGrupo = equiposDelGrupo =>
@@ -31,5 +33,5 @@ export const notaSrs = (equiposDelGrupo, etiquetaGrupo) => {
   const d = maxDifSrsGrupo(equiposDelGrupo);
   const sujeto = etiquetaGrupo ? `del grupo ${etiquetaGrupo}` : 'de este grupo';
   return `El SRS ${sujeto} aparecerá cuando el ajuste por calendario deje de ser ` +
-    `ruido de muestra; ahora el mayor del grupo es de ${d.toFixed(1)} puntos.`;
+    `ruido de muestra; ahora el mayor del grupo es de ${n1(d)} puntos.`;
 };

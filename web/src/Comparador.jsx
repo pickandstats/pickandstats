@@ -3,6 +3,7 @@ import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   ResponsiveContainer, Legend, Tooltip
 } from 'recharts';
+import { FORMATOS } from './formato';
 
 // Comparador de jugadores de cualquier categoría. Carga bajo demanda las listas
 // de jugadores de las tres competiciones y permite enfrentar 2-4 jugadores con
@@ -198,7 +199,7 @@ export default function Comparador({ temporada = '2025' }) {
                         const p = pctDe(j, m.k);
                         return (
                           <td key={j.idJugador} className={i === mejor ? 'comparador-mejor' : ''}>
-                            <span className="comparador-crudo">{v != null ? v.toFixed(m.dec) : '—'}</span>
+                            <span className="comparador-crudo">{FORMATOS['n' + m.dec](v)}</span>
                             {p != null && <span className="comparador-pct">P{p}</span>}
                           </td>
                         );
@@ -211,7 +212,7 @@ export default function Comparador({ temporada = '2025' }) {
                     <td className="izq">{m.etiq}</td>
                     {elegidos.map(j => (
                       <td key={j.idJugador}>
-                        <span className="comparador-crudo">{j[m.k] != null ? j[m.k].toFixed(m.dec) : '—'}</span>
+                        <span className="comparador-crudo">{FORMATOS['n' + m.dec](j[m.k])}</span>
                       </td>
                     ))}
                   </tr>

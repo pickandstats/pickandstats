@@ -1,5 +1,6 @@
 import { useMemo, useState, useEffect } from 'react';
 import AnalisisEquipo from './AnalisisEquipo';
+import { n1 } from './formato';
 
 function nivelVs(valor, media, menosEsMejor = false, u1 = 0.06, u2 = 0.15) {
   if (!media) return 0;
@@ -106,7 +107,7 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
     const difNet = equipo.netrtg - rival.netrtg;
     const pronostico = Math.abs(difNet) < 3
       ? 'Enfrentamiento muy igualado según el rendimiento global.'
-      : `Ventaja global para ${difNet > 0 ? equipo.nombre : rival.nombre} (${Math.abs(difNet).toFixed(1)} pts de Net Rating).`;
+      : `Ventaja global para ${difNet > 0 ? equipo.nombre : rival.nombre} (${n1(Math.abs(difNet))} pts de Net Rating).`;
 
     const paceA = nivelVs(equipo.pace, m.pace);
     const paceB = nivelVs(rival.pace, m.pace);

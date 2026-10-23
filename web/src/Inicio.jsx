@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { srsListo, notaSrs } from './srsUtil';
+import { n1 } from './formato';
 
 const fecha = j => {
   const m = String(j).match(/\((\d{2})\/(\d{2})\/(\d{4})\)/);
@@ -39,7 +40,6 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
   const elegibles = useMemo(() => jugadoresF.filter(j => j.pj >= minPj), [jugadoresF, minPj]);
   // El pipeline guarda la producción por 36 minutos; se muestra por 40, que es
   // la duración del partido en Europa.
-  const fmtLider = v => Number.isFinite(+v) ? (+v).toFixed(1) : '—';
   const valorDe = (j, clave) =>
     clave === 'per40pt' ? (j.per36 ? j.per36.pt * 40 / 36 : 0) : j[clave];
   const lider = clave => [...elegibles]
@@ -136,7 +136,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                   {cabeza ? (
                     <>
                       <div className="card-cabeza">
-                        <div className="card-valor">{fmtLider(valorDe(cabeza, card.clave))}
+                        <div className="card-valor">{n1(valorDe(cabeza, card.clave))}
                           <span className="card-sufijo"> {card.sufijo}</span></div>
                         <div className="card-nombre enlace"
                           onClick={() => onVerJugador(cabeza.idJugador)}>{cabeza.nombre}</div>
@@ -146,7 +146,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                         {top.slice(1).map(j => (
                           <li key={`${j.equipoId}|${j.nombre}`}>
                             <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
-                            <span className="card-mini-val">{fmtLider(valorDe(j, card.clave))}
+                            <span className="card-mini-val">{n1(valorDe(j, card.clave))}
                               <span className="card-mini-pj"> · {j.pj} PJ</span></span>
                           </li>
                         ))}
