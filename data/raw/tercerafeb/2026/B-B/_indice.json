@@ -325,7 +325,7 @@
    "id": "1008941",
    "nombre": "GINELUX TELDE"
   },
-  "resultado": "*-*",
+  "resultado": "70-65",
   "fecha": "24/10/2026",
   "hora": "16:00"
  },
@@ -340,7 +340,7 @@
    "id": "1009706",
    "nombre": "NÁUTICO TENERIFE"
   },
-  "resultado": "*-*",
+  "resultado": "83-74",
   "fecha": "24/10/2026",
   "hora": "18:30"
  },
@@ -355,7 +355,7 @@
    "id": "1008409",
    "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
   },
-  "resultado": "*-*",
+  "resultado": "63-84",
   "fecha": "24/10/2026",
   "hora": "19:30"
  },
@@ -370,7 +370,7 @@
    "id": "1008707",
    "nombre": "CB 7 PALMAS"
   },
-  "resultado": "*-*",
+  "resultado": "96-82",
   "fecha": "24/10/2026",
   "hora": "20:00"
  },
@@ -385,7 +385,7 @@
    "id": "1008866",
    "nombre": "UROS DE RIVAS"
   },
-  "resultado": "*-*",
+  "resultado": "83-95",
   "fecha": "24/10/2026",
   "hora": "20:30"
  },
@@ -400,7 +400,7 @@
    "id": "1010499",
    "nombre": "BALONCESTO ALCALA"
   },
-  "resultado": "*-*",
+  "resultado": "64-97",
   "fecha": "25/10/2026",
   "hora": "12:00"
  },
@@ -415,7 +415,7 @@
    "id": "1008865",
    "nombre": "IMPLICA REAL CANOE"
   },
-  "resultado": "*-*",
+  "resultado": "71-75",
   "fecha": "25/10/2026",
   "hora": "19:00"
  },
@@ -631,6 +631,21 @@
  },
  {
   "jornada": "Jornada 7(15/11/2026)",
+  "id": "2537253",
+  "local": {
+   "id": "1008865",
+   "nombre": "IMPLICA REAL CANOE"
+  },
+  "visitante": {
+   "id": "1008707",
+   "nombre": "CB 7 PALMAS"
+  },
+  "resultado": "*-*",
+  "fecha": "14/11/2026",
+  "hora": "18:30"
+ },
+ {
+  "jornada": "Jornada 7(15/11/2026)",
   "id": "2537254",
   "local": {
    "id": "1008935",
@@ -676,21 +691,6 @@
  },
  {
   "jornada": "Jornada 7(15/11/2026)",
-  "id": "2537253",
-  "local": {
-   "id": "1008865",
-   "nombre": "IMPLICA REAL CANOE"
-  },
-  "visitante": {
-   "id": "1008707",
-   "nombre": "CB 7 PALMAS"
-  },
-  "resultado": "*-*",
-  "fecha": "14/11/2026",
-  "hora": "19:30"
- },
- {
-  "jornada": "Jornada 7(15/11/2026)",
   "id": "2537249",
   "local": {
    "id": "1009706",
@@ -733,6 +733,21 @@
   "resultado": "*-*",
   "fecha": "14/11/2026",
   "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 8(22/11/2026)",
+  "id": "2537262",
+  "local": {
+   "id": "1008409",
+   "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+  },
+  "visitante": {
+   "id": "1009825",
+   "nombre": "GRAN CANARIA"
+  },
+  "resultado": "*-*",
+  "fecha": "21/11/2026",
+  "hora": "18:30"
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
@@ -811,21 +826,6 @@
  },
  {
   "jornada": "Jornada 8(22/11/2026)",
-  "id": "2537262",
-  "local": {
-   "id": "1008409",
-   "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
-  },
-  "visitante": {
-   "id": "1009825",
-   "nombre": "GRAN CANARIA"
-  },
-  "resultado": "*-*",
-  "fecha": "22/11/2026",
-  "hora": "13:00"
- },
- {
-  "jornada": "Jornada 8(22/11/2026)",
   "id": "2537258",
   "local": {
    "id": "1008707",
@@ -868,21 +868,6 @@
   "resultado": "*-*",
   "fecha": "28/11/2026",
   "hora": "18:30"
- },
- {
-  "jornada": "Jornada 9(29/11/2026)",
-  "id": "2537268",
-  "local": {
-   "id": "1009931",
-   "nombre": "LUJISA GUADALAJARA BASKET"
-  },
-  "visitante": {
-   "id": "1008707",
-   "nombre": "CB 7 PALMAS"
-  },
-  "resultado": "*-*",
-  "fecha": "28/11/2026",
-  "hora": "19:00"
  },
  {
   "jornada": "Jornada 9(29/11/2026)",
@@ -943,6 +928,21 @@
   "resultado": "*-*",
   "fecha": "28/11/2026",
   "hora": "20:30"
+ },
+ {
+  "jornada": "Jornada 9(29/11/2026)",
+  "id": "2537268",
+  "local": {
+   "id": "1009931",
+   "nombre": "LUJISA GUADALAJARA BASKET"
+  },
+  "visitante": {
+   "id": "1008707",
+   "nombre": "CB 7 PALMAS"
+  },
+  "resultado": "*-*",
+  "fecha": "29/11/2026",
+  "hora": "17:00"
  },
  {
   "jornada": "Jornada 10(06/12/2026)",
@@ -1216,21 +1216,6 @@
  },
  {
   "jornada": "Jornada 12(20/12/2026)",
-  "id": "2537287",
-  "local": {
-   "id": "1008941",
-   "nombre": "GINELUX TELDE"
-  },
-  "visitante": {
-   "id": "1009931",
-   "nombre": "LUJISA GUADALAJARA BASKET"
-  },
-  "resultado": "*-*",
-  "fecha": "19/12/2026",
-  "hora": "20:30"
- },
- {
-  "jornada": "Jornada 12(20/12/2026)",
   "id": "2537288",
   "local": {
    "id": "1008409",
@@ -1258,6 +1243,21 @@
   "resultado": "*-*",
   "fecha": "20/12/2026",
   "hora": "13:30"
+ },
+ {
+  "jornada": "Jornada 12(20/12/2026)",
+  "id": "2537287",
+  "local": {
+   "id": "1008941",
+   "nombre": "GINELUX TELDE"
+  },
+  "visitante": {
+   "id": "1009931",
+   "nombre": "LUJISA GUADALAJARA BASKET"
+  },
+  "resultado": "*-*",
+  "fecha": "20/12/2026",
+  "hora": "14:00"
  },
  {
   "jornada": "Jornada 13(10/01/2027)",

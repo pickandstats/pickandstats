@@ -1,0 +1,860 @@
+{
+ "id": "2536503",
+ "temporada": "2026",
+ "competicion": "tercerafeb",
+ "grupo": "D-A",
+ "jornada": "Jornada 4(25/10/2026)",
+ "equipoLocal": {
+  "id": "1010198",
+  "nombre": "COLEGIO EL PINAR"
+ },
+ "equipoVisitante": {
+  "id": "1010332",
+  "nombre": "CAJA RURAL JAEN PARAISO INTERIOR CB"
+ },
+ "resultado": "59-71",
+ "disputado": true,
+ "descargado": "2026-10-26T14:08:28.486Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2272626",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "MADRID MUÑOZ, NICOLÁS",
+    "seg": 881,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 6,
+    "pm": -9
+   },
+   {
+    "idJugador": "1258490",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "MORENO MORALES, LUIS MIGUEL",
+    "seg": 998,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 7
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 1,
+    "pm": 7
+   },
+   {
+    "idJugador": "2828016",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "WOLKOWYSKI, THOMAS",
+    "seg": 941,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 2,
+    "va": 2,
+    "pm": -4
+   },
+   {
+    "idJugador": "200074",
+    "titular": false,
+    "dorsal": "11",
+    "nombre": "COBOS ORTEGA, CARLOS",
+    "seg": 1601,
+    "pt": 11,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 3,
+     "i": 8
+    },
+    "tc": {
+     "a": 4,
+     "i": 10
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 2,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 4,
+    "va": 15,
+    "pm": -19
+   },
+   {
+    "idJugador": "2894904",
+    "titular": true,
+    "dorsal": "19",
+    "nombre": "RAGA RODRÍGUEZ, RODERICK ANTONIO",
+    "seg": 1477,
+    "pt": 6,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 4,
+    "rd": 4,
+    "rt": 8,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 9,
+    "pm": -10
+   },
+   {
+    "idJugador": "2128021",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "CASTRO BRAVO, SAMUEL",
+    "seg": 459,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 1,
+    "pm": -16
+   },
+   {
+    "idJugador": "1585590",
+    "titular": true,
+    "dorsal": "41",
+    "nombre": "IBÁÑEZ FIDALGO, PABLO",
+    "seg": 1846,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 7
+    },
+    "t3": {
+     "a": 1,
+     "i": 6
+    },
+    "tc": {
+     "a": 4,
+     "i": 13
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 2,
+    "br": 1,
+    "bp": 2,
+    "tf": 1,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": 3,
+    "pm": 4
+   },
+   {
+    "idJugador": "1591957",
+    "titular": true,
+    "dorsal": "46",
+    "nombre": "CARRASCO LOBO, PEDRO",
+    "seg": 1066,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 5,
+    "fr": 1,
+    "va": -1,
+    "pm": 11
+   },
+   {
+    "idJugador": "1687992",
+    "titular": false,
+    "dorsal": "82",
+    "nombre": "DIAZ GUILLEN, OSCAR",
+    "seg": 804,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": -8,
+    "pm": -7
+   },
+   {
+    "idJugador": "1884567",
+    "titular": true,
+    "dorsal": "91",
+    "nombre": "GARCIA SANCHEZ, JOAQUIN MIGUEL",
+    "seg": 1638,
+    "pt": 12,
+    "t2": {
+     "a": 4,
+     "i": 12
+    },
+    "t3": {
+     "a": 1,
+     "i": 4
+    },
+    "tc": {
+     "a": 5,
+     "i": 16
+    },
+    "tl": {
+     "a": 1,
+     "i": 4
+    },
+    "ro": 4,
+    "rd": 4,
+    "rt": 8,
+    "as": 1,
+    "br": 2,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 5,
+    "va": 9,
+    "pm": -13
+   },
+   {
+    "idJugador": "1592879",
+    "titular": false,
+    "dorsal": "99",
+    "nombre": "MUÑOZ MENDOZA, JOSE ANTONIO",
+    "seg": 289,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -2,
+    "pm": -4
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2827753",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "OKENCHI, OBUMNEME ERIC",
+    "seg": 1434,
+    "pt": 18,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 4
+    },
+    "tl": {
+     "a": 12,
+     "i": 14
+    },
+    "ro": 2,
+    "rd": 7,
+    "rt": 9,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 6,
+    "va": 29,
+    "pm": 19
+   },
+   {
+    "idJugador": "2112622",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "BANQUERI MARIN, GUILLERMO",
+    "seg": 323,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 0,
+    "pm": 3
+   },
+   {
+    "idJugador": "2469932",
+    "titular": true,
+    "dorsal": "6",
+    "nombre": "ARMSTRONG, ADRIAN SOLOMON",
+    "seg": 1230,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 1,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": -2,
+    "pm": 1
+   },
+   {
+    "idJugador": "1994425",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "ÁVALOS ORTIZ, PABLO",
+    "seg": 1712,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 7
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 3,
+    "rd": 0,
+    "rt": 3,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": -1,
+    "pm": 10
+   },
+   {
+    "idJugador": "2898705",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "PERRY II, TYRONE RONDELL",
+    "seg": 1536,
+    "pt": 12,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 2,
+     "i": 8
+    },
+    "tc": {
+     "a": 4,
+     "i": 13
+    },
+    "tl": {
+     "a": 2,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 2,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 3,
+    "fr": 7,
+    "va": 7,
+    "pm": 10
+   },
+   {
+    "idJugador": "1763885",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "SANTA BARBARA CARCELEN, JAVIER",
+    "seg": 1786,
+    "pt": 10,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 4,
+     "i": 4
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 1,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 10,
+    "pm": 11
+   },
+   {
+    "idJugador": "2816084",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "LOPES MARQUES, AILTON MANUEL",
+    "seg": 227,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 3,
+    "pm": 1
+   },
+   {
+    "idJugador": "1881948",
+    "titular": true,
+    "dorsal": "15",
+    "nombre": "MARTINEZ MEGIAS, JAVIER",
+    "seg": 1051,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 5,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": -1,
+    "pm": -3
+   },
+   {
+    "idJugador": "1997802",
+    "titular": false,
+    "dorsal": "16",
+    "nombre": "CASAS GARRIDO, IVAN",
+    "seg": 1229,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 4,
+    "rt": 5,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 5,
+    "pm": 6
+   },
+   {
+    "idJugador": "2089482",
+    "titular": true,
+    "dorsal": "23",
+    "nombre": "LARA CALDERA, DANIEL",
+    "seg": 1171,
+    "pt": 17,
+    "t2": {
+     "a": 4,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 8
+    },
+    "tl": {
+     "a": 6,
+     "i": 9
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 6,
+    "va": 17,
+    "pm": 6
+   },
+   {
+    "idJugador": "2405261",
+    "titular": false,
+    "dorsal": "31",
+    "nombre": "YALITA, BOUBACAR",
+    "seg": 301,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 3,
+     "i": 4
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 2,
+    "va": 3,
+    "pm": -4
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 12,
+    "visitante": 14
+   },
+   {
+    "periodo": "2º C",
+    "local": 16,
+    "visitante": 15
+   },
+   {
+    "periodo": "3º C",
+    "local": 17,
+    "visitante": 16
+   },
+   {
+    "periodo": "4º C",
+    "local": 14,
+    "visitante": 26
+   }
+  ]
+ }
+}

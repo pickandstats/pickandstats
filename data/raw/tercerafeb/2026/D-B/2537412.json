@@ -1,0 +1,823 @@
+{
+ "id": "2537412",
+ "temporada": "2026",
+ "competicion": "tercerafeb",
+ "grupo": "D-B",
+ "jornada": "Jornada 4(25/10/2026)",
+ "equipoLocal": {
+  "id": "1010501",
+  "nombre": "C.B. FENIX"
+ },
+ "equipoVisitante": {
+  "id": "1009724",
+  "nombre": "BALONCESTO BADAJOZ"
+ },
+ "resultado": "84-74",
+ "disputado": true,
+ "descargado": "2026-10-26T14:09:27.311Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2893753",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "DIMITRIADIS, KONSTANTINOS",
+    "seg": 680,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 3,
+    "rd": 3,
+    "rt": 6,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 0,
+    "va": 6,
+    "pm": 18
+   },
+   {
+    "idJugador": "1787692",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "VILAR LAMORENA, PABLO",
+    "seg": 1927,
+    "pt": 18,
+    "t2": {
+     "a": 4,
+     "i": 7
+    },
+    "t3": {
+     "a": 2,
+     "i": 10
+    },
+    "tc": {
+     "a": 6,
+     "i": 17
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 3,
+    "br": 3,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 15,
+    "pm": 18
+   },
+   {
+    "idJugador": "2458974",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "MUTIU, OLABAMIJI MONSURU",
+    "seg": 1259,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": -1,
+    "pm": -9
+   },
+   {
+    "idJugador": "2893798",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "CELIGNY, NATHAN EMMANUEL",
+    "seg": 1404,
+    "pt": 26,
+    "t2": {
+     "a": 7,
+     "i": 11
+    },
+    "t3": {
+     "a": 4,
+     "i": 8
+    },
+    "tc": {
+     "a": 11,
+     "i": 19
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 20,
+    "pm": 2
+   },
+   {
+    "idJugador": "2415609",
+    "titular": true,
+    "dorsal": "20",
+    "nombre": "BECERRA GOMEZ, DANIEL",
+    "seg": 776,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 1,
+    "br": 3,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -1,
+    "pm": 10
+   },
+   {
+    "idJugador": "2893765",
+    "titular": true,
+    "dorsal": "21",
+    "nombre": "LAGAB, KÉMY MEDDY",
+    "seg": 2103,
+    "pt": 23,
+    "t2": {
+     "a": 5,
+     "i": 9
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 8,
+     "i": 14
+    },
+    "tl": {
+     "a": 4,
+     "i": 8
+    },
+    "ro": 0,
+    "rd": 8,
+    "rt": 8,
+    "as": 3,
+    "br": 1,
+    "bp": 5,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 1,
+    "fr": 7,
+    "va": 26,
+    "pm": 3
+   },
+   {
+    "idJugador": "2325026",
+    "titular": false,
+    "dorsal": "23",
+    "nombre": "MOHAMED MOHAMED, HUSSEIN",
+    "seg": 461,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -1,
+    "pm": 1
+   },
+   {
+    "idJugador": "2003775",
+    "titular": false,
+    "dorsal": "24",
+    "nombre": "MOHAMED PALMA, ABUBAKER",
+    "seg": 1070,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 1,
+    "pm": -1
+   },
+   {
+    "idJugador": "2005183",
+    "titular": false,
+    "dorsal": "30",
+    "nombre": "MOHAMED MOHAMED, MOHAMED",
+    "seg": 1120,
+    "pt": 9,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 3,
+     "i": 4
+    },
+    "tc": {
+     "a": 3,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 1,
+    "br": 4,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 13,
+    "pm": 17
+   },
+   {
+    "idJugador": "2268957",
+    "titular": false,
+    "dorsal": "33",
+    "nombre": "LÓPEZ MARÍN, FRANCISCO",
+    "seg": 265,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": 3
+   },
+   {
+    "idJugador": "2045722",
+    "titular": true,
+    "dorsal": "99",
+    "nombre": "GARCIA CABANA, ROMAN",
+    "seg": 935,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 0,
+    "va": 0,
+    "pm": -12
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2904355",
+    "titular": true,
+    "dorsal": "0",
+    "nombre": "ARRAIS DE CARVALHO, JOAO PEDRO",
+    "seg": 1335,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 4,
+    "rd": 6,
+    "rt": 10,
+    "as": 1,
+    "br": 0,
+    "bp": 6,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 0,
+    "pm": -5
+   },
+   {
+    "idJugador": "1998323",
+    "titular": true,
+    "dorsal": "2",
+    "nombre": "BALLESTER MANQUE, PEDRO MIGUEL",
+    "seg": 902,
+    "pt": 3,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 3,
+    "va": 0,
+    "pm": -4
+   },
+   {
+    "idJugador": "2073591",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "BLÁZQUEZ PERIAÑEZ, PABLO",
+    "seg": 306,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 1,
+    "pm": 3
+   },
+   {
+    "idJugador": "2086935",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "GARZO CORDERO, DAVID",
+    "seg": 1090,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -3,
+    "pm": -3
+   },
+   {
+    "idJugador": "210467",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "CORES BUENDIA, JOSÉ MANUEL",
+    "seg": 1925,
+    "pt": 17,
+    "t2": {
+     "a": 5,
+     "i": 11
+    },
+    "t3": {
+     "a": 1,
+     "i": 5
+    },
+    "tc": {
+     "a": 6,
+     "i": 16
+    },
+    "tl": {
+     "a": 4,
+     "i": 5
+    },
+    "ro": 5,
+    "rd": 9,
+    "rt": 14,
+    "as": 0,
+    "br": 3,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": 23,
+    "pm": -5
+   },
+   {
+    "idJugador": "2893306",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "KVERNADZE, SANDRO",
+    "seg": 323,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 0,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": -4,
+    "pm": -6
+   },
+   {
+    "idJugador": "2172265",
+    "titular": true,
+    "dorsal": "17",
+    "nombre": "MUNAR AMAT, FLAVIO",
+    "seg": 2155,
+    "pt": 31,
+    "t2": {
+     "a": 7,
+     "i": 15
+    },
+    "t3": {
+     "a": 2,
+     "i": 6
+    },
+    "tc": {
+     "a": 9,
+     "i": 21
+    },
+    "tl": {
+     "a": 11,
+     "i": 13
+    },
+    "ro": 5,
+    "rd": 4,
+    "rt": 9,
+    "as": 4,
+    "br": 4,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 1,
+    "fr": 9,
+    "va": 40,
+    "pm": -5
+   },
+   {
+    "idJugador": "1823183",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "MOLINA LOPEZ, MANUEL",
+    "seg": 634,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 3,
+    "pm": -3
+   },
+   {
+    "idJugador": "2114194",
+    "titular": true,
+    "dorsal": "33",
+    "nombre": "MARCOS BOTE, JOSE LUIS",
+    "seg": 2218,
+    "pt": 13,
+    "t2": {
+     "a": 5,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 11
+    },
+    "tl": {
+     "a": 3,
+     "i": 8
+    },
+    "ro": 0,
+    "rd": 6,
+    "rt": 6,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 4,
+    "fr": 5,
+    "va": 10,
+    "pm": -12
+   },
+   {
+    "idJugador": "2234472",
+    "titular": false,
+    "dorsal": "96",
+    "nombre": "GARCÍA PERIAÑEZ, DANIEL",
+    "seg": 1112,
+    "pt": 3,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 3,
+    "pm": -9
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 12,
+    "visitante": 14
+   },
+   {
+    "periodo": "2º C",
+    "local": 21,
+    "visitante": 23
+   },
+   {
+    "periodo": "3º C",
+    "local": 29,
+    "visitante": 20
+   },
+   {
+    "periodo": "4º C",
+    "local": 22,
+    "visitante": 17
+   }
+  ]
+ }
+}
