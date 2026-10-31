@@ -1,9 +1,10 @@
 // Capa unica de formato numerico para la app (_instrucciones.md 23/10,
-// punto 2). Igual que las formulas tienen una casa en las guias, el
-// formato tiene una aqui: nadie en web/ llama a toFixed() ni monta un
-// Intl.NumberFormat por su cuenta -- se pasa por estas cinco funciones.
+// punto 2; s0 anadida el mismo dia, punto 2 del lote siguiente). Igual que
+// las formulas tienen una casa en las guias, el formato tiene una aqui:
+// nadie en web/ llama a toFixed() ni monta un Intl.NumberFormat por su
+// cuenta -- se pasa por estas seis funciones.
 //
-// Contrato de bordes (igual en las cinco):
+// Contrato de bordes (igual en las seis):
 //  - `null`/`undefined`/`NaN` -> '—'. Es la decision que ya tomamos esta
 //    semana con los minutos del formato viejo de las actas: un dato
 //    ausente no es un cero, y la capa lo hace por defecto en todas partes.
@@ -37,6 +38,14 @@ const dosDecimales = new Intl.NumberFormat('es-ES', { minimumFractionDigits: 2, 
 const unDecimalConSigno = new Intl.NumberFormat('es-ES', {
   minimumFractionDigits: 1, maximumFractionDigits: 1, signDisplay: 'exceptZero',
 });
+// _instrucciones.md 23/10 punto 2: una diferencia de TOTALES (DIF. de la
+// clasificacion, 302-210=92) es un entero, no una media con un decimal --
+// s1 le pone ",0" a cualquier entero, que es la señal de alarma que el
+// propio encargo describe: "una columna en la que TODOS los valores acaban
+// en ,0 es casi siempre un entero con el formato de un decimal".
+const enterosConSigno = new Intl.NumberFormat('es-ES', {
+  maximumFractionDigits: 0, signDisplay: 'exceptZero',
+});
 // style:'percent' espera una fraccion (0,073), no una cifra ya en escala de
 // porcentaje (7,3) -- de ahi el /100 en pct1. A cambio, Intl pone el
 // espacio duro antes del "%" el solo (comprobado: U+00A0, no un espacio
@@ -57,9 +66,10 @@ const envolver = formatear => v => {
 export const n0 = envolver(v => enteros.format(v));
 export const n1 = envolver(v => unDecimal.format(v));
 export const n2 = envolver(v => dosDecimales.format(v));
+export const s0 = envolver(v => enterosConSigno.format(v));
 export const s1 = envolver(v => unDecimalConSigno.format(v));
 export const pct1 = envolver(v => unDecimalPorcentaje.format(v / 100));
 
 // Para el uso por configuracion de columnas (punto 4): `{ clave, fmt: 'n1' }`
 // busca la funcion por nombre en vez de importarlas todas una a una.
-export const FORMATOS = { n0, n1, n2, s1, pct1 };
+export const FORMATOS = { n0, n1, n2, s0, s1, pct1 };

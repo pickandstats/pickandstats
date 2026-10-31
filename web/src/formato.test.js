@@ -4,7 +4,7 @@
 // que el 0 lleve signo en s1, esto lo dice.
 //
 // Uso: node web/src/formato.test.js
-import { n0, n1, n2, s1, pct1 } from './formato.js';
+import { n0, n1, n2, s0, s1, pct1 } from './formato.js';
 
 let fallos = 0;
 const comprobar = (etiqueta, obtenido, esperado) => {
@@ -14,7 +14,7 @@ const comprobar = (etiqueta, obtenido, esperado) => {
 
 const ESPACIO_DURO = ' ';
 
-console.log('### Los cinco casos de la tabla ###');
+console.log('### Los seis casos de la tabla ###');
 comprobar('n0(7.3)', n0(7.3), '7');
 comprobar('n0(-6.7)', n0(-6.7), '-7');
 comprobar('n0(0)', n0(0), '0');
@@ -31,11 +31,17 @@ comprobar('s1(7.3)', s1(7.3), '+7,3');
 comprobar('s1(-6.7)', s1(-6.7), '-6,7');
 comprobar('s1(0)', s1(0), '0,0');
 
+// s0 (_instrucciones.md 23/10, lote siguiente, punto 2): entero con signo,
+// para diferencias de TOTALES (DIF. de la clasificacion), no de medias.
+comprobar('s0(92)', s0(92), '+92');
+comprobar('s0(-7)', s0(-7), '-7');
+comprobar('s0(0)', s0(0), '0');
+
 comprobar('pct1(7.3)', pct1(7.3), `7,3${ESPACIO_DURO}%`);
 comprobar('pct1(0)', pct1(0), `0,0${ESPACIO_DURO}%`);
 
 console.log('\n### El contrato de bordes ###');
-for (const [nombre, fn] of Object.entries({ n0, n1, n2, s1, pct1 })) {
+for (const [nombre, fn] of Object.entries({ n0, n1, n2, s0, s1, pct1 })) {
   comprobar(`${nombre}(null)`, fn(null), '—');
   comprobar(`${nombre}(undefined)`, fn(undefined), '—');
   comprobar(`${nombre}(NaN)`, fn(NaN), '—');
@@ -46,9 +52,11 @@ console.log('\n### El espacio duro de pct1, exacto ###');
 comprobar('pct1(7.3) lleva U+00A0, no un espacio normal', pct1(7.3).includes(ESPACIO_DURO), true);
 comprobar('pct1(7.3) NO lleva un espacio ASCII antes del %', pct1(7.3).includes(' %'), false);
 
-console.log('\n### El signo del cero en s1, exacto ###');
+console.log('\n### El signo del cero en s1 y s0, exacto ###');
 comprobar('s1(0) no lleva "+"', s1(0).startsWith('+'), false);
 comprobar('s1(-0) tampoco lleva signo', s1(-0), '0,0');
+comprobar('s0(0) no lleva "+"', s0(0).startsWith('+'), false);
+comprobar('s0(-0) tampoco lleva signo', s0(-0), '0');
 
-console.log(fallos ? `\n❌ ${fallos} fallo(s).` : '\n✅ La capa de formato cuadra en los cinco casos y en los bordes.');
+console.log(fallos ? `\n❌ ${fallos} fallo(s).` : '\n✅ La capa de formato cuadra en los seis casos y en los bordes.');
 process.exit(fallos ? 1 : 0);
