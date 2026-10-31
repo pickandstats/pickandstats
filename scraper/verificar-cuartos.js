@@ -45,6 +45,7 @@ const cuartosOficiales = new Map(partidos.map(p => [String(p.id), p.cuartos]));
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
 let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0, minutosRetirados = 0;
+let sinTapFcFr = 0; // Q2-4 sin tap/tapRec/fc/fr -- independiente de "cache vieja" (que solo mira `min`)
 let puntosNoCuadran = 0, puntosSanos = 0;
 let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0, puntosNegativos = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
@@ -211,6 +212,22 @@ for (const f of ficheros) {
   // una alarma nueva.
   const minEnQ2a4 = (a.porCuarto || []).slice(1).every(cuarto =>
     !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
+
+  // tap/tapRec/fc/fr en Q2-4 (_instrucciones.md 31/10, lote siguiente, punto
+  // 1 y 3): chequeo APARTE de `minEnQ2a4` -- ese solo mira `min` (correcto
+  // para su proposito, que es decidir si verificarActa es medible), pero no
+  // dice nada sobre estos otros cuatro campos, que tenian su propio bug en
+  // difJug (ya corregido en extraer-acta.js) independiente del de `min`. Se
+  // cuenta aparte, SIN bloquear ni mezclarse con "cache vieja": es la forma
+  // de ver, semana a semana, si la re-extraccion ha llevado estos cuatro
+  // campos a su sitio en la temporada viva, sin reextraer el historico.
+  if (a.porCuarto && !a.minutosNoVerifican) {
+    const camposOk = a.porCuarto.slice(1).every(cuarto =>
+      !cuarto || [0, 1].every(ei => !cuarto[ei] ||
+        (cuarto[ei].jugadores || []).every(j => ['tap', 'tapRec', 'fc', 'fr'].every(c => c in j))));
+    if (!camposOk) sinTapFcFr++;
+  }
+
   if (a.minutosNoVerifican) {
     minutosRetirados++;
   } else if (a.porCuarto && minEnQ2a4) {
@@ -338,6 +355,7 @@ console.log(`Guardian de jugadores (verificarActa, S17.6):`);
 console.log(`  Incompletos en origen (declarados, no bloquean): ${incompletosOrigen}${incompletosOrigen ? ' -> ' + [...idsIncompletosOrigen].join(', ') : ''}`);
 console.log(`  De cache VIEJA (sin "min" en Q2-4, no medible todavia): ${cacheAntigua}`);
 console.log(`  Minutos retirados a proposito (vaciado/con_descuadre, no es cache vieja): ${minutosRetirados}`);
+console.log(`  Sin tap/tapRec/fc/fr en Q2-4 (bug de difJug ya corregido, mide si la re-extraccion ya llego): ${sinTapFcFr}`);
 console.log(`  Medibles con el guardian:            ${sinJugadores + sinJugadoresSanas}`);
 console.log(`    Sanas:                             ${sinJugadoresSanas}`);
 console.log(`    FALLAN (min descuadrado o sin fila): ${sinJugadores}${sinJugadores ? ' -> ' + sinJugadoresIds.join('; ') : ''}`);

@@ -1161,3 +1161,18 @@ cada corte intermedio simplemente no trae esos campos, o si `difJug` los
 tiene disponibles y se olvidó de copiarlos.
 
 Detalle completo: `_informe-vigesimotercer-lote.md`.
+
+**El hallazgo de arriba, confirmado y arreglado el mismo día**: los cortes
+intermedios SÍ traen `tap`/`tapRec`/`fc`/`fr`/`mas` con valores reales
+(verificado contra datos crudos) — era un bug de `difJug`, que solo
+diferenciaba `min`/`pts`/etc desde el arreglo de S17.6, nunca estos cinco.
+`difJug` ya resta los cinco; `camposCompletosQ2a4` (`boxscore-cuartos.js`)
+ya comprueba los cinco campos, no solo `min`. Nuevo contador en
+`verificar-cuartos.js` (`sinTapFcFr`), independiente de "caché vieja", para
+medir si la reextracción ya llevó estos campos a su sitio sin reextraer
+nada por sí mismo. **Solo probado en la temporada viva, a propósito**: el
+arreglo todavía no llega a las actas ya cacheadas (se necesita un
+`--forzar`, caro) — pendiente de decidir si se lanza ya o se deja para
+cuando convenga.
+
+Detalle completo: `_informe-vigesimocuarto-lote.md`.

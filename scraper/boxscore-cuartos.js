@@ -80,8 +80,16 @@ function puntosCompletosDe(porCuarto, of) {
 // Cuarto 1 -- fuera de el, esas claves no existen en absoluto en la fila de
 // jugador (no es que valgan 0). Barato, sobre datos ya en memoria, se
 // recalcula cada vez -- no hace falta cachear nada aqui.
+//
+// Comprueba los CINCO campos, no solo 'min' (_instrucciones.md 31/10, lote
+// siguiente, punto 1): hasta hoy solo miraba 'min', asi que daba `true`
+// (completo) aunque tap/tapRec/fc/fr siguieran faltando en Q2-4 por un bug
+// de difJug ya corregido (extraer-acta.js) -- una acta podia pasar esta
+// comprobacion sin que las otras cuatro columnas tuvieran dato de verdad.
+const CAMPOS_FORMATO_VIEJO = ['min', 'tap', 'tapRec', 'fc', 'fr'];
 const camposCompletosQ2a4 = porCuarto => porCuarto.slice(1).every(cuarto =>
-  !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
+  !cuarto || [0, 1].every(ei => !cuarto[ei] ||
+    (cuarto[ei].jugadores || []).every(j => CAMPOS_FORMATO_VIEJO.every(c => c in j))));
 
 let generados = 0, sinDesglose = 0, soloFormatoViejo = 0;
 for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json'))) {

@@ -358,6 +358,15 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
     d.rt = resta(act.rt, prev.rt); d.ro = resta(act.ro, prev.ro); d.rd = resta(act.rd, prev.rd);
     d.as = resta(act.as, prev.as); d.rec = resta(act.rec, prev.rec); d.per = resta(act.per, prev.per);
     d.val = resta(act.val, prev.val);
+    // tap/tapRec/fc/fr/mas (_instrucciones.md 31/10, lote siguiente, punto 1):
+    // el mismo arreglo que min/pts/etc, que se habia aplicado a todo MENOS a
+    // estos cinco campos -- confirmado contra datos reales (acta 2536661) que
+    // los cortes intermedios SI traen valores reales y distintos para los
+    // cuatro (no son 0 de relleno), asi que esto es un bug de difJug, no un
+    // limite del PDF de origen: estaban disponibles y no se copiaban.
+    d.tap = resta(act.tap, prev.tap); d.tapRec = resta(act.tapRec, prev.tapRec);
+    d.fc = resta(act.fc, prev.fc); d.fr = resta(act.fr, prev.fr);
+    d.mas = resta(act.mas, prev.mas);
     return d;
   };
 

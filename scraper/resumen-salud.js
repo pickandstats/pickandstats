@@ -128,12 +128,22 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     // run (cuartos-run) ni existe si actas-cuartos.js no llego a correr. Este
     // check no guarda estado entre ejecuciones: se deriva de fecha + existencia.
     //
-    // Dos mensajes, no uno (31/10, _instrucciones.md punto 1): antes de que
+    // Dos poblaciones, no una (31/10, _instrucciones.md): antes de que
     // existiera el registro de actas-no-verificadas.json, "falta el acta" y
     // "la extraemos y no cuadra" se contaban juntos bajo la misma frase -- y
     // son dos cosas distintas que requieren dos acciones distintas. Lo primero
     // se arregla solo esperando a que la FEB publique; lo segundo no, hay un
     // dato roto que investigar (ver actas-no-verificadas.json de la categoria).
+    //
+    // Un resumen con los dos numeros SIEMPRE visibles, incluido el cero
+    // (lote siguiente, 31/10): "0 de la FEB, 2 nuestras" dice algo que
+    // "faltan 2" no puede -- que el hueco no tiene nada que ver con que la
+    // FEB publique tarde, es enteramente nuestro. Las dos listas de ids se
+    // mantienen aparte, debajo, para quien necesite los ids concretos.
+    if (jugadosSinActa.length || jugadosNoVerifican.length) {
+      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length + jugadosNoVerifican.length} acta(s) sin cuartos ` +
+        `(${jugadosSinActa.length} de la FEB, ${jugadosNoVerifican.length} nuestras)`);
+    }
     if (jugadosSinActa.length) {
       const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
       criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) que la FEB no sirve todavia (jugados hace ${DIAS_ACTA}-${DIAS_ACTA_TOPE}d) -> ${muestra}`);
