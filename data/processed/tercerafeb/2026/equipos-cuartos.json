@@ -1,5 +1,161 @@
 [
  {
+  "equipoId": "eglobe-tecla-sala",
+  "equipo": "EGLOBE TECLA SALA",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 19.1,
+    "ortg": 89,
+    "drtg": 102.1,
+    "ctxFavor": {
+     "contraataque": 2.5,
+     "pintura": 9.5,
+     "segundaOportunidad": 2,
+     "banquillo": 4
+    },
+    "ctxContra": {
+     "contraataque": 3.8,
+     "pintura": 8.5,
+     "segundaOportunidad": 1.8,
+     "banquillo": 9.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.4,
+    "ortg": 55.4,
+    "drtg": 109,
+    "ctxFavor": {
+     "contraataque": 1.3,
+     "pintura": 5.5,
+     "segundaOportunidad": 1,
+     "banquillo": 3.5
+    },
+    "ctxContra": {
+     "contraataque": 2.8,
+     "pintura": 8,
+     "segundaOportunidad": 2.3,
+     "banquillo": 12.5
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18.9,
+    "ortg": 82,
+    "drtg": 103.3,
+    "ctxFavor": {
+     "contraataque": 3.5,
+     "pintura": 7,
+     "segundaOportunidad": 0.5,
+     "banquillo": 9.3
+    },
+    "ctxContra": {
+     "contraataque": 0.8,
+     "pintura": 8,
+     "segundaOportunidad": 2,
+     "banquillo": 8.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.8,
+    "ortg": 80.8,
+    "drtg": 106.2,
+    "ctxFavor": {
+     "contraataque": 1,
+     "pintura": 6.5,
+     "segundaOportunidad": 2.5,
+     "banquillo": 6
+    },
+    "ctxContra": {
+     "contraataque": 3.5,
+     "pintura": 8.5,
+     "segundaOportunidad": 2.5,
+     "banquillo": 9.5
+    }
+   }
+  ]
+ },
+ {
+  "equipoId": "ibersol-tarragona",
+  "equipo": "IBERSOL CB TARRAGONA",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 20.1,
+    "ortg": 109.5,
+    "drtg": 111.4,
+    "ctxFavor": {
+     "contraataque": 1.5,
+     "pintura": 9,
+     "segundaOportunidad": 2.5,
+     "banquillo": 8.5
+    },
+    "ctxContra": {
+     "contraataque": 2,
+     "pintura": 12,
+     "segundaOportunidad": 4,
+     "banquillo": 4.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 21.9,
+    "ortg": 98.1,
+    "drtg": 86.8,
+    "ctxFavor": {
+     "contraataque": 4,
+     "pintura": 14,
+     "segundaOportunidad": 2,
+     "banquillo": 11.8
+    },
+    "ctxContra": {
+     "contraataque": 3.8,
+     "pintura": 6,
+     "segundaOportunidad": 1,
+     "banquillo": 6.5
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18.6,
+    "ortg": 119.6,
+    "drtg": 93.4,
+    "ctxFavor": {
+     "contraataque": 1.3,
+     "pintura": 6.5,
+     "segundaOportunidad": 3,
+     "banquillo": 7.5
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 9,
+     "segundaOportunidad": 1,
+     "banquillo": 7.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.6,
+    "ortg": 113.4,
+    "drtg": 87.5,
+    "ctxFavor": {
+     "contraataque": 1.5,
+     "pintura": 7.5,
+     "segundaOportunidad": 0.5,
+     "banquillo": 8.3
+    },
+    "ctxContra": {
+     "contraataque": 2.5,
+     "pintura": 7,
+     "segundaOportunidad": 2.8,
+     "banquillo": 5.5
+    }
+   }
+  ]
+ },
+ {
   "equipoId": "cuarte-huerva",
   "equipo": "C.B. CUARTE DE HUERVA",
   "porCuarto": [
@@ -234,84 +390,6 @@
   ]
  },
  {
-  "equipoId": "ibersol-tarragona",
-  "equipo": "IBERSOL CB TARRAGONA",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 20,
-    "ortg": 111.5,
-    "drtg": 117.4,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 8,
-     "segundaOportunidad": 2,
-     "banquillo": 7.7
-    },
-    "ctxContra": {
-     "contraataque": 2.7,
-     "pintura": 12,
-     "segundaOportunidad": 4,
-     "banquillo": 6.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.8,
-    "ortg": 101,
-    "drtg": 101.7,
-    "ctxFavor": {
-     "contraataque": 4,
-     "pintura": 14,
-     "segundaOportunidad": 2,
-     "banquillo": 11.7
-    },
-    "ctxContra": {
-     "contraataque": 4.3,
-     "pintura": 6.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 8
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19,
-    "ortg": 124.7,
-    "drtg": 108.4,
-    "ctxFavor": {
-     "contraataque": 1.7,
-     "pintura": 6,
-     "segundaOportunidad": 2.3,
-     "banquillo": 7.3
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 10,
-     "segundaOportunidad": 1.3,
-     "banquillo": 7.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.8,
-    "ortg": 114.4,
-    "drtg": 90.8,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 8.7,
-     "segundaOportunidad": 0.7,
-     "banquillo": 7.3
-    },
-    "ctxContra": {
-     "contraataque": 2.7,
-     "pintura": 7.3,
-     "segundaOportunidad": 3.7,
-     "banquillo": 6.7
-    }
-   }
-  ]
- },
- {
   "equipoId": "sese",
   "equipo": "SESE A",
   "porCuarto": [
@@ -385,84 +463,6 @@
      "pintura": 1.3,
      "segundaOportunidad": 0,
      "banquillo": 9.3
-    }
-   }
-  ]
- },
- {
-  "equipoId": "eglobe-tecla-sala",
-  "equipo": "EGLOBE TECLA SALA",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 19.1,
-    "ortg": 87.4,
-    "drtg": 101.7,
-    "ctxFavor": {
-     "contraataque": 3.3,
-     "pintura": 8.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 5.3
-    },
-    "ctxContra": {
-     "contraataque": 4.3,
-     "pintura": 7.3,
-     "segundaOportunidad": 1,
-     "banquillo": 8.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 18.6,
-    "ortg": 59.1,
-    "drtg": 116.6,
-    "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 6,
-     "segundaOportunidad": 1.3,
-     "banquillo": 4
-    },
-    "ctxContra": {
-     "contraataque": 2.3,
-     "pintura": 6,
-     "segundaOportunidad": 2.3,
-     "banquillo": 12.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 18.9,
-    "ortg": 93.6,
-    "drtg": 103.4,
-    "ctxFavor": {
-     "contraataque": 4,
-     "pintura": 7.3,
-     "segundaOportunidad": 0.7,
-     "banquillo": 10
-    },
-    "ctxContra": {
-     "contraataque": 1,
-     "pintura": 8,
-     "segundaOportunidad": 1,
-     "banquillo": 9
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.6,
-    "ortg": 81.7,
-    "drtg": 104.8,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 6.7,
-     "segundaOportunidad": 3.3,
-     "banquillo": 7.3
-    },
-    "ctxContra": {
-     "contraataque": 3.3,
-     "pintura": 10,
-     "segundaOportunidad": 3.3,
-     "banquillo": 9
     }
    }
   ]
@@ -1248,6 +1248,162 @@
   ]
  },
  {
+  "equipoId": "pujol-mollerussa",
+  "equipo": "PUJOL MOLLERUSSA",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 18.9,
+    "ortg": 121.7,
+    "drtg": 104.5,
+    "ctxFavor": {
+     "contraataque": 1.8,
+     "pintura": 7,
+     "segundaOportunidad": 3.5,
+     "banquillo": 7
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 11,
+     "segundaOportunidad": 3.5,
+     "banquillo": 5.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 20.1,
+    "ortg": 120.7,
+    "drtg": 87.2,
+    "ctxFavor": {
+     "contraataque": 1.3,
+     "pintura": 9,
+     "segundaOportunidad": 3.3,
+     "banquillo": 9.8
+    },
+    "ctxContra": {
+     "contraataque": 0.5,
+     "pintura": 4,
+     "segundaOportunidad": 1.8,
+     "banquillo": 5.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 20,
+    "ortg": 105,
+    "drtg": 106.8,
+    "ctxFavor": {
+     "contraataque": 1.8,
+     "pintura": 8.5,
+     "segundaOportunidad": 2.5,
+     "banquillo": 8
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 11.5,
+     "segundaOportunidad": 2.5,
+     "banquillo": 7.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 21.4,
+    "ortg": 107.3,
+    "drtg": 92.9,
+    "ctxFavor": {
+     "contraataque": 0.5,
+     "pintura": 7,
+     "segundaOportunidad": 1.3,
+     "banquillo": 7
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 9,
+     "segundaOportunidad": 1.5,
+     "banquillo": 8
+    }
+   }
+  ]
+ },
+ {
+  "equipoId": "letra-corporea-barbastro",
+  "equipo": "LETRA CORPOREA BARBASTRO",
+  "porCuarto": [
+   {
+    "pj": 3,
+    "pace": 21.3,
+    "ortg": 87.4,
+    "drtg": 122.1,
+    "ctxFavor": {
+     "contraataque": 0.7,
+     "pintura": 7.3,
+     "segundaOportunidad": 3.7,
+     "banquillo": 8.3
+    },
+    "ctxContra": {
+     "contraataque": 2.7,
+     "pintura": 4.7,
+     "segundaOportunidad": 3.7,
+     "banquillo": 6
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 19.7,
+    "ortg": 88.1,
+    "drtg": 92.8,
+    "ctxFavor": {
+     "contraataque": 2,
+     "pintura": 9.3,
+     "segundaOportunidad": 1.7,
+     "banquillo": 1.7
+    },
+    "ctxContra": {
+     "contraataque": 1,
+     "pintura": 4.7,
+     "segundaOportunidad": 2.3,
+     "banquillo": 4
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 19.2,
+    "ortg": 107.9,
+    "drtg": 99.3,
+    "ctxFavor": {
+     "contraataque": 1.3,
+     "pintura": 10,
+     "segundaOportunidad": 1.3,
+     "banquillo": 10
+    },
+    "ctxContra": {
+     "contraataque": 1.7,
+     "pintura": 10,
+     "segundaOportunidad": 4.3,
+     "banquillo": 9
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 21.1,
+    "ortg": 90,
+    "drtg": 96.9,
+    "ctxFavor": {
+     "contraataque": 0.7,
+     "pintura": 6,
+     "segundaOportunidad": 0.7,
+     "banquillo": 6
+    },
+    "ctxContra": {
+     "contraataque": 0.7,
+     "pintura": 8.7,
+     "segundaOportunidad": 0.7,
+     "banquillo": 7.7
+    }
+   }
+  ]
+ },
+ {
   "equipoId": "es-castell",
   "equipo": "SA TINTINA CB ES CASTELL MENORCA",
   "porCuarto": [
@@ -1950,84 +2106,6 @@
   ]
  },
  {
-  "equipoId": "pujol-mollerussa",
-  "equipo": "PUJOL MOLLERUSSA",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 18.9,
-    "ortg": 104,
-    "drtg": 110.3,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 6,
-     "segundaOportunidad": 2.7,
-     "banquillo": 7.7
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 12,
-     "segundaOportunidad": 3.3,
-     "banquillo": 6.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.8,
-    "ortg": 111.3,
-    "drtg": 84.4,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 8.7,
-     "segundaOportunidad": 3,
-     "banquillo": 10
-    },
-    "ctxContra": {
-     "contraataque": 0,
-     "pintura": 4,
-     "segundaOportunidad": 2.3,
-     "banquillo": 7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 20.1,
-    "ortg": 112.9,
-    "drtg": 97.6,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 7.3,
-     "segundaOportunidad": 2,
-     "banquillo": 9
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 10,
-     "segundaOportunidad": 2,
-     "banquillo": 7.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 20.6,
-    "ortg": 111.5,
-    "drtg": 92.2,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 6,
-     "segundaOportunidad": 1.7,
-     "banquillo": 6
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 10,
-     "segundaOportunidad": 2,
-     "banquillo": 10
-    }
-   }
-  ]
- },
- {
   "equipoId": "parroquia-sama",
   "equipo": "LA PARRÓQUIA - BÁSQUET SAMÁ",
   "porCuarto": [
@@ -2101,84 +2179,6 @@
      "pintura": 6.7,
      "segundaOportunidad": 1,
      "banquillo": 6.3
-    }
-   }
-  ]
- },
- {
-  "equipoId": "letra-corporea-barbastro",
-  "equipo": "LETRA CORPOREA BARBASTRO",
-  "porCuarto": [
-   {
-    "pj": 2,
-    "pace": 21.3,
-    "ortg": 86.9,
-    "drtg": 97.3,
-    "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 7,
-     "segundaOportunidad": 3.5,
-     "banquillo": 11.5
-    },
-    "ctxContra": {
-     "contraataque": 1.5,
-     "pintura": 2,
-     "segundaOportunidad": 2.5,
-     "banquillo": 6.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 18.4,
-    "ortg": 84.3,
-    "drtg": 63.6,
-    "ctxFavor": {
-     "contraataque": 2,
-     "pintura": 12,
-     "segundaOportunidad": 2.5,
-     "banquillo": 1.5
-    },
-    "ctxContra": {
-     "contraataque": 0,
-     "pintura": 2,
-     "segundaOportunidad": 1.5,
-     "banquillo": 1.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 19.7,
-    "ortg": 93.9,
-    "drtg": 108.9,
-    "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 7,
-     "segundaOportunidad": 0,
-     "banquillo": 10.5
-    },
-    "ctxContra": {
-     "contraataque": 1,
-     "pintura": 9,
-     "segundaOportunidad": 4.5,
-     "banquillo": 11
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 20.1,
-    "ortg": 87.2,
-    "drtg": 97.1,
-    "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 6,
-     "segundaOportunidad": 1,
-     "banquillo": 8
-    },
-    "ctxContra": {
-     "contraataque": 1,
-     "pintura": 8,
-     "segundaOportunidad": 1,
-     "banquillo": 6.5
     }
    }
   ]
@@ -4372,75 +4372,75 @@
   "equipo": "INELTRON SANTO DOMINGO BETANZOS",
   "porCuarto": [
    {
-    "pj": 3,
-    "pace": 24.3,
-    "ortg": 67.2,
-    "drtg": 97.9,
-    "ctxFavor": {
-     "contraataque": 3.3,
-     "pintura": 12,
-     "segundaOportunidad": 2.3,
-     "banquillo": 0.7
-    },
-    "ctxContra": {
-     "contraataque": 4,
-     "pintura": 13.3,
-     "segundaOportunidad": 2,
-     "banquillo": 5.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.7,
-    "ortg": 113.9,
-    "drtg": 77.4,
-    "ctxFavor": {
-     "contraataque": 6.7,
-     "pintura": 15.3,
-     "segundaOportunidad": 4,
-     "banquillo": 12.7
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 6.7,
-     "segundaOportunidad": 2.3,
-     "banquillo": 6.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.4,
-    "ortg": 107.3,
-    "drtg": 115.5,
+    "pj": 4,
+    "pace": 25,
+    "ortg": 68.1,
+    "drtg": 97.6,
     "ctxFavor": {
      "contraataque": 3,
-     "pintura": 10.7,
-     "segundaOportunidad": 3,
-     "banquillo": 6.3
+     "pintura": 11,
+     "segundaOportunidad": 1.8,
+     "banquillo": 2.8
     },
     "ctxContra": {
-     "contraataque": 3,
-     "pintura": 12.7,
-     "segundaOportunidad": 4,
-     "banquillo": 8.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 22.4,
-    "ortg": 92.3,
-    "drtg": 101.6,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 11.3,
-     "segundaOportunidad": 4,
-     "banquillo": 5
-    },
-    "ctxContra": {
-     "contraataque": 3.7,
-     "pintura": 7.3,
-     "segundaOportunidad": 1.3,
+     "contraataque": 4.5,
+     "pintura": 14,
+     "segundaOportunidad": 2.5,
      "banquillo": 7.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 22,
+    "ortg": 120.7,
+    "drtg": 91.6,
+    "ctxFavor": {
+     "contraataque": 5.5,
+     "pintura": 16,
+     "segundaOportunidad": 4.3,
+     "banquillo": 11
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 9,
+     "segundaOportunidad": 3.3,
+     "banquillo": 9
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 20.8,
+    "ortg": 110.3,
+    "drtg": 121.2,
+    "ctxFavor": {
+     "contraataque": 2.3,
+     "pintura": 10.5,
+     "segundaOportunidad": 2.3,
+     "banquillo": 5.3
+    },
+    "ctxContra": {
+     "contraataque": 2.3,
+     "pintura": 13.5,
+     "segundaOportunidad": 3.5,
+     "banquillo": 10.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 22.4,
+    "ortg": 94.7,
+    "drtg": 103.8,
+    "ctxFavor": {
+     "contraataque": 1,
+     "pintura": 10.5,
+     "segundaOportunidad": 3.8,
+     "banquillo": 4.8
+    },
+    "ctxContra": {
+     "contraataque": 3.3,
+     "pintura": 8,
+     "segundaOportunidad": 1.5,
+     "banquillo": 9.8
     }
    }
   ]
@@ -4450,75 +4450,75 @@
   "equipo": "RECOLETAS SALUD SALAMANCA",
   "porCuarto": [
    {
-    "pj": 3,
-    "pace": 20.4,
-    "ortg": 96.2,
-    "drtg": 78.5,
+    "pj": 4,
+    "pace": 21.5,
+    "ortg": 96.4,
+    "drtg": 76.3,
     "ctxFavor": {
-     "contraataque": 3.3,
-     "pintura": 12,
-     "segundaOportunidad": 2,
+     "contraataque": 4,
+     "pintura": 13,
+     "segundaOportunidad": 2.5,
      "banquillo": 12.3
     },
     "ctxContra": {
-     "contraataque": 3,
-     "pintura": 10.7,
-     "segundaOportunidad": 3,
-     "banquillo": 3
+     "contraataque": 2.8,
+     "pintura": 10,
+     "segundaOportunidad": 2.3,
+     "banquillo": 4.5
     }
    },
    {
-    "pj": 3,
-    "pace": 21.6,
-    "ortg": 98.6,
-    "drtg": 91.9,
+    "pj": 4,
+    "pace": 21.8,
+    "ortg": 106.9,
+    "drtg": 104.7,
     "ctxFavor": {
-     "contraataque": 2.7,
-     "pintura": 12,
-     "segundaOportunidad": 3.3,
-     "banquillo": 9.7
+     "contraataque": 2.5,
+     "pintura": 13,
+     "segundaOportunidad": 4,
+     "banquillo": 11.3
     },
     "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 10.7,
-     "segundaOportunidad": 3.7,
-     "banquillo": 5.7
+     "contraataque": 1.5,
+     "pintura": 12.5,
+     "segundaOportunidad": 4,
+     "banquillo": 5.8
     }
    },
    {
-    "pj": 3,
-    "pace": 19.5,
-    "ortg": 125.1,
-    "drtg": 80.6,
+    "pj": 4,
+    "pace": 18.9,
+    "ortg": 129.5,
+    "drtg": 90,
     "ctxFavor": {
-     "contraataque": 2.3,
-     "pintura": 12,
-     "segundaOportunidad": 4.3,
+     "contraataque": 1.8,
+     "pintura": 13,
+     "segundaOportunidad": 3.8,
      "banquillo": 16.3
     },
     "ctxContra": {
-     "contraataque": 1,
-     "pintura": 6.7,
-     "segundaOportunidad": 2,
-     "banquillo": 4.7
+     "contraataque": 0.8,
+     "pintura": 7.5,
+     "segundaOportunidad": 1.5,
+     "banquillo": 4
     }
    },
    {
-    "pj": 3,
-    "pace": 18.9,
-    "ortg": 100.4,
-    "drtg": 91.2,
+    "pj": 4,
+    "pace": 19.4,
+    "ortg": 103,
+    "drtg": 94,
     "ctxFavor": {
-     "contraataque": 1.3,
+     "contraataque": 1.5,
      "pintura": 10,
-     "segundaOportunidad": 2.7,
-     "banquillo": 14.3
+     "segundaOportunidad": 2.5,
+     "banquillo": 15
     },
     "ctxContra": {
-     "contraataque": 2.7,
-     "pintura": 14,
-     "segundaOportunidad": 0.7,
-     "banquillo": 7.3
+     "contraataque": 2,
+     "pintura": 12.5,
+     "segundaOportunidad": 1.3,
+     "banquillo": 6.5
     }
    }
   ]
@@ -5850,6 +5850,162 @@
   ]
  },
  {
+  "equipoId": "quintanar",
+  "equipo": "BASKET GLOBALCAJA QUINTANAR",
+  "porCuarto": [
+   {
+    "pj": 3,
+    "pace": 21,
+    "ortg": 106.3,
+    "drtg": 79.5,
+    "ctxFavor": {
+     "contraataque": 2.3,
+     "pintura": 12.7,
+     "segundaOportunidad": 3.3,
+     "banquillo": 7.7
+    },
+    "ctxContra": {
+     "contraataque": 1.3,
+     "pintura": 10,
+     "segundaOportunidad": 0.7,
+     "banquillo": 6.3
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 20.4,
+    "ortg": 60.5,
+    "drtg": 72.9,
+    "ctxFavor": {
+     "contraataque": 2.3,
+     "pintura": 4,
+     "segundaOportunidad": 0.7,
+     "banquillo": 6.3
+    },
+    "ctxContra": {
+     "contraataque": 1.7,
+     "pintura": 4.7,
+     "segundaOportunidad": 0.7,
+     "banquillo": 8.7
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 18.6,
+    "ortg": 106,
+    "drtg": 92.1,
+    "ctxFavor": {
+     "contraataque": 3.3,
+     "pintura": 6.7,
+     "segundaOportunidad": 2.3,
+     "banquillo": 9.7
+    },
+    "ctxContra": {
+     "contraataque": 1.3,
+     "pintura": 8.7,
+     "segundaOportunidad": 0,
+     "banquillo": 11
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 19.5,
+    "ortg": 83.6,
+    "drtg": 98.2,
+    "ctxFavor": {
+     "contraataque": 1.7,
+     "pintura": 8,
+     "segundaOportunidad": 2,
+     "banquillo": 9.7
+    },
+    "ctxContra": {
+     "contraataque": 2,
+     "pintura": 6,
+     "segundaOportunidad": 1,
+     "banquillo": 9.7
+    }
+   }
+  ]
+ },
+ {
+  "equipoId": "globalcaja-roda",
+  "equipo": "FUNDACION GLOBALCAJA LA RODA",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 19.8,
+    "ortg": 76.9,
+    "drtg": 104.2,
+    "ctxFavor": {
+     "contraataque": 0.8,
+     "pintura": 4,
+     "segundaOportunidad": 1,
+     "banquillo": 5.8
+    },
+    "ctxContra": {
+     "contraataque": 1,
+     "pintura": 7.5,
+     "segundaOportunidad": 1.8,
+     "banquillo": 6.5
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18,
+    "ortg": 124.8,
+    "drtg": 62.9,
+    "ctxFavor": {
+     "contraataque": 1.8,
+     "pintura": 8.5,
+     "segundaOportunidad": 4,
+     "banquillo": 15.8
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 4.5,
+     "segundaOportunidad": 0,
+     "banquillo": 2.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18.6,
+    "ortg": 114.6,
+    "drtg": 109.5,
+    "ctxFavor": {
+     "contraataque": 2,
+     "pintura": 8.5,
+     "segundaOportunidad": 1.5,
+     "banquillo": 6.8
+    },
+    "ctxContra": {
+     "contraataque": 1.3,
+     "pintura": 11,
+     "segundaOportunidad": 1.8,
+     "banquillo": 7
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.1,
+    "ortg": 107.5,
+    "drtg": 99.1,
+    "ctxFavor": {
+     "contraataque": 1.5,
+     "pintura": 9,
+     "segundaOportunidad": 1.8,
+     "banquillo": 11
+    },
+    "ctxContra": {
+     "contraataque": 1,
+     "pintura": 10,
+     "segundaOportunidad": 3,
+     "banquillo": 8.3
+    }
+   }
+  ]
+ },
+ {
   "equipoId": "ventero-cbv",
   "equipo": "EL VENTERO CBV",
   "porCuarto": [
@@ -6313,162 +6469,6 @@
      "pintura": 8.5,
      "segundaOportunidad": 2.3,
      "banquillo": 5
-    }
-   }
-  ]
- },
- {
-  "equipoId": "globalcaja-roda",
-  "equipo": "FUNDACION GLOBALCAJA LA RODA",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 19.6,
-    "ortg": 83.3,
-    "drtg": 107,
-    "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 4,
-     "segundaOportunidad": 0.7,
-     "banquillo": 6.3
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 7.3,
-     "segundaOportunidad": 1.7,
-     "banquillo": 5.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 17.4,
-    "ortg": 130.1,
-    "drtg": 71.7,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 10,
-     "segundaOportunidad": 5.3,
-     "banquillo": 15
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 5.3,
-     "segundaOportunidad": 0,
-     "banquillo": 3.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 18.5,
-    "ortg": 131.4,
-    "drtg": 112.8,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 10,
-     "segundaOportunidad": 2,
-     "banquillo": 8.3
-    },
-    "ctxContra": {
-     "contraataque": 0,
-     "pintura": 12,
-     "segundaOportunidad": 2.3,
-     "banquillo": 5.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.5,
-    "ortg": 105.9,
-    "drtg": 98.7,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 10.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 12.3
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 9.3,
-     "segundaOportunidad": 2.7,
-     "banquillo": 9
-    }
-   }
-  ]
- },
- {
-  "equipoId": "quintanar",
-  "equipo": "BASKET GLOBALCAJA QUINTANAR",
-  "porCuarto": [
-   {
-    "pj": 2,
-    "pace": 21.1,
-    "ortg": 111.2,
-    "drtg": 90.1,
-    "ctxFavor": {
-     "contraataque": 3.5,
-     "pintura": 15,
-     "segundaOportunidad": 4,
-     "banquillo": 7
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 13,
-     "segundaOportunidad": 0,
-     "banquillo": 7.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 20.3,
-    "ortg": 71.4,
-    "drtg": 52.2,
-    "ctxFavor": {
-     "contraataque": 3.5,
-     "pintura": 5,
-     "segundaOportunidad": 1,
-     "banquillo": 9.5
-    },
-    "ctxContra": {
-     "contraataque": 1,
-     "pintura": 5,
-     "segundaOportunidad": 1,
-     "banquillo": 4
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 18.4,
-    "ortg": 108.9,
-    "drtg": 105.5,
-    "ctxFavor": {
-     "contraataque": 2.5,
-     "pintura": 6,
-     "segundaOportunidad": 3.5,
-     "banquillo": 9
-    },
-    "ctxContra": {
-     "contraataque": 0,
-     "pintura": 11,
-     "segundaOportunidad": 0,
-     "banquillo": 15.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 19.9,
-    "ortg": 75.5,
-    "drtg": 91.3,
-    "ctxFavor": {
-     "contraataque": 2.5,
-     "pintura": 6,
-     "segundaOportunidad": 1,
-     "banquillo": 11.5
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 7,
-     "segundaOportunidad": 0,
-     "banquillo": 11
     }
    }
   ]
@@ -7960,75 +7960,75 @@
   "equipo": "C.B. FENIX",
   "porCuarto": [
    {
-    "pj": 3,
-    "pace": 21.4,
-    "ortg": 67.1,
-    "drtg": 122.4,
+    "pj": 4,
+    "pace": 21.2,
+    "ortg": 64.8,
+    "drtg": 108.7,
     "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 6,
-     "segundaOportunidad": 1.3,
-     "banquillo": 4.3
+     "contraataque": 0.5,
+     "pintura": 4.5,
+     "segundaOportunidad": 1,
+     "banquillo": 5
     },
     "ctxContra": {
      "contraataque": 0,
-     "pintura": 13.3,
-     "segundaOportunidad": 5.7,
-     "banquillo": 12.3
+     "pintura": 11.5,
+     "segundaOportunidad": 5.3,
+     "banquillo": 9.8
     }
    },
    {
-    "pj": 3,
-    "pace": 19.7,
-    "ortg": 72.7,
+    "pj": 4,
+    "pace": 19.3,
+    "ortg": 82.9,
     "drtg": 132,
     "ctxFavor": {
      "contraataque": 2,
-     "pintura": 6.7,
-     "segundaOportunidad": 0.7,
-     "banquillo": 3
-    },
-    "ctxContra": {
-     "contraataque": 0.7,
-     "pintura": 12.7,
-     "segundaOportunidad": 4.7,
-     "banquillo": 15
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 22.9,
-    "ortg": 93.1,
-    "drtg": 95.5,
-    "ctxFavor": {
-     "contraataque": 2.7,
-     "pintura": 9.3,
-     "segundaOportunidad": 1,
-     "banquillo": 6.3
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 10.7,
-     "segundaOportunidad": 3.7,
-     "banquillo": 10.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.9,
-    "ortg": 80.6,
-    "drtg": 93.4,
-    "ctxFavor": {
-     "contraataque": 2,
-     "pintura": 6,
+     "pintura": 5.5,
      "segundaOportunidad": 1.3,
-     "banquillo": 6.7
+     "banquillo": 5.3
     },
     "ctxContra": {
-     "contraataque": 2.7,
-     "pintura": 10.7,
-     "segundaOportunidad": 2,
+     "contraataque": 0.5,
+     "pintura": 10,
+     "segundaOportunidad": 3.5,
+     "banquillo": 12
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 22,
+    "ortg": 105.5,
+    "drtg": 92.5,
+    "ctxFavor": {
+     "contraataque": 2.5,
+     "pintura": 8,
+     "segundaOportunidad": 1.8,
      "banquillo": 6.3
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 8,
+     "segundaOportunidad": 3.3,
+     "banquillo": 8.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 21.7,
+    "ortg": 86.3,
+    "drtg": 90.7,
+    "ctxFavor": {
+     "contraataque": 1.5,
+     "pintura": 4.5,
+     "segundaOportunidad": 1,
+     "banquillo": 9.5
+    },
+    "ctxContra": {
+     "contraataque": 2,
+     "pintura": 9.5,
+     "segundaOportunidad": 2,
+     "banquillo": 4.8
     }
    }
   ]
@@ -8350,75 +8350,75 @@
   "equipo": "BALONCESTO BADAJOZ",
   "porCuarto": [
    {
-    "pj": 3,
-    "pace": 21.6,
-    "ortg": 81.8,
-    "drtg": 97.1,
+    "pj": 4,
+    "pace": 21.5,
+    "ortg": 78,
+    "drtg": 87.5,
     "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 8.7,
-     "segundaOportunidad": 2,
-     "banquillo": 2.7
+     "contraataque": 1,
+     "pintura": 8,
+     "segundaOportunidad": 2.5,
+     "banquillo": 2.5
     },
     "ctxContra": {
-     "contraataque": 0.7,
-     "pintura": 10,
-     "segundaOportunidad": 5.7,
-     "banquillo": 5.7
+     "contraataque": 0.5,
+     "pintura": 7.5,
+     "segundaOportunidad": 4.3,
+     "banquillo": 6
     }
    },
    {
-    "pj": 3,
-    "pace": 22.3,
-    "ortg": 73.4,
-    "drtg": 109.8,
+    "pj": 4,
+    "pace": 21.1,
+    "ortg": 85.5,
+    "drtg": 111.1,
     "ctxFavor": {
-     "contraataque": 2.7,
-     "pintura": 8.7,
-     "segundaOportunidad": 2,
-     "banquillo": 7.7
+     "contraataque": 2,
+     "pintura": 7,
+     "segundaOportunidad": 1.5,
+     "banquillo": 6.5
     },
     "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 15.3,
-     "segundaOportunidad": 3.7,
-     "banquillo": 9.7
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 22.5,
-    "ortg": 87.5,
-    "drtg": 93.4,
-    "ctxFavor": {
-     "contraataque": 3,
-     "pintura": 8.7,
-     "segundaOportunidad": 1.7,
-     "banquillo": 10
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
+     "contraataque": 1.5,
      "pintura": 12,
-     "segundaOportunidad": 1.3,
-     "banquillo": 9
+     "segundaOportunidad": 3.5,
+     "banquillo": 10.3
     }
    },
    {
-    "pj": 3,
-    "pace": 23.7,
-    "ortg": 77.5,
-    "drtg": 104,
+    "pj": 4,
+    "pace": 22.8,
+    "ortg": 86.7,
+    "drtg": 105.6,
     "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 7.3,
-     "segundaOportunidad": 2,
+     "contraataque": 2.3,
+     "pintura": 6.5,
+     "segundaOportunidad": 1.8,
      "banquillo": 8.3
     },
     "ctxContra": {
-     "contraataque": 2.7,
-     "pintura": 12.7,
-     "segundaOportunidad": 3.3,
-     "banquillo": 14.3
+     "contraataque": 1.5,
+     "pintura": 10,
+     "segundaOportunidad": 2,
+     "banquillo": 8.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 23,
+    "ortg": 78.4,
+    "drtg": 103.9,
+    "ctxFavor": {
+     "contraataque": 0.5,
+     "pintura": 7,
+     "segundaOportunidad": 2,
+     "banquillo": 6.3
+    },
+    "ctxContra": {
+     "contraataque": 2,
+     "pintura": 9.5,
+     "segundaOportunidad": 2.5,
+     "banquillo": 15.3
     }
    }
   ]
@@ -9442,75 +9442,75 @@
   "equipo": "FUNDACIÓ CAIXA RURAL VILA-REAL",
   "porCuarto": [
    {
-    "pj": 3,
-    "pace": 20.4,
-    "ortg": 98.1,
-    "drtg": 95,
-    "ctxFavor": {
-     "contraataque": 3,
-     "pintura": 10,
-     "segundaOportunidad": 2.3,
-     "banquillo": 8.3
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 9.3,
-     "segundaOportunidad": 1.3,
-     "banquillo": 5
-    }
-   },
-   {
-    "pj": 3,
+    "pj": 4,
     "pace": 20,
-    "ortg": 118.1,
-    "drtg": 78.4,
+    "ortg": 103.5,
+    "drtg": 81.9,
     "ctxFavor": {
-     "contraataque": 0,
-     "pintura": 8.7,
-     "segundaOportunidad": 3,
-     "banquillo": 12.3
+     "contraataque": 2.3,
+     "pintura": 12,
+     "segundaOportunidad": 3.3,
+     "banquillo": 8.8
     },
     "ctxContra": {
-     "contraataque": 1.7,
+     "contraataque": 1.5,
      "pintura": 8,
      "segundaOportunidad": 1,
-     "banquillo": 8.3
+     "banquillo": 3.8
     }
    },
    {
-    "pj": 3,
-    "pace": 20.5,
-    "ortg": 105.6,
-    "drtg": 86.5,
+    "pj": 4,
+    "pace": 20,
+    "ortg": 123.6,
+    "drtg": 80.6,
     "ctxFavor": {
-     "contraataque": 1,
-     "pintura": 6.7,
-     "segundaOportunidad": 1,
+     "contraataque": 0.8,
+     "pintura": 10,
+     "segundaOportunidad": 4,
+     "banquillo": 9.8
+    },
+    "ctxContra": {
+     "contraataque": 2.5,
+     "pintura": 7,
+     "segundaOportunidad": 1.3,
+     "banquillo": 9
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.6,
+    "ortg": 115.1,
+    "drtg": 81.6,
+    "ctxFavor": {
+     "contraataque": 2.5,
+     "pintura": 6,
+     "segundaOportunidad": 1.5,
      "banquillo": 9
     },
     "ctxContra": {
      "contraataque": 0,
-     "pintura": 9.3,
+     "pintura": 8.5,
      "segundaOportunidad": 2,
-     "banquillo": 5.7
+     "banquillo": 4.8
     }
    },
    {
-    "pj": 3,
+    "pj": 4,
     "pace": 20,
-    "ortg": 103.4,
-    "drtg": 68.1,
+    "ortg": 90,
+    "drtg": 80.8,
     "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 9.3,
-     "segundaOportunidad": 3.7,
-     "banquillo": 10.3
+     "contraataque": 1,
+     "pintura": 8.5,
+     "segundaOportunidad": 3.8,
+     "banquillo": 8.3
     },
     "ctxContra": {
-     "contraataque": 0.7,
-     "pintura": 6,
-     "segundaOportunidad": 1.3,
-     "banquillo": 7.3
+     "contraataque": 1,
+     "pintura": 8.5,
+     "segundaOportunidad": 1,
+     "banquillo": 10.8
     }
    }
   ]
@@ -9520,75 +9520,75 @@
   "equipo": "CEMALU ALDAIA",
   "porCuarto": [
    {
-    "pj": 2,
-    "pace": 22.6,
-    "ortg": 97.4,
-    "drtg": 98.9,
+    "pj": 3,
+    "pace": 21.1,
+    "ortg": 80.7,
+    "drtg": 105.2,
     "ctxFavor": {
      "contraataque": 0,
-     "pintura": 11,
-     "segundaOportunidad": 4,
-     "banquillo": 8
+     "pintura": 8.7,
+     "segundaOportunidad": 2.7,
+     "banquillo": 5.3
     },
     "ctxContra": {
-     "contraataque": 1.5,
-     "pintura": 10,
-     "segundaOportunidad": 2.5,
-     "banquillo": 14.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 20.5,
-    "ortg": 102.3,
-    "drtg": 78.8,
-    "ctxFavor": {
-     "contraataque": 2.5,
-     "pintura": 10,
-     "segundaOportunidad": 6,
-     "banquillo": 11.5
-    },
-    "ctxContra": {
-     "contraataque": 2.5,
-     "pintura": 10,
-     "segundaOportunidad": 1,
-     "banquillo": 8.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 22.6,
-    "ortg": 72.9,
-    "drtg": 101,
-    "ctxFavor": {
-     "contraataque": 5,
-     "pintura": 8,
-     "segundaOportunidad": 0,
-     "banquillo": 10
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 10,
-     "segundaOportunidad": 2,
-     "banquillo": 15.5
-    }
-   },
-   {
-    "pj": 2,
-    "pace": 23.8,
-    "ortg": 84.1,
-    "drtg": 82.9,
-    "ctxFavor": {
-     "contraataque": 3,
-     "pintura": 8,
-     "segundaOportunidad": 3,
+     "contraataque": 1,
+     "pintura": 12.7,
+     "segundaOportunidad": 3.7,
      "banquillo": 13
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 20.1,
+    "ortg": 97.7,
+    "drtg": 98.3,
+    "ctxFavor": {
+     "contraataque": 3.3,
+     "pintura": 8,
+     "segundaOportunidad": 4.7,
+     "banquillo": 11.3
     },
     "ctxContra": {
-     "contraataque": 4,
-     "pintura": 10,
-     "segundaOportunidad": 1,
-     "banquillo": 8.5
+     "contraataque": 2.7,
+     "pintura": 11.3,
+     "segundaOportunidad": 3,
+     "banquillo": 6.3
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 21.3,
+    "ortg": 70.5,
+    "drtg": 114.1,
+    "ctxFavor": {
+     "contraataque": 3.3,
+     "pintura": 7.3,
+     "segundaOportunidad": 0.7,
+     "banquillo": 7.3
+    },
+    "ctxContra": {
+     "contraataque": 3.7,
+     "pintura": 8,
+     "segundaOportunidad": 2.3,
+     "banquillo": 13.3
+    }
+   },
+   {
+    "pj": 3,
+    "pace": 22.9,
+    "ortg": 94.7,
+    "drtg": 73.2,
+    "ctxFavor": {
+     "contraataque": 2.7,
+     "pintura": 10.7,
+     "segundaOportunidad": 2,
+     "banquillo": 15.7
+    },
+    "ctxContra": {
+     "contraataque": 3.3,
+     "pintura": 8.7,
+     "segundaOportunidad": 2,
+     "banquillo": 6.3
     }
    }
   ]

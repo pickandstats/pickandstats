@@ -312,6 +312,162 @@
   ]
  },
  {
+  "equipoId": "jaen-paraiso-interior-fs",
+  "equipo": "JAEN PARAISO INTERIOR FS",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 21.7,
+    "ortg": 105.9,
+    "drtg": 104.5,
+    "ctxFavor": {
+     "contraataque": 5.5,
+     "pintura": 10.5,
+     "segundaOportunidad": 0.8,
+     "banquillo": 10
+    },
+    "ctxContra": {
+     "contraataque": 6,
+     "pintura": 8,
+     "segundaOportunidad": 2.5,
+     "banquillo": 9
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 22.9,
+    "ortg": 69.9,
+    "drtg": 94.2,
+    "ctxFavor": {
+     "contraataque": 5,
+     "pintura": 9,
+     "segundaOportunidad": 1.3,
+     "banquillo": 9.3
+    },
+    "ctxContra": {
+     "contraataque": 3,
+     "pintura": 11,
+     "segundaOportunidad": 4.3,
+     "banquillo": 9.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 20.9,
+    "ortg": 100.3,
+    "drtg": 95.5,
+    "ctxFavor": {
+     "contraataque": 4.8,
+     "pintura": 11.5,
+     "segundaOportunidad": 1.5,
+     "banquillo": 9.8
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 8.5,
+     "segundaOportunidad": 3,
+     "banquillo": 9.5
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.9,
+    "ortg": 87.9,
+    "drtg": 75.9,
+    "ctxFavor": {
+     "contraataque": 2.8,
+     "pintura": 7,
+     "segundaOportunidad": 1,
+     "banquillo": 8.3
+    },
+    "ctxContra": {
+     "contraataque": 2.3,
+     "pintura": 5,
+     "segundaOportunidad": 1,
+     "banquillo": 4.5
+    }
+   }
+  ]
+ },
+ {
+  "equipoId": "getafe",
+  "equipo": "C.B. GETAFE",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 20.2,
+    "ortg": 95.2,
+    "drtg": 96.5,
+    "ctxFavor": {
+     "contraataque": 3.5,
+     "pintura": 5.5,
+     "segundaOportunidad": 0.8,
+     "banquillo": 9.5
+    },
+    "ctxContra": {
+     "contraataque": 2.3,
+     "pintura": 11,
+     "segundaOportunidad": 2.8,
+     "banquillo": 8.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 21.7,
+    "ortg": 71.3,
+    "drtg": 102.3,
+    "ctxFavor": {
+     "contraataque": 2.3,
+     "pintura": 9,
+     "segundaOportunidad": 0.8,
+     "banquillo": 10
+    },
+    "ctxContra": {
+     "contraataque": 5.3,
+     "pintura": 9,
+     "segundaOportunidad": 2.5,
+     "banquillo": 9.3
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.1,
+    "ortg": 89.2,
+    "drtg": 110.6,
+    "ctxFavor": {
+     "contraataque": 1,
+     "pintura": 8.5,
+     "segundaOportunidad": 2.8,
+     "banquillo": 8.5
+    },
+    "ctxContra": {
+     "contraataque": 4.5,
+     "pintura": 11.5,
+     "segundaOportunidad": 1.8,
+     "banquillo": 8.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 21.2,
+    "ortg": 81.3,
+    "drtg": 79.8,
+    "ctxFavor": {
+     "contraataque": 3,
+     "pintura": 5.5,
+     "segundaOportunidad": 0.5,
+     "banquillo": 5.5
+    },
+    "ctxContra": {
+     "contraataque": 1.5,
+     "pintura": 7,
+     "segundaOportunidad": 0.5,
+     "banquillo": 6.3
+    }
+   }
+  ]
+ },
+ {
   "equipoId": "uemc-valladolid",
   "equipo": "UEMC BALONCESTO VALLADOLID",
   "porCuarto": [
@@ -931,162 +1087,6 @@
      "pintura": 5.5,
      "segundaOportunidad": 1,
      "banquillo": 7.5
-    }
-   }
-  ]
- },
- {
-  "equipoId": "getafe",
-  "equipo": "C.B. GETAFE",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 19.7,
-    "ortg": 101.3,
-    "drtg": 102,
-    "ctxFavor": {
-     "contraataque": 3.3,
-     "pintura": 6.7,
-     "segundaOportunidad": 0,
-     "banquillo": 10
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 12,
-     "segundaOportunidad": 3.7,
-     "banquillo": 9
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 20.4,
-    "ortg": 73.4,
-    "drtg": 108.1,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 8,
-     "segundaOportunidad": 1,
-     "banquillo": 9.3
-    },
-    "ctxContra": {
-     "contraataque": 3.7,
-     "pintura": 10,
-     "segundaOportunidad": 2.3,
-     "banquillo": 8.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 18.8,
-    "ortg": 83.4,
-    "drtg": 115.9,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 7.3,
-     "segundaOportunidad": 2.3,
-     "banquillo": 8
-    },
-    "ctxContra": {
-     "contraataque": 4.7,
-     "pintura": 10.7,
-     "segundaOportunidad": 1.7,
-     "banquillo": 11
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.2,
-    "ortg": 85,
-    "drtg": 80.1,
-    "ctxFavor": {
-     "contraataque": 2,
-     "pintura": 6.7,
-     "segundaOportunidad": 0.7,
-     "banquillo": 5.7
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 6.7,
-     "segundaOportunidad": 0.7,
-     "banquillo": 7
-    }
-   }
-  ]
- },
- {
-  "equipoId": "jaen-paraiso-interior-fs",
-  "equipo": "JAEN PARAISO INTERIOR FS",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 22.3,
-    "ortg": 113.4,
-    "drtg": 113,
-    "ctxFavor": {
-     "contraataque": 5.7,
-     "pintura": 11.3,
-     "segundaOportunidad": 1,
-     "banquillo": 10.7
-    },
-    "ctxContra": {
-     "contraataque": 6.7,
-     "pintura": 10,
-     "segundaOportunidad": 2.3,
-     "banquillo": 9.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.9,
-    "ortg": 62.5,
-    "drtg": 105.3,
-    "ctxFavor": {
-     "contraataque": 3.3,
-     "pintura": 10,
-     "segundaOportunidad": 0.7,
-     "banquillo": 8.3
-    },
-    "ctxContra": {
-     "contraataque": 2.3,
-     "pintura": 10.7,
-     "segundaOportunidad": 5.7,
-     "banquillo": 9
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 21.3,
-    "ortg": 101.9,
-    "drtg": 92.2,
-    "ctxFavor": {
-     "contraataque": 5,
-     "pintura": 10.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 12.3
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 7.3,
-     "segundaOportunidad": 2.7,
-     "banquillo": 9.3
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.4,
-    "ortg": 91.1,
-    "drtg": 78,
-    "ctxFavor": {
-     "contraataque": 3,
-     "pintura": 6.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 9.7
-    },
-    "ctxContra": {
-     "contraataque": 1,
-     "pintura": 6,
-     "segundaOportunidad": 1.3,
-     "banquillo": 4.3
     }
    }
   ]
