@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import FasesAscenso from './FasesAscenso';
 import PlayOff from './PlayOff';
-import { n0, s1 } from './formato';
+import { n0, s0 } from './formato';
 
 const numJornada = j => parseInt((String(j).match(/\d+/) || [0])[0], 10);
 
@@ -248,7 +248,7 @@ export default function Clasificacion({
                     <td className="izq"><span className="enlace" onClick={() => clicEquipo(e.id)}>{e.nombre}</span></td>
                     <td>{n0(e.pj)}</td><td>{n0(e.pg)}</td><td>{n0(e.pp)}</td>
                     <td>{n0(e.pf)}</td><td>{n0(e.pc)}</td>
-                    <td className={e.dif > 0 ? 'net-pos' : 'net-neg'}>{s1(e.dif)}</td>
+                    <td className={e.dif > 0 ? 'net-pos' : 'net-neg'}>{s0(e.dif)}</td>
                   </tr>
                 ))}
               </tbody>

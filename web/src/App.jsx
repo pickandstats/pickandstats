@@ -478,7 +478,7 @@ export default function App() {
       ) : vista === 'equipos' ? (
         <Equipos equipos={equipos} grupos={grupos} srsPestillo={srsPestillo} onVerEquipo={verEquipo} />
       ) : vista === 'jugadores' ? (
-        <Jugadores jugadores={jugadores} grupos={grupos} equipos={equipos}
+        <Jugadores jugadores={jugadores} grupos={grupos} equipos={equipos} minPj={minPj}
           onVerEquipo={verEquipo} onVerJugador={verJugador} />
       ) : vista === 'comparador' ? (
         <ComparadorPanel temporada={temporada} />

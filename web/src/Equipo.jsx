@@ -269,8 +269,8 @@ export default function Equipo({ equipo, jugadores, partidos, onVolver, onVerEqu
                 {CAMPOS_CTX.map(([clave, etiqueta]) => (
                   <tr key={clave}>
                     <td className="izq">{etiqueta}</td>
-                    <td>{ctxSumado.favor[clave]}</td>
-                    <td>{ctxSumado.contra[clave]}</td>
+                    <td>{n1(ctxSumado.favor[clave])}</td>
+                    <td>{n1(ctxSumado.contra[clave])}</td>
                   </tr>
                 ))}
               </tbody>

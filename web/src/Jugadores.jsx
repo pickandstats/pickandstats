@@ -88,11 +88,18 @@ const edadDe = nacimiento => {
   return e;
 };
 
-export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onVerJugador }) {
+export default function Jugadores({ jugadores, grupos, equipos, minPj, onVerEquipo, onVerJugador }) {
   const [grupo, setGrupo] = useState('todos');
   const [equipoFiltro, setEquipoFiltro] = useState('todos');
   const [busqueda, setBusqueda] = useState('');
-  const [minPj, setMinPj] = useState(10);
+  // Valor por defecto = minPj de parametros.json (_instrucciones.md 23/10,
+  // lote siguiente, punto 3): antes era un `10` fijo, tercera copia del
+  // mismo criterio que ya vive en Inicio.jsx y en calcular.js -- con la
+  // temporada recien empezada (minPj=3) un 10 fijo vaciaba la tabla sin
+  // avisar. Sigue siendo un filtro del lector, no un umbral del producto:
+  // se puede bajar (o subir) a mano despues de que la temporada lo mueva.
+  const [minPjFiltro, setMinPjFiltro] = useState(minPj);
+  useEffect(() => { setMinPjFiltro(minPj); }, [minPj]);
   const [filtroEdad, setFiltroEdad] = useState('todas');
   const [minAntesDeEdad, setMinAntesDeEdad] = useState(null);
 
@@ -100,10 +107,10 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
   // menos partidos juegan, y el mínimo por defecto ocultaría a más de la mitad.
   const cambiarEdad = valor => {
     if (valor !== 'todas' && filtroEdad === 'todas') {
-      setMinAntesDeEdad(minPj);
-      setMinPj(1);
+      setMinAntesDeEdad(minPjFiltro);
+      setMinPjFiltro(1);
     } else if (valor === 'todas' && minAntesDeEdad != null) {
-      setMinPj(minAntesDeEdad);
+      setMinPjFiltro(minAntesDeEdad);
       setMinAntesDeEdad(null);
     }
     setFiltroEdad(valor);
@@ -145,7 +152,7 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
   const cambiarGrupo = g => { setGrupo(g); setEquipoFiltro('todos'); };
 
   const filas = useMemo(() => {
-    let f = jugadores.filter(j => j.pj >= minPj);
+    let f = jugadores.filter(j => j.pj >= minPjFiltro);
     if (filtroEdad !== 'todas' && datosPers) {
       const [, , min, max] = RANGOS.find(r => r[0] === filtroEdad) || [];
       f = f.filter(j => {
@@ -167,7 +174,7 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
       return desc ? vb - va : va - vb;
     });
     return f;
-  }, [jugadores, grupo, equipoFiltro, busqueda, minPj, orden, filtroEdad, datosPers]);
+  }, [jugadores, grupo, equipoFiltro, busqueda, minPjFiltro, orden, filtroEdad, datosPers]);
 
   const clicOrden = clave =>
     setOrden(o => o.clave === clave ? { clave, desc: !o.desc } : { clave, desc: true });
@@ -193,8 +200,8 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
         </select>
         <label>
           Mín. partidos{' '}
-          <input type="number" min="1" max="26" value={minPj}
-            onChange={e => setMinPj(+e.target.value || 1)} style={{ width: 60 }} />
+          <input type="number" min="1" max="26" value={minPjFiltro}
+            onChange={e => setMinPjFiltro(+e.target.value || 1)} style={{ width: 60 }} />
         </label>
         </div>
 
@@ -205,7 +212,16 @@ export default function Jugadores({ jugadores, grupos, equipos, onVerEquipo, onV
         ))}
       </div>
 
-      {modo === 'grafico' ? (
+      {filas.length === 0 ? (
+        // _instrucciones.md 23/10 (lote siguiente), punto 3: una tabla vacia
+        // sin explicacion es el peor de los tres estados -- antes pasaba sin
+        // avisar en octubre, cuando el minimo por defecto (10, ahora minPj)
+        // es mayor que lo que cualquiera ha podido jugar.
+        <p className="aviso-dato">
+          Ningún jugador llega a {minPjFiltro} partido{minPjFiltro === 1 ? '' : 's'} jugado{minPjFiltro === 1 ? '' : 's'} con
+          estos filtros. Baja el mínimo de partidos (arriba) para ver más.
+        </p>
+      ) : modo === 'grafico' ? (
         <DispersionJugadores jugadores={filas} onVerJugador={onVerJugador} />
       ) : (
       <div className="tabla-scroll">
