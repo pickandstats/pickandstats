@@ -33,7 +33,7 @@ const METRICAS_PCT = [
 let modoRecordado = 'resumen';
 
 export default function Jugador({ carrera, historico, equipos, jugadores, jugadoresCuartos, onVolver, onVerEquipo,
-                                 competicionNombre, competicion, temporada }) {
+                                 competicionNombre, competicion, temporada, minPj }) {
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
   const pct = carrera.percentiles || null;
@@ -226,7 +226,7 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
                 );
               })}
               <p className="pie" style={{ marginTop: 8 }}>
-                Percentil respecto a jugadores con 12+ partidos. 100 = mejor de la categoría.
+                Percentil respecto a jugadores con {minPj}+ partidos. 100 = mejor de la categoría.
                 Nacional compara con toda la {competicionNombre}; grupo, solo con su grupo.
               </p>
             </div>

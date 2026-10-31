@@ -46,9 +46,9 @@ const cuartosOficiales = new Map(partidos.map(p => [String(p.id), p.cuartos]));
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
 let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0;
 let puntosNoCuadran = 0, puntosSanos = 0;
-let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0;
+let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0, puntosNegativos = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
-const cuartosNoCuadranIds = [], periodosImposiblesIds = [];
+const cuartosNoCuadranIds = [], periodosImposiblesIds = [], puntosNegativosIds = [];
 // Lista SIN tope (cuartosNoCuadranIds de abajo se corta en 8 para no inundar la
 // consola): la politica de re-raspado de mas abajo tiene que intentarlo con
 // todos los discrepantes, no solo con los primeros 8.
@@ -157,15 +157,29 @@ for (const f of ficheros) {
   // un `porCuarto` que suma 0-0 por un corte perdido si es real. Se comprueba
   // en CUALQUIER acta con porCuarto, no solo las "completas".
   if (a.porCuarto) {
+    let yaContado0_0 = false, yaContadoNegativo = false;
     for (let i = 0; i < a.porCuarto.length; i++) {
       const cuarto = a.porCuarto[i];
       if (!cuarto) continue; // null = corte perdido, ya contado en "truncadas"; no es un 0-0 real
       const sumaLocalQ = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
       const sumaVisitanteQ = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
-      if (sumaLocalQ === 0 && sumaVisitanteQ === 0) {
+      if (!yaContado0_0 && sumaLocalQ === 0 && sumaVisitanteQ === 0) {
         periodosImposibles++;
         if (periodosImposiblesIds.length < 8) periodosImposiblesIds.push(`${a.partido} (periodo ${i + 1})`);
-        break;
+        yaContado0_0 = true;
+      }
+      // Invariante barato aparte (_instrucciones.md 31/10, punto 2): un cuarto
+      // con puntos NEGATIVOS es igual de imposible que uno 0-0, y hasta hoy
+      // solo no llegaba a produccion porque verificarActa fallaba por minutos
+      // en los dos casos vistos (2535735, 2536844) -- una coincidencia, no una
+      // proteccion de diseño. Si alguna vez un corte perdido produce un
+      // "-43/-60" SIN que verificarActa se queje (minutos podrian cuadrar por
+      // casualidad), nada lo pararia sin este chequeo. Bloquea siempre, sin
+      // segunda fuente, igual que el de arriba.
+      if (!yaContadoNegativo && (sumaLocalQ < 0 || sumaVisitanteQ < 0)) {
+        puntosNegativos++;
+        if (puntosNegativosIds.length < 8) puntosNegativosIds.push(`${a.partido} (periodo ${i + 1}: ${sumaLocalQ}-${sumaVisitanteQ})`);
+        yaContadoNegativo = true;
       }
     }
   }
@@ -321,6 +335,7 @@ console.log(`  Cuarto a cuarto, comprobadas:        ${cuartosSanos + cuartosNoCu
 console.log(`  Cuadran:                             ${cuartosSanos}`);
 console.log(`  NO CUADRAN cuarto a cuarto:           ${cuartosNoCuadran}${cuartosNoCuadran ? ' -> ' + cuartosNoCuadranIds.join(', ') : ''}`);
 console.log(`  Periodos 0-0 (baloncesto imposible):  ${periodosImposibles}${periodosImposibles ? ' -> ' + periodosImposiblesIds.join('; ') : ''}`);
+console.log(`  Periodos con puntos negativos (imposible): ${puntosNegativos}${puntosNegativos ? ' -> ' + puntosNegativosIds.join('; ') : ''}`);
 console.log('');
 console.log(`Coherencia · pintura media/cuarto:  ${mediaPintura} pts (esperado ~14-24 sumando ambos equipos)`);
 console.log(`Valores fuera de rango:             ${valoresRaros}`);
@@ -370,6 +385,7 @@ if (puntosNoCuadran > 0) problemas.push(`${puntosNoCuadran} actas completas cuyo
 // mienta, con dos causas distintas que arreglar.
 if (cuartosNoCuadran > 0) problemas.push(`${cuartosNoCuadran} actas cuyo reparto cuarto a cuarto no cuadra con partidos.json (el total si cuadra)`);
 if (periodosImposibles > 0) problemas.push(`${periodosImposibles} actas con un periodo 0-0 para los dos equipos (imposible)`);
+if (puntosNegativos > 0) problemas.push(`${puntosNegativos} actas con un periodo de puntos negativos (imposible)`);
 
 if (problemas.length === 0) {
   console.log('VEREDICTO: LISTO para generar agregados y boxscore.');
@@ -379,7 +395,7 @@ if (problemas.length === 0) {
   if (sinContexto > 0) console.log('  -> Borra las actas sin contexto y re-extrae (sin --forzar) antes de generar.');
   if (sinJugadores > 0) console.log('  -> Re-extrae (sin --forzar) ' + sinJugadoresIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, declaralo en cuartos-incompletos-origen.json.');
   if (puntosNoCuadran > 0) console.log('  -> Re-extrae (sin --forzar) ' + puntosNoCuadranIds.map(s => s.split(' ')[0]).join(', ') + '; si vuelve a fallar, investigar a mano (no declarar en cuartos-incompletos-origen.json sin mirar antes: un acta que miente no es lo mismo que una truncada en origen).');
-  if (cuartosNoCuadran > 0 || periodosImposibles > 0) console.log('  -> Re-extrae (sin --forzar) ' + [...new Set([...cuartosNoCuadranIds, ...periodosImposiblesIds.map(s => s.split(' ')[0])])].join(', ') + '; si se concentra en un grupo, busca la causa antes de re-extraer uno a uno.');
+  if (cuartosNoCuadran > 0 || periodosImposibles > 0 || puntosNegativos > 0) console.log('  -> Re-extrae (sin --forzar) ' + [...new Set([...cuartosNoCuadranIds, ...periodosImposiblesIds.map(s => s.split(' ')[0]), ...puntosNegativosIds.map(s => s.split(' ')[0])])].join(', ') + '; si se concentra en un grupo, busca la causa antes de re-extraer uno a uno.');
 }
 console.log('');
 // Codigo de salida: 1 si hay problemas (util en CI para que el paso quede marcado)

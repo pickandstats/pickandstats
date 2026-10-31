@@ -1074,3 +1074,54 @@ sandbox (`data/processed/tercerafeb/_test31oct`, limpiado tras la prueba) que
 el registro escribe, acumula `intentos` y se autolimpia como se espera.
 `test/regresion.cjs` y `verificar-cuartos.js` sobre datos reales, sin
 cambios. Detalle de la investigación de las 6 actas, `_informe-seis-actas.md`.
+
+### 17.16 Publicar con un agujero honesto, no esconder el partido entero *(31/10/2026)*
+
+Tres de las seis actas del §17.15 (y otras tres encontradas después, siete
+en total) tienen los puntos perfectos cuarto a cuarto contra la fuente
+oficial — solo fallan en la suma de MINUTOS de un equipo. Hasta hoy eso
+bastaba para que `actas-cuartos.js` no escribiera nada: la excepción de
+`verificarActa` cortaba antes de llegar al fichero. El lector veía un
+partido sin ningún desglose, igual que si la FEB no hubiera publicado el
+acta — un agujero de dato donde en realidad había un dato bueno con una sola
+columna defectuosa.
+
+**Arreglo**: `extraerActaPorCuartos` se llama con `{ verificar: false }`
+(precedente: la reparación en paralelo del §17.7). `verificarActa` se
+comprueba luego A MANO, sin bloquear — solo para decidir qué bandera lleva
+la acta. Si los puntos cuadran contra `partidos.json.cuartos` pero los
+minutos no, se publica igual, con la clave `min` borrada de TODOS los
+jugadores del lado que falla en TODOS los cuartos (no se sabe qué jugador
+ni qué cuarto es el responsable del déficit, así que se vacía el equipo
+entero por honestidad, no por economía). Esto reutiliza sin tocarlo el
+mecanismo que ya existía para el formato viejo de acta (`Partido.jsx`: clave
+`min` ausente ⇒ columna "—") — la fila es idéntica a una de formato viejo
+desde el punto de vista del front, aunque la causa sea otra.
+
+**Por qué NO se escribe cuando los puntos tampoco cuadran** (dos casos
+reales: cuarto final con puntos negativos, PDF del corte final vacío):
+escribir esa acta dispara el guardián YA EXISTENTE de `verificar-cuartos.js`
+("reparto cuarto a cuarto no cuadra con partidos.json") y **bloquea la
+generación de cuartos para TODA la categoría**, no solo para ese partido —
+probado de verdad en sandbox. `puntosCompletos` (la misma pregunta que ya
+hace `boxscore-cuartos.js`) decide si se escribe SIQUIERA, no solo qué
+bandera lleva: si no cuadra, la acta se queda fuera, como antes, solo
+registrada en `actas-no-verificadas.json` con evidencia.
+
+**Invariante nuevo, independiente** (`verificar-cuartos.js`): ningún cuarto
+puede tener puntos negativos — al lado del invariante de "0-0 imposible"
+(§17.14), misma política (bloquea siempre, sin segunda fuente). Hasta hoy
+los dos casos de puntos negativos conocidos no llegaban nunca a producción
+porque, por coincidencia, `verificarActa` también fallaba por minutos en
+ambos — una protección accidental, no de diseño. Con `verificarActa` ya sin
+poder de bloqueo (ver arriba), hacía falta una red de seguridad que no
+dependiera de esa coincidencia.
+
+**Efecto colateral conocido, no un bug**: el guardián de minutos de
+`verificar-cuartos.js` (sección "Guardián de jugadores") clasifica una acta
+con un lado vaciado como "de caché vieja" (el mismo chequeo que detecta el
+formato antiguo mira exactamente la misma ausencia de `min`). Es solo un
+contador informativo, no bloquea nada — pero si ese número sube para
+partidos de la temporada viva, es esto, no una regresión de formato.
+
+Detalle completo: `_informe-vigesimosegundo-lote.md`.

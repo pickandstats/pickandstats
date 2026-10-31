@@ -235,9 +235,21 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       // fichero nuevo de abajo ya deja la lista para la semana que viene.
       console.log(`  (${nombre} ${sel}: base de cobertura en formato antiguo, sin lista de ids; se regenera esta semana)`);
     }
-    fs.writeFileSync(fCobertura, JSON.stringify(
-      { jugados, conCuartos, idsConCuartos: [...idsConCuartos].sort(), fecha: new Date().toISOString().slice(0, 10) },
-      null, 1));
+    // Escritura cerrada igual que el commit de mas abajo (_instrucciones.md
+    // 31/10, punto 4): `data/raw/*/*/actas/` es gitignored y solo esta
+    // completa en la cache de GitHub Actions (ver gotcha de S11) -- un run
+    // LOCAL con una caché mas corta que la de CI calcularia una cobertura mas
+    // baja de la real y, al escribirla aqui, envenenaria la base de
+    // comparacion que la semana que viene usa CI de verdad. El diagnostico de
+    // arriba (si hay regresion) sigue corriendo igual en local; lo que se
+    // cierra es solo la escritura de la nueva base.
+    if (process.env.GITHUB_ACTIONS === 'true') {
+      fs.writeFileSync(fCobertura, JSON.stringify(
+        { jugados, conCuartos, idsConCuartos: [...idsConCuartos].sort(), fecha: new Date().toISOString().slice(0, 10) },
+        null, 1));
+    } else {
+      console.log(`  (${nombre} ${sel}: base de cobertura NO actualizada -- corriendo en local, fuera de CI.)`);
+    }
   }
 }
 

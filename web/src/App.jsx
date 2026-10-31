@@ -53,7 +53,7 @@ function RutaEquipo({ equipos, jugadores, partidos, datosClub, equiposCuartos, s
 // Ficha de jugador desde la URL. Resuelve primero en carreras (temporada actual)
 // y, si no está, reconstruye desde el histórico.
 function RutaJugador({ carreras, historico, equipos, jugadores, jugadoresCuartos, competicion, temporada,
-                       competicionNombre, cargando,
+                       competicionNombre, cargando, minPj,
                        carreraDesdeHistorico, onVolver, onVerEquipo }) {
   const { idJugador } = useParams();
   if (cargando) return <p className="cargando">Cargando datos…</p>;
@@ -68,7 +68,7 @@ function RutaJugador({ carreras, historico, equipos, jugadores, jugadoresCuartos
     <Jugador carrera={carrera} historico={hist} equipos={equipos} jugadores={jugadores}
       jugadoresCuartos={jugadoresCuartos}
       competicion={competicion} temporada={temporada}
-      competicionNombre={competicionNombre} onVolver={onVolver} onVerEquipo={onVerEquipo} />
+      competicionNombre={competicionNombre} minPj={minPj} onVolver={onVolver} onVerEquipo={onVerEquipo} />
   );
 }
 
@@ -416,7 +416,7 @@ export default function App() {
             carreras={carreras} historico={historico} equipos={equipos} jugadores={jugadores}
             jugadoresCuartos={jugadoresCuartos}
             competicion={competicion} temporada={temporada}
-            competicionNombre={compActual.nombre} cargando={cargando}
+            competicionNombre={compActual.nombre} cargando={cargando} minPj={minPj}
             carreraDesdeHistorico={carreraDesdeHistorico}
             onVolver={() => navigate('/')} onVerEquipo={verEquipo} />
         } />
@@ -457,7 +457,7 @@ export default function App() {
       ) : jugadorSel ? (
         <Jugador carrera={jugadorSel} historico={histJugadorSel} equipos={equipos} jugadores={jugadores}
           competicion={competicion} temporada={temporada}
-          competicionNombre={compActual.nombre}
+          competicionNombre={compActual.nombre} minPj={minPj}
           onVolver={() => setJugadorSel(null)} onVerEquipo={verEquipo} />
       ) : equipoSel ? (
         <Equipo equipo={equipoSel} jugadores={jugadores} partidos={partidos}

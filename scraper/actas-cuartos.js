@@ -14,7 +14,7 @@
 //   node scraper/actas-cuartos.js --competicion 1 --temporada 2025 --limite 5
 const fs = require('fs');
 const path = require('path');
-const { extraerActaPorCuartos } = require('./extraer-acta');
+const { extraerActaPorCuartos, verificarActa } = require('./extraer-acta');
 const CFG = require('./config');
 
 const args = process.argv.slice(2);
@@ -57,6 +57,25 @@ fs.mkdirSync(dirActas, { recursive: true });
 // acta; solo las sanas se saltan por existir.
 const esSana = a => !!(a && a.completo && a.verificado !== false && a.contextoPorCuarto);
 const LIMITE_INTENTOS = 4;
+
+// Puntos de JUGADOR en porCuarto contra la fuente OFICIAL (partidos.json.cuartos),
+// cuarto a cuarto -- la misma pregunta que puntosCompletosDe de
+// boxscore-cuartos.js (y el chequeo equivalente de verificar-cuartos.js y
+// generar-registro-irreparables.js: cuarta copia, pendiente de unificar en un
+// sitio comun algun dia). Se repite aqui porque decide si esta acta se
+// escribe SIQUIERA (_instrucciones.md 31/10, punto 1), no solo que bandera
+// lleva despues.
+function puntosCuadranOficial(porCuarto, of) {
+  if (!Array.isArray(of) || !of.length || porCuarto.length !== of.length) return false;
+  for (let i = 0; i < of.length; i++) {
+    const cuarto = porCuarto[i], oficial = of[i];
+    if (!cuarto) return false;
+    const sl = ((cuarto[0] && cuarto[0].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+    const sv = ((cuarto[1] && cuarto[1].jugadores) || []).reduce((acc, j) => acc + (j.pts || 0), 0);
+    if (sl !== (oficial.local || 0) || sv !== (oficial.visitante || 0)) return false;
+  }
+  return true;
+}
 
 // Politica de reintento para actas que SI descargamos pero no verifican
 // (_instrucciones.md 31/10, punto 4). Sin esto, cada run semanal volvia a
@@ -143,8 +162,16 @@ try {
     }
 
     try {
-      const acta = await extraerActaPorCuartos(p.id);
-      // Verificacion: suma de cuartos == total de cada jugador
+      // verificar:false (_instrucciones.md 31/10, punto 1): que falle
+      // verificarActa por minutos ya NO decide si esta acta se escribe --
+      // antes cortaba aqui mismo y no se escribia nada, indistinguible de
+      // "la FEB no lo ha publicado todavia". Se comprueba a mano, aparte, sin
+      // bloquear la extraccion (ver mas abajo).
+      const acta = await extraerActaPorCuartos(p.id, null, { verificar: false });
+
+      // Verificacion INTERNA: suma de cuartos == total de cada jugador (si
+      // esto no cuadra, es la propia resta de cortes la que esta rota, no
+      // solo los minutos -- distinto de lo de abajo).
       let cuadra = true;
       acta.final.equipos.forEach((eq, ei) => {
         eq.jugadores.forEach(jf => {
@@ -156,6 +183,46 @@ try {
           if (suma !== jf.pts) cuadra = false;
         });
       });
+
+      // Verificacion de MINUTOS (lo que antes cortaba todo): se corre aparte,
+      // sin relanzar si falla por minutos -- solo guarda la evidencia para
+      // decidir, un poco mas abajo, que bandera lleva la acta y que columna
+      // se vacia. Si falla por otra razon (filas ilegibles) si se relanza:
+      // eso es un parseo roto de verdad, no "un lado no suma 200:00".
+      let evidenciaMinutos = null;
+      try { verificarActa(acta.final, p.id); }
+      catch (e) {
+        if (e.tipoFallo !== 'verificacion' || e.evidencia.lado === null) throw e;
+        evidenciaMinutos = e.evidencia;
+      }
+
+      // Puntos contra la fuente OFICIAL: si no cuadran, NO se escribe --
+      // escribirla dispararia el guardian de "reparto cuarto a cuarto" de
+      // verificar-cuartos.js (que ya existe, sin tocar) y bloquearia TODA la
+      // categoria por un partido que ya sabemos roto (la Familia B del
+      // informe: cuarto final con puntos negativos). Se queda fuera, igual
+      // que hoy, solo registrada con evidencia -- "se quedan fuera" del
+      // informe, no "se escriben igual y que bloqueen".
+      if (evidenciaMinutos && !puntosCuadranOficial(acta.porCuarto, p.cuartos)) {
+        const err = new Error(`Acta ${p.id}: los minutos no verifican Y los puntos ` +
+          `no cuadran cuarto a cuarto contra el oficial -- no se publica.`);
+        err.tipoFallo = 'verificacion';
+        err.evidencia = evidenciaMinutos;
+        throw err;
+      }
+
+      // Puntos perfectos, minutos no: se publica con el reparto por cuarto
+      // (esta bien) y la columna de minutos del lado que falla vacia -- el
+      // mecanismo YA existente (Partido.jsx: clave "min" ausente = "—", igual
+      // que el formato viejo) hace el resto sin tocar el front. Se vacia el
+      // lado ENTERO en TODOS los cuartos: no se sabe cual jugador/cuarto es
+      // el responsable del deficit, solo que el total del equipo no suma.
+      if (evidenciaMinutos) {
+        const ladoIdx = evidenciaMinutos.lado === 'visitante' ? 1 : 0;
+        acta.porCuarto.forEach(cuarto => {
+          if (cuarto && cuarto[ladoIdx]) cuarto[ladoIdx].jugadores.forEach(j => { delete j.min; });
+        });
+      }
 
       const salida = {
         partido: p.id,
@@ -171,6 +238,10 @@ try {
         porCuarto: acta.porCuarto,   // [cuarto][equipo].jugadores[]
         contextoPorCuarto: acta.contextoPorCuarto, // [cuarto] contraataque, pintura, 2a op, tras perdida, banquillo
         generado: new Date().toISOString().slice(0, 10),
+        // Presente solo si se vacio la columna de minutos de un lado (ver
+        // arriba): deja rastro de POR QUE faltan, para quien lea este
+        // fichero directamente sin pasar por el registro.
+        ...(evidenciaMinutos ? { minutosNoVerifican: evidenciaMinutos } : {}),
       };
 
       const sana = esSana(salida);
