@@ -1192,3 +1192,23 @@ crítico — mismo idiom que `yaReparada()` de
 se convierta en una alfombra.
 
 Detalle completo: `_informe-vigesimoquinto-lote.md`.
+
+**Reparación de la temporada viva, Primera primero** (31/10, el mismo
+día): el arreglo de `difJug` solo afecta a extracciones nuevas; las 45
+actas de Primera 2026 ya cacheadas se quedaban sin los 5 campos para
+siempre sin una reextracción. Mismo idiom que
+`scraper/reparar-cuartos-historicos.js` (extrae aparte, compara, promueve
+solo si es estrictamente mejor, informe) pero **adaptado**: el "viejo" se
+lee del fichero SERVIDO (`data/processed/.../boxscore-cuartos/<id>.json`,
+committeado), no de `data/raw/.../actas` (caché de CI, gitignored, sin
+acceso completo desde aquí) — la promoción escribe directamente el
+fichero servido. Tres condiciones para promover, escritas antes de correr
+nada: trae los 5 campos, los puntos siguen cuadrando con el oficial, y no
+empeora `verificarActa`. Guardián del frenazo (fallos consecutivos con
+firma 200/~587 bytes) activo, no se disparó. Resultado: **45/45
+promovidas, cero degradaciones** — igual que la cifra de Primera en la
+reparación de octubre (0/290), pero medida de nuevo, no asumida. Segunda y
+Tercera quedan pendientes a propósito: el lote pedía medir Primera primero
+y confirmar antes de seguir.
+
+Detalle completo: `_informe-vigesimosexto-lote.md`.
