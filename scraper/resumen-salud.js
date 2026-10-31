@@ -136,13 +136,25 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     // dato roto que investigar (ver actas-no-verificadas.json de la categoria).
     //
     // Un resumen con los dos numeros SIEMPRE visibles, incluido el cero
-    // (lote siguiente, 31/10): "0 de la FEB, 2 nuestras" dice algo que
-    // "faltan 2" no puede -- que el hueco no tiene nada que ver con que la
-    // FEB publique tarde, es enteramente nuestro. Las dos listas de ids se
-    // mantienen aparte, debajo, para quien necesite los ids concretos.
+    // (31/10): "0 de la FEB, 2 nuestras" dice algo que "faltan 2" no puede --
+    // que el hueco no tiene nada que ver con que la FEB publique tarde, es
+    // enteramente nuestro. Las dos listas de ids se mantienen aparte, debajo.
+    //
+    // Rojo por lo NUEVO, verde (aviso) por lo DECLARADO (lote siguiente,
+    // 31/10, puntos 1.1/1.2): las de la FEB (jugadosSinActa) son una señal
+    // nueva cada vez -- siguen siendo criticas. Las nuestras
+    // (jugadosNoVerifican) ya estan contadas en el registro, con su causa y
+    // su evidencia, y en cadencia de reintento propia (actas-cuartos.js) --
+    // repetir el mismo critico cada lunes sobre un pendiente ya declarado es
+    // precisamente el ruido que llevamos tres semanas viendo. Bajan a aviso.
+    // No es aflojar la prueba (el idiom de excluidos.json/
+    // cuartos-incompletos-origen.json/actas-irreparables-origen.json: rojo
+    // por lo nuevo, verde por lo declarado) -- el guardian de mas abajo es
+    // lo que impide que esto se convierta en una alfombra.
     if (jugadosSinActa.length || jugadosNoVerifican.length) {
-      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length + jugadosNoVerifican.length} acta(s) sin cuartos ` +
-        `(${jugadosSinActa.length} de la FEB, ${jugadosNoVerifican.length} nuestras)`);
+      const resumen = `${nombre} ${sel}: ${jugadosSinActa.length + jugadosNoVerifican.length} acta(s) sin cuartos ` +
+        `(${jugadosSinActa.length} de la FEB, ${jugadosNoVerifican.length} nuestras)`;
+      (jugadosSinActa.length ? criticos : avisos).push(resumen);
     }
     if (jugadosSinActa.length) {
       const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
@@ -150,7 +162,27 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     }
     if (jugadosNoVerifican.length) {
       const muestra = jugadosNoVerifican.slice(0, 8).join(', ') + (jugadosNoVerifican.length > 8 ? ', ...' : '');
-      criticos.push(`${nombre} ${sel}: ${jugadosNoVerifican.length} acta(s) que extraemos y no cuadran -> ${muestra} (ver data/processed/${nombre}/${sel}/actas-no-verificadas.json)`);
+      avisos.push(`${nombre} ${sel}: ${jugadosNoVerifican.length} acta(s) que extraemos y no cuadran, ya declaradas -> ${muestra} (ver data/processed/${nombre}/${sel}/actas-no-verificadas.json)`);
+    }
+
+    // El guardian del registro (31/10, punto 1.1.3): "verde por lo
+    // declarado" solo es seguro si lo declarado sigue siendo cierto -- igual
+    // que yaReparada() en generar-registro-irreparables.js. Si una entrada
+    // del registro ya tiene un acta en disco que ESTA sana (el run de
+    // actas-cuartos.js la reextrajo y esta vez si verifico), la entrada
+    // debia haberse autolimpiado sola y no lo hizo: eso SI es nuevo y SI
+    // merece un critico -- es la diferencia entre un pendiente conocido y
+    // una alfombra.
+    const idsNoAutolimpiados = [];
+    for (const e of (Array.isArray(regNoVerif) ? regNoVerif : [])) {
+      const fActa = path.join(dirActas, String(e.partido) + '.json');
+      if (!fs.existsSync(fActa)) continue;
+      const a = leerJSON(fActa);
+      if (a && a.completo && a.verificado !== false && a.contextoPorCuarto) idsNoAutolimpiados.push(String(e.partido));
+    }
+    if (idsNoAutolimpiados.length) {
+      criticos.push(`${nombre} ${sel}: ${idsNoAutolimpiados.length} entrada(s) de actas-no-verificadas.json ya tienen ` +
+        `acta sana en disco y no se autolimpiaron -> ${idsNoAutolimpiados.join(', ')} (¿se escribio a mano, o un bug en el autolimpiado de actas-cuartos.js?)`);
     }
 
     // 2c) Ultima puerta muda de esta pieza: si la FEB cambiara el formato de fecha,

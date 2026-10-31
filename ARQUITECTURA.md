@@ -1176,3 +1176,19 @@ arreglo todavía no llega a las actas ya cacheadas (se necesita un
 cuando convenga.
 
 Detalle completo: `_informe-vigesimocuarto-lote.md`.
+
+**"Rojo por lo nuevo, verde por lo declarado"** (31/10, el mismo día):
+`resumen-salud.js` marcaba crítico por igual una acta que la FEB no ha
+publicado todavía Y una acta ya registrada en
+`actas-no-verificadas.json` con su causa y su evidencia — repetir el mismo
+crítico cada lunes sobre un pendiente ya conocido es exactamente el ruido
+que ya nombramos con `excluidos.json`/`cuartos-incompletos-origen.json`/
+`actas-irreparables-origen.json`. Ahora: faltante **nuevo** (no en el
+registro) → crítico; faltante **declarado** (en el registro) → aviso. Y el
+guardián que lo hace seguro, no solo cómodo: si una entrada del registro
+tiene ya un acta sana en disco (se autolimpió mal, o se tocó a mano) →
+crítico — mismo idiom que `yaReparada()` de
+`generar-registro-irreparables.js`, para que "verde por lo declarado" nunca
+se convierta en una alfombra.
+
+Detalle completo: `_informe-vigesimoquinto-lote.md`.
