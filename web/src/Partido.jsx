@@ -397,6 +397,24 @@ export default function Partido({ partido, equipos, competicion, temporada, onVo
               Estadística de jugadores en <strong>{etiquetaCuartos}</strong>. Cambia la selección de cuartos arriba, o pulsa «Todos» para el partido completo.
             </p>
           )}
+          {hayDesglose && boxCuartos.minutosNoVerifican && (() => {
+            const mn = boxCuartos.minutosNoVerifican;
+            const nombreLado = mn.lado === 'visitante' ? partido.visitante.nombre : partido.local.nombre;
+            return (
+              <p className="aviso-dato" style={{ marginTop: 12, marginBottom: 0 }}>
+                {mn.accion === 'vaciado' ? (
+                  <>Los minutos de <strong>{nombreLado}</strong> por cuarto no se pueden confirmar
+                  (la suma del acta no cuadra con el reglamento) y se muestran como «—». El resto
+                  de estadísticas de este desglose sí está verificado.</>
+                ) : (
+                  <>Los minutos de <strong>{nombreLado}</strong> no cuadran exactamente con el
+                  reglamento ({mn.minutosObtenidos} de {mn.minutosEsperados}), pero la diferencia es
+                  menor que los minutos de cualquier jugador: se publican tal cual, sin poder
+                  achacarla a uno en concreto.</>
+                )}
+              </p>
+            );
+          })()}
           {tablaBox(parcial ? boxDeCuartos.local : partido.boxscore.local, partido.local.nombre)}
           {tablaBox(parcial ? boxDeCuartos.visitante : partido.boxscore.visitante, partido.visitante.nombre)}
         </>

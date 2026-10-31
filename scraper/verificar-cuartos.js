@@ -44,7 +44,7 @@ const cuartosOficiales = new Map(partidos.map(p => [String(p.id), p.cuartos]));
 
 // 2/3/4) Recorrer actas: contexto, completitud, coherencia
 let conContexto = 0, sinContexto = 0, completas = 0, truncadas = 0, rendidas = 0;
-let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0;
+let sinJugadores = 0, sinJugadoresSanas = 0, cacheAntigua = 0, incompletosOrigen = 0, minutosRetirados = 0;
 let puntosNoCuadran = 0, puntosSanos = 0;
 let cuartosNoCuadran = 0, cuartosSanos = 0, periodosImposibles = 0, puntosNegativos = 0;
 const sinContextoIds = [], truncadasIds = [], rendidasIds = [], sinJugadoresIds = [], puntosNoCuadranIds = [];
@@ -197,9 +197,23 @@ for (const f of ficheros) {
     continue; // declarado en cuartos-incompletos-origen.json: no va a cuadrar nunca, no cuenta como fallo
   }
 
+  // Minutos retirados A PROPOSITO (S17.16 + _instrucciones.md 31/10, lote
+  // siguiente, punto 2): una acta con `minutosNoVerifican` no es cache
+  // vieja -- es formato nuevo con una columna que nosotros decidimos no
+  // ofrecer entera (accion 'vaciado') o con un descuadre que ya aceptamos
+  // publicar tal cual (accion 'con_descuadre'). Las dos se cuentan aparte,
+  // ANTES del chequeo de `minEnQ2a4` de abajo: ese chequeo mide "falta `min`
+  // por formato viejo", y desde que empezamos a borrar `min` a proposito
+  // (vaciado) deja de medir eso para estas actas -- contarlas ahi inflaria
+  // "cache vieja" sin que sea cache vieja de verdad. Y 'con_descuadre' NO
+  // borra `min` pero SI fallaria este guardian con la misma causa que ya
+  // conocemos y aceptamos -- volver a marcarla "FALLAN" aqui es ruido, no
+  // una alarma nueva.
   const minEnQ2a4 = (a.porCuarto || []).slice(1).every(cuarto =>
     !cuarto || [0, 1].every(ei => !cuarto[ei] || (cuarto[ei].jugadores || []).every(j => 'min' in j)));
-  if (a.porCuarto && minEnQ2a4) {
+  if (a.minutosNoVerifican) {
+    minutosRetirados++;
+  } else if (a.porCuarto && minEnQ2a4) {
     try {
       verificarActa({ parciales: a.parciales, equipos: equiposDesdePorCuarto(a.porCuarto) }, a.partido);
       sinJugadoresSanas++;
@@ -323,6 +337,7 @@ console.log('');
 console.log(`Guardian de jugadores (verificarActa, S17.6):`);
 console.log(`  Incompletos en origen (declarados, no bloquean): ${incompletosOrigen}${incompletosOrigen ? ' -> ' + [...idsIncompletosOrigen].join(', ') : ''}`);
 console.log(`  De cache VIEJA (sin "min" en Q2-4, no medible todavia): ${cacheAntigua}`);
+console.log(`  Minutos retirados a proposito (vaciado/con_descuadre, no es cache vieja): ${minutosRetirados}`);
 console.log(`  Medibles con el guardian:            ${sinJugadores + sinJugadoresSanas}`);
 console.log(`    Sanas:                             ${sinJugadoresSanas}`);
 console.log(`    FALLAN (min descuadrado o sin fila): ${sinJugadores}${sinJugadores ? ' -> ' + sinJugadoresIds.join('; ') : ''}`);

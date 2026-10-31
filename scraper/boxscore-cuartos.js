@@ -98,6 +98,11 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
     camposCompletosQ2a4: camposCompletos,
     nCuartos: acta.porCuarto.length,
     porCuarto: acta.porCuarto, // [cuarto][equipo].jugadores[] con los 20 campos
+    // Si los minutos de un lado no verifican (actas-cuartos.js, S17.16): el
+    // acta cruda en data/raw lo lleva, pero data/raw es gitignored y la app
+    // nunca la lee -- sin copiar este campo aqui, Partido.jsx no tiene forma
+    // de saber que avisar (_instrucciones.md 31/10, lote siguiente, punto 1).
+    ...(acta.minutosNoVerifican ? { minutosNoVerifican: acta.minutosNoVerifican } : {}),
   };
   fs.writeFileSync(path.join(dirOut, acta.partido + '.json'), JSON.stringify(salida));
   generados++;

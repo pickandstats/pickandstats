@@ -1125,3 +1125,39 @@ contador informativo, no bloquea nada — pero si ese número sube para
 partidos de la temporada viva, es esto, no una regresión de formato.
 
 Detalle completo: `_informe-vigesimosegundo-lote.md`.
+
+**Corrección del mismo día**: "vaciar el lado entero" era desproporcionado
+para un déficit pequeño (`2535739`: 1:14: `2536117`: 6:56) — tirar los
+minutos por cuarto de once o doce jugadores para esconder un descuadre de
+segundos pierde dato bueno. Criterio medido, no un número a dedo: comparar
+el déficit contra **el menor total de minutos no nulo de ese lado**. Si el
+déficit es menor que el jugador con menos minutos de la tabla, ningún
+jugador por sí solo puede explicarlo (ruido de transcripción repartido) →
+se publica tal cual, con nota (`accion: 'con_descuadre'`). Si es igual o
+mayor, al menos un jugador tiene su número mal de verdad → se vacía el
+lado (`accion: 'vaciado'`), como antes. De las 7 ya publicadas, 3 resultan
+`con_descuadre` (incluido `2536117`, que a pesar de "parecer pequeño" sigue
+vaciándose: la medida no garantiza el resultado intuitivo, que es
+justamente el punto de medir en vez de adivinar).
+
+La nota deja de vivir solo en `data/raw` (que la app nunca lee):
+`boxscore-cuartos.js` copia `minutosNoVerifican` al fichero servido, y
+`Partido.jsx` la pinta encima de la tabla de jugadores, con el nombre del
+equipo y el motivo. `verificar-cuartos.js` excluye las actas con
+`minutosNoVerifican` de su contador de "caché vieja" y de su guardián de
+minutos (`sinJugadores`) — sin esto, una acta `con_descuadre` (que SÍ
+mantiene `min` en todos los cuartos, a propósito) volvería a fallar ese
+guardián por la misma causa que ya decidimos aceptar, bloqueando la
+categoría otra vez.
+
+**Hallazgo de paso, sin arreglar**: `difJug` (la función que resta cortes
+consecutivos para obtener el rendimiento por cuarto) nunca difference
+`tap`, `tapRec`, `fc` ni `fr` — esos cuatro campos solo existen en el
+Cuarto 1 de CUALQUIER acta, vieja o nueva, y `camposCompletosQ2a4` no lo
+detecta porque solo comprueba `min`. Confirmado contra un partido ajeno a
+este lote. No es nuevo de hoy; probablemente lleva así desde que existe el
+desglose por cuartos. Pendiente de investigar (sesión aparte): si el PDF de
+cada corte intermedio simplemente no trae esos campos, o si `difJug` los
+tiene disponibles y se olvidó de copiarlos.
+
+Detalle completo: `_informe-vigesimotercer-lote.md`.

@@ -211,17 +211,36 @@ try {
         throw err;
       }
 
-      // Puntos perfectos, minutos no: se publica con el reparto por cuarto
-      // (esta bien) y la columna de minutos del lado que falla vacia -- el
-      // mecanismo YA existente (Partido.jsx: clave "min" ausente = "—", igual
-      // que el formato viejo) hace el resto sin tocar el front. Se vacia el
-      // lado ENTERO en TODOS los cuartos: no se sabe cual jugador/cuarto es
-      // el responsable del deficit, solo que el total del equipo no suma.
+      // Puntos perfectos, minutos no: el remedio tiene que ser proporcional
+      // al error (_instrucciones.md 31/10, lote siguiente, punto 1). Vaciar
+      // el lado ENTERO tiene sentido cuando el deficit es grande (2537028:
+      // faltan 25:02, casi una prorroga -- ahi SI hay un jugador con el
+      // numero mal de verdad). Pero para un deficit de 1:14 o 6:56, tirar los
+      // minutos por cuarto de once o doce jugadores para esconder un
+      // descuadre minusculo es perder mucho dato bueno.
+      //
+      // Criterio medido, no un numero a dedo: comparar el deficit contra el
+      // MENOR total de minutos NO NULO de ese lado. Si el deficit es menor
+      // que el jugador con menos minutos de la tabla, NINGUN jugador por si
+      // solo puede explicarlo -- es ruido de transcripcion repartido, y los
+      // minutos se publican tal cual, con nota. Si es igual o mayor, al
+      // menos un jugador tiene su numero materialmente mal: se vacia el
+      // lado, como antes.
+      let accionMinutos = null; // 'vaciado' | 'con_descuadre' | null
       if (evidenciaMinutos) {
-        const ladoIdx = evidenciaMinutos.lado === 'visitante' ? 1 : 0;
-        acta.porCuarto.forEach(cuarto => {
-          if (cuarto && cuarto[ladoIdx]) cuarto[ladoIdx].jugadores.forEach(j => { delete j.min; });
-        });
+        const noNulos = evidenciaMinutos.minutosJugador.filter(s => s > 0);
+        const menorNoNulo = noNulos.length ? Math.min(...noNulos) : 0;
+        accionMinutos = evidenciaMinutos.deficitSegundos < menorNoNulo ? 'con_descuadre' : 'vaciado';
+        if (accionMinutos === 'vaciado') {
+          const ladoIdx = evidenciaMinutos.lado === 'visitante' ? 1 : 0;
+          acta.porCuarto.forEach(cuarto => {
+            if (cuarto && cuarto[ladoIdx]) cuarto[ladoIdx].jugadores.forEach(j => { delete j.min; });
+          });
+        }
+        // 'con_descuadre': no se toca porCuarto -- los minutos se publican
+        // tal cual, con la nota (minutosNoVerifican.accion) para que la
+        // ficha de partido lo diga en vez de dejar un numero que no cuadra
+        // sin explicacion (ver boxscore-cuartos.js y Partido.jsx).
       }
 
       const salida = {
@@ -238,10 +257,18 @@ try {
         porCuarto: acta.porCuarto,   // [cuarto][equipo].jugadores[]
         contextoPorCuarto: acta.contextoPorCuarto, // [cuarto] contraataque, pintura, 2a op, tras perdida, banquillo
         generado: new Date().toISOString().slice(0, 10),
-        // Presente solo si se vacio la columna de minutos de un lado (ver
-        // arriba): deja rastro de POR QUE faltan, para quien lea este
-        // fichero directamente sin pasar por el registro.
-        ...(evidenciaMinutos ? { minutosNoVerifican: evidenciaMinutos } : {}),
+        // Presente solo si los minutos de un lado no verifican (ver arriba):
+        // deja rastro de POR QUE, y si se vacio el lado o se publico con
+        // descuadre, para quien lea este fichero sin pasar por el registro
+        // Y para la ficha de partido (ver boxscore-cuartos.js, que copia
+        // este campo al fichero que de verdad sirve la app).
+        ...(evidenciaMinutos ? { minutosNoVerifican: {
+          lado: evidenciaMinutos.lado,
+          minutosObtenidos: evidenciaMinutos.minutosObtenidos,
+          minutosEsperados: evidenciaMinutos.minutosEsperados,
+          deficitSegundos: evidenciaMinutos.deficitSegundos,
+          accion: accionMinutos,
+        } } : {}),
       };
 
       const sana = esSana(salida);

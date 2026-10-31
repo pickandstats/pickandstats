@@ -212,7 +212,16 @@ function verificarActa(acta, partido) {
       err.evidencia = {
         lado: lados[ei] || String(ei),
         minutosObtenidos: minutos(suma), minutosEsperados: minutos(esperados),
+        // Numerico, no solo el texto formateado (_instrucciones.md 31/10,
+        // lote siguiente, punto 1): quien decide si vaciar el lado o
+        // publicarlo tal cual necesita comparar el descuadre en segundos
+        // contra los minutos de cada jugador, no reparsear "mm:ss".
+        deficitSegundos: Math.abs(suma - esperados),
         filasJugador: acta.equipos.map(e => e.jugadores.length),
+        // Minutos de CADA jugador de este lado (ya en segundos): quien
+        // decide mas abajo necesita "el menor total no nulo", no solo el
+        // recuento de filas.
+        minutosJugador: eq.jugadores.map(j => segundos(j.min)),
         http: acta._http ?? null, bytes: acta._bytes ?? null,
       };
       throw err;
