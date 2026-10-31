@@ -3,15 +3,25 @@
 // un fichero por partido en data/raw/<comp>/<temp>/actas/<id>.json
 //
 // Incremental: salta un partido solo si su acta ya guardada esta SANA (completa,
-// verificada y con contexto por cuarto). Las actas rotas se reintentan hasta 4
-// veces (campo "intentos" en el propio fichero); pasado ese limite se rinden,
-// porque hay actas que la FEB nunca completara. Un fallo de red/PDF NO consume
-// intento (solo anota "fallosRed"): rendirse por un fallo transitorio dejaria un
-// agujero permanente en los datos, mientras que reintentarlo cuesta una peticion.
+// verificada y con contexto por cuarto) Y no esta en --reextraer. Las actas rotas
+// se reintentan hasta 4 veces (campo "intentos" en el propio fichero); pasado ese
+// limite se rinden, porque hay actas que la FEB nunca completara. Un fallo de
+// red/PDF NO consume intento (solo anota "fallosRed"): rendirse por un fallo
+// transitorio dejaria un agujero permanente en los datos, mientras que
+// reintentarlo cuesta una peticion.
 //
 // Uso:
 //   node scraper/actas-cuartos.js --competicion 1 --temporada 2025
 //   node scraper/actas-cuartos.js --competicion 1 --temporada 2025 --limite 5
+//   node scraper/actas-cuartos.js --competicion 1 --temporada 2026 --reextraer 123,456
+//
+// --reextraer <ids separados por coma>: fuerza la reextraccion de ESOS ids en
+// concreto aunque su acta ya este sana en disco -- un --forzar con mira,
+// no el --forzar entero (que reextrae TODA la temporada, caro y arriesgado
+// de pedir dos veces a la FEB). Pensado para llevar un arreglo de esquema
+// (un campo nuevo que difJug no copiaba, S17.16) al ORIGEN -- data/raw/.../
+// actas, no solo al fichero servido -- sin tocar el resto de la temporada,
+// que ya esta sana y no necesita reextraerse.
 const fs = require('fs');
 const path = require('path');
 const { extraerActaPorCuartos, verificarActa } = require('./extraer-acta');
@@ -26,6 +36,7 @@ const temp = val('--temporada') || '2025';
 const forzar = args.includes('--forzar'); // re-extrae aunque el fichero ya exista
 const soloFases = args.includes('--fases'); // extrae las actas de fases (playoffs, ascensos) en vez de la liga regular
 const limite = val('--limite') ? parseInt(val('--limite'), 10) : null;
+const reextraerIds = new Set((val('--reextraer') || '').split(',').map(s => s.trim()).filter(Boolean));
 const compNombre = COMPS[comp];
 if (!compNombre) { console.error('Competicion no valida:', comp); process.exit(1); }
 
@@ -130,7 +141,8 @@ try {
   const saltadasConocidasIds = []; // conocidas y recientes: no se reintentan este run (ver politica arriba)
   const total = limite ? Math.min(limite, jugados.length) : jugados.length;
   console.log(`${compNombre} ${temp}: ${jugados.length} partidos jugados` +
-    (limite ? ` (procesando ${total})` : '') + `\n`);
+    (limite ? ` (procesando ${total})` : '') +
+    (reextraerIds.size ? ` [--reextraer: ${reextraerIds.size} ids forzados aunque esten sanos]` : '') + `\n`);
 
   for (let i = 0; i < jugados.length; i++) {
     if (limite && procesados + saltados >= limite) break;
@@ -138,7 +150,7 @@ try {
     const destino = path.join(dirActas, p.id + '.json');
 
     let previa = null, intentosPrevios = 0;
-    if (!forzar && fs.existsSync(destino)) {
+    if (!forzar && !reextraerIds.has(String(p.id)) && fs.existsSync(destino)) {
       try { previa = JSON.parse(fs.readFileSync(destino, 'utf8')); }
       catch (e) { previa = { _corrupta: true }; }   // ilegible: tratar como rota
       if (esSana(previa)) { saltados++; continue; }

@@ -10,6 +10,23 @@ on:
         description: 'Forzar la restauración de actas desde el release (para verificar el respaldo, aunque la cache tenga actas)'
         type: boolean
         default: false
+      # --reextraer, no --forzar (31/10, S17.16): lleva un arreglo de esquema
+      # (un campo que difJug no copiaba) al ORIGEN -- data/raw/.../actas, no
+      # solo al fichero servido -- para una lista concreta de ids, sin
+      # reextraer la temporada entera. Vacio por defecto: una ejecucion
+      # normal (cron o dispatch sin rellenar esto) no se ve afectada.
+      reextraer_primera:
+        description: 'IDs (separados por coma) a reextraer en Primera aunque su acta ya este sana -- vacio en runs normales'
+        type: string
+        default: ''
+      reextraer_segunda:
+        description: 'Igual que el anterior, para Segunda'
+        type: string
+        default: ''
+      reextraer_tercera:
+        description: 'Igual que el anterior, para Tercera'
+        type: string
+        default: ''
 
 permissions:
   contents: write
@@ -108,25 +125,31 @@ jobs:
       # tumbe la actualización del resto de datos.
       - name: Cuartos · Tercera
         continue-on-error: true
+        env:
+          REEXTRAER: ${{ github.event.inputs.reextraer_tercera }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
-          node scraper/actas-cuartos.js --competicion 3 --temporada $T
+          node scraper/actas-cuartos.js --competicion 3 --temporada $T ${REEXTRAER:+--reextraer "$REEXTRAER"}
           node scraper/verificar-cuartos.js --competicion 3 --temporada $T && \
           node scraper/calcular-cuartos.js --competicion 3 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 3 --temporada $T
       - name: Cuartos · Segunda
         continue-on-error: true
+        env:
+          REEXTRAER: ${{ github.event.inputs.reextraer_segunda }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
-          node scraper/actas-cuartos.js --competicion 2 --temporada $T
+          node scraper/actas-cuartos.js --competicion 2 --temporada $T ${REEXTRAER:+--reextraer "$REEXTRAER"}
           node scraper/verificar-cuartos.js --competicion 2 --temporada $T && \
           node scraper/calcular-cuartos.js --competicion 2 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 2 --temporada $T
       - name: Cuartos · Primera
         continue-on-error: true
+        env:
+          REEXTRAER: ${{ github.event.inputs.reextraer_primera }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
-          node scraper/actas-cuartos.js --competicion 1 --temporada $T
+          node scraper/actas-cuartos.js --competicion 1 --temporada $T ${REEXTRAER:+--reextraer "$REEXTRAER"}
           node scraper/verificar-cuartos.js --competicion 1 --temporada $T && \
           node scraper/calcular-cuartos.js --competicion 1 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 1 --temporada $T

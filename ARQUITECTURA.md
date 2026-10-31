@@ -1212,3 +1212,16 @@ Tercera quedan pendientes a propósito: el lote pedía medir Primera primero
 y confirmar antes de seguir.
 
 Detalle completo: `_informe-vigesimosexto-lote.md`.
+
+**Y la reparación de arriba se quedó una capa corta** (31/10, mismo día,
+antes del lunes): se escribió en el fichero SERVIDO, pero
+`data/raw/.../actas` (el origen, caché de CI) seguía sin los 5 campos — y
+`boxscore-cuartos.js` reescribe el servido desde el origen cada semana, sin
+condición de salto. El lunes siguiente habría deshecho la reparación entera.
+Arreglo: `--reextraer <ids>` en `actas-cuartos.js` (un `--forzar` con mira,
+no la temporada entera) y tres inputs nuevos de `workflow_dispatch` en
+`actualizar-datos.yml` (`reextraer_primera/segunda/tercera`, vacíos por
+defecto — una ejecución normal no se entera de que existen). Probado en
+sandbox: con dos actas ya en disco y solo una en `--reextraer`, la otra no
+se toca (mismo hash, mismo mtime) y la listada se reextrae con los 5
+campos.
