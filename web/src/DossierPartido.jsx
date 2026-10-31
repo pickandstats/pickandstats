@@ -1,4 +1,4 @@
-import { useMemo, useState, useEffect } from 'react';
+import { Fragment, useMemo, useState, useEffect } from 'react';
 import AnalisisEquipo from './AnalisisEquipo';
 import { n0, n1, pct1, s1, FORMATOS } from './formato';
 
@@ -234,8 +234,8 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
                       }
                       if (j.usg >= 28) perfil.push('centraliza el ataque');
                       return (
-                        <>
-                          <tr key={j.nombre} className="fila-jug-num">
+                        <Fragment key={j.idJugador}>
+                          <tr className="fila-jug-num">
                             <td className="izq">
                               <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                             </td>
@@ -244,11 +244,11 @@ export default function DossierPartido({ equipo, equipos, jugadores, equiposCuar
                             <td>{n1(j.ts)}</td><td>{n1(j.usg)}</td>
                           </tr>
                           {perfil.length > 0 && (
-                            <tr key={j.nombre + '-perfil'} className="fila-jug-perfil">
+                            <tr className="fila-jug-perfil">
                               <td className="izq duelo-detalle" colSpan={9}>{perfil.join(', ')}</td>
                             </tr>
                           )}
-                        </>
+                        </Fragment>
                       );
                     })}
                   </tbody>

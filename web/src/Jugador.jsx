@@ -154,7 +154,14 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
             {soloHistorico ? subtitulo : (
               <>
                 {carrera.etapas.map((e, i) => (
-                  <span key={e.equipoId}>
+                  // key por equipoId + indice, no equipoId solo: una vuelta
+                  // al mismo club (prestamo, fichaje de vuelta) daria dos
+                  // etapas con el mismo equipoId. Defensivo -- no confirmado
+                  // como la causa del "two children with the same key" que
+                  // se ve en consola en la ficha de jugador (id 1731675, no
+                  // es ninguno de los campos de esta tabla): sigue sin
+                  // diagnosticar, ver informe.
+                  <span key={`${e.equipoId}-${i}`}>
                     {i > 0 && ' → '}
                     {enlaceEquipo(e)} · {e.grupo}
                   </span>
@@ -346,8 +353,8 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
               </tr>
             </thead>
             <tbody>
-              {carrera.etapas.map(e => (
-                <tr key={e.equipoId}>
+              {carrera.etapas.map((e, i) => (
+                <tr key={`${e.equipoId}-${i}`}>
                   <td className="izq">{enlaceEquipo(e)}</td>
                   <td className="izq">{e.grupo}</td>
                   <td>{n0(e.pj)}</td><td>{n1(e.minPorPartido)}</td><td>{n1(e.ptPorPartido)}</td>
