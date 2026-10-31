@@ -176,10 +176,26 @@ function parseTexto(texto) {
 // Solo tiene sentido contra un acta COMPLETA (el corte final, o extraerActa
 // directamente) -- un corte parcial (Q1, Q2...) nunca sumara 200:00 y no es lo
 // que este guardian vigila.
+// `err.tipoFallo = 'verificacion'` + `err.evidencia` (anadido 31/10/2026,
+// _instrucciones.md punto 1) es lo que permite a quien llama distinguir ESTE
+// fallo -- el PDF se descargo y se parseo, el contenido no cuadra -- de un
+// fallo de red o de PDF inexistente (que no trae estas propiedades). Antes
+// solo existia el mensaje en texto; actas-cuartos.js necesita poder
+// preguntar sin parsear strings, porque de la respuesta depende si el
+// partido se registra como "la FEB no lo sirve todavia" o como "lo
+// extraemos y no cuadra" (dos cosas distintas, ver registro mas abajo).
 function verificarActa(acta, partido) {
+  const minutos = mmss => `${Math.floor(mmss / 60)}:${String(mmss % 60).padStart(2, '0')}`;
   if (acta.filasRechazadas && acta.filasRechazadas.length) {
-    throw new Error(`Acta ${partido || '?'}: ${acta.filasRechazadas.length} fila(s) con pinta de ` +
+    const err = new Error(`Acta ${partido || '?'}: ${acta.filasRechazadas.length} fila(s) con pinta de ` +
       `jugador que el parser no ha entendido (ni uniendo lineas): ${JSON.stringify(acta.filasRechazadas)}`);
+    err.tipoFallo = 'verificacion';
+    err.evidencia = {
+      lado: null, filasRechazadas: acta.filasRechazadas,
+      filasJugador: acta.equipos ? acta.equipos.map(eq => eq.jugadores.length) : null,
+      http: acta._http ?? null, bytes: acta._bytes ?? null,
+    };
+    throw err;
   }
   const segundos = mmss => { const [m, s] = String(mmss).split(':').map(Number); return (m || 0) * 60 + (s || 0); };
   const nProrrogas = Math.max(0, (acta.parciales || []).length - 4);
@@ -188,11 +204,18 @@ function verificarActa(acta, partido) {
   acta.equipos.forEach((eq, ei) => {
     const suma = eq.jugadores.reduce((acc, j) => acc + segundos(j.min), 0);
     if (suma !== esperados) {
-      throw new Error(`Acta ${partido || '?'}: los minutos del equipo ${lados[ei] || ei} suman ` +
-        `${Math.floor(suma / 60)}:${String(suma % 60).padStart(2, '0')}, se esperaban ` +
-        `${Math.floor(esperados / 60)}:${String(esperados % 60).padStart(2, '0')}` +
+      const err = new Error(`Acta ${partido || '?'}: los minutos del equipo ${lados[ei] || ei} suman ` +
+        `${minutos(suma)}, se esperaban ${minutos(esperados)}` +
         `${nProrrogas ? ` (200:00 + ${nProrrogas} prorroga(s))` : ''}. Dato incompleto: probablemente ` +
         'una fila de jugador perdida.');
+      err.tipoFallo = 'verificacion';
+      err.evidencia = {
+        lado: lados[ei] || String(ei),
+        minutosObtenidos: minutos(suma), minutosEsperados: minutos(esperados),
+        filasJugador: acta.equipos.map(e => e.jugadores.length),
+        http: acta._http ?? null, bytes: acta._bytes ?? null,
+      };
+      throw err;
     }
   });
 }
@@ -219,7 +242,13 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
       const parser = new PDFParse({ data: Buffer.from(r.data) });
       const res = await parser.getText();
       await parser.destroy();
-      return parseTexto(normalizarHomoglifos(res.text || ""));
+      const parseado = parseTexto(normalizarHomoglifos(res.text || ""));
+      // Evidencia de la descarga que SI funciono (http/bytes), para quien falle
+      // mas tarde verificando el contenido (verificarActa) y necesite poder
+      // decir "esto no es un fallo de red, el PDF llego entero" -- ver mas abajo.
+      parseado._http = r.status;
+      parseado._bytes = r.data ? r.data.length : null;
+      return parseado;
     } catch (e) {
       const esRed = /ENOTFOUND|ETIMEDOUT|ECONNRESET|EAI_AGAIN|socket/i.test(e.message);
       if (esRed && intento < reintentos) {

@@ -60,10 +60,18 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   // autoritativa que ya genera calcular.js.
   const excl = leerJSON(path.join('data', 'processed', nombre, sel, 'excluidos.json')); // ver S17.7
   const excluidos = new Set((Array.isArray(excl) ? excl : []).map(x => String(x.id != null ? x.id : x)));
+  // Registro de actas que SI descargamos y parseamos pero no pasan verificarActa
+  // (actas-cuartos.js, _instrucciones.md 31/10 punto 1). Antes un partido asi no
+  // escribia nada y se veia IGUAL que uno que la FEB aun no ha publicado -- un
+  // fichero que no existe, sin mas. Con el registro se pueden contar aparte:
+  // dos problemas de naturaleza distinta (uno lo arregla el tiempo, el otro no).
+  const regNoVerif = leerJSON(path.join('data', 'processed', nombre, sel, 'actas-no-verificadas.json'));
+  const idsNoVerificadas = new Set((Array.isArray(regNoVerif) ? regNoVerif : []).map(e => String(e.partido)));
   if (fs.existsSync(dirSel)) {
     const cuenta = new Map();
     let primerPartido = null;          // fecha mas temprana de la temporada (arranque)
-    const jugadosSinActa = [];         // partido jugado hace >DIAS_ACTA sin acta en disco
+    const jugadosSinActa = [];         // partido jugado hace >DIAS_ACTA, sin acta y sin registrar como no-verificada
+    const jugadosNoVerifican = [];     // partido jugado hace >DIAS_ACTA, lo extraemos y no cuadra (ver registro)
     let fechasSinParsear = 0;          // fechas presentes que no casan dd/mm/yyyy (¿cambio de formato?)
     for (const grupo of fs.readdirSync(dirSel)) {
       if (grupo === 'actas') continue;   // no es un grupo
@@ -84,7 +92,14 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
         const edad = f ? (Date.now() - f.getTime()) / 86400000 : null;
         if (jugado && !excluidos.has(String(p.id)) && edad !== null &&
             edad > DIAS_ACTA && edad <= DIAS_ACTA_TOPE &&
-            !fs.existsSync(path.join(dirActas, p.id + '.json'))) jugadosSinActa.push(p.id);
+            !fs.existsSync(path.join(dirActas, p.id + '.json'))) {
+          // Las dos ramas se ven igual desde aqui -- ningun fichero en
+          // data/raw/.../actas -- pero no son el mismo problema: una esta en
+          // el registro con evidencia de verificarActa (lo extraemos y no
+          // cuadra), la otra no (la FEB sencillamente no lo ha publicado).
+          if (idsNoVerificadas.has(String(p.id))) jugadosNoVerifican.push(p.id);
+          else jugadosSinActa.push(p.id);
+        }
       }
     }
     const valores = [...cuenta.values()];
@@ -108,13 +123,24 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
 
     // 2b) Punto ciego cerrado: acta que FALTA para un partido jugado hace mas de
     // DIAS_ACTA. Por debajo del umbral es el retraso normal con que la FEB cierra
-    // las actas; por encima, la extraccion esta rota y NADIE MAS lo dice: el
+    // las actas; por encima, algo necesita mirarse y NADIE MAS lo dice: el
     // verificador da LISTO porque tolera las actas que faltan, y el reporte del
     // run (cuartos-run) ni existe si actas-cuartos.js no llego a correr. Este
     // check no guarda estado entre ejecuciones: se deriva de fecha + existencia.
+    //
+    // Dos mensajes, no uno (31/10, _instrucciones.md punto 1): antes de que
+    // existiera el registro de actas-no-verificadas.json, "falta el acta" y
+    // "la extraemos y no cuadra" se contaban juntos bajo la misma frase -- y
+    // son dos cosas distintas que requieren dos acciones distintas. Lo primero
+    // se arregla solo esperando a que la FEB publique; lo segundo no, hay un
+    // dato roto que investigar (ver actas-no-verificadas.json de la categoria).
     if (jugadosSinActa.length) {
       const muestra = jugadosSinActa.slice(0, 8).join(', ') + (jugadosSinActa.length > 8 ? ', ...' : '');
-      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) faltan para partidos jugados hace ${DIAS_ACTA}-${DIAS_ACTA_TOPE}d -> ${muestra} (¿extraccion de actas rota?)`);
+      criticos.push(`${nombre} ${sel}: ${jugadosSinActa.length} acta(s) que la FEB no sirve todavia (jugados hace ${DIAS_ACTA}-${DIAS_ACTA_TOPE}d) -> ${muestra}`);
+    }
+    if (jugadosNoVerifican.length) {
+      const muestra = jugadosNoVerifican.slice(0, 8).join(', ') + (jugadosNoVerifican.length > 8 ? ', ...' : '');
+      criticos.push(`${nombre} ${sel}: ${jugadosNoVerifican.length} acta(s) que extraemos y no cuadran -> ${muestra} (ver data/processed/${nombre}/${sel}/actas-no-verificadas.json)`);
     }
 
     // 2c) Ultima puerta muda de esta pieza: si la FEB cambiara el formato de fecha,

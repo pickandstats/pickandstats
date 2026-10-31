@@ -399,6 +399,22 @@ y el sitio se queda en la versión anterior en vez de publicarse sin cuartos.
 (verificar && calcular): si faltan actas, no se genera y los datos versionados
 quedan intactos. La cache se va poblando en runs sucesivos.
 
+**`resumen-salud.js` en local miente sobre cobertura y huecos si la caché de
+actas local está incompleta** *(31/10/2026)*. `data/raw/*/*/actas/` es
+gitignored y solo vive completa en la caché de GitHub Actions — un checkout
+local normal tiene cualquier subconjunto que haya quedado de sesiones
+anteriores, no lo mismo que CI. Visto de verdad: corriendo
+`resumen-salud.js` en local con solo 16 de las 43 actas de Primera 2026/27
+que SÍ tiene CI, el check 3c ("partidos que la semana pasada tenían cuartos
+ya no los tienen") disparó un falso crítico de 27-194 partidos por
+categoría, y además **sobrescribió `cuartos-cobertura.json` con esa cifra
+baja** (el script lo reescribe siempre, no solo en CI) — de haberse
+commiteado, habría corrompido la base de comparación real. Si hace falta
+correr `resumen-salud.js` en local para probar un cambio, revisar
+`git diff data/processed/*/*/cuartos-cobertura.json` después y descartarlo
+con `git checkout --` si no se ha corrido `actas-cuartos.js` localmente
+sobre la temporada entera primero.
+
 **Mantenimiento periódico:**
 - Septiembre (nueva temporada): añadir "2026" a los temporadas.json de las tres categorías (se mantienen a mano, no se generan). Verificar que el workflow arranca bien con la temporada nueva.
 - react-router-dom tiene un aviso de npm audit (GHSA-qwww-vcr4-c8h2) que NO afecta a esta app (es estática, sin servidor). NO ejecutar audit fix --force (rompería la API). Actualizar a >8.2.0 cuando haya parche.
@@ -1002,3 +1018,59 @@ paralela sobre `data/raw`) queda como paso aparte, tras revisar el reparto —
 no se promociona a ciegas ni con la regla ya aprobada.
 
 Detalle completo: `_informe-doce-dias.md`.
+
+### 17.15 El acta que no verifica no es lo mismo que el acta que no existe *(31/10/2026)*
+
+**Nota de numeración**: el código tiene comentarios que citan `S17.8` a
+`S17.14` (`calcular.js`, `resumen-salud.js`, `verificar-cuartos.js`,
+`generar-registro-irreparables.js`, `vigilante.js`, `boxscore-cuartos.js`,
+`scrape.js`) para los que **no existe sección aquí** — se documentaron en
+código pero nunca llegaron a este fichero. No se reconstruyen hoy (no es el
+trabajo de este lote y haría falta reconstruir el contexto de cada uno desde
+cero); queda como hueco conocido. Esta entrada usa `17.15` para no chocar con
+ninguno de los números ya citados, no porque `17.8`-`17.14` existan.
+
+Hasta hoy, cuando `actas-cuartos.js` descargaba y parseaba un PDF pero
+`verificarActa` fallaba (minutos de un equipo que no suman 200:00 + prórrogas),
+**no se escribía nada** — ni en `data/raw/.../actas` ni en ningún otro sitio.
+Aguas abajo (`resumen-salud.js`) esto era indistinguible de "la FEB no ha
+publicado el acta todavía": las dos situaciones se ven igual, un fichero que
+no existe. Pero son dos problemas de naturaleza distinta — uno lo arregla el
+tiempo, el otro no — y uno de los dos tenía evidencia que valía la pena
+guardar en el momento en que ocurre, no reconstruir después.
+
+**Arreglo**: `verificarActa` (`extraer-acta.js`) ahora adjunta al error que
+lanza `err.tipoFallo = 'verificacion'` y `err.evidencia` (lado que falla,
+minutos obtenidos/esperados, filas de jugador por equipo, y el `http`/`bytes`
+de la descarga que sí funcionó — capturados en `pedirCorte` incluso en el
+camino feliz, no solo al fallar). `actas-cuartos.js` distingue este caso del
+fallo de red/PDF-inaccesible (que sigue sin consumir intento, igual que
+antes) y lo registra con esa evidencia en
+`data/processed/<comp>/<temp>/actas-no-verificadas.json` — generado, nunca a
+mano, y **autolimpiable**: solo se toca la entrada de un partido cuando ese
+run lo intenta de verdad, y se borra sola en cuanto un intento pasa
+`verificarActa`. Mismo idioma que `cuartos-incompletos-origen.json` y
+`actas-irreparables-origen.json`.
+
+**Política de reintento** (mismo punto del lote): sin esto, cada run semanal
+volvería a pedir 4-8 PDFs a la FEB por cada acta de este registro, para
+siempre — no hay ningún campo "intentos" en disco que las frene (nunca se
+escribe fichero para ellas). Tras 2 intentos fallidos (`UMBRAL_CONOCIDA`) se
+consideran persistentes y pasan a reintentarse cada 14 días
+(`RETRY_DIAS_CONOCIDA`), no cada run. **No toca `DIAS_ACTA`/`DIAS_ACTA_TOPE`**
+de `resumen-salud.js` a propósito — ese suelo es sobre cuándo avisar de un
+hueco, esto es sobre cuánto se gasta reintentando; un run que no reintenta
+una entrada conocida sigue contándola como fallo igual.
+
+`resumen-salud.js` separa el aviso único que había en dos: "N acta(s) que la
+FEB no sirve todavía (jugados hace X-Y días)" para las que de verdad faltan,
+y "M acta(s) que extraemos y no cuadran" (señalando el registro) para las que
+están en `actas-no-verificadas.json`.
+
+Verificado con datos reales (no solo con el test): las 6 actas señaladas el
+31/10 (`2537028`, `2528248`, `2535739`, `2535735`, `2536844`, `2536117`)
+todas lanzan `tipoFallo: 'verificacion'` con evidencia completa; probado en
+sandbox (`data/processed/tercerafeb/_test31oct`, limpiado tras la prueba) que
+el registro escribe, acumula `intentos` y se autolimpia como se espera.
+`test/regresion.cjs` y `verificar-cuartos.js` sobre datos reales, sin
+cambios. Detalle de la investigación de las 6 actas, `_informe-seis-actas.md`.
