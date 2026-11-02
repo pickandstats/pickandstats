@@ -76,6 +76,13 @@ const LIMITE_INTENTOS = 4;
 // sitio comun algun dia). Se repite aqui porque decide si esta acta se
 // escribe SIQUIERA (_instrucciones.md 31/10, punto 1), no solo que bandera
 // lleva despues.
+// tap/tapRec/fc/fr presentes en TODAS las filas de los cuartos 2-4 (el arreglo
+// de difJug, S17.16). `min` no entra aqui a proposito: si se vacio a mano, su
+// ausencia es una decision, no una carencia.
+const tienenTapFcFr = porCuarto => porCuarto.slice(1).every(cuarto =>
+  !cuarto || [0, 1].every(ei => !cuarto[ei] ||
+    (cuarto[ei].jugadores || []).every(j => ['tap', 'tapRec', 'fc', 'fr'].every(c => c in j))));
+
 function puntosCuadranOficial(porCuarto, of) {
   if (!Array.isArray(of) || !of.length || porCuarto.length !== of.length) return false;
   for (let i = 0; i < of.length; i++) {
@@ -139,14 +146,25 @@ try {
   const erroresIds = [];       // la extraccion fallo (red, PDF inaccesible)
   const sinVerificarIds = [];  // la extraccion SI funciono, pero no pasa verificarActa (ver registro)
   const saltadasConocidasIds = []; // conocidas y recientes: no se reintentan este run (ver politica arriba)
+  const reextraerPromovidas = [];  // --reextraer: la copia nueva cumple las condiciones y sustituye a la vieja
+  const reextraerRechazadas = [];  // --reextraer: se queda la vieja, con el motivo (nunca se degrada un acta sana)
+  // Guardian del frenazo (octubre: 200 con ~587 bytes de postback vacio, en
+  // rachas; casi se escriben 101 "no disponible" falsos en un registro
+  // permanente). Si N partidos CONSECUTIVOS traen esa firma, se para la tanda
+  // entera y se sale con codigo 2 -- sin reintentar dentro del mismo run.
+  const FRENAZO_RACHA = 3;
+  let frenazoSeguidos = 0, frenado = false, ultimoId = null;
+  const frenazoFirma = diag => (diag || []).some(d => d.http === 200 && d.bytes >= 400 && d.bytes <= 700);
   const total = limite ? Math.min(limite, jugados.length) : jugados.length;
   console.log(`${compNombre} ${temp}: ${jugados.length} partidos jugados` +
     (limite ? ` (procesando ${total})` : '') +
     (reextraerIds.size ? ` [--reextraer: ${reextraerIds.size} ids forzados aunque esten sanos]` : '') + `\n`);
 
   for (let i = 0; i < jugados.length; i++) {
+    if (frenazoSeguidos >= FRENAZO_RACHA) { frenado = true; break; }
     if (limite && procesados + saltados >= limite) break;
     const p = jugados[i];
+    ultimoId = p.id;
     const destino = path.join(dirActas, p.id + '.json');
 
     let previa = null, intentosPrevios = 0;
@@ -159,6 +177,13 @@ try {
       intentosPrevios = previa._corrupta ? 0 : (previa.intentos || 0);
       if (intentosPrevios >= LIMITE_INTENTOS) { rendidasIds.push(p.id); continue; }
       // si no, cae a la re-extraccion de abajo
+    }
+
+    // --reextraer salta el bloque de `previa` de arriba (para que no se salte
+    // por sana), pero la copia vieja hace falta para COMPARAR antes de promover.
+    let actaPrevia = null;
+    if (!forzar && reextraerIds.has(String(p.id)) && fs.existsSync(destino)) {
+      try { actaPrevia = JSON.parse(fs.readFileSync(destino, 'utf8')); } catch (e) { actaPrevia = null; }
     }
 
     // Conocida y reciente (ver politica de reintento arriba): no se reintenta
@@ -180,6 +205,10 @@ try {
       // "la FEB no lo ha publicado todavia". Se comprueba a mano, aparte, sin
       // bloquear la extraccion (ver mas abajo).
       const acta = await extraerActaPorCuartos(p.id, null, { verificar: false });
+
+      // Racha de frenazo: un partido con la firma 200/~587 bytes en alguno de
+      // sus intentos suma, aunque la extraccion terminara; uno sin ella resetea.
+      frenazoSeguidos = frenazoFirma(acta.diagnostico) ? frenazoSeguidos + 1 : 0;
 
       // Verificacion INTERNA: suma de cuartos == total de cada jugador (si
       // esto no cuadra, es la propia resta de cortes la que esta rota, no
@@ -284,6 +313,25 @@ try {
       };
 
       const sana = esSana(salida);
+
+      // --reextraer NUNCA degrada (misma regla que reparar-cuartos-historicos.js:
+      // extraer, comparar, promover solo si es mejor). Una acta sana que se
+      // vuelve a pedir y llega peor -- un corte que la FEB no sirvio esta vez,
+      // los puntos que dejan de cuadrar, minutos que antes verificaban y ya no
+      // -- se queda como estaba. Octubre: 21 de 1853 en Tercera.
+      if (reextraerIds.has(String(p.id)) && actaPrevia && esSana(actaPrevia)) {
+        const motivos = [];
+        if (!sana) motivos.push('la nueva no queda sana');
+        if (!tienenTapFcFr(salida.porCuarto)) motivos.push('la nueva sigue sin tap/tapRec/fc/fr en Q2-4');
+        if (!puntosCuadranOficial(salida.porCuarto, p.cuartos)) motivos.push('sus puntos no cuadran con el oficial');
+        if (!actaPrevia.minutosNoVerifican && salida.minutosNoVerifican) motivos.push('empeora verificarActa (la vieja verifica y la nueva no)');
+        if (motivos.length) {
+          reextraerRechazadas.push(`${p.id} (${motivos.join('; ')})`);
+          continue;
+        }
+        reextraerPromovidas.push(String(p.id));
+      }
+
       if (!sana) {
         // Sigue rota tras extraerla bien: consume un intento. Al llegar al limite
         // dejara de reintentarse en semanas futuras.
@@ -305,6 +353,8 @@ try {
     } catch (e) {
       errores++;
       erroresIds.push(`${p.id}: ${e.message}`);
+      // Un fallo de extraccion completo cuenta para la racha si lleva la firma.
+      frenazoSeguidos = (e.tipoFallo !== 'verificacion' && /http=200 bytes=(4\d\d|5\d\d|6\d\d|700)\b/.test(e.message)) ? frenazoSeguidos + 1 : 0;
       if (e.tipoFallo === 'verificacion') {
         // El PDF se descargo y se parseo -- esto NO es "la FEB no lo ha
         // publicado todavia" (ese es el caso de abajo, sin e.tipoFallo).
@@ -350,6 +400,10 @@ try {
   console.log(`Actas rotas en disco: ${rotas.length}` + (rotas.length ? ' -> ' + rotas.join(', ') : ''));
   if (saltadasConocidasIds.length)
     console.log(`Conocidas y recientes (no se reintentan, cadencia >${RETRY_DIAS_CONOCIDA}d): ${saltadasConocidasIds.length} -> ${saltadasConocidasIds.join(', ')}`);
+  if (reextraerIds.size) {
+    console.log(`\nReextraccion dirigida: ${reextraerPromovidas.length} promovidas, ${reextraerRechazadas.length} se quedan con la vieja`);
+    if (reextraerRechazadas.length) reextraerRechazadas.forEach(x => console.log('  se queda la vieja: ' + x));
+  }
   if (rendidasIds.length)
     console.log(`Rendidas (>=${LIMITE_INTENTOS} intentos, no se reintentan): ${rendidasIds.length} -> ${rendidasIds.join(', ')}`);
   if (erroresIds.length) { console.log('\nErrores de extraccion (se reintentaran):'); erroresIds.forEach(x => console.log('  ' + x)); }
@@ -368,6 +422,17 @@ try {
       nuevasRendidas: nuevasRendidasIds, errores: erroresIds,
     }, null, 1));
   } catch (e) { console.log('  ⚠ no se pudo escribir el reporte de ejecucion: ' + e.message); }
+
+  // Frenazo: se para la tanda, no se reintenta dentro del mismo run, y la salida
+  // es 2 (distinta del 1 de "fallo sistemico") para que quien lea el log sepa
+  // que fue el guardian y no un error cualquiera. Lo ya escrito antes de la
+  // racha es bueno (cada acta se verifica al escribirse); lo que falto, queda
+  // sin tocar -- en --reextraer, con la copia vieja intacta.
+  if (frenado) {
+    console.error(`\n⛔ FRENAZO: ${FRENAZO_RACHA} partidos consecutivos con respuesta 200 de 400-700 bytes (postback vacio de la FEB). ` +
+      `Tanda parada tras el partido ${ultimoId}; no se ha reintentado nada. Esperar y relanzar, no insistir.`);
+    process.exit(2);
+  }
 
   // Codigo de salida honesto (S17.3): solo se falla si el fallo es SISTEMICO
   // —hubo errores y no se escribio nada—, senal de que la FEB no responde o algo

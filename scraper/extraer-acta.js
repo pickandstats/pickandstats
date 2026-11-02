@@ -246,8 +246,9 @@ async function extraerActa(partido, competicion = 1) {
 async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
   const url = `${CFG.BASE}/BoxScore.aspx?p=${partido}&c=${c}&qd=${qd}&t=FINAL`;
   for (let intento = 1; intento <= reintentos; intento++) {
+    let r = null; // fuera del try: si el cuerpo llega pero no parsea, el catch aun lo ve
     try {
-      const r = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000, responseType: "arraybuffer" });
+      r = await axios.get(url, { headers: CFG.HEADERS, timeout: 20000, responseType: "arraybuffer" });
       const parser = new PDFParse({ data: Buffer.from(r.data) });
       const res = await parser.getText();
       await parser.destroy();
@@ -270,7 +271,15 @@ async function pedirCorte(partido, c, qd = 4, reintentos = 3) {
       // de Tercera marcados "acta no disponible" en la reparacion que en realidad
       // eran una ventana de throttling -- confirmado re-pidiendolos despacio dias
       // despues, todos volvieron con 4 parciales validos).
+      //
+      // Y el caso que esto NO veia (31/10, lote 28, punto 1 -- el guardian del
+      // frenazo lo necesita): una respuesta 200 cuyo cuerpo no es un PDF (los
+      // 587 bytes de postback vacio de octubre). axios no lanza (200 es exito),
+      // lo que lanza es el parser, asi que `e.response` no existe y la
+      // evidencia salia "http=null bytes=null" -- indistinguible de un corte
+      // de red. Con `r` capturado fuera del try se conserva lo que SI llego.
       if (e.response) { e.http = e.response.status; e.bytes = e.response.data ? e.response.data.length : null; }
+      else if (r) { e.http = r.status; e.bytes = r.data ? r.data.length : null; }
       else { e.http = null; e.bytes = null; }
       throw e;
     }
@@ -436,6 +445,12 @@ async function extraerActaPorCuartos(partido, nCuartos = null, { verificar = tru
     porCuarto,                                     // rendimiento de cada cuarto por jugador
     contextoPorCuarto,                             // contexto acumulativo desglosado por cuarto
     completo: cortes.every(c => c !== null) && cortes.length >= 4, // false si falta algun corte o hay menos de 4 cuartos (acta truncada)
+    // Cada intento fallido de corte (http/bytes/error), tambien cuando la
+    // extraccion TERMINA bien: el guardian del frenazo de actas-cuartos.js
+    // necesita ver una respuesta 200 de ~587 bytes aunque otro intento del
+    // mismo partido funcionara. No se persiste (actas-cuartos.js construye su
+    // salida campo a campo).
+    diagnostico,
   };
 }
 

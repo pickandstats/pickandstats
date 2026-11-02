@@ -221,7 +221,7 @@ for (const f of ficheros) {
   // cuenta aparte, SIN bloquear ni mezclarse con "cache vieja": es la forma
   // de ver, semana a semana, si la re-extraccion ha llevado estos cuatro
   // campos a su sitio en la temporada viva, sin reextraer el historico.
-  if (a.porCuarto && !a.minutosNoVerifican) {
+  if (a.porCuarto) {
     const camposOk = a.porCuarto.slice(1).every(cuarto =>
       !cuarto || [0, 1].every(ei => !cuarto[ei] ||
         (cuarto[ei].jugadores || []).every(j => ['tap', 'tapRec', 'fc', 'fr'].every(c => c in j))));
