@@ -1301,3 +1301,30 @@ al 5 de octubre de 2026 a las 17:54», hora de Madrid); el pie ya traía la
 fecha.
 
 Detalle: `_informe-trigesimo-lote.md`.
+
+**Las tres cifras de peticiones y el segundo run (03/11, lote 31).** Contador
+activo (run 41677780444 y siguientes), todo a `baloncestoenvivo.feb.es`:
+
+| caso | peticiones | origen |
+|---|---|---|
+| run sin partidos nuevos | **381** (Tercera 281, Segunda 57, Primera 37, temporada 3, calendario 3; 0 de actas) | medido, dos veces |
+| tanda de 55 actas de Segunda con `--reextraer` | 663 = 381 + 282 | medido (5,1 por acta) |
+| jornada entera (~90 partidos: 9 + 14 + 67) | ≈ **930** | *estimado*: 381 + 90 × (1 página de partido + ≈5,1 de acta) |
+| 2 runs de fin de semana frente a 1 | ≈ **+380 por semana** (+41 %), más ≈9 por partido que siga sin acta | estimado; la parte de partidos nuevos se paga una sola vez porque el pipeline es incremental |
+
+Con eso, `actualizar-datos.yml` lleva **dos** crons: domingo 22:41 UTC y lunes
+06:17 UTC. El del lunes recoge las actas que la FEB no había colgado el
+domingo (un reintento semanal pagaría el sobrecoste de ≈9 peticiones por
+partido siete días seguidos). Nuevo paso «Comprobar que el despliegue quedó
+lanzado»: `gh run list` de `desplegar.yml` 15 s después del lanzamiento, como
+aviso en el resumen del job; no sustituye al vigilante (al final del run el
+desfase repo↔desplegado es ≈0 por construcción).
+
+**Segunda, reparada desde el origen** (run 41679901434, `--reextraer` con 55
+ids, guardián y comparación ya activos en CI): 55 promovidas, 0 rechazadas,
+guardián sin saltar, contador del origen **55 → 0**. Persistencia en una
+regeneración posterior limpia (run 41682955089): sigue en **0**. Tercera,
+pendiente (253 servidos, 248 + 7 con `minutosNoVerifican` en el origen).
+
+**Nota de SRS**: una sola frase para varios grupos (`notaSrsGrupos`) en vez de
+una por grupo.
