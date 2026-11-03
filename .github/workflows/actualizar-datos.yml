@@ -54,6 +54,15 @@ concurrency:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    # Contador de peticiones HTTP (2.3 del 02/11). El runner PROHIBE fijar
+    # NODE_OPTIONS por $GITHUB_ENV ("Can't store NODE_OPTIONS output parameter",
+    # comprobado en el run 41675448004: el contador salio vacio), y a nivel de
+    # job rompe el propio checkout (precarga de un fichero que aun no existe).
+    # Asi que la precarga se pasa SOLO a los pasos que tocan la FEB, via
+    # `env: NODE_OPTIONS: ${{ env.CONTAR }}`. El script es inocuo si falla.
+    env:
+      PETICIONES_LOG: /tmp/peticiones.jsonl
+      CONTAR: --require ${{ github.workspace }}/scraper/contar-peticiones.js
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -61,16 +70,6 @@ jobs:
           node-version: 24
       - name: Instalar dependencias
         run: npm ci
-
-      # Contador de peticiones HTTP (2.3 del 02/11): cada `node` de los pasos
-      # siguientes anade una linea a PETICIONES_LOG al salir; el paso final
-      # "Peticiones a la FEB" las suma. Va DESPUES del checkout y del `npm ci` a
-      # proposito: una precarga que apunta a un fichero del repo rompe el propio
-      # checkout si se pone a nivel de job. El script es inocuo si falla.
-      - name: Activar el contador de peticiones
-        run: |
-          echo "PETICIONES_LOG=/tmp/peticiones.jsonl" >> "$GITHUB_ENV"
-          echo "NODE_OPTIONS=--require $GITHUB_WORKSPACE/scraper/contar-peticiones.js" >> "$GITHUB_ENV"
 
       # Canario de transicion de temporada (ARQUITECTURA.md S17.2). Falla el
       # workflow si la temporada nueva YA TIENE PARTIDOS JUGADOS y la FEB aun
@@ -80,6 +79,8 @@ jobs:
       # continue-on-error a proposito, y el PRIMERO: si salta, no queremos que el
       # resto del job reescriba estado.json con un "actualizado hoy" falso.
       - name: Comprobar transicion de temporada
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
         run: node scraper/comprobar-temporada.js
 
       # Cache de las actas por cuartos (data/raw/.../actas). Persisten entre
@@ -113,6 +114,8 @@ jobs:
 
       # ----- Tercera FEB (competición 3, por defecto) -----
       - name: Tercera · scrapear
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
         run: node scraper/scrape.js --competicion 3
       - name: Tercera · calcular
         run: node scraper/calcular.js --competicion 3 --temporada $(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
@@ -123,6 +126,8 @@ jobs:
 
       # ----- Segunda FEB (competición 2) -----
       - name: Segunda · scrapear
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
         run: node scraper/scrape.js --competicion 2
       - name: Segunda · calcular
         run: node scraper/calcular.js --competicion 2 --temporada $(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
@@ -133,6 +138,8 @@ jobs:
 
       # ----- Primera FEB (competición 1) -----
       - name: Primera · scrapear
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
         run: node scraper/scrape.js --competicion 1
       - name: Primera · calcular
         run: node scraper/calcular.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
@@ -148,6 +155,7 @@ jobs:
       - name: Cuartos · Tercera
         continue-on-error: true
         env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
           REEXTRAER: ${{ github.event.inputs.reextraer_tercera }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.tercerafeb.temporada")
@@ -158,6 +166,7 @@ jobs:
       - name: Cuartos · Segunda
         continue-on-error: true
         env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
           REEXTRAER: ${{ github.event.inputs.reextraer_segunda }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.segundafeb.temporada")
@@ -168,6 +177,7 @@ jobs:
       - name: Cuartos · Primera
         continue-on-error: true
         env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
           REEXTRAER: ${{ github.event.inputs.reextraer_primera }}
         run: |
           T=$(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
@@ -190,6 +200,8 @@ jobs:
       # Refresca el calendario de la temporada próxima (pretemporada/arranque):
       # scrapea sus índices y regenera calendario.json si la FEB cambió algo.
       - name: Refrescar calendario de la temporada próxima
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
         run: node scraper/refrescar-calendario.js
         continue-on-error: true
 

@@ -1269,7 +1269,9 @@ respuestas buena/degradada/sin-campos/fallo → intactas las que no mejoran).
 3. *La cadencia semanal*: un partido del sábado espera al siguiente run
    haga lo que haga el pipeline. **No tocada**: pendiente de medir el coste
    en peticiones (contador `scraper/contar-peticiones.js`, precarga por
-   `NODE_OPTIONS` activada tras el `npm ci`, resumen en el panel del job).
+   `NODE_OPTIONS` pasada **paso a paso** a los que tocan la FEB —el runner
+   prohíbe fijar `NODE_OPTIONS` por `$GITHUB_ENV`, y a nivel de job rompe el
+   checkout—, resumen en el panel del job).
    Calibración local: una acta de 4 periodos cuesta 5 peticiones, una con
    prórroga 6 (3 actas = 16).
 
