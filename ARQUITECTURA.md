@@ -1225,3 +1225,77 @@ defecto — una ejecución normal no se entera de que existen). Probado en
 sandbox: con dos actas ya en disco y solo una en `--reextraer`, la otra no
 se toca (mismo hash, mismo mtime) y la listada se reextrae con los 5
 campos.
+
+### 17.17 La latencia de la jornada, medida, y el guardián que no estaba donde se decía *(02-03/11/2026)*
+
+**Guardián del frenazo y reextracción que no degrada** (`16804357`). El
+informe del 31/10 daba por «activo» un guardián que vivía en un script local
+mío, no en la ruta de CI: el run de Primera (45 ids con `--reextraer`)
+escribió directamente sobre actas sanas. Salió bien — contador a 0, veredicto
+LISTO, medido después — pero sin ninguna protección puesta. Y aunque hubiera
+estado, **no habría podido ver la firma**: `pedirCorte` solo anotaba
+`http`/`bytes` cuando axios lanzaba con respuesta; un 200 cuyo cuerpo no es un
+PDF (los 587 bytes de postback vacío) lo lanza el *parser*, sin `e.response`,
+y salía «http=null bytes=null». Ahora `r` se captura fuera del `try`, el
+resultado de `extraerActaPorCuartos` lleva `diagnostico`, `actas-cuartos.js`
+corta la tanda con **código 2** tras 3 partidos consecutivos con la firma
+(200 y 400-700 bytes) sin reintentar, y `--reextraer` solo promueve si la
+copia nueva queda sana, trae `tap/tapRec/fc/fr` en Q2-4, cuadra con el
+oficial y no empeora `verificarActa`; si no, se queda la vieja y se lista el
+motivo. Probado sin red con un extractor simulado (racha → exit 2 y 3
+llamadas; racha rota → sigue; 404 sin firma → no cuenta; 6 sanas con
+respuestas buena/degradada/sin-campos/fallo → intactas las que no mejoran).
+
+**Tres retrasos distintos** entre un partido y el lector (Alexandre, 02/11:
+«estamos a lunes por la tarde y aún no se han actualizado los resultados»):
+
+1. *La cola de `schedule` de GitHub.* Medido sobre los 16 runs programados de
+   `actualizar-datos.yml`: retraso de arranque de 0h59 a **9h55** (mediana
+   7,5 h). No depende del minuto 0 — el vigilante, a las 09:23, llega igual de
+   tarde (3,5-7,6 h, mediana 5,2) —, **depende de la hora**: sobre los
+   `desplegar.yml` programados, el hueco nominal de las 00:00 UTC arranca con
+   2,5 h de mediana (máx. 4,2), el de las 18:00 con 3,1, el de las 12:00 con
+   3,9 y el de las 06:00 con 4,7. Los runs por `workflow_dispatch` arrancan al
+   instante.
+2. *El despliegue desacoplado.* Un push con el `GITHUB_TOKEN` por defecto no
+   dispara workflows, salvo `workflow_dispatch` y `repository_dispatch`: el
+   commit del bot no lanzaba `desplegar.yml` y el sitio esperaba al tic de
+   `0 */6 * * *` (100 ticks medidos: mediana 5,5 h, hueco máximo **11,0 h** el
+   02/11). Ahora `actualizar-datos.yml` termina con `gh workflow run
+   desplegar.yml` (permiso `actions: write`), **antes** del resumen de salud:
+   la alarma no debe retener la publicación de datos ya commiteados. El cron
+   de `desplegar.yml` pasa a diario (`47 3 * * *`): red de seguridad, no
+   camino.
+3. *La cadencia semanal*: un partido del sábado espera al siguiente run
+   haga lo que haga el pipeline. **No tocada**: pendiente de medir el coste
+   en peticiones (contador `scraper/contar-peticiones.js`, precarga por
+   `NODE_OPTIONS` activada tras el `npm ci`, resumen en el panel del job).
+   Calibración local: una acta de 4 periodos cuesta 5 peticiones, una con
+   prórroga 6 (3 actas = 16).
+
+**El cron de datos se mueve de lunes 07:00 a domingo 22:41 UTC** — por la
+hora, no por el minuto. La extrapolación a esa franja es una **hipótesis**
+(no hay runs en ella). Y trae un riesgo que antes no existía: si el run llega
+puntual, arranca 2-3 h después del último partido del domingo y puede
+adelantarse a las actas que la FEB aún no ha colgado; con cadencia semanal, lo
+que no se capture espera siete días. Hoy ese riesgo no se materializa *porque
+el cron llega tarde*. Qué mirar el lunes 9: hora real de arranque, cuántos
+partidos del domingo se quedan sin acta, y si el resumen de salud los marca
+críticos (son nuevos, no declarados). Si no es cero, el remedio es un segundo
+run, no volver al lunes.
+
+**El umbral de 12 h del vigilante no mide el retraso de arranque** (una
+conclusión que corrige la lectura del 02/11: «9h55 de récord contra 12 h =
+dos horas de margen»). `UMBRAL_HORAS_DESPLIEGUE` cuenta cuánto lleva
+pendiente de publicar un latido del repo que el sitio no tiene, desde el
+commit del bot; el arranque tardío del run de datos no entra. Lo que sí lo
+tensa es el hueco entre ticks de `desplegar.yml` (11,0 h máx. medido: margen
+real de **una** hora) — que es justo lo que el acoplamiento quita. El umbral
+semanal (8 días) tiene un margen de más de 15 h incluso con el peor desfase medido
+entre dos arranques consecutivos (+6h58 entre los runs del 24/08 y el 31/08). No se ha tocado ningún umbral.
+
+La app muestra ahora la fecha **y hora** de los datos bajo el título («Datos
+al 5 de octubre de 2026 a las 17:54», hora de Madrid); el pie ya traía la
+fecha.
+
+Detalle: `_informe-trigesimo-lote.md`.

@@ -2,8 +2,19 @@ name: Actualizar datos FEB
 
 on:
   schedule:
-    # Lunes a las 07:00 UTC (08:00/09:00 en España según horario)
-    - cron: '0 7 * * 1'
+    # Domingo 22:41 UTC (23:41/00:41 en España, ya acabada la jornada). Antes:
+    # lunes 07:00. Dos razones, medidas el 02/11 sobre los 16 runs `schedule` que
+    # hay (ver ARQUITECTURA.md S17.17): (1) el minuto 0 y las 07:00 en punto no
+    # son los más congestionados que parecía -- el vigilante, a las 09:23, llega
+    # igual de tarde (3,5-7,6 h) --, pero la hora SÍ pesa: el hueco de las 00:00
+    # UTC arranca con 2,5 h de mediana (máx. 4,2), el de las 06:00 con 4,7 h, y
+    # el run del lunes a las 07:00 tenía 7,5 h de mediana y 9h55m de récord (la
+    # extrapolación a las 22:41 es una HIPÓTESIS: se comprobará con los runs
+    # que vengan; si no mejora, se vuelve a medir antes de tocar nada más);
+    # (2) el lunes a las 17:17 se publicaba lo del sábado -- así llega el domingo
+    # por la noche en vez de la tarde siguiente. Mismo número de runs, misma
+    # carga contra la FEB: solo cambia CUÁNDO.
+    - cron: '41 22 * * 0'
   workflow_dispatch:   # y botón manual para lanzarlo cuando quieras
     inputs:
       restaurar_desde_release:
@@ -30,6 +41,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # para `gh workflow run desplegar.yml` (ver el paso "Lanzar el despliegue")
 
 # Pieza 1 contra la carrera de push (S17.4): serializa las ejecuciones de ESTE
 # workflow entre si. Un dispatch manual que solape con el cron espera su turno en
@@ -49,6 +61,16 @@ jobs:
           node-version: 24
       - name: Instalar dependencias
         run: npm ci
+
+      # Contador de peticiones HTTP (2.3 del 02/11): cada `node` de los pasos
+      # siguientes anade una linea a PETICIONES_LOG al salir; el paso final
+      # "Peticiones a la FEB" las suma. Va DESPUES del checkout y del `npm ci` a
+      # proposito: una precarga que apunta a un fichero del repo rompe el propio
+      # checkout si se pone a nivel de job. El script es inocuo si falla.
+      - name: Activar el contador de peticiones
+        run: |
+          echo "PETICIONES_LOG=/tmp/peticiones.jsonl" >> "$GITHUB_ENV"
+          echo "NODE_OPTIONS=--require $GITHUB_WORKSPACE/scraper/contar-peticiones.js" >> "$GITHUB_ENV"
 
       # Canario de transicion de temporada (ARQUITECTURA.md S17.2). Falla el
       # workflow si la temporada nueva YA TIENE PARTIDOS JUGADOS y la FEB aun
@@ -213,6 +235,22 @@ jobs:
             [ "$pushed" = 1 ] || { echo "push fallo tras 3 intentos"; exit 1; }
           fi
 
+      # Despliegue acoplado al run de datos (02/11, 2.1). Un push hecho con el
+      # GITHUB_TOKEN por defecto NO dispara workflows -- salvo `workflow_dispatch`
+      # y `repository_dispatch`, que es la excepcion documentada --, asi que el
+      # commit del bot de arriba no lanzaba desplegar.yml y el lector esperaba al
+      # siguiente tic del cron (hasta 6h; el 02/11, el sitio siguio sirviendo los
+      # datos del 31/10 hasta que un push humano arrastro el despliegue). Ahora el
+      # propio run lo lanza. Va ANTES del resumen de salud a proposito: ese paso
+      # es una alarma y sale con 1 si hay criticos, y una alarma no debe retener
+      # la publicacion de datos ya commiteados (misma razon por la que el resumen
+      # va despues del commit). Lanza el despliegue de `main`, que ya incluye el
+      # commit del bot.
+      - name: Lanzar el despliegue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run desplegar.yml --ref "${{ github.ref_name }}"
+
       # Resumen de salud (ARQUITECTURA.md S17.5.4). EL ULTIMO y SIN
       # continue-on-error: es una alarma, no un guardian. Los datos ya se
       # commitearon; si algo critico esta mal (cuartos bloqueados, un grupo sin
@@ -229,3 +267,10 @@ jobs:
       # guardian, que es justo lo que el diseño de arriba evita.
       - name: Resumen de salud del pipeline
         run: node scraper/resumen-salud.js
+
+      # Peticiones HTTP de esta ejecucion (contador de arriba). `always()` para
+      # que se vea tambien cuando el resumen de salud ha puesto el job en rojo.
+      - name: Peticiones a la FEB
+        if: always()
+        continue-on-error: true
+        run: node scraper/resumen-peticiones.js

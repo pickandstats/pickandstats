@@ -46,7 +46,7 @@ const UMBRAL_DIAS = 8; // el cron de datos es semanal y puede llegar con horas d
                         // retraso (el 7/9 llego con 6h20m y estaba sano); 7 daria
                         // falsos positivos. A 8, un lunes perdido se ve el miercoles.
                         // Se mide contra el LATIDO DESPLEGADO, no contra el del repo.
-const UMBRAL_HORAS_DESPLIEGUE = 12; // el despliegue corre cada 6h; con 12h de margen,
+const UMBRAL_HORAS_DESPLIEGUE = 12; // (hasta el 02/11 el despliegue corria cada 6h; ahora el run de datos lo lanza el mismo y el cron es diario -- el UMBRAL no se ha tocado, ver ARQUITECTURA S17.17). Con 12h de margen,
                                      // un ciclo perdido no abre issue pero dos si.
                                      // Antes era 48h sobre una metrica rota (ver mas
                                      // abajo, issue #9): con esa metrica nunca hacia

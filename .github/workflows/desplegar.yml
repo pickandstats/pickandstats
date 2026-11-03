@@ -4,7 +4,12 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 */6 * * *'
+    # Red de seguridad, no camino principal (02/11): el propio run de datos lo
+    # lanza (`gh workflow run`, ver actualizar-datos.yml) y los push lo disparan. Antes iba cada 6 h porque era el UNICO camino de los datos del
+    # bot; 100 ticks medidos, mediana de 5,5 h entre uno y otro y un hueco de
+    # 11 h el 02/11. Diario y fuera del minuto 0. Si el lanzamiento de arriba
+    # falla, el vigilante (12 h de publicacion pendiente) lo ve antes que este.
+    - cron: '47 3 * * *'
   workflow_dispatch:
 
 permissions:
