@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { srsListo, notaSrs } from './srsUtil';
+import { srsListo, notaSrsGrupos } from './srsUtil';
 import { n1, s1 } from './formato';
 
 const fecha = j => {
@@ -189,9 +189,7 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
               </div>
               {gruposNoListos.length > 0 && (
                 <p className="nota-tabla">
-                  {gruposNoListos
-                    .map(g => notaSrs(equiposF.filter(e => e.grupo === g), g))
-                    .join(' ')}
+                  {notaSrsGrupos(gruposNoListos.map(g => ({ etiqueta: g, equipos: equiposF.filter(e => e.grupo === g) })))}
                 </p>
               )}
             </div>

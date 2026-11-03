@@ -35,3 +35,16 @@ export const notaSrs = (equiposDelGrupo, etiquetaGrupo) => {
   return `El SRS ${sujeto} aparecerá cuando el ajuste por calendario deje de ser ` +
     `ruido de muestra; ahora el mayor del grupo es de ${n1(d)} puntos.`;
 };
+
+// La misma nota para VARIOS grupos a la vez (03/11, lote 31, punto 3.1): en la
+// Tercera de arranque eran diez frases casi identicas seguidas, una por grupo
+// -- un muro que nadie lee y que hace parecer roto algo que funciona. Una
+// sola frase con el criterio y, en una linea, el desvio mayor de cada grupo.
+// Con un solo grupo devuelve la frase de siempre.
+export const notaSrsGrupos = (grupos) => {
+  if (grupos.length === 1) return notaSrs(grupos[0].equipos, grupos[0].etiqueta);
+  const lista = grupos.map(g => `${g.etiqueta} ${n1(maxDifSrsGrupo(g.equipos))}`).join(' · ');
+  return `El SRS de estos grupos aparecerá cuando el ajuste por calendario deje de ser ruido de ` +
+    `muestra, es decir, cuando en el grupo ningún equipo se desvíe más de ${UMBRAL_SRS_DIF} puntos de su ` +
+    `Net. Desvío mayor ahora, por grupo: ${lista}.`;
+};
