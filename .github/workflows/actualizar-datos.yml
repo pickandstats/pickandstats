@@ -15,6 +15,15 @@ on:
     # por la noche en vez de la tarde siguiente. Mismo número de runs, misma
     # carga contra la FEB: solo cambia CUÁNDO.
     - cron: '41 22 * * 0'
+    # Segundo run del fin de semana (03/11, lote 31): lunes 06:17 UTC. Recoge las
+    # actas que la FEB aun no habia colgado el domingo por la noche -- un partido
+    # con acta sin colgar cuesta ~9 peticiones por run (4-8 sondeos de periodos +
+    # corte truncado) frente a 5-6 de una publicada, asi que dejarlo para el
+    # domingo siguiente paga ese sobrecoste siete dias y deja la jornada a medias
+    # para el lector; este lo cierra en unas 8 h. Coste medido: un run sin
+    # partidos nuevos son 381 peticiones (ver ARQUITECTURA.md S17.17). La franja
+    # de las 06:00 es la de mas retraso (mediana 4,7 h): aterriza hacia las 11.
+    - cron: '17 6 * * 1'
   workflow_dispatch:   # y botón manual para lanzarlo cuando quieras
     inputs:
       restaurar_desde_release:
@@ -262,6 +271,34 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run desplegar.yml --ref "${{ github.ref_name }}"
+
+      # Comprobacion del lanzamiento (lote 31, punto 4): un `gh run list` de
+      # desplegar.yml unos segundos despues, como AVISO en el resumen del job.
+      # Nada mas: no espera al despliegue ni falla el job. Si el run mas reciente
+      # no es un `workflow_dispatch` creado hace menos de 10 minutos, el
+      # lanzamiento no ha cuajado y hay que mirarlo antes de que lo diga el
+      # vigilante (12 h). El desfase repo<->desplegado al final de este run es ~0
+      # por construccion, asi que esto NO sustituye al vigilante: solo comprueba
+      # que el `gh workflow run` de arriba dejo rastro.
+      - name: Comprobar que el despliegue quedo lanzado
+        if: success()
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          sleep 15
+          gh run list --workflow=desplegar.yml --limit 1 --json databaseId,event,status,conclusion,createdAt > /tmp/ultimo-despliegue.json
+          node -e "
+            const r = JSON.parse(require('fs').readFileSync('/tmp/ultimo-despliegue.json','utf8'))[0];
+            const edadMin = r ? (Date.now() - new Date(r.createdAt)) / 60000 : null;
+            const ok = r && r.event === 'workflow_dispatch' && edadMin < 10;
+            const msg = r ? 'Ultimo despliegue: #' + r.databaseId + ', evento ' + r.event + ', ' + r.status + (r.conclusion ? '/' + r.conclusion : '') + ', creado hace ' + edadMin.toFixed(1) + ' min'
+                          : 'No hay ejecuciones de desplegar.yml';
+            console.log(msg);
+            const resumen = process.env.GITHUB_STEP_SUMMARY;
+            if (resumen) require('fs').appendFileSync(resumen, '\n### Despliegue\n\n' + (ok ? '✓ ' : '⚠ AVISO: el lanzamiento no ha dejado rastro reciente. ') + msg + '\n');
+            if (!ok) console.log('::warning::El despliegue no parece lanzado por este run: ' + msg);
+          "
 
       # Resumen de salud (ARQUITECTURA.md S17.5.4). EL ULTIMO y SIN
       # continue-on-error: es una alarma, no un guardian. Los datos ya se
