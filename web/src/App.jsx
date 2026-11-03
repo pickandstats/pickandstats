@@ -353,6 +353,15 @@ export default function App() {
   const fechaDatos = infoDatos && new Date(infoDatos.actualizado).toLocaleDateString('es-ES', {
     day: 'numeric', month: 'long', year: 'numeric'
   });
+  // Fecha Y hora de los datos, a la vista bajo el titulo (_instrucciones.md
+  // 02/11, 2.4): hasta ahora solo estaba la fecha, en el pie. Mientras haya
+  // latencia entre un partido y su publicacion, "datos al 2 de noviembre,
+  // 18:08" evita que un lector que no ve el partido de ayer piense que la web
+  // esta rota. Hora de Madrid; `actualizado` es el latido del pipeline (la
+  // ultima vez que miro), no la fecha del ultimo partido.
+  const fechaHoraDatos = infoDatos && new Date(infoDatos.actualizado).toLocaleString('es-ES', {
+    dateStyle: 'long', timeStyle: 'short', timeZone: 'Europe/Madrid'
+  });
 
   return (
     <>
@@ -361,6 +370,7 @@ export default function App() {
       <div className="cabecera">
         <div className="cabecera-marca">
           <h1 className="titulo-app">Estadísticas avanzadas · {compActual.nombre}</h1>
+          {fechaHoraDatos && <p className="pie" style={{ margin: '2px 0 0' }}>Datos al {fechaHoraDatos}</p>}
         </div>
         <div className="cabecera-buscador">
           <Buscador historico={historico} equipos={equipos}
