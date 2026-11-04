@@ -143,8 +143,10 @@ pronto y la está aprovechando.
 **Inicio** resume la temporada: los líderes en siete categorías, los equipos dominantes,
 quién está en racha en los últimos cinco partidos y los últimos resultados. Todo se puede
 filtrar por grupo. Cada líder lleva al lado los partidos que ha jugado, y conviene mirarlo
-en octubre: el listón para entrar en esas listas es el mismo que el de los percentiles, así
-que en las primeras jornadas son tres partidos y las cifras son altas por eso.
+en octubre: el listón de partidos para entrar en esas listas es el mismo que el de los
+percentiles, así que en las primeras jornadas son tres partidos y las cifras son altas por
+eso. La lista de Eficiencia (TS%) pide además un mínimo de tiros —cinco ponderados por
+partido—, porque un porcentaje con dos intentos no dice nada del jugador.
 
 **Leyenda** es el diccionario: qué significa cada abreviatura y cada métrica, con enlaces
 a las guías que las explican a fondo.

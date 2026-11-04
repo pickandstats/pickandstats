@@ -51,7 +51,7 @@ const SECCIONES = [
     titulo: 'Perfil de ataque',
     guias: [{ url: '/guias/ts-efg-porcentaje-tiro', texto: 'Guía: TS% y eFG%' }],
     metricas: [
-      ['TS% (True Shooting)', 'Eficiencia total de anotación incluyendo tiros libres: puntos / (2 × (TC intentados + 0,44 × TL intentados)). La mejor medida individual de eficiencia anotadora.'],
+      ['TS% (True Shooting)', 'Eficiencia total de anotación incluyendo tiros libres: puntos / (2 × (TC intentados + 0,44 × TL intentados)). La mejor medida individual de eficiencia anotadora. Con pocos intentos no dice nada del jugador: en las listas de líderes y en los percentiles solo cuenta con al menos cinco intentos ponderados por partido.'],
       ['3PAr', 'Proporción de tiros de campo que son triples. Define el perfil: equipo triplista o interior.'],
       ['AST%', 'Porcentaje de canastas que llegan tras asistencia. Ataques corales altos, talento individual bajos.'],
       ['AS/BP', 'Asistencias por pérdida. Calidad en el cuidado del balón al generar juego.'],
@@ -88,7 +88,7 @@ const SECCIONES = [
     metricas: [
       ['Qué son', 'En la ficha de cada jugador, las barras de percentil sitúan su rendimiento frente al resto. Un percentil 80 significa que el jugador supera al 80% de los comparables en esa métrica. Es la forma más rápida de leer un perfil de un vistazo.'],
       ['Nacional vs. grupo', 'Cada métrica se muestra con dos referencias: el percentil respecto a todos los jugadores de la categoría (nacional) y respecto a los de su grupo. La comparación de grupo es más justa para valorar el papel de un jugador en su contexto competitivo.'],
-      ['Código de color', 'Verde para percentiles altos (élite, 80+), pasando por tonos intermedios, hasta rojo para los bajos (por debajo de 20). Solo se calculan para jugadores con suficientes partidos disputados -- el mínimo crece con la temporada, nunca por debajo de 3, para que la muestra sea significativa tanto al principio como al final.'],
+      ['Código de color', 'Verde para percentiles altos (élite, 80+), pasando por tonos intermedios, hasta rojo para los bajos (por debajo de 20). Solo se calculan para jugadores con suficientes partidos disputados -- el mínimo crece con la temporada, nunca por debajo de 3, para que la muestra sea significativa tanto al principio como al final. El TS% exige además intentos de tiro suficientes (cinco ponderados por partido); sin ellos esa barra queda en blanco y la razón se explica debajo.'],
     ]
   },
   {

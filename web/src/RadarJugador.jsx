@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import { tieneIntentosSuficientesTS, SUELO_INTENTOS_TS_POR_PARTIDO } from './volumen';
 import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   ResponsiveContainer, Legend, Tooltip
@@ -36,14 +37,26 @@ export default function RadarJugador({ carrera, jugadores, referencia = 'nac' })
 
   const datos = useMemo(() => {
     if (!pct) return [];
+    // El eje de TS% sigue en su sitio aunque el jugador no tenga intentos
+    // suficientes (ver volumen.js): se queda SIN punto (null), no en 0 -- un 0
+    // dibujaria un percentil que no existe y un eje menos desplazaria a los
+    // demas. Cada serie decide por separado: el rival puede tenerlo y el
+    // propio no.
+    const propioSinTS = !tieneIntentosSuficientesTS(carrera);
+    const rivalSinTS = rival ? !tieneIntentosSuficientesTS(rival) : false;
+    const hayRecorte = propioSinTS || rivalSinTS;
     return EJES.map(e => {
       const p = pct[e.clave];
-      const fila = { eje: e.titulo, propio: p ? p[ref] : 0 };
+      const sinVolumen = e.clave === 'ts';
+      // Recharts dibuja el vertice sin valor en el centro, igual que un
+      // percentil 0: el eje lleva un asterisco y la nota de debajo dice por
+      // que no hay punto.
+      const fila = { eje: e.titulo + (sinVolumen && hayRecorte ? ' *' : ''), propio: p && !(sinVolumen && propioSinTS) ? p[ref] : (p ? null : 0) };
       if (rival && rival.percentiles && rival.percentiles[e.clave])
-        fila.rival = rival.percentiles[e.clave][ref];
+        fila.rival = sinVolumen && rivalSinTS ? null : rival.percentiles[e.clave][ref];
       return fila;
     });
-  }, [pct, rival, ref]);
+  }, [pct, rival, ref, carrera]);
 
   if (!pct) return null;
 
@@ -94,6 +107,15 @@ export default function RadarJugador({ carrera, jugadores, referencia = 'nac' })
           especializado. Solo aparecen jugadores con partidos suficientes para tener
           percentiles.
         </p>
+        {(!tieneIntentosSuficientesTS(carrera) || (rival && !tieneIntentosSuficientesTS(rival))) && (
+          <p className="pie" style={{ marginTop: 4 }}>
+            * Eficiencia (TS%) sin punto para {[
+              !tieneIntentosSuficientesTS(carrera) && apellido(carrera.nombre),
+              rival && !tieneIntentosSuficientesTS(rival) && apellido(rival.nombre),
+            ].filter(Boolean).join(' y ')}: menos de {SUELO_INTENTOS_TS_POR_PARTIDO} intentos de tiro
+            ponderados por partido. El vértice se dibuja en el centro, pero no es un percentil 0.
+          </p>
+        )}
       </div>
     </>
   );

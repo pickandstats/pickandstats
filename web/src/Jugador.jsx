@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import RadarJugador from './RadarJugador';
 import { n0, n1, pct1 } from './formato';
+import { tieneIntentosSuficientesTS, intentosPonderadosPorPartido, SUELO_INTENTOS_TS_POR_PARTIDO } from './volumen';
 import {
   LineChart, Line, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer,
   BarChart, Bar
@@ -37,6 +38,9 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
   const soloHistorico = carrera.soloHistorico === true;
   const multiEtapa = carrera.nEtapas > 1;
   const pct = carrera.percentiles || null;
+  // Segunda bandera (ver volumen.js): el jugador tiene percentiles (partidos
+  // suficientes) pero el eje de TS% solo se pinta con intentos suficientes.
+  const tsPintable = tieneIntentosSuficientesTS(carrera);
   // Datos por cuarto de este jugador (si la temporada/competicion los tiene)
   const cuartos = (jugadoresCuartos || []).find(x => String(x.idJugador) === String(carrera.idJugador)) || null;
   const hayCuartos = cuartos && cuartos.porCuarto && cuartos.porCuarto.some(q => q.pj > 0);
@@ -217,14 +221,22 @@ export default function Jugador({ carrera, historico, equipos, jugadores, jugado
               {METRICAS_PCT.map(m => {
                 const d = pct[m.clave];
                 if (!d) return null;
+                const sinVolumen = m.clave === 'ts' && !tsPintable;
                 return (
                   <div className="pct-fila" key={m.clave}>
                     <span className="pct-etiqueta">{m.titulo}</span>
-                    {barra(d.nac)}
-                    {barra(d.grp)}
+                    {barra(sinVolumen ? null : d.nac)}
+                    {barra(sinVolumen ? null : d.grp)}
                   </div>
                 );
               })}
+              {!tsPintable && (
+                <p className="pie" style={{ marginTop: 8 }}>
+                  TS% sin percentil: {n1(intentosPonderadosPorPartido(carrera))} intentos de tiro por
+                  partido (tiros de campo más 0,44 por cada libre), por debajo de los{' '}
+                  {SUELO_INTENTOS_TS_POR_PARTIDO} que hacen falta para que el porcentaje diga algo del jugador.
+                </p>
+              )}
               <p className="pie" style={{ marginTop: 8 }}>
                 Percentil respecto a jugadores con {minPj}+ partidos. 100 = mejor de la categoría.
                 Nacional compara con toda la {competicionNombre}; grupo, solo con su grupo.

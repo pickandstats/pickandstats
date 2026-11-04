@@ -2,7 +2,7 @@
 titulo: Cómo leer los percentiles, la forma más rápida de valorar a un jugador
 descripcion: Qué es un percentil, por qué compara mejor que las medias, cómo se leen las dos referencias (nacional y grupo) y qué límites tiene, con ejemplos reales de la Tercera FEB.
 descripcionSeo: Qué es un percentil, por qué compara mejor que las medias y cómo leer las dos referencias, nacional y grupo, con ejemplos de la Tercera FEB.
-actualizado: 2026-10-22
+actualizado: 2026-11-04
 familia: metricas
 orden: 10
 fecha: 2026-08-03
@@ -94,6 +94,22 @@ cabe esperar. Se va asentando a medida que el listón sube.
 
 Si abres la ficha de un jugador y no ves barras de percentil, es por esto: no ha jugado
 lo suficiente **para el momento de temporada en que estamos**.
+
+Hay un segundo listón, y solo afecta a una barra: el **TS%**. Un porcentaje de acierto
+necesita *tiros*, no solo partidos: con dos intentos en cuatro encuentros, un jugador puede
+marcar un 125% (dos tiros de tres bastan para pasar del 100%) y ese número habla del
+tamaño de la muestra, no de él. Por eso el TS% solo se pinta si el jugador intenta, de
+media, **al menos cinco tiros ponderados por partido** (los de campo más 0,44 por cada
+libre, la misma ponderación del propio TS%). Es un listón por partido, así que sube solo
+con la temporada, igual que el de partidos. Quien tiene percentiles pero no llega a ese
+volumen ve el TS% en blanco, con la razón escrita debajo, y las demás barras intactas. La
+lista de líderes de Eficiencia de la portada aplica el mismo criterio.
+
+Dos aclaraciones para no sobreinterpretar esto. El percentil de TS% de los demás sigue
+calculándose contra **todos** los que tienen partidos suficientes, incluidos los que
+tienen poco volumen; por ahora la comparación no los excluye de la base. Y el triple
+tiene hoy el mismo problema de muestra (un 100% de triples con un solo intento) sin
+listón propio: léelo con la misma cautela.
 
 ## Qué no hacen los percentiles
 

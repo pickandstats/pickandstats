@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react';
 import { srsListo, notaSrsGrupos } from './srsUtil';
+import { tieneIntentosSuficientesTS, SUELO_INTENTOS_TS_POR_PARTIDO } from './volumen';
 import { n1, s1 } from './formato';
 
 const fecha = j => {
@@ -42,7 +43,10 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
   // la duración del partido en Europa.
   const valorDe = (j, clave) =>
     clave === 'per40pt' ? (j.per36 ? j.per36.pt * 40 / 36 : 0) : j[clave];
+  // Dos banderas (ver volumen.js): `elegibles` = partidos suficientes, vale para
+  // todas las listas; el TS% exige ADEMAS intentos suficientes.
   const lider = clave => [...elegibles]
+    .filter(j => clave !== 'ts' || tieneIntentosSuficientesTS(j))
     .filter(j => Number.isFinite(+valorDe(j, clave)))
     .sort((a, b) => valorDe(b, clave) - valorDe(a, clave))
     .slice(0, 5);
@@ -125,7 +129,9 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
               la temporada hasta ahora -- sin prometer que el orden se sostenga. */}
           <p className="nota-tabla">Mínimo {minPj} partidos jugados para entrar en estas listas
             {' '}— el listón sube con la temporada. Es lo que ha pasado hasta ahora, no una
-            {' '}previsión de cómo va a acabar.</p>
+            {' '}previsión de cómo va a acabar. Eficiencia (TS%) pide además al menos{' '}
+            {SUELO_INTENTOS_TS_POR_PARTIDO} intentos de tiro por partido (tiros de campo más
+            {' '}0,44 por cada libre): con menos, el porcentaje habla de la muestra, no del jugador.</p>
           <div className="cards-lideres">
             {cardsLideres.map(card => {
               const top = lider(card.clave);
