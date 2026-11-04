@@ -1,5 +1,161 @@
 [
  {
+  "equipoId": "shad-mollet",
+  "equipo": "SHAD MOLLET",
+  "porCuarto": [
+   {
+    "pj": 4,
+    "pace": 19.7,
+    "ortg": 73.5,
+    "drtg": 84.5,
+    "ctxFavor": {
+     "contraataque": 1.8,
+     "pintura": 6,
+     "segundaOportunidad": 1.8,
+     "banquillo": 7.3
+    },
+    "ctxContra": {
+     "contraataque": 1,
+     "pintura": 7.5,
+     "segundaOportunidad": 1.8,
+     "banquillo": 3.5
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18.8,
+    "ortg": 80,
+    "drtg": 124,
+    "ctxFavor": {
+     "contraataque": 1,
+     "pintura": 7,
+     "segundaOportunidad": 1.5,
+     "banquillo": 7.8
+    },
+    "ctxContra": {
+     "contraataque": 1.3,
+     "pintura": 7.5,
+     "segundaOportunidad": 4,
+     "banquillo": 10
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 19.3,
+    "ortg": 91.9,
+    "drtg": 64.8,
+    "ctxFavor": {
+     "contraataque": 2,
+     "pintura": 8.5,
+     "segundaOportunidad": 3,
+     "banquillo": 9.3
+    },
+    "ctxContra": {
+     "contraataque": 0.5,
+     "pintura": 5,
+     "segundaOportunidad": 0.5,
+     "banquillo": 3.8
+    }
+   },
+   {
+    "pj": 4,
+    "pace": 18.5,
+    "ortg": 125.9,
+    "drtg": 91.8,
+    "ctxFavor": {
+     "contraataque": 2.8,
+     "pintura": 10,
+     "segundaOportunidad": 2.3,
+     "banquillo": 11.8
+    },
+    "ctxContra": {
+     "contraataque": 1,
+     "pintura": 6.5,
+     "segundaOportunidad": 5.3,
+     "banquillo": 6.5
+    }
+   }
+  ]
+ },
+ {
+  "equipoId": "uemontgat-2",
+  "equipo": "UE.MONTGAT",
+  "porCuarto": [
+   {
+    "pj": 5,
+    "pace": 19.3,
+    "ortg": 99.4,
+    "drtg": 89.6,
+    "ctxFavor": {
+     "contraataque": 1.6,
+     "pintura": 8.4,
+     "segundaOportunidad": 1.2,
+     "banquillo": 4.6
+    },
+    "ctxContra": {
+     "contraataque": 3.4,
+     "pintura": 10,
+     "segundaOportunidad": 3.6,
+     "banquillo": 6.8
+    }
+   },
+   {
+    "pj": 5,
+    "pace": 20,
+    "ortg": 101.1,
+    "drtg": 70.9,
+    "ctxFavor": {
+     "contraataque": 0.4,
+     "pintura": 9.2,
+     "segundaOportunidad": 1.6,
+     "banquillo": 7.6
+    },
+    "ctxContra": {
+     "contraataque": 2.8,
+     "pintura": 7.6,
+     "segundaOportunidad": 1.6,
+     "banquillo": 6.6
+    }
+   },
+   {
+    "pj": 5,
+    "pace": 19.1,
+    "ortg": 79.7,
+    "drtg": 105.9,
+    "ctxFavor": {
+     "contraataque": 0.2,
+     "pintura": 5.2,
+     "segundaOportunidad": 0.8,
+     "banquillo": 6.4
+    },
+    "ctxContra": {
+     "contraataque": 1.6,
+     "pintura": 10,
+     "segundaOportunidad": 1.2,
+     "banquillo": 6.8
+    }
+   },
+   {
+    "pj": 5,
+    "pace": 18.8,
+    "ortg": 91.3,
+    "drtg": 100.6,
+    "ctxFavor": {
+     "contraataque": 0.4,
+     "pintura": 7.2,
+     "segundaOportunidad": 2.6,
+     "banquillo": 4.6
+    },
+    "ctxContra": {
+     "contraataque": 2.4,
+     "pintura": 10,
+     "segundaOportunidad": 3.2,
+     "banquillo": 8.8
+    }
+   }
+  ]
+ },
+ {
   "equipoId": "eglobe-tecla-sala",
   "equipo": "EGLOBE TECLA SALA",
   "porCuarto": [
@@ -624,84 +780,6 @@
   ]
  },
  {
-  "equipoId": "uemontgat-2",
-  "equipo": "UE.MONTGAT",
-  "porCuarto": [
-   {
-    "pj": 4,
-    "pace": 18.7,
-    "ortg": 104.4,
-    "drtg": 89.5,
-    "ctxFavor": {
-     "contraataque": 1.5,
-     "pintura": 9.5,
-     "segundaOportunidad": 1,
-     "banquillo": 5.3
-    },
-    "ctxContra": {
-     "contraataque": 3.5,
-     "pintura": 11,
-     "segundaOportunidad": 3.3,
-     "banquillo": 6
-    }
-   },
-   {
-    "pj": 4,
-    "pace": 20.6,
-    "ortg": 92.4,
-    "drtg": 68.4,
-    "ctxFavor": {
-     "contraataque": 0.5,
-     "pintura": 9.5,
-     "segundaOportunidad": 1,
-     "banquillo": 7.8
-    },
-    "ctxContra": {
-     "contraataque": 3,
-     "pintura": 7.5,
-     "segundaOportunidad": 1.5,
-     "banquillo": 7.8
-    }
-   },
-   {
-    "pj": 4,
-    "pace": 19.4,
-    "ortg": 87.6,
-    "drtg": 103.8,
-    "ctxFavor": {
-     "contraataque": 0.3,
-     "pintura": 6,
-     "segundaOportunidad": 1,
-     "banquillo": 7.3
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 11,
-     "segundaOportunidad": 0.5,
-     "banquillo": 6
-    }
-   },
-   {
-    "pj": 4,
-    "pace": 18.5,
-    "ortg": 95.9,
-    "drtg": 90,
-    "ctxFavor": {
-     "contraataque": 0.5,
-     "pintura": 7.5,
-     "segundaOportunidad": 1.5,
-     "banquillo": 4.5
-    },
-    "ctxContra": {
-     "contraataque": 2,
-     "pintura": 9,
-     "segundaOportunidad": 2.5,
-     "banquillo": 7.5
-    }
-   }
-  ]
- },
- {
   "equipoId": "tibu-ron-castelldefels",
   "equipo": "TIBU-RON CASTELLDEFELS",
   "porCuarto": [
@@ -853,84 +931,6 @@
      "pintura": 8.5,
      "segundaOportunidad": 0.5,
      "banquillo": 6.5
-    }
-   }
-  ]
- },
- {
-  "equipoId": "shad-mollet",
-  "equipo": "SHAD MOLLET",
-  "porCuarto": [
-   {
-    "pj": 3,
-    "pace": 19.7,
-    "ortg": 67.8,
-    "drtg": 85.4,
-    "ctxFavor": {
-     "contraataque": 1.3,
-     "pintura": 6,
-     "segundaOportunidad": 0.7,
-     "banquillo": 6.3
-    },
-    "ctxContra": {
-     "contraataque": 0.7,
-     "pintura": 8.7,
-     "segundaOportunidad": 1.7,
-     "banquillo": 4
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.4,
-    "ortg": 79,
-    "drtg": 118.6,
-    "ctxFavor": {
-     "contraataque": 0.7,
-     "pintura": 6.7,
-     "segundaOportunidad": 1.3,
-     "banquillo": 9.7
-    },
-    "ctxContra": {
-     "contraataque": 1.7,
-     "pintura": 7.3,
-     "segundaOportunidad": 4,
-     "banquillo": 11
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19.6,
-    "ortg": 85,
-    "drtg": 70.9,
-    "ctxFavor": {
-     "contraataque": 2.7,
-     "pintura": 9.3,
-     "segundaOportunidad": 2.7,
-     "banquillo": 9
-    },
-    "ctxContra": {
-     "contraataque": 0.7,
-     "pintura": 6,
-     "segundaOportunidad": 0.7,
-     "banquillo": 4
-    }
-   },
-   {
-    "pj": 3,
-    "pace": 19,
-    "ortg": 119.4,
-    "drtg": 97.9,
-    "ctxFavor": {
-     "contraataque": 2.3,
-     "pintura": 8.7,
-     "segundaOportunidad": 1,
-     "banquillo": 11
-    },
-    "ctxContra": {
-     "contraataque": 1.3,
-     "pintura": 6.7,
-     "segundaOportunidad": 4.7,
-     "banquillo": 7
     }
    }
   ]
