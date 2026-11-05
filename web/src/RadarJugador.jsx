@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react';
-import { tieneIntentosSuficientesTS, SUELO_INTENTOS_TS_POR_PARTIDO } from './volumen';
+import { tieneIntentosSuficientes, SUELO_TEXTO } from './volumen';
+import { formaConHueco } from './RadarHueco';
 import {
   Radar, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis,
   ResponsiveContainer, Legend, Tooltip
@@ -16,6 +17,9 @@ const EJES = [
   { clave: 'ts', titulo: 'Eficiencia (TS%)' },
   { clave: 't3Pct', titulo: 'Triple' },
 ];
+
+// Ejes con suelo de volumen (ver volumen.js).
+const CON_SUELO = ['ts', 't3Pct'];
 
 const apellido = n => String(n).split(',')[0].trim();
 
@@ -35,28 +39,28 @@ export default function RadarJugador({ carrera, jugadores, referencia = 'nac' })
 
   const rival = comparables.find(j => String(j.idJugador) === rivalId) || null;
 
+  // Cada serie decide
+  // por separado: el rival puede tener intentos suficientes y el propio no. Un eje
+  // sin intentos suficientes se queda SIN valor (null) y el poligono se dibuja con
+  // un hueco (ver RadarHueco.jsx): ni un 0, ni un punto en el centro.
+  const faltan = useMemo(() => CON_SUELO.filter(k =>
+    !tieneIntentosSuficientes(carrera, k) || (rival && !tieneIntentosSuficientes(rival, k))
+  ), [carrera, rival]);
+
   const datos = useMemo(() => {
     if (!pct) return [];
-    // El eje de TS% sigue en su sitio aunque el jugador no tenga intentos
-    // suficientes (ver volumen.js): se queda SIN punto (null), no en 0 -- un 0
-    // dibujaria un percentil que no existe y un eje menos desplazaria a los
-    // demas. Cada serie decide por separado: el rival puede tenerlo y el
-    // propio no.
-    const propioSinTS = !tieneIntentosSuficientesTS(carrera);
-    const rivalSinTS = rival ? !tieneIntentosSuficientesTS(rival) : false;
-    const hayRecorte = propioSinTS || rivalSinTS;
     return EJES.map(e => {
       const p = pct[e.clave];
-      const sinVolumen = e.clave === 'ts';
-      // Recharts dibuja el vertice sin valor en el centro, igual que un
-      // percentil 0: el eje lleva un asterisco y la nota de debajo dice por
-      // que no hay punto.
-      const fila = { eje: e.titulo + (sinVolumen && hayRecorte ? ' *' : ''), propio: p && !(sinVolumen && propioSinTS) ? p[ref] : (p ? null : 0) };
+      const conSuelo = CON_SUELO.includes(e.clave);
+      const propioSin = conSuelo && !tieneIntentosSuficientes(carrera, e.clave);
+      const rivalSin = conSuelo && rival && !tieneIntentosSuficientes(rival, e.clave);
+      const marca = faltan.includes(e.clave) ? ' *' : '';
+      const fila = { eje: e.titulo + marca, propio: p && !propioSin ? p[ref] : null };
       if (rival && rival.percentiles && rival.percentiles[e.clave])
-        fila.rival = sinVolumen && rivalSinTS ? null : rival.percentiles[e.clave][ref];
+        fila.rival = rivalSin ? null : rival.percentiles[e.clave][ref];
       return fila;
     });
-  }, [pct, rival, ref, carrera]);
+  }, [pct, rival, ref, carrera, faltan]);
 
   if (!pct) return null;
 
@@ -88,16 +92,16 @@ export default function RadarJugador({ carrera, jugadores, referencia = 'nac' })
             <PolarAngleAxis dataKey="eje" tick={{ fontSize: 12, fill: '#5b6472' }} />
             <PolarRadiusAxis domain={[0, 100]} tick={{ fontSize: 10 }} tickCount={5} />
             <Tooltip formatter={(v, n) => [
-              `percentil ${v}`,
+              v == null ? 'sin intentos suficientes' : `percentil ${v}`,
               n === 'propio' ? apellido(carrera.nombre) : (rival ? apellido(rival.nombre) : '')
             ]} />
             <Legend formatter={v =>
               v === 'propio' ? apellido(carrera.nombre) : (rival ? apellido(rival.nombre) : '')} />
             <Radar name="propio" dataKey="propio" stroke={COLOR.propio}
-              fill={COLOR.propio} fillOpacity={0.32} strokeWidth={2} />
+              fill={COLOR.propio} fillOpacity={0.32} strokeWidth={2} shape={formaConHueco} />
             {rival && (
               <Radar name="rival" dataKey="rival" stroke={COLOR.rival}
-                fill={COLOR.rival} fillOpacity={0.18} strokeWidth={2} />
+                fill={COLOR.rival} fillOpacity={0.18} strokeWidth={2} shape={formaConHueco} />
             )}
           </RadarChart>
         </ResponsiveContainer>
@@ -107,13 +111,17 @@ export default function RadarJugador({ carrera, jugadores, referencia = 'nac' })
           especializado. Solo aparecen jugadores con partidos suficientes para tener
           percentiles.
         </p>
-        {(!tieneIntentosSuficientesTS(carrera) || (rival && !tieneIntentosSuficientesTS(rival))) && (
+        {faltan.length > 0 && (
           <p className="pie" style={{ marginTop: 4 }}>
-            * Eficiencia (TS%) sin punto para {[
-              !tieneIntentosSuficientesTS(carrera) && apellido(carrera.nombre),
-              rival && !tieneIntentosSuficientesTS(rival) && apellido(rival.nombre),
-            ].filter(Boolean).join(' y ')}: menos de {SUELO_INTENTOS_TS_POR_PARTIDO} intentos de tiro
-            ponderados por partido. El vértice se dibuja en el centro, pero no es un percentil 0.
+            * Sin punto (el trazo se interrumpe, no baja a 0):{' '}
+            {faltan.map((k, i) => {
+              const quien = [
+                !tieneIntentosSuficientes(carrera, k) && apellido(carrera.nombre),
+                rival && !tieneIntentosSuficientes(rival, k) && apellido(rival.nombre),
+              ].filter(Boolean).join(' y ');
+              return `${i ? '; ' : ''}${EJES.find(e => e.clave === k).titulo} de ${quien} (menos de ${SUELO_TEXTO[k]})`;
+            }).join('')}.
+            Una serie con hueco se dibuja solo con el contorno.
           </p>
         )}
       </div>

@@ -95,21 +95,33 @@ cabe esperar. Se va asentando a medida que el listón sube.
 Si abres la ficha de un jugador y no ves barras de percentil, es por esto: no ha jugado
 lo suficiente **para el momento de temporada en que estamos**.
 
-Hay un segundo listón, y solo afecta a una barra: el **TS%**. Un porcentaje de acierto
-necesita *tiros*, no solo partidos: con dos intentos en cuatro encuentros, un jugador puede
-marcar un 125% (dos tiros de tres bastan para pasar del 100%) y ese número habla del
-tamaño de la muestra, no de él. Por eso el TS% solo se pinta si el jugador intenta, de
-media, **al menos cinco tiros ponderados por partido** (los de campo más 0,44 por cada
-libre, la misma ponderación del propio TS%). Es un listón por partido, así que sube solo
-con la temporada, igual que el de partidos. Quien tiene percentiles pero no llega a ese
-volumen ve el TS% en blanco, con la razón escrita debajo, y las demás barras intactas. La
-lista de líderes de Eficiencia de la portada aplica el mismo criterio.
+Hay un segundo listón, y solo afecta a las métricas de **acierto**: el **TS%**, el
+**eFG%** y el **triple**. Un porcentaje necesita *tiros*, no solo partidos: con dos
+intentos en cuatro encuentros, un jugador puede marcar un 125% (dos tiros de tres bastan
+para pasar del 100%), y con un solo triple metido tiene un 100% de triples; ese número
+habla del tamaño de la muestra, no de él. Por eso cada una se pinta solo si el jugador
+intenta, de media por partido, al menos:
 
-Dos aclaraciones para no sobreinterpretar esto. El percentil de TS% de los demás sigue
-calculándose contra **todos** los que tienen partidos suficientes, incluidos los que
-tienen poco volumen; por ahora la comparación no los excluye de la base. Y el triple
-tiene hoy el mismo problema de muestra (un 100% de triples con un solo intento) sin
-listón propio: léelo con la misma cautela.
+- **TS%:** cinco tiros ponderados (los de campo más 0,44 por cada libre, la misma
+  ponderación del propio TS%).
+- **eFG%:** cuatro tiros de campo.
+- **Triple:** uno y medio triples.
+
+Cada una tiene su propio denominador —el del TS% son tiros ponderados, el del triple son
+triples— porque cada porcentaje se calcula sobre unos intentos distintos. Son listones por
+partido, así que suben solos con la temporada, igual que el de partidos. Quien tiene
+percentiles pero no llega al volumen de una métrica la ve sin percentil, con la razón
+escrita debajo; en el radar, el contorno se interrumpe en ese eje (no baja a cero: un cero
+sería un percentil que no existe) y las demás barras siguen intactas. La lista de líderes
+de Eficiencia de la portada aplica el mismo criterio.
+
+Dos aclaraciones para no sobreinterpretar esto. Los listones deciden qué se **pinta**; el
+percentil de los demás sigue calculándose contra **todos** los que tienen partidos
+suficientes, incluidos los que tienen poco volumen, de modo que la comparación todavía no
+los excluye de la base. Y un listón por partido no garantiza una muestra grande al
+principio de temporada: con uno y medio triples por partido, en cuatro jornadas son seis
+intentos. Deja fuera lo ridículo, no lo pequeño; léelo con cautela hasta que pasen las
+jornadas.
 
 ## Qué no hacen los percentiles
 

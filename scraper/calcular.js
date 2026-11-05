@@ -563,6 +563,9 @@ if (!fs.existsSync(fFasesVacio)) {
 const CAMPOS_COMPARADOR = ['ptPorPartido', 'rtPorPartido', 'asPorPartido', 'brPorPartido', 'vaPorPartido', 'ts', 'efg', 't3Pct'];
 const jugadoresComparador = salidaJugadores.map(j => {
   const o = { idJugador: j.idJugador, nombre: j.nombre, equipo: j.equipo, pj: j.pj, minPorPartido: j.minPorPartido };
+  // Intentos: web/src/volumen.js decide con ellos si TS%, eFG% y Triple tienen
+  // volumen suficiente para pintar su percentil (lote 33, suelos de acierto).
+  o.t2i = j.t2i; o.t3i = j.t3i; o.tli = j.tli;
   for (const k of CAMPOS_COMPARADOR) o[k] = j[k];
   const p = {};
   if (j.percentiles) for (const k of CAMPOS_COMPARADOR) if (j.percentiles[k]) p[k] = { nac: j.percentiles[k].nac };

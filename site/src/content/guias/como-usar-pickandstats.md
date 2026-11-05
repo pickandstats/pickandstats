@@ -146,7 +146,8 @@ filtrar por grupo. Cada líder lleva al lado los partidos que ha jugado, y convi
 en octubre: el listón de partidos para entrar en esas listas es el mismo que el de los
 percentiles, así que en las primeras jornadas son tres partidos y las cifras son altas por
 eso. La lista de Eficiencia (TS%) pide además un mínimo de tiros —cinco ponderados por
-partido—, porque un porcentaje con dos intentos no dice nada del jugador.
+partido—, porque un porcentaje con dos intentos no dice nada del jugador; el radar y el
+comparador aplican lo mismo al TS%, al eFG% y al triple, cada uno con sus intentos.
 
 **Leyenda** es el diccionario: qué significa cada abreviatura y cada métrica, con enlaces
 a las guías que las explican a fondo.

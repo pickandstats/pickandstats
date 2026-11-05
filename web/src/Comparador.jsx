@@ -4,6 +4,8 @@ import {
   ResponsiveContainer, Legend, Tooltip
 } from 'recharts';
 import { FORMATOS } from './formato';
+import { tieneIntentosSuficientes, SUELO_TEXTO } from './volumen';
+import { formaConHueco } from './RadarHueco';
 
 // Comparador de jugadores de cualquier categoría. Carga bajo demanda las listas
 // de jugadores de las tres competiciones y permite enfrentar 2-4 jugadores con
@@ -97,7 +99,13 @@ export default function Comparador({ temporada = '2025' }) {
   };
   const quitar = id => setElegidos(elegidos.filter(j => String(j.idJugador) !== String(id)));
 
-  const pctDe = (j, k) => (j.percentiles && j.percentiles[k] ? j.percentiles[k].nac : null);
+  // Percentil nacional, o null si no lo hay. Para las metricas de acierto (TS%,
+  // eFG%, Triple) tambien es null sin INTENTOS suficientes (ver volumen.js): asi
+  // no entra en el resaltado del mejor ni se dibuja en el radar, donde el eje
+  // queda con un hueco (ver RadarHueco.jsx) en lugar de un 0 o un punto central.
+  const pctDe = (j, k) => (j.percentiles && j.percentiles[k] && tieneIntentosSuficientes(j, k)
+    ? j.percentiles[k].nac : null);
+  const sinVolumen = (j, k) => !tieneIntentosSuficientes(j, k);
   const catsMezcladas = new Set(elegidos.map(j => j._catId)).size > 1;
 
   // Datos del radar: una fila por eje, con el percentil de cada jugador elegido.
@@ -106,10 +114,14 @@ export default function Comparador({ temporada = '2025' }) {
     const fila = { eje: e.t };
     elegidos.forEach((j, i) => {
       const p = pctDe(j, e.k);
-      fila["j" + i] = p != null ? p : 0;
+      fila["j" + i] = p != null ? p : null;
     });
     return fila;
   }), [elegidos]);
+
+  // Metricas de acierto en las que algun elegido se queda sin percentil por falta de intentos.
+  const faltan = METRICAS.map(m => m.k).filter(k => ['ts', 'efg', 't3Pct'].includes(k) && elegidos.some(j => sinVolumen(j, k)));
+  const hayRecorte = faltan.length > 0;
 
   // Índice del mejor de cada métrica, por percentil (comparación justa entre categorías)
   const mejorPorFila = k => {
@@ -201,6 +213,9 @@ export default function Comparador({ temporada = '2025' }) {
                           <td key={j.idJugador} className={i === mejor ? 'comparador-mejor' : ''}>
                             <span className="comparador-crudo">{FORMATOS['n' + m.dec](v)}</span>
                             {p != null && <span className="comparador-pct">P{p}</span>}
+                            {p == null && sinVolumen(j, m.k) && (
+                              <span className="comparador-pct" title={`Menos de ${SUELO_TEXTO[m.k]}`}>P —</span>
+                            )}
                           </td>
                         );
                       })}
@@ -224,6 +239,8 @@ export default function Comparador({ temporada = '2025' }) {
             Cada celda muestra el valor por partido y, debajo, el percentil dentro de su categoría (P = mejor que ese % de jugadores de su categoría).
             {catsMezcladas && ' Como comparas jugadores de categorías distintas, el percentil es la referencia justa: el valor crudo no es directamente equiparable entre categorías.'}
             {' '}El resaltado marca el mejor percentil de cada fila.
+            {hayRecorte && ' «P —» = sin percentil: el jugador no llega al mínimo de intentos por partido que hace falta para que un porcentaje diga algo de él (' +
+              [...new Set(faltan)].map(k => `${METRICAS.find(m => m.k === k).etiq}: ${SUELO_TEXTO[k]}`).join('; ') + ').'}
           </p>
 
           <h3 className="seccion" style={{ marginTop: 20 }}>Perfil comparado</h3>
@@ -244,12 +261,14 @@ export default function Comparador({ temporada = '2025' }) {
                 {elegidos.map((j, i) => (
                   <Radar key={j.idJugador} name={"j" + i} dataKey={"j" + i}
                     stroke={COLORES[i % COLORES.length]} fill={COLORES[i % COLORES.length]}
-                    fillOpacity={0.18} strokeWidth={2} />
+                    fillOpacity={0.18} strokeWidth={2} shape={formaConHueco} />
                 ))}
               </RadarChart>
             </ResponsiveContainer>
           </div>
-          <p className="pie">Cada eje es el percentil dentro de su categoría (0-100). Cuanto más hacia fuera, mejor respecto a su categoría.</p>
+          <p className="pie">Cada eje es el percentil dentro de su categoría (0-100). Cuanto más hacia fuera, mejor respecto a su categoría.
+            {hayRecorte && ' Donde el trazo se interrumpe no hay punto: ese jugador no llega al mínimo de intentos en esa métrica (no es un percentil 0). Una serie con hueco se dibuja solo con el contorno.'}
+          </p>
         </>
       )}
     </div>
