@@ -59,9 +59,15 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
     // Las avanzadas son el diferencial: aquí es donde se ven jugadores que las
     // medias por partido no destacan.
     { titulo: 'Eficiencia (TS%)', clave: 'ts', sufijo: '%' },
-    { titulo: 'Uso (USG%)', clave: 'usg', sufijo: '%' },
-    { titulo: 'Producción por 40', clave: 'per40pt', sufijo: 'pts/40' },
+    { titulo: 'Uso (USG%)', clave: 'usg', sufijo: '%', conMinutos: true },
+    { titulo: 'Producción por 40', clave: 'per40pt', sufijo: 'pts/40', conMinutos: true },
   ];
+
+  // Listas de ritmo (USG%, producción por 40): un uso o una producción alta en
+  // pocos minutos es un dato verdadero y estrecho, no ruido -- no se filtra, se
+  // contextualiza (lote 33, 4): los minutos por partido van al lado, igual que los PJ.
+  const minutosDe = (j, card) => (card.conMinutos && Number.isFinite(+j.minPorPartido)
+    ? ` · ${n1(j.minPorPartido)} min` : '');
 
   // El criterio de "SRS listo" es por grupo (ver srsUtil.js): un grupo puede
   // estar asentado y otro no dentro de la misma vista multigrupo.
@@ -137,7 +143,9 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
             {' '}— el listón sube con la temporada. Es lo que ha pasado hasta ahora, no una
             {' '}previsión de cómo va a acabar. Eficiencia (TS%) pide además al menos{' '}
             {SUELO_INTENTOS_TS_POR_PARTIDO} intentos de tiro por partido (tiros de campo más
-            {' '}0,44 por cada libre): con menos, el porcentaje habla de la muestra, no del jugador.</p>
+            {' '}0,44 por cada libre): con menos, el porcentaje habla de la muestra, no del jugador. Uso (USG%) y Producción
+            {' '}por 40 no llevan mínimo de minutos: cada líder muestra los que juega por partido
+            {' '}para que se lea con ese contexto.</p>
           <div className="cards-lideres">
             {cardsLideres.map(card => {
               const top = lider(card.clave);
@@ -152,14 +160,14 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
                           <span className="card-sufijo"> {card.sufijo}</span></div>
                         <div className="card-nombre enlace"
                           onClick={() => onVerJugador(cabeza.idJugador)}>{cabeza.nombre}</div>
-                        <div className="card-equipo">{cabeza.equipo} · {cabeza.grupo} · {cabeza.pj} PJ</div>
+                        <div className="card-equipo">{cabeza.equipo} · {cabeza.grupo} · {cabeza.pj} PJ{minutosDe(cabeza, card)}</div>
                       </div>
                       <ol className="card-lista">
                         {top.slice(1).map(j => (
                           <li key={`${j.equipoId}|${j.nombre}`}>
                             <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                             <span className="card-mini-val">{n1(valorDe(j, card.clave))}
-                              <span className="card-mini-pj"> · {j.pj} PJ</span></span>
+                              <span className="card-mini-pj"> · {j.pj} PJ{minutosDe(j, card)}</span></span>
                           </li>
                         ))}
                       </ol>
