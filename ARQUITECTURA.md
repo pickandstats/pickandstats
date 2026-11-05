@@ -1328,3 +1328,59 @@ pendiente (253 servidos, 248 + 7 con `minutosNoVerifican` en el origen).
 
 **Nota de SRS**: una sola frase para varios grupos (`notaSrsGrupos`) en vez de
 una por grupo.
+
+### 17.18 Pasos en verde que no hicieron su trabajo, y Tercera a medias *(04/11/2026)*
+
+**Regla escrita (Alexandre, lote 32):** *un paso en verde dice que no falló, no
+que hizo algo.* Es la séptima instancia de la familia (`continue-on-error` que
+pinta un fallo como `success`, el guardián de regresión mudo, el contador del
+02/11 verde imprimiendo «Sin registro de peticiones»). Inventario de los que
+pueden estar en verde sin haber hecho su trabajo, leído del código (no
+ejecutado), y si tienen forma de decirlo. Solo inventario; ningún parche.
+
+`actualizar-datos.yml`:
+
+| paso | verde sin trabajo cuando… | ¿forma de decirlo? |
+|---|---|---|
+| Restaurar caché de actas | hay *miss* (éxito) o `restore-keys` trae una caché más vieja | solo la línea del paso siguiente |
+| Asegurar actas | `actas-release.sh restaurar` **nunca sale distinto de 0** (`set -uo pipefail` sin `-e`, acaba en `case`/`echo`): «respaldo ausente o roto» solo imprime | **no** (una línea de log, sin anotación) |
+| Tercera/Segunda/Primera · scrapear | un partido falla (`ERROR:` en el log, `exit 0`); grupos vacíos (aviso en log, `exit 0`); el latido `estado.actualizado` se escribe igual | parcial: grupos vacíos → crítico de `resumen-salud` pasados 42 días; **errores por partido: ninguna cuenta** (se reintentan solos, en silencio) |
+| calcular | corre sobre lo que haya aunque falten partidos del scrape | **no** |
+| fases (jugadores) | `fases.json` de la temporada viva **no existe y ningún paso lo genera** (`scrape-fases.js` no está en el workflow): imprime «0 registros», `exit 0` | **no**; trampa latente para los playoffs |
+| Cuartos (×3) | `continue-on-error`: `conclusion: success` aunque `outcome` sea failure. Incluye el **código 2 del guardián del frenazo** y el 1 de fallo sistémico | sí, por `resumen-salud` (re-ejecuta el verificador → crítico; cobertura → crítico), **pero el frenazo solo asoma como «N errores de extracción» (aviso), sin nombre** |
+| Publicar actas al release | `gh release upload` falla → solo `echo ⚠`, `exit 0` | **no** (nada comprueba la frescura del respaldo; el daño aparece al caducar la caché) |
+| Refrescar calendario | `continue-on-error` | sí (frescura > 14 d → crítico) |
+| Comprobar cerradas (regresión) | no escribe `regresion-ultimo-resultado.json` (el fichero está **versionado**) | **parcial**: `resumen-salud` imprime «cuadra (comprobado <fecha>)» con la fecha vieja, sin compararla con hoy |
+| Commit y push | «Nada que commitear» si `estado.json` no se reescribió | sí, pero lento: el vigilante (8 días) |
+| Lanzar el despliegue | `gh workflow run` devuelve 0 al aceptar el dispatch, no al existir el run | sí: el paso siguiente (solo `::warning::`) |
+| Comprobar despliegue lanzado | si `gh run list` falla, el paso falla en silencio por `continue-on-error` | parcial |
+| Peticiones a la FEB | imprime «Sin registro de peticiones» y sale 0 si el log no existe (el caso del run 41675448004) | **no** |
+
+`desplegar.yml`: **«Verificar que el build lleva los cuartos» pasa en vacío.**
+Si `estado.json` no se lee, `estado = {competiciones: {}}` y toda categoría
+«se omite»; si `partidos.json` falta o no parsea en el build, `jugados = 0` y
+«no se exigen cuartos» (el `catch` se traga el error); y el mensaje final «…
+presentes en el build para todas las categorías/temporadas con datos. OK.» sale
+igual con **cero categorías comprobadas**. El guardián de despliegue no cuenta
+cuántas comprobó.
+
+**Tercera, mitad 1** (run 41871003549, `--reextraer` con 127 ids, guardián y
+comparación activos en CI): **127 promovidas, 0 rechazadas**, guardián sin
+saltar, 0 errores de extracción; contador del origen **253 → 126**; coste 1028
+peticiones (381 de base + 646 de actas = 5,05 por acta). Persistencia en una
+regeneración posterior limpia (run 41925678069): sigue en **126**, 0 actas
+escritas, 381 peticiones. Mitad 2 (126 ids) pendiente. Un 0 de 127 es
+compatible con octubre (21 de 1853 ≈ 1,1 % daría ≈1,4 esperadas; P(0) ≈ 25 %) y
+con que no hubo ventana de frenazo; **no demuestra por sí solo que la
+comparación compare**: eso lo demuestra la prueba con extractor simulado
+(`16804357`), donde sí rechaza.
+
+**Suelo de volumen del TS%** (lote 32, 3.1): ≥ 5 intentos ponderados por
+partido (`web/src/volumen.js`), dos banderas (partidos / intentos), en las
+listas de portada, la ficha (barra en «—» con la razón) y el radar (eje en su
+sitio, sin punto, con asterisco y nota). Guías en el mismo commit
+(`como-leer-percentiles.md`, `como-usar-pickandstats.md`, `Leyenda.jsx`). La
+base de los percentiles no se toca (3.2, lote propio). El **triple tiene el
+mismo defecto de muestra** (un 100 % con un intento) sin listón propio.
+
+Detalle: `_informe-trigesimosegundo-lote.md`.
