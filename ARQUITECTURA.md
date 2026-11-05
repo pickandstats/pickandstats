@@ -1478,3 +1478,36 @@ van al lado de cada líder (como los PJ). Visto en local: un líder de USG% con
 ver.
 
 Detalle: `_informe-trigesimotercer-lote.md`.
+
+### 17.20 El play-by-play y el gráfico de tiro existen, pero no están en el HTML público *(05/11/2026)*
+
+La pestaña **Gráfico de tiro** y el **play-by-play** de
+`baloncestoenvivo.feb.es/partido/<id>` existen y cubren Tercera (visto en el navegador
+por Alexandre/la sesión de la nube en `2537579`). Pregunta del lote 34: ¿vienen ya en
+el HTML que `scrape.js` descarga (coste cero) o los pide la página aparte?
+
+**Respuesta (verificada descargando 4 páginas públicas y 2 scripts públicos): no
+vienen en el HTML.** La página de partido es la misma en `/partido/<id>` y en
+`Partido.aspx?p=<id>` (95 350 bytes, idénticas byte a byte). Contiene solo cinco
+botones `btn-tab` (`data-action` = keyfacts, ranking, boxscore, shotchart, teamstats), la
+carga de `ShotChart.js` y `widget.launcher.js`, y un `<div id="contentToken">` con un
+campo oculto. Cero ocurrencias de «play by play», «tiro de 2/3», «anotado»; ningún JSON
+de `SHOTCHART` embebido. Mismo resultado en un partido de Primera (`2535725`, 93 178 B)
+y en uno de Tercera 2025/26 (`2487031`, 95 579 B). `widget.launcher.js` (público) muestra
+de dónde sale el contenido: cada pestaña pide su JSON a
+`intrafeb.feb.es/LiveStats.API/api/v1/<Tipo>/<idPartido>` con el token oculto de la
+página (en desarrollo, a `pruebas.feb.es`). Es decir: **es exactamente la API que la FEB
+dijo que es privada y sobre la que valoran cobrar**; no es un dato que «llevemos meses
+descargando y tirando».
+
+Consecuencias: (1) recogerlo **no** cuesta cero peticiones: exige llamar a esa API, y la
+decisión (§10, ética) es de Alexandre, no técnica; **no se ha llamado** (ni con el token
+de la página, ni a `pruebas.feb.es`; el valor del token se omitió también al inspeccionar
+el HTML). (2) Cobertura histórica y vocabulario de eventos **no se han podido medir**:
+solo se pueden leer de las respuestas de la API. (3) Lo que sí es público y ya recogemos
+por otro camino: boxscore por partido y, por PDF, el acta con cuartos.
+La conclusión de ARQUITECTURA §10 («los shot charts esperan a que la FEB conteste»)
+**se mantiene**. Coste de esta comprobación: 6 GET a páginas/estáticos públicos
+(a 1,2 s), 0 a la API.
+
+Detalle: `_informe-trigesimocuarto-lote.md`.
