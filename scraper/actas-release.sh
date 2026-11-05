@@ -88,9 +88,17 @@ restaurar() {
     2) echo "ACTAS: FEB (temporada nueva, normal)";;
     3) echo "ACTAS: FEB (respaldo ausente o roto)";;
   esac
+  # El respaldo "ausente o roto" ya NO sale con 0 (lote 33, 1.2): antes la
+  # funcion acababa en el `echo` del `case` y el paso salia en verde diciendo,
+  # solo en el log, que iba a re-extraer toda la temporada de la FEB (horas).
+  # Salir distinto de 0 aqui no retiene nada: el paso es continue-on-error y el
+  # resumen de salud lee su `outcome` (steps.<id>.outcome, que sigue siendo
+  # `failure` aunque la `conclusion` sea `success`) y lo convierte en critico.
+  [ "$rank" -lt 3 ]
 }
 
 publicar() {
+  local fallos=0
   for cat in $CATS; do
     local T dir n
     T=$(temporada_de "$cat")
@@ -103,21 +111,55 @@ publicar() {
     if ! gh release view "$TAG" >/dev/null 2>&1; then
       gh release create "$TAG" --prerelease \
         --title "Respaldo de actas por cuartos (cache)" \
-        --notes "Respaldo persistente de data/raw/*/*/actas (gitignored). NO es un release de software: un tar.gz por categoria y temporada, del que restaura el workflow cuando la cache de Actions caduca. Ver ARQUITECTURA.md §17.4."
+        --notes "Respaldo persistente de data/raw/*/*/actas (gitignored). NO es un release de software: un tar.gz por categoria y temporada, del que restaura el workflow cuando la cache de Actions caduca. Ver ARQUITECTURA.md §17.4." \
+        || { echo "  $cat $T: ⚠ no se pudo crear el release de respaldo"; fallos=$((fallos+1)); continue; }
       echo "  release '$TAG' creado (bootstrap)"
     fi
 
     # El tar.gz va a un directorio temporal, no a la raiz del repo: si la subida
     # falla o el job se cancela, no deja 73 MB colgando en el arbol de trabajo.
-    local tmp; tmp=$(mktemp -d)
-    tar -czf "$tmp/actas-$cat-$T.tar.gz" -C "data/raw/$cat/$T" actas
-    if gh release upload "$TAG" "$tmp/actas-$cat-$T.tar.gz" --clobber; then
-      echo "  $cat $T: subidas $n actas al release"
-    else
+    local tmp asset tar_local; tmp=$(mktemp -d)
+    asset="actas-$cat-$T.tar.gz"; tar_local="$tmp/$asset"
+    tar -czf "$tar_local" -C "data/raw/$cat/$T" actas
+
+    # Un respaldo tiene que decir cuando no respalda (lote 33, 1.2). Cuatro
+    # comprobaciones, y cualquiera que falle hace que el paso salga con 1:
+    #  1) el tar lleva TODAS las actas que hay en disco;
+    #  2) la subida no dio error;
+    #  3) el asset que ve el release tiene EXACTAMENTE el tamano del tar subido;
+    #  4) y se ha actualizado hace menos de 15 minutos (no es uno viejo que la
+    #     subida no llego a reemplazar).
+    local en_tar; en_tar=$(tar -tzf "$tar_local" | grep -c '\.json$')
+    if [ "$en_tar" != "$n" ]; then
+      echo "  $cat $T: ⚠ el tar lleva $en_tar actas y hay $n en disco; no se sube"
+      fallos=$((fallos+1)); rm -rf "$tmp"; continue
+    fi
+    if ! gh release upload "$TAG" "$tar_local" --clobber; then
       echo "  $cat $T: ⚠ no se pudo subir el respaldo al release"
+      fallos=$((fallos+1)); rm -rf "$tmp"; continue
+    fi
+    local tam_local info tam_remoto act_remota edad
+    tam_local=$(wc -c < "$tar_local" | tr -d ' ')
+    info=$(gh release view "$TAG" --json assets --jq ".assets[] | select(.name==\"$asset\") | \"\(.size) \(.updatedAt)\"" 2>/dev/null)
+    tam_remoto=${info%% *}; act_remota=${info#* }
+    if [ -z "$info" ]; then
+      echo "  $cat $T: ⚠ subido sin error, pero el release no lista el asset $asset"
+      fallos=$((fallos+1))
+    elif [ "$tam_remoto" != "$tam_local" ]; then
+      echo "  $cat $T: ⚠ el asset del release pesa $tam_remoto bytes y el tar subido $tam_local"
+      fallos=$((fallos+1))
+    else
+      edad=$(node -p "Math.round((Date.now()-new Date('$act_remota'))/1000)" 2>/dev/null || echo 999999)
+      if [ "$edad" -gt 900 ]; then
+        echo "  $cat $T: ⚠ el asset del release es de hace ${edad}s: la subida no lo ha reemplazado"
+        fallos=$((fallos+1))
+      else
+        echo "  $cat $T: subidas $n actas al release (verificado: $tam_remoto bytes, actualizado hace ${edad}s)"
+      fi
     fi
     rm -rf "$tmp"
   done
+  [ "$fallos" -eq 0 ]
 }
 
 case "${1:-}" in
