@@ -83,6 +83,33 @@ const tienenTapFcFr = porCuarto => porCuarto.slice(1).every(cuarto =>
   !cuarto || [0, 1].every(ei => !cuarto[ei] ||
     (cuarto[ei].jugadores || []).every(j => ['tap', 'tapRec', 'fc', 'fr'].every(c => c in j))));
 
+// La copia nueva no puede PERDER nada que la vieja tuviera (lote 33, caso adversario).
+// Hasta aqui el comparador solo miraba la copia NUEVA (sana, tap/fc/fr presentes,
+// puntos oficiales, minutos): un acta que llega con todos los campos a 0 pero
+// presentes, con puntos y minutos que cuadran, sustituia a una buena (probado con
+// extractor simulado: fc 3 -> 0, tap 1 -> 0, promovida). Aqui, por cuarto y equipo,
+// la suma de CADA campo numerico que la vieja traia no puede bajar en la nueva.
+// Los campos que la vieja no traia (el motivo de reextraer) no cuentan. Si alguna
+// vez una correccion legitima BAJA un campo, se queda la vieja y sale en el informe
+// como rechazada, con el campo: es el fallo seguro.
+function camposQuePierde(nueva, vieja) {
+  const perdidas = [];
+  for (let q = 0; q < Math.max(vieja.length, nueva.length); q++) {
+    for (const ei of [0, 1]) {
+      const jv = (vieja[q] && vieja[q][ei] && vieja[q][ei].jugadores) || [];
+      const jn = (nueva[q] && nueva[q][ei] && nueva[q][ei].jugadores) || [];
+      const suma = (js, k) => js.reduce((acc, j) => acc + (typeof j[k] === 'number' ? j[k] : 0), 0);
+      const claves = new Set();
+      jv.forEach(j => Object.keys(j).forEach(k => { if (typeof j[k] === 'number' && k !== 'dorsal') claves.add(k); }));
+      for (const k of claves) {
+        const a = suma(jv, k), b = suma(jn, k);
+        if (b < a) perdidas.push(`Q${q + 1} ${ei ? 'visitante' : 'local'} ${k} ${a}->${b}`);
+      }
+    }
+  }
+  return perdidas;
+}
+
 function puntosCuadranOficial(porCuarto, of) {
   if (!Array.isArray(of) || !of.length || porCuarto.length !== of.length) return false;
   for (let i = 0; i < of.length; i++) {
@@ -325,6 +352,8 @@ try {
         if (!tienenTapFcFr(salida.porCuarto)) motivos.push('la nueva sigue sin tap/tapRec/fc/fr en Q2-4');
         if (!puntosCuadranOficial(salida.porCuarto, p.cuartos)) motivos.push('sus puntos no cuadran con el oficial');
         if (!actaPrevia.minutosNoVerifican && salida.minutosNoVerifican) motivos.push('empeora verificarActa (la vieja verifica y la nueva no)');
+        const pierde = camposQuePierde(salida.porCuarto, actaPrevia.porCuarto || []);
+        if (pierde.length) motivos.push('pierde datos que la vieja tenia: ' + pierde.slice(0, 4).join(', ') + (pierde.length > 4 ? ` (+${pierde.length - 4})` : ''));
         if (motivos.length) {
           reextraerRechazadas.push(`${p.id} (${motivos.join('; ')})`);
           continue;
