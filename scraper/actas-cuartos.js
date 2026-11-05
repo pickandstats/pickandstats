@@ -420,6 +420,11 @@ try {
     fs.writeFileSync(fReporte, JSON.stringify({
       competicion: comp, temporada: temp, generado: new Date().toISOString(),
       nuevasRendidas: nuevasRendidasIds, errores: erroresIds,
+      // El guardian del frenazo sale con 2 dentro de un paso continue-on-error:
+      // sin esto solo se veia como "N errores de extraccion" (lote 33, 1.3). Con
+      // esto el resumen de salud puede decir "frenazo" y en que partido paro.
+      frenado, ultimoId: frenado ? ultimoId : null,
+      reextraer: reextraerIds.size ? { promovidas: reextraerPromovidas.length, rechazadas: reextraerRechazadas } : null,
     }, null, 1));
   } catch (e) { console.log('  ⚠ no se pudo escribir el reporte de ejecucion: ' + e.message); }
 

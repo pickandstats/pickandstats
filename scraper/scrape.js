@@ -12,6 +12,12 @@ const axios = require('axios');
 // Grupos que no han traído ningún partido: si ocurre en plena competición,
 // es señal de que la web de la FEB ha cambiado y el scraper ya no encuentra nada.
 const _gruposVacios = [];
+// Errores por partido (lote 33, 1.3): hasta ahora un partido que fallaba solo
+// dejaba una linea `ERROR:` en el log y el paso salia en verde; nadie los
+// sumaba. Se recogen y se escriben a un informe del run que lee el resumen de
+// salud. Un partido que falla se reintenta solo en el run siguiente (no tiene
+// fichero), pero "se reintenta solo" no es "nadie lo sabe".
+const _erroresPartido = [];
 const _enTemporada = () => { const m = new Date().getMonth() + 1; return m >= 9 || m <= 6; };
 
 const REINTENTOS = 4;
@@ -307,6 +313,7 @@ async function scrapeGrupo(sesion, $, competicionNombre, temporada, grupo, maxJo
         console.log(`   ${p.id} OK: ${p.local.nombre} vs ${p.visitante.nombre} (${p.resultado}) | jugadores: ${box.local.length}+${box.visitante.length}${nota}`);
       } catch (e) {
         console.log(`   ${p.id} ERROR: ${e.message}`);
+        _erroresPartido.push({ id: String(p.id), grupo: grupo.corto, mensaje: String(e.message).slice(0, 200) });
       }
       await pausa(CFG.PAUSA_MS);
     }
@@ -414,6 +421,19 @@ async function main() {
   } catch (e) {
     console.log('  ⚠ No se pudo guardar el estado: ' + e.message);
   }
+
+  // Informe del run para el resumen de salud (gitignored, efimero como
+  // cuartos-run-*.json): errores por partido y grupos vacios, con sus ids.
+  try {
+    fs.mkdirSync(path.join('data', 'processed'), { recursive: true });
+    fs.writeFileSync(path.join('data', 'processed', 'scrape-run-' + competicion + '.json'), JSON.stringify({
+      competicion, competicionNombre, temporada, generado: new Date().toISOString(),
+      errores: _erroresPartido, gruposVacios: _gruposVacios,
+    }, null, 1));
+  } catch (e) { console.log('  ⚠ no se pudo escribir el informe del run: ' + e.message); }
+  if (_erroresPartido.length)
+    console.log(`\n  ⚠ ${_erroresPartido.length} partido(s) con ERROR en este run (se reintentan en el siguiente): ` +
+      _erroresPartido.map(x => x.id).slice(0, 12).join(', ') + (_erroresPartido.length > 12 ? ', ...' : ''));
 
   console.log('\nScraping completado.');
 }

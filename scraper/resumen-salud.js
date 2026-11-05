@@ -201,7 +201,31 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
       avisos.push(`${nombre}: ${rep.nuevasRendidas.length} acta(s) nuevas rendidas -> ${rep.nuevasRendidas.join(', ')} (laguna permanente)`);
     if (rep.errores && rep.errores.length)
       avisos.push(`${nombre}: ${rep.errores.length} error(es) de extraccion este run (se reintentan)`);
+    // El frenazo (3 respuestas 200 de 400-700 bytes seguidas) corta la tanda con
+    // exit 2: el paso sale en verde-con-aviso por continue-on-error, asi que sin
+    // esto nadie se entera de que se paro a medias ni por que partido.
+    if (rep.frenado)
+      criticos.push(`${nombre}: FRENAZO — la tanda de actas se paro tras el partido ${rep.ultimoId} (respuestas anomalas seguidas de la FEB); el resto no se intento este run`);
   }
+
+  // 3a) Errores por partido del scrape de resultados (scrape-run-<g>.json,
+  //     gitignored). El catch de scrape.js los traga uno a uno para no tumbar la
+  //     tanda; aqui se cuentan para que un partido que falla en silencio se vea.
+  const sr = leerJSON(path.join('data', 'processed', 'scrape-run-' + g + '.json'));
+  if (sr) {
+    if (sr.errores && sr.errores.length) {
+      const ids = sr.errores.slice(0, 8).map(e => e.id).join(', ') + (sr.errores.length > 8 ? ', ...' : '');
+      avisos.push(`${nombre}: ${sr.errores.length} partido(s) con ERROR en el scrape de resultados -> ${ids}`);
+    }
+    if (sr.gruposVacios && sr.gruposVacios.length)
+      avisos.push(`${nombre}: grupo(s) sin partidos en el scrape -> ${sr.gruposVacios.join(', ')}`);
+  }
+
+  // 3c) Resultado REAL de los pasos con continue-on-error (conclusion siempre es
+  //     success; el workflow pasa steps.<id>.outcome en RESULTADO_*).
+  const resCuartos = process.env['RESULTADO_CUARTOS_' + g];
+  if (resCuartos && resCuartos !== 'success' && resCuartos !== 'skipped')
+    criticos.push(`${nombre}: el paso de cuartos termino con outcome=${resCuartos} (continue-on-error lo deja verde)`);
 
   // 3b) Los ficheros de cuartos se generaron y estan donde se commitean
   // (data/processed, S17.4). Este es un check MENOR: el guardian de verdad —que
@@ -330,7 +354,25 @@ if (!regresion) {
     `en ${regresion.camposAfectados.join(', ')} -> revisa si test/referencia.json esta desactualizada ` +
     `(regenerar con test/generar-referencia.cjs) o si es una regresion de verdad.`);
 } else {
-  lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
+  // "cuadra" solo vale si el resultado es de hoy: un JSON viejo (el test no corrio
+  // en este run, o corrio en otra rama) diria "cuadra" para siempre.
+  const hoy = new Date(new Date().toISOString().slice(0, 10));
+  const comprobado = new Date(regresion.fecha);
+  const dias = isNaN(comprobado) ? null : Math.round((hoy - comprobado) / 86400000);
+  if (dias === null || dias > 1)
+    criticos.push(`test/regresion.cjs: el ultimo resultado es del ${regresion.fecha} (${dias === null ? 'fecha ilegible' : dias + ' dias'}); no se ha comprobado en este run, asi que "cuadra" no vale.`);
+  else
+    lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
+}
+
+// Pasos globales con continue-on-error (outcome real, no conclusion).
+for (const [env, que] of [
+  ['RESULTADO_ASEGURAR_ACTAS', 'restaurar la cache de actas (respaldo del release)'],
+  ['RESULTADO_PUBLICAR_ACTAS', 'publicar el respaldo de actas al release'],
+]) {
+  const r = process.env[env];
+  if (r && r !== 'success' && r !== 'skipped')
+    criticos.push(`Fallo al ${que}: outcome=${r} (continue-on-error lo deja verde; sin respaldo fresco el proximo run puede partir de cero).`);
 }
 
 // --- Salida ---
