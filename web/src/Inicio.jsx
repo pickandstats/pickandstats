@@ -100,10 +100,16 @@ export default function Inicio({ equipos, jugadores, partidos, srsPestillo, minP
 
   return (
     <div className="inicio">
-      <div className="inicio-intro">
-        <p>La referencia de estadística avanzada de la {competicionNombre}. Temporada {etiquetaTemp}
-          {' '}· {equipos.length} equipos · {jugadores.length} jugadores en {GRUPOS.length} {GRUPOS.length === 1 ? "grupo" : "grupos"}.</p>
-      </div>
+      {/* Defensa en profundidad (lote 33, 0.1): App ya no pinta Inicio mientras
+          carga, pero esta linea afirma recuentos -- si por la razon que sea
+          llega sin equipos, no se pinta un "0 equipos": una cifra que no se
+          tiene no se escribe como cero. */}
+      {equipos.length > 0 && (
+        <div className="inicio-intro">
+          <p>La referencia de estadística avanzada de la {competicionNombre}. Temporada {etiquetaTemp}
+            {' '}· {equipos.length} equipos · {jugadores.length} jugadores en {GRUPOS.length} {GRUPOS.length === 1 ? "grupo" : "grupos"}.</p>
+        </div>
+      )}
 
       <div className="filtro-grupos">
         <div className="filtro-grupos-botones">

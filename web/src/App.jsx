@@ -130,7 +130,15 @@ export default function App() {
   // el respaldo mientras carga o si una temporada vieja no tiene el fichero.
   const [minPj, setMinPj] = useState(MIN_PJ_DEFECTO);
   const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
-  const [cargando, setCargando] = useState(false);
+  // Arranca en `true` (lote 33, 0.1): mientras `temporada` es null el efecto de
+  // datos sale sin hacer nada (no sabe aun que temporada pedir), asi que con
+  // `false` la app pintaba durante esos segundos "Temporada null/ · 0 equipos ·
+  // 0 jugadores en 0 grupos" y "Selecciona al menos un grupo": una cifra que
+  // aun no se tiene, pintada como cero. En movil con mala conexion un lector
+  // veia una web que decia no tener datos. Pasa a false cuando llegan los datos
+  // (o falla la carga: `errorCarga`).
+  const [cargando, setCargando] = useState(true);
+  const [errorCarga, setErrorCarga] = useState(false);
   const [sinDatos, setSinDatos] = useState(false);
   const [proximaFecha, setProximaFecha] = useState(null);
 
@@ -163,7 +171,12 @@ export default function App() {
         }
         if (!cancelado) setTemporada(porDefecto);
       })
-      .catch(err => console.error('Error cargando temporadas:', err));
+      .catch(err => {
+        console.error('Error cargando temporadas:', err);
+        // Sin lista de temporadas no hay nada que pedir: se dice, en vez de
+        // dejar el "Cargando datos…" eterno ahora que cargando arranca en true.
+        setErrorCarga(true); setCargando(false);
+      });
     fetch(`${import.meta.env.BASE_URL}data/${competicion}/historico.json`)
       .then(r => r.json())
       .then(setHistorico)
@@ -437,7 +450,9 @@ export default function App() {
             onVerEquipo={verEquipo} onVerJugador={verJugador} />
         } />
         <Route path="*" element={<>
-      {cargando ? (
+      {errorCarga && !temporada ? (
+        <p className="cargando">No se han podido cargar los datos. Recarga la página en unos minutos.</p>
+      ) : cargando ? (
         <p className="cargando">Cargando datos…</p>
       ) : sinDatos && vista === 'partidos' ? (
         <Partidos partidos={partidos} competicion={competicion} temporada={temporada}
