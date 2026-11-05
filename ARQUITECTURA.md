@@ -1384,3 +1384,97 @@ base de los percentiles no se toca (3.2, lote propio). El **triple tiene el
 mismo defecto de muestra** (un 100 % con un intento) sin listón propio.
 
 Detalle: `_informe-trigesimosegundo-lote.md`.
+
+### 17.19 Fallar en voz alta, el comparador que sí comparaba (poco) y los suelos del acierto *(05/11/2026)*
+
+**La app no afirma ceros mientras carga** (0.1). `cargando` arranca en `true` y
+hay estado de error; `Inicio` no pinta «N equipos · M jugadores» sin equipos
+(defensa en profundidad). Una cifra que aún no se tiene no se escribe como cero.
+**`fases.json` / `fases-jugadores.json`** de la temporada viva ya existen vacíos
+(`calcular.js` crea `fases.json = []` si falta, nunca pisa uno real): fin de los
+404. Nada en el workflow ejecuta `scrape-fases.js`; sigue siendo trampa latente
+para los playoffs.
+
+**El guardián del despliegue ya no pasa en vacío** (1.1,
+`verificar-cuartos-desplegados.js`). Sale 1 si `estado.json` no se lee, si a una
+categoría le falta la temporada en estado, si `partidos.json` falta o no parsea
+en el build, si falta la carpeta de la categoría, si evalúa **cero** categorías
+o si no hay **ningún** `jugadores-comparador.json`; el OK final dice cuántas
+categorías y comparadores comprobó. Control negativo ejecutado sobre un
+despliegue simulado: el script viejo salía 0 «OK» en los 4 casos vacíos, el nuevo
+sale 1 en los 4. **Riesgo asumido:** una temporada elegida en estado sin
+`partidos.json` en el build bloquea el despliegue (es lo que se quiere, pero
+bloquea). El guardián pasó en CI real (despliegue 41981649045, `success`).
+
+**El respaldo de las actas falla en voz alta** (1.2, `actas-release.sh`).
+`publicar` comprueba que el tar contiene las n actas, que la subida no da error,
+que el asset remoto pesa lo mismo que el local y que su `updatedAt` es de hace
+< 900 s; sale ≠ 0 si algo no cuadra. `restaurar` sale 1 con «respaldo ausente o
+roto» (release sin asset = temporada nueva = 0). Probado con un `gh` falso en 7
+modos; **no** se ha ejercitado contra el release real (se ejercitará en el
+próximo run del cron).
+
+**Contar y nombrar** (1.3). `scrape.js` escribe `data/processed/scrape-run-<comp>.json`
+(errores por partido con id/grupo/mensaje, grupos vacíos; gitignored, efímero);
+`actas-cuartos.js` añade `frenado`, `ultimoId`, `reextraer` a `cuartos-run-<comp>.json`;
+el workflow pasa `steps.<id>.outcome` (`continue-on-error` deja `conclusion: success`)
+como `RESULTADO_ASEGURAR_ACTAS`, `RESULTADO_PUBLICAR_ACTAS`, `RESULTADO_CUARTOS_{1,2,3}`.
+`resumen-salud.js`: errores por partido → aviso con recuento e ids; **frenazo →
+crítico con el id del último partido**; outcome ≠ success/skipped de esos pasos →
+crítico; y la **fecha de `regresion-ultimo-resultado.json` se compara con hoy**:
+> 1 día → crítico (antes imprimía «cuadra (comprobado <fecha>)» con la fecha
+vieja, para siempre). Probado con informes simulados y fecha forzada a 16 días.
+
+**Tercera, mitad 2** (run 41980585246, 126 ids): **126 promovidas, 0 rechazadas**,
+0 errores de extracción, 635 peticiones de actas (5,04 por acta; 1016 en el run).
+Verificación: 319/321 completas, 0 truncadas; «Sin tap/tapRec/fc/fr en Q2-4» = **0**
+en las tres categorías. En total **0 rechazadas de 253** (P ≈ 6 % bajo el 1,1 % de
+octubre), así que se corrió el **caso adversario** pre-registrado. Persistencia en
+una regeneración limpia posterior: **pendiente** (la dará el cron del lunes 9).
+
+**Hallazgo del caso adversario: el comparador era permisivo.** Con el extractor
+simulado (`MOCK_GUION`), una acta vieja sana con `fc=3, tap=1` y una nueva
+completa, con puntos y minutos que cuadran y `tap/tapRec/fc/fr` presentes **pero
+a 0**, fue **promovida** y pisó a la buena: el comparador solo miraba la copia
+nueva (sana, campos presentes, puntos oficiales, minutos) y nunca la comparaba
+con la vieja. Arreglo (`camposQuePierde`): por cuarto y equipo, la suma de cada
+campo numérico que la vieja traía no puede bajar en la nueva; los campos que la
+vieja no traía (el motivo de reextraer) no cuentan. Verificado: el adversario se
+rechaza («pierde datos que la vieja tenía: Q1 local tap 1->0, …»), y el caso real
+(vieja sin los campos) se promueve. **No** verificado contra PDFs reales; el fallo
+posible es seguro (una corrección legítima que bajara un campo se quedaría con la
+vieja y saldría como rechazada con el campo). Las 253 ya promovidas se promovieron
+con la regla vieja: sus puntos y minutos cuadran, pero no se ha podido comparar su
+contenido con la copia anterior (ya no existe).
+
+**Suelos de volumen del acierto** (3 y 3.1; `web/src/volumen.js`). Tres banderas
+con **su** denominador, por partido (sin parámetro nuevo): TS% ≥ 5 intentos
+ponderados (lote 32); **eFG% ≥ 4 tiros de campo**; **Triple ≥ 1,5 triples**.
+Medidos el 05/11 sobre los elegibles (`minPj`): 3PA ≥ 1,5 deja el 64–65 %; FGA ≥ 4
+el 74–76 % (TS ≥ 5 deja el 71–72 %). Un suelo por partido **no** garantiza una
+muestra grande al empezar (1,5 en 4 partidos = 6 triples): deja fuera lo ridículo,
+no lo pequeño. Efectos (top-3 por categoría, elegibles): triple sin suelo → casi todo
+100 % con 1–3 intentos (Segunda y Tercera: los tres); con suelo → 60–71 % con 4–28
+intentos (el tercero de Tercera, Kiris, son 4/6: el suelo deja fuera lo ridículo, no lo
+pequeño); eFG sin suelo → 125/100/100 con 1–4 tiros; con suelo → 78–88 % con 16–48. **Ni triple ni eFG tienen lista
+de líderes en portada**, así que el efecto está en la ficha (radar), el comparador
+y las guías; las tablas de Jugadores (ordenables) siguen mostrando el valor crudo.
+**Radar con hueco** (3.1, `RadarHueco.jsx`): Recharts calcula el radio de un punto
+sin valor como 0 (centro); pero `Polygon` parte el trazo si el punto no es válido
+(x/y no numéricos), y `Radar` admite `shape`. La serie con hueco se dibuja **solo
+con contorno** (un trazo abierto no se rellena), sin unir los vecinos por el
+centro; eje con asterisco y nota. Aplicado a ficha y comparador (los seis ejes se
+quedan). **El comparador no aplicaba ni siquiera el suelo del TS% del lote 32**
+(`p != null ? p : 0`): ahora aplica las tres, muestra «P —» en la tabla y excluye
+del «mejor» a quien no llega. `jugadores-comparador.json` lleva ahora
+`t2i/t3i/tli` (calcular.js; 12 ficheros regenerados, el resto de salidas idénticas,
+regresión cuadra). Una fila sin contadores (fichero anterior) **no se censura**.
+La base de los percentiles no se toca: **3.2 va después**, en lote propio, y su
+alcance es ahora de tres ejes, no uno.
+
+**USG% y Producción por 40** (4): sin suelo de minutos; los minutos por partido
+van al lado de cada líder (como los PJ). Visto en local: un líder de USG% con
+3,6 min/partido y uno de producción por 40 con 4,3 — es lo que se quería poder
+ver.
+
+Detalle: `_informe-trigesimotercer-lote.md`.
