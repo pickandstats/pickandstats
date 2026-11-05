@@ -540,6 +540,20 @@ fs.writeFileSync(path.join(DIR_OUT, 'jugadores.json'), JSON.stringify(salidaJuga
 fs.writeFileSync(path.join(DIR_OUT, 'parametros.json'),
   JSON.stringify({ minPj: MIN_PJ, srsPestillo: pestillo }, null, 1));
 
+// fases.json de una temporada SIN fases todavia (lote 33, 0.2): la app lo pide
+// en cada carga (App.jsx y Clasificacion.jsx) y, si no existe, el servidor
+// responde 404 -- tres por carga, cada una en la consola de cualquier lector
+// y un ruido que ya hizo perseguir seis 404 para descartar que fueran otra
+// cosa. Se deja un `[]` ("sin fases aun") que NO pisa uno real: scrape-fases.js
+// escribe el fichero entero cuando haya playoffs. OJO: ningun paso del workflow
+// ejecuta scrape-fases.js (ver ARQUITECTURA S17.18); este `[]` quita el 404,
+// no hace que las fases aparezcan solas.
+const fFasesVacio = path.join(DIR_OUT, 'fases.json');
+if (!fs.existsSync(fFasesVacio)) {
+  fs.writeFileSync(fFasesVacio, '[]\n');
+  console.log('  fases.json no existia: dejado "[]" (temporada sin fases todavia).');
+}
+
 // Fichero ligero para el comparador: solo lo que Comparador.jsx usa (identidad,
 // filtros, 8 metricas y sus percentiles nac). ~88% mas pequeno que jugadores.json,
 // que el comparador carga de las tres categorias de golpe. Mismos nombres de campo
