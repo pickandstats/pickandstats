@@ -16,28 +16,49 @@ const fs = require('fs');
 const path = require('path');
 const CFG = require('./config');
 
-const estado = (() => {
-  try { return JSON.parse(fs.readFileSync(path.join('data', 'processed', 'estado.json'), 'utf8')); }
-  catch (e) { return { competiciones: {} }; }
-})();
-const distBase = path.join('web', 'dist', 'data');
+// Un verificador tiene que fallar cuando no encuentra QUE verificar, cuando
+// encuentra menos de lo que hay y cuando la coleccion que recorre esta vacia
+// (lote 33, 1.1). Antes este guardian era el caso limite: con `estado.json`
+// ilegible tomaba `{competiciones: {}}` y "omitia" las tres categorias; con
+// `partidos.json` ausente o ilegible en el build, el `catch` se tragaba el error,
+// `jugados` se quedaba en 0 y decia "no se exigen cuartos"; y el mensaje final
+// imprimia "OK" con CERO categorias comprobadas. Era el guardian que debia
+// impedir publicar sin cuartos, y un `catch` lo convertia en un OK.
 const problemas = [];
+let estado = null;
+try { estado = JSON.parse(fs.readFileSync(path.join('data', 'processed', 'estado.json'), 'utf8')); }
+catch (e) { problemas.push(`no se puede leer data/processed/estado.json (${e.message}): no se sabe que temporada exigir`); }
+const distBase = path.join('web', 'dist', 'data');
+if (!fs.existsSync(distBase)) problemas.push(`no existe ${distBase}: el build no lleva datos`);
 
-for (const g of Object.keys(CFG.COMPETICIONES)) {
+// Cuantas categorias se han EVALUADO de verdad (con su partidos.json leido) y
+// cuantas llevaban cuartos exigidos. Si no se evalua ninguna, no se ha
+// comprobado nada, y eso es un fallo, no un OK.
+let evaluadas = 0, conCuartos = 0, sinPartidosAun = 0, comparadores = 0;
+
+if (estado) for (const g of Object.keys(CFG.COMPETICIONES)) {
   const nombre = CFG.COMPETICIONES[g];
   const sel = estado.competiciones && estado.competiciones[nombre] && estado.competiciones[nombre].temporada;
-  if (!sel) { console.log(`${nombre}: sin temporada en estado.json, se omite`); continue; }
+  if (!sel) { problemas.push(`${nombre}: sin temporada en estado.json (el scrape de esta categoria no ha corrido)`); continue; }
   const dir = path.join(distBase, nombre, sel);
 
-  // Gate: solo se exigen cuartos si la temporada tiene partidos jugados. En una
-  // temporada recien arrancada sin resultados no hay cuartos que exigir. Se mide
-  // sobre partidos.json, que ya esta en el build.
-  let jugados = 0;
+  // Gate: solo se exigen cuartos si la temporada tiene partidos jugados (una
+  // recien arrancada, sin resultados, no tiene cuartos que exigir). Se mide
+  // sobre partidos.json, que ya esta en el build. Que el fichero NO este o no
+  // se pueda leer es otra cosa distinta de "0 jugados": no se sabe, y no se
+  // publica a ciegas.
   const fp = path.join(dir, 'partidos.json');
-  if (fs.existsSync(fp)) {
-    try { const arr = JSON.parse(fs.readFileSync(fp, 'utf8')); jugados = (Array.isArray(arr) ? arr : []).filter(p => /\d+\s*-\s*\d+/.test(p.resultado || '')).length; } catch (e) {}
+  let jugados;
+  try {
+    const arr = JSON.parse(fs.readFileSync(fp, 'utf8'));
+    if (!Array.isArray(arr)) throw new Error('no es una lista');
+    jugados = arr.filter(p => /\d+\s*-\s*\d+/.test(p.resultado || '')).length;
+  } catch (e) {
+    problemas.push(`${nombre} ${sel}: no se puede leer ${fp} en el build (${e.message}); no se sabe cuantos partidos hay`);
+    continue;
   }
-  if (jugados === 0) { console.log(`${nombre} ${sel}: sin partidos jugados en el build, no se exigen cuartos`); continue; }
+  evaluadas++;
+  if (jugados === 0) { sinPartidosAun++; console.log(`${nombre} ${sel}: sin partidos jugados en el build, no se exigen cuartos`); continue; }
 
   const faltan = [];
   for (const f of ['jugadores-cuartos.json', 'equipos-cuartos.json', 'partidos-contexto.json']) {
@@ -48,7 +69,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
   if (!(fs.existsSync(box) && fs.readdirSync(box).some(f => f.endsWith('.json')))) faltan.push('boxscore-cuartos/');
 
   if (faltan.length) problemas.push(`${nombre} ${sel}: faltan ${faltan.join(', ')}`);
-  else console.log(`${nombre} ${sel}: cuartos presentes en el build (${jugados} partidos jugados)`);
+  else { conCuartos++; console.log(`${nombre} ${sel}: cuartos presentes en el build (${jugados} partidos jugados)`); }
 }
 
 // Comparador: jugadores-comparador.json debe estar en el build para TODA temporada
@@ -58,7 +79,7 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
 for (const g of Object.keys(CFG.COMPETICIONES)) {
   const nombre = CFG.COMPETICIONES[g];
   const dirCat = path.join(distBase, nombre);
-  if (!fs.existsSync(dirCat)) continue;
+  if (!fs.existsSync(dirCat)) { problemas.push(`${nombre}: no hay carpeta en el build (${dirCat})`); continue; }
   for (const t of fs.readdirSync(dirCat)) {
     const dirT = path.join(dirCat, t);
     if (!fs.statSync(dirT).isDirectory()) continue;
@@ -66,9 +87,14 @@ for (const g of Object.keys(CFG.COMPETICIONES)) {
     const lite = path.join(dirT, 'jugadores-comparador.json');
     if (!fs.existsSync(lite) || fs.statSync(lite).size === 0)
       problemas.push(`${nombre} ${t}: falta jugadores-comparador.json (lo usa el comparador)`);
-    else console.log(`${nombre} ${t}: comparador presente en el build`);
+    else { comparadores++; console.log(`${nombre} ${t}: comparador presente en el build`); }
   }
 }
+
+// Coleccion vacia = fallo: si no se ha evaluado ninguna categoria o ningun
+// comparador, no se ha comprobado nada aunque no haya "problemas" escritos.
+if (evaluadas === 0) problemas.push('no se ha podido evaluar NINGUNA categoria: el guardian no ha comprobado nada');
+if (comparadores === 0) problemas.push('no se ha encontrado NINGUN jugadores-comparador.json que comprobar en el build');
 
 if (problemas.length) {
   console.error('\n❌ El build NO tiene los ficheros esperados; no se publica:');
@@ -76,4 +102,4 @@ if (problemas.length) {
   console.error('El sitio se queda en la version anterior. Revisa el cp del deploy y la generacion en data/processed.');
   process.exit(1);
 }
-console.log('\nCuartos y comparador presentes en el build para todas las categorias/temporadas con datos. OK.');
+console.log(`\nOK. Comprobado: ${evaluadas} categorias evaluadas (${conCuartos} con cuartos exigidos y presentes, ${sinPartidosAun} sin partidos aun) y ${comparadores} comparadores presentes.`);
