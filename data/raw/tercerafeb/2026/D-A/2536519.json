@@ -1,0 +1,786 @@
+{
+ "id": "2536519",
+ "temporada": "2026",
+ "competicion": "tercerafeb",
+ "grupo": "D-A",
+ "jornada": "Jornada 6(08/11/2026)",
+ "equipoLocal": {
+  "id": "1010896",
+  "nombre": "LA CARTONERA LUCENTINA COTO  LUCENA"
+ },
+ "equipoVisitante": {
+  "id": "1010331",
+  "nombre": "CDBO BYSPANIA TÍJOLA"
+ },
+ "resultado": "60-89",
+ "disputado": true,
+ "descargado": "2026-11-09T02:05:26.800Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "2204141",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "LASTRE GARCIA, PABLO",
+    "seg": 810,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 2,
+    "br": 2,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 3,
+    "pm": -16
+   },
+   {
+    "idJugador": "1697846",
+    "titular": false,
+    "dorsal": "10",
+    "nombre": "RODRIGUEZ DOMINGUEZ, LUIS ANTONIO",
+    "seg": 1316,
+    "pt": 6,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 7
+    },
+    "tl": {
+     "a": 2,
+     "i": 3
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 1,
+    "br": 4,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 8,
+    "pm": -12
+   },
+   {
+    "idJugador": "2203181",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "ORTEGA MORA, JAVIER",
+    "seg": 1469,
+    "pt": 5,
+    "t2": {
+     "a": 2,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 4
+    },
+    "tc": {
+     "a": 2,
+     "i": 11
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 4,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 6,
+    "pm": -13
+   },
+   {
+    "idJugador": "2203811",
+    "titular": false,
+    "dorsal": "12",
+    "nombre": "CAZACU, DENIS",
+    "seg": 758,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 4,
+    "fr": 2,
+    "va": -2,
+    "pm": -18
+   },
+   {
+    "idJugador": "2894213",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "DIALLO, MOUHAMED KHALIFA",
+    "seg": 1176,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 5
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 3,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 2,
+    "pm": -26
+   },
+   {
+    "idJugador": "2893723",
+    "titular": true,
+    "dorsal": "14",
+    "nombre": "DJOUSSA, KAMAHA RYAN CHRISTIAN",
+    "seg": 1327,
+    "pt": 10,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 5,
+     "i": 8
+    },
+    "tl": {
+     "a": 0,
+     "i": 3
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 3,
+    "va": 7,
+    "pm": -7
+   },
+   {
+    "idJugador": "2203745",
+    "titular": true,
+    "dorsal": "16",
+    "nombre": "ARROYO AGUADO, ANTONIO",
+    "seg": 1356,
+    "pt": 9,
+    "t2": {
+     "a": 3,
+     "i": 6
+    },
+    "t3": {
+     "a": 1,
+     "i": 3
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 2,
+    "rd": 0,
+    "rt": 2,
+    "as": 0,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 4,
+    "pm": -19
+   },
+   {
+    "idJugador": "2204101",
+    "titular": false,
+    "dorsal": "19",
+    "nombre": "VAN GESTEL OCAÑA, MARTIN",
+    "seg": 818,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 3,
+    "pm": -12
+   },
+   {
+    "idJugador": "2306897",
+    "titular": true,
+    "dorsal": "21",
+    "nombre": "MARTINEZ SANCHO, ANTONIO",
+    "seg": 1323,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 5
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 5,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 6,
+    "pm": -11
+   },
+   {
+    "idJugador": "2172325",
+    "titular": true,
+    "dorsal": "32",
+    "nombre": "PAREDES BERMEJO, JAIME",
+    "seg": 1647,
+    "pt": 16,
+    "t2": {
+     "a": 2,
+     "i": 8
+    },
+    "t3": {
+     "a": 4,
+     "i": 9
+    },
+    "tc": {
+     "a": 6,
+     "i": 17
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 3,
+    "rd": 3,
+    "rt": 6,
+    "as": 0,
+    "br": 1,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": 10,
+    "pm": -11
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2096587",
+    "titular": false,
+    "dorsal": "0",
+    "nombre": "REYES BARRANCO, JOAQUIN",
+    "seg": 1237,
+    "pt": 6,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 4,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 7,
+    "pm": 27
+   },
+   {
+    "idJugador": "1368281",
+    "titular": true,
+    "dorsal": "1",
+    "nombre": "RUEDA SANTAELLA, LUIS",
+    "seg": 1376,
+    "pt": 15,
+    "t2": {
+     "a": 4,
+     "i": 6
+    },
+    "t3": {
+     "a": 2,
+     "i": 3
+    },
+    "tc": {
+     "a": 6,
+     "i": 9
+    },
+    "tl": {
+     "a": 1,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 7,
+    "rt": 7,
+    "as": 4,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 23,
+    "pm": 17
+   },
+   {
+    "idJugador": "2161988",
+    "titular": true,
+    "dorsal": "7",
+    "nombre": "MONTAÑO LINARES, KELVYN ALEXANDER",
+    "seg": 989,
+    "pt": 5,
+    "t2": {
+     "a": 1,
+     "i": 3
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 5
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 5,
+    "rt": 6,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 9,
+    "pm": 5
+   },
+   {
+    "idJugador": "2218175",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "CEBRIAN HERNANDEZ, NIKOLAS",
+    "seg": 858,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 2,
+     "i": 5
+    },
+    "tc": {
+     "a": 2,
+     "i": 6
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 2,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 2,
+    "pm": 9
+   },
+   {
+    "idJugador": "1836213",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "SECK DIOP, KHADIM RASSOUL",
+    "seg": 642,
+    "pt": 2,
+    "t2": {
+     "a": 1,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 1,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 6,
+    "rt": 7,
+    "as": 0,
+    "br": 0,
+    "bp": 3,
+    "tf": 2,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": 7,
+    "pm": 8
+   },
+   {
+    "idJugador": "2035843",
+    "titular": true,
+    "dorsal": "24",
+    "nombre": "CUBERO ROJANO, ROBERTO",
+    "seg": 1378,
+    "pt": 10,
+    "t2": {
+     "a": 4,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 4,
+     "i": 6
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 3,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 3,
+    "va": 12,
+    "pm": 25
+   },
+   {
+    "idJugador": "2895369",
+    "titular": true,
+    "dorsal": "32",
+    "nombre": "MARÍN BIRKENER, HUGO",
+    "seg": 1758,
+    "pt": 21,
+    "t2": {
+     "a": 6,
+     "i": 7
+    },
+    "t3": {
+     "a": 2,
+     "i": 4
+    },
+    "tc": {
+     "a": 8,
+     "i": 11
+    },
+    "tl": {
+     "a": 3,
+     "i": 5
+    },
+    "ro": 1,
+    "rd": 7,
+    "rt": 8,
+    "as": 4,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 4,
+    "va": 30,
+    "pm": 21
+   },
+   {
+    "idJugador": "2098548",
+    "titular": true,
+    "dorsal": "33",
+    "nombre": "DALLACOSTA ORTIZ, LUIS",
+    "seg": 1530,
+    "pt": 13,
+    "t2": {
+     "a": 1,
+     "i": 4
+    },
+    "t3": {
+     "a": 3,
+     "i": 5
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 2,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 2,
+    "va": 10,
+    "pm": 16
+   },
+   {
+    "idJugador": "2831561",
+    "titular": false,
+    "dorsal": "88",
+    "nombre": "HIDALGO ROBLES, EUKEN GABRIEL",
+    "seg": 1215,
+    "pt": 4,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 2
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 3,
+    "rt": 4,
+    "as": 2,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 3,
+    "va": 5,
+    "pm": 13
+   },
+   {
+    "idJugador": "2527147",
+    "titular": false,
+    "dorsal": "99",
+    "nombre": "MONTILLA GONZALEZ, JOSE ANTONIO",
+    "seg": 1017,
+    "pt": 7,
+    "t2": {
+     "a": 3,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 3,
+     "i": 4
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 2,
+    "va": 6,
+    "pm": 4
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 11,
+    "visitante": 32
+   },
+   {
+    "periodo": "2º C",
+    "local": 24,
+    "visitante": 24
+   },
+   {
+    "periodo": "3º C",
+    "local": 6,
+    "visitante": 20
+   },
+   {
+    "periodo": "4º C",
+    "local": 19,
+    "visitante": 13
+   }
+  ]
+ }
+}
