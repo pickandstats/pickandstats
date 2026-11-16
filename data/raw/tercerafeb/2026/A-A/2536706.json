@@ -1,0 +1,828 @@
+{
+ "id": "2536706",
+ "temporada": "2026",
+ "competicion": "tercerafeb",
+ "grupo": "A-A",
+ "jornada": "Jornada 7(15/11/2026)",
+ "equipoLocal": {
+  "id": "1008697",
+  "nombre": "RESTAURANTE LOS ARCOS CB SOLARES"
+ },
+ "equipoVisitante": {
+  "id": "1008399",
+  "nombre": "IRUKI TAKE"
+ },
+ "resultado": "79-87",
+ "disputado": true,
+ "descargado": "2026-11-16T02:24:30.272Z",
+ "boxscore": {
+  "local": [
+   {
+    "idJugador": "1596006",
+    "titular": true,
+    "dorsal": "0",
+    "nombre": "CONTRERAS MARTINEZ, DANIEL GIOVANNY",
+    "seg": 1574,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 1,
+     "i": 10
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 3,
+    "br": 1,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 4,
+    "va": -3,
+    "pm": -14
+   },
+   {
+    "idJugador": "1999503",
+    "titular": false,
+    "dorsal": "2",
+    "nombre": "GANDARILLAS GARMENDIA, ESTEBAN",
+    "seg": 886,
+    "pt": 5,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 1,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 3
+    },
+    "tl": {
+     "a": 2,
+     "i": 4
+    },
+    "ro": 1,
+    "rd": 0,
+    "rt": 1,
+    "as": 1,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 4,
+    "va": 5,
+    "pm": 4
+   },
+   {
+    "idJugador": "2173827",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "SANCHEZ MARROYO, JAIME",
+    "seg": 1896,
+    "pt": 4,
+    "t2": {
+     "a": 2,
+     "i": 4
+    },
+    "t3": {
+     "a": 0,
+     "i": 6
+    },
+    "tc": {
+     "a": 2,
+     "i": 10
+    },
+    "tl": {
+     "a": 0,
+     "i": 1
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 3,
+    "br": 2,
+    "bp": 3,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 4,
+    "va": -2,
+    "pm": 7
+   },
+   {
+    "idJugador": "1847369",
+    "titular": false,
+    "dorsal": "7",
+    "nombre": "GOMEZ MERODIO, JORGE JAVIER",
+    "seg": 599,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 3
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 3
+    },
+    "tl": {
+     "a": 0,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 2,
+    "rt": 4,
+    "as": 1,
+    "br": 0,
+    "bp": 1,
+    "tf": 1,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 1,
+    "va": 0,
+    "pm": 4
+   },
+   {
+    "idJugador": "1868050",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "MAESTRO STEELE, LIAM",
+    "seg": 1742,
+    "pt": 11,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 5,
+     "i": 10
+    },
+    "tl": {
+     "a": 1,
+     "i": 3
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 6,
+    "pm": -16
+   },
+   {
+    "idJugador": "1596008",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "GARCIA CARRERA, DIEGO",
+    "seg": 1994,
+    "pt": 12,
+    "t2": {
+     "a": 0,
+     "i": 5
+    },
+    "t3": {
+     "a": 4,
+     "i": 9
+    },
+    "tc": {
+     "a": 4,
+     "i": 14
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 1,
+    "br": 3,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 1,
+    "va": 6,
+    "pm": -11
+   },
+   {
+    "idJugador": "2249280",
+    "titular": false,
+    "dorsal": "13",
+    "nombre": "TRUEBA TAMAYO, DAVID",
+    "seg": 782,
+    "pt": 8,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 3,
+     "i": 4
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 1,
+    "rd": 2,
+    "rt": 3,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 1,
+    "fc": 2,
+    "fr": 0,
+    "va": 8,
+    "pm": -7
+   },
+   {
+    "idJugador": "2814592",
+    "titular": true,
+    "dorsal": "18",
+    "nombre": "FAJANA, OLUWASANMI ROBERTO",
+    "seg": 2272,
+    "pt": 20,
+    "t2": {
+     "a": 7,
+     "i": 7
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 7,
+     "i": 10
+    },
+    "tl": {
+     "a": 6,
+     "i": 7
+    },
+    "ro": 3,
+    "rd": 10,
+    "rt": 13,
+    "as": 1,
+    "br": 0,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 28,
+    "pm": -7
+   },
+   {
+    "idJugador": "2815106",
+    "titular": true,
+    "dorsal": "26",
+    "nombre": "QUINCY-JONES, ALEXY-TYRONE",
+    "seg": 1755,
+    "pt": 15,
+    "t2": {
+     "a": 5,
+     "i": 8
+    },
+    "t3": {
+     "a": 0,
+     "i": 1
+    },
+    "tc": {
+     "a": 5,
+     "i": 9
+    },
+    "tl": {
+     "a": 5,
+     "i": 6
+    },
+    "ro": 6,
+    "rd": 8,
+    "rt": 14,
+    "as": 2,
+    "br": 0,
+    "bp": 3,
+    "tf": 1,
+    "tco": 0,
+    "mt": 2,
+    "fc": 5,
+    "fr": 4,
+    "va": 23,
+    "pm": 0
+   }
+  ],
+  "visitante": [
+   {
+    "idJugador": "2273108",
+    "titular": false,
+    "dorsal": "1",
+    "nombre": "ELOSEGUI OLANO, JOANES",
+    "seg": 180,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": 3
+   },
+   {
+    "idJugador": "2257749",
+    "titular": true,
+    "dorsal": "2",
+    "nombre": "GORDILLO BELTRAN, ANDER",
+    "seg": 2097,
+    "pt": 19,
+    "t2": {
+     "a": 7,
+     "i": 10
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 7,
+     "i": 12
+    },
+    "tl": {
+     "a": 5,
+     "i": 7
+    },
+    "ro": 0,
+    "rd": 4,
+    "rt": 4,
+    "as": 0,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 3,
+    "fr": 5,
+    "va": 17,
+    "pm": 19
+   },
+   {
+    "idJugador": "2334768",
+    "titular": false,
+    "dorsal": "4",
+    "nombre": "CONDE LAKUNTZA, UNAI",
+    "seg": 1331,
+    "pt": 9,
+    "t2": {
+     "a": 1,
+     "i": 5
+    },
+    "t3": {
+     "a": 2,
+     "i": 8
+    },
+    "tc": {
+     "a": 3,
+     "i": 13
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 1,
+    "rd": 1,
+    "rt": 2,
+    "as": 1,
+    "br": 1,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": -1,
+    "pm": -7
+   },
+   {
+    "idJugador": "2738439",
+    "titular": false,
+    "dorsal": "5",
+    "nombre": "IZAGUIRRE ALUSTIZA, MANEX",
+    "seg": 128,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 0,
+    "va": 0,
+    "pm": -3
+   },
+   {
+    "idJugador": "2435046",
+    "titular": false,
+    "dorsal": "6",
+    "nombre": "FERNANDEZ GOENAGA, OIHAN",
+    "seg": 752,
+    "pt": 4,
+    "t2": {
+     "a": 1,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 2
+    },
+    "tc": {
+     "a": 1,
+     "i": 4
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 1,
+    "va": 0,
+    "pm": -10
+   },
+   {
+    "idJugador": "2373579",
+    "titular": false,
+    "dorsal": "8",
+    "nombre": "LERSUNDI LABAKA, AMETS",
+    "seg": 237,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 0,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 1,
+    "fr": 0,
+    "va": -2,
+    "pm": -1
+   },
+   {
+    "idJugador": "2188479",
+    "titular": true,
+    "dorsal": "10",
+    "nombre": "ETXEBERRIA AGUIRREZABALA, BEÑAT",
+    "seg": 2193,
+    "pt": 13,
+    "t2": {
+     "a": 4,
+     "i": 6
+    },
+    "t3": {
+     "a": 0,
+     "i": 3
+    },
+    "tc": {
+     "a": 4,
+     "i": 9
+    },
+    "tl": {
+     "a": 5,
+     "i": 9
+    },
+    "ro": 2,
+    "rd": 10,
+    "rt": 12,
+    "as": 0,
+    "br": 4,
+    "bp": 3,
+    "tf": 0,
+    "tco": 1,
+    "mt": 0,
+    "fc": 5,
+    "fr": 7,
+    "va": 19,
+    "pm": 13
+   },
+   {
+    "idJugador": "2744339",
+    "titular": true,
+    "dorsal": "11",
+    "nombre": "SOUZA FIGUEIREDO, PEDRO LUCAS",
+    "seg": 2256,
+    "pt": 33,
+    "t2": {
+     "a": 7,
+     "i": 15
+    },
+    "t3": {
+     "a": 3,
+     "i": 8
+    },
+    "tc": {
+     "a": 10,
+     "i": 23
+    },
+    "tl": {
+     "a": 10,
+     "i": 14
+    },
+    "ro": 2,
+    "rd": 7,
+    "rt": 9,
+    "as": 3,
+    "br": 5,
+    "bp": 4,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 4,
+    "fr": 9,
+    "va": 34,
+    "pm": 10
+   },
+   {
+    "idJugador": "2525333",
+    "titular": true,
+    "dorsal": "13",
+    "nombre": "ARMENDARIZ LOPEZ, AURITZ",
+    "seg": 1474,
+    "pt": 6,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 2,
+     "i": 2
+    },
+    "tc": {
+     "a": 2,
+     "i": 2
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 5,
+    "rt": 5,
+    "as": 2,
+    "br": 0,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 1,
+    "va": 11,
+    "pm": 16
+   },
+   {
+    "idJugador": "2643006",
+    "titular": false,
+    "dorsal": "14",
+    "nombre": "IRASTORZA EZKIAGA, AMETS",
+    "seg": 250,
+    "pt": 0,
+    "t2": {
+     "a": 0,
+     "i": 0
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 0
+    },
+    "tl": {
+     "a": 0,
+     "i": 0
+    },
+    "ro": 0,
+    "rd": 1,
+    "rt": 1,
+    "as": 0,
+    "br": 0,
+    "bp": 2,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 2,
+    "fr": 0,
+    "va": -3,
+    "pm": -3
+   },
+   {
+    "idJugador": "2378757",
+    "titular": false,
+    "dorsal": "15",
+    "nombre": "ALDA IRAOLA, AITOR",
+    "seg": 1729,
+    "pt": 2,
+    "t2": {
+     "a": 0,
+     "i": 1
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 1
+    },
+    "tl": {
+     "a": 2,
+     "i": 2
+    },
+    "ro": 2,
+    "rd": 1,
+    "rt": 3,
+    "as": 0,
+    "br": 1,
+    "bp": 1,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 3,
+    "fr": 2,
+    "va": 3,
+    "pm": 1
+   },
+   {
+    "idJugador": "2169530",
+    "titular": true,
+    "dorsal": "22",
+    "nombre": "CASTAÑO GARCIA, JAVIER",
+    "seg": 873,
+    "pt": 1,
+    "t2": {
+     "a": 0,
+     "i": 2
+    },
+    "t3": {
+     "a": 0,
+     "i": 0
+    },
+    "tc": {
+     "a": 0,
+     "i": 2
+    },
+    "tl": {
+     "a": 1,
+     "i": 2
+    },
+    "ro": 0,
+    "rd": 0,
+    "rt": 0,
+    "as": 1,
+    "br": 0,
+    "bp": 0,
+    "tf": 0,
+    "tco": 0,
+    "mt": 0,
+    "fc": 0,
+    "fr": 1,
+    "va": 0,
+    "pm": 2
+   }
+  ],
+  "cuartos": [
+   {
+    "periodo": "1º C",
+    "local": 14,
+    "visitante": 25
+   },
+   {
+    "periodo": "2º C",
+    "local": 16,
+    "visitante": 12
+   },
+   {
+    "periodo": "3º C",
+    "local": 26,
+    "visitante": 20
+   },
+   {
+    "periodo": "4º C",
+    "local": 20,
+    "visitante": 19
+   },
+   {
+    "periodo": "Pro. 1",
+    "local": 3,
+    "visitante": 11
+   }
+  ]
+ }
+}

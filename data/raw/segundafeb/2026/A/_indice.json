@@ -640,9 +640,24 @@
    "id": "1009073",
    "nombre": "C.B. GETAFE"
   },
-  "resultado": "*-*",
+  "resultado": "80-60",
   "fecha": "14/11/2026",
   "hora": "17:30"
+ },
+ {
+  "jornada": "Jornada 7(14/11/2026)",
+  "id": "2536157",
+  "local": {
+   "id": "1010318",
+   "nombre": "CLUB BALONCESTO TOLEDO BASKET"
+  },
+  "visitante": {
+   "id": "1009588",
+   "nombre": "UEMC BALONCESTO VALLADOLID"
+  },
+  "resultado": "80-88",
+  "fecha": "14/11/2026",
+  "hora": "18:00"
  },
  {
   "jornada": "Jornada 7(14/11/2026)",
@@ -655,7 +670,7 @@
    "id": "1010496",
    "nombre": "MOVISTAR ESTUDIANTES"
   },
-  "resultado": "*-*",
+  "resultado": "81-84",
   "fecha": "14/11/2026",
   "hora": "19:00"
  },
@@ -670,24 +685,9 @@
    "id": "1010321",
    "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
   },
-  "resultado": "*-*",
+  "resultado": "76-90",
   "fecha": "14/11/2026",
   "hora": "20:00"
- },
- {
-  "jornada": "Jornada 7(14/11/2026)",
-  "id": "2536157",
-  "local": {
-   "id": "1010318",
-   "nombre": "CLUB BALONCESTO TOLEDO BASKET"
-  },
-  "visitante": {
-   "id": "1009588",
-   "nombre": "UEMC BALONCESTO VALLADOLID"
-  },
-  "resultado": "*-*",
-  "fecha": "15/11/2026",
-  "hora": "12:00"
  },
  {
   "jornada": "Jornada 7(14/11/2026)",
@@ -700,7 +700,7 @@
    "id": "1010352",
    "nombre": "MELILLA CIUDAD DEL DEPORTE"
   },
-  "resultado": "*-*",
+  "resultado": "66-83",
   "fecha": "15/11/2026",
   "hora": "18:00"
  },
@@ -715,7 +715,7 @@
    "id": "1010194",
    "nombre": "JAEN PARAISO INTERIOR FS"
   },
-  "resultado": "*-*",
+  "resultado": "106-77",
   "fecha": "15/11/2026",
   "hora": "18:30"
  },
@@ -730,7 +730,7 @@
    "id": "1010192",
    "nombre": "CB ALGECIRAS"
   },
-  "resultado": "*-*",
+  "resultado": "105-98",
   "fecha": "15/11/2026",
   "hora": "18:30"
  },
@@ -1261,18 +1261,18 @@
  },
  {
   "jornada": "Jornada 13(03/01/2027)",
-  "id": "2536199",
+  "id": "2536202",
   "local": {
-   "id": "1009723",
-   "nombre": "C.B. TRES CANTOS"
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
   },
   "visitante": {
-   "id": "1010318",
-   "nombre": "CLUB BALONCESTO TOLEDO BASKET"
+   "id": "1009588",
+   "nombre": "UEMC BALONCESTO VALLADOLID"
   },
   "resultado": "*-*",
-  "fecha": "03/01/2027",
-  "hora": "12:00"
+  "fecha": "02/01/2027",
+  "hora": "20:00"
  },
  {
   "jornada": "Jornada 13(03/01/2027)",
@@ -1284,6 +1284,21 @@
   "visitante": {
    "id": "1010194",
    "nombre": "JAEN PARAISO INTERIOR FS"
+  },
+  "resultado": "*-*",
+  "fecha": "03/01/2027",
+  "hora": "12:00"
+ },
+ {
+  "jornada": "Jornada 13(03/01/2027)",
+  "id": "2536199",
+  "local": {
+   "id": "1009723",
+   "nombre": "C.B. TRES CANTOS"
+  },
+  "visitante": {
+   "id": "1010318",
+   "nombre": "CLUB BALONCESTO TOLEDO BASKET"
   },
   "resultado": "*-*",
   "fecha": "03/01/2027",
@@ -1306,21 +1321,6 @@
  },
  {
   "jornada": "Jornada 13(03/01/2027)",
-  "id": "2536204",
-  "local": {
-   "id": "1009073",
-   "nombre": "C.B. GETAFE"
-  },
-  "visitante": {
-   "id": "1010192",
-   "nombre": "CB ALGECIRAS"
-  },
-  "resultado": "*-*",
-  "fecha": "03/01/2027",
-  "hora": "12:30"
- },
- {
-  "jornada": "Jornada 13(03/01/2027)",
   "id": "2536201",
   "local": {
    "id": "1010193",
@@ -1336,18 +1336,18 @@
  },
  {
   "jornada": "Jornada 13(03/01/2027)",
-  "id": "2536202",
+  "id": "2536204",
   "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
+   "id": "1009073",
+   "nombre": "C.B. GETAFE"
   },
   "visitante": {
-   "id": "1009588",
-   "nombre": "UEMC BALONCESTO VALLADOLID"
+   "id": "1010192",
+   "nombre": "CB ALGECIRAS"
   },
   "resultado": "*-*",
   "fecha": "03/01/2027",
-  "hora": "18:00"
+  "hora": "12:30"
  },
  {
   "jornada": "Jornada 13(03/01/2027)",
@@ -1441,6 +1441,21 @@
  },
  {
   "jornada": "Jornada 14(09/01/2027)",
+  "id": "2536210",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1008643",
+   "nombre": "CLÍNICA PONFERRADA SDP"
+  },
+  "resultado": "*-*",
+  "fecha": "09/01/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 14(09/01/2027)",
   "id": "2536209",
   "local": {
    "id": "1010352",
@@ -1453,21 +1468,6 @@
   "resultado": "*-*",
   "fecha": "10/01/2027",
   "hora": "12:00"
- },
- {
-  "jornada": "Jornada 14(09/01/2027)",
-  "id": "2536210",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1008643",
-   "nombre": "CLÍNICA PONFERRADA SDP"
-  },
-  "resultado": "*-*",
-  "fecha": "10/01/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 15(16/01/2027)",
@@ -1636,6 +1636,21 @@
  },
  {
   "jornada": "Jornada 16(30/01/2027)",
+  "id": "2536225",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1009723",
+   "nombre": "C.B. TRES CANTOS"
+  },
+  "resultado": "*-*",
+  "fecha": "30/01/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 16(30/01/2027)",
   "id": "2536224",
   "local": {
    "id": "1010352",
@@ -1663,21 +1678,6 @@
   "resultado": "*-*",
   "fecha": "31/01/2027",
   "hora": "12:30"
- },
- {
-  "jornada": "Jornada 16(30/01/2027)",
-  "id": "2536225",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1009723",
-   "nombre": "C.B. TRES CANTOS"
-  },
-  "resultado": "*-*",
-  "fecha": "31/01/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 17(06/02/2027)",
@@ -1846,6 +1846,21 @@
  },
  {
   "jornada": "Jornada 18(13/02/2027)",
+  "id": "2536240",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1010193",
+   "nombre": "C.B. STARLABS MORÓN"
+  },
+  "resultado": "*-*",
+  "fecha": "13/02/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 18(13/02/2027)",
   "id": "2536239",
   "local": {
    "id": "1010352",
@@ -1873,21 +1888,6 @@
   "resultado": "*-*",
   "fecha": "14/02/2027",
   "hora": "12:30"
- },
- {
-  "jornada": "Jornada 18(13/02/2027)",
-  "id": "2536240",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1010193",
-   "nombre": "C.B. STARLABS MORÓN"
-  },
-  "resultado": "*-*",
-  "fecha": "14/02/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 19(20/02/2027)",
@@ -2146,6 +2146,21 @@
  },
  {
   "jornada": "Jornada 21(06/03/2027)",
+  "id": "2536256",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1009073",
+   "nombre": "C.B. GETAFE"
+  },
+  "resultado": "*-*",
+  "fecha": "06/03/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 21(06/03/2027)",
   "id": "2536259",
   "local": {
    "id": "1009723",
@@ -2173,21 +2188,6 @@
   "resultado": "*-*",
   "fecha": "07/03/2027",
   "hora": "12:00"
- },
- {
-  "jornada": "Jornada 21(06/03/2027)",
-  "id": "2536256",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1009073",
-   "nombre": "C.B. GETAFE"
-  },
-  "resultado": "*-*",
-  "fecha": "07/03/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 21(06/03/2027)",
@@ -2341,6 +2341,21 @@
  },
  {
   "jornada": "Jornada 23(20/03/2027)",
+  "id": "2536271",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1010321",
+   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
+  },
+  "resultado": "*-*",
+  "fecha": "20/03/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 23(20/03/2027)",
   "id": "2536269",
   "local": {
    "id": "1010318",
@@ -2383,21 +2398,6 @@
   "resultado": "*-*",
   "fecha": "21/03/2027",
   "hora": "12:30"
- },
- {
-  "jornada": "Jornada 23(20/03/2027)",
-  "id": "2536271",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1010321",
-   "nombre": "CACERES PATRIMONIO DE LA HUMANIDAD"
-  },
-  "resultado": "*-*",
-  "fecha": "21/03/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 23(20/03/2027)",
@@ -2596,6 +2596,21 @@
  },
  {
   "jornada": "Jornada 25(03/04/2027)",
+  "id": "2536286",
+  "local": {
+   "id": "1010495",
+   "nombre": "SPANISH BASKETBALL ACADEMY"
+  },
+  "visitante": {
+   "id": "1010194",
+   "nombre": "JAEN PARAISO INTERIOR FS"
+  },
+  "resultado": "*-*",
+  "fecha": "03/04/2027",
+  "hora": "20:00"
+ },
+ {
+  "jornada": "Jornada 25(03/04/2027)",
   "id": "2536285",
   "local": {
    "id": "1010352",
@@ -2608,21 +2623,6 @@
   "resultado": "*-*",
   "fecha": "04/04/2027",
   "hora": "12:00"
- },
- {
-  "jornada": "Jornada 25(03/04/2027)",
-  "id": "2536286",
-  "local": {
-   "id": "1010495",
-   "nombre": "SPANISH BASKETBALL ACADEMY"
-  },
-  "visitante": {
-   "id": "1010194",
-   "nombre": "JAEN PARAISO INTERIOR FS"
-  },
-  "resultado": "*-*",
-  "fecha": "04/04/2027",
-  "hora": "18:00"
  },
  {
   "jornada": "Jornada 26(10/04/2027)",
