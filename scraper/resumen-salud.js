@@ -365,6 +365,36 @@ if (!regresion) {
     lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
 }
 
+// Clasificacion contra la oficial de la FEB (lote 36). CRITICO si el orden no
+// cuadra con los datos cuadrando (es la tabla mas leida y la FEB es la fuente
+// autoritativa), si no se comparo ningun grupo (un verificador que no compara
+// no es un verificador) o si el resultado no es de este run. AVISO si en algun
+// grupo los datos difieren: eso es un partido que una fuente tiene y la otra
+// no, y ese grupo no se juzga.
+// El outcome del paso no hace falta pasarlo aqui: si el script
+// revienta antes de escribir, el JSON queda con la fecha de otro dia y eso ya
+// es critico abajo.
+const fClasif = path.join('data', 'processed', 'clasificacion-oficial.json');
+const clasif = leerJSON(fClasif);
+if (!clasif) {
+  avisos.push('No existe data/processed/clasificacion-oficial.json: verificar-clasificacion-oficial.js no ha corrido todavia.');
+} else {
+  const r = clasif.resumen || {};
+  const hoy = new Date().toISOString().slice(0, 10);
+  if (clasif.fecha !== hoy)
+    criticos.push(`Clasificacion oficial: el ultimo cruce es del ${clasif.fecha}; no se ha comprobado en este run.`);
+  else if (r.vacio)
+    criticos.push(`Clasificacion oficial: no se pudo comparar ningun grupo (${r.sinTabla} sin tabla legible, ${r.conDatosDistintos} con datos distintos).`);
+  else if (r.gruposConOrdenMal) {
+    const mal = clasif.grupos.filter(g => !g.error && !g.datosDistintos.length && g.posicionesMal.length)
+      .map(g => `${g.competicion} ${g.grupo} (${g.posicionesMal.length})`);
+    criticos.push(`Clasificacion oficial: ${r.posicionesMal} posicion(es) distinta(s) de la FEB en ${mal.join(', ')}.`);
+  } else
+    lineas.push(`Clasificacion: ${r.comparados} de ${r.grupos} grupo(s) cuadran con la oficial de la FEB.`);
+  for (const g of clasif.grupos.filter(g => g.error || g.datosDistintos?.length))
+    avisos.push(`Clasificacion oficial ${g.competicion} ${g.grupo}: ${g.error || 'datos distintos, orden no juzgado -> ' + g.datosDistintos.slice(0, 3).join(' · ')}`);
+}
+
 // Pasos globales con continue-on-error (outcome real, no conclusion).
 for (const [env, que] of [
   ['RESULTADO_ASEGURAR_ACTAS', 'restaurar la cache de actas (respaldo del release)'],

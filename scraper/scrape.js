@@ -448,4 +448,9 @@ if (require.main === module) {
   main().catch(err => { console.error('Error general:', err.message); process.exit(1); });
 }
 
-module.exports = { scrapePartido, parsearCuartos };
+module.exports = {
+  scrapePartido, parsearCuartos,
+  // Sesion ASP.NET de resultados.aspx: la usa verificar-clasificacion-oficial.js
+  // para leer la tabla oficial de cada grupo (lote 36).
+  crearSesion, cargarInicial, postback, extraerForm, nombreCortoGrupo,
+};

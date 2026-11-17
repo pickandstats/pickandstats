@@ -158,6 +158,19 @@ jobs:
       - name: Primera · fases (jugadores)
         run: node scraper/calcular-fases-jugadores.js --competicion 1 --temporada $(node -p "require('./data/processed/estado.json').competiciones.primerafeb.temporada")
 
+      # Nuestra clasificacion contra la oficial de la FEB, grupo a grupo (lote 36).
+      # Escribe data/processed/clasificacion-oficial.json, que entra en el commit y
+      # lee el resumen de salud. continue-on-error: es una alarma, no un guardian
+      # (los datos son validos aunque el orden no lo sea). Para que un fallo no
+      # quede en un verde mudo, el resumen lee el JSON: orden mal, ningun grupo
+      # comparado o un JSON que no es de hoy (el paso revento) son criticos.
+      - name: Clasificacion contra la oficial de la FEB
+        id: clasificacion_oficial
+        continue-on-error: true
+        env:
+          NODE_OPTIONS: ${{ env.CONTAR }}
+        run: node scraper/verificar-clasificacion-oficial.js
+
       # ----- Análisis por cuartos (las tres categorías) -----
       # Usa la cache de actas: actas-cuartos solo extrae las de partidos nuevos.
       # continue-on-error para que un fallo aquí (cache expirada, PDF caído) no
