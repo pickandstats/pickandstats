@@ -86,6 +86,12 @@ jobs:
             exit 1
           fi
 
+      # Prueba de humo sobre lo que se va a publicar (lote 38): todo lo que la app
+      # pide al arrancar existe en _publish y es JSON valido. El 17/11 el deploy
+      # salio verde con temporadas.json ausente y la portada no cargaba.
+      - name: Verificar que la app arranca con este artefacto
+        run: node scraper/verificar-arranque-app.js _publish/app
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _publish
