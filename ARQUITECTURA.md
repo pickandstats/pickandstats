@@ -144,7 +144,7 @@ en config.js (BASE baloncestoenvivo.feb.es, las tres competiciones, pausa de
 que `data/raw/` entero estaba gitignored, y no es cierto):
 - Caché regenerable (gitignored): **solo** `data/raw/*/*/actas/` (~100 MB) y `data/actas/`. Son las dos únicas rutas de datos que excluye el .gitignore.
 - **Versionado:** el resto de `data/raw/` —los boxscores brutos y los `_indice.json` de cada grupo— sí está en git, y el workflow lo commitea con `git add data/`.
-- Producto final (versionado): los agregados en `web/public/data/`, aunque se regeneren. Razón: son lo que la app sirve, deben estar en el repo para el despliegue.
+- Producto final (versionado): los agregados en `data/processed/`. `web/public/data/` es solo un espejo **no versionado** desde el 17/11/2026 (lote 35, opción a): lo regeneran `predev`/`prebuild` (`web/scripts/copiar-datos.mjs`) y el `cp` del deploy.
 
 Esa distinción dejó de ser trivia el 02/09/2026: el canario de transición
 (`comprobar-temporada.js`, §17.2) decide si la temporada nueva ha empezado
@@ -1563,3 +1563,51 @@ Uixó (13-13), que tiene la incomparecencia de la J18. Encaja con que la incompa
 cueste un punto de clasificación (o una victoria) y, ya empatados, se aplique el 84.2.c.
 Eso lo regula el Reglamento Disciplinario, que no tenemos. Además, Segunda 2023 Este y
 Tercera 2024 D-B y E-A tienen un partido menos que la FEB en nuestros datos.
+
+### 17.22 Puntos o victorias, el desglose que no suma y los umbrales que se buscan por concepto *(17/11/2026)*
+
+**Un umbral nuevo hay que buscarlo en todos los sitios que lo usan, y el grep busca el uso,
+no el concepto.** El suelo del TS% del lote 32 no se había aplicado en el comparador
+porque allí no aparecía el nombre de la constante, solo la idea. Es la misma lección que
+el «12 partidos» escrito a mano en tres sitios. Al introducir un umbral se busca por lo
+que mide (porcentajes de acierto, mínimos de partidos), no por cómo se llama.
+
+**La FEB no ordena igual en todas las temporadas** (verificado con tablas oficiales;
+`verificar-clasificacion-oficial.js --temporada … --salida …`):
+
+- Las tablas de 2023/24, 2024/25 y 2025/26 traen la columna `PT` (2 por victoria, 1 por
+  derrota, 0 por incomparecencia) y ordenan **por puntos**. Caso decisivo: en Primera
+  2025/26, tras la J30, la FEB pone líder a Coruña (25-4, 54 PT) por delante de Obradoiro
+  (25-3, 53 PT).
+- 2026/27 trae `DIF` y `%`, y ordena **por victorias y después porcentaje**: Fundal (5-1)
+  va por delante de Gran Canaria (5-2), que tendría más puntos.
+
+Con los partidos igualados las dos reglas coinciden; solo se separan con aplazados o
+sanciones. `ordenClasificacion.js` aplica la regla de 2026/27 a todas las temporadas, así
+que en temporadas cerradas puede desordenar jornadas intermedias con aplazados (149
+jornadas-grupo en las que las dos reglas difieren). **No se ha cambiado**: queda pendiente
+de decisión y del Reglamento Disciplinario.
+
+**Partidos en el índice sin fichero.** Si `scrapePartido` falla, `scrape.js` deja el
+partido en `_indice.json` pero no escribe su fichero, y `calcular.js` solo lee ficheros:
+el partido desaparece de la clasificación sin que lo vea nadie. Las temporadas cerradas
+no se vuelven a raspar. Hay tres casos: Segunda 2023 `2345131`, Tercera 2024 `2417818` y
+`2415142`. Sus páginas responden hoy, así que fueron fallos transitorios del raspado de
+julio.
+
+**Cruce de campos por cuartos** (`verificar-campos-cuartos.js`, lote 35). Suma
+TAP/TR/FC/FR de los cuartos del acta y la compara con el total del HTML, jugador a jugador.
+
+- **TR:** las actas de 2026/27 imprimen «TAP Rec» a 0 en todas las filas, Totales
+  incluidos (PDF de 2525757). Es dato ausente en la fuente y no se compara.
+- **Dorsales:** el acta escribe `00` donde el HTML escribe `0`.
+- **Dirección de las diferencias:** normalmente el acta da alguna falta más que el HTML.
+  Una degradación dejaría el acta **por debajo**, así que el crítico salta con un déficit
+  de 2 o más.
+- **Banderas desactualizadas:** las 2.537 actas servidas de 2025/26 llevaban
+  `camposCompletosQ2a4: true` sin tener esos campos en Q2-Q4. La bandera se calculó antes
+  de que mirase los cinco campos (31/10). Regeneradas con `boxscore-cuartos.js`: solo
+  cambia la bandera. No se veía en la app, porque `Partido.jsx` saca el «—» del valor
+  ausente y no de la bandera, pero engañaba a cualquier chequeo que se fiara de ella.
+  Recuperar el dato exige
+  reextraer las actas de 2025/26 con el `difJug` corregido.
