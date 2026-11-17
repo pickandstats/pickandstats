@@ -1,0 +1,3925 @@
+{
+ "_nota": "Partidos congelados el 17/11/2026 para test/verificar-clasificacion.mjs: Tercera B-B y Primera 2026/27 (datos del run del 16/11) y Tercera C-A 2025/26 completa. No se regeneran: son la entrada fija del test.",
+ "tercera_BB_J7": {
+  "competicion": "tercerafeb",
+  "grupo": "B-B",
+  "jornada": 7,
+  "partidos": [
+   {
+    "id": "2537207",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "visitante": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "resultado": "66-58"
+   },
+   {
+    "id": "2537208",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "visitante": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "resultado": "95-64"
+   },
+   {
+    "id": "2537209",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "visitante": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "resultado": "90-70"
+   },
+   {
+    "id": "2537210",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "visitante": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "resultado": "82-73"
+   },
+   {
+    "id": "2537211",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "resultado": "86-82"
+   },
+   {
+    "id": "2537212",
+    "jornada": "Jornada 1(04/10/2026)",
+    "local": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "visitante": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "resultado": "88-71"
+   },
+   {
+    "id": "2537214",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "visitante": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "resultado": "78-59"
+   },
+   {
+    "id": "2537215",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "visitante": {
+     "id": "1008866",
+     "nombre": "UROS DE RIVAS"
+    },
+    "resultado": "77-90"
+   },
+   {
+    "id": "2537216",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "visitante": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "resultado": "88-86"
+   },
+   {
+    "id": "2537217",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "visitante": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "resultado": "106-111"
+   },
+   {
+    "id": "2537218",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "visitante": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "resultado": "61-89"
+   },
+   {
+    "id": "2537219",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "visitante": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "resultado": "66-73"
+   },
+   {
+    "id": "2537220",
+    "jornada": "Jornada 2(11/10/2026)",
+    "local": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "visitante": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "resultado": "57-83"
+   },
+   {
+    "id": "2537221",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "visitante": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "resultado": "75-89"
+   },
+   {
+    "id": "2537222",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "visitante": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "resultado": "71-86"
+   },
+   {
+    "id": "2537223",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "visitante": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "resultado": "109-111"
+   },
+   {
+    "id": "2537224",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "resultado": "95-67"
+   },
+   {
+    "id": "2537225",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "visitante": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "resultado": "80-86"
+   },
+   {
+    "id": "2537226",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1008866",
+     "nombre": "UROS DE RIVAS"
+    },
+    "visitante": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "resultado": "58-63"
+   },
+   {
+    "id": "2537227",
+    "jornada": "Jornada 3(18/10/2026)",
+    "local": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "visitante": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "resultado": "81-73"
+   },
+   {
+    "id": "2537228",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "visitante": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "resultado": "83-74"
+   },
+   {
+    "id": "2537229",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "visitante": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "resultado": "71-75"
+   },
+   {
+    "id": "2537230",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "visitante": {
+     "id": "1008866",
+     "nombre": "UROS DE RIVAS"
+    },
+    "resultado": "83-95"
+   },
+   {
+    "id": "2537231",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "visitante": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "resultado": "64-97"
+   },
+   {
+    "id": "2537232",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "resultado": "96-82"
+   },
+   {
+    "id": "2537233",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "visitante": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "resultado": "63-84"
+   },
+   {
+    "id": "2537234",
+    "jornada": "Jornada 4(25/10/2026)",
+    "local": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "visitante": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "resultado": "70-65"
+   },
+   {
+    "id": "2537235",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "visitante": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "resultado": "68-79"
+   },
+   {
+    "id": "2537237",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "resultado": "80-82"
+   },
+   {
+    "id": "2537238",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "visitante": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "resultado": "90-65"
+   },
+   {
+    "id": "2537239",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1008866",
+     "nombre": "UROS DE RIVAS"
+    },
+    "visitante": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "resultado": "107-50"
+   },
+   {
+    "id": "2537240",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "visitante": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "resultado": "76-95"
+   },
+   {
+    "id": "2537241",
+    "jornada": "Jornada 5(01/11/2026)",
+    "local": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "visitante": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "resultado": "71-77"
+   },
+   {
+    "id": "2537242",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "visitante": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "resultado": "69-61"
+   },
+   {
+    "id": "2537243",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "visitante": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "resultado": "86-79"
+   },
+   {
+    "id": "2537244",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "visitante": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "resultado": "62-83"
+   },
+   {
+    "id": "2537246",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "visitante": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "resultado": "72-59"
+   },
+   {
+    "id": "2537247",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "visitante": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "resultado": "92-100"
+   },
+   {
+    "id": "2537248",
+    "jornada": "Jornada 6(08/11/2026)",
+    "local": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "visitante": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "resultado": "86-88"
+   },
+   {
+    "id": "2537249",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1009706",
+     "nombre": "NÁUTICO TENERIFE"
+    },
+    "visitante": {
+     "id": "1008409",
+     "nombre": "INMOBILIARIA GÁLVEZ SANTA CRUZ"
+    },
+    "resultado": "80-70"
+   },
+   {
+    "id": "2537250",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1009825",
+     "nombre": "GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1008941",
+     "nombre": "GINELUX TELDE"
+    },
+    "resultado": "86-94"
+   },
+   {
+    "id": "2537251",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1010499",
+     "nombre": "BALONCESTO ALCALA"
+    },
+    "visitante": {
+     "id": "1009120",
+     "nombre": "FUNDAL ALCOBENDAS"
+    },
+    "resultado": "61-93"
+   },
+   {
+    "id": "2537252",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1008866",
+     "nombre": "UROS DE RIVAS"
+    },
+    "visitante": {
+     "id": "1009178",
+     "nombre": "GRUPO EGIDO PINTOBASKET"
+    },
+    "resultado": "55-68"
+   },
+   {
+    "id": "2537253",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1008865",
+     "nombre": "IMPLICA REAL CANOE"
+    },
+    "visitante": {
+     "id": "1008707",
+     "nombre": "CB 7 PALMAS"
+    },
+    "resultado": "76-62"
+   },
+   {
+    "id": "2537254",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1008935",
+     "nombre": "RECUCYM BAZU"
+    },
+    "visitante": {
+     "id": "1008946",
+     "nombre": "BASKET CERVANTES CIUDAD REAL"
+    },
+    "resultado": "79-73"
+   },
+   {
+    "id": "2537255",
+    "jornada": "Jornada 7(15/11/2026)",
+    "local": {
+     "id": "1009931",
+     "nombre": "LUJISA GUADALAJARA BASKET"
+    },
+    "visitante": {
+     "id": "1010580",
+     "nombre": "BALONCESTO TALAVERA"
+    },
+    "resultado": "81-75"
+   }
+  ]
+ },
+ "primera_J8": {
+  "competicion": "primerafeb",
+  "grupo": "UNICO",
+  "jornada": 8,
+  "partidos": [
+   {
+    "id": "2535725",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "visitante": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "resultado": "69-95"
+   },
+   {
+    "id": "2535726",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "resultado": "96-82"
+   },
+   {
+    "id": "2535727",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "95-94"
+   },
+   {
+    "id": "2535728",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "visitante": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "72-57"
+   },
+   {
+    "id": "2535729",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "visitante": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "resultado": "76-82"
+   },
+   {
+    "id": "2535730",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "resultado": "78-65"
+   },
+   {
+    "id": "2535731",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "91-71"
+   },
+   {
+    "id": "2535732",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "108-69"
+   },
+   {
+    "id": "2535733",
+    "jornada": "Jornada 1(25/09/2026)",
+    "local": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "resultado": "69-68"
+   },
+   {
+    "id": "2535734",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "76-88"
+   },
+   {
+    "id": "2535735",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "visitante": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "64-81"
+   },
+   {
+    "id": "2535736",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "resultado": "92-104"
+   },
+   {
+    "id": "2535737",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "visitante": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "resultado": "86-90"
+   },
+   {
+    "id": "2535738",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "visitante": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "resultado": "68-79"
+   },
+   {
+    "id": "2535739",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "resultado": "67-77"
+   },
+   {
+    "id": "2535740",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "visitante": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "resultado": "70-67"
+   },
+   {
+    "id": "2535741",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "visitante": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "81-72"
+   },
+   {
+    "id": "2535742",
+    "jornada": "Jornada 2(02/10/2026)",
+    "local": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "73-80"
+   },
+   {
+    "id": "2535743",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "visitante": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "resultado": "81-71"
+   },
+   {
+    "id": "2535744",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "resultado": "84-74"
+   },
+   {
+    "id": "2535745",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "84-69"
+   },
+   {
+    "id": "2535746",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "visitante": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "91-88"
+   },
+   {
+    "id": "2535747",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "resultado": "106-76"
+   },
+   {
+    "id": "2535748",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "86-101"
+   },
+   {
+    "id": "2535749",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "99-86"
+   },
+   {
+    "id": "2535750",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "visitante": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "resultado": "91-76"
+   },
+   {
+    "id": "2535751",
+    "jornada": "Jornada 3(09/10/2026)",
+    "local": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "visitante": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "resultado": "77-74"
+   },
+   {
+    "id": "2535752",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "visitante": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "67-72"
+   },
+   {
+    "id": "2535753",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "100-101"
+   },
+   {
+    "id": "2535754",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "visitante": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "resultado": "83-81"
+   },
+   {
+    "id": "2535755",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "visitante": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "90-94"
+   },
+   {
+    "id": "2535756",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "resultado": "86-77"
+   },
+   {
+    "id": "2535757",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "79-83"
+   },
+   {
+    "id": "2535758",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "resultado": "97-75"
+   },
+   {
+    "id": "2535759",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "resultado": "84-79"
+   },
+   {
+    "id": "2535760",
+    "jornada": "Jornada 4(16/10/2026)",
+    "local": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "resultado": "89-81"
+   },
+   {
+    "id": "2535761",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "visitante": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "82-81"
+   },
+   {
+    "id": "2535762",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "resultado": "106-66"
+   },
+   {
+    "id": "2535763",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "78-94"
+   },
+   {
+    "id": "2535764",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "94-95"
+   },
+   {
+    "id": "2535765",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "visitante": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "resultado": "65-99"
+   },
+   {
+    "id": "2535766",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "visitante": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "resultado": "90-76"
+   },
+   {
+    "id": "2535767",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "81-77"
+   },
+   {
+    "id": "2535768",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "visitante": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "resultado": "84-80"
+   },
+   {
+    "id": "2535769",
+    "jornada": "Jornada 5(23/10/2026)",
+    "local": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "visitante": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "resultado": "81-84"
+   },
+   {
+    "id": "2535770",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "visitante": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "resultado": "69-73"
+   },
+   {
+    "id": "2535771",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "80-79"
+   },
+   {
+    "id": "2535772",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "79-89"
+   },
+   {
+    "id": "2535773",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "visitante": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "resultado": "71-66"
+   },
+   {
+    "id": "2535774",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "visitante": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "resultado": "75-73"
+   },
+   {
+    "id": "2535775",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "resultado": "102-80"
+   },
+   {
+    "id": "2535776",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "83-73"
+   },
+   {
+    "id": "2535777",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "resultado": "73-85"
+   },
+   {
+    "id": "2535778",
+    "jornada": "Jornada 6(30/10/2026)",
+    "local": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "resultado": "90-89"
+   },
+   {
+    "id": "2535779",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "visitante": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "resultado": "56-62"
+   },
+   {
+    "id": "2535780",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "97-93"
+   },
+   {
+    "id": "2535781",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "79-92"
+   },
+   {
+    "id": "2535782",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "visitante": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "resultado": "84-86"
+   },
+   {
+    "id": "2535783",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "resultado": "70-63"
+   },
+   {
+    "id": "2535784",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "visitante": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "resultado": "72-56"
+   },
+   {
+    "id": "2535785",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "visitante": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "resultado": "87-66"
+   },
+   {
+    "id": "2535786",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "73-71"
+   },
+   {
+    "id": "2535787",
+    "jornada": "Jornada 7(06/11/2026)",
+    "local": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "visitante": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "73-75"
+   },
+   {
+    "id": "2535788",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1008687",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "1009072",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "100-66"
+   },
+   {
+    "id": "2535789",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1009929",
+     "nombre": "BÀSQUET MENORCA"
+    },
+    "visitante": {
+     "id": "1009837",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "75-65"
+   },
+   {
+    "id": "2535790",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1009713",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "1009716",
+     "nombre": "BUENO ARENAS ALBACETE BASKET"
+    },
+    "resultado": "80-74"
+   },
+   {
+    "id": "2535791",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1008400",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "1008797",
+     "nombre": "CAJASIETE GRAN CANARIA"
+    },
+    "resultado": "83-104"
+   },
+   {
+    "id": "2535792",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1009110",
+     "nombre": "CAJASOL COTO CÓRDOBA"
+    },
+    "visitante": {
+     "id": "1010494",
+     "nombre": "PARTIZÁN DE FUENLABRADA"
+    },
+    "resultado": "74-80"
+   },
+   {
+    "id": "2535793",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1009109",
+     "nombre": "COVIRAN GRANADA"
+    },
+    "visitante": {
+     "id": "1010493",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "97-101"
+   },
+   {
+    "id": "2535794",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1008378",
+     "nombre": "INVEREADY ASKATUAK GIPUZKOA"
+    },
+    "visitante": {
+     "id": "1009584",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "67-92"
+   },
+   {
+    "id": "2535795",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1009095",
+     "nombre": "CLUB OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "1010324",
+     "nombre": "INSOLAC CAJA 87"
+    },
+    "resultado": "87-74"
+   },
+   {
+    "id": "2535796",
+    "jornada": "Jornada 8(13/11/2026)",
+    "local": {
+     "id": "1008900",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "1010207",
+     "nombre": "IBEROLEA PALENCIA"
+    },
+    "resultado": "77-86"
+   }
+  ]
+ },
+ "tercera_CA_2025_J26": {
+  "competicion": "tercerafeb",
+  "temporada": "2025",
+  "grupo": "C-A",
+  "jornada": 26,
+  "partidos": [
+   {
+    "id": "2484017",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "66-72"
+   },
+   {
+    "id": "2484018",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "87-66"
+   },
+   {
+    "id": "2484019",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "83-79"
+   },
+   {
+    "id": "2484020",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "85-58"
+   },
+   {
+    "id": "2484021",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "67-72"
+   },
+   {
+    "id": "2484022",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "94-89"
+   },
+   {
+    "id": "2484023",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "95-63"
+   },
+   {
+    "id": "2484024",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "74-75"
+   },
+   {
+    "id": "2484025",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "69-61"
+   },
+   {
+    "id": "2484026",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "63-79"
+   },
+   {
+    "id": "2484027",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "81-86"
+   },
+   {
+    "id": "2484028",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "69-76"
+   },
+   {
+    "id": "2484029",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "64-54"
+   },
+   {
+    "id": "2484030",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "64-106"
+   },
+   {
+    "id": "2484031",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "69-86"
+   },
+   {
+    "id": "2484032",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "71-76"
+   },
+   {
+    "id": "2484033",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "73-72"
+   },
+   {
+    "id": "2484034",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "68-74"
+   },
+   {
+    "id": "2484035",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "85-70"
+   },
+   {
+    "id": "2484036",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "78-74"
+   },
+   {
+    "id": "2484037",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "75-82"
+   },
+   {
+    "id": "2484038",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "89-66"
+   },
+   {
+    "id": "2484039",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "61-64"
+   },
+   {
+    "id": "2484040",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "55-84"
+   },
+   {
+    "id": "2484041",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "60-90"
+   },
+   {
+    "id": "2484042",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "69-72"
+   },
+   {
+    "id": "2484043",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "68-79"
+   },
+   {
+    "id": "2484044",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "92-61"
+   },
+   {
+    "id": "2484045",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "80-92"
+   },
+   {
+    "id": "2484046",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "72-79"
+   },
+   {
+    "id": "2484047",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "90-94"
+   },
+   {
+    "id": "2484048",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "85-80"
+   },
+   {
+    "id": "2484049",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "78-68"
+   },
+   {
+    "id": "2484050",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "109-79"
+   },
+   {
+    "id": "2484051",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "83-65"
+   },
+   {
+    "id": "2484052",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "73-78"
+   },
+   {
+    "id": "2484053",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "55-92"
+   },
+   {
+    "id": "2484054",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "100-78"
+   },
+   {
+    "id": "2484055",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "77-113"
+   },
+   {
+    "id": "2484056",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "97-101"
+   },
+   {
+    "id": "2484057",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "92-67"
+   },
+   {
+    "id": "2484058",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "84-70"
+   },
+   {
+    "id": "2484059",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "52-79"
+   },
+   {
+    "id": "2484060",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "73-67"
+   },
+   {
+    "id": "2484061",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "73-77"
+   },
+   {
+    "id": "2484062",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "73-62"
+   },
+   {
+    "id": "2484063",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "82-77"
+   },
+   {
+    "id": "2484064",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "90-69"
+   },
+   {
+    "id": "2484065",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "79-74"
+   },
+   {
+    "id": "2484066",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "85-82"
+   },
+   {
+    "id": "2484067",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "70-67"
+   },
+   {
+    "id": "2484068",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "52-71"
+   },
+   {
+    "id": "2484069",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "87-82"
+   },
+   {
+    "id": "2484070",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "92-85"
+   },
+   {
+    "id": "2484071",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "82-90"
+   },
+   {
+    "id": "2484072",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "81-77"
+   },
+   {
+    "id": "2484073",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "76-70"
+   },
+   {
+    "id": "2484074",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "83-95"
+   },
+   {
+    "id": "2484075",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "95-57"
+   },
+   {
+    "id": "2484076",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "73-90"
+   },
+   {
+    "id": "2484077",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "95-97"
+   },
+   {
+    "id": "2484078",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "81-63"
+   },
+   {
+    "id": "2484079",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "77-80"
+   },
+   {
+    "id": "2484080",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "72-63"
+   },
+   {
+    "id": "2484081",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "82-74"
+   },
+   {
+    "id": "2484082",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "85-88"
+   },
+   {
+    "id": "2484083",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "63-72"
+   },
+   {
+    "id": "2484084",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "69-70"
+   },
+   {
+    "id": "2484085",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "61-81"
+   },
+   {
+    "id": "2484086",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "95-88"
+   },
+   {
+    "id": "2484087",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "97-104"
+   },
+   {
+    "id": "2484088",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "96-71"
+   },
+   {
+    "id": "2484089",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "63-75"
+   },
+   {
+    "id": "2484090",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "72-59"
+   },
+   {
+    "id": "2484091",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "62-98"
+   },
+   {
+    "id": "2484092",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "84-79"
+   },
+   {
+    "id": "2484093",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "101-98"
+   },
+   {
+    "id": "2484094",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "80-108"
+   },
+   {
+    "id": "2484095",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "78-100"
+   },
+   {
+    "id": "2484096",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "100-68"
+   },
+   {
+    "id": "2484097",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "59-68"
+   },
+   {
+    "id": "2484098",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "76-85"
+   },
+   {
+    "id": "2484099",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "77-73"
+   },
+   {
+    "id": "2484100",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "96-97"
+   },
+   {
+    "id": "2484101",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "61-56"
+   },
+   {
+    "id": "2484102",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "68-90"
+   },
+   {
+    "id": "2484103",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "112-68"
+   },
+   {
+    "id": "2484104",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "75-73"
+   },
+   {
+    "id": "2484105",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "62-75"
+   },
+   {
+    "id": "2484106",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "82-101"
+   },
+   {
+    "id": "2484107",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "73-85"
+   },
+   {
+    "id": "2484108",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "80-53"
+   },
+   {
+    "id": "2484109",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "97-81"
+   },
+   {
+    "id": "2484110",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "64-75"
+   },
+   {
+    "id": "2484111",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "73-87"
+   },
+   {
+    "id": "2484112",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "66-78"
+   },
+   {
+    "id": "2484113",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "89-73"
+   },
+   {
+    "id": "2484114",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "78-84"
+   },
+   {
+    "id": "2484115",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "77-87"
+   },
+   {
+    "id": "2484116",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "82-78"
+   },
+   {
+    "id": "2484117",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "91-70"
+   },
+   {
+    "id": "2484118",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "66-65"
+   },
+   {
+    "id": "2484119",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "92-73"
+   },
+   {
+    "id": "2484120",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "78-68"
+   },
+   {
+    "id": "2484121",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "96-77"
+   },
+   {
+    "id": "2484122",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "80-67"
+   },
+   {
+    "id": "2484123",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "85-88"
+   },
+   {
+    "id": "2484124",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "70-61"
+   },
+   {
+    "id": "2484125",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "91-81"
+   },
+   {
+    "id": "2484126",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "66-71"
+   },
+   {
+    "id": "2484127",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "70-77"
+   },
+   {
+    "id": "2484128",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "84-67"
+   },
+   {
+    "id": "2484129",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "81-91"
+   },
+   {
+    "id": "2484130",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "81-68"
+   },
+   {
+    "id": "2484131",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "73-62"
+   },
+   {
+    "id": "2484132",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "97-100"
+   },
+   {
+    "id": "2484133",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "73-71"
+   },
+   {
+    "id": "2484134",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "87-68"
+   },
+   {
+    "id": "2484135",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "74-95"
+   },
+   {
+    "id": "2484136",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "95-62"
+   },
+   {
+    "id": "2484137",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "94-63"
+   },
+   {
+    "id": "2484138",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "89-99"
+   },
+   {
+    "id": "2484139",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "91-71"
+   },
+   {
+    "id": "2484140",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "78-95"
+   },
+   {
+    "id": "2484141",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "68-81"
+   },
+   {
+    "id": "2484142",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "55-88"
+   },
+   {
+    "id": "2484143",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "70-81"
+   },
+   {
+    "id": "2484144",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "89-66"
+   },
+   {
+    "id": "2484145",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "89-86"
+   },
+   {
+    "id": "2484146",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "75-89"
+   },
+   {
+    "id": "2484147",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "81-78"
+   },
+   {
+    "id": "2484148",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "71-78"
+   },
+   {
+    "id": "2484149",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "80-82"
+   },
+   {
+    "id": "2484150",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "69-68"
+   },
+   {
+    "id": "2484151",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "80-96"
+   },
+   {
+    "id": "2484152",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "99-69"
+   },
+   {
+    "id": "2484153",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "57-75"
+   },
+   {
+    "id": "2484154",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "84-86"
+   },
+   {
+    "id": "2484155",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "78-84"
+   },
+   {
+    "id": "2484156",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "71-79"
+   },
+   {
+    "id": "2484157",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "70-54"
+   },
+   {
+    "id": "2484158",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "74-69"
+   },
+   {
+    "id": "2484159",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "98-81"
+   },
+   {
+    "id": "2484160",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "90-88"
+   },
+   {
+    "id": "2484161",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "71-93"
+   },
+   {
+    "id": "2484162",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "79-87"
+   },
+   {
+    "id": "2484163",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "73-60"
+   },
+   {
+    "id": "2484164",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "85-69"
+   },
+   {
+    "id": "2484165",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "69-82"
+   },
+   {
+    "id": "2484166",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "75-94"
+   },
+   {
+    "id": "2484167",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "118-71"
+   },
+   {
+    "id": "2484168",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "60-62"
+   },
+   {
+    "id": "2484169",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "84-78"
+   },
+   {
+    "id": "2484170",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "88-69"
+   },
+   {
+    "id": "2484171",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "108-59"
+   },
+   {
+    "id": "2484172",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "74-81"
+   },
+   {
+    "id": "2484173",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "74-88"
+   },
+   {
+    "id": "2484174",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "84-80"
+   },
+   {
+    "id": "2484175",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "74-69"
+   },
+   {
+    "id": "2484176",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "94-88"
+   },
+   {
+    "id": "2484177",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "69-65"
+   },
+   {
+    "id": "2484178",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "113-82"
+   },
+   {
+    "id": "2484179",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "100-96"
+   },
+   {
+    "id": "2484180",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "94-81"
+   },
+   {
+    "id": "2484181",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "80-75"
+   },
+   {
+    "id": "2484182",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "73-68"
+   },
+   {
+    "id": "2484183",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "76-57"
+   },
+   {
+    "id": "2484184",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "79-69"
+   },
+   {
+    "id": "2484185",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "visitante": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "resultado": "69-57"
+   },
+   {
+    "id": "2484186",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "visitante": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "resultado": "67-80"
+   },
+   {
+    "id": "2484187",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "visitante": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "resultado": "70-81"
+   },
+   {
+    "id": "2484188",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "visitante": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "resultado": "76-58"
+   },
+   {
+    "id": "2484189",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "visitante": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "resultado": "80-72"
+   },
+   {
+    "id": "2484190",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "visitante": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "resultado": "98-82"
+   },
+   {
+    "id": "2484191",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "visitante": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "resultado": "77-76"
+   },
+   {
+    "id": "2484192",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "982146",
+     "nombre": "CB BOET MATARÓ"
+    },
+    "visitante": {
+     "id": "980002",
+     "nombre": "SANDÁ C.B. L´HOSPITALET"
+    },
+    "resultado": "78-101"
+   },
+   {
+    "id": "2484193",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "979865",
+     "nombre": "TIBU-RON CASTELLDEFELS"
+    },
+    "visitante": {
+     "id": "981301",
+     "nombre": "SA REAL INSTALACIONES AREVALO IBIZA"
+    },
+    "resultado": "88-62"
+   },
+   {
+    "id": "2484194",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "979311",
+     "nombre": "LETRA CORPOREA BARBASTRO"
+    },
+    "visitante": {
+     "id": "981354",
+     "nombre": "IBERSOL CB TARRAGONA"
+    },
+    "resultado": "73-86"
+   },
+   {
+    "id": "2484195",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "979776",
+     "nombre": "MONBUS - CB IGUALADA"
+    },
+    "visitante": {
+     "id": "981166",
+     "nombre": "C.B.ROSER"
+    },
+    "resultado": "51-74"
+   },
+   {
+    "id": "2484196",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981131",
+     "nombre": "CB VALLS TALLERS PABLO MARTÍNEZ"
+    },
+    "visitante": {
+     "id": "981130",
+     "nombre": "ALFINDÉN CB"
+    },
+    "resultado": "98-69"
+   },
+   {
+    "id": "2484197",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "979290",
+     "nombre": "PUJOL MOLLERUSSA"
+    },
+    "visitante": {
+     "id": "981133",
+     "nombre": "UE SANT CUGAT - OCCIDENT"
+    },
+    "resultado": "78-66"
+   },
+   {
+    "id": "2484198",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981218",
+     "nombre": "FLANIGAN CALVIÀ"
+    },
+    "visitante": {
+     "id": "981219",
+     "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
+    },
+    "resultado": "70-68"
+   }
+  ]
+ }
+}
