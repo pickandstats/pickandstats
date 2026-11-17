@@ -19,7 +19,7 @@
 // Escribe data/processed/clasificacion-oficial.json (lo lee resumen-salud.js) y
 // sale con 1 si algun grupo tiene el orden mal.
 //
-// Uso: node scraper/verificar-clasificacion-oficial.js [--competicion 3] [--temporada 2024]
+// Uso: node scraper/verificar-clasificacion-oficial.js [--competicion 3] [--temporada 2024] [--salida f.json]
 // Coste: 1 GET + 1 postback por grupo que no venga ya mostrado (~13 en total).
 const fs = require('fs');
 const path = require('path');
@@ -34,23 +34,38 @@ const SOLO = iC >= 0 ? [String(args[iC + 1])] : Object.keys(CFG.COMPETICIONES);
 // JSON del pipeline, que es solo de la temporada en curso.
 const iT = args.indexOf('--temporada');
 const TEMPORADA = iT >= 0 ? String(args[iT + 1]) : null;
+// --salida: escribe el detalle (con las filas oficiales completas) a ese fichero.
+const iS = args.indexOf('--salida');
+const SALIDA = iS >= 0 ? args[iS + 1] : null;
 const leerJSON = f => { try { return JSON.parse(fs.readFileSync(f, 'utf8')); } catch (e) { return null; } };
 
 const DDL = '_ctl0:MainContentPlaceHolderMaster:';
 const sel = id => `#_ctl0_MainContentPlaceHolderMaster_${id}`;
 const entero = t => parseInt(String(t).replace(/[^\d-]/g, ''), 10);
 
+// Las columnas se leen por su cabecera, no por posicion: la FEB no publica las
+// mismas en todas las temporadas (2026/27 trae DIF y %, 2025/26 trae PT y no %;
+// lote 37). Las que no son de las cinco que se comparan se guardan tal cual.
 function leerTablaOficial($) {
   const filas = [];
+  let cabecera = null;
   $(sel('clasificacionDataGrid')).find('tr').each((i, tr) => {
-    const c = $(tr).find('td').map((j, td) => $(td).text().trim()).get();
+    const c = $(tr).find('td, th').map((j, td) => $(td).text().trim().replace(/\s+/g, ' ')).get();
     const href = $(tr).find('a[href*="Equipo.aspx"]').attr('href') || '';
     const id = (href.match(/[?&]i=(\d+)/) || [])[1];
-    if (!id || c.length < 8) return;
-    filas.push({ pos: entero(c[0]), id, nombre: c[1], pj: entero(c[2]), pg: entero(c[3]), pp: entero(c[4]), pf: entero(c[5]), pc: entero(c[6]) });
+    if (!id) { if (!cabecera && c.length >= 8) cabecera = c.map(h => h.toUpperCase()); return; }
+    if (c.length < 8) return;
+    const col = (nombre, porDefecto) => { const k = cabecera ? cabecera.indexOf(nombre) : -1; return c[k >= 0 ? k : porDefecto]; };
+    const otras = {};
+    (cabecera || []).forEach((h, k) => { if (!['PO', 'EQUIPO', 'PJ', 'PG', 'PP', 'PF', 'PC'].includes(h)) otras[h || `col${k}`] = c[k]; });
+    filas.push({
+      pos: entero(col('PO', 0)), id, nombre: col('EQUIPO', 1),
+      pj: entero(col('PJ', 2)), pg: entero(col('PG', 3)), pp: entero(col('PP', 4)),
+      pf: entero(col('PF', 5)), pc: entero(col('PC', 6)), otras,
+    });
   });
   const jornadaTxt = $(`${sel('jornadasDropDownList')} option[selected]`).text().trim();
-  return { filas, jornada: entero((jornadaTxt.match(/jornada\s*(\d+)/i) || [])[1]), jornadaTxt };
+  return { filas, cabecera, jornada: entero((jornadaTxt.match(/jornada\s*(\d+)/i) || [])[1]), jornadaTxt };
 }
 
 function compararGrupo(oficial, nuestra) {
@@ -98,8 +113,9 @@ async function main() {
         $ = await postback(sesion, form, DDL + 'gruposDropDownList');
         await pausa(CFG.PAUSA_MS);
       }
-      const { filas, jornada, jornadaTxt } = leerTablaOficial($);
-      const reg = { competicion: comp, temporada, grupo: grupo.corto, jornada, equipos: filas.length };
+      const { filas, cabecera, jornada, jornadaTxt } = leerTablaOficial($);
+      const reg = { competicion: comp, temporada, grupo: grupo.corto, jornada, equipos: filas.length, cabecera };
+      if (SALIDA) reg.oficial = filas;
       if (!filas.length || !jornada) {
         reg.error = `sin tabla oficial legible (jornada "${jornadaTxt}", ${filas.length} filas)`;
         salida.grupos.push(reg);
@@ -136,6 +152,7 @@ async function main() {
   // Un verificador que no compara nada no es un verificador: si ningun grupo
   // llego a compararse, se dice en voz alta.
   if (!comparados.length) salida.resumen.vacio = true;
+  if (SALIDA) fs.writeFileSync(SALIDA, JSON.stringify(salida, null, 1) + '\n');
   if (!TEMPORADA) fs.writeFileSync(path.join('data', 'processed', 'clasificacion-oficial.json'), JSON.stringify(salida, null, 1) + '\n');
   console.log(`\n${JSON.stringify(salida.resumen)}`);
   process.exit(conOrdenMal.length || !comparados.length ? 1 : 0);
