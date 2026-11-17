@@ -120,6 +120,9 @@ export default function Clasificacion({
             </table>
           </div>
           <p className="pie" style={{ marginTop: 4 }}>
+            Manda el número de victorias. Cuando no todos los equipos han jugado los mismos
+            partidos, entre los igualados a victorias va delante el de mejor porcentaje: un
+            porcentaje más alto nunca adelanta a un equipo con más victorias.
             Desempates según el <a href="/guias/average-particular-desempates-feb/">artículo 84</a> del
             Reglamento General y de Competiciones de la
             FEB. Hasta el final de la primera vuelta mandan la diferencia y el cociente

@@ -1,6 +1,13 @@
 import { useMemo, useState, useEffect } from 'react';
 import DispersionJugadores from './DispersionJugadores';
 import { FORMATOS } from './formato';
+import { tieneIntentosSuficientes, SUELO_TEXTO } from './volumen';
+
+// Columnas de acierto con suelo de volumen (volumen.js). La tabla ordenable es
+// una consulta del lector, no una afirmacion nuestra: el valor crudo se queda
+// y se ordena tal cual, pero la celda bajo el suelo lleva la misma marca que el
+// radar (" *") y la nota del pie dice la regla una vez (lote 35, punto 2).
+const CON_SUELO = ['ts', 'efg', 't3Pct'];
 
 // `fmt` por columna (_instrucciones.md 23/10, punto 4). `pm` (+/-) en n0, no
 // s1: mismo criterio que `dato('+/-', carrera.pm, true)` en la ficha del
@@ -179,6 +186,10 @@ export default function Jugadores({ jugadores, grupos, equipos, minPj, onVerEqui
   const clicOrden = clave =>
     setOrden(o => o.clave === clave ? { clave, desc: !o.desc } : { clave, desc: true });
 
+  // La nota solo si alguna fila VISIBLE lleva la marca.
+  const columnasMarcadas = columnas.filter(c => CON_SUELO.includes(c.clave) &&
+    filas.slice(0, limite).some(j => !tieneIntentosSuficientes(j, c.clave)));
+
   return (
     <>
       <div className="filtros">
@@ -251,6 +262,9 @@ export default function Jugadores({ jugadores, grupos, equipos, minPj, onVerEqui
                       : c.clave === 'nombre'
                       ? <span className="enlace" onClick={() => onVerJugador(j.idJugador)}>{j.nombre}</span>
                       : c.fmt ? FORMATOS[c.fmt](valor(j, c.clave)) : valor(j, c.clave)}
+                    {CON_SUELO.includes(c.clave) && !tieneIntentosSuficientes(j, c.clave) && (
+                      <span title={`Menos de ${SUELO_TEXTO[c.clave]}`}> *</span>
+                    )}
                   </td>
                 ))}
               </tr>
@@ -258,6 +272,15 @@ export default function Jugadores({ jugadores, grupos, equipos, minPj, onVerEqui
           </tbody>
         </table>
       </div>
+      )}
+
+      {modo !== 'grafico' && columnasMarcadas.length > 0 && (
+        <p className="pie" style={{ marginTop: 4 }}>
+          * Pocos intentos para que el porcentaje diga algo del jugador:{' '}
+          {columnasMarcadas.map(c => `${c.titulo}, menos de ${SUELO_TEXTO[c.clave]}`).join('; ')}.
+          El valor es real y la tabla lo ordena tal cual; con tan pocos tiros habla más
+          del tamaño de la muestra que del tirador.
+        </p>
       )}
 
       {modo !== 'grafico' && filas.length > limite && (

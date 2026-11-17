@@ -211,7 +211,7 @@ export default function Comparador({ temporada = '2025' }) {
                         const p = pctDe(j, m.k);
                         return (
                           <td key={j.idJugador} className={i === mejor ? 'comparador-mejor' : ''}>
-                            <span className="comparador-crudo">{FORMATOS['n' + m.dec](v)}</span>
+                            <span className="comparador-crudo">{FORMATOS['n' + m.dec](v)}{p == null && sinVolumen(j, m.k) ? ' *' : ''}</span>
                             {p != null && <span className="comparador-pct">P{p}</span>}
                             {p == null && sinVolumen(j, m.k) && (
                               <span className="comparador-pct" title={`Menos de ${SUELO_TEXTO[m.k]}`}>P —</span>
@@ -239,7 +239,7 @@ export default function Comparador({ temporada = '2025' }) {
             Cada celda muestra el valor por partido y, debajo, el percentil dentro de su categoría (P = mejor que ese % de jugadores de su categoría).
             {catsMezcladas && ' Como comparas jugadores de categorías distintas, el percentil es la referencia justa: el valor crudo no es directamente equiparable entre categorías.'}
             {' '}El resaltado marca el mejor percentil de cada fila.
-            {hayRecorte && ' «P —» = sin percentil: el jugador no llega al mínimo de intentos por partido que hace falta para que un porcentaje diga algo de él (' +
+            {hayRecorte && ' «*» y «P —» = sin percentil: el jugador no llega al mínimo de intentos por partido que hace falta para que un porcentaje diga algo de él (' +
               [...new Set(faltan)].map(k => `${METRICAS.find(m => m.k === k).etiq}: ${SUELO_TEXTO[k]}`).join('; ') + ').'}
           </p>
 
