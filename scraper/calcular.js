@@ -586,3 +586,15 @@ if (_clubesDesconocidos.size) {
 const sinId = salidaJugadores.filter(j => String(j.idJugador).startsWith('sin-id:')).length;
 console.log(`Equipos: ${salidaEquipos.length} | Filas jugador-equipo: ${salidaJugadores.length} | Licencias únicas: ${carreras.length}`);
 console.log(`Jugadores con más de una etapa: ${traspasados.length} | Filas sin ID: ${sinId}`);
+
+// Lista de temporadas que la app ofrece en su selector (App.jsx la pide al
+// arrancar: sin ella la app no carga). Hasta el 17/11/2026 solo existia en el
+// espejo web/public/data, escrita a mano; al dejar de versionar el espejo
+// desaparecio del build y la app cayo (lote 38). Se deriva de lo que hay: cada
+// directorio de temporada con partidos.json, de la mas reciente a la mas vieja.
+const dirComp = path.join('data', 'processed', COMP_NOMBRE);
+const temporadas = fs.readdirSync(dirComp)
+  .filter(d => /^\d{4}$/.test(d) && fs.existsSync(path.join(dirComp, d, 'partidos.json')))
+  .sort((a, b) => b.localeCompare(a));
+fs.writeFileSync(path.join(dirComp, 'temporadas.json'), JSON.stringify(temporadas) + '\n');
+console.log(`temporadas.json: ${temporadas.join(', ')}`);
