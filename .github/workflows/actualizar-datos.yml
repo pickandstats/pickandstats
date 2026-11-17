@@ -212,6 +212,19 @@ jobs:
           node scraper/calcular-cuartos.js --competicion 1 --temporada $T && \
           node scraper/boxscore-cuartos.js --competicion 1 --temporada $T
 
+      # TAP/TR/FC/FR por cuartos contra el total del HTML, jugador a jugador (lote
+      # 35). Escribe campos-cuartos.json por categoria, que entra en el commit y
+      # lee el resumen de salud (critico: un acta por DEBAJO del HTML en 2 o mas,
+      # que es la firma de una degradacion). Alarma, no guardian.
+      - name: Cuartos · cruce de campos contra el HTML
+        continue-on-error: true
+        run: |
+          for g in 3 2 1; do
+            C=$(node -p "require('./scraper/config').COMPETICIONES[$g]")
+            T=$(node -p "require('./data/processed/estado.json').competiciones['$C'].temporada")
+            node scraper/verificar-campos-cuartos.js --competicion $g --temporada $T || true
+          done
+
       # Sube al release las actas de la temporada en curso (ARQUITECTURA.md S17.4),
       # el respaldo persistente del que restaura el paso "Asegurar actas". Crea el
       # release si no existe (bootstrap en la 1a ejecucion). Siempre sube la

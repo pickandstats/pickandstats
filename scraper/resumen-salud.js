@@ -365,6 +365,26 @@ if (!regresion) {
     lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
 }
 
+// TAP/TR/FC/FR por cuartos contra el total del HTML (lote 35). CRITICO si un
+// acta se queda 2 o mas por DEBAJO del HTML en un campo de un equipo (firma de
+// una degradacion: ceros donde habia valores), si no se comparo ninguna o si el
+// JSON no es de hoy. Las demas diferencias (el acta cuenta alguna falta mas que
+// el HTML, ruido normal entre las dos fuentes) solo se cuentan.
+for (const g of Object.keys(CFG.COMPETICIONES)) {
+  const nombre = CFG.COMPETICIONES[g];
+  const sel = estado.competiciones[nombre] && estado.competiciones[nombre].temporada;
+  if (!sel) continue;
+  const cc = leerJSON(path.join('data', 'processed', nombre, sel, 'campos-cuartos.json'));
+  if (!cc) { avisos.push(`${nombre} ${sel}: no existe campos-cuartos.json (verificar-campos-cuartos.js no ha corrido)`); continue; }
+  if (cc.fecha !== new Date().toISOString().slice(0, 10)) { criticos.push(`${nombre} ${sel}: el cruce de campos por cuartos es del ${cc.fecha}; no se ha comprobado en este run.`); continue; }
+  if (!cc.comparadas) { criticos.push(`${nombre} ${sel}: el cruce de campos por cuartos no comparo ninguna acta (${cc.formatoViejo} formato viejo, ${cc.sinHtml} sin HTML).`); continue; }
+  const degradadas = cc.noCuadran.filter(n => n.deficit >= 2);
+  if (degradadas.length)
+    criticos.push(`${nombre} ${sel}: ${degradadas.length} acta(s) con TAP/FC/FR por cuartos 2 o mas por debajo del HTML -> ${degradadas.slice(0, 8).map(n => n.id).join(', ')} (¿degradacion? reextraer con --reextraer)`);
+  lineas.push(`${nombre} ${sel}: campos por cuartos, ${cc.cuadran} de ${cc.comparadas} actas cuadran con el HTML` +
+    (cc.noCuadran.length ? ` (${cc.noCuadran.length} con diferencias de fuente)` : '') + (cc.sinTR ? `; TR no comparado en ${cc.sinTR} (el acta no lo trae)` : ''));
+}
+
 // Clasificacion contra la oficial de la FEB (lote 36). CRITICO si el orden no
 // cuadra con los datos cuadrando (es la tabla mas leida y la FEB es la fuente
 // autoritativa), si no se comparo ningun grupo (un verificador que no compara
