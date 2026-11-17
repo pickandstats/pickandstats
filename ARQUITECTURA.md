@@ -1511,3 +1511,55 @@ La conclusión de ARQUITECTURA §10 («los shot charts esperan a que la FEB cont
 (a 1,2 s), 0 a la API.
 
 Detalle: `_informe-trigesimocuarto-lote.md`.
+
+### 17.21 La clasificación desempataba con el régimen equivocado, y ahora se cruza con la oficial *(17/11/2026)*
+
+La sesión de la nube comparó a mano nuestra tabla con la de la FEB: en Tercera B-B, tras
+la J7, había 7 de 14 posiciones mal, **incluido el líder** (decíamos Gran Canaria y es
+Fundal Alcobendas). En Primera, tras la J8, había 6 de 18 mal, con todos los equipos a 8
+partidos. Eran **dos fallos distintos**, más un tercero que encontró el cruce:
+
+1. **Régimen de segunda vuelta desde la J2.** `Clasificacion.jsx` calculaba
+   `totalJornadas` como la jornada más alta de `partidos.json`, que **solo trae las
+   jugadas**. Tras la J8 la «mitad» era la J4, así que se aplicaba el 84.2 (enfrentamiento
+   directo primero) donde manda el 84.1 (diferencia y cociente generales). La nota al pie
+   de la propia tabla lo contradecía. En temporadas cerradas no mordía, porque la última
+   jornada jugada coincide con la final. Ahora `totalJornadasGrupo` usa el calendario si
+   lo hay; si no, lo deduce del número de equipos: 2(N−1) si N es par, 2N si es impar.
+2. **Faltaba el art. 79.b.** Ordenábamos solo por victorias. El reglamento añade el
+   porcentaje de victorias cuando no todos han jugado los mismos partidos, y la tabla
+   oficial muestra que son **criterios sucesivos**, no «porcentaje en vez de victorias»:
+   un 5-1 va delante de un 5-2, pero un 3-2 (60 %) va detrás de un 4-3 (57 %). Se compara
+   con productos cruzados para que el empate sea exacto y pase al art. 84.
+3. **El reinicio del desempate.** «Si se reduce el número de empatados se iniciará el
+   procedimiento entre los que sigan empatados»: en cuanto **un** criterio parte el grupo,
+   cada trozo vuelve a empezar desde el primero. Nosotros solo reiniciábamos si el empate
+   seguía en todos los criterios. Lo destapó la tabla final de Tercera C-A 2025/26: un
+   empate a cuatro a 11-15 dejaba a Calvià y Barbastro 4-2 en la miniliga; la FEB los
+   separa por su enfrentamiento directo y nosotros lo hacíamos por la miniliga de cuatro.
+
+**Código:** el orden vive en `web/src/ordenClasificacion.js`, una función pura que usan
+la vista y el verificador. Se llama así y no `clasificacion.js` porque en macOS chocaba
+con `Clasificacion.jsx`, ya que el sistema de ficheros no distingue mayúsculas.
+**Test:** `node test/verificar-clasificacion.mjs`, con los partidos congelados en
+`test/fixtures/` y los órdenes oficiales como esperados. Falla con el código anterior y
+pasa con el nuevo.
+
+**Comprobación permanente:** `scraper/verificar-clasificacion-oficial.js`, paso del
+workflow tras calcular Primera. `resultados.aspx` ya trae `clasificacionDataGrid` con el
+id de equipo, así que se cruza por id, no por nombre, a la jornada que muestra la FEB:
+
+- Si PJ/PG/PP/PF/PC no cuadran, la diferencia es de entrada y ese grupo no se juzga
+  (aviso).
+- Si cuadran, cada posición distinta es un fallo nuestro (crítico en `resumen-salud.js`).
+- También es crítico que no se compare ningún grupo, o que el JSON no sea de hoy.
+
+Cuesta unas 13 peticiones. Con `--temporada` cruza una temporada cerrada sin tocar el
+JSON del pipeline. El control negativo, con la lógica vieja sobre Primera, falla con
+exactamente los 6.
+
+Pendiente, sin tocar: en Tercera E-A 2025/26 la FEB pone a Tabernes (12-14) por encima de
+Uixó (13-13), que tiene la incomparecencia de la J18. Encaja con que la incomparecencia
+cueste un punto de clasificación (o una victoria) y, ya empatados, se aplique el 84.2.c.
+Eso lo regula el Reglamento Disciplinario, que no tenemos. Además, Segunda 2023 Este y
+Tercera 2024 D-B y E-A tienen un partido menos que la FEB en nuestros datos.
