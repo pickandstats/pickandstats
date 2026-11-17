@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/copiar-datos.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/copiar-datos.mjs",
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview"

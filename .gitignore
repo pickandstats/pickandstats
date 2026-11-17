@@ -161,3 +161,7 @@ data/processed/scrape-run-*.json
 _informe*.md
 _instrucciones*.md
 _informe.txt
+
+# Espejo de data/processed que generan predev/prebuild (web/scripts/copiar-datos.mjs)
+# y el cp del deploy. No se versiona: lote 35, opcion (a).
+web/public/data/
