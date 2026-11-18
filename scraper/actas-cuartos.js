@@ -472,8 +472,13 @@ try {
   // —hubo errores y no se escribio nada—, senal de que la FEB no responde o algo
   // se rompio. Errores sueltos con extracciones que si funcionaron no fallan: son
   // el goteo normal de PDF caidos, que se reintentan la semana siguiente.
-  if (errores > 0 && procesados === 0) {
-    console.error(`\n❌ Fallo sistemico: ${errores} errores y 0 actas escritas. Revisa la conexion o si la FEB cambio las actas.`);
+  // Un acta que SI se descargo y parseo pero no verifica prueba lo contrario de
+  // un fallo sistemico (la FEB responde y el parser funciona): no cuenta. Sin
+  // esto, un run sin partidos nuevos con una sola acta declarada que no verifica
+  // salia en rojo (run 44303811890, 18/11/2026: 0 escritas, 1 error = 2536876).
+  const erroresSistemicos = errores - sinVerificarIds.length;
+  if (erroresSistemicos > 0 && procesados === 0) {
+    console.error(`\n❌ Fallo sistemico: ${erroresSistemicos} errores (sin contar actas que no verifican) y 0 actas escritas. Revisa la conexion o si la FEB cambio las actas.`);
     process.exit(1);
   }
 })().catch(err => { console.error('Error inesperado en actas-cuartos:', err.message); process.exit(1); });
