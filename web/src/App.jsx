@@ -129,6 +129,7 @@ export default function App() {
   // El valor real viene de parametros.json (lo calcula calcular.js); este es solo
   // el respaldo mientras carga o si una temporada vieja no tiene el fichero.
   const [minPj, setMinPj] = useState(MIN_PJ_DEFECTO);
+  const [datosHasta, setDatosHasta] = useState(null);
   const [fases, setFases] = useState([]); // partidos de fases (playoffs, ascensos) para dar URL propia
   // Arranca en `true` (lote 33, 0.1): mientras `temporada` es null el efecto de
   // datos sale sin hacer nada (no sabe aun que temporada pedir), asi que con
@@ -190,7 +191,7 @@ export default function App() {
     setCargando(true);
     setSinDatos(false);
     setProximaFecha(null);
-    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]); setSrsPestillo({}); setMinPj(MIN_PJ_DEFECTO);
+    setEquipos([]); setJugadores([]); setCarreras([]); setPartidos([]); setJugadoresCuartos([]); setEquiposCuartos([]); setFases([]); setSrsPestillo({}); setMinPj(MIN_PJ_DEFECTO); setDatosHasta(null);
     const base = `${import.meta.env.BASE_URL}data/${competicion}/${temporada}`;
     const cargar = url => fetch(url).then(r => {
       if (!r.ok) throw new Error(`${r.status} ${url}`);
@@ -230,6 +231,7 @@ export default function App() {
         setFases(fasesData || []);
         setSrsPestillo((parametros && parametros.srsPestillo) || {});
         setMinPj((parametros && parametros.minPj) || MIN_PJ_DEFECTO);
+        setDatosHasta((parametros && parametros.datosHasta) || null);
         setEquipoSel(null); setJugadorSel(null); setPartidoSel(null); setCargando(false);
       })
       .catch(err => {
@@ -383,7 +385,19 @@ export default function App() {
       <div className="cabecera">
         <div className="cabecera-marca">
           <h1 className="titulo-app">Estadísticas avanzadas · {compActual.nombre}</h1>
-          {fechaHoraDatos && <p className="pie" style={{ margin: '2px 0 0' }}>Datos al {fechaHoraDatos}</p>}
+          {/* Hasta que jornada llegan los datos, no cuando miramos por ultima vez
+              (lote 38, 1.4): la jornada es lo que le dice algo al lector; la hora
+              de consulta pasa al title. Sin el dato (temporadas calculadas antes),
+              la linea de siempre. */}
+          {datosHasta ? (
+            <p className="pie" style={{ margin: '2px 0 0' }} title={fechaHoraDatos ? `Consultado el ${fechaHoraDatos}` : undefined}>
+              Datos hasta la jornada {datosHasta.jornada}
+              {datosHasta.aplazadosPendientes > 0 &&
+                ` · ${datosHasta.aplazadosPendientes} partido${datosHasta.aplazadosPendientes === 1 ? '' : 's'} aplazado${datosHasta.aplazadosPendientes === 1 ? '' : 's'} pendiente${datosHasta.aplazadosPendientes === 1 ? '' : 's'}`}
+            </p>
+          ) : (
+            fechaHoraDatos && <p className="pie" style={{ margin: '2px 0 0' }}>Datos al {fechaHoraDatos}</p>
+          )}
         </div>
         <div className="cabecera-buscador">
           <Buscador historico={historico} equipos={equipos}

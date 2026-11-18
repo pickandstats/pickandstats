@@ -537,8 +537,30 @@ fs.writeFileSync(path.join(DIR_OUT, 'jugadores.json'), JSON.stringify(salidaJuga
 // (srs-pestillo.json). Un sitio por temporada, y la app lo lee en vez de llevar su
 // propia copia -- si el 12 cambia algun dia, las temporadas ya calculadas siguen
 // describiendo el valor con el que de verdad se calcularon, no el de hoy.
+// "Datos hasta la jornada N · K partidos aplazados pendientes" (lote 38, 1.4):
+// N es la ultima jornada cuya fecha nominal (la de la etiqueta "Jornada 7(14/11/2026)"
+// del indice de la FEB) ya paso, la MINIMA entre grupos, para que sea verdad para
+// todo lo que hay en pantalla; K, los partidos sin resultado de las jornadas hasta
+// N. Un aplazado es informacion, no un estorbo: se cuenta, no se esconde.
+function jornadaDeDatos() {
+  const hoy = new Date().toISOString().slice(0, 10);
+  const fechaDe = j => { const m = String(j).match(/\((\d{2})\/(\d{2})\/(\d{4})\)/); return m ? `${m[3]}-${m[2]}-${m[1]}` : null; };
+  let n = null, aplazados = 0;
+  for (const grupo of fs.readdirSync(DIR_RAW)) {
+    const fIndice = path.join(DIR_RAW, grupo, '_indice.json');
+    if (grupo === 'actas' || grupo.startsWith('_') || !fs.existsSync(fIndice)) continue;
+    const indice = JSON.parse(fs.readFileSync(fIndice, 'utf8'));
+    const nGrupo = Math.max(0, ...indice.filter(p => fechaDe(p.jornada) && fechaDe(p.jornada) <= hoy).map(p => numJornada(p.jornada)));
+    n = n === null ? nGrupo : Math.min(n, nGrupo);
+    aplazados += indice.filter(p => numJornada(p.jornada) <= nGrupo && !/\d+\s*-\s*\d+/.test(p.resultado || '')).length;
+  }
+  return n ? { jornada: n, aplazadosPendientes: aplazados } : null;
+}
+const datosHasta = jornadaDeDatos();
+if (datosHasta) console.log(`Datos hasta la jornada ${datosHasta.jornada} · ${datosHasta.aplazadosPendientes} aplazado(s) pendiente(s)`);
+
 fs.writeFileSync(path.join(DIR_OUT, 'parametros.json'),
-  JSON.stringify({ minPj: MIN_PJ, srsPestillo: pestillo }, null, 1));
+  JSON.stringify({ minPj: MIN_PJ, srsPestillo: pestillo, ...(datosHasta ? { datosHasta } : {}) }, null, 1));
 
 // fases.json de una temporada SIN fases todavia (lote 33, 0.2): la app lo pide
 // en cada carga (App.jsx y Clasificacion.jsx) y, si no existe, el servidor
