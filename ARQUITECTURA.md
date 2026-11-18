@@ -1611,3 +1611,87 @@ TAP/TR/FC/FR de los cuartos del acta y la compara con el total del HTML, jugador
   ausente y no de la bandera, pero engañaba a cualquier chequeo que se fiara de ella.
   Recuperar el dato exige
   reextraer las actas de 2025/26 con el `difJug` corregido.
+
+### 17.23 La app caída por un fichero que solo vivía en el espejo, y una regla que tiene fecha *(17/11/2026)*
+
+**La caída.** Al dejar de versionar `web/public/data` (opción a, §17.22), la app dejó de
+arrancar en producción. `temporadas.json` de las tres categorías **solo existía en el
+espejo**: escrito a mano en su día, nada lo generaba y nunca había estado en
+`data/processed`. El build copia `data/processed`, así que el fichero desapareció.
+`App.jsx` lo pide al arrancar, recibía el HTML de un 404 y se iba al estado de error.
+
+- **Arreglo:** ahora lo genera `calcular.js` desde los directorios de temporada con
+  `partidos.json`, de la más reciente a la más vieja.
+- **Comparación del espejo con `data/processed`:** solo había **6** ficheros exclusivos
+  del espejo: los 3 `temporadas.json` y `cuartos-run-1/2/3.json`, que son informes de run
+  que la app no pide.
+- **Lo que faltó al hacer la opción (a):** se comprobó que ningún script leyera del espejo,
+  pero no se comparó el espejo con su fuente.
+
+**Un despliegue verde no es un sitio que funciona.** El deploy, el guardián de cuartos y
+el de la cinta salieron en verde con la portada caída. Ahora
+`scraper/verificar-arranque-app.js` se ejecuta sobre `_publish/app` antes de subir el
+artefacto:
+
+- Exige todo lo que `App.jsx` pide en el primer render, y que sea **JSON válido**:
+  - global: `estado` y `equipos-datos`;
+  - por competición: `temporadas` e `historico`;
+  - por temporada listada: `equipos`, `jugadores`, `carreras` y `partidos`.
+- Los opcionales que la app carga con `.catch` solo dan aviso.
+- **Control negativo:** sin `temporadas.json`, o con un `partidos.json` que es el HTML de
+  un 404, bloquea.
+- **Si `App.jsx` añade una carga al arrancar, hay que añadirla aquí.**
+
+**Una regla no es una constante: tiene fecha.** Llevábamos un año tratando el artículo 84
+como perpetuo. `reglaClasificacion(temporada)` en `ordenClasificacion.js`:
+
+- **puntos** (2/1/0, con 0 por incomparecencia) hasta 2025/26;
+- **victorias y porcentaje** desde 2026/27.
+
+El pie de la tabla también lleva fecha: describe la regla de la temporada que se mira, y
+en las de puntos la tabla muestra la columna PT. El campo `temporada` de las guías existía
+para congelar ejemplos; ahora sabemos que también cambian las reglas.
+
+**Residuos declarados.** Tres casos que ningún criterio general explica viven en
+`CONOCIDOS` de `verificar-clasificacion-oficial.js`. Se listan como «conocido» y no
+cuentan como regresión, pero solo si fallan exactamente esas posiciones:
+
+- Tercera 2023 C-B J26;
+- Primera 2024 J34;
+- Tercera 2023 D-A J11.
+
+**Laguna declarada: cuartos de 2025/26.** Traen puntos completos pero no
+TAP/TR/FC/FR en Q2-Q4. No se reextraen: es una temporada cerrada, el dato está ausente y
+no equivocado, y costaría horas de peticiones a la FEB. Está en `LAGUNAS_DECLARADAS` de
+`verificar-campos-cuartos.js`. No va en el registro de irreparables porque ese registro
+se genera por partido y una entrada a mano se perdería.
+
+**La ironía, séptima de la familia:** `camposCompletosQ2a4` nació para sustituir una
+caché (`verificado`) y se quedó vieja exactamente igual. No escapamos del patrón: lo
+movimos.
+
+**Partidos en el índice sin fichero.** `scraper/verificar-indices.js`, desde
+`resumen-salud.js`, da crítico en temporadas cerradas y aviso en la temporada en curso.
+Habría cazado en julio los tres partidos rellenados hoy, y en el estado anterior al
+relleno los lista. El relleno fue `scrape.js --temporada --grupo`, después `calcular.js`
+e `historico.js`; el cruce oficial dio datos idénticos y la referencia de regresión se
+regeneró solo para Segunda 2023 y Tercera 2024. **Gotcha:**
+`generar-referencia.cjs <comp> <temp>` reescribía la referencia entera con esa sola
+temporada (se perdían las otras ocho y la regresión seguía en verde). Ahora sustituye
+solo las pedidas.
+
+**Dorsal `00`/`07` frente a `0`/`7`.** `calcular-cuartos.js` empareja el acta con el
+boxscore por dorsal exacto, y el jugador que no casaba se **omitía entero** de los
+cuartos: 248 participaciones en 2025/26 y 2026/27. Ahora normaliza los ceros a la
+izquierda. 2025/26 se regeneró en local: con el código anterior se reproduce lo publicado
+byte a byte, y con el nuevo solo cambian los `jugadores-cuartos.json`. 2026/27 se
+regenera en el próximo run de CI, que tiene todas las actas. Los demás jugadores que no
+casan son convocados sin minutos, que el HTML no lista, y son inocuos.
+
+**«Datos hasta la jornada N · K partidos aplazados pendientes».** Lo calcula
+`calcular.js` desde las etiquetas de jornada del índice y lo guarda en
+`parametros.json.datosHasta`:
+
+- N es la última jornada cuya fecha nominal ya pasó, la mínima entre grupos;
+- K son los partidos sin resultado hasta N;
+- la hora de consulta va al `title`.
