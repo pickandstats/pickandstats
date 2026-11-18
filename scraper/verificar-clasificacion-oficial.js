@@ -68,6 +68,28 @@ function leerTablaOficial($) {
   return { filas, cabecera, jornada: entero((jornadaTxt.match(/jornada\s*(\d+)/i) || [])[1]), jornadaTxt };
 }
 
+// Residuos CONOCIDOS (lote 38): con la regla de su temporada siguen sin cuadrar
+// y ningun criterio general los explica. Se declaran, no se tapan: el cruce los
+// lista con su motivo y no los cuenta como regresion, pero SOLO si lo que falla
+// son exactamente esas posiciones -- cualquier otra diferencia en el grupo
+// sigue contando.
+const MOTIVO_NO_EXPLICADO = 'no explicado por ningun criterio general (¿edicion del RGyC anterior a mayo de 2026?)';
+const CONOCIDOS = {
+  // 1-1 entre ellos, diferencia particular 0 y mismos tantos a favor entre ellos
+  // (129-129); por diferencia general iria Granollers, la FEB pone a Roser.
+  'tercerafeb 2023 C-B J26': { posiciones: [10, 11], motivo: MOTIVO_NO_EXPLICADO },
+  // Igual: 157-157 entre ellos; por diferencia general iria Betis.
+  'primerafeb 2024 UNICO J34': { posiciones: [3, 4], motivo: MOTIVO_NO_EXPLICADO },
+  // Empate a 17 PT en primera vuelta; por diferencia general iria Unicaja, la
+  // FEB pone a La Zubia (mas victorias). Solo visible al pedir la J11.
+  'tercerafeb 2023 D-A J11': { posiciones: [3, 4], motivo: MOTIVO_NO_EXPLICADO },
+};
+const conocidoDe = (comp, temp, grupo, jornada, posicionesMal) => {
+  const c = CONOCIDOS[`${comp} ${temp} ${grupo} J${jornada}`];
+  const mal = posicionesMal.map(m => m.pos).sort((a, b) => a - b);
+  return c && mal.length && JSON.stringify(mal) === JSON.stringify(c.posiciones) ? c.motivo : null;
+};
+
 function compararGrupo(oficial, nuestra) {
   const nuestraPorId = new Map(nuestra.map((e, i) => [e.id, { ...e, pos: i + 1 }]));
   const datosDistintos = [];
@@ -85,7 +107,7 @@ function compararGrupo(oficial, nuestra) {
 }
 
 async function main() {
-  const { ordenarClasificacion, totalJornadasGrupo, numJornada } = await import('../web/src/ordenClasificacion.js');
+  const { ordenarClasificacion, reglaClasificacion, totalJornadasGrupo, numJornada } = await import('../web/src/ordenClasificacion.js');
   const estado = leerJSON(path.join('data', 'processed', 'estado.json')) || { competiciones: {} };
   const salida = { fecha: new Date().toISOString().slice(0, 10), grupos: [] };
 
@@ -124,22 +146,28 @@ async function main() {
       }
       const delGrupo = partidos.filter(p => p.grupo === grupo.corto);
       const calGrupo = calendario?.partidos?.filter(p => p.grupo === grupo.corto);
-      const nuestra = ordenarClasificacion(delGrupo, { jornada, totalJornadas: totalJornadasGrupo(delGrupo, calGrupo) });
+      const nuestra = ordenarClasificacion(delGrupo, {
+        jornada, totalJornadas: totalJornadasGrupo(delGrupo, calGrupo), regla: reglaClasificacion(temporada),
+      });
       Object.assign(reg, compararGrupo(filas, nuestra));
+      reg.regla = reglaClasificacion(temporada);
+      const conocido = !reg.datosDistintos.length && conocidoDe(comp, temporada, grupo.corto, jornada, reg.posicionesMal);
+      if (conocido) reg.conocido = conocido;
       reg.ultimaJornadaNuestra = delGrupo.reduce((m, p) => Math.max(m, numJornada(p.jornada)), 0);
       salida.grupos.push(reg);
 
-      const marca = reg.datosDistintos.length ? '≈' : reg.posicionesMal.length ? '✗' : '✓';
+      const marca = reg.datosDistintos.length ? '≈' : reg.conocido ? '○' : reg.posicionesMal.length ? '✗' : '✓';
       console.log(`${marca} ${comp} ${grupo.corto} J${jornada}: ` +
         (reg.datosDistintos.length
           ? `datos distintos (${reg.datosDistintos.length}), el orden no se juzga -> ${reg.datosDistintos.slice(0, 3).join(' · ')}`
-          : `${reg.posicionesMal.length} de ${filas.length} posiciones distintas`));
+          : `${reg.posicionesMal.length} de ${filas.length} posiciones distintas` +
+            (reg.conocido ? ` (CONOCIDO: ${reg.conocido})` : '')));
       for (const m of reg.datosDistintos.length ? [] : reg.posicionesMal)
         console.log(`     ${m.pos}. FEB ${m.oficial} | nosotros ${m.nosotros}`);
     }
   }
 
-  const conOrdenMal = salida.grupos.filter(r => !r.error && !r.datosDistintos.length && r.posicionesMal.length);
+  const conOrdenMal = salida.grupos.filter(r => !r.error && !r.datosDistintos.length && r.posicionesMal.length && !r.conocido);
   const comparados = salida.grupos.filter(r => !r.error && !r.datosDistintos.length);
   salida.resumen = {
     grupos: salida.grupos.length,
@@ -147,6 +175,7 @@ async function main() {
     conDatosDistintos: salida.grupos.filter(r => r.datosDistintos?.length).length,
     sinTabla: salida.grupos.filter(r => r.error).length,
     gruposConOrdenMal: conOrdenMal.length,
+    conocidos: salida.grupos.filter(r => r.conocido).length,
     posicionesMal: conOrdenMal.reduce((s, r) => s + r.posicionesMal.length, 0),
   };
   // Un verificador que no compara nada no es un verificador: si ningun grupo

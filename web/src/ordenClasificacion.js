@@ -43,9 +43,23 @@ export function totalJornadasGrupo(partidosGrupo, calendarioGrupo = null) {
 //   ocupa la ULTIMA posicion entre los empatados a victorias con el, pase lo que
 //   pase con el resto de criterios.
 //
+// Una regla no es una constante: tiene fecha (lote 38). La FEB no ha ordenado
+// igual todas las temporadas, y lo dicen sus propias tablas oficiales:
+//   - hasta 2025/26: por PUNTOS (2 por victoria, 1 por derrota, 0 por
+//     incomparecencia; la tabla trae la columna PT). Caso decisivo: Primera
+//     2025/26 tras la J30, lider Leyma Coruna (25-4, 54 PT) por delante de
+//     Obradoiro (25-3, 53 PT).
+//   - desde 2026/27: por VICTORIAS y, con las mismas, por PORCENTAJE (la tabla
+//     trae DIF y %). Fundal (5-1) va delante de Gran Canaria (5-2), que tendria
+//     mas puntos.
+// Con los partidos igualados y sin sanciones las dos dan lo mismo
+// (PT = PG + PJ); solo se separan con aplazados o incomparecencias.
+export const reglaClasificacion = temporada => (Number(temporada) >= 2026 ? 'victorias' : 'puntos');
+
 // partidos: los del grupo (cualquier jornada; se filtran por `jornada`).
 // totalJornadas: las de la liga regular COMPLETA del grupo, no las jugadas.
-export function ordenarClasificacion(partidos, { jornada, totalJornadas }) {
+// regla: 'victorias' | 'puntos' (reglaClasificacion(temporada)).
+export function ordenarClasificacion(partidos, { jornada, totalJornadas, regla = 'victorias' }) {
   const jugados = partidos
     .filter(p => numJornada(p.jornada) <= jornada)
     .map(p => {
@@ -68,15 +82,21 @@ export function ordenarClasificacion(partidos, { jornada, totalJornadas }) {
     if (gl > gv) { L.pg++; V.pp++; } else { V.pg++; L.pp++; }
   }
 
-  const equiposArr = Object.values(tab).map(e => ({ ...e, nombre: nombreEq[e.id], dif: e.pf - e.pc }));
-
   // Equipos con un 2-0 en contra. El formato del resultado es literalmente "0-2"
   // o "2-0" (ver data/processed/<comp>/<temp>/excluidos.json).
   const conDosCero = new Set();
+  const dosCeroEnContra = {};
   for (const { p, gl, gv } of jugados) {
-    if (gl === 0 && gv === 2) conDosCero.add(p.local.id);
-    if (gl === 2 && gv === 0) conDosCero.add(p.visitante.id);
+    const perdedor = gl === 0 && gv === 2 ? p.local.id : gl === 2 && gv === 0 ? p.visitante.id : null;
+    if (perdedor) { conDosCero.add(perdedor); dosCeroEnContra[perdedor] = (dosCeroEnContra[perdedor] || 0) + 1; }
   }
+
+  // pt: la columna PT de la FEB. La derrota por incomparecencia vale 0, no 1
+  // (Uixo, Tercera E-A 2025/26: 13-13 y 38 PT en la tabla oficial).
+  const equiposArr = Object.values(tab).map(e => ({
+    ...e, nombre: nombreEq[e.id], dif: e.pf - e.pc,
+    pt: 2 * e.pg + e.pp - (dosCeroEnContra[e.id] || 0),
+  }));
 
   const cociente = (pf, pc) => (pc > 0 ? pf / pc : Infinity);
 
@@ -153,7 +173,11 @@ export function ordenarClasificacion(partidos, { jornada, totalJornadas }) {
   // 5-1 por encima de un 5-2. Con las mismas victorias, mas porcentaje es menos
   // partidos jugados. Productos cruzados para que el empate sea exacto y pase
   // al articulo 84.
-  const compararBalance = (a, b) => (b.pg - a.pg) || (b.pg * a.pj - a.pg * b.pj);
+  // Con la regla de puntos (temporadas cerradas) manda PT y el empate a puntos
+  // pasa directo al articulo 84.
+  const compararBalance = regla === 'puntos'
+    ? (a, b) => b.pt - a.pt
+    : (a, b) => (b.pg - a.pg) || (b.pg * a.pj - a.pg * b.pj);
 
   const porVictorias = [...equiposArr].sort(compararBalance);
   const final = [];

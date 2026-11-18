@@ -2,7 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import FasesAscenso from './FasesAscenso';
 import PlayOff from './PlayOff';
 import { n0, s0 } from './formato';
-import { numJornada, ordenarClasificacion, totalJornadasGrupo } from './ordenClasificacion';
+import { numJornada, ordenarClasificacion, reglaClasificacion, totalJornadasGrupo } from './ordenClasificacion';
 
 export default function Clasificacion({
   partidos, equipos, grupos, temporada, competicion,
@@ -39,13 +39,16 @@ export default function Clasificacion({
   const [jornadaSel, setJornadaSel] = useState(null);
   const jornadaActiva = jornadaSel ?? ultimaJornada;
 
+  const porPuntos = reglaClasificacion(temporada) === 'puntos';
+
   const clasificacion = useMemo(() => {
     const delGrupo = partidos.filter(p => p.grupo === grupo);
     return ordenarClasificacion(delGrupo, {
       jornada: jornadaActiva,
       totalJornadas: totalJornadasGrupo(delGrupo),
+      regla: reglaClasificacion(temporada),
     });
-  }, [partidos, grupo, jornadaActiva]);
+  }, [partidos, grupo, jornadaActiva, temporada]);
 
   const buscarEquipo = id => equipos.find(e => e.id === id);
   const clicEquipo = id => { const e = buscarEquipo(id); if (e) onVerEquipo(e); };
@@ -104,13 +107,14 @@ export default function Clasificacion({
           <div className="tabla-scroll">
             <table>
               <thead>
-                <tr><th>#</th><th className="izq">Equipo</th><th>PJ</th><th>PG</th><th>PP</th><th>PF</th><th>PC</th><th>Dif</th></tr>
+                <tr><th>#</th><th className="izq">Equipo</th>{porPuntos && <th>PT</th>}<th>PJ</th><th>PG</th><th>PP</th><th>PF</th><th>PC</th><th>Dif</th></tr>
               </thead>
               <tbody>
                 {clasificacion.map((e, i) => (
                   <tr key={e.id}>
                     <td>{i + 1}</td>
                     <td className="izq"><span className="enlace" onClick={() => clicEquipo(e.id)}>{e.nombre}</span></td>
+                    {porPuntos && <td>{n0(e.pt)}</td>}
                     <td>{n0(e.pj)}</td><td>{n0(e.pg)}</td><td>{n0(e.pp)}</td>
                     <td>{n0(e.pf)}</td><td>{n0(e.pc)}</td>
                     <td className={e.dif > 0 ? 'net-pos' : 'net-neg'}>{s0(e.dif)}</td>
@@ -120,15 +124,26 @@ export default function Clasificacion({
             </table>
           </div>
           <p className="pie" style={{ marginTop: 4 }}>
-            Manda el número de victorias. Cuando no todos los equipos han jugado los mismos
-            partidos, entre los igualados a victorias va delante el de mejor porcentaje: un
-            porcentaje más alto nunca adelanta a un equipo con más victorias.
+            {/* El pie lleva fecha, como la regla (lote 38): describe la de ESTA temporada. */}
+            {porPuntos ? (
+              <>
+                Esta temporada se ordenaba por puntos (PT): 2 por victoria, 1 por derrota y 0
+                por un partido perdido por incomparecencia. Por eso un equipo puede quedar
+                por debajo de otro con menos victorias.{' '}
+              </>
+            ) : (
+              <>
+                Manda el número de victorias. Cuando no todos los equipos han jugado los mismos
+                partidos, entre los igualados a victorias va delante el de mejor porcentaje: un
+                porcentaje más alto nunca adelanta a un equipo con más victorias.{' '}
+              </>
+            )}
             Desempates según el <a href="/guias/average-particular-desempates-feb/">artículo 84</a> del
             Reglamento General y de Competiciones de la
             FEB. Hasta el final de la primera vuelta mandan la diferencia y el cociente
             generales; desde la segunda vuelta, el enfrentamiento directo entre los equipos
-            igualados a victorias. Un equipo con un 2-0 en contra ocupa la última posición
-            entre los empatados a victorias con él.
+            igualados. Un equipo con un 2-0 en contra ocupa la última posición
+            entre los empatados con él.
           </p>
         </>
       ) : (

@@ -1,5 +1,5 @@
 {
- "_nota": "Partidos congelados el 17/11/2026 para test/verificar-clasificacion.mjs: Tercera B-B y Primera 2026/27 (datos del run del 16/11) y Tercera C-A 2025/26 completa. No se regeneran: son la entrada fija del test.",
+ "_nota": "Partidos congelados el 17/11/2026 para test/verificar-clasificacion.mjs: Tercera B-B y Primera 2026/27 (run del 16/11), Tercera C-A 2025/26 completa (lote 36), Primera 2025/26 hasta la J30 y Tercera E-A 2025/26 completa (lote 38, regla por puntos). No se regeneran: son la entrada fija del test.",
  "tercera_BB_J7": {
   "competicion": "tercerafeb",
   "grupo": "B-B",
@@ -603,7 +603,8 @@
     },
     "resultado": "81-75"
    }
-  ]
+  ],
+  "temporada": "2026"
  },
  "primera_J8": {
   "competicion": "primerafeb",
@@ -1546,7 +1547,8 @@
     },
     "resultado": "77-86"
    }
-  ]
+  ],
+  "temporada": "2026"
  },
  "tercera_CA_2025_J26": {
   "competicion": "tercerafeb",
@@ -3919,6 +3921,5508 @@
      "nombre": "IMMO SA MARINA CIUTAT D’INCA BASQUET"
     },
     "resultado": "70-68"
+   }
+  ]
+ },
+ "primera_2025_J30": {
+  "competicion": "primerafeb",
+  "temporada": "2025",
+  "grupo": "UNICO",
+  "jornada": 30,
+  "partidos": [
+   {
+    "id": "2486258",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "87-76"
+   },
+   {
+    "id": "2486259",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "97-77"
+   },
+   {
+    "id": "2486260",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "69-78"
+   },
+   {
+    "id": "2486261",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "106-91"
+   },
+   {
+    "id": "2486262",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "63-79"
+   },
+   {
+    "id": "2486264",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "72-70"
+   },
+   {
+    "id": "2486265",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "87-101"
+   },
+   {
+    "id": "2486266",
+    "jornada": "Jornada 1(26/09/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "72-96"
+   },
+   {
+    "id": "2486267",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "70-71"
+   },
+   {
+    "id": "2486268",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "87-72"
+   },
+   {
+    "id": "2486269",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "82-87"
+   },
+   {
+    "id": "2486270",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "93-88"
+   },
+   {
+    "id": "2486271",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "82-73"
+   },
+   {
+    "id": "2486272",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "82-69"
+   },
+   {
+    "id": "2486273",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "90-73"
+   },
+   {
+    "id": "2486274",
+    "jornada": "Jornada 2(03/10/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "101-95"
+   },
+   {
+    "id": "2486276",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "81-74"
+   },
+   {
+    "id": "2486277",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "80-102"
+   },
+   {
+    "id": "2486279",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "89-93"
+   },
+   {
+    "id": "2486280",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "95-96"
+   },
+   {
+    "id": "2486281",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "82-78"
+   },
+   {
+    "id": "2486282",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "58-107"
+   },
+   {
+    "id": "2486283",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "84-94"
+   },
+   {
+    "id": "2486284",
+    "jornada": "Jornada 3(10/10/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "70-82"
+   },
+   {
+    "id": "2486285",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "88-83"
+   },
+   {
+    "id": "2486286",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "91-75"
+   },
+   {
+    "id": "2486287",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "79-59"
+   },
+   {
+    "id": "2486288",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "75-69"
+   },
+   {
+    "id": "2486289",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "88-82"
+   },
+   {
+    "id": "2486290",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "90-75"
+   },
+   {
+    "id": "2486292",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "93-80"
+   },
+   {
+    "id": "2486293",
+    "jornada": "Jornada 4(17/10/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "89-64"
+   },
+   {
+    "id": "2486294",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "94-86"
+   },
+   {
+    "id": "2486295",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "97-61"
+   },
+   {
+    "id": "2486296",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "57-78"
+   },
+   {
+    "id": "2486297",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "82-97"
+   },
+   {
+    "id": "2486298",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "78-79"
+   },
+   {
+    "id": "2486299",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "99-81"
+   },
+   {
+    "id": "2486300",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "87-66"
+   },
+   {
+    "id": "2486301",
+    "jornada": "Jornada 5(24/10/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "80-75"
+   },
+   {
+    "id": "2486304",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "81-73"
+   },
+   {
+    "id": "2486305",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "101-75"
+   },
+   {
+    "id": "2486306",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "68-95"
+   },
+   {
+    "id": "2486307",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "84-80"
+   },
+   {
+    "id": "2486308",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "75-79"
+   },
+   {
+    "id": "2486309",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "59-79"
+   },
+   {
+    "id": "2486310",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "76-72"
+   },
+   {
+    "id": "2486311",
+    "jornada": "Jornada 6(31/10/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "99-76"
+   },
+   {
+    "id": "2486312",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "83-80"
+   },
+   {
+    "id": "2486313",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "93-68"
+   },
+   {
+    "id": "2486314",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "65-71"
+   },
+   {
+    "id": "2486315",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "87-92"
+   },
+   {
+    "id": "2486316",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "71-92"
+   },
+   {
+    "id": "2486317",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "91-65"
+   },
+   {
+    "id": "2486318",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "77-102"
+   },
+   {
+    "id": "2486319",
+    "jornada": "Jornada 7(07/11/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "79-90"
+   },
+   {
+    "id": "2486321",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "109-73"
+   },
+   {
+    "id": "2486322",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "83-76"
+   },
+   {
+    "id": "2486324",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "101-89"
+   },
+   {
+    "id": "2486325",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "82-86"
+   },
+   {
+    "id": "2486326",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "99-76"
+   },
+   {
+    "id": "2486327",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "68-94"
+   },
+   {
+    "id": "2486328",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "88-80"
+   },
+   {
+    "id": "2486329",
+    "jornada": "Jornada 8(14/11/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "84-91"
+   },
+   {
+    "id": "2486330",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "101-90"
+   },
+   {
+    "id": "2486331",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "77-99"
+   },
+   {
+    "id": "2486332",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "99-89"
+   },
+   {
+    "id": "2486333",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "70-87"
+   },
+   {
+    "id": "2486334",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "67-75"
+   },
+   {
+    "id": "2486335",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "83-52"
+   },
+   {
+    "id": "2486336",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "90-71"
+   },
+   {
+    "id": "2486337",
+    "jornada": "Jornada 9(21/11/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "90-76"
+   },
+   {
+    "id": "2486339",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "87-86"
+   },
+   {
+    "id": "2486340",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "88-74"
+   },
+   {
+    "id": "2486341",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "64-68"
+   },
+   {
+    "id": "2486342",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "82-75"
+   },
+   {
+    "id": "2486343",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "97-69"
+   },
+   {
+    "id": "2486344",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "77-70"
+   },
+   {
+    "id": "2486346",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "98-75"
+   },
+   {
+    "id": "2486347",
+    "jornada": "Jornada 10(05/12/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "97-79"
+   },
+   {
+    "id": "2486348",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "88-89"
+   },
+   {
+    "id": "2486349",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "77-68"
+   },
+   {
+    "id": "2486350",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "102-85"
+   },
+   {
+    "id": "2486351",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "78-71"
+   },
+   {
+    "id": "2486352",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "64-76"
+   },
+   {
+    "id": "2486353",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "83-80"
+   },
+   {
+    "id": "2486354",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "69-81"
+   },
+   {
+    "id": "2486355",
+    "jornada": "Jornada 11(12/12/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "72-79"
+   },
+   {
+    "id": "2486357",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "91-86"
+   },
+   {
+    "id": "2486358",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "86-93"
+   },
+   {
+    "id": "2486359",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "86-96"
+   },
+   {
+    "id": "2486360",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "95-59"
+   },
+   {
+    "id": "2486361",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "94-77"
+   },
+   {
+    "id": "2486362",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "106-80"
+   },
+   {
+    "id": "2486363",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "84-62"
+   },
+   {
+    "id": "2486364",
+    "jornada": "Jornada 12(16/12/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "68-74"
+   },
+   {
+    "id": "2486366",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "45-115"
+   },
+   {
+    "id": "2486367",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "72-85"
+   },
+   {
+    "id": "2486368",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "73-67"
+   },
+   {
+    "id": "2486369",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "80-89"
+   },
+   {
+    "id": "2486370",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "77-89"
+   },
+   {
+    "id": "2486371",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "77-65"
+   },
+   {
+    "id": "2486372",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "104-102"
+   },
+   {
+    "id": "2486373",
+    "jornada": "Jornada 13(21/12/2025)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "65-95"
+   },
+   {
+    "id": "2486375",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "95-77"
+   },
+   {
+    "id": "2486376",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "82-80"
+   },
+   {
+    "id": "2486377",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "80-70"
+   },
+   {
+    "id": "2486378",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "103-99"
+   },
+   {
+    "id": "2486379",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "88-77"
+   },
+   {
+    "id": "2486380",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "86-77"
+   },
+   {
+    "id": "2486381",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "75-73"
+   },
+   {
+    "id": "2486382",
+    "jornada": "Jornada 14(28/12/2025)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "91-76"
+   },
+   {
+    "id": "2486384",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "81-68"
+   },
+   {
+    "id": "2486385",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "63-71"
+   },
+   {
+    "id": "2486387",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "102-67"
+   },
+   {
+    "id": "2486388",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "92-75"
+   },
+   {
+    "id": "2486389",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "75-88"
+   },
+   {
+    "id": "2486390",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "83-64"
+   },
+   {
+    "id": "2486391",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "85-87"
+   },
+   {
+    "id": "2486392",
+    "jornada": "Jornada 15(04/01/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "97-88"
+   },
+   {
+    "id": "2486393",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "89-96"
+   },
+   {
+    "id": "2486394",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "80-76"
+   },
+   {
+    "id": "2486395",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "85-102"
+   },
+   {
+    "id": "2486396",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "74-69"
+   },
+   {
+    "id": "2486397",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "79-61"
+   },
+   {
+    "id": "2486398",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "96-93"
+   },
+   {
+    "id": "2486399",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "73-76"
+   },
+   {
+    "id": "2486400",
+    "jornada": "Jornada 16(09/01/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "84-91"
+   },
+   {
+    "id": "2486402",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "71-64"
+   },
+   {
+    "id": "2486403",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "79-88"
+   },
+   {
+    "id": "2486404",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "94-72"
+   },
+   {
+    "id": "2486405",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "87-75"
+   },
+   {
+    "id": "2486406",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "81-74"
+   },
+   {
+    "id": "2486407",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "89-87"
+   },
+   {
+    "id": "2486408",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "101-70"
+   },
+   {
+    "id": "2486409",
+    "jornada": "Jornada 17(16/01/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "83-77"
+   },
+   {
+    "id": "2486411",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "63-82"
+   },
+   {
+    "id": "2486412",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "92-95"
+   },
+   {
+    "id": "2486413",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "80-76"
+   },
+   {
+    "id": "2486414",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "86-68"
+   },
+   {
+    "id": "2486415",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "73-66"
+   },
+   {
+    "id": "2486416",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "69-72"
+   },
+   {
+    "id": "2486417",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "78-72"
+   },
+   {
+    "id": "2486418",
+    "jornada": "Jornada 18(30/01/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "72-105"
+   },
+   {
+    "id": "2486420",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "84-78"
+   },
+   {
+    "id": "2486421",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "89-81"
+   },
+   {
+    "id": "2486422",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "72-94"
+   },
+   {
+    "id": "2486423",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "76-69"
+   },
+   {
+    "id": "2486424",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "64-84"
+   },
+   {
+    "id": "2486425",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "81-75"
+   },
+   {
+    "id": "2486426",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "84-89"
+   },
+   {
+    "id": "2486427",
+    "jornada": "Jornada 19(06/02/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "77-92"
+   },
+   {
+    "id": "2486429",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "78-71"
+   },
+   {
+    "id": "2486430",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "79-80"
+   },
+   {
+    "id": "2486431",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "81-76"
+   },
+   {
+    "id": "2486432",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "100-86"
+   },
+   {
+    "id": "2486433",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "93-65"
+   },
+   {
+    "id": "2486435",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "81-80"
+   },
+   {
+    "id": "2486436",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "85-69"
+   },
+   {
+    "id": "2486437",
+    "jornada": "Jornada 20(10/02/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "79-87"
+   },
+   {
+    "id": "2486438",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "69-76"
+   },
+   {
+    "id": "2486439",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "65-85"
+   },
+   {
+    "id": "2486440",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "93-101"
+   },
+   {
+    "id": "2486441",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "87-90"
+   },
+   {
+    "id": "2486442",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "103-97"
+   },
+   {
+    "id": "2486443",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "61-76"
+   },
+   {
+    "id": "2486444",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "91-90"
+   },
+   {
+    "id": "2486445",
+    "jornada": "Jornada 21(15/02/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "70-92"
+   },
+   {
+    "id": "2486447",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "58-76"
+   },
+   {
+    "id": "2486448",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "82-89"
+   },
+   {
+    "id": "2486449",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "105-82"
+   },
+   {
+    "id": "2486451",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "66-82"
+   },
+   {
+    "id": "2486452",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "81-69"
+   },
+   {
+    "id": "2486453",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "97-74"
+   },
+   {
+    "id": "2486454",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "70-101"
+   },
+   {
+    "id": "2486455",
+    "jornada": "Jornada 22(20/02/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "83-77"
+   },
+   {
+    "id": "2486456",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "68-73"
+   },
+   {
+    "id": "2486457",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "88-72"
+   },
+   {
+    "id": "2486458",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "83-74"
+   },
+   {
+    "id": "2486459",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "81-79"
+   },
+   {
+    "id": "2486460",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "85-78"
+   },
+   {
+    "id": "2486461",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "77-97"
+   },
+   {
+    "id": "2486462",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "92-80"
+   },
+   {
+    "id": "2486463",
+    "jornada": "Jornada 23(06/03/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "77-66"
+   },
+   {
+    "id": "2486465",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "102-104"
+   },
+   {
+    "id": "2486466",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "89-74"
+   },
+   {
+    "id": "2486467",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "74-91"
+   },
+   {
+    "id": "2486468",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "101-49"
+   },
+   {
+    "id": "2486469",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "90-74"
+   },
+   {
+    "id": "2486470",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "59-74"
+   },
+   {
+    "id": "2486472",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "75-86"
+   },
+   {
+    "id": "2486473",
+    "jornada": "Jornada 24(10/03/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "79-87"
+   },
+   {
+    "id": "2486474",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "80-103"
+   },
+   {
+    "id": "2486475",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "86-83"
+   },
+   {
+    "id": "2486476",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "90-66"
+   },
+   {
+    "id": "2486477",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "78-71"
+   },
+   {
+    "id": "2486478",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "82-68"
+   },
+   {
+    "id": "2486479",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "79-77"
+   },
+   {
+    "id": "2486480",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "90-71"
+   },
+   {
+    "id": "2486481",
+    "jornada": "Jornada 25(15/03/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "99-87"
+   },
+   {
+    "id": "2486483",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "69-95"
+   },
+   {
+    "id": "2486484",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "105-84"
+   },
+   {
+    "id": "2486485",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "89-80"
+   },
+   {
+    "id": "2486486",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "57-71"
+   },
+   {
+    "id": "2486487",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "78-77"
+   },
+   {
+    "id": "2486488",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "80-78"
+   },
+   {
+    "id": "2486489",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "72-67"
+   },
+   {
+    "id": "2486490",
+    "jornada": "Jornada 26(20/03/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "84-77"
+   },
+   {
+    "id": "2486492",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "83-81"
+   },
+   {
+    "id": "2486493",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "63-87"
+   },
+   {
+    "id": "2486494",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "65-72"
+   },
+   {
+    "id": "2486495",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "86-77"
+   },
+   {
+    "id": "2486496",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "82-77"
+   },
+   {
+    "id": "2486498",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "87-67"
+   },
+   {
+    "id": "2486499",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "84-105"
+   },
+   {
+    "id": "2486500",
+    "jornada": "Jornada 27(27/03/2026)",
+    "local": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "82-62"
+   },
+   {
+    "id": "2486501",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "resultado": "88-70"
+   },
+   {
+    "id": "2486502",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "72-56"
+   },
+   {
+    "id": "2486503",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "81-53"
+   },
+   {
+    "id": "2486504",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "90-84"
+   },
+   {
+    "id": "2486505",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "76-74"
+   },
+   {
+    "id": "2486506",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "79-88"
+   },
+   {
+    "id": "2486507",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "80-79"
+   },
+   {
+    "id": "2486508",
+    "jornada": "Jornada 28(03/04/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "73-54"
+   },
+   {
+    "id": "2486510",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "visitante": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "resultado": "74-87"
+   },
+   {
+    "id": "2486511",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "visitante": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "resultado": "75-82"
+   },
+   {
+    "id": "2486512",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "979920",
+     "nombre": "GRUPO URETA TIZONA BURGOS"
+    },
+    "visitante": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "resultado": "76-96"
+   },
+   {
+    "id": "2486513",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "visitante": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "resultado": "84-92"
+   },
+   {
+    "id": "2486514",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "visitante": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "resultado": "79-83"
+   },
+   {
+    "id": "2486515",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "visitante": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "resultado": "67-72"
+   },
+   {
+    "id": "2486516",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "visitante": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "resultado": "65-73"
+   },
+   {
+    "id": "2486518",
+    "jornada": "Jornada 29(10/04/2026)",
+    "local": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "visitante": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "resultado": "81-79"
+   },
+   {
+    "id": "2486519",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981214",
+     "nombre": "FIBWI MALLORCA BASQUET PALMA"
+    },
+    "visitante": {
+     "id": "981251",
+     "nombre": "GRUPO CAESA SEGUROS FC CARTAGENA CB"
+    },
+    "resultado": "77-80"
+   },
+   {
+    "id": "2486520",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981300",
+     "nombre": "HESTIA MENORCA"
+    },
+    "visitante": {
+     "id": "981343",
+     "nombre": "SÚPER AGROPAL PALENCIA"
+    },
+    "resultado": "67-72"
+   },
+   {
+    "id": "2486521",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981421",
+     "nombre": "MONBUS OBRADOIRO"
+    },
+    "visitante": {
+     "id": "981493",
+     "nombre": "CLOUD.GAL OURENSE BALONCESTO"
+    },
+    "resultado": "94-57"
+   },
+   {
+    "id": "2486522",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981203",
+     "nombre": "INVEREADY GIPUZKOA"
+    },
+    "visitante": {
+     "id": "981215",
+     "nombre": "PALMER BASKET MALLORCA PALMA"
+    },
+    "resultado": "82-65"
+   },
+   {
+    "id": "2486523",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981431",
+     "nombre": "MOVISTAR ESTUDIANTES"
+    },
+    "visitante": {
+     "id": "981124",
+     "nombre": "ALIMERKA OVIEDO BALONCESTO"
+    },
+    "resultado": "75-69"
+   },
+   {
+    "id": "2486524",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "981525",
+     "nombre": "FLEXICAR FUENLABRADA"
+    },
+    "visitante": {
+     "id": "980004",
+     "nombre": "LEYMA CORUÑA"
+    },
+    "resultado": "75-74"
+   },
+   {
+    "id": "2486525",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "979907",
+     "nombre": "GRUPO ALEGA CANTABRIA"
+    },
+    "visitante": {
+     "id": "979989",
+     "nombre": "HLA ALICANTE"
+    },
+    "resultado": "74-82"
+   },
+   {
+    "id": "2486526",
+    "jornada": "Jornada 30(17/04/2026)",
+    "local": {
+     "id": "979769",
+     "nombre": "MELILLA CIUDAD DEL DEPORTE"
+    },
+    "visitante": {
+     "id": "981125",
+     "nombre": "CAJA RURAL CB ZAMORA"
+    },
+    "resultado": "94-87"
+   }
+  ]
+ },
+ "tercera_EA_2025_J26": {
+  "competicion": "tercerafeb",
+  "temporada": "2025",
+  "grupo": "E-A",
+  "jornada": 26,
+  "partidos": [
+   {
+    "id": "2484526",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "77-78"
+   },
+   {
+    "id": "2484527",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "84-61"
+   },
+   {
+    "id": "2484528",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "93-84"
+   },
+   {
+    "id": "2484529",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "56-87"
+   },
+   {
+    "id": "2484530",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "78-63"
+   },
+   {
+    "id": "2484531",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "74-83"
+   },
+   {
+    "id": "2484532",
+    "jornada": "Jornada 1(05/10/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "69-76"
+   },
+   {
+    "id": "2484533",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "75-82"
+   },
+   {
+    "id": "2484534",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "66-78"
+   },
+   {
+    "id": "2484535",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "88-74"
+   },
+   {
+    "id": "2484536",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "54-79"
+   },
+   {
+    "id": "2484537",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "106-104"
+   },
+   {
+    "id": "2484538",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "55-61"
+   },
+   {
+    "id": "2484539",
+    "jornada": "Jornada 2(12/10/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "82-77"
+   },
+   {
+    "id": "2484540",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "64-81"
+   },
+   {
+    "id": "2484541",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "81-68"
+   },
+   {
+    "id": "2484542",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "65-87"
+   },
+   {
+    "id": "2484543",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "84-77"
+   },
+   {
+    "id": "2484544",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "85-74"
+   },
+   {
+    "id": "2484545",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "98-68"
+   },
+   {
+    "id": "2484546",
+    "jornada": "Jornada 3(19/10/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "81-57"
+   },
+   {
+    "id": "2484547",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "81-83"
+   },
+   {
+    "id": "2484548",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "81-91"
+   },
+   {
+    "id": "2484549",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "75-70"
+   },
+   {
+    "id": "2484550",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "109-78"
+   },
+   {
+    "id": "2484551",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "91-85"
+   },
+   {
+    "id": "2484552",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "76-65"
+   },
+   {
+    "id": "2484553",
+    "jornada": "Jornada 4(26/10/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "84-52"
+   },
+   {
+    "id": "2484554",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "85-70"
+   },
+   {
+    "id": "2484555",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "64-101"
+   },
+   {
+    "id": "2484556",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "86-88"
+   },
+   {
+    "id": "2484557",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "74-97"
+   },
+   {
+    "id": "2484558",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "58-87"
+   },
+   {
+    "id": "2484559",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "87-57"
+   },
+   {
+    "id": "2484560",
+    "jornada": "Jornada 5(02/11/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "68-76"
+   },
+   {
+    "id": "2484561",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "70-77"
+   },
+   {
+    "id": "2484562",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "76-66"
+   },
+   {
+    "id": "2484563",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "65-87"
+   },
+   {
+    "id": "2484564",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "59-65"
+   },
+   {
+    "id": "2484565",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "101-92"
+   },
+   {
+    "id": "2484566",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "95-75"
+   },
+   {
+    "id": "2484567",
+    "jornada": "Jornada 6(09/11/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "69-85"
+   },
+   {
+    "id": "2484568",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "83-79"
+   },
+   {
+    "id": "2484569",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "79-74"
+   },
+   {
+    "id": "2484570",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "65-89"
+   },
+   {
+    "id": "2484571",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "79-97"
+   },
+   {
+    "id": "2484572",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "67-72"
+   },
+   {
+    "id": "2484573",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "66-72"
+   },
+   {
+    "id": "2484574",
+    "jornada": "Jornada 7(16/11/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "65-58"
+   },
+   {
+    "id": "2484575",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "55-85"
+   },
+   {
+    "id": "2484576",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "72-94"
+   },
+   {
+    "id": "2484577",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "69-54"
+   },
+   {
+    "id": "2484578",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "85-77"
+   },
+   {
+    "id": "2484579",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "81-60"
+   },
+   {
+    "id": "2484580",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "76-54"
+   },
+   {
+    "id": "2484581",
+    "jornada": "Jornada 8(23/11/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "80-63"
+   },
+   {
+    "id": "2484582",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "95-67"
+   },
+   {
+    "id": "2484583",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "67-81"
+   },
+   {
+    "id": "2484584",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "62-76"
+   },
+   {
+    "id": "2484585",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "55-69"
+   },
+   {
+    "id": "2484586",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "69-99"
+   },
+   {
+    "id": "2484587",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "78-90"
+   },
+   {
+    "id": "2484588",
+    "jornada": "Jornada 9(30/11/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "87-67"
+   },
+   {
+    "id": "2484589",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "74-81"
+   },
+   {
+    "id": "2484590",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "84-69"
+   },
+   {
+    "id": "2484591",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "104-69"
+   },
+   {
+    "id": "2484592",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "84-80"
+   },
+   {
+    "id": "2484593",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "58-90"
+   },
+   {
+    "id": "2484594",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "76-61"
+   },
+   {
+    "id": "2484595",
+    "jornada": "Jornada 10(07/12/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "83-78"
+   },
+   {
+    "id": "2484596",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "85-45"
+   },
+   {
+    "id": "2484597",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "76-61"
+   },
+   {
+    "id": "2484598",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "87-70"
+   },
+   {
+    "id": "2484599",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "68-91"
+   },
+   {
+    "id": "2484600",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "65-82"
+   },
+   {
+    "id": "2484601",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "63-76"
+   },
+   {
+    "id": "2484602",
+    "jornada": "Jornada 11(14/12/2025)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "60-83"
+   },
+   {
+    "id": "2484603",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "64-62"
+   },
+   {
+    "id": "2484604",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "71-64"
+   },
+   {
+    "id": "2484605",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "95-66"
+   },
+   {
+    "id": "2484606",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "72-76"
+   },
+   {
+    "id": "2484607",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "81-67"
+   },
+   {
+    "id": "2484608",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "78-66"
+   },
+   {
+    "id": "2484609",
+    "jornada": "Jornada 12(21/12/2025)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "71-83"
+   },
+   {
+    "id": "2484610",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "74-78"
+   },
+   {
+    "id": "2484611",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "83-53"
+   },
+   {
+    "id": "2484612",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "72-67"
+   },
+   {
+    "id": "2484613",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "81-73"
+   },
+   {
+    "id": "2484614",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "53-64"
+   },
+   {
+    "id": "2484615",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "63-107"
+   },
+   {
+    "id": "2484616",
+    "jornada": "Jornada 13(11/01/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "80-85"
+   },
+   {
+    "id": "2484617",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "66-85"
+   },
+   {
+    "id": "2484618",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "71-84"
+   },
+   {
+    "id": "2484619",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "82-85"
+   },
+   {
+    "id": "2484620",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "72-70"
+   },
+   {
+    "id": "2484621",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "101-99"
+   },
+   {
+    "id": "2484622",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "71-69"
+   },
+   {
+    "id": "2484623",
+    "jornada": "Jornada 14(18/01/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "76-62"
+   },
+   {
+    "id": "2484624",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "71-83"
+   },
+   {
+    "id": "2484625",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "58-65"
+   },
+   {
+    "id": "2484626",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "87-105"
+   },
+   {
+    "id": "2484627",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "90-47"
+   },
+   {
+    "id": "2484628",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "76-73"
+   },
+   {
+    "id": "2484629",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "53-66"
+   },
+   {
+    "id": "2484630",
+    "jornada": "Jornada 15(25/01/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "90-74"
+   },
+   {
+    "id": "2484631",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "76-60"
+   },
+   {
+    "id": "2484632",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "74-69"
+   },
+   {
+    "id": "2484633",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "82-78"
+   },
+   {
+    "id": "2484634",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "74-94"
+   },
+   {
+    "id": "2484635",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "82-65"
+   },
+   {
+    "id": "2484636",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "69-91"
+   },
+   {
+    "id": "2484637",
+    "jornada": "Jornada 16(01/02/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "56-76"
+   },
+   {
+    "id": "2484638",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "63-52"
+   },
+   {
+    "id": "2484639",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "93-70"
+   },
+   {
+    "id": "2484640",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "101-63"
+   },
+   {
+    "id": "2484641",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "92-70"
+   },
+   {
+    "id": "2484642",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "78-63"
+   },
+   {
+    "id": "2484643",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "70-82"
+   },
+   {
+    "id": "2484644",
+    "jornada": "Jornada 17(08/02/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "73-86"
+   },
+   {
+    "id": "2484646",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "75-49"
+   },
+   {
+    "id": "2484647",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "83-70"
+   },
+   {
+    "id": "2484648",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "105-79"
+   },
+   {
+    "id": "2484649",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "106-72"
+   },
+   {
+    "id": "2484650",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "60-90"
+   },
+   {
+    "id": "2484651",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "89-80"
+   },
+   {
+    "id": "2484652",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "90-75"
+   },
+   {
+    "id": "2484653",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "77-70"
+   },
+   {
+    "id": "2484654",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "98-85"
+   },
+   {
+    "id": "2484655",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "66-69"
+   },
+   {
+    "id": "2484656",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "78-103"
+   },
+   {
+    "id": "2484657",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "73-80"
+   },
+   {
+    "id": "2484658",
+    "jornada": "Jornada 19(22/02/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "71-54"
+   },
+   {
+    "id": "2484659",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "83-78"
+   },
+   {
+    "id": "2484660",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "85-78"
+   },
+   {
+    "id": "2484661",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "80-66"
+   },
+   {
+    "id": "2484662",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "81-71"
+   },
+   {
+    "id": "2484663",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "55-72"
+   },
+   {
+    "id": "2484664",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "88-77"
+   },
+   {
+    "id": "2484665",
+    "jornada": "Jornada 20(01/03/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "73-68"
+   },
+   {
+    "id": "2484666",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "88-74"
+   },
+   {
+    "id": "2484667",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "98-83"
+   },
+   {
+    "id": "2484668",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "59-92"
+   },
+   {
+    "id": "2484669",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "85-69"
+   },
+   {
+    "id": "2484670",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "81-73"
+   },
+   {
+    "id": "2484671",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "80-88"
+   },
+   {
+    "id": "2484672",
+    "jornada": "Jornada 21(08/03/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "82-77"
+   },
+   {
+    "id": "2484673",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "71-74"
+   },
+   {
+    "id": "2484674",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "resultado": "101-63"
+   },
+   {
+    "id": "2484675",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "73-63"
+   },
+   {
+    "id": "2484676",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "78-80"
+   },
+   {
+    "id": "2484677",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "84-72"
+   },
+   {
+    "id": "2484678",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "92-63"
+   },
+   {
+    "id": "2484679",
+    "jornada": "Jornada 22(15/03/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "66-80"
+   },
+   {
+    "id": "2484680",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "107-76"
+   },
+   {
+    "id": "2484681",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "48-91"
+   },
+   {
+    "id": "2484682",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "96-97"
+   },
+   {
+    "id": "2484683",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "66-84"
+   },
+   {
+    "id": "2484684",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "89-67"
+   },
+   {
+    "id": "2484685",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "85-94"
+   },
+   {
+    "id": "2484686",
+    "jornada": "Jornada 23(22/03/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "77-81"
+   },
+   {
+    "id": "2484687",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "58-74"
+   },
+   {
+    "id": "2484688",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "78-63"
+   },
+   {
+    "id": "2484689",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "81-85"
+   },
+   {
+    "id": "2484690",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "78-65"
+   },
+   {
+    "id": "2484691",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "111-66"
+   },
+   {
+    "id": "2484692",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "95-70"
+   },
+   {
+    "id": "2484693",
+    "jornada": "Jornada 24(29/03/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "99-73"
+   },
+   {
+    "id": "2484694",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "55-64"
+   },
+   {
+    "id": "2484695",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "visitante": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "resultado": "74-96"
+   },
+   {
+    "id": "2484696",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "visitante": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "resultado": "66-88"
+   },
+   {
+    "id": "2484697",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "visitante": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "resultado": "98-71"
+   },
+   {
+    "id": "2484698",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "visitante": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "resultado": "60-78"
+   },
+   {
+    "id": "2484699",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "visitante": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "resultado": "69-53"
+   },
+   {
+    "id": "2484700",
+    "jornada": "Jornada 25(12/04/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "73-62"
+   },
+   {
+    "id": "2484701",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "visitante": {
+     "id": "981159",
+     "nombre": "BAUHAUS GODELLA"
+    },
+    "resultado": "85-67"
+   },
+   {
+    "id": "2484702",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981349",
+     "nombre": "BC PEÑÍSCOLA"
+    },
+    "visitante": {
+     "id": "981324",
+     "nombre": "FUNDACIÓ CAIXA RURAL VILA-REAL"
+    },
+    "resultado": "69-89"
+   },
+   {
+    "id": "2484703",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "979992",
+     "nombre": "CB JOVENS ALMÀSSERA"
+    },
+    "visitante": {
+     "id": "979995",
+     "nombre": "AMICS CASTELLÓ B"
+    },
+    "resultado": "76-60"
+   },
+   {
+    "id": "2484704",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "982155",
+     "nombre": "CB TABERNES BLANQUES - FERNANDO GIL"
+    },
+    "visitante": {
+     "id": "982154",
+     "nombre": "CB MORVEDRE"
+    },
+    "resultado": "92-84"
+   },
+   {
+    "id": "2484705",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981164",
+     "nombre": "CEMALU ALDAIA"
+    },
+    "resultado": "94-81"
+   },
+   {
+    "id": "2484706",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981161",
+     "nombre": "C.B. PUERTO SAGUNTO"
+    },
+    "visitante": {
+     "id": "982150",
+     "nombre": "PICKEN CLARET"
+    },
+    "resultado": "80-56"
+   },
+   {
+    "id": "2484707",
+    "jornada": "Jornada 26(18/04/2026)",
+    "local": {
+     "id": "981323",
+     "nombre": "THE FITZGERALD EL PILAR"
+    },
+    "visitante": {
+     "id": "981348",
+     "nombre": "TOPSURFACE NB PATERNA"
+    },
+    "resultado": "82-67"
+   },
+   {
+    "id": "2484645",
+    "jornada": "Jornada 18(15/02/2026)",
+    "local": {
+     "id": "982151",
+     "nombre": "HALAL FOOD QUALITY UIXÓ BÀSQUET"
+    },
+    "visitante": {
+     "id": "981148",
+     "nombre": "SOCAGE JOVENS L’ELIANA"
+    },
+    "resultado": "0-2"
    }
   ]
  }
