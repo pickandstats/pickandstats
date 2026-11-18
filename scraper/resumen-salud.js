@@ -365,6 +365,22 @@ if (!regresion) {
     lineas.push(`test/regresion.cjs: cuadra con la referencia (comprobado ${regresion.fecha}).`);
 }
 
+// Partidos con resultado en el indice y sin fichero (lote 38): CRITICO en una
+// temporada cerrada (no se vuelve a raspar: el hueco es permanente y no lo ve
+// nadie mas); en la temporada en curso solo se lista, el run siguiente lo
+// reintenta solo.
+{
+  const huecos = require('./verificar-indices').huecosDeIndices();
+  const cerrados = huecos.filter(h => h.cerrada), enCurso = huecos.filter(h => !h.cerrada);
+  if (cerrados.length)
+    criticos.push(`${cerrados.length} partido(s) con resultado en el indice y sin fichero en temporadas cerradas -> ` +
+      cerrados.slice(0, 8).map(h => `${h.comp} ${h.temp} ${h.grupo} ${h.id}`).join(', ') + ' (no se reintentan solos: scrape.js --temporada T --grupo G)');
+  if (enCurso.length)
+    avisos.push(`${enCurso.length} partido(s) de la temporada en curso con resultado y sin fichero (se reintentan en el run siguiente) -> ` +
+      enCurso.slice(0, 8).map(h => `${h.comp} ${h.grupo} ${h.id}`).join(', '));
+  if (!huecos.length) lineas.push('Indices: ningun partido con resultado sin su fichero.');
+}
+
 // TAP/TR/FC/FR por cuartos contra el total del HTML (lote 35). CRITICO si un
 // acta se queda 2 o mas por DEBAJO del HTML en un campo de un equipo (firma de
 // una degradacion: ceros donde habia valores), si no se comparo ninguna o si el

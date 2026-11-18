@@ -562,7 +562,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 98,
-    "grp": 98
+    "grp": 99
    },
    "rtPorPartido": {
     "nac": 90,
@@ -581,7 +581,7 @@
     "grp": 100
    },
    "ts": {
-    "nac": 86,
+    "nac": 87,
     "grp": 89
    },
    "efg": {
@@ -589,8 +589,8 @@
     "grp": 85
    },
    "t3Pct": {
-    "nac": 71,
-    "grp": 73
+    "nac": 72,
+    "grp": 74
    }
   }
  },
@@ -601,56 +601,56 @@
   "equipo": "CLASS BASQUET SANT ANTONI",
   "equipoId": "922368",
   "grupo": "ESTE",
-  "pj": 25,
-  "titular": 25,
-  "minTotales": 784.23,
-  "minPorPartido": 31.37,
-  "pt": 280,
-  "ro": 14,
-  "rd": 97,
-  "rt": 111,
-  "as": 171,
-  "br": 52,
-  "bp": 60,
+  "pj": 26,
+  "titular": 26,
+  "minTotales": 812.1,
+  "minPorPartido": 31.23,
+  "pt": 298,
+  "ro": 16,
+  "rd": 105,
+  "rt": 121,
+  "as": 182,
+  "br": 54,
+  "bp": 63,
   "tfTot": 2,
   "tcoTot": 4,
   "fcTot": 54,
-  "frTot": 125,
-  "va": 467,
-  "pm": 204,
-  "t2a": 50,
-  "t2i": 110,
-  "t3a": 27,
-  "t3i": 96,
-  "tla": 99,
-  "tli": 130,
-  "ptPorPartido": 11.2,
-  "roPorPartido": 0.56,
-  "rdPorPartido": 3.88,
-  "rtPorPartido": 4.44,
-  "asPorPartido": 6.84,
+  "frTot": 132,
+  "va": 508,
+  "pm": 224,
+  "t2a": 53,
+  "t2i": 115,
+  "t3a": 29,
+  "t3i": 100,
+  "tla": 105,
+  "tli": 136,
+  "ptPorPartido": 11.46,
+  "roPorPartido": 0.62,
+  "rdPorPartido": 4.04,
+  "rtPorPartido": 4.65,
+  "asPorPartido": 7,
   "brPorPartido": 2.08,
-  "bpPorPartido": 2.4,
+  "bpPorPartido": 2.42,
   "tpPorPartido": 0.08,
-  "tcoPorPartido": 0.16,
-  "fcPorPartido": 2.16,
-  "frPorPartido": 5,
-  "vaPorPartido": 18.68,
-  "t2": "50/110",
-  "t3": "27/96",
-  "tl": "99/130",
-  "t2Pct": 45.45,
-  "t3Pct": 28.13,
-  "tlPct": 76.15,
-  "ts": 53.19,
-  "efg": 43.93,
-  "usg": 19.04,
+  "tcoPorPartido": 0.15,
+  "fcPorPartido": 2.08,
+  "frPorPartido": 5.08,
+  "vaPorPartido": 19.54,
+  "t2": "53/115",
+  "t3": "29/100",
+  "tl": "105/136",
+  "t2Pct": 46.09,
+  "t3Pct": 29,
+  "tlPct": 77.21,
+  "ts": 54.21,
+  "efg": 44.88,
+  "usg": 19.25,
   "per36": {
-   "pt": 12.85,
-   "rt": 5.1,
-   "as": 7.85,
+   "pt": 13.21,
+   "rt": 5.36,
+   "as": 8.07,
    "br": 2.39,
-   "va": 21.44
+   "va": 22.52
   },
   "evolucion": [
    {
@@ -745,6 +745,13 @@
     "seg": 1422
    },
    {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 18,
+    "va": 41,
+    "seg": 1672
+   },
+   {
     "id": "2345132",
     "jornada": "Jornada 15(06/01/2024)",
     "pt": 7,
@@ -831,12 +838,12 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 81,
-    "grp": 82
+    "nac": 82,
+    "grp": 83
    },
    "rtPorPartido": {
-    "nac": 75,
-    "grp": 75
+    "nac": 78,
+    "grp": 76
    },
    "asPorPartido": {
     "nac": 100,
@@ -851,16 +858,16 @@
     "grp": 99
    },
    "ts": {
-    "nac": 57,
-    "grp": 56
+    "nac": 64,
+    "grp": 64
    },
    "efg": {
-    "nac": 27,
-    "grp": 29
+    "nac": 33,
+    "grp": 35
    },
    "t3Pct": {
-    "nac": 41,
-    "grp": 41
+    "nac": 47,
+    "grp": 47
    }
   }
  },
@@ -1110,7 +1117,7 @@
    },
    "asPorPartido": {
     "nac": 42,
-    "grp": 42
+    "grp": 41
    },
    "brPorPartido": {
     "nac": 17,
@@ -1382,7 +1389,7 @@
     "grp": 100
    },
    "rtPorPartido": {
-    "nac": 74,
+    "nac": 73,
     "grp": 73
    },
    "asPorPartido": {
@@ -1399,10 +1406,10 @@
    },
    "ts": {
     "nac": 65,
-    "grp": 64
+    "grp": 65
    },
    "efg": {
-    "nac": 56,
+    "nac": 57,
     "grp": 57
    },
    "t3Pct": {
@@ -1641,7 +1648,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 86,
+    "nac": 87,
     "grp": 87
    },
    "rtPorPartido": {
@@ -1864,11 +1871,11 @@
    },
    "asPorPartido": {
     "nac": 49,
-    "grp": 48
+    "grp": 47
    },
    "brPorPartido": {
     "nac": 62,
-    "grp": 58
+    "grp": 59
    },
    "vaPorPartido": {
     "nac": 98,
@@ -1879,8 +1886,8 @@
     "grp": 98
    },
    "efg": {
-    "nac": 86,
-    "grp": 88
+    "nac": 87,
+    "grp": 89
    },
    "t3Pct": {
     "nac": 77,
@@ -2133,7 +2140,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 48,
-    "grp": 46
+    "grp": 47
    },
    "rtPorPartido": {
     "nac": 97,
@@ -2144,7 +2151,7 @@
     "grp": 98
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "vaPorPartido": {
@@ -2161,7 +2168,7 @@
    },
    "t3Pct": {
     "nac": 63,
-    "grp": 64
+    "grp": 65
    }
   }
  },
@@ -2215,7 +2222,7 @@
   "tlPct": 78.57,
   "ts": 58.89,
   "efg": 55.88,
-  "usg": 22.01,
+  "usg": 22.04,
   "per36": {
    "pt": 17.77,
    "rt": 6.61,
@@ -2358,10 +2365,10 @@
    },
    "rtPorPartido": {
     "nac": 82,
-    "grp": 81
+    "grp": 80
    },
    "asPorPartido": {
-    "nac": 86,
+    "nac": 87,
     "grp": 86
    },
    "brPorPartido": {
@@ -2624,7 +2631,7 @@
     "grp": 100
    },
    "asPorPartido": {
-    "nac": 54,
+    "nac": 55,
     "grp": 56
    },
    "brPorPartido": {
@@ -2644,7 +2651,7 @@
     "grp": 37
    },
    "t3Pct": {
-    "nac": 58,
+    "nac": 59,
     "grp": 57
    }
   }
@@ -2897,7 +2904,7 @@
     "grp": 98
    },
    "rtPorPartido": {
-    "nac": 81,
+    "nac": 80,
     "grp": 83
    },
    "asPorPartido": {
@@ -2917,7 +2924,7 @@
     "grp": 83
    },
    "efg": {
-    "nac": 76,
+    "nac": 77,
     "grp": 76
    },
    "t3Pct": {
@@ -3159,12 +3166,12 @@
     "grp": 80
    },
    "efg": {
-    "nac": 76,
-    "grp": 77
+    "nac": 77,
+    "grp": 78
    },
    "t3Pct": {
-    "nac": 57,
-    "grp": 58
+    "nac": 58,
+    "grp": 59
    }
   }
  },
@@ -3432,16 +3439,16 @@
     "grp": 94
    },
    "ts": {
-    "nac": 75,
-    "grp": 78
+    "nac": 76,
+    "grp": 79
    },
    "efg": {
     "nac": 68,
-    "grp": 68
+    "grp": 69
    },
    "t3Pct": {
     "nac": 68,
-    "grp": 70
+    "grp": 71
    }
   }
  },
@@ -3709,11 +3716,11 @@
     "grp": 97
    },
    "ts": {
-    "nac": 63,
+    "nac": 62,
     "grp": 63
    },
    "efg": {
-    "nac": 61,
+    "nac": 62,
     "grp": 61
    },
    "t3Pct": {
@@ -3960,8 +3967,8 @@
     "grp": 99
    },
    "asPorPartido": {
-    "nac": 34,
-    "grp": 34
+    "nac": 35,
+    "grp": 35
    },
    "brPorPartido": {
     "nac": 85,
@@ -3973,11 +3980,11 @@
    },
    "ts": {
     "nac": 63,
-    "grp": 64
+    "grp": 63
    },
    "efg": {
-    "nac": 75,
-    "grp": 76
+    "nac": 74,
+    "grp": 75
    },
    "t3Pct": {
     "nac": 29,
@@ -4237,7 +4244,7 @@
     "grp": 90
    },
    "asPorPartido": {
-    "nac": 66,
+    "nac": 67,
     "grp": 70
    },
    "brPorPartido": {
@@ -5237,282 +5244,12 @@
     "grp": 72
    },
    "efg": {
-    "nac": 69,
+    "nac": 70,
     "grp": 68
    },
    "t3Pct": {
     "nac": 29,
     "grp": 28
-   }
-  }
- },
- {
-  "idJugador": "2641039",
-  "nombre": "URBANIAK, JAKUB WIKTOR",
-  "dorsal": "12",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 25,
-  "titular": 24,
-  "minTotales": 703.5,
-  "minPorPartido": 28.14,
-  "pt": 389,
-  "ro": 70,
-  "rd": 125,
-  "rt": 195,
-  "as": 18,
-  "br": 27,
-  "bp": 59,
-  "tfTot": 13,
-  "tcoTot": 4,
-  "fcTot": 82,
-  "frTot": 94,
-  "va": 396,
-  "pm": -52,
-  "t2a": 108,
-  "t2i": 199,
-  "t3a": 35,
-  "t3i": 102,
-  "tla": 68,
-  "tli": 109,
-  "ptPorPartido": 15.56,
-  "roPorPartido": 2.8,
-  "rdPorPartido": 5,
-  "rtPorPartido": 7.8,
-  "asPorPartido": 0.72,
-  "brPorPartido": 1.08,
-  "bpPorPartido": 2.36,
-  "tpPorPartido": 0.52,
-  "tcoPorPartido": 0.16,
-  "fcPorPartido": 3.28,
-  "frPorPartido": 3.76,
-  "vaPorPartido": 15.84,
-  "t2": "108/199",
-  "t3": "35/102",
-  "tl": "68/109",
-  "t2Pct": 54.27,
-  "t3Pct": 34.31,
-  "tlPct": 62.39,
-  "ts": 55.74,
-  "efg": 53.32,
-  "usg": 26.42,
-  "per36": {
-   "pt": 19.91,
-   "rt": 9.98,
-   "as": 0.92,
-   "br": 1.38,
-   "va": 20.26
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 12,
-    "va": 12,
-    "seg": 1893
-   },
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 6,
-    "va": 7,
-    "seg": 1340
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 18,
-    "va": 20,
-    "seg": 1866
-   },
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 16,
-    "va": 14,
-    "seg": 1668
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 31,
-    "va": 42,
-    "seg": 1460
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 13,
-    "va": 9,
-    "seg": 1229
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 24,
-    "va": 29,
-    "seg": 1775
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 19,
-    "va": 17,
-    "seg": 1861
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 15,
-    "va": 10,
-    "seg": 1224
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 9,
-    "va": 9,
-    "seg": 921
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 13,
-    "va": 13,
-    "seg": 1728
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 5,
-    "va": 0,
-    "seg": 1473
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 32,
-    "va": 29,
-    "seg": 2063
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 26,
-    "va": 24,
-    "seg": 2037
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 25,
-    "va": 19,
-    "seg": 2271
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 14,
-    "va": 18,
-    "seg": 1181
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 20,
-    "va": 26,
-    "seg": 2029
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 12,
-    "va": 2,
-    "seg": 1673
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 18,
-    "va": 33,
-    "seg": 1931
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 11,
-    "va": 18,
-    "seg": 1905
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 8,
-    "va": -1,
-    "seg": 1610
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 4,
-    "va": -4,
-    "seg": 1619
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 15,
-    "va": 14,
-    "seg": 1695
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 9,
-    "va": 16,
-    "seg": 1755
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 14,
-    "va": 20,
-    "seg": 2003
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 98,
-    "grp": 99
-   },
-   "rtPorPartido": {
-    "nac": 97,
-    "grp": 98
-   },
-   "asPorPartido": {
-    "nac": 27,
-    "grp": 24
-   },
-   "brPorPartido": {
-    "nac": 80,
-    "grp": 80
-   },
-   "vaPorPartido": {
-    "nac": 93,
-    "grp": 92
-   },
-   "ts": {
-    "nac": 73,
-    "grp": 75
-   },
-   "efg": {
-    "nac": 78,
-    "grp": 79
-   },
-   "t3Pct": {
-    "nac": 73,
-    "grp": 77
    }
   }
  },
@@ -5838,11 +5575,11 @@
     "grp": 85
    },
    "vaPorPartido": {
-    "nac": 92,
+    "nac": 93,
     "grp": 94
    },
    "ts": {
-    "nac": 66,
+    "nac": 67,
     "grp": 66
    },
    "efg": {
@@ -6085,7 +5822,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 71,
+    "nac": 72,
     "grp": 69
    },
    "rtPorPartido": {
@@ -6093,7 +5830,7 @@
     "grp": 94
    },
    "asPorPartido": {
-    "nac": 54,
+    "nac": 55,
     "grp": 56
    },
    "brPorPartido": {
@@ -6363,7 +6100,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 81,
-    "grp": 83
+    "grp": 82
    },
    "rtPorPartido": {
     "nac": 93,
@@ -6371,15 +6108,15 @@
    },
    "asPorPartido": {
     "nac": 56,
-    "grp": 55
+    "grp": 56
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 32
    },
    "vaPorPartido": {
     "nac": 92,
-    "grp": 91
+    "grp": 92
    },
    "ts": {
     "nac": 97,
@@ -6773,7 +6510,7 @@
     "grp": 99
    },
    "vaPorPartido": {
-    "nac": 91,
+    "nac": 92,
     "grp": 92
    },
    "ts": {
@@ -6787,6 +6524,283 @@
    "t3Pct": {
     "nac": 100,
     "grp": 100
+   }
+  }
+ },
+ {
+  "idJugador": "2641039",
+  "nombre": "URBANIAK, JAKUB WIKTOR",
+  "dorsal": "12",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 26,
+  "titular": 25,
+  "minTotales": 733.15,
+  "minPorPartido": 28.2,
+  "pt": 395,
+  "ro": 72,
+  "rd": 127,
+  "rt": 199,
+  "as": 18,
+  "br": 27,
+  "bp": 62,
+  "tfTot": 13,
+  "tcoTot": 5,
+  "fcTot": 85,
+  "frTot": 97,
+  "va": 395,
+  "pm": -68,
+  "t2a": 108,
+  "t2i": 202,
+  "t3a": 37,
+  "t3i": 107,
+  "tla": 68,
+  "tli": 111,
+  "ptPorPartido": 15.19,
+  "roPorPartido": 2.77,
+  "rdPorPartido": 4.88,
+  "rtPorPartido": 7.65,
+  "asPorPartido": 0.69,
+  "brPorPartido": 1.04,
+  "bpPorPartido": 2.38,
+  "tpPorPartido": 0.5,
+  "tcoPorPartido": 0.19,
+  "fcPorPartido": 3.27,
+  "frPorPartido": 3.73,
+  "vaPorPartido": 15.19,
+  "t2": "108/202",
+  "t3": "37/107",
+  "tl": "68/111",
+  "t2Pct": 53.47,
+  "t3Pct": 34.58,
+  "tlPct": 61.26,
+  "ts": 55.19,
+  "efg": 52.91,
+  "usg": 26.19,
+  "per36": {
+   "pt": 19.4,
+   "rt": 9.77,
+   "as": 0.88,
+   "br": 1.33,
+   "va": 19.4
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 12,
+    "va": 12,
+    "seg": 1893
+   },
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 6,
+    "va": 7,
+    "seg": 1340
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 18,
+    "va": 20,
+    "seg": 1866
+   },
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 16,
+    "va": 14,
+    "seg": 1668
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 31,
+    "va": 42,
+    "seg": 1460
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 13,
+    "va": 9,
+    "seg": 1229
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 24,
+    "va": 29,
+    "seg": 1775
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 19,
+    "va": 17,
+    "seg": 1861
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 15,
+    "va": 10,
+    "seg": 1224
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 9,
+    "va": 9,
+    "seg": 921
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 13,
+    "va": 13,
+    "seg": 1728
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 5,
+    "va": 0,
+    "seg": 1473
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 32,
+    "va": 29,
+    "seg": 2063
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 6,
+    "va": -1,
+    "seg": 1779
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 26,
+    "va": 24,
+    "seg": 2037
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 25,
+    "va": 19,
+    "seg": 2271
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 14,
+    "va": 18,
+    "seg": 1181
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 20,
+    "va": 26,
+    "seg": 2029
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 12,
+    "va": 2,
+    "seg": 1673
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 18,
+    "va": 33,
+    "seg": 1931
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 11,
+    "va": 18,
+    "seg": 1905
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 8,
+    "va": -1,
+    "seg": 1610
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 4,
+    "va": -4,
+    "seg": 1619
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 15,
+    "va": 14,
+    "seg": 1695
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 9,
+    "va": 16,
+    "seg": 1755
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 14,
+    "va": 20,
+    "seg": 2003
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 98,
+    "grp": 98
+   },
+   "rtPorPartido": {
+    "nac": 97,
+    "grp": 98
+   },
+   "asPorPartido": {
+    "nac": 26,
+    "grp": 23
+   },
+   "brPorPartido": {
+    "nac": 78,
+    "grp": 79
+   },
+   "vaPorPartido": {
+    "nac": 91,
+    "grp": 91
+   },
+   "ts": {
+    "nac": 70,
+    "grp": 71
+   },
+   "efg": {
+    "nac": 77,
+    "grp": 78
+   },
+   "t3Pct": {
+    "nac": 73,
+    "grp": 77
    }
   }
  },
@@ -7054,7 +7068,7 @@
     "grp": 91
    },
    "ts": {
-    "nac": 44,
+    "nac": 45,
     "grp": 45
    },
    "efg": {
@@ -7062,7 +7076,7 @@
     "grp": 61
    },
    "t3Pct": {
-    "nac": 11,
+    "nac": 12,
     "grp": 10
    }
   }
@@ -7434,56 +7448,56 @@
   "equipo": "CLASS BASQUET SANT ANTONI",
   "equipoId": "922368",
   "grupo": "ESTE",
-  "pj": 23,
-  "titular": 21,
-  "minTotales": 601.3,
-  "minPorPartido": 26.14,
-  "pt": 252,
-  "ro": 68,
-  "rd": 93,
-  "rt": 161,
+  "pj": 24,
+  "titular": 22,
+  "minTotales": 623.3,
+  "minPorPartido": 25.97,
+  "pt": 260,
+  "ro": 73,
+  "rd": 96,
+  "rt": 169,
   "as": 20,
-  "br": 9,
-  "bp": 39,
+  "br": 10,
+  "bp": 40,
   "tfTot": 32,
   "tcoTot": 7,
-  "fcTot": 39,
+  "fcTot": 41,
   "frTot": 57,
-  "va": 344,
-  "pm": 146,
-  "t2a": 96,
-  "t2i": 170,
+  "va": 354,
+  "pm": 162,
+  "t2a": 100,
+  "t2i": 178,
   "t3a": 5,
   "t3i": 13,
   "tla": 45,
   "tli": 72,
-  "ptPorPartido": 10.96,
-  "roPorPartido": 2.96,
-  "rdPorPartido": 4.04,
-  "rtPorPartido": 7,
-  "asPorPartido": 0.87,
-  "brPorPartido": 0.39,
-  "bpPorPartido": 1.7,
-  "tpPorPartido": 1.39,
-  "tcoPorPartido": 0.3,
-  "fcPorPartido": 1.7,
-  "frPorPartido": 2.48,
-  "vaPorPartido": 14.96,
-  "t2": "96/170",
+  "ptPorPartido": 10.83,
+  "roPorPartido": 3.04,
+  "rdPorPartido": 4,
+  "rtPorPartido": 7.04,
+  "asPorPartido": 0.83,
+  "brPorPartido": 0.42,
+  "bpPorPartido": 1.67,
+  "tpPorPartido": 1.33,
+  "tcoPorPartido": 0.29,
+  "fcPorPartido": 1.71,
+  "frPorPartido": 2.38,
+  "vaPorPartido": 14.75,
+  "t2": "100/178",
   "t3": "5/13",
   "tl": "45/72",
-  "t2Pct": 56.47,
+  "t2Pct": 56.18,
   "t3Pct": 38.46,
   "tlPct": 62.5,
-  "ts": 58.69,
-  "efg": 56.56,
-  "usg": 19.49,
+  "ts": 58.38,
+  "efg": 56.28,
+  "usg": 19.5,
   "per36": {
-   "pt": 15.09,
-   "rt": 9.64,
-   "as": 1.2,
-   "br": 0.54,
-   "va": 20.6
+   "pt": 15.02,
+   "rt": 9.76,
+   "as": 1.16,
+   "br": 0.58,
+   "va": 20.45
   },
   "evolucion": [
    {
@@ -7562,6 +7576,13 @@
     "pt": 12,
     "va": 12,
     "seg": 1651
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 8,
+    "va": 10,
+    "seg": 1320
    },
    {
     "id": "2345132",
@@ -7650,7 +7671,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 80,
+    "nac": 78,
     "grp": 80
    },
    "rtPorPartido": {
@@ -7659,23 +7680,23 @@
    },
    "asPorPartido": {
     "nac": 35,
-    "grp": 36
+    "grp": 35
    },
    "brPorPartido": {
-    "nac": 21,
-    "grp": 18
+    "nac": 25,
+    "grp": 21
    },
    "vaPorPartido": {
     "nac": 90,
     "grp": 90
    },
    "ts": {
-    "nac": 85,
-    "grp": 88
+    "nac": 84,
+    "grp": 87
    },
    "efg": {
     "nac": 87,
-    "grp": 89
+    "grp": 88
    },
    "t3Pct": {
     "nac": 87,
@@ -8187,7 +8208,7 @@
     "grp": 92
    },
    "rtPorPartido": {
-    "nac": 78,
+    "nac": 77,
     "grp": 79
    },
    "asPorPartido": {
@@ -8195,7 +8216,7 @@
     "grp": 64
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 39
    },
    "vaPorPartido": {
@@ -8965,7 +8986,7 @@
    },
    "rtPorPartido": {
     "nac": 82,
-    "grp": 81
+    "grp": 80
    },
    "asPorPartido": {
     "nac": 40,
@@ -9598,7 +9619,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 70,
-    "grp": 73
+    "grp": 74
    },
    "rtPorPartido": {
     "nac": 94,
@@ -9989,16 +10010,16 @@
     "grp": 93
    },
    "rtPorPartido": {
-    "nac": 76,
-    "grp": 77
+    "nac": 75,
+    "grp": 75
    },
    "asPorPartido": {
     "nac": 70,
-    "grp": 67
+    "grp": 68
    },
    "brPorPartido": {
     "nac": 59,
-    "grp": 54
+    "grp": 53
    },
    "vaPorPartido": {
     "nac": 88,
@@ -10009,8 +10030,8 @@
     "grp": 85
    },
    "efg": {
-    "nac": 77,
-    "grp": 78
+    "nac": 78,
+    "grp": 79
    },
    "t3Pct": {
     "nac": 96,
@@ -10214,7 +10235,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 73,
-    "grp": 76
+    "grp": 77
    },
    "rtPorPartido": {
     "nac": 61,
@@ -10222,7 +10243,7 @@
    },
    "asPorPartido": {
     "nac": 95,
-    "grp": 94
+    "grp": 95
    },
    "brPorPartido": {
     "nac": 97,
@@ -10907,7 +10928,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 65,
-    "grp": 67
+    "grp": 68
    },
    "rtPorPartido": {
     "nac": 98,
@@ -10930,282 +10951,12 @@
     "grp": 68
    },
    "efg": {
-    "nac": 64,
+    "nac": 65,
     "grp": 66
    },
    "t3Pct": {
     "nac": 7,
     "grp": 9
-   }
-  }
- },
- {
-  "idJugador": "414682",
-  "nombre": "GRIMAU GRAGERA, JORDI",
-  "dorsal": "22",
-  "equipo": "CLASS BASQUET SANT ANTONI",
-  "equipoId": "922368",
-  "grupo": "ESTE",
-  "pj": 25,
-  "titular": 14,
-  "minTotales": 608.85,
-  "minPorPartido": 24.35,
-  "pt": 357,
-  "ro": 18,
-  "rd": 53,
-  "rt": 71,
-  "as": 49,
-  "br": 34,
-  "bp": 24,
-  "tfTot": 5,
-  "tcoTot": 7,
-  "fcTot": 60,
-  "frTot": 63,
-  "va": 320,
-  "pm": 160,
-  "t2a": 63,
-  "t2i": 121,
-  "t3a": 57,
-  "t3i": 164,
-  "tla": 60,
-  "tli": 70,
-  "ptPorPartido": 14.28,
-  "roPorPartido": 0.72,
-  "rdPorPartido": 2.12,
-  "rtPorPartido": 2.84,
-  "asPorPartido": 1.96,
-  "brPorPartido": 1.36,
-  "bpPorPartido": 0.96,
-  "tpPorPartido": 0.2,
-  "tcoPorPartido": 0.28,
-  "fcPorPartido": 2.4,
-  "frPorPartido": 2.52,
-  "vaPorPartido": 12.8,
-  "t2": "63/121",
-  "t3": "57/164",
-  "tl": "60/70",
-  "t2Pct": 52.07,
-  "t3Pct": 34.76,
-  "tlPct": 85.71,
-  "ts": 56.52,
-  "efg": 52.11,
-  "usg": 25.79,
-  "per36": {
-   "pt": 21.11,
-   "rt": 4.2,
-   "as": 2.9,
-   "br": 2.01,
-   "va": 18.92
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 28,
-    "va": 31,
-    "seg": 1375
-   },
-   {
-    "id": "2345041",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 14,
-    "va": 12,
-    "seg": 1862
-   },
-   {
-    "id": "2345054",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 14,
-    "va": 7,
-    "seg": 1513
-   },
-   {
-    "id": "2345056",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 10,
-    "va": 10,
-    "seg": 1205
-   },
-   {
-    "id": "2345067",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 4,
-    "va": 8,
-    "seg": 1360
-   },
-   {
-    "id": "2345071",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 15,
-    "va": 14,
-    "seg": 1468
-   },
-   {
-    "id": "2345080",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 7,
-    "va": 9,
-    "seg": 1175
-   },
-   {
-    "id": "2345086",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 12,
-    "va": 10,
-    "seg": 1611
-   },
-   {
-    "id": "2345093",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 12,
-    "va": 12,
-    "seg": 1108
-   },
-   {
-    "id": "2345101",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 19,
-    "va": 15,
-    "seg": 1718
-   },
-   {
-    "id": "2345106",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 18,
-    "va": 18,
-    "seg": 1391
-   },
-   {
-    "id": "2345116",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 8,
-    "va": 8,
-    "seg": 1196
-   },
-   {
-    "id": "2345119",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 4,
-    "va": 5,
-    "seg": 972
-   },
-   {
-    "id": "2345132",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 18,
-    "va": 19,
-    "seg": 1723
-   },
-   {
-    "id": "2345145",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 17,
-    "va": 14,
-    "seg": 1652
-   },
-   {
-    "id": "2345147",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 19,
-    "va": 21,
-    "seg": 1623
-   },
-   {
-    "id": "2345158",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 11,
-    "va": 11,
-    "seg": 1606
-   },
-   {
-    "id": "2345162",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 11,
-    "va": 5,
-    "seg": 1341
-   },
-   {
-    "id": "2345171",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 22,
-    "va": 12,
-    "seg": 1762
-   },
-   {
-    "id": "2345177",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 6,
-    "va": -4,
-    "seg": 1388
-   },
-   {
-    "id": "2345184",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 13,
-    "va": 10,
-    "seg": 1526
-   },
-   {
-    "id": "2345192",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 15,
-    "va": 18,
-    "seg": 1139
-   },
-   {
-    "id": "2345197",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 20,
-    "va": 22,
-    "seg": 1657
-   },
-   {
-    "id": "2345207",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 8,
-    "va": 6,
-    "seg": 1244
-   },
-   {
-    "id": "2345210",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 32,
-    "va": 27,
-    "seg": 1916
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 97,
-    "grp": 98
-   },
-   "rtPorPartido": {
-    "nac": 40,
-    "grp": 40
-   },
-   "asPorPartido": {
-    "nac": 74,
-    "grp": 72
-   },
-   "brPorPartido": {
-    "nac": 89,
-    "grp": 89
-   },
-   "vaPorPartido": {
-    "nac": 86,
-    "grp": 86
-   },
-   "ts": {
-    "nac": 76,
-    "grp": 80
-   },
-   "efg": {
-    "nac": 69,
-    "grp": 70
-   },
-   "t3Pct": {
-    "nac": 75,
-    "grp": 80
    }
   }
  },
@@ -11597,11 +11348,11 @@
     "grp": 94
    },
    "brPorPartido": {
-    "nac": 87,
+    "nac": 88,
     "grp": 87
    },
    "vaPorPartido": {
-    "nac": 86,
+    "nac": 87,
     "grp": 87
    },
    "ts": {
@@ -11615,276 +11366,6 @@
    "t3Pct": {
     "nac": 94,
     "grp": 91
-   }
-  }
- },
- {
-  "idJugador": "2578914",
-  "nombre": "DIOP, MOR MASSAMBA",
-  "dorsal": "35",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 25,
-  "titular": 25,
-  "minTotales": 651.47,
-  "minPorPartido": 26.06,
-  "pt": 258,
-  "ro": 62,
-  "rd": 107,
-  "rt": 169,
-  "as": 20,
-  "br": 22,
-  "bp": 53,
-  "tfTot": 39,
-  "tcoTot": 2,
-  "fcTot": 69,
-  "frTot": 50,
-  "va": 316,
-  "pm": -73,
-  "t2a": 116,
-  "t2i": 219,
-  "t3a": 0,
-  "t3i": 3,
-  "tla": 26,
-  "tli": 40,
-  "ptPorPartido": 10.32,
-  "roPorPartido": 2.48,
-  "rdPorPartido": 4.28,
-  "rtPorPartido": 6.76,
-  "asPorPartido": 0.8,
-  "brPorPartido": 0.88,
-  "bpPorPartido": 2.12,
-  "tpPorPartido": 1.56,
-  "tcoPorPartido": 0.08,
-  "fcPorPartido": 2.76,
-  "frPorPartido": 2,
-  "vaPorPartido": 12.64,
-  "t2": "116/219",
-  "t3": "0/3",
-  "tl": "26/40",
-  "t2Pct": 52.97,
-  "t3Pct": 0,
-  "tlPct": 65,
-  "ts": 53.84,
-  "efg": 52.25,
-  "usg": 20.46,
-  "per36": {
-   "pt": 14.26,
-   "rt": 9.34,
-   "as": 1.11,
-   "br": 1.22,
-   "va": 17.46
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 13,
-    "va": 25,
-    "seg": 1741
-   },
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 6,
-    "va": 5,
-    "seg": 1548
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 16,
-    "va": 18,
-    "seg": 1774
-   },
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 7,
-    "va": 8,
-    "seg": 1407
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 14,
-    "va": 19,
-    "seg": 1603
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 14,
-    "va": 18,
-    "seg": 1903
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 8,
-    "va": 2,
-    "seg": 1162
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 2,
-    "va": -3,
-    "seg": 689
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 4,
-    "va": 8,
-    "seg": 1278
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 12,
-    "va": 9,
-    "seg": 1867
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 10,
-    "va": 18,
-    "seg": 1702
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 8,
-    "va": 16,
-    "seg": 1603
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 2,
-    "va": 4,
-    "seg": 1111
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 19,
-    "va": 28,
-    "seg": 1770
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 19,
-    "va": 30,
-    "seg": 1894
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 12,
-    "va": 10,
-    "seg": 1794
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 12,
-    "va": 16,
-    "seg": 1660
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 13,
-    "va": 22,
-    "seg": 1890
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 10,
-    "va": 14,
-    "seg": 1829
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 14,
-    "va": 17,
-    "seg": 1963
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 7,
-    "va": 0,
-    "seg": 1262
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 10,
-    "va": 12,
-    "seg": 1542
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 8,
-    "va": 1,
-    "seg": 1186
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 8,
-    "va": 15,
-    "seg": 1541
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 10,
-    "va": 4,
-    "seg": 1369
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 74,
-    "grp": 77
-   },
-   "rtPorPartido": {
-    "nac": 95,
-    "grp": 95
-   },
-   "asPorPartido": {
-    "nac": 31,
-    "grp": 30
-   },
-   "brPorPartido": {
-    "nac": 69,
-    "grp": 66
-   },
-   "vaPorPartido": {
-    "nac": 86,
-    "grp": 85
-   },
-   "ts": {
-    "nac": 61,
-    "grp": 62
-   },
-   "efg": {
-    "nac": 71,
-    "grp": 73
-   },
-   "t3Pct": {
-    "nac": 7,
-    "grp": 9
    }
   }
  },
@@ -12099,8 +11580,8 @@
     "grp": 86
    },
    "vaPorPartido": {
-    "nac": 85,
-    "grp": 84
+    "nac": 86,
+    "grp": 86
    },
    "ts": {
     "nac": 73,
@@ -12214,265 +11695,556 @@
   "percentiles": null
  },
  {
-  "idJugador": "1198438",
-  "nombre": "UCLES BELMONTE, FEDERICO",
-  "dorsal": "9",
+  "idJugador": "414682",
+  "nombre": "GRIMAU GRAGERA, JORDI",
+  "dorsal": "22",
   "equipo": "CLASS BASQUET SANT ANTONI",
   "equipoId": "922368",
   "grupo": "ESTE",
-  "pj": 24,
-  "titular": 18,
-  "minTotales": 610.88,
-  "minPorPartido": 25.45,
-  "pt": 245,
-  "ro": 45,
-  "rd": 106,
-  "rt": 151,
-  "as": 33,
-  "br": 18,
+  "pj": 26,
+  "titular": 15,
+  "minTotales": 631.72,
+  "minPorPartido": 24.3,
+  "pt": 372,
+  "ro": 19,
+  "rd": 55,
+  "rt": 74,
+  "as": 50,
+  "br": 34,
   "bp": 25,
-  "tfTot": 9,
-  "tcoTot": 4,
-  "fcTot": 64,
-  "frTot": 80,
-  "va": 302,
-  "pm": 144,
-  "t2a": 72,
-  "t2i": 155,
-  "t3a": 14,
-  "t3i": 48,
-  "tla": 59,
-  "tli": 87,
-  "ptPorPartido": 10.21,
-  "roPorPartido": 1.88,
-  "rdPorPartido": 4.42,
-  "rtPorPartido": 6.29,
-  "asPorPartido": 1.38,
-  "brPorPartido": 0.75,
-  "bpPorPartido": 1.04,
-  "tpPorPartido": 0.38,
-  "tcoPorPartido": 0.17,
-  "fcPorPartido": 2.67,
-  "frPorPartido": 3.33,
+  "tfTot": 5,
+  "tcoTot": 7,
+  "fcTot": 61,
+  "frTot": 64,
+  "va": 327,
+  "pm": 183,
+  "t2a": 66,
+  "t2i": 130,
+  "t3a": 60,
+  "t3i": 171,
+  "tla": 60,
+  "tli": 71,
+  "ptPorPartido": 14.31,
+  "roPorPartido": 0.73,
+  "rdPorPartido": 2.12,
+  "rtPorPartido": 2.85,
+  "asPorPartido": 1.92,
+  "brPorPartido": 1.31,
+  "bpPorPartido": 0.96,
+  "tpPorPartido": 0.19,
+  "tcoPorPartido": 0.27,
+  "fcPorPartido": 2.35,
+  "frPorPartido": 2.46,
   "vaPorPartido": 12.58,
-  "t2": "72/155",
-  "t3": "14/48",
-  "tl": "59/87",
-  "t2Pct": 46.45,
-  "t3Pct": 29.17,
-  "tlPct": 67.82,
-  "ts": 50.77,
-  "efg": 45.81,
-  "usg": 20.14,
+  "t2": "66/130",
+  "t3": "60/171",
+  "tl": "60/71",
+  "t2Pct": 50.77,
+  "t3Pct": 35.09,
+  "tlPct": 84.51,
+  "ts": 55.98,
+  "efg": 51.83,
+  "usg": 26.17,
   "per36": {
-   "pt": 14.44,
-   "rt": 8.9,
-   "as": 1.94,
-   "br": 1.06,
-   "va": 17.8
+   "pt": 21.2,
+   "rt": 4.22,
+   "as": 2.85,
+   "br": 1.94,
+   "va": 18.63
   },
   "evolucion": [
    {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 28,
+    "va": 31,
+    "seg": 1375
+   },
+   {
     "id": "2345041",
     "jornada": "Jornada 2(14/10/2023)",
-    "pt": 11,
+    "pt": 14,
     "va": 12,
-    "seg": 1108
+    "seg": 1862
    },
    {
     "id": "2345054",
     "jornada": "Jornada 3(21/10/2023)",
-    "pt": 2,
-    "va": -1,
-    "seg": 1428
+    "pt": 14,
+    "va": 7,
+    "seg": 1513
    },
    {
     "id": "2345056",
     "jornada": "Jornada 4(28/10/2023)",
-    "pt": 14,
-    "va": 11,
-    "seg": 1663
+    "pt": 10,
+    "va": 10,
+    "seg": 1205
    },
    {
     "id": "2345067",
     "jornada": "Jornada 5(01/11/2023)",
-    "pt": 16,
-    "va": 22,
-    "seg": 1721
+    "pt": 4,
+    "va": 8,
+    "seg": 1360
    },
    {
     "id": "2345071",
     "jornada": "Jornada 6(04/11/2023)",
-    "pt": 3,
-    "va": 7,
-    "seg": 1392
+    "pt": 15,
+    "va": 14,
+    "seg": 1468
    },
    {
     "id": "2345080",
     "jornada": "Jornada 7(11/11/2023)",
-    "pt": 4,
-    "va": -1,
-    "seg": 730
+    "pt": 7,
+    "va": 9,
+    "seg": 1175
    },
    {
     "id": "2345086",
     "jornada": "Jornada 8(18/11/2023)",
-    "pt": 3,
-    "va": 2,
-    "seg": 894
+    "pt": 12,
+    "va": 10,
+    "seg": 1611
    },
    {
     "id": "2345093",
     "jornada": "Jornada 9(25/11/2023)",
-    "pt": 9,
-    "va": 7,
-    "seg": 1289
+    "pt": 12,
+    "va": 12,
+    "seg": 1108
    },
    {
     "id": "2345101",
     "jornada": "Jornada 10(02/12/2023)",
-    "pt": 11,
-    "va": 17,
-    "seg": 1512
+    "pt": 19,
+    "va": 15,
+    "seg": 1718
    },
    {
     "id": "2345106",
     "jornada": "Jornada 11(09/12/2023)",
-    "pt": 13,
-    "va": 15,
-    "seg": 1697
+    "pt": 18,
+    "va": 18,
+    "seg": 1391
    },
    {
     "id": "2345116",
     "jornada": "Jornada 12(16/12/2023)",
-    "pt": 10,
-    "va": 17,
-    "seg": 1687
+    "pt": 8,
+    "va": 8,
+    "seg": 1196
    },
    {
     "id": "2345119",
     "jornada": "Jornada 13(20/12/2023)",
-    "pt": 14,
-    "va": 17,
-    "seg": 1410
+    "pt": 4,
+    "va": 5,
+    "seg": 972
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 15,
+    "va": 7,
+    "seg": 1372
    },
    {
     "id": "2345132",
     "jornada": "Jornada 15(06/01/2024)",
-    "pt": 9,
-    "va": 12,
-    "seg": 1679
+    "pt": 18,
+    "va": 19,
+    "seg": 1723
    },
    {
     "id": "2345145",
     "jornada": "Jornada 16(13/01/2024)",
-    "pt": 9,
-    "va": 9,
-    "seg": 1746
+    "pt": 17,
+    "va": 14,
+    "seg": 1652
    },
    {
     "id": "2345147",
     "jornada": "Jornada 17(27/01/2024)",
-    "pt": 7,
-    "va": 10,
-    "seg": 1629
+    "pt": 19,
+    "va": 21,
+    "seg": 1623
    },
    {
     "id": "2345158",
     "jornada": "Jornada 18(03/02/2024)",
-    "pt": 14,
-    "va": 14,
-    "seg": 1657
+    "pt": 11,
+    "va": 11,
+    "seg": 1606
    },
    {
     "id": "2345162",
     "jornada": "Jornada 19(10/02/2024)",
-    "pt": 8,
-    "va": 18,
-    "seg": 1213
+    "pt": 11,
+    "va": 5,
+    "seg": 1341
    },
    {
     "id": "2345171",
     "jornada": "Jornada 20(17/02/2024)",
-    "pt": 3,
-    "va": 4,
-    "seg": 1817
+    "pt": 22,
+    "va": 12,
+    "seg": 1762
    },
    {
     "id": "2345177",
     "jornada": "Jornada 21(02/03/2024)",
-    "pt": 14,
-    "va": 17,
-    "seg": 1757
+    "pt": 6,
+    "va": -4,
+    "seg": 1388
    },
    {
     "id": "2345184",
     "jornada": "Jornada 22(09/03/2024)",
-    "pt": 14,
-    "va": 18,
-    "seg": 1584
+    "pt": 13,
+    "va": 10,
+    "seg": 1526
    },
    {
     "id": "2345192",
     "jornada": "Jornada 23(16/03/2024)",
-    "pt": 8,
-    "va": 21,
-    "seg": 2047
+    "pt": 15,
+    "va": 18,
+    "seg": 1139
    },
    {
     "id": "2345197",
     "jornada": "Jornada 24(23/03/2024)",
-    "pt": 15,
-    "va": 13,
-    "seg": 1768
+    "pt": 20,
+    "va": 22,
+    "seg": 1657
    },
    {
     "id": "2345207",
     "jornada": "Jornada 25(30/03/2024)",
-    "pt": 12,
-    "va": 17,
-    "seg": 1196
+    "pt": 8,
+    "va": 6,
+    "seg": 1244
    },
    {
     "id": "2345210",
     "jornada": "Jornada 26(06/04/2024)",
-    "pt": 22,
-    "va": 24,
-    "seg": 2029
+    "pt": 32,
+    "va": 27,
+    "seg": 1916
    }
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 73,
-    "grp": 77
+    "nac": 97,
+    "grp": 98
    },
    "rtPorPartido": {
-    "nac": 92,
-    "grp": 91
+    "nac": 40,
+    "grp": 40
    },
    "asPorPartido": {
-    "nac": 61,
-    "grp": 61
+    "nac": 73,
+    "grp": 71
    },
    "brPorPartido": {
-    "nac": 55,
-    "grp": 51
+    "nac": 88,
+    "grp": 89
+   },
+   "vaPorPartido": {
+    "nac": 86,
+    "grp": 85
+   },
+   "ts": {
+    "nac": 75,
+    "grp": 78
+   },
+   "efg": {
+    "nac": 68,
+    "grp": 68
+   },
+   "t3Pct": {
+    "nac": 75,
+    "grp": 80
+   }
+  }
+ },
+ {
+  "idJugador": "2578914",
+  "nombre": "DIOP, MOR MASSAMBA",
+  "dorsal": "35",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 26,
+  "titular": 25,
+  "minTotales": 682.72,
+  "minPorPartido": 26.26,
+  "pt": 270,
+  "ro": 65,
+  "rd": 109,
+  "rt": 174,
+  "as": 20,
+  "br": 23,
+  "bp": 55,
+  "tfTot": 40,
+  "tcoTot": 2,
+  "fcTot": 73,
+  "frTot": 53,
+  "va": 326,
+  "pm": -93,
+  "t2a": 121,
+  "t2i": 226,
+  "t3a": 0,
+  "t3i": 3,
+  "tla": 28,
+  "tli": 46,
+  "ptPorPartido": 10.38,
+  "roPorPartido": 2.5,
+  "rdPorPartido": 4.19,
+  "rtPorPartido": 6.69,
+  "asPorPartido": 0.77,
+  "brPorPartido": 0.88,
+  "bpPorPartido": 2.12,
+  "tpPorPartido": 1.54,
+  "tcoPorPartido": 0.08,
+  "fcPorPartido": 2.81,
+  "frPorPartido": 2.04,
+  "vaPorPartido": 12.54,
+  "t2": "121/226",
+  "t3": "0/3",
+  "tl": "28/46",
+  "t2Pct": 53.54,
+  "t3Pct": 0,
+  "tlPct": 60.87,
+  "ts": 54.16,
+  "efg": 52.84,
+  "usg": 20.38,
+  "per36": {
+   "pt": 14.24,
+   "rt": 9.18,
+   "as": 1.05,
+   "br": 1.21,
+   "va": 17.19
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 13,
+    "va": 25,
+    "seg": 1741
+   },
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 6,
+    "va": 5,
+    "seg": 1548
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 16,
+    "va": 18,
+    "seg": 1774
+   },
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 7,
+    "va": 8,
+    "seg": 1407
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 14,
+    "va": 19,
+    "seg": 1603
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 14,
+    "va": 18,
+    "seg": 1903
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 8,
+    "va": 2,
+    "seg": 1162
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 2,
+    "va": -3,
+    "seg": 689
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 4,
+    "va": 8,
+    "seg": 1278
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 12,
+    "va": 9,
+    "seg": 1867
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 10,
+    "va": 18,
+    "seg": 1702
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 8,
+    "va": 16,
+    "seg": 1603
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 2,
+    "va": 4,
+    "seg": 1111
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 12,
+    "va": 10,
+    "seg": 1875
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 19,
+    "va": 28,
+    "seg": 1770
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 19,
+    "va": 30,
+    "seg": 1894
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 12,
+    "va": 10,
+    "seg": 1794
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 12,
+    "va": 16,
+    "seg": 1660
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 13,
+    "va": 22,
+    "seg": 1890
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 10,
+    "va": 14,
+    "seg": 1829
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 14,
+    "va": 17,
+    "seg": 1963
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 7,
+    "va": 0,
+    "seg": 1262
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 10,
+    "va": 12,
+    "seg": 1542
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 8,
+    "va": 1,
+    "seg": 1186
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 8,
+    "va": 15,
+    "seg": 1541
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 10,
+    "va": 4,
+    "seg": 1369
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 75,
+    "grp": 78
+   },
+   "rtPorPartido": {
+    "nac": 95,
+    "grp": 95
+   },
+   "asPorPartido": {
+    "nac": 30,
+    "grp": 29
+   },
+   "brPorPartido": {
+    "nac": 70,
+    "grp": 66
    },
    "vaPorPartido": {
     "nac": 85,
-    "grp": 83
+    "grp": 84
    },
    "ts": {
-    "nac": 46,
-    "grp": 45
+    "nac": 63,
+    "grp": 62
    },
    "efg": {
-    "nac": 39,
-    "grp": 40
+    "nac": 75,
+    "grp": 76
    },
    "t3Pct": {
-    "nac": 47,
-    "grp": 47
+    "nac": 7,
+    "grp": 9
    }
   }
  },
@@ -12718,7 +12490,7 @@
    },
    "rtPorPartido": {
     "nac": 48,
-    "grp": 48
+    "grp": 47
    },
    "asPorPartido": {
     "nac": 90,
@@ -12734,7 +12506,7 @@
    },
    "ts": {
     "nac": 48,
-    "grp": 48
+    "grp": 49
    },
    "efg": {
     "nac": 49,
@@ -12742,7 +12514,7 @@
    },
    "t3Pct": {
     "nac": 48,
-    "grp": 48
+    "grp": 49
    }
   }
  },
@@ -12998,7 +12770,7 @@
     "grp": 92
    },
    "asPorPartido": {
-    "nac": 24,
+    "nac": 23,
     "grp": 28
    },
    "brPorPartido": {
@@ -13006,11 +12778,11 @@
     "grp": 64
    },
    "vaPorPartido": {
-    "nac": 84,
+    "nac": 85,
     "grp": 87
    },
    "ts": {
-    "nac": 51,
+    "nac": 52,
     "grp": 51
    },
    "efg": {
@@ -13257,7 +13029,7 @@
     "grp": 93
    },
    "rtPorPartido": {
-    "nac": 73,
+    "nac": 72,
     "grp": 72
    },
    "asPorPartido": {
@@ -13273,7 +13045,7 @@
     "grp": 86
    },
    "ts": {
-    "nac": 64,
+    "nac": 63,
     "grp": 64
    },
    "efg": {
@@ -13283,276 +13055,6 @@
    "t3Pct": {
     "nac": 82,
     "grp": 79
-   }
-  }
- },
- {
-  "idJugador": "1251413",
-  "nombre": "FERNÁNDEZ GÓMEZ, ARTURO",
-  "dorsal": "7",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 25,
-  "titular": 20,
-  "minTotales": 667.02,
-  "minPorPartido": 26.68,
-  "pt": 288,
-  "ro": 29,
-  "rd": 86,
-  "rt": 115,
-  "as": 93,
-  "br": 27,
-  "bp": 56,
-  "tfTot": 0,
-  "tcoTot": 7,
-  "fcTot": 50,
-  "frTot": 89,
-  "va": 307,
-  "pm": -39,
-  "t2a": 72,
-  "t2i": 183,
-  "t3a": 24,
-  "t3i": 76,
-  "tla": 72,
-  "tli": 108,
-  "ptPorPartido": 11.52,
-  "roPorPartido": 1.16,
-  "rdPorPartido": 3.44,
-  "rtPorPartido": 4.6,
-  "asPorPartido": 3.72,
-  "brPorPartido": 1.08,
-  "bpPorPartido": 2.24,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.28,
-  "fcPorPartido": 2,
-  "frPorPartido": 3.56,
-  "vaPorPartido": 12.28,
-  "t2": "72/183",
-  "t3": "24/76",
-  "tl": "72/108",
-  "t2Pct": 39.34,
-  "t3Pct": 31.58,
-  "tlPct": 66.67,
-  "ts": 46.98,
-  "efg": 41.7,
-  "usg": 24.76,
-  "per36": {
-   "pt": 15.54,
-   "rt": 6.21,
-   "as": 5.02,
-   "br": 1.46,
-   "va": 16.57
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 9,
-    "va": 6,
-    "seg": 1983
-   },
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 10,
-    "va": 9,
-    "seg": 1367
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 6,
-    "va": 8,
-    "seg": 1783
-   },
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 1,
-    "va": -3,
-    "seg": 1480
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 7,
-    "va": 7,
-    "seg": 1771
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 14,
-    "va": 19,
-    "seg": 1747
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 2,
-    "va": 6,
-    "seg": 1207
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 4,
-    "va": 5,
-    "seg": 1838
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 15,
-    "va": 28,
-    "seg": 1503
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 13,
-    "va": 11,
-    "seg": 1676
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 13,
-    "va": 11,
-    "seg": 1338
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 19,
-    "va": 23,
-    "seg": 1746
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 18,
-    "va": 19,
-    "seg": 1463
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 18,
-    "va": 23,
-    "seg": 1808
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 9,
-    "va": 16,
-    "seg": 1564
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 11,
-    "va": 9,
-    "seg": 1699
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 12,
-    "va": 8,
-    "seg": 1770
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 4,
-    "va": 4,
-    "seg": 1476
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 15,
-    "va": 20,
-    "seg": 1334
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 21,
-    "va": 24,
-    "seg": 1606
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 13,
-    "va": 3,
-    "seg": 1633
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 24,
-    "va": 29,
-    "seg": 1536
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 9,
-    "va": 11,
-    "seg": 1785
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 5,
-    "va": -2,
-    "seg": 1509
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 16,
-    "va": 13,
-    "seg": 1399
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 84,
-    "grp": 85
-   },
-   "rtPorPartido": {
-    "nac": 77,
-    "grp": 77
-   },
-   "asPorPartido": {
-    "nac": 92,
-    "grp": 91
-   },
-   "brPorPartido": {
-    "nac": 80,
-    "grp": 80
-   },
-   "vaPorPartido": {
-    "nac": 83,
-    "grp": 82
-   },
-   "ts": {
-    "nac": 24,
-    "grp": 23
-   },
-   "efg": {
-    "nac": 16,
-    "grp": 15
-   },
-   "t3Pct": {
-    "nac": 60,
-    "grp": 61
    }
   }
  },
@@ -13816,11 +13318,11 @@
     "grp": 64
    },
    "vaPorPartido": {
-    "nac": 83,
+    "nac": 84,
     "grp": 85
    },
    "ts": {
-    "nac": 56,
+    "nac": 57,
     "grp": 57
    },
    "efg": {
@@ -13999,6 +13501,553 @@
    }
   ],
   "percentiles": null
+ },
+ {
+  "idJugador": "1251413",
+  "nombre": "FERNÁNDEZ GÓMEZ, ARTURO",
+  "dorsal": "7",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 26,
+  "titular": 21,
+  "minTotales": 695.82,
+  "minPorPartido": 26.76,
+  "pt": 300,
+  "ro": 29,
+  "rd": 93,
+  "rt": 122,
+  "as": 93,
+  "br": 29,
+  "bp": 59,
+  "tfTot": 0,
+  "tcoTot": 7,
+  "fcTot": 53,
+  "frTot": 91,
+  "va": 318,
+  "pm": -48,
+  "t2a": 77,
+  "t2i": 190,
+  "t3a": 24,
+  "t3i": 80,
+  "tla": 74,
+  "tli": 110,
+  "ptPorPartido": 11.54,
+  "roPorPartido": 1.12,
+  "rdPorPartido": 3.58,
+  "rtPorPartido": 4.69,
+  "asPorPartido": 3.58,
+  "brPorPartido": 1.12,
+  "bpPorPartido": 2.27,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.27,
+  "fcPorPartido": 2.04,
+  "frPorPartido": 3.5,
+  "vaPorPartido": 12.23,
+  "t2": "77/190",
+  "t3": "24/80",
+  "tl": "74/110",
+  "t2Pct": 40.53,
+  "t3Pct": 30,
+  "tlPct": 67.27,
+  "ts": 47.11,
+  "efg": 41.85,
+  "usg": 24.81,
+  "per36": {
+   "pt": 15.52,
+   "rt": 6.31,
+   "as": 4.81,
+   "br": 1.5,
+   "va": 16.45
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 9,
+    "va": 6,
+    "seg": 1983
+   },
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 10,
+    "va": 9,
+    "seg": 1367
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 6,
+    "va": 8,
+    "seg": 1783
+   },
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 1,
+    "va": -3,
+    "seg": 1480
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 7,
+    "va": 7,
+    "seg": 1771
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 14,
+    "va": 19,
+    "seg": 1747
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 2,
+    "va": 6,
+    "seg": 1207
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 4,
+    "va": 5,
+    "seg": 1838
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 15,
+    "va": 28,
+    "seg": 1503
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 13,
+    "va": 11,
+    "seg": 1676
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 13,
+    "va": 11,
+    "seg": 1338
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 19,
+    "va": 23,
+    "seg": 1746
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 18,
+    "va": 19,
+    "seg": 1463
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 12,
+    "va": 11,
+    "seg": 1728
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 18,
+    "va": 23,
+    "seg": 1808
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 9,
+    "va": 16,
+    "seg": 1564
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 11,
+    "va": 9,
+    "seg": 1699
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 12,
+    "va": 8,
+    "seg": 1770
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 4,
+    "va": 4,
+    "seg": 1476
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 15,
+    "va": 20,
+    "seg": 1334
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 21,
+    "va": 24,
+    "seg": 1606
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 13,
+    "va": 3,
+    "seg": 1633
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 24,
+    "va": 29,
+    "seg": 1536
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 9,
+    "va": 11,
+    "seg": 1785
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 5,
+    "va": -2,
+    "seg": 1509
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 16,
+    "va": 13,
+    "seg": 1399
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 84,
+    "grp": 85
+   },
+   "rtPorPartido": {
+    "nac": 78,
+    "grp": 77
+   },
+   "asPorPartido": {
+    "nac": 92,
+    "grp": 91
+   },
+   "brPorPartido": {
+    "nac": 81,
+    "grp": 83
+   },
+   "vaPorPartido": {
+    "nac": 83,
+    "grp": 83
+   },
+   "ts": {
+    "nac": 24,
+    "grp": 23
+   },
+   "efg": {
+    "nac": 17,
+    "grp": 17
+   },
+   "t3Pct": {
+    "nac": 50,
+    "grp": 51
+   }
+  }
+ },
+ {
+  "idJugador": "1198438",
+  "nombre": "UCLES BELMONTE, FEDERICO",
+  "dorsal": "9",
+  "equipo": "CLASS BASQUET SANT ANTONI",
+  "equipoId": "922368",
+  "grupo": "ESTE",
+  "pj": 25,
+  "titular": 19,
+  "minTotales": 630.95,
+  "minPorPartido": 25.24,
+  "pt": 246,
+  "ro": 46,
+  "rd": 111,
+  "rt": 157,
+  "as": 34,
+  "br": 20,
+  "bp": 26,
+  "tfTot": 9,
+  "tcoTot": 5,
+  "fcTot": 68,
+  "frTot": 81,
+  "va": 304,
+  "pm": 160,
+  "t2a": 72,
+  "t2i": 157,
+  "t3a": 14,
+  "t3i": 49,
+  "tla": 60,
+  "tli": 89,
+  "ptPorPartido": 9.84,
+  "roPorPartido": 1.84,
+  "rdPorPartido": 4.44,
+  "rtPorPartido": 6.28,
+  "asPorPartido": 1.36,
+  "brPorPartido": 0.8,
+  "bpPorPartido": 1.04,
+  "tpPorPartido": 0.36,
+  "tcoPorPartido": 0.2,
+  "fcPorPartido": 2.72,
+  "frPorPartido": 3.24,
+  "vaPorPartido": 12.16,
+  "t2": "72/157",
+  "t3": "14/49",
+  "tl": "60/89",
+  "t2Pct": 45.86,
+  "t3Pct": 28.57,
+  "tlPct": 67.42,
+  "ts": 50.17,
+  "efg": 45.15,
+  "usg": 19.89,
+  "per36": {
+   "pt": 14.04,
+   "rt": 8.96,
+   "as": 1.94,
+   "br": 1.14,
+   "va": 17.35
+  },
+  "evolucion": [
+   {
+    "id": "2345041",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 11,
+    "va": 12,
+    "seg": 1108
+   },
+   {
+    "id": "2345054",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 2,
+    "va": -1,
+    "seg": 1428
+   },
+   {
+    "id": "2345056",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 14,
+    "va": 11,
+    "seg": 1663
+   },
+   {
+    "id": "2345067",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 16,
+    "va": 22,
+    "seg": 1721
+   },
+   {
+    "id": "2345071",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 3,
+    "va": 7,
+    "seg": 1392
+   },
+   {
+    "id": "2345080",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 4,
+    "va": -1,
+    "seg": 730
+   },
+   {
+    "id": "2345086",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 3,
+    "va": 2,
+    "seg": 894
+   },
+   {
+    "id": "2345093",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 9,
+    "va": 7,
+    "seg": 1289
+   },
+   {
+    "id": "2345101",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 11,
+    "va": 17,
+    "seg": 1512
+   },
+   {
+    "id": "2345106",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 13,
+    "va": 15,
+    "seg": 1697
+   },
+   {
+    "id": "2345116",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 10,
+    "va": 17,
+    "seg": 1687
+   },
+   {
+    "id": "2345119",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 14,
+    "va": 17,
+    "seg": 1410
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 1,
+    "va": 2,
+    "seg": 1204
+   },
+   {
+    "id": "2345132",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 9,
+    "va": 12,
+    "seg": 1679
+   },
+   {
+    "id": "2345145",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 9,
+    "va": 9,
+    "seg": 1746
+   },
+   {
+    "id": "2345147",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 7,
+    "va": 10,
+    "seg": 1629
+   },
+   {
+    "id": "2345158",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 14,
+    "va": 14,
+    "seg": 1657
+   },
+   {
+    "id": "2345162",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 8,
+    "va": 18,
+    "seg": 1213
+   },
+   {
+    "id": "2345171",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 3,
+    "va": 4,
+    "seg": 1817
+   },
+   {
+    "id": "2345177",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 14,
+    "va": 17,
+    "seg": 1757
+   },
+   {
+    "id": "2345184",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 14,
+    "va": 18,
+    "seg": 1584
+   },
+   {
+    "id": "2345192",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 8,
+    "va": 21,
+    "seg": 2047
+   },
+   {
+    "id": "2345197",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 15,
+    "va": 13,
+    "seg": 1768
+   },
+   {
+    "id": "2345207",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 12,
+    "va": 17,
+    "seg": 1196
+   },
+   {
+    "id": "2345210",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 22,
+    "va": 24,
+    "seg": 2029
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 69,
+    "grp": 71
+   },
+   "rtPorPartido": {
+    "nac": 92,
+    "grp": 91
+   },
+   "asPorPartido": {
+    "nac": 60,
+    "grp": 60
+   },
+   "brPorPartido": {
+    "nac": 60,
+    "grp": 56
+   },
+   "vaPorPartido": {
+    "nac": 83,
+    "grp": 82
+   },
+   "ts": {
+    "nac": 40,
+    "grp": 40
+   },
+   "efg": {
+    "nac": 34,
+    "grp": 36
+   },
+   "t3Pct": {
+    "nac": 44,
+    "grp": 44
+   }
+  }
  },
  {
   "idJugador": "2816729",
@@ -14629,7 +14678,7 @@
     "grp": 83
    },
    "rtPorPartido": {
-    "nac": 64,
+    "nac": 63,
     "grp": 61
    },
    "asPorPartido": {
@@ -14645,11 +14694,11 @@
     "grp": 83
    },
    "ts": {
-    "nac": 72,
+    "nac": 73,
     "grp": 70
    },
    "efg": {
-    "nac": 73,
+    "nac": 72,
     "grp": 72
    },
    "t3Pct": {
@@ -15140,7 +15189,7 @@
     "grp": 65
    },
    "efg": {
-    "nac": 61,
+    "nac": 62,
     "grp": 60
    },
    "t3Pct": {
@@ -15534,7 +15583,7 @@
    },
    "asPorPartido": {
     "nac": 75,
-    "grp": 73
+    "grp": 74
    },
    "brPorPartido": {
     "nac": 74,
@@ -15545,12 +15594,12 @@
     "grp": 81
    },
    "ts": {
-    "nac": 41,
-    "grp": 39
+    "nac": 42,
+    "grp": 41
    },
    "efg": {
-    "nac": 29,
-    "grp": 31
+    "nac": 28,
+    "grp": 30
    },
    "t3Pct": {
     "nac": 10,
@@ -15795,11 +15844,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 71,
-    "grp": 73
+    "nac": 72,
+    "grp": 74
    },
    "rtPorPartido": {
-    "nac": 84,
+    "nac": 83,
     "grp": 83
    },
    "asPorPartido": {
@@ -15816,15 +15865,15 @@
    },
    "ts": {
     "nac": 39,
-    "grp": 37
+    "grp": 38
    },
    "efg": {
     "nac": 38,
-    "grp": 39
+    "grp": 40
    },
    "t3Pct": {
     "nac": 32,
-    "grp": 34
+    "grp": 35
    }
   }
  },
@@ -16069,7 +16118,7 @@
     "grp": 66
    },
    "rtPorPartido": {
-    "nac": 79,
+    "nac": 78,
     "grp": 80
    },
    "asPorPartido": {
@@ -16085,7 +16134,7 @@
     "grp": 81
    },
    "ts": {
-    "nac": 44,
+    "nac": 45,
     "grp": 46
    },
    "efg": {
@@ -16284,7 +16333,7 @@
    },
    "rtPorPartido": {
     "nac": 46,
-    "grp": 45
+    "grp": 46
    },
    "asPorPartido": {
     "nac": 97,
@@ -16577,7 +16626,7 @@
     "grp": 57
    },
    "t3Pct": {
-    "nac": 36,
+    "nac": 37,
     "grp": 35
    }
   }
@@ -16817,7 +16866,7 @@
    },
    "rtPorPartido": {
     "nac": 67,
-    "grp": 70
+    "grp": 69
    },
    "asPorPartido": {
     "nac": 76,
@@ -16832,8 +16881,8 @@
     "grp": 79
    },
    "ts": {
-    "nac": 84,
-    "grp": 87
+    "nac": 85,
+    "grp": 88
    },
    "efg": {
     "nac": 85,
@@ -17329,7 +17378,7 @@
     "grp": 91
    },
    "rtPorPartido": {
-    "nac": 19,
+    "nac": 18,
     "grp": 17
    },
    "asPorPartido": {
@@ -17614,7 +17663,7 @@
     "grp": 91
    },
    "brPorPartido": {
-    "nac": 88,
+    "nac": 89,
     "grp": 88
    },
    "vaPorPartido": {
@@ -17622,7 +17671,7 @@
     "grp": 79
    },
    "ts": {
-    "nac": 42,
+    "nac": 43,
     "grp": 43
    },
    "efg": {
@@ -17837,16 +17886,16 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 75,
-    "grp": 78
+    "nac": 74,
+    "grp": 77
    },
    "rtPorPartido": {
     "nac": 66,
-    "grp": 69
+    "grp": 68
    },
    "asPorPartido": {
     "nac": 31,
-    "grp": 30
+    "grp": 31
    },
    "brPorPartido": {
     "nac": 10,
@@ -18072,11 +18121,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 41,
+    "nac": 42,
     "grp": 44
    },
    "rtPorPartido": {
-    "nac": 41,
+    "nac": 40,
     "grp": 41
    },
    "asPorPartido": {
@@ -18611,7 +18660,7 @@
     "grp": 77
    },
    "ts": {
-    "nac": 61,
+    "nac": 60,
     "grp": 61
    },
    "efg": {
@@ -18619,7 +18668,7 @@
     "grp": 65
    },
    "t3Pct": {
-    "nac": 81,
+    "nac": 82,
     "grp": 85
    }
   }
@@ -18869,7 +18918,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 50,
-    "grp": 48
+    "grp": 47
    },
    "rtPorPartido": {
     "nac": 89,
@@ -18880,7 +18929,7 @@
     "grp": 83
    },
    "brPorPartido": {
-    "nac": 88,
+    "nac": 89,
     "grp": 89
    },
    "vaPorPartido": {
@@ -18888,11 +18937,11 @@
     "grp": 77
    },
    "ts": {
-    "nac": 38,
-    "grp": 36
+    "nac": 39,
+    "grp": 38
    },
    "efg": {
-    "nac": 31,
+    "nac": 30,
     "grp": 32
    },
    "t3Pct": {
@@ -19149,15 +19198,15 @@
     "grp": 70
    },
    "rtPorPartido": {
-    "nac": 85,
-    "grp": 85
+    "nac": 84,
+    "grp": 84
    },
    "asPorPartido": {
     "nac": 28,
     "grp": 26
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 32
    },
    "vaPorPartido": {
@@ -19446,7 +19495,7 @@
     "grp": 75
    },
    "efg": {
-    "nac": 71,
+    "nac": 70,
     "grp": 69
    },
    "t3Pct": {
@@ -19711,7 +19760,7 @@
     "grp": 98
    },
    "brPorPartido": {
-    "nac": 61,
+    "nac": 62,
     "grp": 66
    },
    "vaPorPartido": {
@@ -19981,7 +20030,7 @@
     "grp": 43
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 73
    },
    "vaPorPartido": {
@@ -20250,8 +20299,8 @@
     "grp": 92
    },
    "rtPorPartido": {
-    "nac": 51,
-    "grp": 52
+    "nac": 52,
+    "grp": 53
    },
    "asPorPartido": {
     "nac": 72,
@@ -20267,11 +20316,11 @@
    },
    "ts": {
     "nac": 67,
-    "grp": 67
+    "grp": 68
    },
    "efg": {
     "nac": 56,
-    "grp": 55
+    "grp": 56
    },
    "t3Pct": {
     "nac": 85,
@@ -20535,7 +20584,7 @@
     "grp": 83
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "vaPorPartido": {
@@ -20543,16 +20592,16 @@
     "grp": 74
    },
    "ts": {
-    "nac": 40,
-    "grp": 39
+    "nac": 41,
+    "grp": 41
    },
    "efg": {
-    "nac": 28,
-    "grp": 30
+    "nac": 27,
+    "grp": 29
    },
    "t3Pct": {
-    "nac": 29,
-    "grp": 30
+    "nac": 30,
+    "grp": 31
    }
   }
  },
@@ -20821,7 +20870,7 @@
     "grp": 77
    },
    "t3Pct": {
-    "nac": 54,
+    "nac": 55,
     "grp": 54
    }
   }
@@ -21071,7 +21120,7 @@
     "grp": 81
    },
    "asPorPartido": {
-    "nac": 95,
+    "nac": 96,
     "grp": 96
    },
    "brPorPartido": {
@@ -21091,7 +21140,7 @@
     "grp": 9
    },
    "t3Pct": {
-    "nac": 38,
+    "nac": 39,
     "grp": 39
    }
   }
@@ -21310,7 +21359,7 @@
     "grp": 77
    },
    "brPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 28
    },
    "vaPorPartido": {
@@ -21558,7 +21607,7 @@
     "grp": 77
    },
    "rtPorPartido": {
-    "nac": 34,
+    "nac": 33,
     "grp": 32
    },
    "asPorPartido": {
@@ -21782,11 +21831,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 66,
+    "nac": 67,
     "grp": 68
    },
    "rtPorPartido": {
-    "nac": 86,
+    "nac": 87,
     "grp": 86
    },
    "asPorPartido": {
@@ -21799,7 +21848,7 @@
    },
    "vaPorPartido": {
     "nac": 72,
-    "grp": 73
+    "grp": 74
    },
    "ts": {
     "nac": 66,
@@ -21807,7 +21856,7 @@
    },
    "efg": {
     "nac": 66,
-    "grp": 67
+    "grp": 68
    },
    "t3Pct": {
     "nac": 7,
@@ -22456,7 +22505,7 @@
     "grp": 91
    },
    "vaPorPartido": {
-    "nac": 71,
+    "nac": 72,
     "grp": 70
    },
    "ts": {
@@ -22464,7 +22513,7 @@
     "grp": 29
    },
    "efg": {
-    "nac": 35,
+    "nac": 36,
     "grp": 35
    },
    "t3Pct": {
@@ -22711,14 +22760,14 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 46,
-    "grp": 42
+    "grp": 43
    },
    "rtPorPartido": {
     "nac": 58,
     "grp": 61
    },
    "asPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "brPorPartido": {
@@ -22992,7 +23041,7 @@
     "grp": 85
    },
    "brPorPartido": {
-    "nac": 56,
+    "nac": 55,
     "grp": 60
    },
    "vaPorPartido": {
@@ -23000,11 +23049,11 @@
     "grp": 69
    },
    "ts": {
-    "nac": 47,
+    "nac": 48,
     "grp": 48
    },
    "efg": {
-    "nac": 36,
+    "nac": 37,
     "grp": 36
    },
    "t3Pct": {
@@ -23274,7 +23323,7 @@
     "grp": 56
    },
    "efg": {
-    "nac": 41,
+    "nac": 42,
     "grp": 41
    },
    "t3Pct": {
@@ -23528,11 +23577,11 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 44,
-    "grp": 40
+    "grp": 41
    },
    "rtPorPartido": {
     "nac": 80,
-    "grp": 79
+    "grp": 78
    },
    "asPorPartido": {
     "nac": 70,
@@ -23766,7 +23815,7 @@
     "grp": 89
    },
    "rtPorPartido": {
-    "nac": 29,
+    "nac": 28,
     "grp": 31
    },
    "asPorPartido": {
@@ -23775,15 +23824,15 @@
    },
    "brPorPartido": {
     "nac": 66,
-    "grp": 61
+    "grp": 62
    },
    "vaPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 71
    },
    "ts": {
     "nac": 59,
-    "grp": 60
+    "grp": 59
    },
    "efg": {
     "nac": 58,
@@ -24063,11 +24112,11 @@
     "grp": 7
    },
    "efg": {
-    "nac": 25,
+    "nac": 24,
     "grp": 24
    },
    "t3Pct": {
-    "nac": 15,
+    "nac": 16,
     "grp": 13
    }
   }
@@ -24336,11 +24385,11 @@
     "grp": 67
    },
    "ts": {
-    "nac": 37,
+    "nac": 38,
     "grp": 40
    },
    "efg": {
-    "nac": 42,
+    "nac": 43,
     "grp": 43
    },
    "t3Pct": {
@@ -24572,8 +24621,8 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 84,
-    "grp": 85
+    "nac": 83,
+    "grp": 84
    },
    "rtPorPartido": {
     "nac": 25,
@@ -24584,12 +24633,12 @@
     "grp": 92
    },
    "brPorPartido": {
-    "nac": 21,
-    "grp": 18
+    "nac": 20,
+    "grp": 17
    },
    "vaPorPartido": {
     "nac": 68,
-    "grp": 70
+    "grp": 71
    },
    "ts": {
     "nac": 53,
@@ -24832,7 +24881,7 @@
     "grp": 64
    },
    "rtPorPartido": {
-    "nac": 77,
+    "nac": 76,
     "grp": 77
    },
    "asPorPartido": {
@@ -24848,7 +24897,7 @@
     "grp": 66
    },
    "ts": {
-    "nac": 81,
+    "nac": 82,
     "grp": 79
    },
    "efg": {
@@ -24856,7 +24905,7 @@
     "grp": 71
    },
    "t3Pct": {
-    "nac": 34,
+    "nac": 35,
     "grp": 34
    }
   }
@@ -25105,19 +25154,19 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 51,
+    "nac": 52,
     "grp": 50
    },
    "rtPorPartido": {
     "nac": 85,
-    "grp": 86
+    "grp": 85
    },
    "asPorPartido": {
-    "nac": 76,
+    "nac": 77,
     "grp": 76
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "vaPorPartido": {
@@ -25134,7 +25183,7 @@
    },
    "t3Pct": {
     "nac": 30,
-    "grp": 31
+    "grp": 32
    }
   }
  },
@@ -25387,7 +25436,7 @@
    },
    "rtPorPartido": {
     "nac": 81,
-    "grp": 80
+    "grp": 79
    },
    "asPorPartido": {
     "nac": 72,
@@ -25411,7 +25460,7 @@
    },
    "t3Pct": {
     "nac": 46,
-    "grp": 45
+    "grp": 47
    }
   }
  },
@@ -25791,7 +25840,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 59,
+    "nac": 60,
     "grp": 59
    },
    "rtPorPartido": {
@@ -26058,24 +26107,24 @@
     "grp": 94
    },
    "rtPorPartido": {
-    "nac": 58,
-    "grp": 61
+    "nac": 57,
+    "grp": 60
    },
    "asPorPartido": {
     "nac": 58,
-    "grp": 58
+    "grp": 59
    },
    "brPorPartido": {
     "nac": 90,
     "grp": 91
    },
    "vaPorPartido": {
-    "nac": 66,
+    "nac": 67,
     "grp": 68
    },
    "ts": {
-    "nac": 25,
-    "grp": 24
+    "nac": 24,
+    "grp": 23
    },
    "efg": {
     "nac": 32,
@@ -26083,7 +26132,7 @@
    },
    "t3Pct": {
     "nac": 57,
-    "grp": 57
+    "grp": 58
    }
   }
  },
@@ -26344,19 +26393,19 @@
    },
    "brPorPartido": {
     "nac": 53,
-    "grp": 48
+    "grp": 49
    },
    "vaPorPartido": {
     "nac": 66,
-    "grp": 67
+    "grp": 68
    },
    "ts": {
-    "nac": 71,
-    "grp": 73
+    "nac": 72,
+    "grp": 74
    },
    "efg": {
-    "nac": 71,
-    "grp": 73
+    "nac": 70,
+    "grp": 72
    },
    "t3Pct": {
     "nac": 33,
@@ -26625,15 +26674,15 @@
    },
    "vaPorPartido": {
     "nac": 66,
-    "grp": 67
+    "grp": 68
    },
    "ts": {
     "nac": 35,
-    "grp": 33
+    "grp": 34
    },
    "efg": {
-    "nac": 41,
-    "grp": 42
+    "nac": 42,
+    "grp": 43
    },
    "t3Pct": {
     "nac": 73,
@@ -26843,12 +26892,12 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 69,
-    "grp": 71
+    "nac": 70,
+    "grp": 72
    },
    "rtPorPartido": {
     "nac": 38,
-    "grp": 39
+    "grp": 38
    },
    "asPorPartido": {
     "nac": 77,
@@ -26868,11 +26917,11 @@
    },
    "efg": {
     "nac": 27,
-    "grp": 29
+    "grp": 28
    },
    "t3Pct": {
     "nac": 51,
-    "grp": 52
+    "grp": 53
    }
   }
  },
@@ -27125,7 +27174,7 @@
    },
    "rtPorPartido": {
     "nac": 80,
-    "grp": 79
+    "grp": 78
    },
    "asPorPartido": {
     "nac": 52,
@@ -27133,23 +27182,23 @@
    },
    "brPorPartido": {
     "nac": 78,
-    "grp": 78
+    "grp": 79
    },
    "vaPorPartido": {
     "nac": 65,
     "grp": 65
    },
    "ts": {
-    "nac": 45,
-    "grp": 44
+    "nac": 46,
+    "grp": 46
    },
    "efg": {
-    "nac": 46,
+    "nac": 47,
     "grp": 45
    },
    "t3Pct": {
-    "nac": 35,
-    "grp": 36
+    "nac": 36,
+    "grp": 37
    }
   }
  },
@@ -27401,8 +27450,8 @@
     "grp": 59
    },
    "rtPorPartido": {
-    "nac": 85,
-    "grp": 85
+    "nac": 84,
+    "grp": 84
    },
    "asPorPartido": {
     "nac": 59,
@@ -27410,7 +27459,7 @@
    },
    "brPorPartido": {
     "nac": 81,
-    "grp": 82
+    "grp": 83
    },
    "vaPorPartido": {
     "nac": 65,
@@ -27418,15 +27467,15 @@
    },
    "ts": {
     "nac": 37,
-    "grp": 35
+    "grp": 36
    },
    "efg": {
     "nac": 36,
-    "grp": 36
+    "grp": 37
    },
    "t3Pct": {
-    "nac": 20,
-    "grp": 22
+    "nac": 21,
+    "grp": 23
    }
   }
  },
@@ -27949,7 +27998,7 @@
    },
    "rtPorPartido": {
     "nac": 63,
-    "grp": 66
+    "grp": 65
    },
    "asPorPartido": {
     "nac": 79,
@@ -28506,7 +28555,7 @@
     "grp": 88
    },
    "asPorPartido": {
-    "nac": 24,
+    "nac": 23,
     "grp": 28
    },
    "brPorPartido": {
@@ -28518,7 +28567,7 @@
     "grp": 64
    },
    "ts": {
-    "nac": 62,
+    "nac": 61,
     "grp": 61
    },
    "efg": {
@@ -29046,19 +29095,19 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 72,
-    "grp": 74
+    "grp": 75
    },
    "rtPorPartido": {
     "nac": 62,
     "grp": 65
    },
    "asPorPartido": {
-    "nac": 49,
+    "nac": 48,
     "grp": 47
    },
    "brPorPartido": {
     "nac": 66,
-    "grp": 61
+    "grp": 62
    },
    "vaPorPartido": {
     "nac": 62,
@@ -29305,7 +29354,7 @@
     "grp": 72
    },
    "rtPorPartido": {
-    "nac": 80,
+    "nac": 79,
     "grp": 82
    },
    "asPorPartido": {
@@ -29572,22 +29621,22 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 73,
-    "grp": 76
+    "grp": 77
    },
    "rtPorPartido": {
     "nac": 60,
-    "grp": 64
+    "grp": 63
    },
    "asPorPartido": {
     "nac": 31,
-    "grp": 30
+    "grp": 31
    },
    "brPorPartido": {
     "nac": 29,
     "grp": 25
    },
    "vaPorPartido": {
-    "nac": 61,
+    "nac": 62,
     "grp": 62
    },
    "ts": {
@@ -29849,7 +29898,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 53,
-    "grp": 52
+    "grp": 53
    },
    "rtPorPartido": {
     "nac": 91,
@@ -29865,7 +29914,7 @@
    },
    "vaPorPartido": {
     "nac": 61,
-    "grp": 61
+    "grp": 62
    },
    "ts": {
     "nac": 25,
@@ -30125,7 +30174,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 37,
+    "nac": 38,
     "grp": 39
    },
    "rtPorPartido": {
@@ -30137,7 +30186,7 @@
     "grp": 47
    },
    "brPorPartido": {
-    "nac": 81,
+    "nac": 82,
     "grp": 80
    },
    "vaPorPartido": {
@@ -30386,7 +30435,7 @@
    },
    "rtPorPartido": {
     "nac": 55,
-    "grp": 57
+    "grp": 56
    },
    "asPorPartido": {
     "nac": 19,
@@ -30401,8 +30450,8 @@
     "grp": 61
    },
    "ts": {
-    "nac": 70,
-    "grp": 71
+    "nac": 71,
+    "grp": 72
    },
    "efg": {
     "nac": 81,
@@ -30776,7 +30825,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 71,
+    "nac": 72,
     "grp": 69
    },
    "rtPorPartido": {
@@ -31025,8 +31074,8 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 69,
-    "grp": 72
+    "nac": 70,
+    "grp": 73
    },
    "rtPorPartido": {
     "nac": 91,
@@ -31034,14 +31083,14 @@
    },
    "asPorPartido": {
     "nac": 17,
-    "grp": 13
+    "grp": 14
    },
    "brPorPartido": {
     "nac": 58,
     "grp": 53
    },
    "vaPorPartido": {
-    "nac": 59,
+    "nac": 60,
     "grp": 60
    },
    "ts": {
@@ -31050,11 +31099,11 @@
    },
    "efg": {
     "nac": 63,
-    "grp": 64
+    "grp": 65
    },
    "t3Pct": {
     "nac": 13,
-    "grp": 13
+    "grp": 14
    }
   }
  },
@@ -31289,11 +31338,11 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 63,
-    "grp": 64
+    "grp": 65
    },
    "rtPorPartido": {
-    "nac": 53,
-    "grp": 55
+    "nac": 52,
+    "grp": 53
    },
    "asPorPartido": {
     "nac": 66,
@@ -31308,11 +31357,11 @@
     "grp": 59
    },
    "ts": {
-    "nac": 63,
-    "grp": 63
+    "nac": 62,
+    "grp": 62
    },
    "efg": {
-    "nac": 69,
+    "nac": 70,
     "grp": 71
    },
    "t3Pct": {
@@ -31578,7 +31627,7 @@
     "grp": 59
    },
    "ts": {
-    "nac": 41,
+    "nac": 42,
     "grp": 43
    },
    "efg": {
@@ -31869,7 +31918,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 32,
+    "nac": 33,
     "grp": 32
    },
    "rtPorPartido": {
@@ -31877,8 +31926,8 @@
     "grp": 92
    },
    "asPorPartido": {
-    "nac": 54,
-    "grp": 53
+    "nac": 55,
+    "grp": 54
    },
    "brPorPartido": {
     "nac": 85,
@@ -31886,19 +31935,19 @@
    },
    "vaPorPartido": {
     "nac": 58,
-    "grp": 58
+    "grp": 59
    },
    "ts": {
     "nac": 17,
-    "grp": 16
+    "grp": 15
    },
    "efg": {
     "nac": 21,
-    "grp": 21
+    "grp": 20
    },
    "t3Pct": {
     "nac": 17,
-    "grp": 19
+    "grp": 20
    }
   }
  },
@@ -32158,7 +32207,7 @@
     "grp": 84
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 73
    },
    "vaPorPartido": {
@@ -32166,7 +32215,7 @@
     "grp": 58
    },
    "ts": {
-    "nac": 43,
+    "nac": 44,
     "grp": 44
    },
    "efg": {
@@ -32428,7 +32477,7 @@
     "grp": 40
    },
    "brPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 28
    },
    "vaPorPartido": {
@@ -32853,7 +32902,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 38,
+    "nac": 39,
     "grp": 40
    },
    "rtPorPartido": {
@@ -33134,8 +33183,8 @@
     "grp": 27
    },
    "rtPorPartido": {
-    "nac": 83,
-    "grp": 82
+    "nac": 82,
+    "grp": 81
    },
    "asPorPartido": {
     "nac": 28,
@@ -33150,7 +33199,7 @@
     "grp": 58
    },
    "ts": {
-    "nac": 49,
+    "nac": 50,
     "grp": 50
    },
    "efg": {
@@ -33495,20 +33544,20 @@
     "grp": 23
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "vaPorPartido": {
-    "nac": 56,
+    "nac": 57,
     "grp": 57
    },
    "ts": {
     "nac": 70,
-    "grp": 70
+    "grp": 71
    },
    "efg": {
     "nac": 74,
-    "grp": 75
+    "grp": 74
    },
    "t3Pct": {
     "nac": 75,
@@ -33760,11 +33809,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 34,
+    "nac": 35,
     "grp": 36
    },
    "rtPorPartido": {
-    "nac": 86,
+    "nac": 85,
     "grp": 86
    },
    "asPorPartido": {
@@ -34334,7 +34383,7 @@
     "grp": 54
    },
    "ts": {
-    "nac": 31,
+    "nac": 30,
     "grp": 31
    },
    "efg": {
@@ -34603,7 +34652,7 @@
     "grp": 38
    },
    "brPorPartido": {
-    "nac": 44,
+    "nac": 45,
     "grp": 50
    },
    "vaPorPartido": {
@@ -34611,15 +34660,15 @@
     "grp": 54
    },
    "ts": {
-    "nac": 54,
+    "nac": 55,
     "grp": 54
    },
    "efg": {
-    "nac": 51,
+    "nac": 52,
     "grp": 52
    },
    "t3Pct": {
-    "nac": 25,
+    "nac": 26,
     "grp": 25
    }
   }
@@ -34884,7 +34933,7 @@
     "grp": 97
    },
    "vaPorPartido": {
-    "nac": 54,
+    "nac": 55,
     "grp": 56
    },
    "ts": {
@@ -34892,12 +34941,12 @@
     "grp": 22
    },
    "efg": {
-    "nac": 24,
-    "grp": 25
+    "nac": 23,
+    "grp": 24
    },
    "t3Pct": {
     "nac": 55,
-    "grp": 55
+    "grp": 56
    }
   }
  },
@@ -35138,11 +35187,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 71,
+    "nac": 72,
     "grp": 69
    },
    "rtPorPartido": {
-    "nac": 63,
+    "nac": 62,
     "grp": 60
    },
    "asPorPartido": {
@@ -35150,7 +35199,7 @@
     "grp": 47
    },
    "brPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 28
    },
    "vaPorPartido": {
@@ -35162,7 +35211,7 @@
     "grp": 76
    },
    "efg": {
-    "nac": 76,
+    "nac": 77,
     "grp": 75
    },
    "t3Pct": {
@@ -35415,7 +35464,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 76,
+    "nac": 77,
     "grp": 75
    },
    "rtPorPartido": {
@@ -35690,19 +35739,19 @@
    },
    "rtPorPartido": {
     "nac": 27,
-    "grp": 28
+    "grp": 29
    },
    "asPorPartido": {
     "nac": 80,
     "grp": 79
    },
    "brPorPartido": {
-    "nac": 42,
+    "nac": 43,
     "grp": 38
    },
    "vaPorPartido": {
     "nac": 53,
-    "grp": 55
+    "grp": 56
    },
    "ts": {
     "nac": 52,
@@ -36092,7 +36141,7 @@
     "grp": 38
    },
    "brPorPartido": {
-    "nac": 44,
+    "nac": 45,
     "grp": 50
    },
    "vaPorPartido": {
@@ -36108,177 +36157,10 @@
     "grp": 67
    },
    "t3Pct": {
-    "nac": 61,
+    "nac": 62,
     "grp": 61
    }
   }
- },
- {
-  "idJugador": "2662856",
-  "nombre": "SCHOTT, FYNN",
-  "dorsal": "13",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 15,
-  "titular": 1,
-  "minTotales": 276.25,
-  "minPorPartido": 18.42,
-  "pt": 88,
-  "ro": 32,
-  "rd": 50,
-  "rt": 82,
-  "as": 18,
-  "br": 10,
-  "bp": 18,
-  "tfTot": 11,
-  "tcoTot": 3,
-  "fcTot": 36,
-  "frTot": 20,
-  "va": 124,
-  "pm": -19,
-  "t2a": 28,
-  "t2i": 49,
-  "t3a": 5,
-  "t3i": 26,
-  "tla": 17,
-  "tli": 26,
-  "ptPorPartido": 5.87,
-  "roPorPartido": 2.13,
-  "rdPorPartido": 3.33,
-  "rtPorPartido": 5.47,
-  "asPorPartido": 1.2,
-  "brPorPartido": 0.67,
-  "bpPorPartido": 1.2,
-  "tpPorPartido": 0.73,
-  "tcoPorPartido": 0.2,
-  "fcPorPartido": 2.4,
-  "frPorPartido": 1.33,
-  "vaPorPartido": 8.27,
-  "t2": "28/49",
-  "t3": "5/26",
-  "tl": "17/26",
-  "t2Pct": 57.14,
-  "t3Pct": 19.23,
-  "tlPct": 65.38,
-  "ts": 50.9,
-  "efg": 47.33,
-  "usg": 17.22,
-  "per36": {
-   "pt": 11.47,
-   "rt": 10.69,
-   "as": 2.35,
-   "br": 1.3,
-   "va": 16.16
-  },
-  "evolucion": [
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 2,
-    "va": 2,
-    "seg": 1011
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 6,
-    "va": 14,
-    "seg": 918
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 7,
-    "va": 4,
-    "seg": 1273
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 7,
-    "va": 8,
-    "seg": 1098
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 0,
-    "va": 1,
-    "seg": 1075
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 2,
-    "va": -1,
-    "seg": 889
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 11,
-    "va": 14,
-    "seg": 1324
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 7,
-    "va": 10,
-    "seg": 1029
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 13,
-    "va": 15,
-    "seg": 1874
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 4,
-    "va": 10,
-    "seg": 1265
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 2,
-    "va": 2,
-    "seg": 1121
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 5,
-    "va": 7,
-    "seg": 672
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 9,
-    "va": 10,
-    "seg": 903
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 9,
-    "va": 21,
-    "seg": 1347
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 4,
-    "va": 7,
-    "seg": 776
-   }
-  ],
-  "percentiles": null
  },
  {
   "idJugador": "1073584",
@@ -36522,15 +36404,15 @@
    },
    "rtPorPartido": {
     "nac": 70,
-    "grp": 72
+    "grp": 71
    },
    "asPorPartido": {
     "nac": 53,
-    "grp": 52
+    "grp": 53
    },
    "brPorPartido": {
     "nac": 78,
-    "grp": 78
+    "grp": 79
    },
    "vaPorPartido": {
     "nac": 53,
@@ -36538,15 +36420,15 @@
    },
    "ts": {
     "nac": 60,
-    "grp": 61
+    "grp": 60
    },
    "efg": {
-    "nac": 37,
-    "grp": 37
+    "nac": 38,
+    "grp": 39
    },
    "t3Pct": {
     "nac": 14,
-    "grp": 14
+    "grp": 15
    }
   }
  },
@@ -36770,7 +36652,7 @@
     "grp": 42
    },
    "rtPorPartido": {
-    "nac": 44,
+    "nac": 43,
     "grp": 42
    },
    "asPorPartido": {
@@ -36787,14 +36669,14 @@
    },
    "ts": {
     "nac": 49,
-    "grp": 49
+    "grp": 50
    },
    "efg": {
-    "nac": 36,
-    "grp": 36
+    "nac": 37,
+    "grp": 38
    },
    "t3Pct": {
-    "nac": 64,
+    "nac": 65,
     "grp": 67
    }
   }
@@ -36951,6 +36833,213 @@
    }
   ],
   "percentiles": null
+ },
+ {
+  "idJugador": "2662856",
+  "nombre": "SCHOTT, FYNN",
+  "dorsal": "13",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 16,
+  "titular": 2,
+  "minTotales": 294.22,
+  "minPorPartido": 18.39,
+  "pt": 88,
+  "ro": 36,
+  "rd": 53,
+  "rt": 89,
+  "as": 19,
+  "br": 10,
+  "bp": 18,
+  "tfTot": 13,
+  "tcoTot": 3,
+  "fcTot": 36,
+  "frTot": 23,
+  "va": 131,
+  "pm": -40,
+  "t2a": 28,
+  "t2i": 52,
+  "t3a": 5,
+  "t3i": 29,
+  "tla": 17,
+  "tli": 26,
+  "ptPorPartido": 5.5,
+  "roPorPartido": 2.25,
+  "rdPorPartido": 3.31,
+  "rtPorPartido": 5.56,
+  "asPorPartido": 1.19,
+  "brPorPartido": 0.63,
+  "bpPorPartido": 1.13,
+  "tpPorPartido": 0.81,
+  "tcoPorPartido": 0.19,
+  "fcPorPartido": 2.25,
+  "frPorPartido": 1.44,
+  "vaPorPartido": 8.19,
+  "t2": "28/52",
+  "t3": "5/29",
+  "tl": "17/26",
+  "t2Pct": 53.85,
+  "t3Pct": 17.24,
+  "tlPct": 65.38,
+  "ts": 47.6,
+  "efg": 43.83,
+  "usg": 17.17,
+  "per36": {
+   "pt": 10.77,
+   "rt": 10.89,
+   "as": 2.32,
+   "br": 1.22,
+   "va": 16.03
+  },
+  "evolucion": [
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 2,
+    "va": 2,
+    "seg": 1011
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 6,
+    "va": 14,
+    "seg": 918
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 7,
+    "va": 4,
+    "seg": 1273
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 7,
+    "va": 8,
+    "seg": 1098
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 0,
+    "va": 1,
+    "seg": 1075
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 2,
+    "va": -1,
+    "seg": 889
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 11,
+    "va": 14,
+    "seg": 1324
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 7,
+    "va": 10,
+    "seg": 1029
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 13,
+    "va": 15,
+    "seg": 1874
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 4,
+    "va": 10,
+    "seg": 1265
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 0,
+    "va": 7,
+    "seg": 1078
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 2,
+    "va": 2,
+    "seg": 1121
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 5,
+    "va": 7,
+    "seg": 672
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 9,
+    "va": 10,
+    "seg": 903
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 9,
+    "va": 21,
+    "seg": 1347
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 4,
+    "va": 7,
+    "seg": 776
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 30,
+    "grp": 28
+   },
+   "rtPorPartido": {
+    "nac": 86,
+    "grp": 86
+   },
+   "asPorPartido": {
+    "nac": 50,
+    "grp": 49
+   },
+   "brPorPartido": {
+    "nac": 42,
+    "grp": 38
+   },
+   "vaPorPartido": {
+    "nac": 52,
+    "grp": 53
+   },
+   "ts": {
+    "nac": 26,
+    "grp": 26
+   },
+   "efg": {
+    "nac": 26,
+    "grp": 26
+   },
+   "t3Pct": {
+    "nac": 11,
+    "grp": 12
+   }
+  }
  },
  {
   "idJugador": "2639912",
@@ -37286,7 +37375,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 76,
+    "nac": 77,
     "grp": 75
    },
    "rtPorPartido": {
@@ -37306,11 +37395,11 @@
     "grp": 50
    },
    "ts": {
-    "nac": 36,
+    "nac": 37,
     "grp": 38
    },
    "efg": {
-    "nac": 44,
+    "nac": 45,
     "grp": 46
    },
    "t3Pct": {
@@ -37672,7 +37761,7 @@
     "grp": 83
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 66
    },
    "vaPorPartido": {
@@ -37680,8 +37769,8 @@
     "grp": 53
    },
    "ts": {
-    "nac": 71,
-    "grp": 73
+    "nac": 72,
+    "grp": 74
    },
    "efg": {
     "nac": 80,
@@ -37938,18 +38027,18 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 51,
-    "grp": 49
+    "grp": 50
    },
    "rtPorPartido": {
     "nac": 83,
-    "grp": 83
+    "grp": 82
    },
    "asPorPartido": {
-    "nac": 25,
-    "grp": 22
+    "nac": 26,
+    "grp": 23
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 32
    },
    "vaPorPartido": {
@@ -37957,8 +38046,8 @@
     "grp": 52
    },
    "ts": {
-    "nac": 41,
-    "grp": 40
+    "nac": 42,
+    "grp": 42
    },
    "efg": {
     "nac": 51,
@@ -38450,7 +38539,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 75,
+    "nac": 74,
     "grp": 71
    },
    "rtPorPartido": {
@@ -38462,15 +38551,15 @@
     "grp": 65
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 73
    },
    "vaPorPartido": {
-    "nac": 51,
+    "nac": 50,
     "grp": 50
    },
    "ts": {
-    "nac": 34,
+    "nac": 35,
     "grp": 36
    },
    "efg": {
@@ -38478,7 +38567,7 @@
     "grp": 11
    },
    "t3Pct": {
-    "nac": 39,
+    "nac": 40,
     "grp": 39
    }
   }
@@ -38899,16 +38988,16 @@
     "grp": 79
    },
    "brPorPartido": {
-    "nac": 56,
-    "grp": 52
+    "nac": 55,
+    "grp": 51
    },
    "vaPorPartido": {
     "nac": 50,
-    "grp": 52
+    "grp": 51
    },
    "ts": {
     "nac": 72,
-    "grp": 74
+    "grp": 75
    },
    "efg": {
     "nac": 79,
@@ -39438,7 +39527,7 @@
    },
    "vaPorPartido": {
     "nac": 50,
-    "grp": 51
+    "grp": 50
    },
    "ts": {
     "nac": 80,
@@ -39446,7 +39535,7 @@
    },
    "efg": {
     "nac": 68,
-    "grp": 69
+    "grp": 70
    },
    "t3Pct": {
     "nac": 31,
@@ -39628,7 +39717,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 37,
+    "nac": 38,
     "grp": 39
    },
    "rtPorPartido": {
@@ -39648,7 +39737,7 @@
     "grp": 49
    },
    "ts": {
-    "nac": 36,
+    "nac": 37,
     "grp": 39
    },
    "efg": {
@@ -39658,255 +39747,6 @@
    "t3Pct": {
     "nac": 99,
     "grp": 98
-   }
-  }
- },
- {
-  "idJugador": "1374871",
-  "nombre": "SANTANA ROSALES, FABIO DAVID",
-  "dorsal": "14",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 22,
-  "titular": 18,
-  "minTotales": 647.92,
-  "minPorPartido": 29.45,
-  "pt": 161,
-  "ro": 4,
-  "rd": 28,
-  "rt": 32,
-  "as": 91,
-  "br": 25,
-  "bp": 38,
-  "tfTot": 0,
-  "tcoTot": 2,
-  "fcTot": 26,
-  "frTot": 37,
-  "va": 169,
-  "pm": -17,
-  "t2a": 29,
-  "t2i": 59,
-  "t3a": 30,
-  "t3i": 103,
-  "tla": 13,
-  "tli": 23,
-  "ptPorPartido": 7.32,
-  "roPorPartido": 0.18,
-  "rdPorPartido": 1.27,
-  "rtPorPartido": 1.45,
-  "asPorPartido": 4.14,
-  "brPorPartido": 1.14,
-  "bpPorPartido": 1.73,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.09,
-  "fcPorPartido": 1.18,
-  "frPorPartido": 1.68,
-  "vaPorPartido": 7.68,
-  "t2": "29/59",
-  "t3": "30/103",
-  "tl": "13/23",
-  "t2Pct": 49.15,
-  "t3Pct": 29.13,
-  "tlPct": 56.52,
-  "ts": 46.77,
-  "efg": 45.68,
-  "usg": 14.77,
-  "per36": {
-   "pt": 8.95,
-   "rt": 1.78,
-   "as": 5.06,
-   "br": 1.39,
-   "va": 9.39
-  },
-  "evolucion": [
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 6,
-    "va": 3,
-    "seg": 1486
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 10,
-    "va": 10,
-    "seg": 1434
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 7,
-    "va": 9,
-    "seg": 2022
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 9,
-    "va": 5,
-    "seg": 1512
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 22,
-    "va": 12,
-    "seg": 1936
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 11,
-    "va": 13,
-    "seg": 1986
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 1,
-    "va": -3,
-    "seg": 1709
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 0,
-    "va": -3,
-    "seg": 1750
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 11,
-    "va": 10,
-    "seg": 2137
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 9,
-    "va": 12,
-    "seg": 1826
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 10,
-    "va": 13,
-    "seg": 2043
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 12,
-    "va": 13,
-    "seg": 1871
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 4,
-    "va": -3,
-    "seg": 1579
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 8,
-    "va": 6,
-    "seg": 1641
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 2,
-    "va": 2,
-    "seg": 1322
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 2,
-    "va": 7,
-    "seg": 1978
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 2,
-    "va": 9,
-    "seg": 2008
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 6,
-    "va": 11,
-    "seg": 1691
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 4,
-    "va": 6,
-    "seg": 1677
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 5,
-    "va": 8,
-    "seg": 1837
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 17,
-    "va": 22,
-    "seg": 2083
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 3,
-    "va": 7,
-    "seg": 1347
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 49,
-    "grp": 47
-   },
-   "rtPorPartido": {
-    "nac": 13,
-    "grp": 14
-   },
-   "asPorPartido": {
-    "nac": 96,
-    "grp": 95
-   },
-   "brPorPartido": {
-    "nac": 81,
-    "grp": 83
-   },
-   "vaPorPartido": {
-    "nac": 49,
-    "grp": 50
-   },
-   "ts": {
-    "nac": 20,
-    "grp": 20
-   },
-   "efg": {
-    "nac": 37,
-    "grp": 38
-   },
-   "t3Pct": {
-    "nac": 46,
-    "grp": 46
    }
   }
  },
@@ -39960,7 +39800,7 @@
   "tlPct": 79.71,
   "ts": 50.41,
   "efg": 43.2,
-  "usg": 26.65,
+  "usg": 26.76,
   "per36": {
    "pt": 15.95,
    "rt": 4.76,
@@ -40150,19 +39990,19 @@
    },
    "vaPorPartido": {
     "nac": 49,
-    "grp": 49
+    "grp": 50
    },
    "ts": {
-    "nac": 42,
-    "grp": 41
+    "nac": 43,
+    "grp": 43
    },
    "efg": {
-    "nac": 23,
-    "grp": 24
+    "nac": 22,
+    "grp": 23
    },
    "t3Pct": {
-    "nac": 38,
-    "grp": 38
+    "nac": 39,
+    "grp": 39
    }
   }
  },
@@ -40372,7 +40212,7 @@
     "grp": 50
    },
    "rtPorPartido": {
-    "nac": 71,
+    "nac": 70,
     "grp": 69
    },
    "asPorPartido": {
@@ -40388,7 +40228,7 @@
     "grp": 48
    },
    "ts": {
-    "nac": 47,
+    "nac": 48,
     "grp": 48
    },
    "efg": {
@@ -40396,7 +40236,7 @@
     "grp": 45
    },
    "t3Pct": {
-    "nac": 31,
+    "nac": 32,
     "grp": 30
    }
   }
@@ -40877,11 +40717,11 @@
     "grp": 32
    },
    "rtPorPartido": {
-    "nac": 78,
+    "nac": 77,
     "grp": 79
    },
    "asPorPartido": {
-    "nac": 20,
+    "nac": 21,
     "grp": 24
    },
    "brPorPartido": {
@@ -40889,7 +40729,7 @@
     "grp": 23
    },
    "vaPorPartido": {
-    "nac": 47,
+    "nac": 48,
     "grp": 46
    },
    "ts": {
@@ -40903,6 +40743,262 @@
    "t3Pct": {
     "nac": 7,
     "grp": 6
+   }
+  }
+ },
+ {
+  "idJugador": "1374871",
+  "nombre": "SANTANA ROSALES, FABIO DAVID",
+  "dorsal": "14",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 23,
+  "titular": 19,
+  "minTotales": 678.33,
+  "minPorPartido": 29.49,
+  "pt": 170,
+  "ro": 4,
+  "rd": 29,
+  "rt": 33,
+  "as": 92,
+  "br": 25,
+  "bp": 39,
+  "tfTot": 0,
+  "tcoTot": 2,
+  "fcTot": 29,
+  "frTot": 38,
+  "va": 171,
+  "pm": -43,
+  "t2a": 32,
+  "t2i": 65,
+  "t3a": 31,
+  "t3i": 107,
+  "tla": 13,
+  "tli": 23,
+  "ptPorPartido": 7.39,
+  "roPorPartido": 0.17,
+  "rdPorPartido": 1.26,
+  "rtPorPartido": 1.43,
+  "asPorPartido": 4,
+  "brPorPartido": 1.09,
+  "bpPorPartido": 1.7,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.09,
+  "fcPorPartido": 1.26,
+  "frPorPartido": 1.65,
+  "vaPorPartido": 7.43,
+  "t2": "32/65",
+  "t3": "31/107",
+  "tl": "13/23",
+  "t2Pct": 49.23,
+  "t3Pct": 28.97,
+  "tlPct": 56.52,
+  "ts": 46.67,
+  "efg": 45.64,
+  "usg": 14.91,
+  "per36": {
+   "pt": 9.02,
+   "rt": 1.75,
+   "as": 4.88,
+   "br": 1.33,
+   "va": 9.08
+  },
+  "evolucion": [
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 6,
+    "va": 3,
+    "seg": 1486
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 10,
+    "va": 10,
+    "seg": 1434
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 7,
+    "va": 9,
+    "seg": 2022
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 9,
+    "va": 5,
+    "seg": 1512
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 22,
+    "va": 12,
+    "seg": 1936
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 11,
+    "va": 13,
+    "seg": 1986
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 1,
+    "va": -3,
+    "seg": 1709
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 0,
+    "va": -3,
+    "seg": 1750
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 11,
+    "va": 10,
+    "seg": 2137
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 9,
+    "va": 12,
+    "seg": 1826
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 9,
+    "va": 2,
+    "seg": 1825
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 10,
+    "va": 13,
+    "seg": 2043
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 12,
+    "va": 13,
+    "seg": 1871
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 4,
+    "va": -3,
+    "seg": 1579
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 8,
+    "va": 6,
+    "seg": 1641
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 2,
+    "va": 2,
+    "seg": 1322
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 2,
+    "va": 7,
+    "seg": 1978
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 2,
+    "va": 9,
+    "seg": 2008
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 6,
+    "va": 11,
+    "seg": 1691
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 4,
+    "va": 6,
+    "seg": 1677
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 5,
+    "va": 8,
+    "seg": 1837
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 17,
+    "va": 22,
+    "seg": 2083
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 3,
+    "va": 7,
+    "seg": 1347
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 50,
+    "grp": 48
+   },
+   "rtPorPartido": {
+    "nac": 13,
+    "grp": 14
+   },
+   "asPorPartido": {
+    "nac": 95,
+    "grp": 95
+   },
+   "brPorPartido": {
+    "nac": 80,
+    "grp": 81
+   },
+   "vaPorPartido": {
+    "nac": 47,
+    "grp": 49
+   },
+   "ts": {
+    "nac": 20,
+    "grp": 20
+   },
+   "efg": {
+    "nac": 38,
+    "grp": 38
+   },
+   "t3Pct": {
+    "nac": 46,
+    "grp": 46
    }
   }
  },
@@ -41133,7 +41229,7 @@
     "grp": 27
    },
    "rtPorPartido": {
-    "nac": 76,
+    "nac": 75,
     "grp": 76
    },
    "asPorPartido": {
@@ -41406,7 +41502,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 56,
+    "nac": 57,
     "grp": 55
    },
    "rtPorPartido": {
@@ -41426,7 +41522,7 @@
     "grp": 45
    },
    "ts": {
-    "nac": 64,
+    "nac": 65,
     "grp": 65
    },
    "efg": {
@@ -41676,7 +41772,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 41,
+    "nac": 42,
     "grp": 44
    },
    "rtPorPartido": {
@@ -41684,7 +41780,7 @@
     "grp": 67
    },
    "asPorPartido": {
-    "nac": 59,
+    "nac": 60,
     "grp": 60
    },
    "brPorPartido": {
@@ -41696,7 +41792,7 @@
     "grp": 44
    },
    "ts": {
-    "nac": 31,
+    "nac": 30,
     "grp": 31
    },
    "efg": {
@@ -42102,7 +42198,7 @@
     "grp": 81
    },
    "efg": {
-    "nac": 74,
+    "nac": 73,
     "grp": 73
    },
    "t3Pct": {
@@ -42328,34 +42424,34 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 36,
-    "grp": 34
+    "grp": 35
    },
    "rtPorPartido": {
-    "nac": 54,
+    "nac": 53,
     "grp": 55
    },
    "asPorPartido": {
     "nac": 63,
-    "grp": 61
+    "grp": 62
    },
    "brPorPartido": {
     "nac": 80,
     "grp": 81
    },
    "vaPorPartido": {
-    "nac": 46,
+    "nac": 45,
     "grp": 48
    },
    "ts": {
     "nac": 71,
-    "grp": 72
+    "grp": 73
    },
    "efg": {
-    "nac": 81,
+    "nac": 82,
     "grp": 83
    },
    "t3Pct": {
-    "nac": 51,
+    "nac": 52,
     "grp": 53
    }
   }
@@ -42562,7 +42658,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 39,
+    "nac": 40,
     "grp": 42
    },
    "rtPorPartido": {
@@ -42570,7 +42666,7 @@
     "grp": 52
    },
    "asPorPartido": {
-    "nac": 49,
+    "nac": 48,
     "grp": 50
    },
    "brPorPartido": {
@@ -42586,7 +42682,7 @@
     "grp": 35
    },
    "efg": {
-    "nac": 29,
+    "nac": 28,
     "grp": 27
    },
    "t3Pct": {
@@ -42848,27 +42944,27 @@
    },
    "asPorPartido": {
     "nac": 30,
-    "grp": 28
+    "grp": 29
    },
    "brPorPartido": {
-    "nac": 44,
-    "grp": 39
+    "nac": 45,
+    "grp": 40
    },
    "vaPorPartido": {
     "nac": 45,
-    "grp": 48
+    "grp": 47
    },
    "ts": {
-    "nac": 45,
-    "grp": 45
+    "nac": 46,
+    "grp": 47
    },
    "efg": {
     "nac": 53,
-    "grp": 52
+    "grp": 53
    },
    "t3Pct": {
-    "nac": 15,
-    "grp": 17
+    "nac": 16,
+    "grp": 18
    }
   }
  },
@@ -43110,10 +43206,10 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 42,
-    "grp": 39
+    "grp": 40
    },
    "rtPorPartido": {
-    "nac": 34,
+    "nac": 33,
     "grp": 35
    },
    "asPorPartido": {
@@ -43126,19 +43222,19 @@
    },
    "vaPorPartido": {
     "nac": 45,
-    "grp": 48
+    "grp": 47
    },
    "ts": {
-    "nac": 19,
-    "grp": 19
+    "nac": 18,
+    "grp": 18
    },
    "efg": {
-    "nac": 26,
-    "grp": 26
+    "nac": 25,
+    "grp": 25
    },
    "t3Pct": {
-    "nac": 40,
-    "grp": 40
+    "nac": 41,
+    "grp": 41
    }
   }
  },
@@ -43675,7 +43771,7 @@
     "grp": 15
    },
    "brPorPartido": {
-    "nac": 87,
+    "nac": 88,
     "grp": 87
    },
    "vaPorPartido": {
@@ -43691,7 +43787,7 @@
     "grp": 31
    },
    "t3Pct": {
-    "nac": 37,
+    "nac": 38,
     "grp": 38
    }
   }
@@ -43945,7 +44041,7 @@
    },
    "rtPorPartido": {
     "nac": 43,
-    "grp": 42
+    "grp": 41
    },
    "asPorPartido": {
     "nac": 47,
@@ -43960,8 +44056,8 @@
     "grp": 45
    },
    "ts": {
-    "nac": 19,
-    "grp": 18
+    "nac": 18,
+    "grp": 17
    },
    "efg": {
     "nac": 10,
@@ -43969,7 +44065,7 @@
    },
    "t3Pct": {
     "nac": 27,
-    "grp": 28
+    "grp": 29
    }
   }
  },
@@ -44603,12 +44699,12 @@
     "grp": 85
    },
    "brPorPartido": {
-    "nac": 61,
+    "nac": 62,
     "grp": 57
    },
    "vaPorPartido": {
     "nac": 42,
-    "grp": 45
+    "grp": 44
    },
    "ts": {
     "nac": 12,
@@ -44616,11 +44712,11 @@
    },
    "efg": {
     "nac": 8,
-    "grp": 8
+    "grp": 9
    },
    "t3Pct": {
-    "nac": 21,
-    "grp": 23
+    "nac": 22,
+    "grp": 24
    }
   }
  },
@@ -44862,7 +44958,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 68,
-    "grp": 70
+    "grp": 71
    },
    "rtPorPartido": {
     "nac": 57,
@@ -44873,24 +44969,24 @@
     "grp": 5
    },
    "brPorPartido": {
-    "nac": 46,
+    "nac": 47,
     "grp": 41
    },
    "vaPorPartido": {
     "nac": 42,
-    "grp": 45
+    "grp": 44
    },
    "ts": {
     "nac": 52,
-    "grp": 52
+    "grp": 53
    },
    "efg": {
     "nac": 47,
-    "grp": 46
+    "grp": 47
    },
    "t3Pct": {
-    "nac": 37,
-    "grp": 37
+    "nac": 38,
+    "grp": 38
    }
   }
  },
@@ -45142,7 +45238,7 @@
     "grp": 43
    },
    "rtPorPartido": {
-    "nac": 68,
+    "nac": 67,
     "grp": 65
    },
    "asPorPartido": {
@@ -45436,7 +45532,7 @@
     "grp": 50
    },
    "t3Pct": {
-    "nac": 34,
+    "nac": 35,
     "grp": 34
    }
   }
@@ -45997,27 +46093,27 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 24,
-    "grp": 25
+    "nac": 23,
+    "grp": 24
    },
    "rtPorPartido": {
-    "nac": 51,
-    "grp": 52
+    "nac": 50,
+    "grp": 51
    },
    "asPorPartido": {
     "nac": 82,
     "grp": 83
    },
    "brPorPartido": {
-    "nac": 87,
-    "grp": 88
+    "nac": 88,
+    "grp": 89
    },
    "vaPorPartido": {
     "nac": 41,
     "grp": 43
    },
    "ts": {
-    "nac": 27,
+    "nac": 28,
     "grp": 29
    },
    "efg": {
@@ -46265,7 +46361,7 @@
    },
    "rtPorPartido": {
     "nac": 43,
-    "grp": 42
+    "grp": 41
    },
    "asPorPartido": {
     "nac": 87,
@@ -46276,16 +46372,16 @@
     "grp": 93
    },
    "vaPorPartido": {
-    "nac": 41,
+    "nac": 40,
     "grp": 42
    },
    "ts": {
     "nac": 38,
-    "grp": 36
+    "grp": 37
    },
    "efg": {
     "nac": 47,
-    "grp": 45
+    "grp": 46
    },
    "t3Pct": {
     "nac": 53,
@@ -46531,11 +46627,11 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 35,
-    "grp": 33
+    "grp": 34
    },
    "rtPorPartido": {
-    "nac": 56,
-    "grp": 58
+    "nac": 55,
+    "grp": 57
    },
    "asPorPartido": {
     "nac": 40,
@@ -46547,11 +46643,11 @@
    },
    "vaPorPartido": {
     "nac": 40,
-    "grp": 42
+    "grp": 41
    },
    "ts": {
-    "nac": 43,
-    "grp": 42
+    "nac": 44,
+    "grp": 44
    },
    "efg": {
     "nac": 52,
@@ -46559,7 +46655,7 @@
    },
    "t3Pct": {
     "nac": 23,
-    "grp": 25
+    "grp": 26
    }
   }
  },
@@ -46811,12 +46907,12 @@
     "grp": 44
    },
    "rtPorPartido": {
-    "nac": 51,
-    "grp": 52
+    "nac": 50,
+    "grp": 51
    },
    "asPorPartido": {
     "nac": 50,
-    "grp": 48
+    "grp": 49
    },
    "brPorPartido": {
     "nac": 74,
@@ -46831,12 +46927,12 @@
     "grp": 30
    },
    "efg": {
-    "nac": 39,
+    "nac": 40,
     "grp": 41
    },
    "t3Pct": {
-    "nac": 26,
-    "grp": 27
+    "nac": 27,
+    "grp": 28
    }
   }
  },
@@ -47085,19 +47181,19 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 53,
-    "grp": 52
+    "grp": 53
    },
    "rtPorPartido": {
-    "nac": 27,
+    "nac": 28,
     "grp": 29
    },
    "asPorPartido": {
     "nac": 68,
-    "grp": 64
+    "grp": 65
    },
    "brPorPartido": {
     "nac": 53,
-    "grp": 48
+    "grp": 49
    },
    "vaPorPartido": {
     "nac": 40,
@@ -47108,12 +47204,12 @@
     "grp": 58
    },
    "efg": {
-    "nac": 47,
+    "nac": 48,
     "grp": 47
    },
    "t3Pct": {
     "nac": 68,
-    "grp": 70
+    "grp": 71
    }
   }
  },
@@ -47466,19 +47562,19 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 38,
-    "grp": 36
+    "grp": 37
    },
    "rtPorPartido": {
     "nac": 60,
-    "grp": 64
+    "grp": 63
    },
    "asPorPartido": {
     "nac": 56,
-    "grp": 55
+    "grp": 56
    },
    "brPorPartido": {
-    "nac": 73,
-    "grp": 70
+    "nac": 72,
+    "grp": 69
    },
    "vaPorPartido": {
     "nac": 39,
@@ -47489,12 +47585,12 @@
     "grp": 11
    },
    "efg": {
-    "nac": 22,
-    "grp": 22
+    "nac": 21,
+    "grp": 21
    },
    "t3Pct": {
     "nac": 49,
-    "grp": 49
+    "grp": 50
    }
   }
  },
@@ -47743,11 +47839,11 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 27,
-    "grp": 27
+    "grp": 26
    },
    "rtPorPartido": {
     "nac": 72,
-    "grp": 73
+    "grp": 72
    },
    "asPorPartido": {
     "nac": 33,
@@ -47758,16 +47854,16 @@
     "grp": 27
    },
    "vaPorPartido": {
-    "nac": 39,
-    "grp": 39
+    "nac": 38,
+    "grp": 38
    },
    "ts": {
-    "nac": 26,
-    "grp": 27
+    "nac": 27,
+    "grp": 28
    },
    "efg": {
-    "nac": 8,
-    "grp": 9
+    "nac": 9,
+    "grp": 10
    },
    "t3Pct": {
     "nac": 8,
@@ -47991,11 +48087,11 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 64,
+    "nac": 65,
     "grp": 66
    },
    "rtPorPartido": {
-    "nac": 59,
+    "nac": 58,
     "grp": 62
    },
    "asPorPartido": {
@@ -48004,7 +48100,7 @@
    },
    "brPorPartido": {
     "nac": 40,
-    "grp": 36
+    "grp": 35
    },
    "vaPorPartido": {
     "nac": 38,
@@ -48261,15 +48357,15 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 42,
+    "nac": 43,
     "grp": 46
    },
    "rtPorPartido": {
-    "nac": 53,
+    "nac": 52,
     "grp": 51
    },
    "asPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 73
    },
    "brPorPartido": {
@@ -48344,7 +48440,7 @@
   "tlPct": 100,
   "ts": 46.58,
   "efg": 41.67,
-  "usg": 14.85,
+  "usg": 14.91,
   "per36": {
    "pt": 9.46,
    "rt": 6.31,
@@ -48673,7 +48769,7 @@
     "grp": 51
    },
    "rtPorPartido": {
-    "nac": 61,
+    "nac": 60,
     "grp": 57
    },
    "asPorPartido": {
@@ -48697,7 +48793,7 @@
     "grp": 20
    },
    "t3Pct": {
-    "nac": 32,
+    "nac": 33,
     "grp": 31
    }
   }
@@ -48966,7 +49062,7 @@
     "grp": 37
    },
    "ts": {
-    "nac": 39,
+    "nac": 40,
     "grp": 41
    },
    "efg": {
@@ -49235,7 +49331,7 @@
     "grp": 61
    },
    "brPorPartido": {
-    "nac": 88,
+    "nac": 89,
     "grp": 88
    },
    "vaPorPartido": {
@@ -49501,7 +49597,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 61,
-    "grp": 61
+    "grp": 62
    },
    "rtPorPartido": {
     "nac": 19,
@@ -49512,7 +49608,7 @@
     "grp": 43
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 32
    },
    "vaPorPartido": {
@@ -49521,15 +49617,15 @@
    },
    "ts": {
     "nac": 36,
-    "grp": 34
+    "grp": 35
    },
    "efg": {
-    "nac": 49,
-    "grp": 49
+    "nac": 50,
+    "grp": 50
    },
    "t3Pct": {
     "nac": 65,
-    "grp": 67
+    "grp": 68
    }
   }
  },
@@ -49778,18 +49874,18 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 58,
-    "grp": 58
+    "grp": 59
    },
    "rtPorPartido": {
     "nac": 24,
-    "grp": 25
+    "grp": 26
    },
    "asPorPartido": {
-    "nac": 16,
-    "grp": 12
+    "nac": 17,
+    "grp": 13
    },
    "brPorPartido": {
-    "nac": 61,
+    "nac": 62,
     "grp": 57
    },
    "vaPorPartido": {
@@ -49797,7 +49893,7 @@
     "grp": 36
    },
    "ts": {
-    "nac": 59,
+    "nac": 58,
     "grp": 59
    },
    "efg": {
@@ -50058,11 +50154,11 @@
     "grp": 31
    },
    "rtPorPartido": {
-    "nac": 68,
+    "nac": 67,
     "grp": 65
    },
    "asPorPartido": {
-    "nac": 56,
+    "nac": 57,
     "grp": 57
    },
    "brPorPartido": {
@@ -50070,11 +50166,11 @@
     "grp": 78
    },
    "vaPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 35
    },
    "ts": {
-    "nac": 37,
+    "nac": 38,
     "grp": 39
    },
    "efg": {
@@ -50446,7 +50542,7 @@
     "grp": 35
    },
    "rtPorPartido": {
-    "nac": 16,
+    "nac": 15,
     "grp": 15
    },
    "asPorPartido": {
@@ -50466,7 +50562,7 @@
     "grp": 28
    },
    "efg": {
-    "nac": 14,
+    "nac": 13,
     "grp": 14
    },
    "t3Pct": {
@@ -50717,7 +50813,7 @@
     "grp": 40
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 39
    },
    "vaPorPartido": {
@@ -50990,7 +51086,7 @@
     "grp": 76
    },
    "asPorPartido": {
-    "nac": 24,
+    "nac": 23,
     "grp": 28
    },
    "brPorPartido": {
@@ -51231,7 +51327,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 47,
+    "nac": 48,
     "grp": 45
    },
    "rtPorPartido": {
@@ -51240,15 +51336,15 @@
    },
    "asPorPartido": {
     "nac": 73,
-    "grp": 70
+    "grp": 71
    },
    "brPorPartido": {
     "nac": 62,
-    "grp": 58
+    "grp": 59
    },
    "vaPorPartido": {
     "nac": 34,
-    "grp": 36
+    "grp": 35
    },
    "ts": {
     "nac": 22,
@@ -51256,10 +51352,10 @@
    },
    "efg": {
     "nac": 26,
-    "grp": 27
+    "grp": 26
    },
    "t3Pct": {
-    "nac": 47,
+    "nac": 48,
     "grp": 48
    }
   }
@@ -51513,11 +51609,11 @@
     "grp": 25
    },
    "brPorPartido": {
-    "nac": 46,
+    "nac": 47,
     "grp": 52
    },
    "vaPorPartido": {
-    "nac": 34,
+    "nac": 33,
     "grp": 32
    },
    "ts": {
@@ -51783,11 +51879,11 @@
     "grp": 51
    },
    "brPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 28
    },
    "vaPorPartido": {
-    "nac": 34,
+    "nac": 33,
     "grp": 32
    },
    "ts": {
@@ -52052,7 +52148,7 @@
     "grp": 41
    },
    "rtPorPartido": {
-    "nac": 64,
+    "nac": 63,
     "grp": 61
    },
    "asPorPartido": {
@@ -52060,11 +52156,11 @@
     "grp": 9
    },
    "brPorPartido": {
-    "nac": 69,
+    "nac": 70,
     "grp": 73
    },
    "vaPorPartido": {
-    "nac": 34,
+    "nac": 33,
     "grp": 32
    },
    "ts": {
@@ -52072,7 +52168,7 @@
     "grp": 21
    },
    "efg": {
-    "nac": 35,
+    "nac": 36,
     "grp": 35
    },
    "t3Pct": {
@@ -52277,10 +52373,10 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 31,
-    "grp": 30
+    "grp": 31
    },
    "rtPorPartido": {
-    "nac": 31,
+    "nac": 30,
     "grp": 33
    },
    "asPorPartido": {
@@ -52685,12 +52781,12 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 31,
-    "grp": 31
+    "nac": 32,
+    "grp": 32
    },
    "rtPorPartido": {
-    "nac": 58,
-    "grp": 61
+    "nac": 57,
+    "grp": 60
    },
    "asPorPartido": {
     "nac": 18,
@@ -52714,7 +52810,7 @@
    },
    "t3Pct": {
     "nac": 44,
-    "grp": 43
+    "grp": 44
    }
   }
  },
@@ -52996,56 +53092,56 @@
   "equipo": "GRAN CANARIA",
   "equipoId": "921671",
   "grupo": "ESTE",
-  "pj": 22,
+  "pj": 23,
   "titular": 17,
-  "minTotales": 481,
-  "minPorPartido": 21.86,
-  "pt": 173,
-  "ro": 18,
-  "rd": 55,
-  "rt": 73,
+  "minTotales": 499.77,
+  "minPorPartido": 21.73,
+  "pt": 182,
+  "ro": 19,
+  "rd": 57,
+  "rt": 76,
   "as": 19,
-  "br": 21,
-  "bp": 27,
+  "br": 22,
+  "bp": 28,
   "tfTot": 3,
   "tcoTot": 1,
-  "fcTot": 46,
+  "fcTot": 48,
   "frTot": 23,
-  "va": 124,
-  "pm": 44,
+  "va": 131,
+  "pm": 25,
   "t2a": 24,
-  "t2i": 50,
-  "t3a": 34,
-  "t3i": 114,
+  "t2i": 51,
+  "t3a": 37,
+  "t3i": 119,
   "tla": 23,
   "tli": 32,
-  "ptPorPartido": 7.86,
-  "roPorPartido": 0.82,
-  "rdPorPartido": 2.5,
-  "rtPorPartido": 3.32,
-  "asPorPartido": 0.86,
-  "brPorPartido": 0.95,
-  "bpPorPartido": 1.23,
-  "tpPorPartido": 0.14,
-  "tcoPorPartido": 0.05,
+  "ptPorPartido": 7.91,
+  "roPorPartido": 0.83,
+  "rdPorPartido": 2.48,
+  "rtPorPartido": 3.3,
+  "asPorPartido": 0.83,
+  "brPorPartido": 0.96,
+  "bpPorPartido": 1.22,
+  "tpPorPartido": 0.13,
+  "tcoPorPartido": 0.04,
   "fcPorPartido": 2.09,
-  "frPorPartido": 1.05,
-  "vaPorPartido": 5.64,
-  "t2": "24/50",
-  "t3": "34/114",
+  "frPorPartido": 1,
+  "vaPorPartido": 5.7,
+  "t2": "24/51",
+  "t3": "37/119",
   "tl": "23/32",
-  "t2Pct": 48,
-  "t3Pct": 29.82,
+  "t2Pct": 47.06,
+  "t3Pct": 31.09,
   "tlPct": 71.88,
-  "ts": 48.57,
-  "efg": 45.73,
-  "usg": 19.42,
+  "ts": 49.44,
+  "efg": 46.76,
+  "usg": 19.41,
   "per36": {
-   "pt": 12.95,
-   "rt": 5.46,
-   "as": 1.42,
-   "br": 1.57,
-   "va": 9.28
+   "pt": 13.11,
+   "rt": 5.47,
+   "as": 1.37,
+   "br": 1.58,
+   "va": 9.44
   },
   "evolucion": [
    {
@@ -53140,6 +53236,13 @@
     "seg": 824
    },
    {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 9,
+    "va": 7,
+    "seg": 1126
+   },
+   {
     "id": "2345133",
     "jornada": "Jornada 15(06/01/2024)",
     "pt": 6,
@@ -53205,36 +53308,36 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 54,
-    "grp": 55
+    "nac": 55,
+    "grp": 56
    },
    "rtPorPartido": {
-    "nac": 53,
-    "grp": 54
+    "nac": 51,
+    "grp": 52
    },
    "asPorPartido": {
     "nac": 35,
-    "grp": 36
+    "grp": 35
    },
    "brPorPartido": {
-    "nac": 73,
-    "grp": 70
+    "nac": 74,
+    "grp": 72
    },
    "vaPorPartido": {
     "nac": 32,
     "grp": 33
    },
    "ts": {
-    "nac": 30,
-    "grp": 30
+    "nac": 36,
+    "grp": 35
    },
    "efg": {
-    "nac": 38,
-    "grp": 39
+    "nac": 41,
+    "grp": 42
    },
    "t3Pct": {
-    "nac": 49,
-    "grp": 50
+    "nac": 57,
+    "grp": 56
    }
   }
  },
@@ -53476,11 +53579,11 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 50,
-    "grp": 48
+    "grp": 49
    },
    "rtPorPartido": {
     "nac": 29,
-    "grp": 33
+    "grp": 32
    },
    "asPorPartido": {
     "nac": 22,
@@ -53488,15 +53591,15 @@
    },
    "brPorPartido": {
     "nac": 38,
-    "grp": 33
+    "grp": 34
    },
    "vaPorPartido": {
     "nac": 31,
-    "grp": 33
+    "grp": 32
    },
    "ts": {
-    "nac": 58,
-    "grp": 57
+    "nac": 57,
+    "grp": 56
    },
    "efg": {
     "nac": 56,
@@ -53978,11 +54081,11 @@
     "grp": 24
    },
    "brPorPartido": {
-    "nac": 21,
-    "grp": 18
+    "nac": 20,
+    "grp": 17
    },
    "vaPorPartido": {
-    "nac": 31,
+    "nac": 30,
     "grp": 32
    },
    "ts": {
@@ -54247,8 +54350,8 @@
     "grp": 22
    },
    "rtPorPartido": {
-    "nac": 75,
-    "grp": 76
+    "nac": 74,
+    "grp": 74
    },
    "asPorPartido": {
     "nac": 52,
@@ -54259,7 +54362,7 @@
     "grp": 44
    },
    "vaPorPartido": {
-    "nac": 31,
+    "nac": 30,
     "grp": 32
    },
    "ts": {
@@ -54267,12 +54370,12 @@
     "grp": 9
    },
    "efg": {
-    "nac": 19,
-    "grp": 19
+    "nac": 18,
+    "grp": 18
    },
    "t3Pct": {
     "nac": 63,
-    "grp": 64
+    "grp": 65
    }
   }
  },
@@ -54928,7 +55031,7 @@
     "grp": 28
    },
    "ts": {
-    "nac": 46,
+    "nac": 47,
     "grp": 46
    },
    "efg": {
@@ -55733,7 +55836,7 @@
     "grp": 30
    },
    "asPorPartido": {
-    "nac": 20,
+    "nac": 21,
     "grp": 24
    },
    "brPorPartido": {
@@ -55749,7 +55852,7 @@
     "grp": 49
    },
    "efg": {
-    "nac": 51,
+    "nac": 52,
     "grp": 52
    },
    "t3Pct": {
@@ -56004,11 +56107,11 @@
    },
    "asPorPartido": {
     "nac": 75,
-    "grp": 73
+    "grp": 74
    },
    "brPorPartido": {
     "nac": 38,
-    "grp": 33
+    "grp": 34
    },
    "vaPorPartido": {
     "nac": 28,
@@ -56025,6 +56128,276 @@
    "t3Pct": {
     "nac": 92,
     "grp": 97
+   }
+  }
+ },
+ {
+  "idJugador": "1485040",
+  "nombre": "HARO VAL, ALEIX",
+  "dorsal": "4",
+  "equipo": "CLASS BASQUET SANT ANTONI",
+  "equipoId": "922368",
+  "grupo": "ESTE",
+  "pj": 25,
+  "titular": 1,
+  "minTotales": 367.43,
+  "minPorPartido": 14.7,
+  "pt": 125,
+  "ro": 13,
+  "rd": 32,
+  "rt": 45,
+  "as": 43,
+  "br": 18,
+  "bp": 30,
+  "tfTot": 0,
+  "tcoTot": 5,
+  "fcTot": 24,
+  "frTot": 44,
+  "va": 128,
+  "pm": 44,
+  "t2a": 27,
+  "t2i": 55,
+  "t3a": 16,
+  "t3i": 60,
+  "tla": 23,
+  "tli": 44,
+  "ptPorPartido": 5,
+  "roPorPartido": 0.52,
+  "rdPorPartido": 1.28,
+  "rtPorPartido": 1.8,
+  "asPorPartido": 1.72,
+  "brPorPartido": 0.72,
+  "bpPorPartido": 1.2,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.2,
+  "fcPorPartido": 0.96,
+  "frPorPartido": 1.76,
+  "vaPorPartido": 5.12,
+  "t2": "27/55",
+  "t3": "16/60",
+  "tl": "23/44",
+  "t2Pct": 49.09,
+  "t3Pct": 26.67,
+  "tlPct": 52.27,
+  "ts": 46.52,
+  "efg": 44.35,
+  "usg": 20.7,
+  "per36": {
+   "pt": 12.25,
+   "rt": 4.41,
+   "as": 4.21,
+   "br": 1.76,
+   "va": 12.54
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 2,
+    "va": 0,
+    "seg": 623
+   },
+   {
+    "id": "2345041",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 11,
+    "va": 8,
+    "seg": 1157
+   },
+   {
+    "id": "2345054",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 8,
+    "va": 6,
+    "seg": 1025
+   },
+   {
+    "id": "2345067",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 7,
+    "va": 13,
+    "seg": 1196
+   },
+   {
+    "id": "2345071",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 6,
+    "va": 4,
+    "seg": 1205
+   },
+   {
+    "id": "2345080",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 3,
+    "va": 5,
+    "seg": 733
+   },
+   {
+    "id": "2345086",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 5,
+    "va": 4,
+    "seg": 997
+   },
+   {
+    "id": "2345093",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 10,
+    "va": 5,
+    "seg": 1256
+   },
+   {
+    "id": "2345101",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 6,
+    "va": 4,
+    "seg": 716
+   },
+   {
+    "id": "2345106",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 4,
+    "va": 2,
+    "seg": 683
+   },
+   {
+    "id": "2345116",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 2,
+    "va": -3,
+    "seg": 810
+   },
+   {
+    "id": "2345119",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 8,
+    "va": 15,
+    "seg": 1164
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 10,
+    "va": 19,
+    "seg": 1520
+   },
+   {
+    "id": "2345132",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 2,
+    "va": -1,
+    "seg": 400
+   },
+   {
+    "id": "2345145",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 2,
+    "va": 2,
+    "seg": 389
+   },
+   {
+    "id": "2345147",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 5,
+    "va": 3,
+    "seg": 690
+   },
+   {
+    "id": "2345158",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 0,
+    "va": -2,
+    "seg": 76
+   },
+   {
+    "id": "2345162",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 3,
+    "va": 8,
+    "seg": 920
+   },
+   {
+    "id": "2345171",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 5,
+    "va": 6,
+    "seg": 827
+   },
+   {
+    "id": "2345177",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 8,
+    "va": 8,
+    "seg": 785
+   },
+   {
+    "id": "2345184",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 3,
+    "va": 7,
+    "seg": 1395
+   },
+   {
+    "id": "2345192",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 6,
+    "va": 5,
+    "seg": 966
+   },
+   {
+    "id": "2345197",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 3,
+    "va": 0,
+    "seg": 668
+   },
+   {
+    "id": "2345207",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 4,
+    "va": 8,
+    "seg": 1046
+   },
+   {
+    "id": "2345210",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 2,
+    "va": 2,
+    "seg": 799
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 24,
+    "grp": 25
+   },
+   "rtPorPartido": {
+    "nac": 17,
+    "grp": 18
+   },
+   "asPorPartido": {
+    "nac": 67,
+    "grp": 64
+   },
+   "brPorPartido": {
+    "nac": 50,
+    "grp": 47
+   },
+   "vaPorPartido": {
+    "nac": 27,
+    "grp": 29
+   },
+   "ts": {
+    "nac": 19,
+    "grp": 19
+   },
+   "efg": {
+    "nac": 29,
+    "grp": 31
+   },
+   "t3Pct": {
+    "nac": 35,
+    "grp": 36
    }
   }
  },
@@ -56395,12 +56768,12 @@
     "grp": 33
    },
    "brPorPartido": {
-    "nac": 46,
+    "nac": 47,
     "grp": 41
    },
    "vaPorPartido": {
     "nac": 27,
-    "grp": 30
+    "grp": 29
    },
    "ts": {
     "nac": 26,
@@ -56411,8 +56784,8 @@
     "grp": 20
    },
    "t3Pct": {
-    "nac": 39,
-    "grp": 39
+    "nac": 40,
+    "grp": 41
    }
   }
  },
@@ -56569,14 +56942,14 @@
   "equipo": "CLASS BASQUET SANT ANTONI",
   "equipoId": "922368",
   "grupo": "ESTE",
-  "pj": 25,
+  "pj": 26,
   "titular": 10,
-  "minTotales": 387.4,
-  "minPorPartido": 15.5,
-  "pt": 162,
+  "minTotales": 395.82,
+  "minPorPartido": 15.22,
+  "pt": 167,
   "ro": 11,
-  "rd": 45,
-  "rt": 56,
+  "rd": 46,
+  "rt": 57,
   "as": 14,
   "br": 8,
   "bp": 15,
@@ -56584,41 +56957,41 @@
   "tcoTot": 1,
   "fcTot": 37,
   "frTot": 11,
-  "va": 124,
-  "pm": 30,
-  "t2a": 16,
-  "t2i": 29,
-  "t3a": 40,
-  "t3i": 100,
+  "va": 128,
+  "pm": 34,
+  "t2a": 17,
+  "t2i": 30,
+  "t3a": 41,
+  "t3i": 103,
   "tla": 10,
   "tli": 15,
-  "ptPorPartido": 6.48,
-  "roPorPartido": 0.44,
-  "rdPorPartido": 1.8,
-  "rtPorPartido": 2.24,
-  "asPorPartido": 0.56,
-  "brPorPartido": 0.32,
-  "bpPorPartido": 0.6,
+  "ptPorPartido": 6.42,
+  "roPorPartido": 0.42,
+  "rdPorPartido": 1.77,
+  "rtPorPartido": 2.19,
+  "asPorPartido": 0.54,
+  "brPorPartido": 0.31,
+  "bpPorPartido": 0.58,
   "tpPorPartido": 0.12,
   "tcoPorPartido": 0.04,
-  "fcPorPartido": 1.48,
-  "frPorPartido": 0.44,
-  "vaPorPartido": 4.96,
-  "t2": "16/29",
-  "t3": "40/100",
+  "fcPorPartido": 1.42,
+  "frPorPartido": 0.42,
+  "vaPorPartido": 4.92,
+  "t2": "17/30",
+  "t3": "41/103",
   "tl": "10/15",
-  "t2Pct": 55.17,
-  "t3Pct": 40,
+  "t2Pct": 56.67,
+  "t3Pct": 39.81,
   "tlPct": 66.67,
-  "ts": 59.73,
-  "efg": 58.91,
-  "usg": 17.96,
+  "ts": 59.81,
+  "efg": 59.02,
+  "usg": 18.07,
   "per36": {
-   "pt": 15.05,
-   "rt": 5.2,
-   "as": 1.3,
-   "br": 0.74,
-   "va": 11.52
+   "pt": 15.19,
+   "rt": 5.18,
+   "as": 1.27,
+   "br": 0.73,
+   "va": 11.64
   },
   "evolucion": [
    {
@@ -56713,6 +57086,13 @@
     "seg": 808
    },
    {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 5,
+    "va": 4,
+    "seg": 505
+   },
+   {
     "id": "2345132",
     "jornada": "Jornada 15(06/01/2024)",
     "pt": 6,
@@ -56800,23 +57180,23 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 39,
-    "grp": 37
+    "grp": 38
    },
    "rtPorPartido": {
-    "nac": 28,
-    "grp": 30
+    "nac": 26,
+    "grp": 28
    },
    "asPorPartido": {
     "nac": 17,
-    "grp": 14
+    "grp": 13
    },
    "brPorPartido": {
-    "nac": 13,
-    "grp": 11
+    "nac": 11,
+    "grp": 9
    },
    "vaPorPartido": {
     "nac": 27,
-    "grp": 29
+    "grp": 28
    },
    "ts": {
     "nac": 88,
@@ -56828,7 +57208,7 @@
    },
    "t3Pct": {
     "nac": 90,
-    "grp": 95
+    "grp": 94
    }
   }
  },
@@ -57085,7 +57465,7 @@
     "grp": 69
    },
    "vaPorPartido": {
-    "nac": 27,
+    "nac": 26,
     "grp": 25
    },
    "ts": {
@@ -57093,7 +57473,7 @@
     "grp": 50
    },
    "efg": {
-    "nac": 77,
+    "nac": 78,
     "grp": 76
    },
    "t3Pct": {
@@ -57317,15 +57697,15 @@
    },
    "brPorPartido": {
     "nac": 55,
-    "grp": 51
+    "grp": 50
    },
    "vaPorPartido": {
     "nac": 26,
-    "grp": 28
+    "grp": 27
    },
    "ts": {
     "nac": 5,
-    "grp": 5
+    "grp": 6
    },
    "efg": {
     "nac": 7,
@@ -57333,7 +57713,7 @@
    },
    "t3Pct": {
     "nac": 23,
-    "grp": 24
+    "grp": 25
    }
   }
  },
@@ -57965,7 +58345,7 @@
     "grp": 20
    },
    "vaPorPartido": {
-    "nac": 26,
+    "nac": 25,
     "grp": 24
    },
    "ts": {
@@ -57977,7 +58357,7 @@
     "grp": 17
    },
    "t3Pct": {
-    "nac": 22,
+    "nac": 23,
     "grp": 21
    }
   }
@@ -58231,19 +58611,19 @@
    },
    "rtPorPartido": {
     "nac": 25,
-    "grp": 27
+    "grp": 26
    },
    "asPorPartido": {
-    "nac": 49,
+    "nac": 48,
     "grp": 47
    },
    "brPorPartido": {
-    "nac": 44,
-    "grp": 39
+    "nac": 45,
+    "grp": 40
    },
    "vaPorPartido": {
     "nac": 25,
-    "grp": 27
+    "grp": 26
    },
    "ts": {
     "nac": 58,
@@ -58255,7 +58635,7 @@
    },
    "t3Pct": {
     "nac": 58,
-    "grp": 59
+    "grp": 60
    }
   }
  },
@@ -58506,15 +58886,15 @@
    },
    "vaPorPartido": {
     "nac": 25,
-    "grp": 27
+    "grp": 26
    },
    "ts": {
     "nac": 74,
     "grp": 77
    },
    "efg": {
-    "nac": 68,
-    "grp": 70
+    "nac": 69,
+    "grp": 71
    },
    "t3Pct": {
     "nac": 71,
@@ -58700,11 +59080,11 @@
     "grp": 27
    },
    "rtPorPartido": {
-    "nac": 66,
+    "nac": 65,
     "grp": 63
    },
    "asPorPartido": {
-    "nac": 25,
+    "nac": 26,
     "grp": 29
    },
    "brPorPartido": {
@@ -58712,7 +59092,7 @@
     "grp": 23
    },
    "vaPorPartido": {
-    "nac": 25,
+    "nac": 24,
     "grp": 24
    },
    "ts": {
@@ -58726,532 +59106,6 @@
    "t3Pct": {
     "nac": 54,
     "grp": 53
-   }
-  }
- },
- {
-  "idJugador": "1485040",
-  "nombre": "HARO VAL, ALEIX",
-  "dorsal": "4",
-  "equipo": "CLASS BASQUET SANT ANTONI",
-  "equipoId": "922368",
-  "grupo": "ESTE",
-  "pj": 24,
-  "titular": 1,
-  "minTotales": 342.1,
-  "minPorPartido": 14.25,
-  "pt": 115,
-  "ro": 11,
-  "rd": 29,
-  "rt": 40,
-  "as": 41,
-  "br": 17,
-  "bp": 30,
-  "tfTot": 0,
-  "tcoTot": 5,
-  "fcTot": 23,
-  "frTot": 40,
-  "va": 109,
-  "pm": 22,
-  "t2a": 22,
-  "t2i": 49,
-  "t3a": 16,
-  "t3i": 59,
-  "tla": 23,
-  "tli": 44,
-  "ptPorPartido": 4.79,
-  "roPorPartido": 0.46,
-  "rdPorPartido": 1.21,
-  "rtPorPartido": 1.67,
-  "asPorPartido": 1.71,
-  "brPorPartido": 0.71,
-  "bpPorPartido": 1.25,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.21,
-  "fcPorPartido": 0.96,
-  "frPorPartido": 1.67,
-  "vaPorPartido": 4.54,
-  "t2": "22/49",
-  "t3": "16/59",
-  "tl": "23/44",
-  "t2Pct": 44.9,
-  "t3Pct": 27.12,
-  "tlPct": 52.27,
-  "ts": 45.15,
-  "efg": 42.59,
-  "usg": 21.25,
-  "per36": {
-   "pt": 12.1,
-   "rt": 4.21,
-   "as": 4.31,
-   "br": 1.79,
-   "va": 11.47
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 2,
-    "va": 0,
-    "seg": 623
-   },
-   {
-    "id": "2345041",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 11,
-    "va": 8,
-    "seg": 1157
-   },
-   {
-    "id": "2345054",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 8,
-    "va": 6,
-    "seg": 1025
-   },
-   {
-    "id": "2345067",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 7,
-    "va": 13,
-    "seg": 1196
-   },
-   {
-    "id": "2345071",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 6,
-    "va": 4,
-    "seg": 1205
-   },
-   {
-    "id": "2345080",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 3,
-    "va": 5,
-    "seg": 733
-   },
-   {
-    "id": "2345086",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 5,
-    "va": 4,
-    "seg": 997
-   },
-   {
-    "id": "2345093",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 10,
-    "va": 5,
-    "seg": 1256
-   },
-   {
-    "id": "2345101",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 6,
-    "va": 4,
-    "seg": 716
-   },
-   {
-    "id": "2345106",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 4,
-    "va": 2,
-    "seg": 683
-   },
-   {
-    "id": "2345116",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 2,
-    "va": -3,
-    "seg": 810
-   },
-   {
-    "id": "2345119",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 8,
-    "va": 15,
-    "seg": 1164
-   },
-   {
-    "id": "2345132",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 2,
-    "va": -1,
-    "seg": 400
-   },
-   {
-    "id": "2345145",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 2,
-    "va": 2,
-    "seg": 389
-   },
-   {
-    "id": "2345147",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 5,
-    "va": 3,
-    "seg": 690
-   },
-   {
-    "id": "2345158",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 0,
-    "va": -2,
-    "seg": 76
-   },
-   {
-    "id": "2345162",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 3,
-    "va": 8,
-    "seg": 920
-   },
-   {
-    "id": "2345171",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 5,
-    "va": 6,
-    "seg": 827
-   },
-   {
-    "id": "2345177",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 8,
-    "va": 8,
-    "seg": 785
-   },
-   {
-    "id": "2345184",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 3,
-    "va": 7,
-    "seg": 1395
-   },
-   {
-    "id": "2345192",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 6,
-    "va": 5,
-    "seg": 966
-   },
-   {
-    "id": "2345197",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 3,
-    "va": 0,
-    "seg": 668
-   },
-   {
-    "id": "2345207",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 4,
-    "va": 8,
-    "seg": 1046
-   },
-   {
-    "id": "2345210",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 2,
-    "va": 2,
-    "seg": 799
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 22,
-    "grp": 23
-   },
-   "rtPorPartido": {
-    "nac": 15,
-    "grp": 17
-   },
-   "asPorPartido": {
-    "nac": 67,
-    "grp": 64
-   },
-   "brPorPartido": {
-    "nac": 50,
-    "grp": 46
-   },
-   "vaPorPartido": {
-    "nac": 24,
-    "grp": 26
-   },
-   "ts": {
-    "nac": 16,
-    "grp": 15
-   },
-   "efg": {
-    "nac": 20,
-    "grp": 20
-   },
-   "t3Pct": {
-    "nac": 36,
-    "grp": 36
-   }
-  }
- },
- {
-  "idJugador": "1824880",
-  "nombre": "PEREZ RAMIREZ, GERARDO",
-  "dorsal": "5",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 24,
-  "titular": 7,
-  "minTotales": 513.18,
-  "minPorPartido": 21.38,
-  "pt": 105,
-  "ro": 15,
-  "rd": 59,
-  "rt": 74,
-  "as": 31,
-  "br": 14,
-  "bp": 21,
-  "tfTot": 2,
-  "tcoTot": 1,
-  "fcTot": 29,
-  "frTot": 16,
-  "va": 105,
-  "pm": -97,
-  "t2a": 23,
-  "t2i": 44,
-  "t3a": 16,
-  "t3i": 74,
-  "tla": 11,
-  "tli": 19,
-  "ptPorPartido": 4.38,
-  "roPorPartido": 0.63,
-  "rdPorPartido": 2.46,
-  "rtPorPartido": 3.08,
-  "asPorPartido": 1.29,
-  "brPorPartido": 0.58,
-  "bpPorPartido": 0.88,
-  "tpPorPartido": 0.08,
-  "tcoPorPartido": 0.04,
-  "fcPorPartido": 1.21,
-  "frPorPartido": 0.67,
-  "vaPorPartido": 4.38,
-  "t2": "23/44",
-  "t3": "16/74",
-  "tl": "11/19",
-  "t2Pct": 52.27,
-  "t3Pct": 21.62,
-  "tlPct": 57.89,
-  "ts": 41.55,
-  "efg": 39.83,
-  "usg": 13.08,
-  "per36": {
-   "pt": 7.37,
-   "rt": 5.19,
-   "as": 2.17,
-   "br": 0.98,
-   "va": 7.37
-  },
-  "evolucion": [
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 9,
-    "va": 8,
-    "seg": 1627
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 7,
-    "va": 9,
-    "seg": 1286
-   },
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 7,
-    "va": 6,
-    "seg": 1375
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 0,
-    "va": 1,
-    "seg": 835
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 6,
-    "va": 9,
-    "seg": 1397
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 3,
-    "va": 6,
-    "seg": 1254
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 2,
-    "va": 0,
-    "seg": 1478
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 8,
-    "va": 5,
-    "seg": 1174
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 1,
-    "va": 0,
-    "seg": 1248
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 3,
-    "va": 2,
-    "seg": 1047
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 2,
-    "va": -2,
-    "seg": 872
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 7,
-    "va": 13,
-    "seg": 1576
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 5,
-    "va": 4,
-    "seg": 1370
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 3,
-    "va": 3,
-    "seg": 943
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 1203
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 0,
-    "va": -4,
-    "seg": 791
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 2,
-    "va": -1,
-    "seg": 1114
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 7,
-    "va": 8,
-    "seg": 1233
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 1,
-    "va": 2,
-    "seg": 887
-   },
-   {
-    "id": "2345183",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 5,
-    "va": 1,
-    "seg": 1512
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 6,
-    "va": 3,
-    "seg": 1879
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 7,
-    "va": 10,
-    "seg": 1604
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 8,
-    "va": 11,
-    "seg": 1358
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 6,
-    "va": 11,
-    "seg": 1728
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 18,
-    "grp": 20
-   },
-   "rtPorPartido": {
-    "nac": 46,
-    "grp": 46
-   },
-   "asPorPartido": {
-    "nac": 56,
-    "grp": 55
-   },
-   "brPorPartido": {
-    "nac": 39,
-    "grp": 35
-   },
-   "vaPorPartido": {
-    "nac": 24,
-    "grp": 25
-   },
-   "ts": {
-    "nac": 6,
-    "grp": 6
-   },
-   "efg": {
-    "nac": 10,
-    "grp": 10
-   },
-   "t3Pct": {
-    "nac": 17,
-    "grp": 20
    }
   }
  },
@@ -59509,7 +59363,7 @@
    },
    "vaPorPartido": {
     "nac": 24,
-    "grp": 24
+    "grp": 25
    },
    "ts": {
     "nac": 95,
@@ -59767,7 +59621,7 @@
    },
    "rtPorPartido": {
     "nac": 34,
-    "grp": 36
+    "grp": 35
    },
    "asPorPartido": {
     "nac": 8,
@@ -59779,7 +59633,7 @@
    },
    "vaPorPartido": {
     "nac": 24,
-    "grp": 24
+    "grp": 25
    },
    "ts": {
     "nac": 90,
@@ -60146,7 +60000,7 @@
     "grp": 9
    },
    "efg": {
-    "nac": 7,
+    "nac": 8,
     "grp": 7
    },
    "t3Pct": {
@@ -60407,11 +60261,11 @@
     "grp": 35
    },
    "asPorPartido": {
-    "nac": 20,
+    "nac": 21,
     "grp": 24
    },
    "brPorPartido": {
-    "nac": 44,
+    "nac": 45,
     "grp": 50
    },
    "vaPorPartido": {
@@ -60419,108 +60273,18 @@
     "grp": 23
    },
    "ts": {
-    "nac": 24,
+    "nac": 23,
     "grp": 25
    },
    "efg": {
-    "nac": 24,
+    "nac": 23,
     "grp": 23
    },
    "t3Pct": {
-    "nac": 18,
+    "nac": 19,
     "grp": 16
    }
   }
- },
- {
-  "idJugador": "2436353",
-  "nombre": "NATSVLISHVILI, GEORGE",
-  "dorsal": "31",
-  "equipo": "PAJARRACO C B SANTFELIUENC",
-  "equipoId": "921689",
-  "grupo": "ESTE",
-  "pj": 4,
-  "titular": 2,
-  "minTotales": 44.13,
-  "minPorPartido": 11.03,
-  "pt": 9,
-  "ro": 2,
-  "rd": 7,
-  "rt": 9,
-  "as": 4,
-  "br": 2,
-  "bp": 2,
-  "tfTot": 0,
-  "tcoTot": 0,
-  "fcTot": 4,
-  "frTot": 3,
-  "va": 17,
-  "pm": -3,
-  "t2a": 4,
-  "t2i": 6,
-  "t3a": 0,
-  "t3i": 2,
-  "tla": 1,
-  "tli": 1,
-  "ptPorPartido": 2.25,
-  "roPorPartido": 0.5,
-  "rdPorPartido": 1.75,
-  "rtPorPartido": 2.25,
-  "asPorPartido": 1,
-  "brPorPartido": 0.5,
-  "bpPorPartido": 0.5,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0,
-  "fcPorPartido": 1,
-  "frPorPartido": 0.75,
-  "vaPorPartido": 4.25,
-  "t2": "4/6",
-  "t3": "0/2",
-  "tl": "1/1",
-  "t2Pct": 66.67,
-  "t3Pct": 0,
-  "tlPct": 100,
-  "ts": 53.32,
-  "efg": 50,
-  "usg": 10.69,
-  "per36": {
-   "pt": 7.34,
-   "rt": 7.34,
-   "as": 3.26,
-   "br": 1.63,
-   "va": 13.87
-  },
-  "evolucion": [
-   {
-    "id": "2345188",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 210
-   },
-   {
-    "id": "2345195",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 3,
-    "va": 4,
-    "seg": 505
-   },
-   {
-    "id": "2345202",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 2,
-    "va": 7,
-    "seg": 1273
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 4,
-    "va": 6,
-    "seg": 660
-   }
-  ],
-  "percentiles": null
  },
  {
   "idJugador": "2749353",
@@ -60529,56 +60293,56 @@
   "equipo": "CLASS BASQUET SANT ANTONI",
   "equipoId": "922368",
   "grupo": "ESTE",
-  "pj": 24,
-  "titular": 12,
-  "minTotales": 455.28,
-  "minPorPartido": 18.97,
-  "pt": 147,
-  "ro": 21,
-  "rd": 30,
-  "rt": 51,
+  "pj": 25,
+  "titular": 13,
+  "minTotales": 477.97,
+  "minPorPartido": 19.12,
+  "pt": 156,
+  "ro": 22,
+  "rd": 31,
+  "rt": 53,
   "as": 20,
-  "br": 17,
+  "br": 18,
   "bp": 24,
   "tfTot": 4,
-  "tcoTot": 2,
+  "tcoTot": 3,
   "fcTot": 62,
-  "frTot": 30,
-  "va": 100,
-  "pm": 77,
-  "t2a": 56,
-  "t2i": 95,
-  "t3a": 7,
-  "t3i": 36,
+  "frTot": 32,
+  "va": 107,
+  "pm": 82,
+  "t2a": 59,
+  "t2i": 103,
+  "t3a": 8,
+  "t3i": 37,
   "tla": 14,
-  "tli": 29,
-  "ptPorPartido": 6.13,
+  "tli": 31,
+  "ptPorPartido": 6.24,
   "roPorPartido": 0.88,
-  "rdPorPartido": 1.25,
-  "rtPorPartido": 2.13,
-  "asPorPartido": 0.83,
-  "brPorPartido": 0.71,
-  "bpPorPartido": 1,
-  "tpPorPartido": 0.17,
-  "tcoPorPartido": 0.08,
-  "fcPorPartido": 2.58,
-  "frPorPartido": 1.25,
-  "vaPorPartido": 4.17,
-  "t2": "56/95",
-  "t3": "7/36",
-  "tl": "14/29",
-  "t2Pct": 58.95,
-  "t3Pct": 19.44,
-  "tlPct": 48.28,
-  "ts": 51.13,
-  "efg": 50.76,
-  "usg": 17.03,
+  "rdPorPartido": 1.24,
+  "rtPorPartido": 2.12,
+  "asPorPartido": 0.8,
+  "brPorPartido": 0.72,
+  "bpPorPartido": 0.96,
+  "tpPorPartido": 0.16,
+  "tcoPorPartido": 0.12,
+  "fcPorPartido": 2.48,
+  "frPorPartido": 1.28,
+  "vaPorPartido": 4.28,
+  "t2": "59/103",
+  "t3": "8/37",
+  "tl": "14/31",
+  "t2Pct": 57.28,
+  "t3Pct": 21.62,
+  "tlPct": 45.16,
+  "ts": 50.77,
+  "efg": 50.71,
+  "usg": 17.2,
   "per36": {
-   "pt": 11.62,
-   "rt": 4.03,
-   "as": 1.58,
-   "br": 1.34,
-   "va": 7.91
+   "pt": 11.75,
+   "rt": 3.99,
+   "as": 1.51,
+   "br": 1.36,
+   "va": 8.06
   },
   "evolucion": [
    {
@@ -60673,6 +60437,13 @@
     "seg": 1122
    },
    {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 9,
+    "va": 7,
+    "seg": 1361
+   },
+   {
     "id": "2345132",
     "jornada": "Jornada 15(06/01/2024)",
     "pt": 4,
@@ -60752,7 +60523,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 36,
+    "nac": 37,
     "grp": 35
    },
    "rtPorPartido": {
@@ -60760,30 +60531,120 @@
     "grp": 26
    },
    "asPorPartido": {
-    "nac": 34,
-    "grp": 34
+    "nac": 31,
+    "grp": 31
    },
    "brPorPartido": {
     "nac": 50,
-    "grp": 46
+    "grp": 47
    },
    "vaPorPartido": {
     "nac": 22,
     "grp": 23
    },
    "ts": {
-    "nac": 48,
-    "grp": 48
+    "nac": 47,
+    "grp": 47
    },
    "efg": {
-    "nac": 62,
+    "nac": 61,
     "grp": 63
    },
    "t3Pct": {
-    "nac": 14,
-    "grp": 16
+    "nac": 18,
+    "grp": 21
    }
   }
+ },
+ {
+  "idJugador": "2436353",
+  "nombre": "NATSVLISHVILI, GEORGE",
+  "dorsal": "31",
+  "equipo": "PAJARRACO C B SANTFELIUENC",
+  "equipoId": "921689",
+  "grupo": "ESTE",
+  "pj": 4,
+  "titular": 2,
+  "minTotales": 44.13,
+  "minPorPartido": 11.03,
+  "pt": 9,
+  "ro": 2,
+  "rd": 7,
+  "rt": 9,
+  "as": 4,
+  "br": 2,
+  "bp": 2,
+  "tfTot": 0,
+  "tcoTot": 0,
+  "fcTot": 4,
+  "frTot": 3,
+  "va": 17,
+  "pm": -3,
+  "t2a": 4,
+  "t2i": 6,
+  "t3a": 0,
+  "t3i": 2,
+  "tla": 1,
+  "tli": 1,
+  "ptPorPartido": 2.25,
+  "roPorPartido": 0.5,
+  "rdPorPartido": 1.75,
+  "rtPorPartido": 2.25,
+  "asPorPartido": 1,
+  "brPorPartido": 0.5,
+  "bpPorPartido": 0.5,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0,
+  "fcPorPartido": 1,
+  "frPorPartido": 0.75,
+  "vaPorPartido": 4.25,
+  "t2": "4/6",
+  "t3": "0/2",
+  "tl": "1/1",
+  "t2Pct": 66.67,
+  "t3Pct": 0,
+  "tlPct": 100,
+  "ts": 53.32,
+  "efg": 50,
+  "usg": 10.69,
+  "per36": {
+   "pt": 7.34,
+   "rt": 7.34,
+   "as": 3.26,
+   "br": 1.63,
+   "va": 13.87
+  },
+  "evolucion": [
+   {
+    "id": "2345188",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 210
+   },
+   {
+    "id": "2345195",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 3,
+    "va": 4,
+    "seg": 505
+   },
+   {
+    "id": "2345202",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 2,
+    "va": 7,
+    "seg": 1273
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 4,
+    "va": 6,
+    "seg": 660
+   }
+  ],
+  "percentiles": null
  },
  {
   "idJugador": "1778486",
@@ -61037,7 +60898,7 @@
     "grp": 28
    },
    "asPorPartido": {
-    "nac": 25,
+    "nac": 26,
     "grp": 29
    },
    "brPorPartido": {
@@ -61563,7 +61424,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 10,
-    "grp": 13
+    "grp": 12
    },
    "rtPorPartido": {
     "nac": 37,
@@ -61579,19 +61440,19 @@
    },
    "vaPorPartido": {
     "nac": 21,
-    "grp": 22
+    "grp": 23
    },
    "ts": {
     "nac": 17,
-    "grp": 17
+    "grp": 16
    },
    "efg": {
     "nac": 27,
     "grp": 27
    },
    "t3Pct": {
-    "nac": 15,
-    "grp": 17
+    "nac": 16,
+    "grp": 18
    }
   }
  },
@@ -61826,15 +61687,15 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 30,
-    "grp": 28
+    "grp": 29
    },
    "rtPorPartido": {
     "nac": 21,
     "grp": 22
    },
    "asPorPartido": {
-    "nac": 54,
-    "grp": 53
+    "nac": 55,
+    "grp": 54
    },
    "brPorPartido": {
     "nac": 72,
@@ -61842,19 +61703,19 @@
    },
    "vaPorPartido": {
     "nac": 21,
-    "grp": 22
+    "grp": 23
    },
    "ts": {
-    "nac": 18,
+    "nac": 17,
     "grp": 17
    },
    "efg": {
     "nac": 44,
-    "grp": 43
+    "grp": 44
    },
    "t3Pct": {
     "nac": 39,
-    "grp": 39
+    "grp": 40
    }
   }
  },
@@ -62005,7 +61866,7 @@
   "tlPct": 100,
   "ts": 53.19,
   "efg": 0,
-  "usg": 19.03,
+  "usg": 19.11,
   "per36": {
    "pt": 16,
    "rt": 0,
@@ -62182,6 +62043,276 @@
    }
   ],
   "percentiles": null
+ },
+ {
+  "idJugador": "1824880",
+  "nombre": "PEREZ RAMIREZ, GERARDO",
+  "dorsal": "5",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 25,
+  "titular": 8,
+  "minTotales": 535.05,
+  "minPorPartido": 21.4,
+  "pt": 105,
+  "ro": 15,
+  "rd": 60,
+  "rt": 75,
+  "as": 31,
+  "br": 14,
+  "bp": 21,
+  "tfTot": 2,
+  "tcoTot": 1,
+  "fcTot": 29,
+  "frTot": 16,
+  "va": 99,
+  "pm": -108,
+  "t2a": 23,
+  "t2i": 45,
+  "t3a": 16,
+  "t3i": 80,
+  "tla": 11,
+  "tli": 19,
+  "ptPorPartido": 4.2,
+  "roPorPartido": 0.6,
+  "rdPorPartido": 2.4,
+  "rtPorPartido": 3,
+  "asPorPartido": 1.24,
+  "brPorPartido": 0.56,
+  "bpPorPartido": 0.84,
+  "tpPorPartido": 0.08,
+  "tcoPorPartido": 0.04,
+  "fcPorPartido": 1.16,
+  "frPorPartido": 0.64,
+  "vaPorPartido": 3.96,
+  "t2": "23/45",
+  "t3": "16/80",
+  "tl": "11/19",
+  "t2Pct": 51.11,
+  "t3Pct": 20,
+  "tlPct": 57.89,
+  "ts": 39.37,
+  "efg": 37.6,
+  "usg": 13.2,
+  "per36": {
+   "pt": 7.06,
+   "rt": 5.05,
+   "as": 2.09,
+   "br": 0.94,
+   "va": 6.66
+  },
+  "evolucion": [
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 9,
+    "va": 8,
+    "seg": 1627
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 7,
+    "va": 9,
+    "seg": 1286
+   },
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 7,
+    "va": 6,
+    "seg": 1375
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 0,
+    "va": 1,
+    "seg": 835
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 6,
+    "va": 9,
+    "seg": 1397
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 3,
+    "va": 6,
+    "seg": 1254
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 2,
+    "va": 0,
+    "seg": 1478
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 8,
+    "va": 5,
+    "seg": 1174
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 1,
+    "va": 0,
+    "seg": 1248
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 3,
+    "va": 2,
+    "seg": 1047
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 2,
+    "va": -2,
+    "seg": 872
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 7,
+    "va": 13,
+    "seg": 1576
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 0,
+    "va": -6,
+    "seg": 1312
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 5,
+    "va": 4,
+    "seg": 1370
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 3,
+    "va": 3,
+    "seg": 943
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 1203
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 0,
+    "va": -4,
+    "seg": 791
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 2,
+    "va": -1,
+    "seg": 1114
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 7,
+    "va": 8,
+    "seg": 1233
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 1,
+    "va": 2,
+    "seg": 887
+   },
+   {
+    "id": "2345183",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 5,
+    "va": 1,
+    "seg": 1512
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 6,
+    "va": 3,
+    "seg": 1879
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 7,
+    "va": 10,
+    "seg": 1604
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 8,
+    "va": 11,
+    "seg": 1358
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 6,
+    "va": 11,
+    "seg": 1728
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 16,
+    "grp": 19
+   },
+   "rtPorPartido": {
+    "nac": 45,
+    "grp": 44
+   },
+   "asPorPartido": {
+    "nac": 53,
+    "grp": 53
+   },
+   "brPorPartido": {
+    "nac": 38,
+    "grp": 34
+   },
+   "vaPorPartido": {
+    "nac": 20,
+    "grp": 21
+   },
+   "ts": {
+    "nac": 5,
+    "grp": 5
+   },
+   "efg": {
+    "nac": 7,
+    "grp": 8
+   },
+   "t3Pct": {
+    "nac": 16,
+    "grp": 18
+   }
+  }
  },
  {
   "idJugador": "2093087",
@@ -62829,7 +62960,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 29,
+    "nac": 28,
     "grp": 30
    },
    "rtPorPartido": {
@@ -63111,7 +63242,7 @@
     "grp": 7
    },
    "brPorPartido": {
-    "nac": 42,
+    "nac": 43,
     "grp": 47
    },
    "vaPorPartido": {
@@ -63119,11 +63250,11 @@
     "grp": 18
    },
    "ts": {
-    "nac": 69,
+    "nac": 70,
     "grp": 69
    },
    "efg": {
-    "nac": 66,
+    "nac": 67,
     "grp": 65
    },
    "t3Pct": {
@@ -63501,7 +63632,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 19,
+    "nac": 18,
     "grp": 16
    },
    "rtPorPartido": {
@@ -63525,11 +63656,11 @@
     "grp": 11
    },
    "efg": {
-    "nac": 21,
+    "nac": 20,
     "grp": 21
    },
    "t3Pct": {
-    "nac": 69,
+    "nac": 70,
     "grp": 67
    }
   }
@@ -63787,7 +63918,7 @@
     "grp": 28
    },
    "vaPorPartido": {
-    "nac": 19,
+    "nac": 18,
     "grp": 20
    },
    "ts": {
@@ -64043,11 +64174,11 @@
    },
    "asPorPartido": {
     "nac": 58,
-    "grp": 58
+    "grp": 59
    },
    "brPorPartido": {
     "nac": 78,
-    "grp": 78
+    "grp": 79
    },
    "vaPorPartido": {
     "nac": 18,
@@ -64062,8 +64193,8 @@
     "grp": 3
    },
    "t3Pct": {
-    "nac": 17,
-    "grp": 20
+    "nac": 18,
+    "grp": 22
    }
   }
  },
@@ -64439,11 +64570,11 @@
     "grp": 27
    },
    "efg": {
-    "nac": 42,
+    "nac": 43,
     "grp": 43
    },
    "t3Pct": {
-    "nac": 46,
+    "nac": 47,
     "grp": 46
    }
   }
@@ -64716,12 +64847,289 @@
     "grp": 34
    },
    "efg": {
-    "nac": 34,
+    "nac": 35,
     "grp": 33
    },
    "t3Pct": {
-    "nac": 22,
+    "nac": 23,
     "grp": 21
+   }
+  }
+ },
+ {
+  "idJugador": "1695784",
+  "nombre": "LLAMAS PRADO, JAIME",
+  "dorsal": "32",
+  "equipo": "CLASS BASQUET SANT ANTONI",
+  "equipoId": "922368",
+  "grupo": "ESTE",
+  "pj": 26,
+  "titular": 4,
+  "minTotales": 311.7,
+  "minPorPartido": 11.99,
+  "pt": 86,
+  "ro": 22,
+  "rd": 65,
+  "rt": 87,
+  "as": 16,
+  "br": 11,
+  "bp": 17,
+  "tfTot": 0,
+  "tcoTot": 6,
+  "fcTot": 51,
+  "frTot": 19,
+  "va": 93,
+  "pm": 14,
+  "t2a": 20,
+  "t2i": 37,
+  "t3a": 9,
+  "t3i": 42,
+  "tla": 19,
+  "tli": 27,
+  "ptPorPartido": 3.31,
+  "roPorPartido": 0.85,
+  "rdPorPartido": 2.5,
+  "rtPorPartido": 3.35,
+  "asPorPartido": 0.62,
+  "brPorPartido": 0.42,
+  "bpPorPartido": 0.65,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.23,
+  "fcPorPartido": 1.96,
+  "frPorPartido": 0.73,
+  "vaPorPartido": 3.58,
+  "t2": "20/37",
+  "t3": "9/42",
+  "tl": "19/27",
+  "t2Pct": 54.05,
+  "t3Pct": 21.43,
+  "tlPct": 70.37,
+  "ts": 47.32,
+  "efg": 42.41,
+  "usg": 16.01,
+  "per36": {
+   "pt": 9.93,
+   "rt": 10.05,
+   "as": 1.85,
+   "br": 1.27,
+   "va": 10.74
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 1,
+    "va": -2,
+    "seg": 598
+   },
+   {
+    "id": "2345041",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 2,
+    "va": 1,
+    "seg": 268
+   },
+   {
+    "id": "2345054",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 2,
+    "va": 3,
+    "seg": 545
+   },
+   {
+    "id": "2345056",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 5,
+    "va": 2,
+    "seg": 935
+   },
+   {
+    "id": "2345067",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 3,
+    "va": 6,
+    "seg": 946
+   },
+   {
+    "id": "2345071",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 6,
+    "va": 15,
+    "seg": 940
+   },
+   {
+    "id": "2345080",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 5,
+    "va": 2,
+    "seg": 641
+   },
+   {
+    "id": "2345086",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 5,
+    "va": 4,
+    "seg": 880
+   },
+   {
+    "id": "2345093",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 4,
+    "va": 9,
+    "seg": 1177
+   },
+   {
+    "id": "2345101",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 4,
+    "va": 3,
+    "seg": 739
+   },
+   {
+    "id": "2345106",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 2,
+    "va": 0,
+    "seg": 525
+   },
+   {
+    "id": "2345116",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 9,
+    "va": 11,
+    "seg": 942
+   },
+   {
+    "id": "2345119",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 5,
+    "va": 9,
+    "seg": 811
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 4,
+    "va": 4,
+    "seg": 1275
+   },
+   {
+    "id": "2345132",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 0,
+    "va": -3,
+    "seg": 223
+   },
+   {
+    "id": "2345145",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 420
+   },
+   {
+    "id": "2345147",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 436
+   },
+   {
+    "id": "2345158",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 5,
+    "va": 3,
+    "seg": 460
+   },
+   {
+    "id": "2345162",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 3,
+    "va": 5,
+    "seg": 908
+   },
+   {
+    "id": "2345171",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 3,
+    "va": 5,
+    "seg": 869
+   },
+   {
+    "id": "2345177",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 3,
+    "va": 9,
+    "seg": 774
+   },
+   {
+    "id": "2345184",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 4,
+    "va": 2,
+    "seg": 878
+   },
+   {
+    "id": "2345192",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 239
+   },
+   {
+    "id": "2345197",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 5,
+    "va": 2,
+    "seg": 982
+   },
+   {
+    "id": "2345207",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 4,
+    "va": 4,
+    "seg": 887
+   },
+   {
+    "id": "2345210",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 2,
+    "va": 1,
+    "seg": 404
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 10,
+    "grp": 13
+   },
+   "rtPorPartido": {
+    "nac": 53,
+    "grp": 54
+   },
+   "asPorPartido": {
+    "nac": 21,
+    "grp": 18
+   },
+   "brPorPartido": {
+    "nac": 25,
+    "grp": 21
+   },
+   "vaPorPartido": {
+    "nac": 17,
+    "grp": 19
+   },
+   "ts": {
+    "nac": 25,
+    "grp": 25
+   },
+   "efg": {
+    "nac": 18,
+    "grp": 19
+   },
+   "t3Pct": {
+    "nac": 17,
+    "grp": 20
    }
   }
  },
@@ -64953,7 +65361,7 @@
    },
    "rtPorPartido": {
     "nac": 55,
-    "grp": 57
+    "grp": 56
    },
    "asPorPartido": {
     "nac": 18,
@@ -64965,289 +65373,19 @@
    },
    "vaPorPartido": {
     "nac": 17,
-    "grp": 19
+    "grp": 18
    },
    "ts": {
-    "nac": 44,
-    "grp": 43
+    "nac": 45,
+    "grp": 45
    },
    "efg": {
     "nac": 60,
-    "grp": 61
+    "grp": 62
    },
    "t3Pct": {
     "nac": 7,
     "grp": 9
-   }
-  }
- },
- {
-  "idJugador": "1695784",
-  "nombre": "LLAMAS PRADO, JAIME",
-  "dorsal": "32",
-  "equipo": "CLASS BASQUET SANT ANTONI",
-  "equipoId": "922368",
-  "grupo": "ESTE",
-  "pj": 25,
-  "titular": 4,
-  "minTotales": 290.45,
-  "minPorPartido": 11.62,
-  "pt": 82,
-  "ro": 21,
-  "rd": 62,
-  "rt": 83,
-  "as": 16,
-  "br": 10,
-  "bp": 17,
-  "tfTot": 0,
-  "tcoTot": 6,
-  "fcTot": 48,
-  "frTot": 19,
-  "va": 89,
-  "pm": 0,
-  "t2a": 18,
-  "t2i": 34,
-  "t3a": 9,
-  "t3i": 41,
-  "tla": 19,
-  "tli": 27,
-  "ptPorPartido": 3.28,
-  "roPorPartido": 0.84,
-  "rdPorPartido": 2.48,
-  "rtPorPartido": 3.32,
-  "asPorPartido": 0.64,
-  "brPorPartido": 0.4,
-  "bpPorPartido": 0.68,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.24,
-  "fcPorPartido": 1.92,
-  "frPorPartido": 0.76,
-  "vaPorPartido": 3.56,
-  "t2": "18/34",
-  "t3": "9/41",
-  "tl": "19/27",
-  "t2Pct": 52.94,
-  "t3Pct": 21.95,
-  "tlPct": 70.37,
-  "ts": 47.19,
-  "efg": 42,
-  "usg": 16.53,
-  "per36": {
-   "pt": 10.16,
-   "rt": 10.29,
-   "as": 1.98,
-   "br": 1.24,
-   "va": 11.03
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 1,
-    "va": -2,
-    "seg": 598
-   },
-   {
-    "id": "2345041",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 2,
-    "va": 1,
-    "seg": 268
-   },
-   {
-    "id": "2345054",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 2,
-    "va": 3,
-    "seg": 545
-   },
-   {
-    "id": "2345056",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 5,
-    "va": 2,
-    "seg": 935
-   },
-   {
-    "id": "2345067",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 3,
-    "va": 6,
-    "seg": 946
-   },
-   {
-    "id": "2345071",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 6,
-    "va": 15,
-    "seg": 940
-   },
-   {
-    "id": "2345080",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 5,
-    "va": 2,
-    "seg": 641
-   },
-   {
-    "id": "2345086",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 5,
-    "va": 4,
-    "seg": 880
-   },
-   {
-    "id": "2345093",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 4,
-    "va": 9,
-    "seg": 1177
-   },
-   {
-    "id": "2345101",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 4,
-    "va": 3,
-    "seg": 739
-   },
-   {
-    "id": "2345106",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 2,
-    "va": 0,
-    "seg": 525
-   },
-   {
-    "id": "2345116",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 9,
-    "va": 11,
-    "seg": 942
-   },
-   {
-    "id": "2345119",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 5,
-    "va": 9,
-    "seg": 811
-   },
-   {
-    "id": "2345132",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 0,
-    "va": -3,
-    "seg": 223
-   },
-   {
-    "id": "2345145",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 420
-   },
-   {
-    "id": "2345147",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 436
-   },
-   {
-    "id": "2345158",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 5,
-    "va": 3,
-    "seg": 460
-   },
-   {
-    "id": "2345162",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 3,
-    "va": 5,
-    "seg": 908
-   },
-   {
-    "id": "2345171",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 3,
-    "va": 5,
-    "seg": 869
-   },
-   {
-    "id": "2345177",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 3,
-    "va": 9,
-    "seg": 774
-   },
-   {
-    "id": "2345184",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 4,
-    "va": 2,
-    "seg": 878
-   },
-   {
-    "id": "2345192",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 239
-   },
-   {
-    "id": "2345197",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 5,
-    "va": 2,
-    "seg": 982
-   },
-   {
-    "id": "2345207",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 4,
-    "va": 4,
-    "seg": 887
-   },
-   {
-    "id": "2345210",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 2,
-    "va": 1,
-    "seg": 404
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 10,
-    "grp": 12
-   },
-   "rtPorPartido": {
-    "nac": 53,
-    "grp": 54
-   },
-   "asPorPartido": {
-    "nac": 22,
-    "grp": 19
-   },
-   "brPorPartido": {
-    "nac": 23,
-    "grp": 19
-   },
-   "vaPorPartido": {
-    "nac": 17,
-    "grp": 18
-   },
-   "ts": {
-    "nac": 24,
-    "grp": 23
-   },
-   "efg": {
-    "nac": 17,
-    "grp": 17
-   },
-   "t3Pct": {
-    "nac": 19,
-    "grp": 21
    }
   }
  },
@@ -65454,12 +65592,12 @@
     "grp": 4
    },
    "asPorPartido": {
-    "nac": 34,
-    "grp": 35
+    "nac": 35,
+    "grp": 36
    },
    "brPorPartido": {
     "nac": 59,
-    "grp": 55
+    "grp": 54
    },
    "vaPorPartido": {
     "nac": 16,
@@ -65467,7 +65605,7 @@
    },
    "ts": {
     "nac": 27,
-    "grp": 28
+    "grp": 29
    },
    "efg": {
     "nac": 33,
@@ -65475,7 +65613,7 @@
    },
    "t3Pct": {
     "nac": 58,
-    "grp": 58
+    "grp": 59
    }
   }
  },
@@ -65529,7 +65667,7 @@
   "tlPct": 85.71,
   "ts": 53.1,
   "efg": 50,
-  "usg": 21.2,
+  "usg": 21.29,
   "per36": {
    "pt": 16.09,
    "rt": 2.25,
@@ -65853,7 +65991,7 @@
     "grp": 17
    },
    "brPorPartido": {
-    "nac": 46,
+    "nac": 47,
     "grp": 52
    },
    "vaPorPartido": {
@@ -65861,7 +65999,7 @@
     "grp": 15
    },
    "ts": {
-    "nac": 40,
+    "nac": 41,
     "grp": 42
    },
    "efg": {
@@ -66334,7 +66472,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 23,
-    "grp": 24
+    "grp": 23
    },
    "rtPorPartido": {
     "nac": 4,
@@ -66346,14 +66484,14 @@
    },
    "brPorPartido": {
     "nac": 60,
-    "grp": 55
+    "grp": 56
    },
    "vaPorPartido": {
     "nac": 15,
     "grp": 17
    },
    "ts": {
-    "nac": 76,
+    "nac": 77,
     "grp": 80
    },
    "efg": {
@@ -66547,7 +66685,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 16,
+    "nac": 17,
     "grp": 13
    },
    "rtPorPartido": {
@@ -66803,7 +66941,7 @@
     "grp": 11
    },
    "t3Pct": {
-    "nac": 24,
+    "nac": 25,
     "grp": 26
    }
   }
@@ -67920,8 +68058,8 @@
     "grp": 39
    },
    "asPorPartido": {
-    "nac": 16,
-    "grp": 12
+    "nac": 17,
+    "grp": 13
    },
    "brPorPartido": {
     "nac": 16,
@@ -67941,7 +68079,7 @@
    },
    "t3Pct": {
     "nac": 14,
-    "grp": 14
+    "grp": 15
    }
   }
  },
@@ -68182,7 +68320,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 22
    },
    "rtPorPartido": {
@@ -68194,7 +68332,7 @@
     "grp": 17
    },
    "brPorPartido": {
-    "nac": 23,
+    "nac": 22,
     "grp": 28
    },
    "vaPorPartido": {
@@ -69465,8 +69603,8 @@
     "grp": 14
    },
    "asPorPartido": {
-    "nac": 29,
-    "grp": 27
+    "nac": 28,
+    "grp": 26
    },
    "brPorPartido": {
     "nac": 27,
@@ -69485,8 +69623,8 @@
     "grp": 6
    },
    "t3Pct": {
-    "nac": 56,
-    "grp": 56
+    "nac": 57,
+    "grp": 57
    }
   }
  },
@@ -69735,7 +69873,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 48,
-    "grp": 46
+    "grp": 47
    },
    "rtPorPartido": {
     "nac": 2,
@@ -69746,8 +69884,8 @@
     "grp": 32
    },
    "brPorPartido": {
-    "nac": 10,
-    "grp": 8
+    "nac": 11,
+    "grp": 9
    },
    "vaPorPartido": {
     "nac": 12,
@@ -70571,7 +70709,7 @@
     "grp": 61
    },
    "brPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 32
    },
    "vaPorPartido": {
@@ -70579,12 +70717,12 @@
     "grp": 12
    },
    "ts": {
-    "nac": 34,
-    "grp": 33
+    "nac": 33,
+    "grp": 32
    },
    "efg": {
-    "nac": 18,
-    "grp": 18
+    "nac": 17,
+    "grp": 17
    },
    "t3Pct": {
     "nac": 45,
@@ -70850,7 +70988,7 @@
     "grp": 56
    },
    "t3Pct": {
-    "nac": 76,
+    "nac": 77,
     "grp": 72
    }
   }
@@ -71190,7 +71328,7 @@
     "grp": 9
    },
    "asPorPartido": {
-    "nac": 41,
+    "nac": 40,
     "grp": 41
    },
    "brPorPartido": {
@@ -71202,8 +71340,8 @@
     "grp": 11
    },
    "ts": {
-    "nac": 47,
-    "grp": 47
+    "nac": 48,
+    "grp": 48
    },
    "efg": {
     "nac": 54,
@@ -71211,7 +71349,7 @@
    },
    "t3Pct": {
     "nac": 60,
-    "grp": 61
+    "grp": 62
    }
   }
  },
@@ -71468,7 +71606,7 @@
    },
    "asPorPartido": {
     "nac": 30,
-    "grp": 28
+    "grp": 29
    },
    "brPorPartido": {
     "nac": 42,
@@ -71488,7 +71626,7 @@
    },
    "t3Pct": {
     "nac": 11,
-    "grp": 12
+    "grp": 13
    }
   }
  },
@@ -71910,23 +72048,23 @@
     "grp": 16
    },
    "asPorPartido": {
-    "nac": 24,
+    "nac": 23,
     "grp": 20
    },
    "brPorPartido": {
     "nac": 53,
-    "grp": 48
+    "grp": 49
    },
    "vaPorPartido": {
     "nac": 10,
     "grp": 10
    },
    "ts": {
-    "nac": 42,
-    "grp": 42
+    "nac": 43,
+    "grp": 44
    },
    "efg": {
-    "nac": 54,
+    "nac": 55,
     "grp": 55
    },
    "t3Pct": {
@@ -72428,6 +72566,173 @@
   }
  },
  {
+  "idJugador": "2534044",
+  "nombre": "TOMAIC TOMAIC, JOSHUA TYRON",
+  "dorsal": "3",
+  "equipo": "CLASS BASQUET SANT ANTONI",
+  "equipoId": "922368",
+  "grupo": "ESTE",
+  "pj": 15,
+  "titular": 0,
+  "minTotales": 140.57,
+  "minPorPartido": 9.37,
+  "pt": 43,
+  "ro": 10,
+  "rd": 18,
+  "rt": 28,
+  "as": 3,
+  "br": 6,
+  "bp": 4,
+  "tfTot": 2,
+  "tcoTot": 1,
+  "fcTot": 35,
+  "frTot": 13,
+  "va": 36,
+  "pm": 37,
+  "t2a": 10,
+  "t2i": 19,
+  "t3a": 2,
+  "t3i": 10,
+  "tla": 17,
+  "tli": 20,
+  "ptPorPartido": 2.87,
+  "roPorPartido": 0.67,
+  "rdPorPartido": 1.2,
+  "rtPorPartido": 1.87,
+  "asPorPartido": 0.2,
+  "brPorPartido": 0.4,
+  "bpPorPartido": 0.27,
+  "tpPorPartido": 0.13,
+  "tcoPorPartido": 0.07,
+  "fcPorPartido": 2.33,
+  "frPorPartido": 0.87,
+  "vaPorPartido": 2.4,
+  "t2": "10/19",
+  "t3": "2/10",
+  "tl": "17/20",
+  "t2Pct": 52.63,
+  "t3Pct": 20,
+  "tlPct": 85,
+  "ts": 56.88,
+  "efg": 44.83,
+  "usg": 13.76,
+  "per36": {
+   "pt": 11.01,
+   "rt": 7.17,
+   "as": 0.77,
+   "br": 1.54,
+   "va": 9.22
+  },
+  "evolucion": [
+   {
+    "id": "2345116",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 4,
+    "va": 5,
+    "seg": 281
+   },
+   {
+    "id": "2345119",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 5,
+    "va": 3,
+    "seg": 748
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 12,
+    "va": 15,
+    "seg": 1208
+   },
+   {
+    "id": "2345132",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 2,
+    "va": 1,
+    "seg": 640
+   },
+   {
+    "id": "2345145",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 2,
+    "va": 0,
+    "seg": 746
+   },
+   {
+    "id": "2345147",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 6,
+    "va": 8,
+    "seg": 829
+   },
+   {
+    "id": "2345158",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 0,
+    "va": -2,
+    "seg": 420
+   },
+   {
+    "id": "2345162",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 3,
+    "va": 5,
+    "seg": 1108
+   },
+   {
+    "id": "2345171",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 2,
+    "va": -2,
+    "seg": 439
+   },
+   {
+    "id": "2345177",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 168
+   },
+   {
+    "id": "2345184",
+    "jornada": "Jornada 22(09/03/2024)",
+    "pt": 0,
+    "va": -2,
+    "seg": 197
+   },
+   {
+    "id": "2345192",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 0,
+    "va": -3,
+    "seg": 143
+   },
+   {
+    "id": "2345197",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 2,
+    "va": 2,
+    "seg": 331
+   },
+   {
+    "id": "2345207",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 5,
+    "va": 8,
+    "seg": 848
+   },
+   {
+    "id": "2345210",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 328
+   }
+  ],
+  "percentiles": null
+ },
+ {
   "idJugador": "1859281",
   "nombre": "JORGE RODRIGUEZ, JONATHAN",
   "dorsal": "11",
@@ -72674,7 +72979,7 @@
     "grp": 32
    },
    "efg": {
-    "nac": 34,
+    "nac": 35,
     "grp": 34
    },
    "t3Pct": {
@@ -72682,166 +72987,6 @@
     "grp": 66
    }
   }
- },
- {
-  "idJugador": "1808439",
-  "nombre": "GIL GARCIA, GABRIEL",
-  "dorsal": "1",
-  "equipo": "CLASS BASQUET SANT ANTONI",
-  "equipoId": "922368",
-  "grupo": "ESTE",
-  "pj": 14,
-  "titular": 1,
-  "minTotales": 142.4,
-  "minPorPartido": 10.17,
-  "pt": 47,
-  "ro": 14,
-  "rd": 20,
-  "rt": 34,
-  "as": 5,
-  "br": 1,
-  "bp": 11,
-  "tfTot": 0,
-  "tcoTot": 4,
-  "fcTot": 22,
-  "frTot": 15,
-  "va": 32,
-  "pm": 11,
-  "t2a": 9,
-  "t2i": 27,
-  "t3a": 7,
-  "t3i": 19,
-  "tla": 8,
-  "tli": 15,
-  "ptPorPartido": 3.36,
-  "roPorPartido": 1,
-  "rdPorPartido": 1.43,
-  "rtPorPartido": 2.43,
-  "asPorPartido": 0.36,
-  "brPorPartido": 0.07,
-  "bpPorPartido": 0.79,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.29,
-  "fcPorPartido": 1.57,
-  "frPorPartido": 1.07,
-  "vaPorPartido": 2.29,
-  "t2": "9/27",
-  "t3": "7/19",
-  "tl": "8/15",
-  "t2Pct": 33.33,
-  "t3Pct": 36.84,
-  "tlPct": 53.33,
-  "ts": 44.68,
-  "efg": 42.39,
-  "usg": 20.64,
-  "per36": {
-   "pt": 11.88,
-   "rt": 8.6,
-   "as": 1.26,
-   "br": 0.25,
-   "va": 8.09
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 4,
-    "va": 8,
-    "seg": 913
-   },
-   {
-    "id": "2345041",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 0,
-    "va": 1,
-    "seg": 661
-   },
-   {
-    "id": "2345054",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 3,
-    "va": 4,
-    "seg": 596
-   },
-   {
-    "id": "2345056",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 6,
-    "va": 3,
-    "seg": 1222
-   },
-   {
-    "id": "2345067",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 5,
-    "va": 1,
-    "seg": 568
-   },
-   {
-    "id": "2345071",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 6,
-    "va": 0,
-    "seg": 528
-   },
-   {
-    "id": "2345080",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 4,
-    "va": 4,
-    "seg": 753
-   },
-   {
-    "id": "2345086",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 0,
-    "va": -4,
-    "seg": 300
-   },
-   {
-    "id": "2345093",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 11,
-    "va": 13,
-    "seg": 828
-   },
-   {
-    "id": "2345101",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 0,
-    "va": -7,
-    "seg": 737
-   },
-   {
-    "id": "2345106",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 2,
-    "va": 0,
-    "seg": 629
-   },
-   {
-    "id": "2345116",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 6,
-    "va": 5,
-    "seg": 517
-   },
-   {
-    "id": "2345119",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 0,
-    "va": 2,
-    "seg": 169
-   },
-   {
-    "id": "2345145",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 0,
-    "va": 2,
-    "seg": 123
-   }
-  ],
-  "percentiles": null
  },
  {
   "idJugador": "1766189",
@@ -73341,8 +73486,8 @@
     "grp": 11
    },
    "rtPorPartido": {
-    "nac": 17,
-    "grp": 18
+    "nac": 16,
+    "grp": 17
    },
    "asPorPartido": {
     "nac": 1,
@@ -73369,6 +73514,173 @@
     "grp": 95
    }
   }
+ },
+ {
+  "idJugador": "1808439",
+  "nombre": "GIL GARCIA, GABRIEL",
+  "dorsal": "1",
+  "equipo": "CLASS BASQUET SANT ANTONI",
+  "equipoId": "922368",
+  "grupo": "ESTE",
+  "pj": 15,
+  "titular": 1,
+  "minTotales": 151.78,
+  "minPorPartido": 10.12,
+  "pt": 48,
+  "ro": 15,
+  "rd": 21,
+  "rt": 36,
+  "as": 6,
+  "br": 1,
+  "bp": 12,
+  "tfTot": 0,
+  "tcoTot": 4,
+  "fcTot": 22,
+  "frTot": 16,
+  "va": 32,
+  "pm": 22,
+  "t2a": 9,
+  "t2i": 29,
+  "t3a": 7,
+  "t3i": 20,
+  "tla": 9,
+  "tli": 17,
+  "ptPorPartido": 3.2,
+  "roPorPartido": 1,
+  "rdPorPartido": 1.4,
+  "rtPorPartido": 2.4,
+  "asPorPartido": 0.4,
+  "brPorPartido": 0.07,
+  "bpPorPartido": 0.8,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.27,
+  "fcPorPartido": 1.47,
+  "frPorPartido": 1.07,
+  "vaPorPartido": 2.13,
+  "t2": "9/29",
+  "t3": "7/20",
+  "tl": "9/17",
+  "t2Pct": 31.03,
+  "t3Pct": 35,
+  "tlPct": 52.94,
+  "ts": 42.49,
+  "efg": 39.8,
+  "usg": 20.88,
+  "per36": {
+   "pt": 11.38,
+   "rt": 8.54,
+   "as": 1.42,
+   "br": 0.24,
+   "va": 7.59
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 4,
+    "va": 8,
+    "seg": 913
+   },
+   {
+    "id": "2345041",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 0,
+    "va": 1,
+    "seg": 661
+   },
+   {
+    "id": "2345054",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 3,
+    "va": 4,
+    "seg": 596
+   },
+   {
+    "id": "2345056",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 6,
+    "va": 3,
+    "seg": 1222
+   },
+   {
+    "id": "2345067",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 5,
+    "va": 1,
+    "seg": 568
+   },
+   {
+    "id": "2345071",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 6,
+    "va": 0,
+    "seg": 528
+   },
+   {
+    "id": "2345080",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 4,
+    "va": 4,
+    "seg": 753
+   },
+   {
+    "id": "2345086",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 0,
+    "va": -4,
+    "seg": 300
+   },
+   {
+    "id": "2345093",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 11,
+    "va": 13,
+    "seg": 828
+   },
+   {
+    "id": "2345101",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 0,
+    "va": -7,
+    "seg": 737
+   },
+   {
+    "id": "2345106",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 2,
+    "va": 0,
+    "seg": 629
+   },
+   {
+    "id": "2345116",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 6,
+    "va": 5,
+    "seg": 517
+   },
+   {
+    "id": "2345119",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 0,
+    "va": 2,
+    "seg": 169
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 1,
+    "va": 0,
+    "seg": 563
+   },
+   {
+    "id": "2345145",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 0,
+    "va": 2,
+    "seg": 123
+   }
+  ],
+  "percentiles": null
  },
  {
   "idJugador": "2432597",
@@ -73548,7 +73860,7 @@
     "grp": 12
    },
    "rtPorPartido": {
-    "nac": 36,
+    "nac": 35,
     "grp": 35
    },
    "asPorPartido": {
@@ -73808,7 +74120,7 @@
   "percentiles": {
    "ptPorPartido": {
     "nac": 16,
-    "grp": 19
+    "grp": 20
    },
    "rtPorPartido": {
     "nac": 10,
@@ -73827,279 +74139,16 @@
     "grp": 8
    },
    "ts": {
-    "nac": 39,
-    "grp": 38
+    "nac": 40,
+    "grp": 39
    },
    "efg": {
     "nac": 49,
-    "grp": 48
+    "grp": 49
    },
    "t3Pct": {
     "nac": 69,
     "grp": 72
-   }
-  }
- },
- {
-  "idJugador": "1973164",
-  "nombre": "CABRERA MUJICA, GONZALO",
-  "dorsal": "8",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 24,
-  "titular": 0,
-  "minTotales": 239.72,
-  "minPorPartido": 9.99,
-  "pt": 60,
-  "ro": 7,
-  "rd": 23,
-  "rt": 30,
-  "as": 6,
-  "br": 5,
-  "bp": 17,
-  "tfTot": 1,
-  "tcoTot": 0,
-  "fcTot": 19,
-  "frTot": 17,
-  "va": 48,
-  "pm": -46,
-  "t2a": 11,
-  "t2i": 20,
-  "t3a": 10,
-  "t3i": 35,
-  "tla": 8,
-  "tli": 9,
-  "ptPorPartido": 2.5,
-  "roPorPartido": 0.29,
-  "rdPorPartido": 0.96,
-  "rtPorPartido": 1.25,
-  "asPorPartido": 0.25,
-  "brPorPartido": 0.21,
-  "bpPorPartido": 0.71,
-  "tpPorPartido": 0.04,
-  "tcoPorPartido": 0,
-  "fcPorPartido": 0.79,
-  "frPorPartido": 0.71,
-  "vaPorPartido": 2,
-  "t2": "11/20",
-  "t3": "10/35",
-  "tl": "8/9",
-  "t2Pct": 55,
-  "t3Pct": 28.57,
-  "tlPct": 88.89,
-  "ts": 50.88,
-  "efg": 47.27,
-  "usg": 14.43,
-  "per36": {
-   "pt": 9.01,
-   "rt": 4.51,
-   "as": 0.9,
-   "br": 0.75,
-   "va": 7.21
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 0,
-    "va": -3,
-    "seg": 1100
-   },
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 7,
-    "va": 7,
-    "seg": 697
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 10,
-    "va": 11,
-    "seg": 1275
-   },
-   {
-    "id": "2345057",
-    "jornada": "Jornada 4(28/10/2023)",
-    "pt": 2,
-    "va": 3,
-    "seg": 760
-   },
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 5,
-    "va": 0,
-    "seg": 980
-   },
-   {
-    "id": "2345072",
-    "jornada": "Jornada 6(04/11/2023)",
-    "pt": 0,
-    "va": -1,
-    "seg": 360
-   },
-   {
-    "id": "2345079",
-    "jornada": "Jornada 7(11/11/2023)",
-    "pt": 3,
-    "va": 4,
-    "seg": 761
-   },
-   {
-    "id": "2345087",
-    "jornada": "Jornada 8(18/11/2023)",
-    "pt": 3,
-    "va": 3,
-    "seg": 236
-   },
-   {
-    "id": "2345092",
-    "jornada": "Jornada 9(25/11/2023)",
-    "pt": 0,
-    "va": -2,
-    "seg": 361
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 4,
-    "va": 4,
-    "seg": 570
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 3,
-    "va": 2,
-    "seg": 238
-   },
-   {
-    "id": "2345117",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 0,
-    "va": -3,
-    "seg": 153
-   },
-   {
-    "id": "2345118",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 3,
-    "va": 2,
-    "seg": 638
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 120
-   },
-   {
-    "id": "2345144",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 590
-   },
-   {
-    "id": "2345148",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 3,
-    "va": 4,
-    "seg": 446
-   },
-   {
-    "id": "2345157",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 0,
-    "va": 1,
-    "seg": 496
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 0,
-    "va": 2,
-    "seg": 650
-   },
-   {
-    "id": "2345170",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 3,
-    "va": 1,
-    "seg": 240
-   },
-   {
-    "id": "2345178",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 0,
-    "va": -2,
-    "seg": 423
-   },
-   {
-    "id": "2345193",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 2,
-    "va": 4,
-    "seg": 778
-   },
-   {
-    "id": "2345196",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 514
-   },
-   {
-    "id": "2345208",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 8,
-    "va": 8,
-    "seg": 1102
-   },
-   {
-    "id": "2345209",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 4,
-    "va": 4,
-    "seg": 895
-   }
-  ],
-  "percentiles": {
-   "ptPorPartido": {
-    "nac": 6,
-    "grp": 5
-   },
-   "rtPorPartido": {
-    "nac": 10,
-    "grp": 11
-   },
-   "asPorPartido": {
-    "nac": 3,
-    "grp": 2
-   },
-   "brPorPartido": {
-    "nac": 5,
-    "grp": 4
-   },
-   "vaPorPartido": {
-    "nac": 7,
-    "grp": 7
-   },
-   "ts": {
-    "nac": 46,
-    "grp": 46
-   },
-   "efg": {
-    "nac": 43,
-    "grp": 42
-   },
-   "t3Pct": {
-    "nac": 44,
-    "grp": 43
    }
   }
  },
@@ -74293,7 +74342,7 @@
    },
    "asPorPartido": {
     "nac": 53,
-    "grp": 52
+    "grp": 53
    },
    "brPorPartido": {
     "nac": 4,
@@ -74309,11 +74358,11 @@
    },
    "efg": {
     "nac": 16,
-    "grp": 16
+    "grp": 15
    },
    "t3Pct": {
     "nac": 32,
-    "grp": 34
+    "grp": 35
    }
   }
  },
@@ -74510,6 +74559,276 @@
    }
   ],
   "percentiles": null
+ },
+ {
+  "idJugador": "1973164",
+  "nombre": "CABRERA MUJICA, GONZALO",
+  "dorsal": "8",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 25,
+  "titular": 0,
+  "minTotales": 250.05,
+  "minPorPartido": 10,
+  "pt": 62,
+  "ro": 7,
+  "rd": 25,
+  "rt": 32,
+  "as": 6,
+  "br": 5,
+  "bp": 17,
+  "tfTot": 1,
+  "tcoTot": 0,
+  "fcTot": 19,
+  "frTot": 17,
+  "va": 49,
+  "pm": -59,
+  "t2a": 12,
+  "t2i": 22,
+  "t3a": 10,
+  "t3i": 37,
+  "tla": 8,
+  "tli": 9,
+  "ptPorPartido": 2.48,
+  "roPorPartido": 0.28,
+  "rdPorPartido": 1,
+  "rtPorPartido": 1.28,
+  "asPorPartido": 0.24,
+  "brPorPartido": 0.2,
+  "bpPorPartido": 0.68,
+  "tpPorPartido": 0.04,
+  "tcoPorPartido": 0,
+  "fcPorPartido": 0.76,
+  "frPorPartido": 0.68,
+  "vaPorPartido": 1.96,
+  "t2": "12/22",
+  "t3": "10/37",
+  "tl": "8/9",
+  "t2Pct": 54.55,
+  "t3Pct": 27.03,
+  "tlPct": 88.89,
+  "ts": 49.24,
+  "efg": 45.76,
+  "usg": 14.63,
+  "per36": {
+   "pt": 8.93,
+   "rt": 4.61,
+   "as": 0.86,
+   "br": 0.72,
+   "va": 7.05
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 0,
+    "va": -3,
+    "seg": 1100
+   },
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 7,
+    "va": 7,
+    "seg": 697
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 10,
+    "va": 11,
+    "seg": 1275
+   },
+   {
+    "id": "2345057",
+    "jornada": "Jornada 4(28/10/2023)",
+    "pt": 2,
+    "va": 3,
+    "seg": 760
+   },
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 5,
+    "va": 0,
+    "seg": 980
+   },
+   {
+    "id": "2345072",
+    "jornada": "Jornada 6(04/11/2023)",
+    "pt": 0,
+    "va": -1,
+    "seg": 360
+   },
+   {
+    "id": "2345079",
+    "jornada": "Jornada 7(11/11/2023)",
+    "pt": 3,
+    "va": 4,
+    "seg": 761
+   },
+   {
+    "id": "2345087",
+    "jornada": "Jornada 8(18/11/2023)",
+    "pt": 3,
+    "va": 3,
+    "seg": 236
+   },
+   {
+    "id": "2345092",
+    "jornada": "Jornada 9(25/11/2023)",
+    "pt": 0,
+    "va": -2,
+    "seg": 361
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 4,
+    "va": 4,
+    "seg": 570
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 3,
+    "va": 2,
+    "seg": 238
+   },
+   {
+    "id": "2345117",
+    "jornada": "Jornada 12(16/12/2023)",
+    "pt": 0,
+    "va": -3,
+    "seg": 153
+   },
+   {
+    "id": "2345118",
+    "jornada": "Jornada 13(20/12/2023)",
+    "pt": 3,
+    "va": 2,
+    "seg": 638
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 2,
+    "va": 1,
+    "seg": 620
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 120
+   },
+   {
+    "id": "2345144",
+    "jornada": "Jornada 16(13/01/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 590
+   },
+   {
+    "id": "2345148",
+    "jornada": "Jornada 17(27/01/2024)",
+    "pt": 3,
+    "va": 4,
+    "seg": 446
+   },
+   {
+    "id": "2345157",
+    "jornada": "Jornada 18(03/02/2024)",
+    "pt": 0,
+    "va": 1,
+    "seg": 496
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 0,
+    "va": 2,
+    "seg": 650
+   },
+   {
+    "id": "2345170",
+    "jornada": "Jornada 20(17/02/2024)",
+    "pt": 3,
+    "va": 1,
+    "seg": 240
+   },
+   {
+    "id": "2345178",
+    "jornada": "Jornada 21(02/03/2024)",
+    "pt": 0,
+    "va": -2,
+    "seg": 423
+   },
+   {
+    "id": "2345193",
+    "jornada": "Jornada 23(16/03/2024)",
+    "pt": 2,
+    "va": 4,
+    "seg": 778
+   },
+   {
+    "id": "2345196",
+    "jornada": "Jornada 24(23/03/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 514
+   },
+   {
+    "id": "2345208",
+    "jornada": "Jornada 25(30/03/2024)",
+    "pt": 8,
+    "va": 8,
+    "seg": 1102
+   },
+   {
+    "id": "2345209",
+    "jornada": "Jornada 26(06/04/2024)",
+    "pt": 4,
+    "va": 4,
+    "seg": 895
+   }
+  ],
+  "percentiles": {
+   "ptPorPartido": {
+    "nac": 6,
+    "grp": 5
+   },
+   "rtPorPartido": {
+    "nac": 10,
+    "grp": 11
+   },
+   "asPorPartido": {
+    "nac": 3,
+    "grp": 2
+   },
+   "brPorPartido": {
+    "nac": 5,
+    "grp": 4
+   },
+   "vaPorPartido": {
+    "nac": 7,
+    "grp": 6
+   },
+   "ts": {
+    "nac": 35,
+    "grp": 33
+   },
+   "efg": {
+    "nac": 39,
+    "grp": 41
+   },
+   "t3Pct": {
+    "nac": 36,
+    "grp": 38
+   }
+  }
  },
  {
   "idJugador": "2468102",
@@ -74880,7 +75199,7 @@
   ],
   "percentiles": {
    "ptPorPartido": {
-    "nac": 14,
+    "nac": 13,
     "grp": 11
    },
    "rtPorPartido": {
@@ -74900,15 +75219,15 @@
     "grp": 8
    },
    "ts": {
-    "nac": 17,
+    "nac": 16,
     "grp": 18
    },
    "efg": {
-    "nac": 26,
+    "nac": 25,
     "grp": 26
    },
    "t3Pct": {
-    "nac": 41,
+    "nac": 42,
     "grp": 42
    }
   }
@@ -75074,7 +75393,7 @@
   "tlPct": 50,
   "ts": 58.14,
   "efg": 58.33,
-  "usg": 9.38,
+  "usg": 9.4,
   "per36": {
    "pt": 6.59,
    "rt": 4.12,
@@ -75482,19 +75801,19 @@
    },
    "brPorPartido": {
     "nac": 55,
-    "grp": 51
+    "grp": 50
    },
    "vaPorPartido": {
     "nac": 6,
     "grp": 5
    },
    "ts": {
-    "nac": 14,
+    "nac": 13,
     "grp": 13
    },
    "efg": {
     "nac": 28,
-    "grp": 30
+    "grp": 29
    },
    "t3Pct": {
     "nac": 53,
@@ -75891,7 +76210,7 @@
   "tlPct": 100,
   "ts": 113.64,
   "efg": 0,
-  "usg": 8.02,
+  "usg": 8.05,
   "per36": {
    "pt": 14.4,
    "rt": 7.2,
@@ -75913,166 +76232,6 @@
     "pt": 0,
     "va": 0,
     "seg": 123
-   }
-  ],
-  "percentiles": null
- },
- {
-  "idJugador": "2534044",
-  "nombre": "TOMAIC TOMAIC, JOSHUA TYRON",
-  "dorsal": "3",
-  "equipo": "CLASS BASQUET SANT ANTONI",
-  "equipoId": "922368",
-  "grupo": "ESTE",
-  "pj": 14,
-  "titular": 0,
-  "minTotales": 120.43,
-  "minPorPartido": 8.6,
-  "pt": 31,
-  "ro": 8,
-  "rd": 16,
-  "rt": 24,
-  "as": 3,
-  "br": 6,
-  "bp": 4,
-  "tfTot": 1,
-  "tcoTot": 0,
-  "fcTot": 32,
-  "frTot": 10,
-  "va": 21,
-  "pm": 28,
-  "t2a": 7,
-  "t2i": 15,
-  "t3a": 2,
-  "t3i": 9,
-  "tla": 11,
-  "tli": 14,
-  "ptPorPartido": 2.21,
-  "roPorPartido": 0.57,
-  "rdPorPartido": 1.14,
-  "rtPorPartido": 1.71,
-  "asPorPartido": 0.21,
-  "brPorPartido": 0.43,
-  "bpPorPartido": 0.29,
-  "tpPorPartido": 0.07,
-  "tcoPorPartido": 0,
-  "fcPorPartido": 2.29,
-  "frPorPartido": 0.71,
-  "vaPorPartido": 1.5,
-  "t2": "7/15",
-  "t3": "2/9",
-  "tl": "11/14",
-  "t2Pct": 46.67,
-  "t3Pct": 22.22,
-  "tlPct": 78.57,
-  "ts": 51.39,
-  "efg": 41.67,
-  "usg": 13.11,
-  "per36": {
-   "pt": 9.27,
-   "rt": 7.17,
-   "as": 0.9,
-   "br": 1.79,
-   "va": 6.28
-  },
-  "evolucion": [
-   {
-    "id": "2345116",
-    "jornada": "Jornada 12(16/12/2023)",
-    "pt": 4,
-    "va": 5,
-    "seg": 281
-   },
-   {
-    "id": "2345119",
-    "jornada": "Jornada 13(20/12/2023)",
-    "pt": 5,
-    "va": 3,
-    "seg": 748
-   },
-   {
-    "id": "2345132",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 2,
-    "va": 1,
-    "seg": 640
-   },
-   {
-    "id": "2345145",
-    "jornada": "Jornada 16(13/01/2024)",
-    "pt": 2,
-    "va": 0,
-    "seg": 746
-   },
-   {
-    "id": "2345147",
-    "jornada": "Jornada 17(27/01/2024)",
-    "pt": 6,
-    "va": 8,
-    "seg": 829
-   },
-   {
-    "id": "2345158",
-    "jornada": "Jornada 18(03/02/2024)",
-    "pt": 0,
-    "va": -2,
-    "seg": 420
-   },
-   {
-    "id": "2345162",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 3,
-    "va": 5,
-    "seg": 1108
-   },
-   {
-    "id": "2345171",
-    "jornada": "Jornada 20(17/02/2024)",
-    "pt": 2,
-    "va": -2,
-    "seg": 439
-   },
-   {
-    "id": "2345177",
-    "jornada": "Jornada 21(02/03/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 168
-   },
-   {
-    "id": "2345184",
-    "jornada": "Jornada 22(09/03/2024)",
-    "pt": 0,
-    "va": -2,
-    "seg": 197
-   },
-   {
-    "id": "2345192",
-    "jornada": "Jornada 23(16/03/2024)",
-    "pt": 0,
-    "va": -3,
-    "seg": 143
-   },
-   {
-    "id": "2345197",
-    "jornada": "Jornada 24(23/03/2024)",
-    "pt": 2,
-    "va": 2,
-    "seg": 331
-   },
-   {
-    "id": "2345207",
-    "jornada": "Jornada 25(30/03/2024)",
-    "pt": 5,
-    "va": 8,
-    "seg": 848
-   },
-   {
-    "id": "2345210",
-    "jornada": "Jornada 26(06/04/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 328
    }
   ],
   "percentiles": null
@@ -76756,8 +76915,8 @@
     "grp": 42
    },
    "brPorPartido": {
-    "nac": 24,
-    "grp": 20
+    "nac": 23,
+    "grp": 18
    },
    "vaPorPartido": {
     "nac": 5,
@@ -76769,7 +76928,7 @@
    },
    "efg": {
     "nac": 31,
-    "grp": 33
+    "grp": 32
    },
    "t3Pct": {
     "nac": 63,
@@ -76827,7 +76986,7 @@
   "tlPct": 100,
   "ts": 77.64,
   "efg": 75,
-  "usg": 14.25,
+  "usg": 14.27,
   "per36": {
    "pt": 17.24,
    "rt": 8.62,
@@ -77657,7 +77816,7 @@
     "grp": 20
    },
    "brPorPartido": {
-    "nac": 21,
+    "nac": 20,
     "grp": 24
    },
    "vaPorPartido": {
@@ -78158,7 +78317,7 @@
   "tlPct": 100,
   "ts": 53.02,
   "efg": 42.86,
-  "usg": 11.11,
+  "usg": 11.15,
   "per36": {
    "pt": 7.02,
    "rt": 5.94,
@@ -78324,11 +78483,11 @@
    },
    "ts": {
     "nac": 56,
-    "grp": 55
+    "grp": 56
    },
    "efg": {
     "nac": 22,
-    "grp": 23
+    "grp": 22
    },
    "t3Pct": {
     "nac": 7,
@@ -78714,6 +78873,82 @@
     "pt": 0,
     "va": -1,
     "seg": 505
+   }
+  ],
+  "percentiles": null
+ },
+ {
+  "idJugador": "2044256",
+  "nombre": "ARTEAGA GINER, JORGE",
+  "dorsal": "24",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 2,
+  "titular": 0,
+  "minTotales": 3.48,
+  "minPorPartido": 1.74,
+  "pt": 2,
+  "ro": 0,
+  "rd": 1,
+  "rt": 1,
+  "as": 0,
+  "br": 0,
+  "bp": 0,
+  "tfTot": 0,
+  "tcoTot": 0,
+  "fcTot": 1,
+  "frTot": 1,
+  "va": 2,
+  "pm": 0,
+  "t2a": 0,
+  "t2i": 0,
+  "t3a": 0,
+  "t3i": 1,
+  "tla": 2,
+  "tli": 2,
+  "ptPorPartido": 1,
+  "roPorPartido": 0,
+  "rdPorPartido": 0.5,
+  "rtPorPartido": 0.5,
+  "asPorPartido": 0,
+  "brPorPartido": 0,
+  "bpPorPartido": 0,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0,
+  "fcPorPartido": 0.5,
+  "frPorPartido": 0.5,
+  "vaPorPartido": 1,
+  "t2": "0/0",
+  "t3": "0/1",
+  "tl": "2/2",
+  "t2Pct": 0,
+  "t3Pct": 0,
+  "tlPct": 100,
+  "ts": 53.19,
+  "efg": 0,
+  "usg": 24.69,
+  "per36": {
+   "pt": 20.67,
+   "rt": 10.33,
+   "as": 0,
+   "br": 0,
+   "va": 20.67
+  },
+  "evolucion": [
+   {
+    "id": "2345066",
+    "jornada": "Jornada 5(01/11/2023)",
+    "pt": 0,
+    "va": -1,
+    "seg": 120
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 2,
+    "va": 3,
+    "seg": 89
    }
   ],
   "percentiles": null
@@ -79120,11 +79355,11 @@
     "grp": 5
    },
    "ts": {
-    "nac": 5,
+    "nac": 6,
     "grp": 6
    },
    "efg": {
-    "nac": 9,
+    "nac": 10,
     "grp": 9
    },
    "t3Pct": {
@@ -79869,117 +80104,6 @@
   "percentiles": null
  },
  {
-  "idJugador": "2125381",
-  "nombre": "LLABRÉS CABRERA, JAIME",
-  "dorsal": "4",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 7,
-  "titular": 0,
-  "minTotales": 43.1,
-  "minPorPartido": 6.16,
-  "pt": 11,
-  "ro": 0,
-  "rd": 1,
-  "rt": 1,
-  "as": 6,
-  "br": 2,
-  "bp": 5,
-  "tfTot": 0,
-  "tcoTot": 1,
-  "fcTot": 6,
-  "frTot": 3,
-  "va": 6,
-  "pm": -10,
-  "t2a": 3,
-  "t2i": 7,
-  "t3a": 1,
-  "t3i": 3,
-  "tla": 2,
-  "tli": 2,
-  "ptPorPartido": 1.57,
-  "roPorPartido": 0,
-  "rdPorPartido": 0.14,
-  "rtPorPartido": 0.14,
-  "asPorPartido": 0.86,
-  "brPorPartido": 0.29,
-  "bpPorPartido": 0.71,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0.14,
-  "fcPorPartido": 0.86,
-  "frPorPartido": 0.43,
-  "vaPorPartido": 0.86,
-  "t2": "3/7",
-  "t3": "1/3",
-  "tl": "2/2",
-  "t2Pct": 42.86,
-  "t3Pct": 33.33,
-  "tlPct": 100,
-  "ts": 50.55,
-  "efg": 45,
-  "usg": 16.78,
-  "per36": {
-   "pt": 9.19,
-   "rt": 0.84,
-   "as": 5.01,
-   "br": 1.67,
-   "va": 5.01
-  },
-  "evolucion": [
-   {
-    "id": "2345040",
-    "jornada": "Jornada 1(07/10/2023)",
-    "pt": 2,
-    "va": -1,
-    "seg": 352
-   },
-   {
-    "id": "2345042",
-    "jornada": "Jornada 2(14/10/2023)",
-    "pt": 4,
-    "va": 1,
-    "seg": 455
-   },
-   {
-    "id": "2345053",
-    "jornada": "Jornada 3(21/10/2023)",
-    "pt": 0,
-    "va": 1,
-    "seg": 494
-   },
-   {
-    "id": "2345102",
-    "jornada": "Jornada 10(02/12/2023)",
-    "pt": 5,
-    "va": 6,
-    "seg": 832
-   },
-   {
-    "id": "2345105",
-    "jornada": "Jornada 11(09/12/2023)",
-    "pt": 0,
-    "va": 0,
-    "seg": 112
-   },
-   {
-    "id": "2345133",
-    "jornada": "Jornada 15(06/01/2024)",
-    "pt": 0,
-    "va": 0,
-    "seg": 115
-   },
-   {
-    "id": "2345163",
-    "jornada": "Jornada 19(10/02/2024)",
-    "pt": 0,
-    "va": -1,
-    "seg": 226
-   }
-  ],
-  "percentiles": null
- },
- {
   "idJugador": "2072509",
   "nombre": "QUIJADA GARCÍA, EDUARDO",
   "dorsal": "17",
@@ -80086,6 +80210,124 @@
     "pt": 3,
     "va": 2,
     "seg": 1014
+   }
+  ],
+  "percentiles": null
+ },
+ {
+  "idJugador": "2125381",
+  "nombre": "LLABRÉS CABRERA, JAIME",
+  "dorsal": "4",
+  "equipo": "GRAN CANARIA",
+  "equipoId": "921671",
+  "grupo": "ESTE",
+  "pj": 8,
+  "titular": 0,
+  "minTotales": 52.57,
+  "minPorPartido": 6.57,
+  "pt": 14,
+  "ro": 0,
+  "rd": 3,
+  "rt": 3,
+  "as": 6,
+  "br": 2,
+  "bp": 5,
+  "tfTot": 0,
+  "tcoTot": 1,
+  "fcTot": 9,
+  "frTot": 4,
+  "va": 6,
+  "pm": -17,
+  "t2a": 3,
+  "t2i": 10,
+  "t3a": 2,
+  "t3i": 4,
+  "tla": 2,
+  "tli": 2,
+  "ptPorPartido": 1.75,
+  "roPorPartido": 0,
+  "rdPorPartido": 0.38,
+  "rtPorPartido": 0.38,
+  "asPorPartido": 0.75,
+  "brPorPartido": 0.25,
+  "bpPorPartido": 0.63,
+  "tpPorPartido": 0,
+  "tcoPorPartido": 0.13,
+  "fcPorPartido": 1.13,
+  "frPorPartido": 0.5,
+  "vaPorPartido": 0.75,
+  "t2": "3/10",
+  "t3": "2/4",
+  "tl": "2/2",
+  "t2Pct": 30,
+  "t3Pct": 50,
+  "tlPct": 100,
+  "ts": 47.04,
+  "efg": 42.86,
+  "usg": 17.3,
+  "per36": {
+   "pt": 9.59,
+   "rt": 2.05,
+   "as": 4.11,
+   "br": 1.37,
+   "va": 4.11
+  },
+  "evolucion": [
+   {
+    "id": "2345040",
+    "jornada": "Jornada 1(07/10/2023)",
+    "pt": 2,
+    "va": -1,
+    "seg": 352
+   },
+   {
+    "id": "2345042",
+    "jornada": "Jornada 2(14/10/2023)",
+    "pt": 4,
+    "va": 1,
+    "seg": 455
+   },
+   {
+    "id": "2345053",
+    "jornada": "Jornada 3(21/10/2023)",
+    "pt": 0,
+    "va": 1,
+    "seg": 494
+   },
+   {
+    "id": "2345102",
+    "jornada": "Jornada 10(02/12/2023)",
+    "pt": 5,
+    "va": 6,
+    "seg": 832
+   },
+   {
+    "id": "2345105",
+    "jornada": "Jornada 11(09/12/2023)",
+    "pt": 0,
+    "va": 0,
+    "seg": 112
+   },
+   {
+    "id": "2345131",
+    "jornada": "Jornada 14(30/12/2023)",
+    "pt": 3,
+    "va": 0,
+    "seg": 568
+   },
+   {
+    "id": "2345133",
+    "jornada": "Jornada 15(06/01/2024)",
+    "pt": 0,
+    "va": 0,
+    "seg": 115
+   },
+   {
+    "id": "2345163",
+    "jornada": "Jornada 19(10/02/2024)",
+    "pt": 0,
+    "va": -1,
+    "seg": 226
    }
   ],
   "percentiles": null
@@ -80646,7 +80888,7 @@
   "tlPct": 75,
   "ts": 28.9,
   "efg": 23.68,
-  "usg": 34.26,
+  "usg": 34.31,
   "per36": {
    "pt": 14.72,
    "rt": 9.81,
@@ -81599,7 +81841,7 @@
     "grp": 2
    },
    "rtPorPartido": {
-    "nac": 14,
+    "nac": 13,
     "grp": 15
    },
    "asPorPartido": {
@@ -82752,8 +82994,8 @@
     "grp": 2
    },
    "t3Pct": {
-    "nac": 16,
-    "grp": 18
+    "nac": 17,
+    "grp": 19
    }
   }
  },
@@ -84936,7 +85178,7 @@
   "tlPct": 50,
   "ts": 81.97,
   "efg": 87.5,
-  "usg": 13.36,
+  "usg": 13.41,
   "per36": {
    "pt": 9.51,
    "rt": 0,
@@ -86123,7 +86365,7 @@
     "grp": 2
    },
    "t3Pct": {
-    "nac": 16,
+    "nac": 17,
     "grp": 14
    }
   }
@@ -86864,75 +87106,6 @@
     "pt": 0,
     "va": -1,
     "seg": 111
-   }
-  ],
-  "percentiles": null
- },
- {
-  "idJugador": "2044256",
-  "nombre": "ARTEAGA GINER, JORGE",
-  "dorsal": "24",
-  "equipo": "GRAN CANARIA",
-  "equipoId": "921671",
-  "grupo": "ESTE",
-  "pj": 1,
-  "titular": 0,
-  "minTotales": 2,
-  "minPorPartido": 2,
-  "pt": 0,
-  "ro": 0,
-  "rd": 0,
-  "rt": 0,
-  "as": 0,
-  "br": 0,
-  "bp": 0,
-  "tfTot": 0,
-  "tcoTot": 0,
-  "fcTot": 0,
-  "frTot": 0,
-  "va": -1,
-  "pm": -3,
-  "t2a": 0,
-  "t2i": 0,
-  "t3a": 0,
-  "t3i": 1,
-  "tla": 0,
-  "tli": 0,
-  "ptPorPartido": 0,
-  "roPorPartido": 0,
-  "rdPorPartido": 0,
-  "rtPorPartido": 0,
-  "asPorPartido": 0,
-  "brPorPartido": 0,
-  "bpPorPartido": 0,
-  "tpPorPartido": 0,
-  "tcoPorPartido": 0,
-  "fcPorPartido": 0,
-  "frPorPartido": 0,
-  "vaPorPartido": -1,
-  "t2": "0/0",
-  "t3": "0/1",
-  "tl": "0/0",
-  "t2Pct": 0,
-  "t3Pct": 0,
-  "tlPct": 0,
-  "ts": 0,
-  "efg": 0,
-  "usg": 22.78,
-  "per36": {
-   "pt": 0,
-   "rt": 0,
-   "as": 0,
-   "br": 0,
-   "va": -18
-  },
-  "evolucion": [
-   {
-    "id": "2345066",
-    "jornada": "Jornada 5(01/11/2023)",
-    "pt": 0,
-    "va": -1,
-    "seg": 120
    }
   ],
   "percentiles": null
@@ -87927,7 +88100,7 @@
   "tlPct": 0,
   "ts": 34.72,
   "efg": 50,
-  "usg": 30.88,
+  "usg": 31.01,
   "per36": {
    "pt": 7.09,
    "rt": 7.09,
@@ -88079,7 +88252,7 @@
   "tlPct": 66.67,
   "ts": 20.13,
   "efg": 17.31,
-  "usg": 21.32,
+  "usg": 21.35,
   "per36": {
    "pt": 5.48,
    "rt": 2.99,

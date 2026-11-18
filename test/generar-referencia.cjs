@@ -61,5 +61,18 @@ for (const c of COMPS) for (const t of TEMPS) {
   } else console.log('  ' + c + ' ' + t + ': (sin datos, omitida)');
 }
 
-fs.writeFileSync(p.join('test', 'referencia.json'), JSON.stringify(ref, null, 2));
+// Con filtro, se sustituyen SOLO las temporadas pedidas y se conservan las demas
+// (lote 38): antes se reescribia el fichero entero con la filtrada, la
+// referencia perdia todas las otras y regresion.cjs seguia en verde porque
+// solo comprueba las que estan -- la red quedaba desarmada sin avisar.
+const fRef = p.join('test', 'referencia.json');
+if ((filtroComp || filtroTemp) && fs.existsSync(fRef)) {
+  const previa = JSON.parse(fs.readFileSync(fRef, 'utf8'));
+  const nuevas = new Set(ref.temporadas.map(f => f.competicion + ' ' + f.temporada));
+  const conservadas = (previa.temporadas || []).filter(f => !nuevas.has(f.competicion + ' ' + f.temporada));
+  ref.temporadas = [...conservadas, ...ref.temporadas]
+    .sort((a, b) => (a.competicion + a.temporada).localeCompare(b.competicion + b.temporada));
+  console.log('  (' + conservadas.length + ' temporada(s) conservadas de la referencia previa)');
+}
+fs.writeFileSync(fRef, JSON.stringify(ref, null, 2));
 console.log('\n' + ref.temporadas.length + ' temporada(s) congeladas en test/referencia.json');
