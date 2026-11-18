@@ -33,6 +33,11 @@ if (fs.existsSync(rutaEquipos)) {
 const dirActas = path.join(baseRaw, 'actas');
 if (!fs.existsSync(dirActas)) { console.error('No hay actas en', dirActas); process.exit(1); }
 
+// El acta escribe "00" (o "07") donde el boxscore HTML escribe "0" ("7"): sin
+// normalizar, ese jugador no casaba y se omitia ENTERO de los cuartos (medido el
+// 17/11/2026, lote 38: 248 participaciones y ~1.640 puntos en 2025/26 y 2026/27).
+const dorsalDe = d => String(d).replace(/^0+(?=\d)/, '');
+
 // Indice dorsal->idJugador por partido, leyendo el boxscore raw
 function puenteDorsalId(idPartido) {
   for (const g of fs.readdirSync(baseRaw)) {
@@ -40,8 +45,8 @@ function puenteDorsalId(idPartido) {
     if (fs.existsSync(f)) {
       const raw = JSON.parse(fs.readFileSync(f, 'utf8'));
       const map = { local: {}, visitante: {} };
-      (raw.boxscore.local || []).forEach(j => { map.local[j.dorsal] = j; });
-      (raw.boxscore.visitante || []).forEach(j => { map.visitante[j.dorsal] = j; });
+      (raw.boxscore.local || []).forEach(j => { map.local[dorsalDe(j.dorsal)] = j; });
+      (raw.boxscore.visitante || []).forEach(j => { map.visitante[dorsalDe(j.dorsal)] = j; });
       // slug estable de cada equipo, resuelto desde el id FEB via equipos.json
       map.slugLocal = mapaSlug[String((raw.equipoLocal || {}).id)] || null;
       map.slugVisitante = mapaSlug[String((raw.equipoVisitante || {}).id)] || null;
@@ -167,7 +172,7 @@ for (const fichero of fs.readdirSync(dirActas).filter(f => f.endsWith('.json')))
       }
       // jugadores
       equipoCuarto.jugadores.forEach(j => {
-        const raw = puente[lado][j.dorsal];
+        const raw = puente[lado][dorsalDe(j.dorsal)];
         if (!raw || !raw.idJugador) return; // sin puente a licencia: omitir
         const J = initJug(raw.idJugador, raw.nombre, raw.equipoId || null, ladoNombre[ei]);
         const idx = Math.min(ci, 3); // prorrogas se suman al bucket del Q4? No: solo Q1..Q4 aqui
