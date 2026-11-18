@@ -41,6 +41,15 @@ const temp = val('--temporada') || '2026';
 const soloIds = val('--ids') ? new Set(val('--ids').split(',')) : null;
 if (!compNombre) { console.error('Competicion no valida'); process.exit(1); }
 
+// Lagunas DECLARADAS (lote 38): temporadas cuyas actas no traen estos campos en
+// Q2-Q4 y no se van a recuperar. No es el formato viejo del PDF: es el bug de
+// difJug (corregido el 31/10) en actas extraidas antes; reextraer costaria
+// horas de peticiones a la FEB por una temporada cerrada cuyo dato esencial
+// (puntos por cuarto) esta intacto. Se dice, en vez de dar "0 comparadas".
+const LAGUNAS_DECLARADAS = {
+  2025: 'cuartos de 2025/26: puntos completos, pero sin tap/tapRec/fc/fr en Q2-Q4 (actas extraidas antes del arreglo de difJug, 31/10/2026); no se reextrae por decision del lote 38',
+};
+
 // campo del acta -> campo del boxscore HTML
 const CAMPOS = { tap: 'tf', tapRec: 'tco', fc: 'fc', fr: 'fr' };
 // El acta escribe "00" donde el HTML escribe "0" (visto en 2525757).
@@ -118,11 +127,14 @@ function main() {
     if (difs) res.noCuadran.push({ id, deficit: deficitMaximo(acta, html), difs });
     else res.cuadran++;
   }
+  if (LAGUNAS_DECLARADAS[temp]) res.lagunaDeclarada = LAGUNAS_DECLARADAS[temp];
   if (!soloIds) fs.writeFileSync(path.join('data', 'processed', compNombre, temp, 'campos-cuartos.json'), JSON.stringify(res, null, 1) + '\n');
   console.log(`${compNombre} ${temp}: ${res.comparadas} comparadas, ${res.cuadran} cuadran, ${res.noCuadran.length} NO cuadran` +
     ` (${res.sinTR} sin TR en el acta: TR no comparado) | no aplica: ${res.formatoViejo} formato viejo, ${res.sinHtml} sin boxscore HTML`);
   for (const n of res.noCuadran.slice(0, 15)) console.log(`  ✗ ${n.id}: ${n.difs.slice(0, 3).join(' · ')}${n.difs.length > 3 ? ` (+${n.difs.length - 3})` : ''}`);
   // Un verificador que no compara nada no es un verificador.
+  // Salvo laguna declarada: entonces "nada que comparar" es lo esperado y se dice.
+  if (!res.comparadas && res.lagunaDeclarada) { console.log(`  laguna declarada: ${res.lagunaDeclarada}`); process.exit(0); }
   if (!res.comparadas) { console.log('  ⚠ ninguna acta comparada'); process.exit(1); }
   const degradadas = res.noCuadran.filter(n => n.deficit >= DEFICIT_CRITICO);
   if (degradadas.length) console.log(`  ✗ ${degradadas.length} acta(s) con un deficit de ${DEFICIT_CRITICO} o mas frente al HTML: ${degradadas.map(n => n.id).join(', ')}`);
